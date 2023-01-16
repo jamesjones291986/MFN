@@ -17,9 +17,6 @@ buckets = ['0-4', '5-9', '10-14', '15-19', '20-24', '25-29',
            '60-64', '65-69', '70-74', '75-79', '80-84', '85-89',
            '90-94', '95-99']
 
-# global_off_ref = SheetsRef(Config.sheet_lookup['global'], 'OffPlays').get_dataframe()
-# global_def_ref = SheetsRef(Config.sheet_lookup['global'], 'DefPlays').get_dataframe()
-
 global_off = '/Users/jamesjones/game_logs/MFN Global Reference - OffPlays.csv'
 global_def = '/Users/jamesjones/game_logs/MFN Global Reference - DefPlays.csv'
 global_off_ref = pd.read_csv(global_off)
@@ -166,7 +163,7 @@ def format_df(dd):
 
     dd.drop('h_pts_lb', axis=1, inplace=True, errors='ignore')
     dd.insert(16, 'h_pts_lb', dd.h_pts)
-    dd.h_pts_lb.replace(0, pd.NA, inplace=True)
+    dd.h_pts_lb.replace(0, np.nan, inplace=True)
     dd.h_pts_lb.mask(dd.Text.isin(['End of half.',
                                    'End of fourth quarter.',
                                    'End of OT 1.',
@@ -266,472 +263,256 @@ def scout(league, season, team):
 
 # Load all seasons
 df = Config.load_feather('qad', 2039)
-df.Season.isna().sum()
-df = pd.concat((pd.read_feather(f) for f in iglob(Config.seasons + '/*.feather')))
-df = format_df(pd.concat((pd.read_feather(f) for f in iglob(Config.seasons + '/*.feather'))))
-df = format_df(pd.concat((Config.load_feather(k, y) for k, v in Config.ls_dictionary.items() for y in v)).reset_index
-               (drop=True))
-df = pd.concat((Config.load_feather(k, y) for k, v in Config.ls_dictionary.items() for y in v)).reset_index(drop=True)
-df = format_df(df)
+df = format_df(pd.concat((Config.load_feather(k, y) for k, v in Config.ls_dictionary.items() for y in v))).reset_index(
+    drop=True)
 
 # Scouting
-scout('pfl', 2024, 'HOU')
+scout('xfl', 2043, 'PHI')
 
 # download_all_logs()
 
-path = '/Users/jamesjones/game_logs/qad/2039/qad_2039.csv'
+path = '/Users/jamesjones/game_logs/xfl/2043/xfl_2043.csv'
 
 gdl = GameLogDownloader()
-gdl.set_league_season('qad', 2039)
 gdl.download_season(path)
 
 # Compile a season
 SeasonCompiler.compile('qad', 2039)
 SeasonCompiler.compile('norig', 2027, players=True)
 # specify path to game logs
-SeasonCompiler.compile('qad', 2039, override_path='/Users/jamesjones/game_logs/qad/2039/qad_2039.csv')
-SeasonCompiler.compile('xfl', 2042, override_path='/Users/jamesjones/game_logs/xfl/2042/xfl_2042.csv')
+SeasonCompiler.compile('qad', 2043, override_path='/Users/jamesjones/game_logs/qad/2043/qad_2043.csv')
+SeasonCompiler.compile('norig', 2028, override_path='/Users/jamesjones/game_logs/norig/2028/norig_2028.csv')
+SeasonCompiler.compile('paydirt', 1996, override_path='/Users/jamesjones/game_logs/paydirt/1996/paydirt_1996.csv')
+SeasonCompiler.compile('USFL', 2002, override_path='/Users/jamesjones/game_logs/USFL/2002/USFL_2002.csv')
+SeasonCompiler.compile('pfl', 2026, override_path='/Users/jamesjones/game_logs/pfl/2026/pfl_2026.csv')
+SeasonCompiler.compile('lol', 2117, override_path='/Users/jamesjones/game_logs/lol/2117/lol_2117.csv')
+SeasonCompiler.compile('xfl', 2043, override_path='/Users/jamesjones/game_logs/xfl/2043/xfl_2043.csv')
 
-"""
-for k, v in Config.ls_dictionary.items():
-    for y in v:
-        print(k, y)
-        compile_season_players(k, y)
-"""
+# EV - Best Defensive Plays
 
-#################
+# 113
+pass_113 = ['Shotgun Normal HB Flare', 'Singleback Normal TE Quick Out', 'Singleback Normal HB Release Mid',
+            'Singleback Normal SE Quick Hit', 'Singleback Normal WR Quick In', 'Singleback Normal FL Post']
+run_113 = ['Singleback Normal HB Inside Weak', 'Singleback Normal HB Dive Weak', 'Singleback Norma HB Counter Weak']
+total_113 = pass_113 + run_113
+off_play_adj_ev_pass_113 = adj_ev(df.loc[df.OffensivePlay.isin(pass_113)],
+                                  'DefensivePlay', all_plays, 'asc')
+off_play_adj_ev_run_113 = adj_ev(df.loc[df.OffensivePlay.isin(run_113)],
+                                 'DefensivePlay', all_plays, 'asc')
+off_play_adj_ev_total_113 = adj_ev(df.loc[df.OffensivePlay.isin(total_113)],
+                                   'DefensivePlay', all_plays, 'asc')
 
-# Set versions
-# df['version'] = df[['League', 'Season']].apply(
-#     lambda x: Config.version_map[x['League']][int(x['Season'])], axis=1)
+# 122
+pass_122 = ['Singleback Big WR Deep']
+run_122 = ['Singleback Big HB Inside Weak']
+total_122 = pass_122 + run_122
+off_play_adj_ev_pass_122 = adj_ev(df.loc[df.OffensivePlay.isin(pass_122)],
+                                  'DefensivePlay', all_plays, 'asc')
+off_play_adj_ev_run_122 = adj_ev(df.loc[df.OffensivePlay.isin(run_122)],
+                                 'DefensivePlay', all_plays, 'asc')
+off_play_adj_ev_total_122 = adj_ev(df.loc[df.OffensivePlay.isin(total_122)],
+                                   'DefensivePlay', all_plays, 'asc')
 
-# Scouting
-scout(df, 'NYK')
+# 203
+pass_203 = ['Split Backs 3 Wide WR Quick Out', 'Split Backs 3 Wide Slot Post']
+run_203 = ['Split Backs 3 Wide Dive Left', 'Split Backs 3 Wide Dive Right', 'Shotgun 2RB 3WR Shotgun Dive',
+           'Shotgun 2RB 3WR Shotgun Sweep']
+total_203 = pass_203 + run_203
+off_play_adj_ev_pass_203 = adj_ev(df.loc[df.OffensivePlay.isin(pass_203)],
+                                  'DefensivePlay', all_plays, 'asc')
+off_play_adj_ev_run_203 = adj_ev(df.loc[df.OffensivePlay.isin(run_203)],
+                                 'DefensivePlay', all_plays, 'asc')
+off_play_adj_ev_total_203 = adj_ev(df.loc[df.OffensivePlay.isin(total_203)],
+                                   'DefensivePlay', all_plays, 'asc')
 
-# Best defensive plays
-off_play_adj_ev = adj_ev(df, 'OffensivePlay', all_plays, 'desc')
-flat_zone = df.loc[df.DefensivePlay.eq('4-3 Normal Man Under 1')]
-off_play_adj_ev_flat_zone = adj_ev(flat_zone, 'OffensivePlay', all_plays, 'desc')
-off_play_adj_ev_no_zone = adj_ev(df.loc[df.DefensivePlay.ne('4-3 Normal Man Under 1')],
-                                 'OffensivePlay', all_plays, 'desc')
+# 212
+pass_212 = ['I Formation Normal FL Hitch', 'Weak I Normal Skinny Posts', 'Split Backs Normal Skinny Post Corner']
+run_212 = ['Weak I Normal HB Inside Weak', 'I Formation Normal HB Draw', 'I Formation Normal HB Dive']
+total_212 = pass_212 + run_212
+off_play_adj_ev_pass_212 = adj_ev(df.loc[df.OffensivePlay.isin(pass_212)],
+                                  'DefensivePlay', all_plays, 'asc')
+off_play_adj_ev_run_212 = adj_ev(df.loc[df.OffensivePlay.isin(run_212)],
+                                 'DefensivePlay', all_plays, 'asc')
+off_play_adj_ev_total_212 = adj_ev(df.loc[df.OffensivePlay.isin(total_212)],
+                                   'DefensivePlay', all_plays, 'asc')
 
-# Moving feather files to csv
-df = pd.read_feather('/Users/jamesjones/game_logs/xfl/xfl_2042.feather')
-df.to_csv('/Users/jamesjones/game_logs/xfl/xfl_2042.feather')
+# EV - Best Offensive Plays
 
-cols2 = ['Game ID', 'Season', 'Type', 'Week',
-         'Home Team', 'H Score', 'Away Team', 'A Score', 'Win']
+# 113
+def_113 = ['4-3 Normal WLB Outside Blitz', '4-3 Normal Double WR3', '4-3 Normal Double WR1',
+           '4-3 Normal Man QB Spy', '4-3 Under Crash Right', 'Nickel Normal SS Blitz', '4-3 Normal Double Safety Blitz']
+def_play_adj_ev_113 = adj_ev(df.loc[df.DefensivePlay.isin(def_113)],
+                             'OffensivePlay', all_plays, 'desc')
 
-df = pd.read_csv('/Users/jamesjones/game_logs/qad/2039/qad_2039.csv')[cols2]
+# 203
+def_203 = ['4-3 Normal Man Under 1']
+def_play_adj_ev_203 = adj_ev(df.loc[df.DefensivePlay.isin(def_203)], 'OffensivePlay', all_plays, 'desc')
+
+# 212
+def_212 = ['4-3 Normal WLB MLB Blitz', '4-3 Under Double LB Blitz', '4-3 Normal OLB Blitz Inside']
+def_play_adj_ev_212 = adj_ev(df.loc[df.DefensivePlay.isin(def_212)], 'OffensivePlay', all_plays, 'desc')
+
+# 311
+def_311 = ['Dime Normal Double WR1 WR2']
+def_play_adj_ev_311 = adj_ev(df.loc[df.DefensivePlay.isin(def_311)],
+                             'OffensivePlay', all_plays, 'desc')
+
+#############################################
+
+# Yards Per Play
+
+df = pd.concat((Config.load_feather(k, y) for k, v in Config.ls_dictionary.items() for y in v)).fillna(0)
+
+# 5
+
+off_plays_5 = ['Shotgun 5 Wide Parallel Slants']
+def_ypp_5 = df.loc[df.OffensivePlay.isin(off_plays_5)].groupby('DefensivePlay').agg(
+    {'YardsGained': ['mean', 'count']}) \
+    .sort_values(by=[def_ypp_5.columns[0]])
+
+# 014
+
+off_plays_014 = ['Empty 4 Wide Spread Corner Post']
+def_ypp_014 = df.loc[df.OffensivePlay.isin(off_plays_014)].groupby('DefensivePlay').agg(
+    {'YardsGained': ['mean', 'count']}) \
+    .sort_values(by=[def_ypp_014.columns[0]])
+
+# 104
+
+off_plays_104 = ['Singleback 4 Wide Quick Outs']
+def_ypp_104 = df.loc[df.OffensivePlay.isin(off_plays_104)].groupby('DefensivePlay').agg(
+    {'YardsGained': ['mean', 'count']}) \
+    .sort_values(by=[def_ypp_104.columns[0]])
+
+# 113
+
+off_plays_113 = ['Shotgun Normal HB Flare', 'Singleback Normal TE Quick Out', 'Singleback Normal HB Release Mid',
+                 'Singleback Normal SE Quick Hit', 'Singleback Normal WR Quick In', 'Singleback Normal FL Post']
+def_ypp_113 = df.loc[df.OffensivePlay.isin(off_plays_113)].groupby('DefensivePlay').agg(
+    {'YardsGained': ['mean', 'count']}) \
+    .sort_values(by=[def_ypp_113.columns[0]])
+
+# 122
+
+off_plays_122 = ['Singleback Big WR Deep', 'Singleback Big Ins and Outs']
+def_ypp_122 = df.loc[df.OffensivePlay.isin(off_plays_122)].groupby('DefensivePlay').agg(
+    {'YardsGained': ['mean', 'count']}) \
+    .sort_values(by=[def_ypp_122.columns[0]])
+
+# 203
+
+off_plays_203 = ['Split Backs 3 Wide WR Quick Out', 'Split Backs 3 Wide Slot Post', 'Split Backs 3 Wide Dive Left',
+                 'Split Backs 3 Wide Dive Right', 'I Formation 3WR Slot Short WR Deep', 'I Formation 3WR WR Out',
+                 'I Formation 3WR Backfield Flats', 'I Formation 3WR HB Inside Weak', 'I Formation 3WR FL Post']
+def_ypp_203 = df.loc[df.OffensivePlay.isin(off_plays_203)].groupby('DefensivePlay').agg(
+    {'YardsGained': ['mean', 'count']}) \
+    .sort_values(by=[def_ypp_203.columns[0]])
+
+# 212
+
+pass_plays_212 = ['I Formation Twin WR Hard Slants', 'I Formation Twin WR Quick Outs',
+                  'Weak I Normal WR Corner TE Middle', 'I Formation Normal Max Protect', 'I Formation Normal FL Hitch',
+                  ]
+run_plays_212 = ['Weak I Normal HB Inside Weak', 'I Formation Normal HB Dive', 'I Formation Normal HB Blast',
+                 'I Formation Normal HB Counter']
+total_plays_212 = pass_plays_212 + run_plays_212
+def_ypp_pass_212 = df.loc[df.OffensivePlay.isin(pass_plays_212)].groupby('DefensivePlay').agg(
+    {'YardsGained': ['mean', 'count']}) \
+    .sort_values(by=[def_ypp_pass_212.columns[0]])
+def_ypp_run_212 = df.loc[df.OffensivePlay.isin(run_plays_212)].groupby('DefensivePlay').agg(
+    {'YardsGained': ['mean', 'count']}) \
+    .sort_values(by=[def_ypp_run_212.columns[0]])
+def_ypp_total_212 = df.loc[df.OffensivePlay.isin(total_plays_212)].groupby('DefensivePlay').agg(
+    {'YardsGained': ['mean', 'count']}) \
+    .sort_values(by=[def_ypp_total_212.columns[0]])
+
+# 221
+
+pass_plays_221 = ['Strong I Big TE Post', 'Strong I Big Backfield Drag']
+run_plays_221 = []
+total_plays_221 = pass_plays_221 + run_plays_221
+def_ypp_pass_221 = df.loc[df.OffensivePlay.isin(pass_plays_221)].groupby('DefensivePlay').agg(
+    {'YardsGained': ['mean', 'count']}) \
+    .sort_values(by=[def_ypp_pass_221.columns[0]])
+def_ypp_run_221 = df.loc[df.OffensivePlay.isin(run_plays_221)].groupby('DefensivePlay').agg(
+    {'YardsGained': ['mean', 'count']}) \
+    .sort_values(by=[def_ypp_run_221.columns[0]])
+def_ypp_total_221 = df.loc[df.OffensivePlay.isin(total_plays_221)].groupby('DefensivePlay').agg(
+    {'YardsGained': ['mean', 'count']}) \
+    .sort_values(by=[def_ypp_total_221.columns[0]])
 
 
+# Yards Per Play - Best Offense
 
-##############################################################################################
+# 113
 
-# Aggregate!!!
-r = df.groupby(['Down', 'YTG', 'ytgl_bucket']).ev.mean()
-r2 = df.groupby(['Down']).ev.mean()
+def_plays_113 = ['4-3 Normal WLB Outside Blitz', '4-3 Normal Double WR3', '4-3 Normal Double WR1']
+off_ypp_113 = df.loc[df.DefensivePlay.isin(def_plays_113)].groupby('OffensivePlay').agg(
+    {'YardsGained': ['mean', 'count']}) \
+    .sort_values(by=[off_ypp_113.columns[0]], ascending=False)
 
-print('Down and distance, anywhere on the field:')
-print('Positive means go for it, negative means punt')
-r3 = df.loc[df.Down.eq(4)].groupby(['YTG', 'punt']).ev.mean()
-for i in range(1, 11):
-    print(f'4th and {i}: {r3[i][False] - r3[i][True]}')
+# 203
 
-print('Down and distance, 35-55 yards from goal line:')
-print('Positive means go for it, negative means punt')
-r4 = df.loc[df.Down.eq(4) & df.YTGL.ge(35) & df.YTGL.le(55)].groupby(['YTG', 'punt']).ev.mean()
-for i in range(1, 11):
-    print(f'4th and {i}: {r4[i][False] - r4[i][True]}')
+def_plays_203 = ['4-3 Normal Man Under 1']
+off_ypp_203 = df.loc[df.DefensivePlay.isin(def_plays_203)].groupby('OffensivePlay').agg(
+    {'YardsGained': ['mean', 'count']}) \
+    .sort_values(by=[off_ypp_203.columns[0]], ascending=False)
 
-print('Kick FG or punt?')
-print('Positive means kick FG, negative means punt')
-r5 = df.loc[df.Down.eq(4) & df.YTGL.ge(25) & df.YTGL.le(40)].groupby(['YTGL', 'punt']).ev.mean()
-r6 = df.loc[df.Down.eq(4) & df.YTGL.ge(25) & df.YTGL.le(40)].groupby(['YTGL', 'fg']).ev.mean()
-for i in range(16):
-    print(f'From the {25 + i}: {r5[25 + i][True] - r6[25 + i][True]}')
+# 212
 
-print('Kick FG or go for it?')
-r7 = df.loc[df.Down.eq(4) & df.YTGL.le(35)].groupby(['YTG', 'YTGL', 'gfi']).ev.mean()
-r8 = df.loc[df.Down.eq(4) & df.YTGL.le(35)].groupby(['YTG', 'YTGL', 'fg']).ev.mean()
-for j in range(5, 9):
-    for i in range(1, 36):
-        if j <= i:
-            try:
-                m = r8[j][i][True] - r7[j][i][True]
-                if m >= 0:
-                    print(f'4th and {j} from the {i}: Kick FG')
-                else:
-                    print(f'4th and {j} from the {i}: Go for it!')
-            except KeyError:
-                pass
+def_plays_212 = ['4-3 Normal WLB MLB Blitz', '4-3 Under Double LB Blitz', '4-3 Normal OLB Blitz Inside']
+off_ypp_212 = df.loc[df.DefensivePlay.isin(def_plays_212)].groupby('OffensivePlay').agg(
+    {'YardsGained': ['mean', 'count']}) \
+    .sort_values(by=[off_ypp_212.columns[0]], ascending=False)
 
-print('Kick FG, punt, or go for it?')
-r10 = df.loc[df.Down.eq(4)].groupby(['YTG', 'ytgl_bucket', 'gfi']).ev.mean()
-r11 = df.loc[df.Down.eq(4)].groupby(['YTG', 'ytgl_bucket', 'fg']).ev.mean()
-r12 = df.loc[df.Down.eq(4)].groupby(['YTG', 'ytgl_bucket', 'punt']).ev.mean()
-for i in range(1, 9):
-    for b in buckets:
-        try:
-            g = r10[i][b][True]
-        except KeyError:
-            g = -99
-        try:
-            f = r11[i][b][True]
-        except KeyError:
-            f = -99
-        try:
-            p = r12[i][b][True]
-        except KeyError:
-            p = -99
-        if g > f and g > p:
-            m = f'Go for it ({round(g - max(f, p), 3)} over {("FG" if f == max(f, p) else "Punt")})'
-        if f > g and f > p:
-            m = f'Kick FG ({round(f - max(g, p), 3)} over {("Punt" if p == max(g, p) else "Go for it")})'
-        if p > f and p > g:
-            m = f'Punt ({round(p - max(f, g), 3)} over {("FG" if f == max(f, g) else "Go for it")})'
-        print(f'4th and {i}, yards to GL {b}: {m}')
-
-rows = []
-for b in buckets:
-    for i in range(1, 9):
-        try:
-            g = r10[i][b][True]
-        except KeyError:
-            g = -99
-        try:
-            f = r11[i][b][True]
-        except KeyError:
-            f = -99
-        try:
-            p = r12[i][b][True]
-        except KeyError:
-            p = -99
-        rows[len(rows):] = [{'down': 4,
-                             'distance': i,
-                             'ytgl': b,
-                             'gfi': round(g, 3),
-                             'fg': round(f, 3),
-                             'punt': round(p, 3)}]
-d = pd.DataFrame(rows)
-d.to_csv(Config.root + '/4th_dd.csv', index=False)
-
-# Downs 1-3
-r13_a = df.loc[df.Down.isin([1, 2, 3])].groupby(['ytgl_bucket', 'Down', 'YTG']).ev.count()
-r13 = df.loc[df.Down.isin([1, 2, 3])].groupby(['ytgl_bucket', 'Down', 'YTG']).ev.mean()
-r14 = df.loc[df.Down.isin([1, 2, 3]) & df.YTG.ge(15)].groupby(['ytgl_bucket', 'Down']).ev.mean()
-rows = []
-for b in buckets:
-    for down in range(1, 4):
-        for i in range(1, 15):
-            try:
-                g = r13[b][down][i]
-            except KeyError:
-                g = np.nan
-            rows[len(rows):] = [{'down': down,
-                                 'distance': str(i),
-                                 'ytgl': b,
-                                 'ev': round(g, 3)
-                                 }]
-        try:
-            g = r14[b][down]
-        except KeyError:
-            g = np.nan
-        rows[len(rows):] = [{'down': down,
-                             'distance': '15+',
-                             'ytgl': b,
-                             'ev': round(g, 3)
-                             }]
-d = pd.DataFrame(rows)
-d.to_csv(Config.root + '/1st_thru_3rd_dd.csv', index=False)
-dd_1_10 = d.loc[d.down.eq(1) & d.distance.eq('10')]
-dds = {}
-dds[1]['10'] = dd_1_10
-
-# 4th and 1 FB Dive
-print('Kick FG, punt, or FB Dive?')
-r15 = df.loc[df.Down.eq(4) & df.YTG.eq(1)].groupby(['ytgl_bucket', 'fb_dive']).ev.mean()
-r16 = df.loc[df.Down.eq(4) & df.YTG.eq(1)].groupby(['ytgl_bucket', 'fg']).ev.mean()
-r17 = df.loc[df.Down.eq(4) & df.YTG.eq(1)].groupby(['ytgl_bucket', 'punt']).ev.mean()
-rows = []
-for b in buckets:
-    try:
-        g = r15[b][True]
-    except KeyError:
-        g = np.nan
-    try:
-        f = r16[b][True]
-    except KeyError:
-        f = np.nan
-    try:
-        p = r17[b][True]
-    except KeyError:
-        p = np.nan
-    rows[len(rows):] = [{'down': 4,
-                         'distance': 1,
-                         'ytgl': b,
-                         'fb_dive': round(g, 3),
-                         'fg': round(f, 3),
-                         'punt': round(p, 3)}]
-d = pd.DataFrame(rows)
-
-# 4th and 2 FB Dive
-print('Kick FG, punt, or FB Dive?')
-r15 = df.loc[df.Down.eq(4) & df.YTG.eq(2)].groupby(['ytgl_bucket', 'fb_dive']).ev.mean()
-r16 = df.loc[df.Down.eq(4) & df.YTG.eq(2)].groupby(['ytgl_bucket', 'fg']).ev.mean()
-r17 = df.loc[df.Down.eq(4) & df.YTG.eq(2)].groupby(['ytgl_bucket', 'punt']).ev.mean()
-rows = []
-for b in buckets:
-    try:
-        g = r15[b][True]
-    except KeyError:
-        g = np.nan
-    try:
-        f = r16[b][True]
-    except KeyError:
-        f = np.nan
-    try:
-        p = r17[b][True]
-    except KeyError:
-        p = np.nan
-    rows[len(rows):] = [{'down': 4,
-                         'distance': 2,
-                         'ytgl': b,
-                         'fb_dive': round(g, 3),
-                         'fg': round(f, 3),
-                         'punt': round(p, 3)}]
-d = pd.DataFrame(rows)
-
-# 4th and 3 FG vs punt vs GFI
-print('Kick FG, punt, or FB Dive?')
-r15 = df.loc[df.Down.eq(4) & df.YTG.eq(3)].groupby(['ytgl_bucket', 'gfi']).ev.mean()
-r16 = df.loc[df.Down.eq(4) & df.YTG.eq(3)].groupby(['ytgl_bucket', 'fg']).ev.mean()
-r17 = df.loc[df.Down.eq(4) & df.YTG.eq(3)].groupby(['ytgl_bucket', 'punt']).ev.mean()
-rows = []
-for b in buckets:
-    try:
-        g = r15[b][True]
-    except KeyError:
-        g = np.nan
-    try:
-        f = r16[b][True]
-    except KeyError:
-        f = np.nan
-    try:
-        p = r17[b][True]
-    except KeyError:
-        p = np.nan
-    rows[len(rows):] = [{'down': 4,
-                         'distance': 1,
-                         'ytgl': b,
-                         'gfi': round(g, 3),
-                         'fg': round(f, 3),
-                         'punt': round(p, 3)}]
-d = pd.DataFrame(rows)
-
-# best plays? 1st and 10 at your own 25
-r18_a = df.loc[df.Down.eq(1) & df.YTG.eq(10) & df.YTGL.eq(75)].groupby(['OffensivePlay']).ev.count()
-r18 = df.loc[df.Down.eq(1) & df.YTG.eq(10) & df.YTGL.eq(75)].groupby(['OffensivePlay']).ev.mean()
-rows = []
-for p in df.OffensivePlay.unique():
-    try:
-        g = r18[p]
-    except KeyError:
-        g = np.nan
-    try:
-        c = r18_a[p]
-    except KeyError:
-        c = np.nan
-    if c > 50:
-        rows[len(rows):] = [{'off_play': p,
-                             'ev': round(g, 3),
-                             'cnt': c
-                             }]
-first_and_10_own_25 = pd.DataFrame(rows)
-first_and_10_own_25.sort_values('ev', ascending=False, inplace=True)
-
-##########################################################
-# plays between the 20s, normalized for position on field
-
-off_play_adj_ev = adj_ev(df, 'OffensivePlay', all_plays, 'desc')
-flat_zone = df.loc[df.DefensivePlay.eq('4-3 Normal Man Under 1')]
-off_play_adj_ev_flat_zone = adj_ev(flat_zone, 'OffensivePlay', all_plays, 'desc')
-
-off_play_adj_ev_no_zone = adj_ev(df.loc[df.DefensivePlay.ne('4-3 Normal Man OLB Flat Zone')],
-                                 'OffensivePlay', all_plays, 'desc')
-
-# Offensive playbook
-pbs = ['GenBal', 'PassFoc', 'RunFoc', 'PossOff', 'WestCoast']
-combine = ['OffPlayType', 'OffFormation', 'OffPersonnel'] + pbs
-off_play_adj_ev_no_zone[combine] = off_play_adj_ev_no_zone.merge(
-    global_off_ref, how='left', left_on='OffensivePlay', right_on='OffPlay')[combine]
-off_play_adj_ev_no_zone[pbs] = off_play_adj_ev_no_zone[pbs].astype('Int64')
-
-e = off_play_adj_ev_no_zone
-j = 15
-pb_scores = [{k: e.loc[e[k].eq(1)].head(i).ev_adj.mean().round(3) for k in pbs} for i in range(j, 41)]
-for i in pb_scores:
-    print(f'{j}: {i} {max(i.values())}')
-    j += 1
-
-pbs = ['GenBal', 'PassFoc', 'RunFoc', 'PossOff', 'WestCoast']
-off_play_adj_ev_no_zone[pbs] = off_play_adj_ev_no_zone.merge(
-    global_off_ref, how='left', left_on='OffensivePlay', right_on='OffPlay')[pbs]
-off_play_adj_ev_no_zone[pbs] = off_play_adj_ev_no_zone[pbs].astype('Int64')
-
-# Zone killers
-zone_merge = off_play_adj_ev_flat_zone.merge(off_play_adj_ev, how='inner', on='OffensivePlay')
-zone_killers = pd.concat([zone_merge['OffensivePlay'],
-                          zone_merge['ev_adj_y'],
-                          zone_merge['ev_adj_x'],
-                          zone_merge['ev_adj_x'] - zone_merge['ev_adj_y']], axis=1)
-zone_killers.rename({'ev_adj_y': 'against_all', 'ev_adj_x': 'against_zone', 0: 'improvement'}, axis=1, inplace=True)
-zone_killers.sort_values('improvement', ascending=False, inplace=True)
-zone_killers.reset_index(drop=True, inplace=True)
-
-# Exporting
-off_play_adj_ev.to_csv(Config.root + '/off_play_adj_ev_no_0.csv', index=False)
-off_play_adj_ev_flat_zone.to_csv(Config.root + '/off_play_adj_ev_flat_zone_no_0.csv', index=False)
-
-##########################################
-# Defensive Plays
-####
-def_play_scores = {k: adj_ev(df.loc[df.DefensivePlay.eq(k)], 'OffPersonnel',
-                             all_plays, 'asc') for k in ['4-3 Normal Man OLB Flat Zone', ]}
-def_play_scores.copy()
-#####
-
-def_play_scores = {k: adj_ev(df.loc[df.DefensivePlay.eq(k)], 'OffPersonnel',
-                             all_plays, 'asc') for k in df.DefensivePlay.unique() if k not in def_excludes}
-def_play_scores_run = {k: adj_ev(df.loc[df.DefensivePlay.eq(k)], 'OffPersonnel',
-                                 run_plays, 'asc') for k in df.DefensivePlay.unique()}
-def_play_scores_pass = {k: adj_ev(df.loc[df.DefensivePlay.eq(k)], 'OffPersonnel',
-                                  pass_plays, 'asc') for k in df.DefensivePlay.unique()}
-
-def_play_adj_ev = adj_ev(df, 'DefensivePlay', all_plays, 'asc')
-def_play_adj_ev_runs = adj_ev(df, 'DefensivePlay', run_plays, 'asc')
-def_play_adj_ev_passes = adj_ev(df, 'DefensivePlay', pass_plays, 'asc')
-def_play_adj_ev_fb_dive = adj_ev(df.loc[df.fb_dive], 'DefensivePlay', all_plays, 'asc')
-
-dime_norm_man_cover_1 = adj_ev(df.loc[df.DefensivePlay.eq('Dime Normal Man Cover 1')],
-                               'OffPersonnel', all_plays, 'asc')
-dime_norm_man_cover_1_run = adj_ev(df.loc[df.DefensivePlay.eq('Dime Normal Man Cover 1')],
-                                   'OffPersonnel', run_plays, 'asc')
-dime_norm_man_cover_1_pass = adj_ev(df.loc[df.DefensivePlay.eq('Dime Normal Man Cover 1')],
-                                    'OffPersonnel', pass_plays, 'asc')
-
-olb_flat_zone = adj_ev(df.loc[df.DefensivePlay.eq('4-3 Normal Man OLB Flat Zone')],
-                       'OffPersonnel', all_plays, 'asc')
-olb_flat_zone_run = adj_ev(df.loc[df.DefensivePlay.eq('4-3 Normal Man OLB Flat Zone')],
-                           'OffPersonnel', run_plays, 'asc')
-olb_flat_zone_pass = adj_ev(df.loc[df.DefensivePlay.eq('4-3 Normal Man OLB Flat Zone')],
-                            'OffPersonnel', pass_plays, 'asc')
-
-attack_2 = adj_ev(df.loc[df.DefensivePlay.eq('Goal Line Attack #2')],
-                  'OffPersonnel', all_plays, 'asc')
-attack_2_run = adj_ev(df.loc[df.DefensivePlay.eq('Goal Line Attack #2')],
-                      'OffPersonnel', run_plays, 'asc')
-attack_2_pass = adj_ev(df.loc[df.DefensivePlay.eq('Goal Line Attack #2')],
-                       'OffPersonnel', pass_plays, 'asc')
-
-# Defensive Plays by Personnel
-def_play_adj_ev = adj_ev(df, 'DefensivePlay', all_plays, 'asc')
-
-######################################################
-# best plays against OLB Flat Zone? 1st and 10 at your own 25
-r19_a = df.loc[df.Down.eq(1) &
-               df.YTG.eq(10) &
-               df.YTGL.eq(75) &
-               df.DefensivePlay.eq('4-3 Normal Man OLB Flat Zone')].groupby(['OffensivePlay']).ev.count()
-r19 = df.loc[df.Down.eq(1) &
-             df.YTG.eq(10) &
-             df.YTGL.eq(75) &
-             df.DefensivePlay.eq('4-3 Normal Man OLB Flat Zone')].groupby(['OffensivePlay']).ev.mean()
-rows = []
-for p in df.OffensivePlay.unique():
-    try:
-        g = r19[p]
-    except KeyError:
-        g = np.nan
-    try:
-        c = r19_a[p]
-    except KeyError:
-        c = np.nan
-    if c > 50:
-        rows[len(rows):] = [{'off_play': p,
-                             'ev': round(g, 3),
-                             'cnt': c
-                             }]
-d = pd.DataFrame(rows)
-d.sort_values('ev', ascending=False, inplace=True)
-
-# Quarter Normal Man Short Zone
-dn = df.loc[df.YTGL.ge(20) & df.YTGL.lt(80) & df.Down.isin([1, 2, 3]) &
-            ~df.OffensivePlay.isin(off_excludes)].copy()
-sit_score = dn.groupby(['ytgl_bucket', 'Down', 'YTG']).ev.mean()
-dn['ev_adj'] = dn.ev - dn.merge(sit_score, how='left',
-                                left_on=['ytgl_bucket', 'Down', 'YTG'],
-                                right_index=True)['ev_y']
-qn = dn.loc[dn.DefensivePlay.eq('Quarter Normal Man Short Zone')]
-qn_run = qn.loc[qn.OffPlayType.isin(run_plays)]
-qn_run.ev_adj.mean()
-
-# Interception Rate
-dn = df.loc[df.YTGL.ge(20) & df.YTGL.lt(80) & df.Down.isin([1, 2, 3]) &
-            ~df.OffensivePlay.isin(off_excludes) &
-            df.OffPlayType.isin(pass_plays)].copy()
-dn['INT'] = False
-dn.INT.mask(dn.Text.str.contains('INTERCEPT'), True, inplace=True)
-interception_rates = 100 * dn.loc[dn.INT.eq(True)].groupby('DefensivePlay').DefensivePlay.count(
-) / dn.groupby('DefensivePlay').DefensivePlay.count()
-interception_rates = 100 * dn.loc[dn.INT.eq(True)].groupby('OffensivePlay').DefensivePlay.count(
-) / dn.groupby('OffensivePlay').DefensivePlay.count()
-interception_rates.sort_values(ascending=False, inplace=True)
 
 #######################################################
-# Download a single season
-gdl = GameLogDownloader()
-if gdl.set_league_season('norig', '2025'):
-    gdl.download_season()
 
-""""
-Overuse
-This is what happens when you keep calling the same offensive play.
-I think the offense is starting to overuse that play.
-The offense has gone to that play a few too many times.
-The defense seems to be getting familiar with that play.
-The offense seems to be calling that play a lot.
-"""
 
-# Convert player feathers to CSV
-pd.concat(
-    (Config.load_feather_with_players(league, season) for league, seasons in Config.ls_dictionary.items() for season in
-     seasons)).to_csv(Config.root + '/big_data.csv')
+ypp = df.groupby(['OffensivePlay', 'DefensivePlay']).agg({'YardsGained': ['mean', 'count']})
+ypp = ypp.reset_index()
+ypp.to_csv('/Users/jamesjones/game_logs/ypp_off_def_3.csv')
 
-# Blitzing
-df['DefSecondary'] = df.merge(global_def_ref, left_on='DefensivePlay',
-                              right_on='DefPlay', how='left')['DefSecondary']
-df['DefLinebackers'] = df.merge(global_def_ref, left_on='DefensivePlay',
-                                right_on='DefPlay', how='left')['DefLinebackers']
-df['blitz'] = 0
-df.loc[:, 'blitz'].mask(df.DefLinebackers.isin(['Blitz 2', 'Blitz 1', 'Blitz 2+']) |
-                        df.DefSecondary.isin(['Corner Blitz', 'Safety Blitz']),
-                        1, inplace=True)
+ypp_offense = df.groupby('OffensivePlay', as_index=False).agg({'YardsGained': ['mean', 'count']})
+ypp_defense = df.groupby('DefensivePlay', as_index=False).agg({'YardsGained': ['mean', 'count']})
+ypp_offense.to_csv('/Users/jamesjones/game_logs/ypp_off3.csv')
+ypp_defense.to_csv('/Users/jamesjones/game_logs/ypp_def3.csv')
 
-# chances of getting 2+ yards on a play
-df.loc[:, 'YardsGained'].fillna(0, inplace=True)
-df['2plus'] = df.YardsGained.ge(2)
-a = (1 - df.loc[df.blitz.eq(1) & ~df.OffensivePlay.isin(off_excludes)].groupby('OffensivePlay')[
-    '2plus'].mean().sort_values(ascending=False)) / (
-                1 - df.loc[df.blitz.eq(1) & df.OffensivePlay.eq('Goal Line Normal FB Dive')]['2plus'].mean())
+ypp_offense = df.groupby('OffensivePlay', as_index=False)['YardsGained'].mean() \
+    .sort_values('YardsGained', ascending=False)
+ypp_defense = df.groupby('DefensivePlay', as_index=False)['YardsGained'].mean() \
+    .sort_values('YardsGained', ascending=True)
 
-gb = df.loc[df.Down.eq(4) & ~df.OffensivePlay.isin(off_excludes)].groupby('OffensivePlay')
-f = gb.filter(lambda x: x['OffensivePlay'].count() >= 30)
-aa = df.loc[f.index].groupby('OffensivePlay')['2plus'].mean().sort_values(ascending=False)
+off_plays_113 = ['Shotgun Normal HB Flare', 'Singleback Normal TE Quick Out', 'Singleback Normal HB Release Mid',
+                 'Singleback Normal SE Quick Hit', 'Singleback Normal WR Quick In', 'Singleback Normal FL Post']
+def_ypp_113 = df.loc[df.OffensivePlay.isin(off_plays_113)].groupby('DefensivePlay').agg(
+    {'YardsGained': ['mean', 'count']}) \
+    .sort_values(by=[def_ypp_113.columns[0]])
 
-d = df.loc[df.DefensivePlay.eq('Goal Line Attack #2') & ~df.OffensivePlay.isin(off_excludes)]
-ab = (1 - d.groupby('OffensivePlay')['2plus'].mean().sort_values(ascending=False)) / (
-            1 - d.loc[d.OffensivePlay.eq('Goal Line Normal FB Dive')]['2plus'].mean())
+off_plays_122 = ['Singleback Big WR Deep']
+def_ypp_122 = df.loc[df.OffensivePlay.isin(off_plays_122)].groupby('DefensivePlay').agg(
+    {'YardsGained': ['mean', 'count']}) \
+    .sort_values(by=[def_ypp_122.columns[0]])
 
-df = pd.read_feather('/Users/jamesjones/game_logs/xfl/xfl_2042.feather')
-df.to_csv('/Users/jamesjones/game_logs/xfl/xfl_2042.feather')
+def_plays_113 = ['Dime Normal Double WR1 WR2']
+off_ypp_113 = df.loc[df.DefensivePlay.isin(def_plays_113)].groupby('OffensivePlay').agg(
+    {'YardsGained': ['mean', 'count']})
+off_ypp_113.sort_values(('b', 'Yards Per Play'))
+
+team = ['HOU']
+off_plays = ['Singleback Normal TE Quick Out', 'Singleback Normal HB Release Mid',
+             'Singleback Normal SE Quick Hit', 'Singleback Normal WR Quick In', 'Singleback Normal FL Post']
+def_plays = ['play2']
+off_ypp = df.loc[df.DefensivePlay.isin(def_plays)].groupby('OffensivePlay').agg({'YardsGained': ['mean', 'count']})
+def_ypp = df.loc[df.OffensivePlay.isin(off_plays)].groupby('DefensivePlay').agg({'YardsGained': ['mean', 'count']}) \
+    .sort_values(by=[def_ypp.columns[0]])
+
+off_ypp = df.loc[df.DefensivePlay.isin(def_plays) & df.HasBall.isin(team)].groupby('OffensivePlay').agg(
+    {'YardsGained': ['mean', 'count']})
+def_ypp = df.loc[df.OffensivePlay.isin(off_plays) & df.HasBall.isin(team)].groupby('DefensivePlay').agg(
+    {'YardsGained': {'ypp_mean': 'mean', 'ypp_count': 'count'}})
+
+def_plays_113 = ['Dime Normal Double WR1 WR2']
+off_ypp_113 = df.loc[df.DefensivePlay.isin(def_plays_113)].groupby('OffensivePlay').agg \
+    (yards_per_play=pd.NamedAgg(column='YardsGained', aggfunc='mean')).agg \
+    (count=pd.NamedAgg(column='YardsGained', aggfunc='count')).sort_values(by='yards_per_play')
