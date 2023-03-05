@@ -9,12 +9,12 @@ class Config:
     root = r'/Users/jamesjones/game_logs/'
     seasons = r'/Users/jamesjones/game_logs/feathers'
     ls_dictionary = {
-        'qad': [2043],
+        'qad': [2043, 2044],
         'xfl': [2042, 2043],
-        'norig': [2028],
-        'paydirt': [1996],
-        'USFL': [2002],
-        'pfl': [2026],
+        'norig': [2028, 2029],
+        'paydirt': [1996, 1997],
+        'USFL': [2002, 2003],
+        'pfl': [2026, 2027],
         'lol': [2117],
     }
     sheet_lookup = {
@@ -36,6 +36,7 @@ class Config:
     version_map = {
         'qad': {
             2043: '0.4.6',
+            2044: '0.4.6',
         },
         'xfl': {
             2042: '0.4.6',
@@ -43,15 +44,19 @@ class Config:
         },
         'norig': {
             2028: '0.4.6',
+            2029: '0.4.6',
         },
         'paydirt': {
             1996: '0.4.6',
+            1997: '0.4.6',
         },
         'USFL': {
             2002: '0.4.6',
+            2003: '0.4.6',
         },
         'pfl': {
             2026: '0.4.6',
+            2027: '0.4.6',
         },
         'lol': {
             2117: '0.4.6',

@@ -262,29 +262,30 @@ def scout(league, season, team):
 
 
 # Load all seasons
-df = Config.load_feather('qad', 2039)
+df = Config.load_feather('pfl', 2027)
 df = format_df(pd.concat((Config.load_feather(k, y) for k, v in Config.ls_dictionary.items() for y in v))).reset_index(
     drop=True)
 
 # Scouting
-scout('xfl', 2043, 'PHI')
+scout('pfl', 2027, 'LBB')
 
 # download_all_logs()
 
-path = '/Users/jamesjones/game_logs/xfl/2043/xfl_2043.csv'
+path = '/Users/jamesjones/game_logs/pfl/2027/pfl_2027.csv'
 
 gdl = GameLogDownloader()
+gdl.set_league_season('pfl', 2027)
 gdl.download_season(path)
 
 # Compile a season
 SeasonCompiler.compile('qad', 2039)
 SeasonCompiler.compile('norig', 2027, players=True)
 # specify path to game logs
-SeasonCompiler.compile('qad', 2043, override_path='/Users/jamesjones/game_logs/qad/2043/qad_2043.csv')
-SeasonCompiler.compile('norig', 2028, override_path='/Users/jamesjones/game_logs/norig/2028/norig_2028.csv')
-SeasonCompiler.compile('paydirt', 1996, override_path='/Users/jamesjones/game_logs/paydirt/1996/paydirt_1996.csv')
-SeasonCompiler.compile('USFL', 2002, override_path='/Users/jamesjones/game_logs/USFL/2002/USFL_2002.csv')
-SeasonCompiler.compile('pfl', 2026, override_path='/Users/jamesjones/game_logs/pfl/2026/pfl_2026.csv')
+SeasonCompiler.compile('qad', 2044, override_path='/Users/jamesjones/game_logs/qad/2044/qad_2044.csv')
+SeasonCompiler.compile('norig', 2029, override_path='/Users/jamesjones/game_logs/norig/2029/norig_2029.csv')
+SeasonCompiler.compile('paydirt', 1997, override_path='/Users/jamesjones/game_logs/paydirt/1997/paydirt_1997.csv')
+SeasonCompiler.compile('USFL', 2003, override_path='/Users/jamesjones/game_logs/USFL/2003/USFL_2003.csv')
+SeasonCompiler.compile('pfl', 2027, override_path='/Users/jamesjones/game_logs/pfl/2027/pfl_2027.csv')
 SeasonCompiler.compile('lol', 2117, override_path='/Users/jamesjones/game_logs/lol/2117/lol_2117.csv')
 SeasonCompiler.compile('xfl', 2043, override_path='/Users/jamesjones/game_logs/xfl/2043/xfl_2043.csv')
 
@@ -339,13 +340,13 @@ off_play_adj_ev_total_212 = adj_ev(df.loc[df.OffensivePlay.isin(total_212)],
 # EV - Best Offensive Plays
 
 # 113
-def_113 = ['4-3 Normal WLB Outside Blitz', '4-3 Normal Double WR3', '4-3 Normal Double WR1',
-           '4-3 Normal Man QB Spy', '4-3 Under Crash Right', 'Nickel Normal SS Blitz', '4-3 Normal Double Safety Blitz']
+def_113 = ['Dime Flat Man Cover 1']
 def_play_adj_ev_113 = adj_ev(df.loc[df.DefensivePlay.isin(def_113)],
                              'OffensivePlay', all_plays, 'desc')
 
 # 203
-def_203 = ['4-3 Normal Man Under 1']
+def_203 = ['4-3 Normal Double WR1', '4-3 Normal WLB Outside Blitz', '4-3 Normal OLB Blitz Outside',
+           '4-3 Under Crash Right']
 def_play_adj_ev_203 = adj_ev(df.loc[df.DefensivePlay.isin(def_203)], 'OffensivePlay', all_plays, 'desc')
 
 # 212
@@ -357,114 +358,10 @@ def_311 = ['Dime Normal Double WR1 WR2']
 def_play_adj_ev_311 = adj_ev(df.loc[df.DefensivePlay.isin(def_311)],
                              'OffensivePlay', all_plays, 'desc')
 
-#############################################
-
-# Yards Per Play
-
-df = pd.concat((Config.load_feather(k, y) for k, v in Config.ls_dictionary.items() for y in v)).fillna(0)
-
-# 5
-
-off_plays_5 = ['Shotgun 5 Wide Parallel Slants']
-def_ypp_5 = df.loc[df.OffensivePlay.isin(off_plays_5)].groupby('DefensivePlay').agg(
-    {'YardsGained': ['mean', 'count']}) \
-    .sort_values(by=[def_ypp_5.columns[0]])
-
-# 014
-
-off_plays_014 = ['Empty 4 Wide Spread Corner Post']
-def_ypp_014 = df.loc[df.OffensivePlay.isin(off_plays_014)].groupby('DefensivePlay').agg(
-    {'YardsGained': ['mean', 'count']}) \
-    .sort_values(by=[def_ypp_014.columns[0]])
-
-# 104
-
-off_plays_104 = ['Singleback 4 Wide Quick Outs']
-def_ypp_104 = df.loc[df.OffensivePlay.isin(off_plays_104)].groupby('DefensivePlay').agg(
-    {'YardsGained': ['mean', 'count']}) \
-    .sort_values(by=[def_ypp_104.columns[0]])
-
-# 113
-
-off_plays_113 = ['Shotgun Normal HB Flare', 'Singleback Normal TE Quick Out', 'Singleback Normal HB Release Mid',
-                 'Singleback Normal SE Quick Hit', 'Singleback Normal WR Quick In', 'Singleback Normal FL Post']
-def_ypp_113 = df.loc[df.OffensivePlay.isin(off_plays_113)].groupby('DefensivePlay').agg(
-    {'YardsGained': ['mean', 'count']}) \
-    .sort_values(by=[def_ypp_113.columns[0]])
-
-# 122
-
-off_plays_122 = ['Singleback Big WR Deep', 'Singleback Big Ins and Outs']
-def_ypp_122 = df.loc[df.OffensivePlay.isin(off_plays_122)].groupby('DefensivePlay').agg(
-    {'YardsGained': ['mean', 'count']}) \
-    .sort_values(by=[def_ypp_122.columns[0]])
-
-# 203
-
-off_plays_203 = ['Split Backs 3 Wide WR Quick Out', 'Split Backs 3 Wide Slot Post', 'Split Backs 3 Wide Dive Left',
-                 'Split Backs 3 Wide Dive Right', 'I Formation 3WR Slot Short WR Deep', 'I Formation 3WR WR Out',
-                 'I Formation 3WR Backfield Flats', 'I Formation 3WR HB Inside Weak', 'I Formation 3WR FL Post']
-def_ypp_203 = df.loc[df.OffensivePlay.isin(off_plays_203)].groupby('DefensivePlay').agg(
-    {'YardsGained': ['mean', 'count']}) \
-    .sort_values(by=[def_ypp_203.columns[0]])
-
-# 212
-
-pass_plays_212 = ['I Formation Twin WR Hard Slants', 'I Formation Twin WR Quick Outs',
-                  'Weak I Normal WR Corner TE Middle', 'I Formation Normal Max Protect', 'I Formation Normal FL Hitch',
-                  ]
-run_plays_212 = ['Weak I Normal HB Inside Weak', 'I Formation Normal HB Dive', 'I Formation Normal HB Blast',
-                 'I Formation Normal HB Counter']
-total_plays_212 = pass_plays_212 + run_plays_212
-def_ypp_pass_212 = df.loc[df.OffensivePlay.isin(pass_plays_212)].groupby('DefensivePlay').agg(
-    {'YardsGained': ['mean', 'count']}) \
-    .sort_values(by=[def_ypp_pass_212.columns[0]])
-def_ypp_run_212 = df.loc[df.OffensivePlay.isin(run_plays_212)].groupby('DefensivePlay').agg(
-    {'YardsGained': ['mean', 'count']}) \
-    .sort_values(by=[def_ypp_run_212.columns[0]])
-def_ypp_total_212 = df.loc[df.OffensivePlay.isin(total_plays_212)].groupby('DefensivePlay').agg(
-    {'YardsGained': ['mean', 'count']}) \
-    .sort_values(by=[def_ypp_total_212.columns[0]])
-
 # 221
-
-pass_plays_221 = ['Strong I Big TE Post', 'Strong I Big Backfield Drag']
-run_plays_221 = []
-total_plays_221 = pass_plays_221 + run_plays_221
-def_ypp_pass_221 = df.loc[df.OffensivePlay.isin(pass_plays_221)].groupby('DefensivePlay').agg(
-    {'YardsGained': ['mean', 'count']}) \
-    .sort_values(by=[def_ypp_pass_221.columns[0]])
-def_ypp_run_221 = df.loc[df.OffensivePlay.isin(run_plays_221)].groupby('DefensivePlay').agg(
-    {'YardsGained': ['mean', 'count']}) \
-    .sort_values(by=[def_ypp_run_221.columns[0]])
-def_ypp_total_221 = df.loc[df.OffensivePlay.isin(total_plays_221)].groupby('DefensivePlay').agg(
-    {'YardsGained': ['mean', 'count']}) \
-    .sort_values(by=[def_ypp_total_221.columns[0]])
-
-
-# Yards Per Play - Best Offense
-
-# 113
-
-def_plays_113 = ['4-3 Normal WLB Outside Blitz', '4-3 Normal Double WR3', '4-3 Normal Double WR1']
-off_ypp_113 = df.loc[df.DefensivePlay.isin(def_plays_113)].groupby('OffensivePlay').agg(
-    {'YardsGained': ['mean', 'count']}) \
-    .sort_values(by=[off_ypp_113.columns[0]], ascending=False)
-
-# 203
-
-def_plays_203 = ['4-3 Normal Man Under 1']
-off_ypp_203 = df.loc[df.DefensivePlay.isin(def_plays_203)].groupby('OffensivePlay').agg(
-    {'YardsGained': ['mean', 'count']}) \
-    .sort_values(by=[off_ypp_203.columns[0]], ascending=False)
-
-# 212
-
-def_plays_212 = ['4-3 Normal WLB MLB Blitz', '4-3 Under Double LB Blitz', '4-3 Normal OLB Blitz Inside']
-off_ypp_212 = df.loc[df.DefensivePlay.isin(def_plays_212)].groupby('OffensivePlay').agg(
-    {'YardsGained': ['mean', 'count']}) \
-    .sort_values(by=[off_ypp_212.columns[0]], ascending=False)
-
+def_221 = ['3-4 Normal Man Cover 1', '4-3 Normal Man Under 1']
+def_play_adj_ev_221 = adj_ev(df.loc[df.DefensivePlay.isin(def_221)],
+                             'OffensivePlay', all_plays, 'desc')
 
 #######################################################
 
@@ -475,8 +372,8 @@ ypp.to_csv('/Users/jamesjones/game_logs/ypp_off_def_3.csv')
 
 ypp_offense = df.groupby('OffensivePlay', as_index=False).agg({'YardsGained': ['mean', 'count']})
 ypp_defense = df.groupby('DefensivePlay', as_index=False).agg({'YardsGained': ['mean', 'count']})
-ypp_offense.to_csv('/Users/jamesjones/game_logs/ypp_off3.csv')
-ypp_defense.to_csv('/Users/jamesjones/game_logs/ypp_def3.csv')
+ypp_offense.to_csv('/Users/jamesjones/game_logs/ypp_off.csv')
+ypp_defense.to_csv('/Users/jamesjones/game_logs/ypp_def.csv')
 
 ypp_offense = df.groupby('OffensivePlay', as_index=False)['YardsGained'].mean() \
     .sort_values('YardsGained', ascending=False)
