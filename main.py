@@ -40,7 +40,7 @@ def download_all_logs():
                 print(f'ERROR! {k} {y} not downloaded!')
 
 
-def adj_ev(dd, grouper, plays=all_plays, sort='desc', col_to_sum='YardsGained'):
+def adj_ev(dd, grouper, plays=all_plays, sort='desc', col_to_sum='YardsGained', column_to_check='Text'):
     dx = dd.loc[dd.YTGL.ge(20) & dd.YTGL.lt(80) & dd.Down.isin([1, 2, 3])].copy()
     dx = dx.loc[dx.OffPlayType.isin(plays) &
                 ~dx.DefensivePlay.isin(def_excludes) &
@@ -53,7 +53,11 @@ def adj_ev(dd, grouper, plays=all_plays, sort='desc', col_to_sum='YardsGained'):
 
     ev_adj_count = dx.groupby(grouper).ev_adj.count()
     ev_adj_score = dx.groupby(grouper).ev_adj.mean()
-    new_col = dx.groupby(grouper)[col_to_sum].sum() / dx.groupby(grouper).size()
+    yards_per_play = dx.groupby(grouper)[col_to_sum].sum() / dx.groupby(grouper).size()
+    interception_rate = dx.loc[dx[column_to_check].str.contains('.*INTERCEPTED.*', regex=True)].groupby(
+        grouper).size() / dx.groupby(grouper).size() * 100
+    sack_rate = dx.loc[dx[column_to_check].str.contains('.*sacked.*', regex=True)].groupby(grouper).size() / dx.groupby(
+        grouper).size() * 100
 
     rows = []
     for p in dx[grouper].unique():
@@ -69,7 +73,9 @@ def adj_ev(dd, grouper, plays=all_plays, sort='desc', col_to_sum='YardsGained'):
             rows[len(rows):] = [{grouper: p,
                                  'ev_adj': round(g, 3),
                                  'cnt': c,
-                                 'ypp': round(new_col[p], 3)
+                                 'ypp': round(yards_per_play[p], 3),
+                                 'interception_rate': round(interception_rate[p], 2),
+                                 'sack_rate': round(sack_rate[p], 2)
                                  }]
     sort_map = {'asc': True, 'desc': False}
     return pd.DataFrame(rows).sort_values('ev_adj', ascending=sort_map[sort]).reset_index(drop=True)
@@ -269,14 +275,14 @@ df = format_df(pd.concat((Config.load_feather(k, y) for k, v in Config.ls_dictio
     drop=True)
 
 # Scouting
-scout('pfl', 2027, 'SEA')
+scout('norig', 2030, 'KCC')
 
 # download_all_logs()
 
-path = '/Users/jamesjones/game_logs/lol/2118/lol_2118.csv'
+path = '/Users/jamesjones/game_logs/norig/2030/norig_2030.csv'
 
 gdl = GameLogDownloader()
-gdl.set_league_season('lol', 2118)
+gdl.set_league_season('norig', 2030)
 gdl.download_season(path)
 
 # Compile a season
@@ -284,7 +290,7 @@ SeasonCompiler.compile('qad', 2039)
 SeasonCompiler.compile('norig', 2027, players=True)
 # specify path to game logs
 SeasonCompiler.compile('qad', 2044, override_path='/Users/jamesjones/game_logs/qad/2044/qad_2044.csv')
-SeasonCompiler.compile('norig', 2029, override_path='/Users/jamesjones/game_logs/norig/2029/norig_2029.csv')
+SeasonCompiler.compile('norig', 2030, override_path='/Users/jamesjones/game_logs/norig/2030/norig_2030.csv')
 SeasonCompiler.compile('paydirt', 1997, override_path='/Users/jamesjones/game_logs/paydirt/1997/paydirt_1997.csv')
 SeasonCompiler.compile('USFL', 2003, override_path='/Users/jamesjones/game_logs/USFL/2003/USFL_2003.csv')
 SeasonCompiler.compile('pfl', 2027, override_path='/Users/jamesjones/game_logs/pfl/2027/pfl_2027.csv')
