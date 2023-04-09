@@ -7,6 +7,7 @@ from SeasonCompiler import SeasonCompiler
 
 df = pd.concat((Config.load_feather(k, y) for k, v in Config.ls_dictionary.items() for y in v)).fillna(0)
 
+
 # df = pd.read_feather('/Users/jamesjones/game_logs/xfl/xfl_2043.feather').fillna(0)
 
 # download_all_logs()
@@ -73,7 +74,6 @@ def_plays_113 = ['Dime Normal Double WR1 WR2']
 off_ypp_113 = df.loc[df.DefensivePlay.isin(def_plays_113)].groupby('OffensivePlay').agg(
     {'YardsGained': ['mean', 'count']}) \
     .sort_values(by=[off_ypp_113.columns[0]], ascending=False)
-
 
 team = ['HOU']
 off_plays = ['Singleback Normal TE Quick Out', 'Singleback Normal HB Release Mid',
