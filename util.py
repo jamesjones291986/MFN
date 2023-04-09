@@ -10,12 +10,12 @@ class Config:
     seasons = r'/Users/jamesjones/game_logs/feathers'
     ls_dictionary = {
         'qad': [2043, 2044],
-        'xfl': [2042, 2043],
+        'xfl': [2043, 2044],
         'norig': [2028, 2029],
         'paydirt': [1996, 1997],
-        'USFL': [2002, 2003],
+        'USFL': [2003],
         'pfl': [2026, 2027],
-        'lol': [2117],
+        'lol': [2117, 2118],
     }
     sheet_lookup = {
         'qad': '1Nab-IckGA6tG19TOxEu_fYgbNl_7dCZ9hzrTtqcrOO8',
@@ -39,8 +39,8 @@ class Config:
             2044: '0.4.6',
         },
         'xfl': {
-            2042: '0.4.6',
             2043: '0.4.6',
+            2044: '0.4.6',
         },
         'norig': {
             2028: '0.4.6',
@@ -51,7 +51,6 @@ class Config:
             1997: '0.4.6',
         },
         'USFL': {
-            2002: '0.4.6',
             2003: '0.4.6',
         },
         'pfl': {
@@ -60,6 +59,7 @@ class Config:
         },
         'lol': {
             2117: '0.4.6',
+            2118: '0.4.6',
         }
     }
 

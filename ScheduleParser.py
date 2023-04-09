@@ -33,277 +33,278 @@ def retro_schedule(schedule, tabs=2):
 
 # Copy schedules from the league schedule page. Paste them below and run the parse_scores.
 s = """Week 1
-Bulldogs 21 @ Wyverns 28   
-Toros 0 @ Outlaws 17   
-Rattlers 14 @ Bayhawks 24   
-Apollos 21 @ Warships 9   
-Miners 5 @ Hornets 20   
-Legion 30 @ Minutemen 3   
-Mafia 17 @ Brawlers 29   
-Grizzlies 18 @ Sharks 3   
-Founders 6 @ Bombers 15   
-Bearcats 24 @ Reapers 8   
-Spartans 12 @ Lumberjacks 29   
-Pioneers 7 @ Lightning 23   
-Archers 26 @ Stallions 14   
-Pirates 2 @ Hogs 0   
-Aliens 3 @ Medjays 6   
-Motors 48 @ Huskies 31   
+Stallions 14 @ Sabretooths 29   
+Blarney Stones 19 @ Bulls 6   
+Crocodiles 7 @ Diamonds 31   
+Assassins 10 @ Red Dragons 10 (OT)   
+Hex 9 @ Sphinx 23   
+Rhino 6 @ Hawkeyes 23   
+Barbarians 3 @ Jumbos 10   
+Ice 13 @ Eskimos 26   
+Daggers 10 @ Lightning 24   
+Blue 10 @ Labradors 24   
+Smoke 10 @ Riot 6   
+Chilli Peppers 13 @ Flying Serpents 24   
+Poison Dart Frogs 13 @ Zweig 28   
+Bite 24 @ Settlers 3   
+Gold Nuggets 7 @ Royals 38   
+Conjurors 6 @ Admirals 25   
 Week 2
-Miners 38 @ Toros 0   
-Pioneers 36 @ Sharks 7   
-Bearcats 6 @ Apollos 12   
-Medjays 13 @ Motors 34   
-Hogs 6 @ Bombers 9   
-Archers 40 @ Rattlers 31   
-Huskies 46 @ Pirates 24   
-Lumberjacks 17 @ Lightning 3   
-Aliens 17 @ Grizzlies 16   
-Brawlers 30 @ Reapers 3   
-Bulldogs 3 @ Warships 23   
-Spartans 27 @ Outlaws 3   
-Legion 12 @ Stallions 6   
-Hornets 34 @ Wyverns 22   
-Mafia 28 @ Minutemen 0   
-Founders 21 @ Bayhawks 11   
+Zweig 14 @ Smoke 19   
+Red Dragons 0 @ Diamonds 38   
+Hex 7 @ Chilli Peppers 26   
+Jumbos 8 @ Sphinx 13   
+Bite 3 @ Flying Serpents 20   
+Conjurors 11 @ Daggers 7   
+Barbarians 3 @ Blarney Stones 13   
+Hawkeyes 9 @ Blue 25   
+Riot 26 @ Gold Nuggets 21   
+Eskimos 0 @ Labradors 16   
+Royals 29 @ Admirals 7   
+Crocodiles 10 @ Rhino 25   
+Poison Dart Frogs 17 @ Assassins 21   
+Settlers 0 @ Stallions 19   
+Sabretooths 6 @ Bulls 12 (OT)   
+Ice 14 @ Lightning 42   
 Week 3
-Legion 17 @ Miners 14   
-Wyverns 18 @ Founders 3   
-Hornets 6 @ Spartans 37   
-Huskies 16 @ Motors 42   
-Bombers 15 @ Medjays 3   
-Lightning 18 @ Aliens 21   
-Lumberjacks 71 @ Rattlers 0   
-Grizzlies 36 @ Pirates 13   
-Minutemen 7 @ Reapers 32   
-Bulldogs 27 @ Sharks 10   
-Bayhawks 9 @ Brawlers 32   
-Mafia 20 @ Bearcats 30   
-Toros 17 @ Pioneers 10   
-Hogs 12 @ Apollos 45   
-Outlaws 13 @ Warships 20   
-Stallions 3 @ Archers 40   
+Smoke 13 @ Poison Dart Frogs 3   
+Bite 0 @ Chilli Peppers 20   
+Hex 0 @ Zweig 34   
+Diamonds 31 @ Rhino 9   
+Red Dragons 3 @ Assassins 6   
+Riot 10 @ Sphinx 31   
+Labradors 10 @ Lightning 20   
+Eskimos 43 @ Conjurors 17   
+Gold Nuggets 3 @ Stallions 19   
+Royals 19 @ Blarney Stones 16 (OT)   
+Settlers 17 @ Sabretooths 16   
+Admirals 19 @ Barbarians 22   
+Ice 13 @ Blue 24   
+Bulls 16 @ Daggers 3   
+Hawkeyes 22 @ Crocodiles 16   
+Flying Serpents 17 @ Jumbos 20   
 Week 4
-Motors 17 @ Bayhawks 27   
-Medjays 23 @ Mafia 70   
-Stallions 0 @ Outlaws 31   
-Miners 15 @ Lightning 3   
-Pioneers 3 @ Lumberjacks 63   
-Bombers 9 @ Apollos 13   
-Rattlers 27 @ Legion 24   
-Hornets 7 @ Grizzlies 21   
-Warships 52 @ Toros 14   
-Hogs 8 @ Archers 21   
-Minutemen 17 @ Wyverns 19   
-Brawlers 17 @ Bearcats 16   
-Reapers 18 @ Spartans 13   
-Founders 35 @ Bulldogs 3   
-Pirates 9 @ Aliens 19   
-Huskies 41 @ Sharks 3   
+Blarney Stones 10 @ Admirals 3   
+Sabretooths 23 @ Red Dragons 9   
+Crocodiles 3 @ Jumbos 8   
+Assassins 6 @ Royals 13   
+Blue 24 @ Bulls 12   
+Barbarians 7 @ Lightning 20   
+Conjurors 6 @ Labradors 30   
+Daggers 14 @ Ice 6   
+Settlers 29 @ Smoke 10   
+Chilli Peppers 26 @ Riot 17   
+Flying Serpents 25 @ Bite 10   
+Diamonds 66 @ Hex 6   
+Rhino 28 @ Sphinx 10   
+Hawkeyes 10 @ Poison Dart Frogs 16   
+Zweig 26 @ Stallions 10   
+Eskimos 35 @ Gold Nuggets 7   
 Week 5
-Outlaws 17 @ Legion 12   
-Wyverns 25 @ Miners 0   
-Founders 31 @ Hornets 16   
-Spartans 6 @ Warships 16   
-Archers 40 @ Huskies 0   
-Bombers 13 @ Motors 16 (OT)   
-Medjays 3 @ Aliens 10   
-Lightning 37 @ Rattlers 7   
-Grizzlies 0 @ Lumberjacks 23   
-Reapers 33 @ Pirates 7   
-Sharks 16 @ Minutemen 10   
-Bulldogs 3 @ Bayhawks 30   
-Brawlers 3 @ Mafia 34   
-Pioneers 24 @ Bearcats 49   
-Apollos 46 @ Toros 6   
-Stallions 4 @ Hogs 17   
+Stallions 19 @ Conjurors 3   
+Crocodiles 17 @ Riot 5   
+Labradors 13 @ Settlers 0   
+Gold Nuggets 13 @ Flying Serpents 31   
+Hex 0 @ Smoke 14   
+Rhino 37 @ Chilli Peppers 27   
+Poison Dart Frogs 6 @ Bite 27   
+Assassins 0 @ Zweig 29   
+Sphinx 10 @ Diamonds 39   
+Hawkeyes 20 @ Red Dragons 10   
+Jumbos 13 @ Admirals 0   
+Blarney Stones 3 @ Blue 12   
+Daggers 3 @ Eskimos 26   
+Royals 21 @ Barbarians 3   
+Ice 20 @ Sabretooths 16   
+Lightning 19 @ Bulls 17   
 Week 6
-Stallions 0 @ Bombers 16   
-Legion 0 @ Lightning 22   
-Rattlers 10 @ Hornets 44   
-Pioneers 3 @ Miners 12   
-Bayhawks 25 @ Mafia 27   
-Apollos 31 @ Motors 40   
-Grizzlies 6 @ Outlaws 13   
-Lumberjacks 23 @ Medjays 6   
-Huskies 19 @ Toros 0   
-Archers 10 @ Warships 22   
-Minutemen 10 @ Hogs 11   
-Wyverns 3 @ Brawlers 26   
-Spartans 32 @ Bearcats 13   
-Reapers 3 @ Bulldogs 6   
-Pirates 3 @ Founders 25   
-Aliens 8 @ Sharks 22   
+Daggers 0 @ Settlers 18   
+Hex 0 @ Bite 31   
+Flying Serpents 24 @ Riot 16   
+Sphinx 3 @ Hawkeyes 26   
+Stallions 6 @ Eskimos 40   
+Crocodiles 13 @ Assassins 18   
+Red Dragons 3 @ Jumbos 17   
+Rhino 15 @ Diamonds 31   
+Chilli Peppers 24 @ Smoke 12   
+Zweig 35 @ Poison Dart Frogs 3   
+Bulls 3 @ Royals 26   
+Admirals 19 @ Ice 7   
+Labradors 3 @ Barbarians 26   
+Sabretooths 3 @ Blue 32   
+Blarney Stones 33 @ Conjurors 0   
+Lightning 20 @ Gold Nuggets 7   
 Week 7
-Lightning 28 @ Hornets 35   
-Legion 10 @ Founders 30   
-Rattlers 23 @ Pioneers 6   
-Medjays 10 @ Grizzlies 13   
-Lumberjacks 37 @ Aliens 6   
-Brawlers 41 @ Bulldogs 0   
-Reapers 22 @ Mafia 27   
-Bayhawks 21 @ Wyverns 20   
-Miners 10 @ Minutemen 7   
-Bearcats 3 @ Warships 11   
-Outlaws 0 @ Spartans 31   
-Apollos 61 @ Stallions 0   
-Archers 52 @ Motors 48   
-Toros 0 @ Bombers 26   
-Hogs 0 @ Huskies 17   
-Pirates 15 @ Sharks 13   
+Conjurors 0 @ Stallions 51   
+Royals 16 @ Sabretooths 13   
+Bulls 13 @ Crocodiles 17   
+Labradors 16 @ Riot 6   
+Gold Nuggets 3 @ Settlers 26   
+Smoke 3 @ Flying Serpents 24   
+Hex 0 @ Rhino 12   
+Chilli Peppers 20 @ Poison Dart Frogs 3   
+Zweig 13 @ Bite 3   
+Diamonds 20 @ Assassins 13   
+Sphinx 13 @ Red Dragons 10 (OT)   
+Jumbos 0 @ Hawkeyes 21   
+Admirals 3 @ Blarney Stones 21   
+Blue 17 @ Daggers 10   
+Eskimos 24 @ Lightning 13   
+Barbarians 21 @ Ice 23   
 Week 8
-Bombers 20 @ Reapers 30   
-Hornets 23 @ Legion 19   
-Bayhawks 9 @ Founders 20   
-Minutemen 27 @ Rattlers 3   
-Huskies 17 @ Wyverns 20   
-Medjays 13 @ Pioneers 3   
-Pirates 10 @ Lightning 16   
-Sharks 7 @ Hogs 43   
-Mafia 24 @ Bulldogs 17   
-Warships 13 @ Outlaws 24   
-Apollos 36 @ Archers 3   
-Motors 56 @ Toros 17   
-Aliens 7 @ Brawlers 52   
-Spartans 48 @ Stallions 6   
-Bearcats 19 @ Miners 10   
-Lumberjacks 20 @ Grizzlies 12   
+Smoke 10 @ Crocodiles 10 (OT)   
+Zweig 34 @ Flying Serpents 13   
+Ice 3 @ Assassins 20   
+Bite 23 @ Poison Dart Frogs 13   
+Lightning 16 @ Daggers 6   
+Diamonds 51 @ Sphinx 3   
+Bulls 3 @ Labradors 17   
+Riot 9 @ Hex 13   
+Blue 20 @ Barbarians 3   
+Chilli Peppers 10 @ Eskimos 21   
+Red Dragons 6 @ Hawkeyes 30   
+Jumbos 0 @ Rhino 35   
+Gold Nuggets 39 @ Conjurors 20   
+Royals 27 @ Settlers 2   
+Admirals 13 @ Sabretooths 41   
+Stallions 3 @ Blarney Stones 9   
 Week 9
-Lightning 31 @ Archers 7   
-Outlaws 19 @ Reapers 28   
-Wyverns 21 @ Bayhawks 20   
-Sharks 7 @ Medjays 36   
-Bombers 10 @ Huskies 3   
-Motors 62 @ Stallions 13   
-Hogs 6 @ Aliens 10   
-Pioneers 7 @ Pirates 26   
-Miners 19 @ Legion 13   
-Lumberjacks 51 @ Apollos 7   
-Spartans 38 @ Toros 5   
-Warships 13 @ Bearcats 24   
-Bulldogs 9 @ Brawlers 31   
-Mafia 7 @ Founders 17   
-Minutemen 7 @ Hornets 26   
-Rattlers 10 @ Grizzlies 41   
+Sphinx 7 @ Smoke 12   
+Rhino 31 @ Crocodiles 22   
+Jumbos 13 @ Red Dragons 6   
+Bite 16 @ Hawkeyes 14   
+Flying Serpents 24 @ Assassins 14   
+Gold Nuggets 3 @ Labradors 24   
+Stallions 3 @ Chilli Peppers 16   
+Blue 20 @ Diamonds 25   
+Admirals 9 @ Royals 29   
+Sabretooths 35 @ Conjurors 19   
+Settlers 0 @ Blarney Stones 44   
+Bulls 48 @ Ice 17   
+Daggers 11 @ Barbarians 6   
+Poison Dart Frogs 24 @ Hex 3   
+Riot 7 @ Zweig 41   
+Lightning 7 @ Eskimos 18   
 Week 10
-Brawlers 40 @ Minutemen 3   
-Sharks 0 @ Lumberjacks 46   
-Pioneers 7 @ Grizzlies 66   
-Outlaws 7 @ Bearcats 22   
-Bayhawks 27 @ Legion 10   
-Bulldogs 6 @ Spartans 28   
-Warships 12 @ Lightning 13   
-Miners 23 @ Rattlers 28   
-Founders 15 @ Wyverns 14   
-Apollos 33 @ Hornets 11   
-Bombers 19 @ Archers 0   
-Aliens 13 @ Huskies 6   
-Hogs 0 @ Medjays 17   
-Toros 3 @ Stallions 16   
-Motors 17 @ Pirates 30   
-Mafia 31 @ Reapers 3   
+Gold Nuggets 17 @ Daggers 14   
+Smoke 17 @ Lightning 3   
+Red Dragons 19 @ Poison Dart Frogs 13   
+Assassins 3 @ Rhino 31   
+Crocodiles 6 @ Sphinx 16   
+Jumbos 0 @ Bite 3   
+Settlers 19 @ Conjurors 14   
+Hex 6 @ Riot 30   
+Chilli Peppers 24 @ Diamonds 31   
+Ice 7 @ Blarney Stones 36   
+Barbarians 9 @ Bulls 13   
+Sabretooths 21 @ Admirals 18   
+Blue 14 @ Royals 11   
+Eskimos 13 @ Zweig 12   
+Hawkeyes 7 @ Flying Serpents 9   
+Labradors 19 @ Stallions 17   
 Week 11
-Legion 20 @ Hornets 23   
-Founders 58 @ Rattlers 7   
-Reapers 11 @ Wyverns 17   
-Minutemen 7 @ Bayhawks 26   
-Huskies 23 @ Bombers 10   
-Lumberjacks 64 @ Pioneers 3   
-Medjays 9 @ Pirates 28   
-Sharks 0 @ Lightning 36   
-Hogs 23 @ Bulldogs 7   
-Warships 26 @ Mafia 29   
-Outlaws 17 @ Apollos 30   
-Archers 22 @ Toros 7   
-Aliens 6 @ Motors 31   
-Spartans 22 @ Brawlers 41   
-Stallions 0 @ Bearcats 26   
-Grizzlies 6 @ Miners 0   
+Chilli Peppers 23 @ Crocodiles 0   
+Smoke 3 @ Diamonds 47   
+Blarney Stones 23 @ Hawkeyes 3   
+Assassins 9 @ Jumbos 15   
+Zweig 27 @ Red Dragons 13   
+Riot 16 @ Bite 3   
+Flying Serpents 29 @ Poison Dart Frogs 3   
+Daggers 11 @ Hex 6   
+Labradors 17 @ Eskimos 20   
+Barbarians 7 @ Sabretooths 27   
+Stallions 19 @ Gold Nuggets 7   
+Admirals 22 @ Rhino 10   
+Sphinx 20 @ Ice 0   
+Bulls 6 @ Blue 24   
+Settlers 12 @ Lightning 13   
+Conjurors 3 @ Royals 33   
 Week 12
-Motors 32 @ Bombers 31   
-Toros 10 @ Hogs 13   
-Medjays 23 @ Sharks 7   
-Lightning 40 @ Pioneers 16   
-Pirates 6 @ Lumberjacks 28   
-Bayhawks 34 @ Aliens 0   
-Wyverns 8 @ Legion 3   
-Hornets 19 @ Miners 22 (OT)   
-Founders 26 @ Minutemen 7   
-Reapers 7 @ Brawlers 44   
-Outlaws 9 @ Bulldogs 17   
-Spartans 23 @ Mafia 38   
-Apollos 37 @ Huskies 3   
-Stallions 6 @ Grizzlies 31   
-Rattlers 0 @ Warships 36   
-Bearcats 37 @ Archers 20   
+Diamonds 17 @ Crocodiles 12   
+Smoke 6 @ Chilli Peppers 13   
+Assassins 0 @ Hawkeyes 32   
+Jumbos 0 @ Zweig 30   
+Bite 13 @ Red Dragons 19   
+Poison Dart Frogs 3 @ Riot 6   
+Flying Serpents 21 @ Hex 3   
+Daggers 9 @ Labradors 16   
+Barbarians 14 @ Eskimos 35   
+Sabretooths 14 @ Gold Nuggets 19   
+Admirals 16 @ Stallions 9   
+Sphinx 0 @ Rhino 34   
+Ice 20 @ Bulls 26   
+Lightning 10 @ Blue 20   
+Conjurors 28 @ Settlers 32   
+Blarney Stones 20 @ Royals 19   
 Week 13
-Bulldogs 15 @ Reapers 0   
-Wyverns 13 @ Mafia 21   
-Bayhawks 20 @ Minutemen 2   
-Legion 3 @ Lumberjacks 51   
-Lightning 7 @ Grizzlies 8   
-Sharks 14 @ Pirates 38   
-Hogs 7 @ Motors 23   
-Bombers 16 @ Aliens 17   
-Brawlers 16 @ Founders 20   
-Rattlers 14 @ Miners 33   
-Bearcats 19 @ Outlaws 0   
-Warships 24 @ Spartans 10   
-Stallions 0 @ Toros 6   
-Archers 6 @ Apollos 52   
-Medjays 24 @ Huskies 35   
-Hornets 34 @ Pioneers 0   
+Crocodiles 2 @ Hex 0   
+Zweig 23 @ Chilli Peppers 6   
+Assassins 0 @ Bite 33   
+Poison Dart Frogs 9 @ Flying Serpents 23   
+Diamonds 17 @ Riot 0   
+Hawkeyes 9 @ Jumbos 3   
+Eskimos 24 @ Daggers 0   
+Rhino 30 @ Smoke 5   
+Red Dragons 3 @ Bulls 28   
+Royals 29 @ Sphinx 7   
+Stallions 23 @ Settlers 10   
+Gold Nuggets 0 @ Admirals 16   
+Labradors 16 @ Ice 10 (OT)   
+Barbarians 6 @ Blue 27   
+Sabretooths 9 @ Blarney Stones 58   
+Lightning 78 @ Conjurors 6   
 Week 14
-Reapers 12 @ Warships 20   
-Minutemen 15 @ Bulldogs 12   
-Motors 24 @ Sharks 30   
-Mafia 19 @ Huskies 22   
-Bearcats 3 @ Spartans 17   
-Hornets 20 @ Bayhawks 7   
-Brawlers 41 @ Outlaws 10   
-Stallions 0 @ Apollos 66   
-Bombers 16 @ Hogs 6   
-Pirates 46 @ Medjays 21   
-Grizzlies 9 @ Legion 0   
-Miners 0 @ Founders 36   
-Rattlers 14 @ Wyverns 57   
-Lightning 0 @ Lumberjacks 23   
-Aliens 15 @ Pioneers 13   
-Toros 21 @ Archers 24   
+Lightning 26 @ Labradors 6   
+Settlers 0 @ Eskimos 30   
+Conjurors 6 @ Poison Dart Frogs 41   
+Royals 27 @ Ice 7   
+Sphinx 14 @ Chilli Peppers 36   
+Smoke 27 @ Hex 3   
+Daggers 10 @ Stallions 13   
+Blarney Stones 18 @ Gold Nuggets 16   
+Hawkeyes 14 @ Assassins 6   
+Diamonds 17 @ Jumbos 0   
+Crocodiles 3 @ Sabretooths 24   
+Bulls 16 @ Barbarians 6   
+Blue 45 @ Admirals 3   
+Riot 15 @ Rhino 20   
+Bite 7 @ Zweig 12   
+Red Dragons 3 @ Flying Serpents 23   
 Week 15
-Grizzlies 7 @ Lightning 14   
-Outlaws 10 @ Archers 39   
-Reapers 16 @ Bayhawks 0   
-Wyverns 13 @ Medjays 6   
-Sharks 3 @ Bombers 33   
-Huskies 31 @ Stallions 3   
-Motors 45 @ Hogs 7   
-Aliens 10 @ Pirates 41   
-Pioneers 19 @ Legion 16 (OT)   
-Miners 0 @ Lumberjacks 27   
-Apollos 12 @ Spartans 6   
-Toros 0 @ Bearcats 30   
-Warships 25 @ Brawlers 34   
-Bulldogs 10 @ Mafia 6   
-Minutemen 0 @ Founders 33   
-Hornets 46 @ Rattlers 0   
+Zweig 13 @ Hawkeyes 37   
+Diamonds 7 @ Blarney Stones 24   
+Sabretooths 20 @ Royals 18   
+Stallions 10 @ Lightning 20   
+Bite 14 @ Smoke 6   
+Riot 6 @ Chilli Peppers 32   
+Hex 26 @ Conjurors 9   
+Settlers 12 @ Gold Nuggets 3   
+Bulls 21 @ Admirals 27   
+Eskimos 20 @ Blue 17   
+Ice 13 @ Barbarians 6   
+Rhino 10 @ Red Dragons 7   
+Sphinx 12 @ Crocodiles 13   
+Jumbos 29 @ Assassins 9   
+Poison Dart Frogs 10 @ Daggers 23   
+Flying Serpents 20 @ Labradors 6   
 Week 16
-Sharks 6 @ Aliens 30   
-Lightning 17 @ Medjays 19   
-Legion 43 @ Rattlers 0   
-Mafia 56 @ Outlaws 15   
-Brawlers 24 @ Motors 3   
-Toros 3 @ Apollos 29   
-Archers 14 @ Spartans 47   
-Warships 38 @ Stallions 3   
-Huskies 12 @ Hogs 7   
-Pirates 6 @ Bombers 3   
-Founders 13 @ Reapers 15   
-Lumberjacks 7 @ Hornets 24   
-Grizzlies 30 @ Pioneers 17   
-Bearcats 24 @ Bulldogs 7   
-Bayhawks 20 @ Miners 6   
-Wyverns 19 @ Minutemen 3   """
+Flying Serpents 22 @ Zweig 19 (OT)   
+Hawkeyes 24 @ Diamonds 17   
+Blarney Stones 9 @ Sabretooths 13   
+Royals 24 @ Stallions 9   
+Lightning 13 @ Bite 17   
+Riot 10 @ Smoke 15   
+Chilli Peppers 9 @ Hex 3   
+Conjurors 6 @ Gold Nuggets 17   
+Admirals 9 @ Settlers 13   
+Eskimos 27 @ Bulls 26   
+Blue 16 @ Ice 3   
+Rhino 18 @ Barbarians 9   
+Red Dragons 23 @ Crocodiles 6   
+Assassins 10 @ Sphinx 23   
+Poison Dart Frogs 23 @ Jumbos 6   
+Labradors 27 @ Daggers 23   
+"""
 
 print(parse_scores(s))
 

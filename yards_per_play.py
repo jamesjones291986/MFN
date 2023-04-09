@@ -29,9 +29,8 @@ def_ypp_104 = df.loc[df.OffensivePlay.isin(off_plays_104)].groupby('DefensivePla
 
 # 113
 
-off_plays_113 = ['Shotgun Normal HB Flare', 'Singleback Normal TE Quick Out', 'Singleback Normal WR Quick In',
-                 'Shotgun Normal TE Out', 'Singleback Normal FL Post', 'Singleback Normal HB Release Mid',
-                 'Singleback Normal SE Quick Hit']
+off_plays_113 = ['Singleback Normal Quick Slant', 'Singleback Normal TE Quick Out', 'Singleback Normal WR Quick In',
+                 'Singleback Normal HB Release Mid', 'Singleback Normal SE Quick Hit']
 def_ypp_113 = df.loc[df.OffensivePlay.isin(off_plays_113)].groupby('DefensivePlay').agg(
     {'YardsGained': ['mean', 'count']}) \
     .sort_values(by=[def_ypp_113.columns[0]])
@@ -45,7 +44,7 @@ def_ypp_122 = df.loc[df.OffensivePlay.isin(off_plays_122)].groupby('DefensivePla
 
 # 203
 
-off_plays_203 = ['Split Backs 3 Wide Drag In', 'Split Backs 3 Wide Slot Post', 'Split Backs 3 Wide WR Quick Out']
+off_plays_203 = ['I Formation 3WR WR Out', 'I Formation 3WR Slot Short WR Deep', 'Split Backs 3 Wide WR Quick Out']
 def_ypp_203 = df.loc[df.OffensivePlay.isin(off_plays_203)].groupby('DefensivePlay').agg(
     {'YardsGained': ['mean', 'count']}) \
     .sort_values(by=[def_ypp_203.columns[0]])
@@ -53,7 +52,7 @@ def_ypp_203 = df.loc[df.OffensivePlay.isin(off_plays_203)].groupby('DefensivePla
 # 212
 
 pass_plays_212 = ['I Formation Twin WR Hard Slants', 'I Formation Twin WR Quick Outs',
-                  'Weak I Normal WR Corner TE Middle', 'I Formation Normal Max Protect', 'I Formation Normal FL Hitch',
+                  'Strong I Normal WR Post TE Out', 'I Formation Normal Max Protect', 'I Formation Normal FL Hitch',
                   ]
 run_plays_212 = ['Weak I Normal HB Inside Weak', 'I Formation Normal HB Dive', 'I Formation Normal HB Blast',
                  'I Formation Normal HB Counter']
@@ -88,7 +87,7 @@ def_ypp_total_221 = df.loc[df.OffensivePlay.isin(total_plays_221)].groupby('Defe
 
 # 113
 
-def_plays_113 = ['4-3 Normal Man Under 1']
+def_plays_113 = ['Dime Normal Man Cover 1', '3-4 Normal OLBs Blitz', '3-4 Normal Man Cover 1', '4-3 Under Crash Right']
 off_ypp_113 = df.loc[df.DefensivePlay.isin(def_plays_113)].groupby('OffensivePlay').agg(
     {'YardsGained': ['mean', 'count']}) \
     .sort_values(by=[off_ypp_113.columns[0]], ascending=False)
@@ -102,7 +101,8 @@ off_ypp_203 = df.loc[df.DefensivePlay.isin(def_plays_203)].groupby('OffensivePla
 
 # 212
 
-def_plays_212 = ['3-4 Normal Double WR2']
+def_plays_212 = ['4-3 Normal Double WR3', '3-4 Normal OLBs Blitz', '4-3 Under Crash Right',
+                 '4-3 Normal WLB Outside Blitz']
 off_ypp_212 = df.loc[df.DefensivePlay.isin(def_plays_212)].groupby('OffensivePlay').agg(
     {'YardsGained': ['mean', 'count']}) \
     .sort_values(by=[off_ypp_212.columns[0]], ascending=False)
@@ -116,7 +116,14 @@ off_ypp_311 = df.loc[df.DefensivePlay.isin(def_plays_311)].groupby('OffensivePla
 
 # 122
 
-def_plays_122 = ['Nickel Strong 2 Deep Man Under']
+def_plays_122 = ['Dime Normal Man Cover 1']
 off_ypp_122 = df.loc[df.DefensivePlay.isin(def_plays_122)].groupby('OffensivePlay').agg(
     {'YardsGained': ['mean', 'count']}) \
     .sort_values(by=[off_ypp_122.columns[0]], ascending=False)
+
+#023
+
+def_plays_023 = ['4-3 Under Double Safety Blitz']
+off_ypp_023 = df.loc[df.DefensivePlay.isin(def_plays_023)].groupby('OffensivePlay').agg(
+    {'YardsGained': ['mean', 'count']}) \
+    .sort_values(by=[off_ypp_023.columns[0]], ascending=False)

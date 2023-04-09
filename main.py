@@ -267,14 +267,14 @@ df = format_df(pd.concat((Config.load_feather(k, y) for k, v in Config.ls_dictio
     drop=True)
 
 # Scouting
-scout('pfl', 2027, 'LBB')
+scout('pfl', 2027, 'SEA')
 
 # download_all_logs()
 
-path = '/Users/jamesjones/game_logs/pfl/2027/pfl_2027.csv'
+path = '/Users/jamesjones/game_logs/lol/2118/lol_2118.csv'
 
 gdl = GameLogDownloader()
-gdl.set_league_season('pfl', 2027)
+gdl.set_league_season('lol', 2118)
 gdl.download_season(path)
 
 # Compile a season
@@ -286,15 +286,23 @@ SeasonCompiler.compile('norig', 2029, override_path='/Users/jamesjones/game_logs
 SeasonCompiler.compile('paydirt', 1997, override_path='/Users/jamesjones/game_logs/paydirt/1997/paydirt_1997.csv')
 SeasonCompiler.compile('USFL', 2003, override_path='/Users/jamesjones/game_logs/USFL/2003/USFL_2003.csv')
 SeasonCompiler.compile('pfl', 2027, override_path='/Users/jamesjones/game_logs/pfl/2027/pfl_2027.csv')
-SeasonCompiler.compile('lol', 2117, override_path='/Users/jamesjones/game_logs/lol/2117/lol_2117.csv')
-SeasonCompiler.compile('xfl', 2043, override_path='/Users/jamesjones/game_logs/xfl/2043/xfl_2043.csv')
+SeasonCompiler.compile('lol', 2118, override_path='/Users/jamesjones/game_logs/lol/2118/lol_2118.csv')
+SeasonCompiler.compile('xfl', 2044, override_path='/Users/jamesjones/game_logs/xfl/2044/xfl_2044.csv')
 
 # EV - Best Defensive Plays
 
+def_play_adj_ev = adj_ev(df, 'DefensivePlay', all_plays, 'asc')
+
+off_play_adj_ev = adj_ev(df, 'OffensivePlay', all_plays, 'desc')
+
+off_play_adj_ev.to_csv(Config.root + '/off_play_adj_ev.csv', index=False)
+
+df.to_csv(Config.root + '/df.csv', index=False)
+
 # 113
-pass_113 = ['Shotgun Normal HB Flare', 'Singleback Normal TE Quick Out', 'Singleback Normal HB Release Mid',
-            'Singleback Normal SE Quick Hit', 'Singleback Normal WR Quick In', 'Singleback Normal FL Post']
-run_113 = ['Singleback Normal HB Inside Weak', 'Singleback Normal HB Dive Weak', 'Singleback Norma HB Counter Weak']
+pass_113 = ['Singleback Normal HB Release Mid', 'Singleback Normal TE Quick Out']
+run_113 = ['Singleback Normal HB Counter Weak', 'Singleback Normal HB Dive Strong', 'Singleback Slot Strong HB Counter',
+           'Singleback Normal HB Inside Weak']
 total_113 = pass_113 + run_113
 off_play_adj_ev_pass_113 = adj_ev(df.loc[df.OffensivePlay.isin(pass_113)],
                                   'DefensivePlay', all_plays, 'asc')
@@ -304,8 +312,8 @@ off_play_adj_ev_total_113 = adj_ev(df.loc[df.OffensivePlay.isin(total_113)],
                                    'DefensivePlay', all_plays, 'asc')
 
 # 122
-pass_122 = ['Singleback Big WR Deep']
-run_122 = ['Singleback Big HB Inside Weak']
+pass_122 = ['Singleback Big WR Deep', 'Singleback Big Ins and Out']
+run_122 = ['Singleback Big HB Inside Strong']
 total_122 = pass_122 + run_122
 off_play_adj_ev_pass_122 = adj_ev(df.loc[df.OffensivePlay.isin(pass_122)],
                                   'DefensivePlay', all_plays, 'asc')
@@ -315,9 +323,9 @@ off_play_adj_ev_total_122 = adj_ev(df.loc[df.OffensivePlay.isin(total_122)],
                                    'DefensivePlay', all_plays, 'asc')
 
 # 203
-pass_203 = ['Split Backs 3 Wide WR Quick Out', 'Split Backs 3 Wide Slot Post']
-run_203 = ['Split Backs 3 Wide Dive Left', 'Split Backs 3 Wide Dive Right', 'Shotgun 2RB 3WR Shotgun Dive',
-           'Shotgun 2RB 3WR Shotgun Sweep']
+pass_203 = ['I Formation 3WR FL Post', 'I Formation 3WR Slot Short WR Deep', 'I Formation 3WR WR Out',
+            'Split Backs 3 Wide WR Quick Out', 'Split Backs 3 Wide Slot Post']
+run_203 = ['I Formation 3WR HB Inside Weak', 'I Formation 3WR HB Inside Strong']
 total_203 = pass_203 + run_203
 off_play_adj_ev_pass_203 = adj_ev(df.loc[df.OffensivePlay.isin(pass_203)],
                                   'DefensivePlay', all_plays, 'asc')
@@ -327,8 +335,9 @@ off_play_adj_ev_total_203 = adj_ev(df.loc[df.OffensivePlay.isin(total_203)],
                                    'DefensivePlay', all_plays, 'asc')
 
 # 212
-pass_212 = ['I Formation Normal FL Hitch', 'Weak I Normal Skinny Posts', 'Split Backs Normal Skinny Post Corner']
-run_212 = ['Weak I Normal HB Inside Weak', 'I Formation Normal HB Draw', 'I Formation Normal HB Dive']
+pass_212 = ['Weak I Normal WR Corner TE Middle', 'I Formation Normal FL Hitch', 'I Formation Twin WR Hard Slants',
+            'I Formation Twin WR Quick Outs', 'Strong I Normal WR Post TE Out', 'I Formation Normal Max Protect']
+run_212 = ['I Formation Normal HB Blast', 'I Formation Normal HB Dive', 'Strong I Normal HB Off Tackle Strong']
 total_212 = pass_212 + run_212
 off_play_adj_ev_pass_212 = adj_ev(df.loc[df.OffensivePlay.isin(pass_212)],
                                   'DefensivePlay', all_plays, 'asc')
@@ -337,20 +346,41 @@ off_play_adj_ev_run_212 = adj_ev(df.loc[df.OffensivePlay.isin(run_212)],
 off_play_adj_ev_total_212 = adj_ev(df.loc[df.OffensivePlay.isin(total_212)],
                                    'DefensivePlay', all_plays, 'asc')
 
+# 311
+pass_311 = ['I Formation Power Play Action HB Downfield']
+run_311 = ['I Formation Power HB Strong Outside']
+total_311 = pass_311 + run_311
+off_play_adj_ev_pass_311 = adj_ev(df.loc[df.OffensivePlay.isin(pass_311)],
+                                  'DefensivePlay', all_plays, 'asc')
+off_play_adj_ev_run_311 = adj_ev(df.loc[df.OffensivePlay.isin(run_311)],
+                                 'DefensivePlay', all_plays, 'asc')
+off_play_adj_ev_total_311 = adj_ev(df.loc[df.OffensivePlay.isin(total_311)],
+                                   'DefensivePlay', all_plays, 'asc')
+
+# 221
+pass_221 = ['Strong I Big TE Post', 'Strong I Big Backfield Drag']
+off_play_adj_ev_pass_221 = adj_ev(df.loc[df.OffensivePlay.isin(pass_221)],
+                                  'DefensivePlay', all_plays, 'asc')
+
+# 104
+pass_104 = ['Singleback 4 Wide Quick Outs']
+off_play_adj_ev_pass_104 = adj_ev(df.loc[df.OffensivePlay.isin(pass_104)],
+                                  'DefensivePlay', all_plays, 'asc')
+
 # EV - Best Offensive Plays
 
 # 113
-def_113 = ['Dime Flat Man Cover 1']
+def_113 = ['4-3 Normal Double WR3', '4-3 Normal WLB Outside Blitz', '4-3 Normal Double WR1']
 def_play_adj_ev_113 = adj_ev(df.loc[df.DefensivePlay.isin(def_113)],
                              'OffensivePlay', all_plays, 'desc')
 
 # 203
-def_203 = ['4-3 Normal Double WR1', '4-3 Normal WLB Outside Blitz', '4-3 Normal OLB Blitz Outside',
-           '4-3 Under Crash Right']
+def_203 = ['Dime Flat 2 Deep Man Under', '4-3 Normal Man Under 1', '4-3 Normal OLB Blitz Outside',
+           '4-3 Normal WLB MLB Blitz']
 def_play_adj_ev_203 = adj_ev(df.loc[df.DefensivePlay.isin(def_203)], 'OffensivePlay', all_plays, 'desc')
 
 # 212
-def_212 = ['4-3 Normal WLB MLB Blitz', '4-3 Under Double LB Blitz', '4-3 Normal OLB Blitz Inside']
+def_212 = ['4-3 Normal Man Under 1', '4-3 Normal OLB Blitz Inside', '4-3 Under Double LB Blitz']
 def_play_adj_ev_212 = adj_ev(df.loc[df.DefensivePlay.isin(def_212)], 'OffensivePlay', all_plays, 'desc')
 
 # 311
@@ -359,8 +389,13 @@ def_play_adj_ev_311 = adj_ev(df.loc[df.DefensivePlay.isin(def_311)],
                              'OffensivePlay', all_plays, 'desc')
 
 # 221
-def_221 = ['3-4 Normal Man Cover 1', '4-3 Normal Man Under 1']
+def_221 = ['4-3 Normal Man Under 1', '4-3 Normal OLB Blitz Inside']
 def_play_adj_ev_221 = adj_ev(df.loc[df.DefensivePlay.isin(def_221)],
+                             'OffensivePlay', all_plays, 'desc')
+
+# 023
+def_023 = ['Goal Line Attack #2']
+def_play_adj_ev_023 = adj_ev(df.loc[df.DefensivePlay.isin(def_023)],
                              'OffensivePlay', all_plays, 'desc')
 
 #######################################################
