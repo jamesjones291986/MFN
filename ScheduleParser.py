@@ -33,277 +33,277 @@ def retro_schedule(schedule, tabs=2):
 
 # Copy schedules from the league schedule page. Paste them below and run the parse_scores.
 s = """Week 1
-Stallions 14 @ Sabretooths 29   
-Blarney Stones 19 @ Bulls 6   
-Crocodiles 7 @ Diamonds 31   
-Assassins 10 @ Red Dragons 10 (OT)   
-Hex 9 @ Sphinx 23   
-Rhino 6 @ Hawkeyes 23   
-Barbarians 3 @ Jumbos 10   
-Ice 13 @ Eskimos 26   
-Daggers 10 @ Lightning 24   
-Blue 10 @ Labradors 24   
-Smoke 10 @ Riot 6   
-Chilli Peppers 13 @ Flying Serpents 24   
-Poison Dart Frogs 13 @ Zweig 28   
-Bite 24 @ Settlers 3   
-Gold Nuggets 7 @ Royals 38   
-Conjurors 6 @ Admirals 25   
+Texans 6 @ Jaguars 23   
+Chargers 3 @ Spotted Cows 15   
+Clout Chasers 38 @ Vikings 16   
+Superhawks 8 @ Wraiths 31   
+Hammerheads 17 @ Colts 7   
+Larceny 24 @ Nonsayins 17   
+Chiefs 34 @ Raiders 10   
+Broncos 17 @ Bears 27   
+Buccaneers 6 @ Patriots 21   
+Dolphins 30 @ Dinos 9   
+Ravens 10 @ Stillers 3   
+Browns 12 @ Dongers 23   
+Giants 48 @ Cheesesteaks 24   
+Redwolves 44 @ Aliens 17   
+Panthers 14 @ Saints 38   
+Buffalo 13 @ Jets 19   
 Week 2
-Zweig 14 @ Smoke 19   
-Red Dragons 0 @ Diamonds 38   
-Hex 7 @ Chilli Peppers 26   
-Jumbos 8 @ Sphinx 13   
-Bite 3 @ Flying Serpents 20   
-Conjurors 11 @ Daggers 7   
-Barbarians 3 @ Blarney Stones 13   
-Hawkeyes 9 @ Blue 25   
-Riot 26 @ Gold Nuggets 21   
-Eskimos 0 @ Labradors 16   
-Royals 29 @ Admirals 7   
-Crocodiles 10 @ Rhino 25   
-Poison Dart Frogs 17 @ Assassins 21   
-Settlers 0 @ Stallions 19   
-Sabretooths 6 @ Bulls 12 (OT)   
-Ice 14 @ Lightning 42   
+Dolphins 0 @ Buffalo 36   
+Dinos 20 @ Stillers 20 (OT)   
+Browns 7 @ Ravens 22   
+Patriots 2 @ Jets 49   
+Saints 22 @ Clout Chasers 13   
+Wraiths 52 @ Nonsayins 3   
+Superhawks 45 @ Spotted Cows 24   
+Colts 9 @ Larceny 23   
+Hammerheads 24 @ Jaguars 38   
+Chiefs 27 @ Texans 26   
+Chargers 14 @ Broncos 31   
+Raiders 27 @ Bears 26   
+Vikings 10 @ Aliens 24   
+Dongers 76 @ Redwolves 33   
+Cheesesteaks 13 @ Buccaneers 71   
+Giants 13 @ Panthers 3   
 Week 3
-Smoke 13 @ Poison Dart Frogs 3   
-Bite 0 @ Chilli Peppers 20   
-Hex 0 @ Zweig 34   
-Diamonds 31 @ Rhino 9   
-Red Dragons 3 @ Assassins 6   
-Riot 10 @ Sphinx 31   
-Labradors 10 @ Lightning 20   
-Eskimos 43 @ Conjurors 17   
-Gold Nuggets 3 @ Stallions 19   
-Royals 19 @ Blarney Stones 16 (OT)   
-Settlers 17 @ Sabretooths 16   
-Admirals 19 @ Barbarians 22   
-Ice 13 @ Blue 24   
-Bulls 16 @ Daggers 3   
-Hawkeyes 22 @ Crocodiles 16   
-Flying Serpents 17 @ Jumbos 20   
+Browns 50 @ Cheesesteaks 9   
+Ravens 23 @ Dinos 10   
+Stillers 17 @ Jets 19   
+Chiefs 9 @ Buffalo 6   
+Chargers 7 @ Clout Chasers 57   
+Raiders 24 @ Colts 13   
+Texans 18 @ Broncos 3   
+Larceny 3 @ Hammerheads 26   
+Saints 3 @ Redwolves 9   
+Buccaneers 12 @ Spotted Cows 15   
+Vikings 9 @ Bears 7   
+Nonsayins 13 @ Giants 30   
+Dolphins 17 @ Aliens 12   
+Panthers 13 @ Dongers 12   
+Wraiths 6 @ Superhawks 22   
+Jaguars 28 @ Patriots 16   
 Week 4
-Blarney Stones 10 @ Admirals 3   
-Sabretooths 23 @ Red Dragons 9   
-Crocodiles 3 @ Jumbos 8   
-Assassins 6 @ Royals 13   
-Blue 24 @ Bulls 12   
-Barbarians 7 @ Lightning 20   
-Conjurors 6 @ Labradors 30   
-Daggers 14 @ Ice 6   
-Settlers 29 @ Smoke 10   
-Chilli Peppers 26 @ Riot 17   
-Flying Serpents 25 @ Bite 10   
-Diamonds 66 @ Hex 6   
-Rhino 28 @ Sphinx 10   
-Hawkeyes 10 @ Poison Dart Frogs 16   
-Zweig 26 @ Stallions 10   
-Eskimos 35 @ Gold Nuggets 7   
+Stillers 20 @ Browns 11   
+Jaguars 37 @ Colts 14   
+Chiefs 30 @ Hammerheads 16   
+Chargers 0 @ Raiders 38   
+Nonsayins 3 @ Texans 35   
+Spotted Cows 6 @ Vikings 16   
+Dolphins 9 @ Broncos 32   
+Patriots 19 @ Panthers 7   
+Aliens 3 @ Buffalo 45   
+Dongers 3 @ Saints 53   
+Giants 7 @ Redwolves 13   
+Ravens 38 @ Cheesesteaks 12   
+Bears 17 @ Wraiths 20   
+Clout Chasers 40 @ Larceny 6   
+Superhawks 24 @ Buccaneers 13   
+Dinos 3 @ Jets 30   
 Week 5
-Stallions 19 @ Conjurors 3   
-Crocodiles 17 @ Riot 5   
-Labradors 13 @ Settlers 0   
-Gold Nuggets 13 @ Flying Serpents 31   
-Hex 0 @ Smoke 14   
-Rhino 37 @ Chilli Peppers 27   
-Poison Dart Frogs 6 @ Bite 27   
-Assassins 0 @ Zweig 29   
-Sphinx 10 @ Diamonds 39   
-Hawkeyes 20 @ Red Dragons 10   
-Jumbos 13 @ Admirals 0   
-Blarney Stones 3 @ Blue 12   
-Daggers 3 @ Eskimos 26   
-Royals 21 @ Barbarians 3   
-Ice 20 @ Sabretooths 16   
-Lightning 19 @ Bulls 17   
+Larceny 7 @ Texans 17   
+Spotted Cows 3 @ Raiders 9   
+Clout Chasers 21 @ Bears 14   
+Vikings 3 @ Chiefs 48   
+Superhawks 11 @ Jaguars 32   
+Colts 24 @ Nonsayins 0   
+Broncos 10 @ Dinos 19   
+Ravens 20 @ Chargers 3   
+Panthers 3 @ Aliens 9   
+Cheesesteaks 29 @ Redwolves 26   
+Hammerheads 3 @ Wraiths 24   
+Buccaneers 14 @ Saints 28   
+Buffalo 28 @ Browns 3   
+Giants 13 @ Dongers 3   
+Patriots 16 @ Stillers 20   
+Jets 22 @ Dolphins 3   
 Week 6
-Daggers 0 @ Settlers 18   
-Hex 0 @ Bite 31   
-Flying Serpents 24 @ Riot 16   
-Sphinx 3 @ Hawkeyes 26   
-Stallions 6 @ Eskimos 40   
-Crocodiles 13 @ Assassins 18   
-Red Dragons 3 @ Jumbos 17   
-Rhino 15 @ Diamonds 31   
-Chilli Peppers 24 @ Smoke 12   
-Zweig 35 @ Poison Dart Frogs 3   
-Bulls 3 @ Royals 26   
-Admirals 19 @ Ice 7   
-Labradors 3 @ Barbarians 26   
-Sabretooths 3 @ Blue 32   
-Blarney Stones 33 @ Conjurors 0   
-Lightning 20 @ Gold Nuggets 7   
+Clout Chasers 28 @ Spotted Cows 3   
+Nonsayins 9 @ Vikings 19   
+Giants 3 @ Ravens 21   
+Panthers 3 @ Buffalo 26   
+Aliens 2 @ Saints 6   
+Patriots 10 @ Dolphins 18   
+Colts 13 @ Chiefs 59   
+Broncos 17 @ Jaguars 22   
+Chargers 16 @ Texans 24   
+Hammerheads 10 @ Superhawks 12   
+Larceny 13 @ Bears 19 (OT)   
+Cheesesteaks 24 @ Wraiths 49   
+Redwolves 13 @ Dongers 6   
+Jets 22 @ Buccaneers 13   
+Dinos 10 @ Browns 27   
+Raiders 16 @ Stillers 0   
 Week 7
-Conjurors 0 @ Stallions 51   
-Royals 16 @ Sabretooths 13   
-Bulls 13 @ Crocodiles 17   
-Labradors 16 @ Riot 6   
-Gold Nuggets 3 @ Settlers 26   
-Smoke 3 @ Flying Serpents 24   
-Hex 0 @ Rhino 12   
-Chilli Peppers 20 @ Poison Dart Frogs 3   
-Zweig 13 @ Bite 3   
-Diamonds 20 @ Assassins 13   
-Sphinx 13 @ Red Dragons 10 (OT)   
-Jumbos 0 @ Hawkeyes 21   
-Admirals 3 @ Blarney Stones 21   
-Blue 17 @ Daggers 10   
-Eskimos 24 @ Lightning 13   
-Barbarians 21 @ Ice 23   
+Browns 13 @ Dolphins 20   
+Redwolves 6 @ Ravens 41   
+Texans 13 @ Wraiths 27   
+Aliens 43 @ Nonsayins 0   
+Buccaneers 22 @ Giants 13   
+Saints 7 @ Patriots 10   
+Dinos 7 @ Buffalo 42   
+Cheesesteaks 14 @ Dongers 79   
+Stillers 2 @ Jaguars 33   
+Colts 3 @ Hammerheads 17   
+Spotted Cows 26 @ Broncos 16   
+Bears 31 @ Chargers 3   
+Panthers 0 @ Jets 14   
+Larceny 19 @ Vikings 14   
+Raiders 13 @ Chiefs 19   
+Superhawks 13 @ Clout Chasers 19   
 Week 8
-Smoke 10 @ Crocodiles 10 (OT)   
-Zweig 34 @ Flying Serpents 13   
-Ice 3 @ Assassins 20   
-Bite 23 @ Poison Dart Frogs 13   
-Lightning 16 @ Daggers 6   
-Diamonds 51 @ Sphinx 3   
-Bulls 3 @ Labradors 17   
-Riot 9 @ Hex 13   
-Blue 20 @ Barbarians 3   
-Chilli Peppers 10 @ Eskimos 21   
-Red Dragons 6 @ Hawkeyes 30   
-Jumbos 0 @ Rhino 35   
-Gold Nuggets 39 @ Conjurors 20   
-Royals 27 @ Settlers 2   
-Admirals 13 @ Sabretooths 41   
-Stallions 3 @ Blarney Stones 9   
+Stillers 20 @ Giants 12   
+Aliens 3 @ Buccaneers 26   
+Nonsayins 14 @ Larceny 24   
+Vikings 6 @ Superhawks 38   
+Texans 19 @ Hammerheads 14   
+Wraiths 43 @ Colts 3   
+Browns 3 @ Chiefs 48   
+Redwolves 0 @ Panthers 45   
+Dolphins 10 @ Jets 33   
+Dinos 6 @ Ravens 16   
+Buffalo 28 @ Patriots 10   
+Cheesesteaks 17 @ Saints 52   
+Spotted Cows 6 @ Dongers 20   
+Bears 20 @ Clout Chasers 35   
+Jaguars 50 @ Chargers 19   
+Broncos 13 @ Raiders 27   
 Week 9
-Sphinx 7 @ Smoke 12   
-Rhino 31 @ Crocodiles 22   
-Jumbos 13 @ Red Dragons 6   
-Bite 16 @ Hawkeyes 14   
-Flying Serpents 24 @ Assassins 14   
-Gold Nuggets 3 @ Labradors 24   
-Stallions 3 @ Chilli Peppers 16   
-Blue 20 @ Diamonds 25   
-Admirals 9 @ Royals 29   
-Sabretooths 35 @ Conjurors 19   
-Settlers 0 @ Blarney Stones 44   
-Bulls 48 @ Ice 17   
-Daggers 11 @ Barbarians 6   
-Poison Dart Frogs 24 @ Hex 3   
-Riot 7 @ Zweig 41   
-Lightning 7 @ Eskimos 18   
+Saints 26 @ Aliens 5   
+Hammerheads 3 @ Raiders 15   
+Chiefs 52 @ Spotted Cows 10   
+Broncos 45 @ Vikings 18   
+Jaguars 41 @ Nonsayins 2   
+Dolphins 12 @ Stillers 6   
+Patriots 6 @ Dinos 0   
+Ravens 13 @ Browns 17   
+Redwolves 6 @ Giants 31   
+Dongers 77 @ Cheesesteaks 14   
+Wraiths 19 @ Clout Chasers 33   
+Superhawks 46 @ Larceny 0   
+Bears 19 @ Panthers 7   
+Buffalo 13 @ Buccaneers 6   
+Jets 16 @ Texans 23   
+Colts 28 @ Chargers 24   
 Week 10
-Gold Nuggets 17 @ Daggers 14   
-Smoke 17 @ Lightning 3   
-Red Dragons 19 @ Poison Dart Frogs 13   
-Assassins 3 @ Rhino 31   
-Crocodiles 6 @ Sphinx 16   
-Jumbos 0 @ Bite 3   
-Settlers 19 @ Conjurors 14   
-Hex 6 @ Riot 30   
-Chilli Peppers 24 @ Diamonds 31   
-Ice 7 @ Blarney Stones 36   
-Barbarians 9 @ Bulls 13   
-Sabretooths 21 @ Admirals 18   
-Blue 14 @ Royals 11   
-Eskimos 13 @ Zweig 12   
-Hawkeyes 7 @ Flying Serpents 9   
-Labradors 19 @ Stallions 17   
+Nonsayins 0 @ Bears 31   
+Vikings 16 @ Spotted Cows 6   
+Wraiths 13 @ Jaguars 34   
+Colts 3 @ Texans 41   
+Hammerheads 17 @ Broncos 14   
+Chargers 0 @ Chiefs 86   
+Patriots 3 @ Raiders 31   
+Saints 23 @ Buccaneers 16   
+Larceny 27 @ Redwolves 6   
+Dongers 17 @ Superhawks 15   
+Giants 12 @ Aliens 16   
+Dolphins 6 @ Panthers 15   
+Clout Chasers 38 @ Cheesesteaks 16   
+Stillers 17 @ Buffalo 64   
+Jets 9 @ Ravens 7   
+Browns 38 @ Dinos 10   
 Week 11
-Chilli Peppers 23 @ Crocodiles 0   
-Smoke 3 @ Diamonds 47   
-Blarney Stones 23 @ Hawkeyes 3   
-Assassins 9 @ Jumbos 15   
-Zweig 27 @ Red Dragons 13   
-Riot 16 @ Bite 3   
-Flying Serpents 29 @ Poison Dart Frogs 3   
-Daggers 11 @ Hex 6   
-Labradors 17 @ Eskimos 20   
-Barbarians 7 @ Sabretooths 27   
-Stallions 19 @ Gold Nuggets 7   
-Admirals 22 @ Rhino 10   
-Sphinx 20 @ Ice 0   
-Bulls 6 @ Blue 24   
-Settlers 12 @ Lightning 13   
-Conjurors 3 @ Royals 33   
+Redwolves 0 @ Browns 66   
+Ravens 19 @ Dolphins 13   
+Nonsayins 0 @ Wraiths 51   
+Buccaneers 27 @ Aliens 30   
+Saints 26 @ Giants 0   
+Patriots 6 @ Buffalo 47   
+Dongers 10 @ Dinos 7   
+Cheesesteaks 6 @ Stillers 41   
+Jaguars 37 @ Hammerheads 16   
+Broncos 24 @ Colts 13   
+Spotted Cows 7 @ Bears 12   
+Chargers 0 @ Jets 38   
+Panthers 6 @ Larceny 6 (OT)   
+Raiders 28 @ Vikings 7   
+Chiefs 19 @ Clout Chasers 26   
+Texans 3 @ Superhawks 24   
 Week 12
-Diamonds 17 @ Crocodiles 12   
-Smoke 6 @ Chilli Peppers 13   
-Assassins 0 @ Hawkeyes 32   
-Jumbos 0 @ Zweig 30   
-Bite 13 @ Red Dragons 19   
-Poison Dart Frogs 3 @ Riot 6   
-Flying Serpents 21 @ Hex 3   
-Daggers 9 @ Labradors 16   
-Barbarians 14 @ Eskimos 35   
-Sabretooths 14 @ Gold Nuggets 19   
-Admirals 16 @ Stallions 9   
-Sphinx 0 @ Rhino 34   
-Ice 20 @ Bulls 26   
-Lightning 10 @ Blue 20   
-Conjurors 28 @ Settlers 32   
-Blarney Stones 20 @ Royals 19   
+Spotted Cows 13 @ Nonsayins 12   
+Giants 3 @ Vikings 10   
+Buffalo 52 @ Ravens 10   
+Saints 36 @ Panthers 10   
+Patriots 19 @ Aliens 27   
+Colts 16 @ Dolphins 18   
+Chiefs 27 @ Broncos 12   
+Jaguars 37 @ Texans 3   
+Chargers 17 @ Hammerheads 41   
+Bears 10 @ Superhawks 26   
+Larceny 3 @ Wraiths 25   
+Redwolves 96 @ Cheesesteaks 3   
+Dongers 16 @ Buccaneers 6   
+Jets 23 @ Browns 3   
+Stillers 19 @ Dinos 13 (OT)   
+Clout Chasers 30 @ Raiders 19   
 Week 13
-Crocodiles 2 @ Hex 0   
-Zweig 23 @ Chilli Peppers 6   
-Assassins 0 @ Bite 33   
-Poison Dart Frogs 9 @ Flying Serpents 23   
-Diamonds 17 @ Riot 0   
-Hawkeyes 9 @ Jumbos 3   
-Eskimos 24 @ Daggers 0   
-Rhino 30 @ Smoke 5   
-Red Dragons 3 @ Bulls 28   
-Royals 29 @ Sphinx 7   
-Stallions 23 @ Settlers 10   
-Gold Nuggets 0 @ Admirals 16   
-Labradors 16 @ Ice 10 (OT)   
-Barbarians 6 @ Blue 27   
-Sabretooths 9 @ Blarney Stones 58   
-Lightning 78 @ Conjurors 6   
+Raiders 20 @ Broncos 3   
+Browns 6 @ Stillers 24   
+Cheesesteaks 0 @ Giants 56   
+Ravens 6 @ Dongers 22   
+Nonsayins 56 @ Superhawks 7   
+Bears 3 @ Chiefs 42   
+Spotted Cows 13 @ Clout Chasers 56   
+Vikings 10 @ Chargers 13   
+Texans 10 @ Colts 3   
+Wraiths 24 @ Saints 22   
+Jaguars 38 @ Larceny 6   
+Dinos 37 @ Redwolves 36   
+Buffalo 22 @ Hammerheads 16   
+Panthers 3 @ Buccaneers 9   
+Dolphins 10 @ Patriots 6   
+Aliens 0 @ Jets 20   
 Week 14
-Lightning 26 @ Labradors 6   
-Settlers 0 @ Eskimos 30   
-Conjurors 6 @ Poison Dart Frogs 41   
-Royals 27 @ Ice 7   
-Sphinx 14 @ Chilli Peppers 36   
-Smoke 27 @ Hex 3   
-Daggers 10 @ Stallions 13   
-Blarney Stones 18 @ Gold Nuggets 16   
-Hawkeyes 14 @ Assassins 6   
-Diamonds 17 @ Jumbos 0   
-Crocodiles 3 @ Sabretooths 24   
-Bulls 16 @ Barbarians 6   
-Blue 45 @ Admirals 3   
-Riot 15 @ Rhino 20   
-Bite 7 @ Zweig 12   
-Red Dragons 3 @ Flying Serpents 23   
+Superhawks 14 @ Colts 10   
+Redwolves 0 @ Bears 55   
+Chiefs 28 @ Chargers 3   
+Texans 16 @ Ravens 10   
+Cheesesteaks 0 @ Dinos 72   
+Raiders 12 @ Jaguars 10   
+Vikings 6 @ Wraiths 45   
+Clout Chasers 62 @ Broncos 31   
+Aliens 9 @ Panthers 10   
+Spotted Cows 13 @ Larceny 20   
+Nonsayins 0 @ Hammerheads 94   
+Buffalo 10 @ Saints 19   
+Giants 21 @ Browns 31   
+Dongers 9 @ Stillers 27   
+Jets 40 @ Patriots 10   
+Buccaneers 25 @ Dolphins 10   
 Week 15
-Zweig 13 @ Hawkeyes 37   
-Diamonds 7 @ Blarney Stones 24   
-Sabretooths 20 @ Royals 18   
-Stallions 10 @ Lightning 20   
-Bite 14 @ Smoke 6   
-Riot 6 @ Chilli Peppers 32   
-Hex 26 @ Conjurors 9   
-Settlers 12 @ Gold Nuggets 3   
-Bulls 21 @ Admirals 27   
-Eskimos 20 @ Blue 17   
-Ice 13 @ Barbarians 6   
-Rhino 10 @ Red Dragons 7   
-Sphinx 12 @ Crocodiles 13   
-Jumbos 29 @ Assassins 9   
-Poison Dart Frogs 10 @ Daggers 23   
-Flying Serpents 20 @ Labradors 6   
+Buffalo 23 @ Dolphins 10   
+Stillers 19 @ Ravens 13   
+Browns 0 @ Patriots 13   
+Jets 17 @ Saints 22   
+Clout Chasers 126 @ Nonsayins 0   
+Wraiths 9 @ Spotted Cows 6   
+Larceny 6 @ Superhawks 28   
+Colts 19 @ Jaguars 28   
+Hammerheads 23 @ Texans 26 (OT)   
+Broncos 10 @ Chiefs 52   
+Raiders 29 @ Chargers 0   
+Bears 6 @ Vikings 19   
+Aliens 3 @ Dongers 24   
+Buccaneers 44 @ Redwolves 3   
+Panthers 45 @ Cheesesteaks 0   
+Dinos 10 @ Giants 6   
 Week 16
-Flying Serpents 22 @ Zweig 19 (OT)   
-Hawkeyes 24 @ Diamonds 17   
-Blarney Stones 9 @ Sabretooths 13   
-Royals 24 @ Stallions 9   
-Lightning 13 @ Bite 17   
-Riot 10 @ Smoke 15   
-Chilli Peppers 9 @ Hex 3   
-Conjurors 6 @ Gold Nuggets 17   
-Admirals 9 @ Settlers 13   
-Eskimos 27 @ Bulls 26   
-Blue 16 @ Ice 3   
-Rhino 18 @ Barbarians 9   
-Red Dragons 23 @ Crocodiles 6   
-Assassins 10 @ Sphinx 23   
-Poison Dart Frogs 23 @ Jumbos 6   
-Labradors 27 @ Daggers 23   
+Bears 28 @ Spotted Cows 0   
+Dinos 6 @ Colts 13   
+Broncos 21 @ Chargers 33   
+Jets 13 @ Buffalo 16   
+Ravens 17 @ Patriots 13   
+Stillers 29 @ Redwolves 23   
+Aliens 46 @ Cheesesteaks 0   
+Buccaneers 10 @ Panthers 17   
+Wraiths 10 @ Larceny 20   
+Superhawks 2 @ Nonsayins 18   
+Texans 3 @ Raiders 9   
+Vikings 7 @ Clout Chasers 46   
+Jaguars 17 @ Chiefs 31   
+Hammerheads 21 @ Browns 7   
+Saints 13 @ Dolphins 21   
+Dongers 5 @ Giants 11      
 """
 
 print(parse_scores(s))
