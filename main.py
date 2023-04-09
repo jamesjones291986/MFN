@@ -40,7 +40,7 @@ def download_all_logs():
                 print(f'ERROR! {k} {y} not downloaded!')
 
 
-def adj_ev(dd, grouper, plays=all_plays, sort='desc'):
+def adj_ev(dd, grouper, plays=all_plays, sort='desc', col_to_sum='YardsGained'):
     dx = dd.loc[dd.YTGL.ge(20) & dd.YTGL.lt(80) & dd.Down.isin([1, 2, 3])].copy()
     dx = dx.loc[dx.OffPlayType.isin(plays) &
                 ~dx.DefensivePlay.isin(def_excludes) &
@@ -53,6 +53,7 @@ def adj_ev(dd, grouper, plays=all_plays, sort='desc'):
 
     ev_adj_count = dx.groupby(grouper).ev_adj.count()
     ev_adj_score = dx.groupby(grouper).ev_adj.mean()
+    new_col = dx.groupby(grouper)[col_to_sum].sum() / dx.groupby(grouper).size()
 
     rows = []
     for p in dx[grouper].unique():
@@ -67,7 +68,8 @@ def adj_ev(dd, grouper, plays=all_plays, sort='desc'):
         if c > 50:
             rows[len(rows):] = [{grouper: p,
                                  'ev_adj': round(g, 3),
-                                 'cnt': c
+                                 'cnt': c,
+                                 'ypp': round(new_col[p], 3)
                                  }]
     sort_map = {'asc': True, 'desc': False}
     return pd.DataFrame(rows).sort_values('ev_adj', ascending=sort_map[sort]).reset_index(drop=True)
