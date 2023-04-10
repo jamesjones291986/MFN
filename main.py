@@ -302,14 +302,9 @@ SeasonCompiler.compile('moguls', 2044, override_path='/Users/jamesjones/game_log
 ###########################################
 
 # EV - Best Overall Plays
-
-def_play_adj_ev = adj_ev(df, 'DefensivePlay', all_plays, 'asc')
-
 off_play_adj_ev = adj_ev(df, 'OffensivePlay', all_plays, 'desc')
 
 off_play_adj_ev.to_csv(Config.root + '/off_play_adj_ev.csv', index=False)
-
-df.to_csv(Config.root + '/df.csv', index=False)
 
 # Best Defensive Calls
 formations = {
@@ -364,7 +359,6 @@ for formation in formations:
                                                        all_plays, 'asc')
 
 # Best Offensive Calls
-# Define defensive formations and their adjusted expected values for each play type
 def_formations = {
     '113': ['3-4 Normal Man Cover 1', '4-3 Normal WLB Outside Blitz', '4-3 Normal Double WR1'],
     '203': ['Dime Normal Man Cover 1', '3-4 Normal Man Cover 1'],
