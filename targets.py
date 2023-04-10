@@ -4,7 +4,7 @@ from SheetsRef import SheetsRef
 
 # Config
 targets = ['RB1', 'RB2', 'FB2', 'FB1', 'TE1', 'TE2', 'WR1', 'WR3', 'WR2', 'WR4', 'WR5']
-global_off_ref = SheetsRef(Config.sheet_lookup['global'], 'OffPlays').get_dataframe()
+global_off_ref = SheetsRef(Config.sheet_lookup['global_file'], 'OffPlays').get_dataframe()
 
 # Load data
 df = pd.concat((Config.load_feather_with_players(k, y)

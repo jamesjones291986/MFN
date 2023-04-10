@@ -33,277 +33,277 @@ def retro_schedule(schedule, tabs=2):
 
 # Copy schedules from the league schedule page. Paste them below and run the parse_scores.
 s = """Week 1
-Texans 6 @ Jaguars 23   
-Chargers 3 @ Spotted Cows 15   
-Clout Chasers 38 @ Vikings 16   
-Superhawks 8 @ Wraiths 31   
-Hammerheads 17 @ Colts 7   
-Larceny 24 @ Nonsayins 17   
-Chiefs 34 @ Raiders 10   
-Broncos 17 @ Bears 27   
-Buccaneers 6 @ Patriots 21   
-Dolphins 30 @ Dinos 9   
-Ravens 10 @ Stillers 3   
-Browns 12 @ Dongers 23   
-Giants 48 @ Cheesesteaks 24   
-Redwolves 44 @ Aliens 17   
-Panthers 14 @ Saints 38   
-Buffalo 13 @ Jets 19   
+Seahawks 13 @ Demons 41   
+Monarchs 19 @ The Red Dragon 10   
+Xtreme 3 @ Tigers 23   
+Upside Down Sicilians 15 @ Shadow Dancers 3   
+Devils 6 @ Thundercocks 23   
+Lions 18 @ OrangeCrush 9   
+Rumble Ponies 16 @ Barbarians 13   
+Bears 12 @ Templars 3   
+Fire Breathing Rubber Duckies 13 @ Rocky Mountain Bronx 16   
+Invaders 23 @ Terror 10   
+Anteaters 16 @ Holy Hand Grenades 13   
+Argonauts 10 @ Wraiths 16   
+Dildozers 6 @ Bandits 21   
+Ravens 3 @ Raiders 16   
+Kayfabe 34 @ Bangles 17   
+Pirates 0 @ Thrashers 26   
 Week 2
-Dolphins 0 @ Buffalo 36   
-Dinos 20 @ Stillers 20 (OT)   
-Browns 7 @ Ravens 22   
-Patriots 2 @ Jets 49   
-Saints 22 @ Clout Chasers 13   
-Wraiths 52 @ Nonsayins 3   
-Superhawks 45 @ Spotted Cows 24   
-Colts 9 @ Larceny 23   
-Hammerheads 24 @ Jaguars 38   
-Chiefs 27 @ Texans 26   
-Chargers 14 @ Broncos 31   
-Raiders 27 @ Bears 26   
-Vikings 10 @ Aliens 24   
-Dongers 76 @ Redwolves 33   
-Cheesesteaks 13 @ Buccaneers 71   
-Giants 13 @ Panthers 3   
+Kayfabe 6 @ Thundercocks 20   
+The Red Dragon 7 @ Thrashers 20   
+Bangles 14 @ Dildozers 9   
+Ravens 0 @ Wraiths 21   
+Barbarians 13 @ Devils 9   
+Lions 23 @ Bears 9   
+Demons 44 @ Pirates 10   
+Monarchs 14 @ Invaders 16   
+Rocky Mountain Bronx 10 @ Templars 20   
+Fire Breathing Rubber Duckies 11 @ Upside Down Sicilians 23   
+Holy Hand Grenades 13 @ Rumble Ponies 10   
+Xtreme 19 @ Shadow Dancers 16   
+OrangeCrush 9 @ Anteaters 28   
+Seahawks 6 @ Tigers 31   
+Bandits 10 @ Argonauts 17   
+Terror 10 @ Raiders 23   
 Week 3
-Browns 50 @ Cheesesteaks 9   
-Ravens 23 @ Dinos 10   
-Stillers 17 @ Jets 19   
-Chiefs 9 @ Buffalo 6   
-Chargers 7 @ Clout Chasers 57   
-Raiders 24 @ Colts 13   
-Texans 18 @ Broncos 3   
-Larceny 3 @ Hammerheads 26   
-Saints 3 @ Redwolves 9   
-Buccaneers 12 @ Spotted Cows 15   
-Vikings 9 @ Bears 7   
-Nonsayins 13 @ Giants 30   
-Dolphins 17 @ Aliens 12   
-Panthers 13 @ Dongers 12   
-Wraiths 6 @ Superhawks 22   
-Jaguars 28 @ Patriots 16   
+Monarchs 36 @ Fire Breathing Rubber Duckies 12   
+Demons 9 @ Upside Down Sicilians 36   
+Thundercocks 23 @ Seahawks 20 (OT)   
+Pirates 0 @ Tigers 29   
+Bandits 12 @ Kayfabe 0   
+The Red Dragon 6 @ Invaders 16   
+Shadow Dancers 15 @ Templars 0   
+Anteaters 33 @ Barbarians 20   
+Lions 6 @ Terror 9 (OT)   
+Raiders 14 @ Argonauts 24   
+Rumble Ponies 3 @ Dildozers 24   
+Devils 19 @ OrangeCrush 0   
+Wraiths 20 @ Bangles 6   
+Bears 6 @ Holy Hand Grenades 10   
+Rocky Mountain Bronx 10 @ Ravens 13 (OT)   
+Thrashers 0 @ Xtreme 29   
 Week 4
-Stillers 20 @ Browns 11   
-Jaguars 37 @ Colts 14   
-Chiefs 30 @ Hammerheads 16   
-Chargers 0 @ Raiders 38   
-Nonsayins 3 @ Texans 35   
-Spotted Cows 6 @ Vikings 16   
-Dolphins 9 @ Broncos 32   
-Patriots 19 @ Panthers 7   
-Aliens 3 @ Buffalo 45   
-Dongers 3 @ Saints 53   
-Giants 7 @ Redwolves 13   
-Ravens 38 @ Cheesesteaks 12   
-Bears 17 @ Wraiths 20   
-Clout Chasers 40 @ Larceny 6   
-Superhawks 24 @ Buccaneers 13   
-Dinos 3 @ Jets 30   
+Seahawks 16 @ Templars 10   
+Demons 30 @ Fire Breathing Rubber Duckies 13   
+Xtreme 26 @ Thundercocks 16   
+Terror 17 @ Thrashers 22   
+The Red Dragon 13 @ Rocky Mountain Bronx 6   
+Upside Down Sicilians 9 @ Invaders 10   
+Shadow Dancers 9 @ Monarchs 47   
+Tigers 19 @ Kayfabe 0   
+Pirates 23 @ Dildozers 42   
+Bears 20 @ Raiders 26 (OT)   
+OrangeCrush 19 @ Barbarians 29   
+Lions 7 @ Ravens 3   
+Bangles 0 @ Argonauts 9   
+Anteaters 16 @ Wraiths 9   
+Bandits 23 @ Rumble Ponies 6   
+Holy Hand Grenades 10 @ Devils 13   
 Week 5
-Larceny 7 @ Texans 17   
-Spotted Cows 3 @ Raiders 9   
-Clout Chasers 21 @ Bears 14   
-Vikings 3 @ Chiefs 48   
-Superhawks 11 @ Jaguars 32   
-Colts 24 @ Nonsayins 0   
-Broncos 10 @ Dinos 19   
-Ravens 20 @ Chargers 3   
-Panthers 3 @ Aliens 9   
-Cheesesteaks 29 @ Redwolves 26   
-Hammerheads 3 @ Wraiths 24   
-Buccaneers 14 @ Saints 28   
-Buffalo 28 @ Browns 3   
-Giants 13 @ Dongers 3   
-Patriots 16 @ Stillers 20   
-Jets 22 @ Dolphins 3   
+Kayfabe 17 @ Monarchs 45   
+Anteaters 16 @ Bears 6   
+Bangles 13 @ Raiders 30   
+Ravens 6 @ Holy Hand Grenades 9   
+Barbarians 7 @ Rumble Ponies 19   
+Thrashers 24 @ Pirates 0   
+OrangeCrush 6 @ Wraiths 9   
+Bandits 23 @ Dildozers 6   
+Argonauts 20 @ Invaders 16   
+Rocky Mountain Bronx 0 @ Tigers 25   
+Templars 6 @ The Red Dragon 12   
+Shadow Dancers 26 @ Fire Breathing Rubber Duckies 12   
+Seahawks 10 @ Thundercocks 25   
+Xtreme 30 @ Demons 17   
+Upside Down Sicilians 30 @ Lions 3   
+Devils 6 @ Terror 7   
 Week 6
-Clout Chasers 28 @ Spotted Cows 3   
-Nonsayins 9 @ Vikings 19   
-Giants 3 @ Ravens 21   
-Panthers 3 @ Buffalo 26   
-Aliens 2 @ Saints 6   
-Patriots 10 @ Dolphins 18   
-Colts 13 @ Chiefs 59   
-Broncos 17 @ Jaguars 22   
-Chargers 16 @ Texans 24   
-Hammerheads 10 @ Superhawks 12   
-Larceny 13 @ Bears 19 (OT)   
-Cheesesteaks 24 @ Wraiths 49   
-Redwolves 13 @ Dongers 6   
-Jets 22 @ Buccaneers 13   
-Dinos 10 @ Browns 27   
-Raiders 16 @ Stillers 0   
+Dildozers 12 @ Ravens 6   
+Raiders 17 @ Lions 20   
+Wraiths 3 @ Bandits 0   
+Devils 15 @ Holy Hand Grenades 13   
+Bears 12 @ Rumble Ponies 15   
+Terror 0 @ Bangles 10   
+Anteaters 7 @ OrangeCrush 26   
+Barbarians 10 @ Argonauts 16   
+Upside Down Sicilians 13 @ Fire Breathing Rubber Duckies 18   
+The Red Dragon 0 @ Monarchs 12   
+Invaders 11 @ Kayfabe 3   
+Rocky Mountain Bronx 3 @ Shadow Dancers 24   
+Thrashers 7 @ Seahawks 10   
+Tigers 29 @ Pirates 3   
+Demons 37 @ Thundercocks 10   
+Xtreme 17 @ Templars 0   
 Week 7
-Browns 13 @ Dolphins 20   
-Redwolves 6 @ Ravens 41   
-Texans 13 @ Wraiths 27   
-Aliens 43 @ Nonsayins 0   
-Buccaneers 22 @ Giants 13   
-Saints 7 @ Patriots 10   
-Dinos 7 @ Buffalo 42   
-Cheesesteaks 14 @ Dongers 79   
-Stillers 2 @ Jaguars 33   
-Colts 3 @ Hammerheads 17   
-Spotted Cows 26 @ Broncos 16   
-Bears 31 @ Chargers 3   
-Panthers 0 @ Jets 14   
-Larceny 19 @ Vikings 14   
-Raiders 13 @ Chiefs 19   
-Superhawks 13 @ Clout Chasers 19   
+Ravens 3 @ Bandits 13   
+Fire Breathing Rubber Duckies 7 @ Devils 17   
+Argonauts 20 @ OrangeCrush 17   
+Templars 0 @ Shadow Dancers 17   
+Thundercocks 33 @ Pirates 6   
+Kayfabe 0 @ Thrashers 25   
+Upside Down Sicilians 23 @ Seahawks 20   
+Demons 17 @ Xtreme 33   
+Bears 24 @ Barbarians 3   
+Wraiths 3 @ Tigers 20   
+Rumble Ponies 23 @ Anteaters 6   
+Holy Hand Grenades 16 @ Lions 19   
+Raiders 30 @ Bangles 3   
+Dildozers 19 @ Terror 18   
+Monarchs 31 @ Rocky Mountain Bronx 16   
+Invaders 14 @ The Red Dragon 17   
 Week 8
-Stillers 20 @ Giants 12   
-Aliens 3 @ Buccaneers 26   
-Nonsayins 14 @ Larceny 24   
-Vikings 6 @ Superhawks 38   
-Texans 19 @ Hammerheads 14   
-Wraiths 43 @ Colts 3   
-Browns 3 @ Chiefs 48   
-Redwolves 0 @ Panthers 45   
-Dolphins 10 @ Jets 33   
-Dinos 6 @ Ravens 16   
-Buffalo 28 @ Patriots 10   
-Cheesesteaks 17 @ Saints 52   
-Spotted Cows 6 @ Dongers 20   
-Bears 20 @ Clout Chasers 35   
-Jaguars 50 @ Chargers 19   
-Broncos 13 @ Raiders 27   
+Dildozers 0 @ Argonauts 23   
+Ravens 3 @ Terror 8   
+Anteaters 9 @ Bandits 7   
+Rumble Ponies 13 @ OrangeCrush 12   
+Barbarians 3 @ Upside Down Sicilians 61   
+Xtreme 16 @ Seahawks 0   
+Shadow Dancers 30 @ Demons 13   
+Templars 9 @ Thundercocks 19   
+Fire Breathing Rubber Duckies 7 @ Invaders 35   
+Rocky Mountain Bronx 0 @ Kayfabe 19   
+Tigers 20 @ Thrashers 0   
+The Red Dragon 13 @ Pirates 25   
+Monarchs 16 @ Wraiths 13 (OT)   
+Holy Hand Grenades 16 @ Raiders 20   
+Bears 10 @ Devils 9   
+Bangles 17 @ Lions 26   
 Week 9
-Saints 26 @ Aliens 5   
-Hammerheads 3 @ Raiders 15   
-Chiefs 52 @ Spotted Cows 10   
-Broncos 45 @ Vikings 18   
-Jaguars 41 @ Nonsayins 2   
-Dolphins 12 @ Stillers 6   
-Patriots 6 @ Dinos 0   
-Ravens 13 @ Browns 17   
-Redwolves 6 @ Giants 31   
-Dongers 77 @ Cheesesteaks 14   
-Wraiths 19 @ Clout Chasers 33   
-Superhawks 46 @ Larceny 0   
-Bears 19 @ Panthers 7   
-Buffalo 13 @ Buccaneers 6   
-Jets 16 @ Texans 23   
-Colts 28 @ Chargers 24   
+Kayfabe 11 @ The Red Dragon 16   
+Rumble Ponies 10 @ Fire Breathing Rubber Duckies 9   
+OrangeCrush 9 @ Xtreme 13   
+Holy Hand Grenades 0 @ Shadow Dancers 13   
+Bandits 0 @ Barbarians 14   
+Raiders 17 @ Terror 23 (OT)   
+Invaders 17 @ Tigers 38   
+Pirates 10 @ Seahawks 26   
+Lions 17 @ Anteaters 13   
+Thundercocks 10 @ Demons 45   
+Monarchs 30 @ Thrashers 20   
+Upside Down Sicilians 38 @ Templars 0   
+Dildozers 3 @ Rocky Mountain Bronx 23   
+Wraiths 3 @ Argonauts 10   
+Devils 16 @ Ravens 7   
+Bears 21 @ Bangles 6   
 Week 10
-Nonsayins 0 @ Bears 31   
-Vikings 16 @ Spotted Cows 6   
-Wraiths 13 @ Jaguars 34   
-Colts 3 @ Texans 41   
-Hammerheads 17 @ Broncos 14   
-Chargers 0 @ Chiefs 86   
-Patriots 3 @ Raiders 31   
-Saints 23 @ Buccaneers 16   
-Larceny 27 @ Redwolves 6   
-Dongers 17 @ Superhawks 15   
-Giants 12 @ Aliens 16   
-Dolphins 6 @ Panthers 15   
-Clout Chasers 38 @ Cheesesteaks 16   
-Stillers 17 @ Buffalo 64   
-Jets 9 @ Ravens 7   
-Browns 38 @ Dinos 10   
+Raiders 20 @ Devils 27   
+Seahawks 20 @ Bears 21   
+Bangles 10 @ The Red Dragon 22   
+Ravens 6 @ Pirates 10   
+Argonauts 23 @ Bandits 7   
+Terror 7 @ Wraiths 20   
+Templars 6 @ Anteaters 16   
+Monarchs 0 @ Upside Down Sicilians 26   
+Demons 16 @ Thrashers 3   
+Thundercocks 22 @ Rumble Ponies 19 (OT)   
+Shadow Dancers 32 @ OrangeCrush 9   
+Fire Breathing Rubber Duckies 6 @ Xtreme 23   
+Kayfabe 0 @ Tigers 62   
+Invaders 32 @ Rocky Mountain Bronx 9   
+Barbarians 17 @ Dildozers 10   
+Lions 12 @ Holy Hand Grenades 20   
 Week 11
-Redwolves 0 @ Browns 66   
-Ravens 19 @ Dolphins 13   
-Nonsayins 0 @ Wraiths 51   
-Buccaneers 27 @ Aliens 30   
-Saints 26 @ Giants 0   
-Patriots 6 @ Buffalo 47   
-Dongers 10 @ Dinos 7   
-Cheesesteaks 6 @ Stillers 41   
-Jaguars 37 @ Hammerheads 16   
-Broncos 24 @ Colts 13   
-Spotted Cows 7 @ Bears 12   
-Chargers 0 @ Jets 38   
-Panthers 6 @ Larceny 6 (OT)   
-Raiders 28 @ Vikings 7   
-Chiefs 19 @ Clout Chasers 26   
-Texans 3 @ Superhawks 24   
+Templars 10 @ Demons 45   
+Fire Breathing Rubber Duckies 8 @ Seahawks 18   
+Thundercocks 7 @ Xtreme 17   
+Thrashers 27 @ Rocky Mountain Bronx 16   
+The Red Dragon 13 @ Upside Down Sicilians 30   
+Invaders 17 @ Shadow Dancers 19   
+Tigers 31 @ Monarchs 14   
+Pirates 17 @ Kayfabe 6   
+Raiders 17 @ Dildozers 24   
+OrangeCrush 3 @ Bears 12   
+Barbarians 16 @ Lions 19 (OT)   
+Ravens 6 @ Bangles 23   
+Argonauts 29 @ Anteaters 14   
+Bandits 7 @ Wraiths 17   
+Rumble Ponies 3 @ Devils 7   
+Terror 8 @ Holy Hand Grenades 14   
 Week 12
-Spotted Cows 13 @ Nonsayins 12   
-Giants 3 @ Vikings 10   
-Buffalo 52 @ Ravens 10   
-Saints 36 @ Panthers 10   
-Patriots 19 @ Aliens 27   
-Colts 16 @ Dolphins 18   
-Chiefs 27 @ Broncos 12   
-Jaguars 37 @ Texans 3   
-Chargers 17 @ Hammerheads 41   
-Bears 10 @ Superhawks 26   
-Larceny 3 @ Wraiths 25   
-Redwolves 96 @ Cheesesteaks 3   
-Dongers 16 @ Buccaneers 6   
-Jets 23 @ Browns 3   
-Stillers 19 @ Dinos 13 (OT)   
-Clout Chasers 30 @ Raiders 19   
+The Red Dragon 6 @ Bandits 0   
+OrangeCrush 7 @ Rumble Ponies 16   
+Fire Breathing Rubber Duckies 3 @ Shadow Dancers 22   
+Xtreme 34 @ Kayfabe 10   
+Holy Hand Grenades 25 @ Barbarians 27   
+Bangles 13 @ Terror 12   
+Tigers 14 @ Raiders 10   
+Pirates 14 @ Invaders 52   
+Anteaters 23 @ Seahawks 13   
+Lions 10 @ Demons 48   
+Thundercocks 10 @ Thrashers 3   
+Templars 10 @ Monarchs 16   
+Upside Down Sicilians 31 @ Rocky Mountain Bronx 7   
+Dildozers 6 @ Wraiths 9   
+Argonauts 20 @ Ravens 3   
+Devils 0 @ Bears 27   
 Week 13
-Raiders 20 @ Broncos 3   
-Browns 6 @ Stillers 24   
-Cheesesteaks 0 @ Giants 56   
-Ravens 6 @ Dongers 22   
-Nonsayins 56 @ Superhawks 7   
-Bears 3 @ Chiefs 42   
-Spotted Cows 13 @ Clout Chasers 56   
-Vikings 10 @ Chargers 13   
-Texans 10 @ Colts 3   
-Wraiths 24 @ Saints 22   
-Jaguars 38 @ Larceny 6   
-Dinos 37 @ Redwolves 36   
-Buffalo 22 @ Hammerheads 16   
-Panthers 3 @ Buccaneers 9   
-Dolphins 10 @ Patriots 6   
-Aliens 0 @ Jets 20   
+Argonauts 34 @ Dildozers 6   
+Bangles 10 @ Ravens 3   
+Terror 0 @ Bandits 6   
+Anteaters 39 @ Rumble Ponies 14   
+Barbarians 15 @ OrangeCrush 0   
+Upside Down Sicilians 12 @ Xtreme 10   
+Demons 37 @ Seahawks 34   
+Shadow Dancers 13 @ Thundercocks 16   
+Fire Breathing Rubber Duckies 29 @ Templars 10   
+Rocky Mountain Bronx 12 @ Invaders 24   
+Thrashers 14 @ Kayfabe 6   
+Tigers 40 @ The Red Dragon 10   
+Monarchs 39 @ Pirates 15   
+Wraiths 20 @ Raiders 18   
+Holy Hand Grenades 37 @ Bears 6   
+Lions 23 @ Devils 6   
 Week 14
-Superhawks 14 @ Colts 10   
-Redwolves 0 @ Bears 55   
-Chiefs 28 @ Chargers 3   
-Texans 16 @ Ravens 10   
-Cheesesteaks 0 @ Dinos 72   
-Raiders 12 @ Jaguars 10   
-Vikings 6 @ Wraiths 45   
-Clout Chasers 62 @ Broncos 31   
-Aliens 9 @ Panthers 10   
-Spotted Cows 13 @ Larceny 20   
-Nonsayins 0 @ Hammerheads 94   
-Buffalo 10 @ Saints 19   
-Giants 21 @ Browns 31   
-Dongers 9 @ Stillers 27   
-Jets 40 @ Patriots 10   
-Buccaneers 25 @ Dolphins 10   
+Dildozers 6 @ OrangeCrush 33   
+Terror 20 @ Ravens 9   
+Wraiths 3 @ Rumble Ponies 21   
+Pirates 10 @ Rocky Mountain Bronx 0   
+The Red Dragon 3 @ Fire Breathing Rubber Duckies 20   
+Shadow Dancers 0 @ Upside Down Sicilians 19   
+Invaders 26 @ Templars 0   
+Tigers 27 @ Thundercocks 9   
+Demons 6 @ Barbarians 10   
+Xtreme 10 @ Holy Hand Grenades 38   
+Seahawks 20 @ Kayfabe 6   
+Bears 26 @ Lions 12   
+Devils 20 @ Anteaters 16   
+Raiders 23 @ Monarchs 27   
+Thrashers 6 @ Argonauts 20   
+Bandits 10 @ Bangles 17   
 Week 15
-Buffalo 23 @ Dolphins 10   
-Stillers 19 @ Ravens 13   
-Browns 0 @ Patriots 13   
-Jets 17 @ Saints 22   
-Clout Chasers 126 @ Nonsayins 0   
-Wraiths 9 @ Spotted Cows 6   
-Larceny 6 @ Superhawks 28   
-Colts 19 @ Jaguars 28   
-Hammerheads 23 @ Texans 26 (OT)   
-Broncos 10 @ Chiefs 52   
-Raiders 29 @ Chargers 0   
-Bears 6 @ Vikings 19   
-Aliens 3 @ Dongers 24   
-Buccaneers 44 @ Redwolves 3   
-Panthers 45 @ Cheesesteaks 0   
-Dinos 10 @ Giants 6   
+Wraiths 9 @ Barbarians 27   
+Rumble Ponies 27 @ Lions 30 (OT)   
+Ravens 10 @ Bears 40   
+Thrashers 16 @ Tigers 45   
+Thundercocks 3 @ Upside Down Sicilians 45   
+Dildozers 13 @ Anteaters 34   
+Kayfabe 14 @ Demons 17   
+OrangeCrush 3 @ Holy Hand Grenades 34   
+Pirates 7 @ Xtreme 31   
+Templars 0 @ Fire Breathing Rubber Duckies 14   
+Bangles 13 @ Devils 10   
+Seahawks 13 @ Shadow Dancers 24   
+Argonauts 10 @ Terror 3   
+Bandits 14 @ Raiders 10   
+Invaders 16 @ Monarchs 13   
+Rocky Mountain Bronx 13 @ The Red Dragon 10   
 Week 16
-Bears 28 @ Spotted Cows 0   
-Dinos 6 @ Colts 13   
-Broncos 21 @ Chargers 33   
-Jets 13 @ Buffalo 16   
-Ravens 17 @ Patriots 13   
-Stillers 29 @ Redwolves 23   
-Aliens 46 @ Cheesesteaks 0   
-Buccaneers 10 @ Panthers 17   
-Wraiths 10 @ Larceny 20   
-Superhawks 2 @ Nonsayins 18   
-Texans 3 @ Raiders 9   
-Vikings 7 @ Clout Chasers 46   
-Jaguars 17 @ Chiefs 31   
-Hammerheads 21 @ Browns 7   
-Saints 13 @ Dolphins 21   
-Dongers 5 @ Giants 11      
+Templars 0 @ Upside Down Sicilians 31   
+Seahawks 13 @ Xtreme 20   
+Thundercocks 13 @ Fire Breathing Rubber Duckies 25   
+Rumble Ponies 10 @ Argonauts 33   
+OrangeCrush 9 @ Bandits 16   
+Terror 7 @ Bears 26   
+Barbarians 18 @ Anteaters 44   
+Devils 7 @ Lions 15   
+Rocky Mountain Bronx 14 @ Monarchs 34   
+Raiders 16 @ Ravens 3   
+Wraiths 12 @ Dildozers 13   
+Holy Hand Grenades 33 @ Bangles 9   
+Shadow Dancers 20 @ The Red Dragon 6   
+Thrashers 7 @ Invaders 25   
+Kayfabe 12 @ Pirates 3   
+Tigers 37 @ Demons 20         
 """
 
 print(parse_scores(s))
