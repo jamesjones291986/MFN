@@ -28,21 +28,41 @@ def get_totals(input_values):
         return sorted_totals
 
 
-play_dict = {'Singeback 4 Wide': ['Singleback 4 Wide Quick Outs'],
-             'Singleback Normal': ['Singleback Normal TE Quick Out', 'Singleback Normal Quick Slant'],
+play_dict_rf = {'Singeback 4 Wide': ['Singleback 4 Wide Quick Outs'],
+             'Singleback Normal': ['Singleback Normal TE Quick Out'],
              'Singleback Slot Strong': [],
              'Singleback Big': [],
-             'I Formation 3 WR': ['I Formation 3WR WR Out', 'I Formation 3WR PA Fullback Flat'],
-             'Split Backs 3 Wide': ['Split Backs 3 Wide WR Quick Out'],
+             'I Formation 3 WR': ['I Formation 3WR WR Out', 'I Formation 3WR Slot Short WR Deep'],
+             'Split Backs 3 Wide': [],
              'Strong I Normal': [],
-             'Weak I Normal': [],
+             'Weak I Normal': ['Weak I Normal WR Corner TE Middle'],
              'I Formation Twin WR': ['I Formation Twin WR Hard Slants', 'I Formation Twin WR Quick Outs'],
              'I Formation Normal': ['I Formation Normal FL Hitch'],
-             'Strong I Big': ['Strong I Big Backfield Drag'],
+             'Strong I Big': ['Strong I Big Backfield Drag', 'Strong I Big TE Post'],
              'I Formation Power': ['I Formation Power PA Flats', 'I Formation Power Play Action HB Downfield'],
              }
-for formation, plays in play_dict.items():
+for formation, plays in play_dict_rf.items():
     print(f'{formation}:')
     for position, total_value in get_totals(plays):
         print(f'Total for {position} is {total_value}')
     print('')
+
+
+play_dict_pf = {'Shotgun Normal': ['Shotgun Normal HB Flare'],
+             'Singleback Normal': ['Singleback Normal TE Quick Out', 'Singleback Normal SE Quick Hit',
+                                   'Singleback Normal FL Post'],
+             'Singleback Big': ['Singleback Big Ins and Outs'],
+             'Split Backs 3 Wide': [],
+             'Strong I Normal': [],
+             'Weak I Normal': ['Weak I Normal Skinny Posts'],
+             'I Formation Twin WR': ['I Formation Twin WR Hard Slants', 'I Formation Twin WR Quick Outs'],
+             'I Formation Normal': ['I Formation Normal FL Hitch', 'I Formation Normal Max Protect'],
+             'Strong I Big': ['Strong I Big Backfield Drag', 'Strong I Big TE Post'],
+             'I Formation Power': ['I Formation Power PA Flats'],
+             }
+for formation, plays in play_dict_pf.items():
+    print(f'{formation}:')
+    for position, total_value in get_totals(plays):
+        print(f'Total for {position} is {total_value}')
+    print('')
+
