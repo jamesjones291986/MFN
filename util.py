@@ -8,6 +8,7 @@ import pandas as pd
 class Config:
     root = r'/Users/jamesjones/game_logs/'
     seasons = r'/Users/jamesjones/game_logs/feathers'
+    global_file = r'/Users/jamesjones/game_logs/'
     ls_dictionary = {
         'qad': [2043, 2044],
         'xfl': [2043, 2044],
@@ -16,6 +17,7 @@ class Config:
         'USFL': [2003],
         'pfl': [2026, 2027],
         'lol': [2117, 2118],
+        'moguls': [2043, 2044],
     }
     sheet_lookup = {
         'qad': '1Nab-IckGA6tG19TOxEu_fYgbNl_7dCZ9hzrTtqcrOO8',
@@ -32,6 +34,7 @@ class Config:
         'USFL': 'usflwfl',
         'pfl': 'pfl',
         'lol': 'lol',
+        'moguls': 'moguls',
     }
     version_map = {
         'qad': {
@@ -61,6 +64,10 @@ class Config:
         'lol': {
             2117: '0.4.6',
             2118: '0.4.6',
+        },
+        'moguls': {
+            2043: '0.4.6',
+            2044: '0.4.6',
         }
     }
 
