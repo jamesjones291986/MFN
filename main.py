@@ -296,24 +296,18 @@ scout('norig', 2030, 'KCC')
 
 # download_all_logs()
 
-path = '/Users/jamesjones/game_logs/paydirt/1999/paydirt_1999.csv'
+league = 'nba'
+year = '2000'
+path = f'/Users/jamesjones/game_logs/{league}/{year}/{league}_{year}.csv'
 
 gdl = GameLogDownloader()
-gdl.set_league_season('paydirt', 1999)
+gdl.set_league_season(league, int(year))
 gdl.download_season(path)
 
-# Compile a season
-SeasonCompiler.compile('qad', 2039)
-SeasonCompiler.compile('norig', 2027, players=True)
-# specify path to game logs
-SeasonCompiler.compile('qad', 2046, override_path='/Users/jamesjones/game_logs/qad/2046/qad_2046.csv')
-SeasonCompiler.compile('norig', 2031, override_path='/Users/jamesjones/game_logs/norig/2031/norig_2031.csv')
-SeasonCompiler.compile('paydirt', 1999, override_path='/Users/jamesjones/game_logs/paydirt/1999/paydirt_1999.csv')
-SeasonCompiler.compile('USFL', 2002, override_path='/Users/jamesjones/game_logs/USFL/2002/USFL_2002.csv')
-SeasonCompiler.compile('pfl', 2028, override_path='/Users/jamesjones/game_logs/pfl/2028/pfl_2028.csv')
-SeasonCompiler.compile('lol', 2119, override_path='/Users/jamesjones/game_logs/lol/2119/lol_2119.csv')
-SeasonCompiler.compile('xfl', 2045, override_path='/Users/jamesjones/game_logs/xfl/2045/xfl_2045.csv')
-SeasonCompiler.compile('moguls', 2045, override_path='/Users/jamesjones/game_logs/moguls/2045/moguls_2045.csv')
+# Compile into a feather file
+
+SeasonCompiler.compile(league, int(year), override_path=path)
+
 
 ###########################################
 

@@ -33,277 +33,277 @@ def retro_schedule(schedule, tabs=2):
 
 # Copy schedules from the league schedule page. Paste them below and run the parse_scores.
 s = """Week 1
-New England Patriots 12 @ Green Bay Packers 27   
-Chicago Bears 10 @ Minnesota Vikings 20   
-Denver Broncos 6 @ San Francisco 49ers 0   
-Carolina Panthers 29 @ Los Angeles Rams 13   
-Arizona Cardinals 16 @ Tampa Bay Buccaneers 12   
-Seattle Seahawks 0 @ Atlanta Falcons 14   
-Saints 0 @ Cincinnati Bengals 13   
-Indianapolis Colts 6 @ Tennessee Titans 27   
-Buffalo Bills 13 @ New York Jets 19   
-Cleveland Browns 10 @ San Diego Chargers 13   
-Pittsburgh Steelers 17 @ Baltimore Ravens 3   
-Oakland Raiders 17 @ Kansas City Chiefs 21   
-Houston Texans 7 @ Jacksonville Jaguars 23   
-Dallas Cowboys 10 @ New York Giants 19   
-Philadelphia Eagles 14 @ Washington Redskins 17   
-Miami Dolphins 44 @ Detroit Lions 17   
+Cavaliers 42 @ Bullets 24   
+Spurs 0 @ Jazz 47   
+Celtics 24 @ Heat 0   
+Thunder 17 @ Warriors 32   
+Nuggets 17 @ Nets 38   
+Suns 16 @ Lakers 13   
+Bulls 13 @ Timberwolves 3   
+Kings 13 @ Bucks 18   
+Pistons 12 @ Trail Blazers 16   
+Royals 34 @ Knicks 52   
+Rockets 10 @ Grizzlies 14   
+Magic 23 @ Wizards 3   
+76ers 0 @ Globetrotters 7   
+Pelicans 3 @ Hornets 45   
+Mavericks 10 @ Hawks 6   
+Clippers 0 @ Raptors 56   
 Week 2
-Houston Texans 7 @ Tennessee Titans 65   
-New England Patriots 13 @ Indianapolis Colts 13 (OT)   
-Baltimore Ravens 10 @ Cleveland Browns 30   
-Oakland Raiders 10 @ Denver Broncos 20   
-Kansas City Chiefs 0 @ Arizona Cardinals 33   
-Philadelphia Eagles 3 @ Seattle Seahawks 20   
-Jacksonville Jaguars 24 @ New York Giants 17   
-Miami Dolphins 17 @ New York Jets 3   
-Detroit Lions 11 @ Minnesota Vikings 9   
-Washington Redskins 7 @ Dallas Cowboys 22   
-Green Bay Packers 19 @ Buffalo Bills 30   
-San Diego Chargers 39 @ San Francisco 49ers 0   
-Atlanta Falcons 3 @ Los Angeles Rams 10   
-Carolina Panthers 17 @ Saints 7   
-Cincinnati Bengals 27 @ Pittsburgh Steelers 24 (OT)   
-Chicago Bears 6 @ Tampa Bay Buccaneers 25   
+Heat 9 @ Clippers 17   
+Nuggets 6 @ Warriors 30   
+Grizzlies 0 @ Royals 26   
+Celtics 13 @ Rockets 18   
+76ers 20 @ Kings 5   
+Mavericks 6 @ Thunder 19   
+Trail Blazers 18 @ Globetrotters 0   
+Hornets 9 @ Lakers 0   
+Hawks 13 @ Wizards 3   
+Magic 24 @ Pelicans 6   
+Spurs 0 @ Raptors 76   
+Cavaliers 10 @ Nets 21   
+Bucks 20 @ Timberwolves 0   
+Bullets 10 @ Pistons 34   
+Bulls 20 @ Jazz 0   
+Suns 44 @ Knicks 52   
 Week 3
-Chicago Bears 3 @ Philadelphia Eagles 30   
-Jacksonville Jaguars 13 @ Washington Redskins 3   
-Houston Texans 10 @ Indianapolis Colts 15   
-San Diego Chargers 17 @ Denver Broncos 0   
-Cincinnati Bengals 24 @ Oakland Raiders 17   
-Seattle Seahawks 26 @ Kansas City Chiefs 33   
-Atlanta Falcons 0 @ Cleveland Browns 2   
-Saints 23 @ Tampa Bay Buccaneers 24   
-Los Angeles Rams 9 @ Arizona Cardinals 38   
-Dallas Cowboys 6 @ San Francisco 49ers 14   
-Tennessee Titans 31 @ New York Giants 8   
-Detroit Lions 19 @ New York Jets 7   
-New England Patriots 17 @ Buffalo Bills 13   
-Baltimore Ravens 10 @ Carolina Panthers 13   
-Pittsburgh Steelers 0 @ Miami Dolphins 19   
-Minnesota Vikings 17 @ Green Bay Packers 9   
+Spurs 3 @ Cavaliers 26   
+Clippers 19 @ Warriors 0   
+Thunder 16 @ Nuggets 7   
+Rockets 3 @ Royals 9   
+Grizzlies 20 @ Magic 31   
+Wizards 6 @ Globetrotters 3   
+Pelicans 6 @ 76ers 28   
+Hornets 10 @ Mavericks 3   
+Hawks 0 @ Raptors 27   
+Bucks 10 @ Bulls 13   
+Trail Blazers 28 @ Kings 14   
+Knicks 65 @ Lakers 17   
+Heat 0 @ Nets 35   
+Bullets 14 @ Jazz 34   
+Celtics 10 @ Suns 28   
+Pistons 10 @ Timberwolves 17   
 Week 4
-Los Angeles Rams 6 @ Seattle Seahawks 10   
-Tampa Bay Buccaneers 17 @ Philadelphia Eagles 13   
-Oakland Raiders 11 @ New England Patriots 31   
-Tennessee Titans 45 @ Washington Redskins 9   
-Baltimore Ravens 11 @ Jacksonville Jaguars 19   
-San Francisco 49ers 7 @ Arizona Cardinals 51   
-Denver Broncos 0 @ Houston Texans 16   
-New York Jets 7 @ Buffalo Bills 13   
-Green Bay Packers 7 @ Miami Dolphins 52   
-Minnesota Vikings 27 @ New York Giants 20   
-Chicago Bears 3 @ Detroit Lions 21   
-Indianapolis Colts 10 @ Dallas Cowboys 31   
-San Diego Chargers 37 @ Cincinnati Bengals 23   
-Kansas City Chiefs 3 @ Cleveland Browns 26   
-Carolina Panthers 24 @ Pittsburgh Steelers 6   
-Saints 16 @ Atlanta Falcons 9   
+Bullets 6 @ Bucks 20   
+Trail Blazers 3 @ Nets 16   
+Warriors 27 @ Thunder 17   
+Grizzlies 10 @ Clippers 30   
+Globetrotters 11 @ Timberwolves 14   
+Knicks 22 @ Cavaliers 16   
+Lakers 9 @ Bulls 13   
+76ers 0 @ Wizards 7   
+Spurs 0 @ Celtics 68   
+Kings 22 @ Heat 3   
+Hawks 16 @ Pelicans 0   
+Mavericks 7 @ Suns 31   
+Raptors 22 @ Nuggets 3   
+Jazz 16 @ Pistons 20   
+Royals 6 @ Hornets 24   
+Rockets 10 @ Magic 38   
 Week 5
-Jacksonville Jaguars 6 @ Tennessee Titans 27   
-Washington Redskins 0 @ Philadelphia Eagles 16   
-New England Patriots 10 @ Baltimore Ravens 21   
-Los Angeles Rams 9 @ Tampa Bay Buccaneers 10   
-Seattle Seahawks 7 @ Oakland Raiders 12   
-Saints 10 @ San Francisco 49ers 15   
-Arizona Cardinals 24 @ Denver Broncos 20   
-Houston Texans 6 @ Buffalo Bills 21   
-New York Jets 8 @ Miami Dolphins 20   
-Green Bay Packers 7 @ Minnesota Vikings 30   
-New York Giants 21 @ Chicago Bears 16   
-Detroit Lions 10 @ Dallas Cowboys 27   
-San Diego Chargers 34 @ Indianapolis Colts 10   
-Cincinnati Bengals 38 @ Kansas City Chiefs 29   
-Cleveland Browns 13 @ Pittsburgh Steelers 13 (OT)   
-Atlanta Falcons 10 @ Carolina Panthers 31   
+Pelicans 13 @ Magic 44   
+Jazz 13 @ Warriors 16   
+Royals 19 @ Nuggets 20   
+Clippers 28 @ Thunder 7   
+Mavericks 9 @ Wizards 7   
+Hawks 27 @ Pistons 10   
+Timberwolves 13 @ Bullets 17   
+Bucks 60 @ Spurs 3   
+Rockets 0 @ Raptors 27   
+Hornets 12 @ Grizzlies 15   
+Lakers 27 @ Kings 0   
+Globetrotters 10 @ 76ers 13   
+Trail Blazers 17 @ Bulls 20   
+Suns 57 @ Heat 0   
+Cavaliers 11 @ Celtics 20   
+Nets 32 @ Knicks 38   
 Week 6
-Tennessee Titans 46 @ Houston Texans 10   
-Chicago Bears 12 @ New England Patriots 16   
-Indianapolis Colts 16 @ Cleveland Browns 6   
-Baltimore Ravens 20 @ Oakland Raiders 17   
-Kansas City Chiefs 17 @ Denver Broncos 10   
-Philadelphia Eagles 6 @ New York Giants 28   
-Jacksonville Jaguars 9 @ New York Jets 40   
-Minnesota Vikings 3 @ Miami Dolphins 30   
-Washington Redskins 6 @ Detroit Lions 17   
-Dallas Cowboys 15 @ Green Bay Packers 0   
-Buffalo Bills 0 @ San Diego Chargers 41   
-Cincinnati Bengals 16 @ Carolina Panthers 31   
-Pittsburgh Steelers 9 @ Tampa Bay Buccaneers 31   
-San Francisco 49ers 13 @ Los Angeles Rams 6   
-Saints 3 @ Seattle Seahawks 9   
-Atlanta Falcons 19 @ Arizona Cardinals 33   
+Warriors 16 @ Clippers 13   
+Pistons 23 @ Mavericks 17   
+Globetrotters 20 @ Nuggets 3   
+Magic 35 @ Hawks 13   
+Timberwolves 0 @ Kings 12   
+Spurs 3 @ Bullets 32   
+Bucks 21 @ Trail Blazers 24   
+Hornets 24 @ 76ers 10   
+Lakers 10 @ Wizards 0   
+Bulls 9 @ Suns 23   
+Heat 7 @ Cavaliers 37   
+Royals 14 @ Raptors 28   
+Pelicans 17 @ Grizzlies 10   
+Rockets 27 @ Jazz 7   
+Nets 23 @ Celtics 3   
+Knicks 52 @ Thunder 13   
 Week 7
-Denver Broncos 0 @ San Diego Chargers 28   
-Cincinnati Bengals 36 @ Baltimore Ravens 10   
-San Francisco 49ers 6 @ Carolina Panthers 24   
-Oakland Raiders 10 @ Arizona Cardinals 29   
-Kansas City Chiefs 14 @ Pittsburgh Steelers 10   
-Seattle Seahawks 20 @ Los Angeles Rams 0   
-Atlanta Falcons 3 @ Tampa Bay Buccaneers 33   
-Cleveland Browns 10 @ Saints 6   
-Detroit Lions 27 @ Green Bay Packers 3   
-Buffalo Bills 24 @ Chicago Bears 34   
-Minnesota Vikings 14 @ Washington Redskins 3   
-New York Jets 19 @ Houston Texans 19 (OT)   
-Tennessee Titans 13 @ New England Patriots 6   
-Miami Dolphins 39 @ Jacksonville Jaguars 7   
-New York Giants 6 @ Indianapolis Colts 13   
-Dallas Cowboys 20 @ Philadelphia Eagles 3   
+Pistons 10 @ Lakers 13   
+Clippers 7 @ Royals 25   
+Grizzlies 16 @ Thunder 0   
+Jazz 6 @ Cavaliers 27   
+Trail Blazers 29 @ Celtics 17   
+Suns 22 @ Bucks 9   
+Timberwolves 0 @ Bulls 26   
+Wizards 13 @ 76ers 16 (OT)   
+Pelicans 6 @ Hawks 3   
+Mavericks 14 @ Magic 11   
+Raptors 19 @ Hornets 3   
+Nuggets 24 @ Rockets 25   
+Globetrotters 6 @ Warriors 6 (OT)   
+Nets 26 @ Bullets 0   
+Heat 10 @ Spurs 19   
+Kings 38 @ Knicks 2   
 Week 8
-Minnesota Vikings 34 @ Detroit Lions 31 (OT)   
-Tampa Bay Buccaneers 6 @ Carolina Panthers 32   
-Seattle Seahawks 6 @ Chicago Bears 3   
-New York Giants 20 @ Washington Redskins 24   
-Arizona Cardinals 32 @ Saints 0   
-Houston Texans 13 @ Dallas Cowboys 23   
-Cleveland Browns 14 @ Buffalo Bills 13   
-Cincinnati Bengals 30 @ Atlanta Falcons 6   
-Philadelphia Eagles 6 @ Green Bay Packers 23   
-Jacksonville Jaguars 24 @ Indianapolis Colts 13   
-San Francisco 49ers 13 @ Oakland Raiders 10   
-Los Angeles Rams 0 @ San Diego Chargers 36   
-Baltimore Ravens 24 @ Pittsburgh Steelers 7   
-Denver Broncos 6 @ Kansas City Chiefs 9 (OT)   
-New England Patriots 6 @ Miami Dolphins 49   
-Tennessee Titans 9 @ New York Jets 12   
+Knicks 12 @ Nets 3   
+Pistons 41 @ Spurs 6   
+Kings 3 @ Lakers 31   
+Royals 20 @ Grizzlies 23   
+Thunder 7 @ Cavaliers 22   
+Celtics 21 @ Jazz 22   
+Suns 23 @ Trail Blazers 34   
+Timberwolves 6 @ Bucks 40   
+Wizards 3 @ Bulls 10   
+76ers 13 @ Hawks 9   
+Pelicans 22 @ Mavericks 36   
+Magic 22 @ Hornets 25   
+Raptors 14 @ Heat 0   
+Bullets 21 @ Nuggets 0   
+Warriors 21 @ Rockets 33   
+Clippers 24 @ Globetrotters 10   
 Week 9
-New England Patriots 20 @ New York Jets 38   
-Denver Broncos 6 @ Seattle Seahawks 3   
-Miami Dolphins 44 @ Buffalo Bills 17   
-Atlanta Falcons 12 @ Saints 10   
-Baltimore Ravens 3 @ Cincinnati Bengals 23   
-Houston Texans 9 @ Pittsburgh Steelers 20   
-Arizona Cardinals 23 @ New York Giants 9   
-Tennessee Titans 23 @ Indianapolis Colts 9   
-Tampa Bay Buccaneers 7 @ San Francisco 49ers 3   
-Washington Redskins 13 @ Chicago Bears 23   
-Green Bay Packers 6 @ Detroit Lions 34   
-Dallas Cowboys 3 @ Minnesota Vikings 30   
-Philadelphia Eagles 12 @ Jacksonville Jaguars 11   
-San Diego Chargers 31 @ Oakland Raiders 3   
-Kansas City Chiefs 28 @ Los Angeles Rams 20   
-Carolina Panthers 20 @ Cleveland Browns 13   
+Nuggets 19 @ Clippers 7   
+Royals 12 @ Warriors 20   
+Grizzlies 24 @ Rockets 19   
+Heat 0 @ Celtics 38   
+Suns 18 @ Kings 0   
+Mavericks 3 @ 76ers 20   
+Thunder 7 @ Globetrotters 12   
+Lakers 24 @ Trail Blazers 41   
+Hawks 3 @ Hornets 41   
+Wizards 14 @ Pelicans 20 (OT)   
+Magic 3 @ Raptors 10   
+Spurs 0 @ Nets 77   
+Cavaliers 0 @ Timberwolves 13   
+Pistons 21 @ Bucks 3   
+Bulls 24 @ Bullets 3   
+Jazz 13 @ Knicks 32   
 Week 10
-Washington Redskins 10 @ Indianapolis Colts 23   
-Houston Texans 9 @ Philadelphia Eagles 11   
-Dallas Cowboys 12 @ Jacksonville Jaguars 0   
-Miami Dolphins 29 @ New England Patriots 10   
-Buffalo Bills 3 @ Tennessee Titans 34   
-Cleveland Browns 18 @ Cincinnati Bengals 27   
-New York Jets 13 @ Minnesota Vikings 16   
-Arizona Cardinals 28 @ San Diego Chargers 24   
-Kansas City Chiefs 20 @ Oakland Raiders 13   
-Seattle Seahawks 3 @ San Francisco 49ers 9   
-Tampa Bay Buccaneers 13 @ Baltimore Ravens 7   
-Detroit Lions 28 @ Saints 7   
-New York Giants 17 @ Carolina Panthers 31   
-Atlanta Falcons 0 @ Pittsburgh Steelers 16   
-Los Angeles Rams 7 @ Denver Broncos 24   
-Chicago Bears 6 @ Green Bay Packers 10   
+Cavaliers 30 @ Jazz 15   
+Nuggets 10 @ Mavericks 16   
+Lakers 10 @ Celtics 17   
+Magic 31 @ Bucks 22   
+Trail Blazers 16 @ Suns 34   
+Timberwolves 6 @ Pelicans 10   
+Bulls 6 @ Pistons 23   
+Warriors 10 @ Grizzlies 18   
+Raptors 19 @ Royals 3   
+Wizards 10 @ Hornets 17   
+Rockets 6 @ Thunder 9 (OT)   
+Hawks 13 @ Globetrotters 13 (OT)   
+76ers 14 @ Clippers 17 (OT)   
+Bullets 7 @ Heat 15   
+Knicks 44 @ Spurs 6   
+Nets 39 @ Kings 6   
 Week 11
-New York Jets 29 @ Green Bay Packers 13   
-New York Giants 20 @ Houston Texans 13   
-Oakland Raiders 24 @ Los Angeles Rams 16   
-Kansas City Chiefs 3 @ San Diego Chargers 44   
-Arizona Cardinals 23 @ San Francisco 49ers 9   
-Miami Dolphins 34 @ Chicago Bears 6   
-Philadelphia Eagles 3 @ Minnesota Vikings 0   
-Detroit Lions 15 @ New England Patriots 14   
-Seattle Seahawks 7 @ Carolina Panthers 27   
-Washington Redskins 23 @ Atlanta Falcons 3   
-Indianapolis Colts 22 @ Buffalo Bills 16   
-Pittsburgh Steelers 13 @ Cleveland Browns 23   
-Denver Broncos 12 @ Baltimore Ravens 3   
-Saints 7 @ Dallas Cowboys 19   
-Tennessee Titans 30 @ Jacksonville Jaguars 8   
-Tampa Bay Buccaneers 28 @ Cincinnati Bengals 14   
+Globetrotters 10 @ Pelicans 32   
+Hornets 3 @ Magic 35   
+Thunder 3 @ Wizards 10   
+Warriors 3 @ Mavericks 20   
+Hawks 24 @ Royals 13   
+Raptors 10 @ Grizzlies 17   
+Nuggets 14 @ 76ers 3   
+Rockets 22 @ Clippers 8   
+Cavaliers 25 @ Spurs 10   
+Bulls 49 @ Kings 7   
+Knicks 48 @ Trail Blazers 7   
+Lakers 3 @ Nets 26   
+Jazz 6 @ Heat 3   
+Celtics 26 @ Bullets 0   
+Timberwolves 10 @ Suns 27   
+Bucks 0 @ Pistons 44   
 Week 12
-Saints 3 @ Carolina Panthers 31   
-Seattle Seahawks 9 @ Arizona Cardinals 28   
-New York Giants 16 @ Dallas Cowboys 17   
-Minnesota Vikings 13 @ Chicago Bears 20   
-Cleveland Browns 25 @ Tampa Bay Buccaneers 7   
-Buffalo Bills 3 @ Detroit Lions 7   
-Washington Redskins 22 @ Houston Texans 7   
-Atlanta Falcons 10 @ Green Bay Packers 7   
-Indianapolis Colts 21 @ Philadelphia Eagles 0   
-Jacksonville Jaguars 0 @ Oakland Raiders 14   
-Los Angeles Rams 3 @ San Francisco 49ers 23   
-Pittsburgh Steelers 10 @ San Diego Chargers 31   
-Baltimore Ravens 10 @ Kansas City Chiefs 3   
-Miami Dolphins 25 @ Denver Broncos 0   
-New York Jets 24 @ New England Patriots 9   
-Cincinnati Bengals 14 @ Tennessee Titans 28   
+Jazz 21 @ Spurs 14   
+Nets 38 @ Heat 0   
+Raptors 20 @ Warriors 9   
+Pistons 26 @ Bulls 6   
+Grizzlies 20 @ Bullets 3   
+Cavaliers 35 @ Royals 7   
+Hornets 3 @ Pelicans 9   
+Trail Blazers 38 @ Timberwolves 17   
+Kings 10 @ Suns 14   
+Celtics 3 @ Knicks 76   
+Bucks 16 @ Lakers 14   
+76ers 16 @ Magic 50   
+Mavericks 15 @ Clippers 10   
+Nuggets 7 @ Thunder 10   
+Rockets 16 @ Hawks 9   
+Globetrotters 6 @ Wizards 3 (OT)   
 Week 13
-Dallas Cowboys 9 @ Washington Redskins 26   
-Indianapolis Colts 17 @ Jacksonville Jaguars 24   
-Houston Texans 3 @ Miami Dolphins 30   
-Cincinnati Bengals 16 @ Cleveland Browns 22   
-Buffalo Bills 17 @ New England Patriots 20 (OT)   
-Philadelphia Eagles 6 @ Tennessee Titans 68   
-Minnesota Vikings 7 @ Arizona Cardinals 35   
-Oakland Raiders 3 @ San Diego Chargers 34   
-San Francisco 49ers 14 @ Kansas City Chiefs 3   
-Tampa Bay Buccaneers 13 @ Seattle Seahawks 6   
-Saints 3 @ Baltimore Ravens 13   
-New York Giants 34 @ Detroit Lions 27   
-Carolina Panthers 13 @ Atlanta Falcons 7   
-Pittsburgh Steelers 13 @ Denver Broncos 6   
-Green Bay Packers 6 @ Los Angeles Rams 21   
-Chicago Bears 13 @ New York Jets 17   
+Jazz 20 @ Bullets 7   
+Clippers 16 @ Nuggets 6   
+Nets 20 @ Grizzlies 13   
+Royals 9 @ Rockets 14   
+Warriors 13 @ 76ers 14   
+Globetrotters 10 @ Hornets 6   
+Hawks 3 @ Magic 58   
+Celtics 13 @ Kings 33   
+Lakers 14 @ Timberwolves 0   
+Bucks 10 @ Cavaliers 28   
+Thunder 0 @ Raptors 40   
+Knicks 88 @ Heat 0   
+Spurs 6 @ Bulls 37   
+Wizards 0 @ Mavericks 15   
+Pelicans 10 @ Trail Blazers 40   
+Suns 25 @ Pistons 21   
 Week 14
-Detroit Lions 26 @ Philadelphia Eagles 3   
-Pittsburgh Steelers 0 @ Cincinnati Bengals 3   
-Carolina Panthers 25 @ Tampa Bay Buccaneers 7   
-Washington Redskins 28 @ New York Giants 13   
-Buffalo Bills 3 @ Miami Dolphins 48   
-Jacksonville Jaguars 0 @ Houston Texans 19   
-Denver Broncos 24 @ Oakland Raiders 3   
-Green Bay Packers 0 @ Chicago Bears 3   
-New York Jets 10 @ Indianapolis Colts 27   
-New England Patriots 13 @ Minnesota Vikings 34   
-San Diego Chargers 29 @ Kansas City Chiefs 14   
-Cleveland Browns 24 @ Baltimore Ravens 16   
-Dallas Cowboys 13 @ Tennessee Titans 14   
-Los Angeles Rams 26 @ Saints 3   
-Arizona Cardinals 10 @ Seattle Seahawks 13   
-San Francisco 49ers 19 @ Atlanta Falcons 0   
+Lakers 6 @ Suns 13   
+Hornets 23 @ Hawks 3   
+Timberwolves 3 @ Pistons 9   
+Bucks 7 @ 76ers 0   
+Bullets 13 @ Spurs 31   
+Heat 3 @ Trail Blazers 34   
+Kings 2 @ Magic 25   
+Warriors 13 @ Nuggets 3   
+Cavaliers 24 @ Bulls 7   
+Mavericks 19 @ Globetrotters 17   
+Clippers 10 @ Wizards 6   
+Thunder 20 @ Royals 34   
+Grizzlies 0 @ Raptors 80   
+Pelicans 18 @ Rockets 28   
+Nets 10 @ Jazz 3   
+Knicks 58 @ Celtics 12   
 Week 15
-Indianapolis Colts 6 @ Miami Dolphins 30   
-New England Patriots 13 @ Houston Texans 2   
-New York Giants 28 @ Philadelphia Eagles 34   
-San Francisco 49ers 14 @ Detroit Lions 7   
-Tennessee Titans 43 @ Kansas City Chiefs 3   
-Buffalo Bills 16 @ Jacksonville Jaguars 23   
-Chicago Bears 3 @ Dallas Cowboys 14   
-New York Jets 17 @ Cincinnati Bengals 23   
-Cleveland Browns 3 @ Denver Broncos 9   
-Oakland Raiders 9 @ Pittsburgh Steelers 24   
-San Diego Chargers 34 @ Seattle Seahawks 0   
-Tampa Bay Buccaneers 24 @ Saints 10   
-Baltimore Ravens 13 @ Atlanta Falcons 6   
-Carolina Panthers 18 @ Minnesota Vikings 6   
-Arizona Cardinals 17 @ Los Angeles Rams 20   
-Green Bay Packers 0 @ Washington Redskins 10   
+Kings 19 @ Trail Blazers 6   
+Spurs 0 @ Timberwolves 26   
+Pistons 17 @ Cavaliers 31   
+Warriors 20 @ Celtics 23 (OT)   
+Nets 9 @ Suns 15   
+Heat 7 @ Lakers 24   
+Bullets 16 @ Knicks 96   
+Jazz 15 @ Bucks 6   
+Bulls 0 @ Hornets 18   
+Magic 31 @ Globetrotters 0   
+Royals 20 @ Pelicans 40   
+Grizzlies 15 @ Hawks 20   
+Raptors 19 @ Rockets 34   
+Thunder 13 @ Clippers 16   
+Wizards 10 @ Nuggets 0   
+76ers 19 @ Mavericks 0   
 Week 16
-Indianapolis Colts 21 @ Houston Texans 9   
-Los Angeles Rams 0 @ Washington Redskins 34   
-Minnesota Vikings 14 @ Buffalo Bills 30   
-Jacksonville Jaguars 14 @ New England Patriots 3   
-Philadelphia Eagles 16 @ Dallas Cowboys 34   
-Oakland Raiders 3 @ Cleveland Browns 18   
-Miami Dolphins 20 @ Tennessee Titans 23 (OT)   
-San Francisco 49ers 20 @ Seattle Seahawks 9   
-Kansas City Chiefs 7 @ New York Jets 20   
-Denver Broncos 6 @ Cincinnati Bengals 15   
-Pittsburgh Steelers 34 @ Saints 8   
-Detroit Lions 27 @ Chicago Bears 24   
-Green Bay Packers 3 @ New York Giants 6   
-Carolina Panthers 24 @ Arizona Cardinals 7   
-San Diego Chargers 19 @ Baltimore Ravens 0   
-Tampa Bay Buccaneers 35 @ Atlanta Falcons 10   
+Raptors 7 @ Pelicans 7 (OT)   
+Nuggets 0 @ Grizzlies 9   
+Globetrotters 3 @ Mavericks 17   
+Bulls 14 @ Bucks 6   
+Timberwolves 3 @ Jazz 13   
+Bullets 16 @ Cavaliers 27   
+76ers 3 @ Thunder 10   
+Wizards 3 @ Warriors 10   
+Celtics 6 @ Nets 39   
+Kings 14 @ Pistons 20   
+Trail Blazers 10 @ Lakers 16   
+Suns 47 @ Hawks 3   
+Clippers 26 @ Spurs 0   
+Heat 0 @ Knicks 38   
+Magic 57 @ Royals 0   
+Hornets 14 @ Rockets 0    
 """
 
 print(parse_scores(s))
