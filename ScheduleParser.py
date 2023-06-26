@@ -33,277 +33,277 @@ def retro_schedule(schedule, tabs=2):
 
 # Copy schedules from the league schedule page. Paste them below and run the parse_scores.
 s = """Week 1
-Seahawks 13 @ Demons 41   
-Monarchs 19 @ The Red Dragon 10   
-Xtreme 3 @ Tigers 23   
-Upside Down Sicilians 15 @ Shadow Dancers 3   
-Devils 6 @ Thundercocks 23   
-Lions 18 @ OrangeCrush 9   
-Rumble Ponies 16 @ Barbarians 13   
-Bears 12 @ Templars 3   
-Fire Breathing Rubber Duckies 13 @ Rocky Mountain Bronx 16   
-Invaders 23 @ Terror 10   
-Anteaters 16 @ Holy Hand Grenades 13   
-Argonauts 10 @ Wraiths 16   
-Dildozers 6 @ Bandits 21   
-Ravens 3 @ Raiders 16   
-Kayfabe 34 @ Bangles 17   
-Pirates 0 @ Thrashers 26   
+New England Patriots 12 @ Green Bay Packers 27   
+Chicago Bears 10 @ Minnesota Vikings 20   
+Denver Broncos 6 @ San Francisco 49ers 0   
+Carolina Panthers 29 @ Los Angeles Rams 13   
+Arizona Cardinals 16 @ Tampa Bay Buccaneers 12   
+Seattle Seahawks 0 @ Atlanta Falcons 14   
+Saints 0 @ Cincinnati Bengals 13   
+Indianapolis Colts 6 @ Tennessee Titans 27   
+Buffalo Bills 13 @ New York Jets 19   
+Cleveland Browns 10 @ San Diego Chargers 13   
+Pittsburgh Steelers 17 @ Baltimore Ravens 3   
+Oakland Raiders 17 @ Kansas City Chiefs 21   
+Houston Texans 7 @ Jacksonville Jaguars 23   
+Dallas Cowboys 10 @ New York Giants 19   
+Philadelphia Eagles 14 @ Washington Redskins 17   
+Miami Dolphins 44 @ Detroit Lions 17   
 Week 2
-Kayfabe 6 @ Thundercocks 20   
-The Red Dragon 7 @ Thrashers 20   
-Bangles 14 @ Dildozers 9   
-Ravens 0 @ Wraiths 21   
-Barbarians 13 @ Devils 9   
-Lions 23 @ Bears 9   
-Demons 44 @ Pirates 10   
-Monarchs 14 @ Invaders 16   
-Rocky Mountain Bronx 10 @ Templars 20   
-Fire Breathing Rubber Duckies 11 @ Upside Down Sicilians 23   
-Holy Hand Grenades 13 @ Rumble Ponies 10   
-Xtreme 19 @ Shadow Dancers 16   
-OrangeCrush 9 @ Anteaters 28   
-Seahawks 6 @ Tigers 31   
-Bandits 10 @ Argonauts 17   
-Terror 10 @ Raiders 23   
+Houston Texans 7 @ Tennessee Titans 65   
+New England Patriots 13 @ Indianapolis Colts 13 (OT)   
+Baltimore Ravens 10 @ Cleveland Browns 30   
+Oakland Raiders 10 @ Denver Broncos 20   
+Kansas City Chiefs 0 @ Arizona Cardinals 33   
+Philadelphia Eagles 3 @ Seattle Seahawks 20   
+Jacksonville Jaguars 24 @ New York Giants 17   
+Miami Dolphins 17 @ New York Jets 3   
+Detroit Lions 11 @ Minnesota Vikings 9   
+Washington Redskins 7 @ Dallas Cowboys 22   
+Green Bay Packers 19 @ Buffalo Bills 30   
+San Diego Chargers 39 @ San Francisco 49ers 0   
+Atlanta Falcons 3 @ Los Angeles Rams 10   
+Carolina Panthers 17 @ Saints 7   
+Cincinnati Bengals 27 @ Pittsburgh Steelers 24 (OT)   
+Chicago Bears 6 @ Tampa Bay Buccaneers 25   
 Week 3
-Monarchs 36 @ Fire Breathing Rubber Duckies 12   
-Demons 9 @ Upside Down Sicilians 36   
-Thundercocks 23 @ Seahawks 20 (OT)   
-Pirates 0 @ Tigers 29   
-Bandits 12 @ Kayfabe 0   
-The Red Dragon 6 @ Invaders 16   
-Shadow Dancers 15 @ Templars 0   
-Anteaters 33 @ Barbarians 20   
-Lions 6 @ Terror 9 (OT)   
-Raiders 14 @ Argonauts 24   
-Rumble Ponies 3 @ Dildozers 24   
-Devils 19 @ OrangeCrush 0   
-Wraiths 20 @ Bangles 6   
-Bears 6 @ Holy Hand Grenades 10   
-Rocky Mountain Bronx 10 @ Ravens 13 (OT)   
-Thrashers 0 @ Xtreme 29   
+Chicago Bears 3 @ Philadelphia Eagles 30   
+Jacksonville Jaguars 13 @ Washington Redskins 3   
+Houston Texans 10 @ Indianapolis Colts 15   
+San Diego Chargers 17 @ Denver Broncos 0   
+Cincinnati Bengals 24 @ Oakland Raiders 17   
+Seattle Seahawks 26 @ Kansas City Chiefs 33   
+Atlanta Falcons 0 @ Cleveland Browns 2   
+Saints 23 @ Tampa Bay Buccaneers 24   
+Los Angeles Rams 9 @ Arizona Cardinals 38   
+Dallas Cowboys 6 @ San Francisco 49ers 14   
+Tennessee Titans 31 @ New York Giants 8   
+Detroit Lions 19 @ New York Jets 7   
+New England Patriots 17 @ Buffalo Bills 13   
+Baltimore Ravens 10 @ Carolina Panthers 13   
+Pittsburgh Steelers 0 @ Miami Dolphins 19   
+Minnesota Vikings 17 @ Green Bay Packers 9   
 Week 4
-Seahawks 16 @ Templars 10   
-Demons 30 @ Fire Breathing Rubber Duckies 13   
-Xtreme 26 @ Thundercocks 16   
-Terror 17 @ Thrashers 22   
-The Red Dragon 13 @ Rocky Mountain Bronx 6   
-Upside Down Sicilians 9 @ Invaders 10   
-Shadow Dancers 9 @ Monarchs 47   
-Tigers 19 @ Kayfabe 0   
-Pirates 23 @ Dildozers 42   
-Bears 20 @ Raiders 26 (OT)   
-OrangeCrush 19 @ Barbarians 29   
-Lions 7 @ Ravens 3   
-Bangles 0 @ Argonauts 9   
-Anteaters 16 @ Wraiths 9   
-Bandits 23 @ Rumble Ponies 6   
-Holy Hand Grenades 10 @ Devils 13   
+Los Angeles Rams 6 @ Seattle Seahawks 10   
+Tampa Bay Buccaneers 17 @ Philadelphia Eagles 13   
+Oakland Raiders 11 @ New England Patriots 31   
+Tennessee Titans 45 @ Washington Redskins 9   
+Baltimore Ravens 11 @ Jacksonville Jaguars 19   
+San Francisco 49ers 7 @ Arizona Cardinals 51   
+Denver Broncos 0 @ Houston Texans 16   
+New York Jets 7 @ Buffalo Bills 13   
+Green Bay Packers 7 @ Miami Dolphins 52   
+Minnesota Vikings 27 @ New York Giants 20   
+Chicago Bears 3 @ Detroit Lions 21   
+Indianapolis Colts 10 @ Dallas Cowboys 31   
+San Diego Chargers 37 @ Cincinnati Bengals 23   
+Kansas City Chiefs 3 @ Cleveland Browns 26   
+Carolina Panthers 24 @ Pittsburgh Steelers 6   
+Saints 16 @ Atlanta Falcons 9   
 Week 5
-Kayfabe 17 @ Monarchs 45   
-Anteaters 16 @ Bears 6   
-Bangles 13 @ Raiders 30   
-Ravens 6 @ Holy Hand Grenades 9   
-Barbarians 7 @ Rumble Ponies 19   
-Thrashers 24 @ Pirates 0   
-OrangeCrush 6 @ Wraiths 9   
-Bandits 23 @ Dildozers 6   
-Argonauts 20 @ Invaders 16   
-Rocky Mountain Bronx 0 @ Tigers 25   
-Templars 6 @ The Red Dragon 12   
-Shadow Dancers 26 @ Fire Breathing Rubber Duckies 12   
-Seahawks 10 @ Thundercocks 25   
-Xtreme 30 @ Demons 17   
-Upside Down Sicilians 30 @ Lions 3   
-Devils 6 @ Terror 7   
+Jacksonville Jaguars 6 @ Tennessee Titans 27   
+Washington Redskins 0 @ Philadelphia Eagles 16   
+New England Patriots 10 @ Baltimore Ravens 21   
+Los Angeles Rams 9 @ Tampa Bay Buccaneers 10   
+Seattle Seahawks 7 @ Oakland Raiders 12   
+Saints 10 @ San Francisco 49ers 15   
+Arizona Cardinals 24 @ Denver Broncos 20   
+Houston Texans 6 @ Buffalo Bills 21   
+New York Jets 8 @ Miami Dolphins 20   
+Green Bay Packers 7 @ Minnesota Vikings 30   
+New York Giants 21 @ Chicago Bears 16   
+Detroit Lions 10 @ Dallas Cowboys 27   
+San Diego Chargers 34 @ Indianapolis Colts 10   
+Cincinnati Bengals 38 @ Kansas City Chiefs 29   
+Cleveland Browns 13 @ Pittsburgh Steelers 13 (OT)   
+Atlanta Falcons 10 @ Carolina Panthers 31   
 Week 6
-Dildozers 12 @ Ravens 6   
-Raiders 17 @ Lions 20   
-Wraiths 3 @ Bandits 0   
-Devils 15 @ Holy Hand Grenades 13   
-Bears 12 @ Rumble Ponies 15   
-Terror 0 @ Bangles 10   
-Anteaters 7 @ OrangeCrush 26   
-Barbarians 10 @ Argonauts 16   
-Upside Down Sicilians 13 @ Fire Breathing Rubber Duckies 18   
-The Red Dragon 0 @ Monarchs 12   
-Invaders 11 @ Kayfabe 3   
-Rocky Mountain Bronx 3 @ Shadow Dancers 24   
-Thrashers 7 @ Seahawks 10   
-Tigers 29 @ Pirates 3   
-Demons 37 @ Thundercocks 10   
-Xtreme 17 @ Templars 0   
+Tennessee Titans 46 @ Houston Texans 10   
+Chicago Bears 12 @ New England Patriots 16   
+Indianapolis Colts 16 @ Cleveland Browns 6   
+Baltimore Ravens 20 @ Oakland Raiders 17   
+Kansas City Chiefs 17 @ Denver Broncos 10   
+Philadelphia Eagles 6 @ New York Giants 28   
+Jacksonville Jaguars 9 @ New York Jets 40   
+Minnesota Vikings 3 @ Miami Dolphins 30   
+Washington Redskins 6 @ Detroit Lions 17   
+Dallas Cowboys 15 @ Green Bay Packers 0   
+Buffalo Bills 0 @ San Diego Chargers 41   
+Cincinnati Bengals 16 @ Carolina Panthers 31   
+Pittsburgh Steelers 9 @ Tampa Bay Buccaneers 31   
+San Francisco 49ers 13 @ Los Angeles Rams 6   
+Saints 3 @ Seattle Seahawks 9   
+Atlanta Falcons 19 @ Arizona Cardinals 33   
 Week 7
-Ravens 3 @ Bandits 13   
-Fire Breathing Rubber Duckies 7 @ Devils 17   
-Argonauts 20 @ OrangeCrush 17   
-Templars 0 @ Shadow Dancers 17   
-Thundercocks 33 @ Pirates 6   
-Kayfabe 0 @ Thrashers 25   
-Upside Down Sicilians 23 @ Seahawks 20   
-Demons 17 @ Xtreme 33   
-Bears 24 @ Barbarians 3   
-Wraiths 3 @ Tigers 20   
-Rumble Ponies 23 @ Anteaters 6   
-Holy Hand Grenades 16 @ Lions 19   
-Raiders 30 @ Bangles 3   
-Dildozers 19 @ Terror 18   
-Monarchs 31 @ Rocky Mountain Bronx 16   
-Invaders 14 @ The Red Dragon 17   
+Denver Broncos 0 @ San Diego Chargers 28   
+Cincinnati Bengals 36 @ Baltimore Ravens 10   
+San Francisco 49ers 6 @ Carolina Panthers 24   
+Oakland Raiders 10 @ Arizona Cardinals 29   
+Kansas City Chiefs 14 @ Pittsburgh Steelers 10   
+Seattle Seahawks 20 @ Los Angeles Rams 0   
+Atlanta Falcons 3 @ Tampa Bay Buccaneers 33   
+Cleveland Browns 10 @ Saints 6   
+Detroit Lions 27 @ Green Bay Packers 3   
+Buffalo Bills 24 @ Chicago Bears 34   
+Minnesota Vikings 14 @ Washington Redskins 3   
+New York Jets 19 @ Houston Texans 19 (OT)   
+Tennessee Titans 13 @ New England Patriots 6   
+Miami Dolphins 39 @ Jacksonville Jaguars 7   
+New York Giants 6 @ Indianapolis Colts 13   
+Dallas Cowboys 20 @ Philadelphia Eagles 3   
 Week 8
-Dildozers 0 @ Argonauts 23   
-Ravens 3 @ Terror 8   
-Anteaters 9 @ Bandits 7   
-Rumble Ponies 13 @ OrangeCrush 12   
-Barbarians 3 @ Upside Down Sicilians 61   
-Xtreme 16 @ Seahawks 0   
-Shadow Dancers 30 @ Demons 13   
-Templars 9 @ Thundercocks 19   
-Fire Breathing Rubber Duckies 7 @ Invaders 35   
-Rocky Mountain Bronx 0 @ Kayfabe 19   
-Tigers 20 @ Thrashers 0   
-The Red Dragon 13 @ Pirates 25   
-Monarchs 16 @ Wraiths 13 (OT)   
-Holy Hand Grenades 16 @ Raiders 20   
-Bears 10 @ Devils 9   
-Bangles 17 @ Lions 26   
+Minnesota Vikings 34 @ Detroit Lions 31 (OT)   
+Tampa Bay Buccaneers 6 @ Carolina Panthers 32   
+Seattle Seahawks 6 @ Chicago Bears 3   
+New York Giants 20 @ Washington Redskins 24   
+Arizona Cardinals 32 @ Saints 0   
+Houston Texans 13 @ Dallas Cowboys 23   
+Cleveland Browns 14 @ Buffalo Bills 13   
+Cincinnati Bengals 30 @ Atlanta Falcons 6   
+Philadelphia Eagles 6 @ Green Bay Packers 23   
+Jacksonville Jaguars 24 @ Indianapolis Colts 13   
+San Francisco 49ers 13 @ Oakland Raiders 10   
+Los Angeles Rams 0 @ San Diego Chargers 36   
+Baltimore Ravens 24 @ Pittsburgh Steelers 7   
+Denver Broncos 6 @ Kansas City Chiefs 9 (OT)   
+New England Patriots 6 @ Miami Dolphins 49   
+Tennessee Titans 9 @ New York Jets 12   
 Week 9
-Kayfabe 11 @ The Red Dragon 16   
-Rumble Ponies 10 @ Fire Breathing Rubber Duckies 9   
-OrangeCrush 9 @ Xtreme 13   
-Holy Hand Grenades 0 @ Shadow Dancers 13   
-Bandits 0 @ Barbarians 14   
-Raiders 17 @ Terror 23 (OT)   
-Invaders 17 @ Tigers 38   
-Pirates 10 @ Seahawks 26   
-Lions 17 @ Anteaters 13   
-Thundercocks 10 @ Demons 45   
-Monarchs 30 @ Thrashers 20   
-Upside Down Sicilians 38 @ Templars 0   
-Dildozers 3 @ Rocky Mountain Bronx 23   
-Wraiths 3 @ Argonauts 10   
-Devils 16 @ Ravens 7   
-Bears 21 @ Bangles 6   
+New England Patriots 20 @ New York Jets 38   
+Denver Broncos 6 @ Seattle Seahawks 3   
+Miami Dolphins 44 @ Buffalo Bills 17   
+Atlanta Falcons 12 @ Saints 10   
+Baltimore Ravens 3 @ Cincinnati Bengals 23   
+Houston Texans 9 @ Pittsburgh Steelers 20   
+Arizona Cardinals 23 @ New York Giants 9   
+Tennessee Titans 23 @ Indianapolis Colts 9   
+Tampa Bay Buccaneers 7 @ San Francisco 49ers 3   
+Washington Redskins 13 @ Chicago Bears 23   
+Green Bay Packers 6 @ Detroit Lions 34   
+Dallas Cowboys 3 @ Minnesota Vikings 30   
+Philadelphia Eagles 12 @ Jacksonville Jaguars 11   
+San Diego Chargers 31 @ Oakland Raiders 3   
+Kansas City Chiefs 28 @ Los Angeles Rams 20   
+Carolina Panthers 20 @ Cleveland Browns 13   
 Week 10
-Raiders 20 @ Devils 27   
-Seahawks 20 @ Bears 21   
-Bangles 10 @ The Red Dragon 22   
-Ravens 6 @ Pirates 10   
-Argonauts 23 @ Bandits 7   
-Terror 7 @ Wraiths 20   
-Templars 6 @ Anteaters 16   
-Monarchs 0 @ Upside Down Sicilians 26   
-Demons 16 @ Thrashers 3   
-Thundercocks 22 @ Rumble Ponies 19 (OT)   
-Shadow Dancers 32 @ OrangeCrush 9   
-Fire Breathing Rubber Duckies 6 @ Xtreme 23   
-Kayfabe 0 @ Tigers 62   
-Invaders 32 @ Rocky Mountain Bronx 9   
-Barbarians 17 @ Dildozers 10   
-Lions 12 @ Holy Hand Grenades 20   
+Washington Redskins 10 @ Indianapolis Colts 23   
+Houston Texans 9 @ Philadelphia Eagles 11   
+Dallas Cowboys 12 @ Jacksonville Jaguars 0   
+Miami Dolphins 29 @ New England Patriots 10   
+Buffalo Bills 3 @ Tennessee Titans 34   
+Cleveland Browns 18 @ Cincinnati Bengals 27   
+New York Jets 13 @ Minnesota Vikings 16   
+Arizona Cardinals 28 @ San Diego Chargers 24   
+Kansas City Chiefs 20 @ Oakland Raiders 13   
+Seattle Seahawks 3 @ San Francisco 49ers 9   
+Tampa Bay Buccaneers 13 @ Baltimore Ravens 7   
+Detroit Lions 28 @ Saints 7   
+New York Giants 17 @ Carolina Panthers 31   
+Atlanta Falcons 0 @ Pittsburgh Steelers 16   
+Los Angeles Rams 7 @ Denver Broncos 24   
+Chicago Bears 6 @ Green Bay Packers 10   
 Week 11
-Templars 10 @ Demons 45   
-Fire Breathing Rubber Duckies 8 @ Seahawks 18   
-Thundercocks 7 @ Xtreme 17   
-Thrashers 27 @ Rocky Mountain Bronx 16   
-The Red Dragon 13 @ Upside Down Sicilians 30   
-Invaders 17 @ Shadow Dancers 19   
-Tigers 31 @ Monarchs 14   
-Pirates 17 @ Kayfabe 6   
-Raiders 17 @ Dildozers 24   
-OrangeCrush 3 @ Bears 12   
-Barbarians 16 @ Lions 19 (OT)   
-Ravens 6 @ Bangles 23   
-Argonauts 29 @ Anteaters 14   
-Bandits 7 @ Wraiths 17   
-Rumble Ponies 3 @ Devils 7   
-Terror 8 @ Holy Hand Grenades 14   
+New York Jets 29 @ Green Bay Packers 13   
+New York Giants 20 @ Houston Texans 13   
+Oakland Raiders 24 @ Los Angeles Rams 16   
+Kansas City Chiefs 3 @ San Diego Chargers 44   
+Arizona Cardinals 23 @ San Francisco 49ers 9   
+Miami Dolphins 34 @ Chicago Bears 6   
+Philadelphia Eagles 3 @ Minnesota Vikings 0   
+Detroit Lions 15 @ New England Patriots 14   
+Seattle Seahawks 7 @ Carolina Panthers 27   
+Washington Redskins 23 @ Atlanta Falcons 3   
+Indianapolis Colts 22 @ Buffalo Bills 16   
+Pittsburgh Steelers 13 @ Cleveland Browns 23   
+Denver Broncos 12 @ Baltimore Ravens 3   
+Saints 7 @ Dallas Cowboys 19   
+Tennessee Titans 30 @ Jacksonville Jaguars 8   
+Tampa Bay Buccaneers 28 @ Cincinnati Bengals 14   
 Week 12
-The Red Dragon 6 @ Bandits 0   
-OrangeCrush 7 @ Rumble Ponies 16   
-Fire Breathing Rubber Duckies 3 @ Shadow Dancers 22   
-Xtreme 34 @ Kayfabe 10   
-Holy Hand Grenades 25 @ Barbarians 27   
-Bangles 13 @ Terror 12   
-Tigers 14 @ Raiders 10   
-Pirates 14 @ Invaders 52   
-Anteaters 23 @ Seahawks 13   
-Lions 10 @ Demons 48   
-Thundercocks 10 @ Thrashers 3   
-Templars 10 @ Monarchs 16   
-Upside Down Sicilians 31 @ Rocky Mountain Bronx 7   
-Dildozers 6 @ Wraiths 9   
-Argonauts 20 @ Ravens 3   
-Devils 0 @ Bears 27   
+Saints 3 @ Carolina Panthers 31   
+Seattle Seahawks 9 @ Arizona Cardinals 28   
+New York Giants 16 @ Dallas Cowboys 17   
+Minnesota Vikings 13 @ Chicago Bears 20   
+Cleveland Browns 25 @ Tampa Bay Buccaneers 7   
+Buffalo Bills 3 @ Detroit Lions 7   
+Washington Redskins 22 @ Houston Texans 7   
+Atlanta Falcons 10 @ Green Bay Packers 7   
+Indianapolis Colts 21 @ Philadelphia Eagles 0   
+Jacksonville Jaguars 0 @ Oakland Raiders 14   
+Los Angeles Rams 3 @ San Francisco 49ers 23   
+Pittsburgh Steelers 10 @ San Diego Chargers 31   
+Baltimore Ravens 10 @ Kansas City Chiefs 3   
+Miami Dolphins 25 @ Denver Broncos 0   
+New York Jets 24 @ New England Patriots 9   
+Cincinnati Bengals 14 @ Tennessee Titans 28   
 Week 13
-Argonauts 34 @ Dildozers 6   
-Bangles 10 @ Ravens 3   
-Terror 0 @ Bandits 6   
-Anteaters 39 @ Rumble Ponies 14   
-Barbarians 15 @ OrangeCrush 0   
-Upside Down Sicilians 12 @ Xtreme 10   
-Demons 37 @ Seahawks 34   
-Shadow Dancers 13 @ Thundercocks 16   
-Fire Breathing Rubber Duckies 29 @ Templars 10   
-Rocky Mountain Bronx 12 @ Invaders 24   
-Thrashers 14 @ Kayfabe 6   
-Tigers 40 @ The Red Dragon 10   
-Monarchs 39 @ Pirates 15   
-Wraiths 20 @ Raiders 18   
-Holy Hand Grenades 37 @ Bears 6   
-Lions 23 @ Devils 6   
+Dallas Cowboys 9 @ Washington Redskins 26   
+Indianapolis Colts 17 @ Jacksonville Jaguars 24   
+Houston Texans 3 @ Miami Dolphins 30   
+Cincinnati Bengals 16 @ Cleveland Browns 22   
+Buffalo Bills 17 @ New England Patriots 20 (OT)   
+Philadelphia Eagles 6 @ Tennessee Titans 68   
+Minnesota Vikings 7 @ Arizona Cardinals 35   
+Oakland Raiders 3 @ San Diego Chargers 34   
+San Francisco 49ers 14 @ Kansas City Chiefs 3   
+Tampa Bay Buccaneers 13 @ Seattle Seahawks 6   
+Saints 3 @ Baltimore Ravens 13   
+New York Giants 34 @ Detroit Lions 27   
+Carolina Panthers 13 @ Atlanta Falcons 7   
+Pittsburgh Steelers 13 @ Denver Broncos 6   
+Green Bay Packers 6 @ Los Angeles Rams 21   
+Chicago Bears 13 @ New York Jets 17   
 Week 14
-Dildozers 6 @ OrangeCrush 33   
-Terror 20 @ Ravens 9   
-Wraiths 3 @ Rumble Ponies 21   
-Pirates 10 @ Rocky Mountain Bronx 0   
-The Red Dragon 3 @ Fire Breathing Rubber Duckies 20   
-Shadow Dancers 0 @ Upside Down Sicilians 19   
-Invaders 26 @ Templars 0   
-Tigers 27 @ Thundercocks 9   
-Demons 6 @ Barbarians 10   
-Xtreme 10 @ Holy Hand Grenades 38   
-Seahawks 20 @ Kayfabe 6   
-Bears 26 @ Lions 12   
-Devils 20 @ Anteaters 16   
-Raiders 23 @ Monarchs 27   
-Thrashers 6 @ Argonauts 20   
-Bandits 10 @ Bangles 17   
+Detroit Lions 26 @ Philadelphia Eagles 3   
+Pittsburgh Steelers 0 @ Cincinnati Bengals 3   
+Carolina Panthers 25 @ Tampa Bay Buccaneers 7   
+Washington Redskins 28 @ New York Giants 13   
+Buffalo Bills 3 @ Miami Dolphins 48   
+Jacksonville Jaguars 0 @ Houston Texans 19   
+Denver Broncos 24 @ Oakland Raiders 3   
+Green Bay Packers 0 @ Chicago Bears 3   
+New York Jets 10 @ Indianapolis Colts 27   
+New England Patriots 13 @ Minnesota Vikings 34   
+San Diego Chargers 29 @ Kansas City Chiefs 14   
+Cleveland Browns 24 @ Baltimore Ravens 16   
+Dallas Cowboys 13 @ Tennessee Titans 14   
+Los Angeles Rams 26 @ Saints 3   
+Arizona Cardinals 10 @ Seattle Seahawks 13   
+San Francisco 49ers 19 @ Atlanta Falcons 0   
 Week 15
-Wraiths 9 @ Barbarians 27   
-Rumble Ponies 27 @ Lions 30 (OT)   
-Ravens 10 @ Bears 40   
-Thrashers 16 @ Tigers 45   
-Thundercocks 3 @ Upside Down Sicilians 45   
-Dildozers 13 @ Anteaters 34   
-Kayfabe 14 @ Demons 17   
-OrangeCrush 3 @ Holy Hand Grenades 34   
-Pirates 7 @ Xtreme 31   
-Templars 0 @ Fire Breathing Rubber Duckies 14   
-Bangles 13 @ Devils 10   
-Seahawks 13 @ Shadow Dancers 24   
-Argonauts 10 @ Terror 3   
-Bandits 14 @ Raiders 10   
-Invaders 16 @ Monarchs 13   
-Rocky Mountain Bronx 13 @ The Red Dragon 10   
+Indianapolis Colts 6 @ Miami Dolphins 30   
+New England Patriots 13 @ Houston Texans 2   
+New York Giants 28 @ Philadelphia Eagles 34   
+San Francisco 49ers 14 @ Detroit Lions 7   
+Tennessee Titans 43 @ Kansas City Chiefs 3   
+Buffalo Bills 16 @ Jacksonville Jaguars 23   
+Chicago Bears 3 @ Dallas Cowboys 14   
+New York Jets 17 @ Cincinnati Bengals 23   
+Cleveland Browns 3 @ Denver Broncos 9   
+Oakland Raiders 9 @ Pittsburgh Steelers 24   
+San Diego Chargers 34 @ Seattle Seahawks 0   
+Tampa Bay Buccaneers 24 @ Saints 10   
+Baltimore Ravens 13 @ Atlanta Falcons 6   
+Carolina Panthers 18 @ Minnesota Vikings 6   
+Arizona Cardinals 17 @ Los Angeles Rams 20   
+Green Bay Packers 0 @ Washington Redskins 10   
 Week 16
-Templars 0 @ Upside Down Sicilians 31   
-Seahawks 13 @ Xtreme 20   
-Thundercocks 13 @ Fire Breathing Rubber Duckies 25   
-Rumble Ponies 10 @ Argonauts 33   
-OrangeCrush 9 @ Bandits 16   
-Terror 7 @ Bears 26   
-Barbarians 18 @ Anteaters 44   
-Devils 7 @ Lions 15   
-Rocky Mountain Bronx 14 @ Monarchs 34   
-Raiders 16 @ Ravens 3   
-Wraiths 12 @ Dildozers 13   
-Holy Hand Grenades 33 @ Bangles 9   
-Shadow Dancers 20 @ The Red Dragon 6   
-Thrashers 7 @ Invaders 25   
-Kayfabe 12 @ Pirates 3   
-Tigers 37 @ Demons 20         
+Indianapolis Colts 21 @ Houston Texans 9   
+Los Angeles Rams 0 @ Washington Redskins 34   
+Minnesota Vikings 14 @ Buffalo Bills 30   
+Jacksonville Jaguars 14 @ New England Patriots 3   
+Philadelphia Eagles 16 @ Dallas Cowboys 34   
+Oakland Raiders 3 @ Cleveland Browns 18   
+Miami Dolphins 20 @ Tennessee Titans 23 (OT)   
+San Francisco 49ers 20 @ Seattle Seahawks 9   
+Kansas City Chiefs 7 @ New York Jets 20   
+Denver Broncos 6 @ Cincinnati Bengals 15   
+Pittsburgh Steelers 34 @ Saints 8   
+Detroit Lions 27 @ Chicago Bears 24   
+Green Bay Packers 3 @ New York Giants 6   
+Carolina Panthers 24 @ Arizona Cardinals 7   
+San Diego Chargers 19 @ Baltimore Ravens 0   
+Tampa Bay Buccaneers 35 @ Atlanta Falcons 10   
 """
 
 print(parse_scores(s))
