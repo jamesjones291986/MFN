@@ -374,13 +374,14 @@ for formation in formations:
 
 # Best Offensive Calls
 def_formations = {
-    '113': ['3-4 Normal Man Cover 1', 'Dime Normal Man Cover 1', '4-3 Normal Man Under 1'],
-    '122': ['Dime Normal Man Cover 1', '4-3 Normal Man Under 1'],
-    '203': ['3-4 Normal Man Cover 1', 'Dime Normal Man Cover 1', '4-3 Normal Man Under 1'],
-    '212': ['4-3 Under Double LB Blitz', 'Dime Normal Man Cover 1', '3-4 Normal Man QB Spy'],
-    '311': ['Dime Normal Double WR1 WR2', 'Dime Normal Man Cover 1'],
-    '221': ['Dime Normal Man Cover 1', 'Dime Flat 2 Deep Man Under'],
-    '104': ['Dime Normal Man Cover 1'],
+    '113': ['3-4 Normal Man Cover 1', 'Dime Normal Man Cover 1', '3-4 Normal Double WR2', '4-3 Under Crash Right'],
+    '122': ['Dime Normal Man Cover 1', 'Dime Flat MLB SS Blitz'],
+    '203': ['3-4 Normal Double WR2', 'Dime Normal Man Cover 1', '4-3 Under Crash Right'],
+    '212': ['4-3 Under Double LB Blitz', 'Dime Normal Man Cover 1', '3-4 Normal Man QB Spy', '4-3 Under Crash Right',
+            '3-4 Normal Double WR2', '3-4 Normal Double Blitz'],
+    '311': ['Dime Normal Man Cover 1'],
+    '221': ['Dime Normal Man Cover 1'],
+    '104': ['Quarter Normal Man Short Zone']
 }
 
 off_personnel_values = {
