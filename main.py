@@ -40,11 +40,15 @@ def download_all_logs():
                 print(f'ERROR! {k} {y} not downloaded!')
 
 
-def adj_ev(dd, grouper, plays=all_plays, sort='desc', col_to_sum='YardsGained', column_to_check='Text'):
+def adj_ev(dd, grouper, plays=all_plays, sort='desc', col_to_sum='YardsGained', column_to_check='Text',
+           off_personnel_value=None):
     dx = dd.loc[dd.YTGL.ge(20) & dd.YTGL.lt(80) & dd.Down.isin([1, 2, 3])].copy()
     dx = dx.loc[dx.OffPlayType.isin(plays) &
                 ~dx.DefensivePlay.isin(def_excludes) &
                 ~dx.OffensivePlay.isin(off_excludes)]
+
+    if off_personnel_value is not None:
+        dx = dx.loc[dx.OffPersonnel == off_personnel_value]
 
     sit_score = dx.groupby(['ytgl_bucket', 'Down', 'YTG']).ev.mean()
     dx['ev_adj'] = dx.ev - dx.merge(sit_score, how='left',
@@ -61,10 +65,9 @@ def adj_ev(dd, grouper, plays=all_plays, sort='desc', col_to_sum='YardsGained', 
     touchdown_rate = dx.loc[dx[column_to_check].str.contains('.*TOUCHDOWN.*', regex=True)].groupby(
         grouper).size() / dx.groupby(grouper).size() * 100
     yards_per_play_100 = yards_per_play * 100
-    # any_a = (yards_per_play_100 + (20 * touchdown_rate) - (45 * interception_rate) - (sack_rate * 8)) / 100
     any_a = (yards_per_play_100 + (20 * yards_per_play) - (60 * interception_rate) - (sack_rate * 20)) / 100
 
-    rows = []
+    results = []
     for p in dx[grouper].unique():
         try:
             g = ev_adj_score[p]
@@ -75,17 +78,22 @@ def adj_ev(dd, grouper, plays=all_plays, sort='desc', col_to_sum='YardsGained', 
         except KeyError:
             c = np.nan
         if c > 30:
-            rows[len(rows):] = [{grouper: p,
-                                 'ypp': round(yards_per_play[p], 2),
-                                 'cnt': c,
-                                 'any/a': round(any_a[p], 2),
-                                 'int_rate': round(interception_rate[p], 2),
-                                 'sack_rate': round(sack_rate[p], 2),
-                                 'td_rate': round(touchdown_rate[p], 2),
-                                 'ev_adj': round(g, 3),
-                                 }]
+            off_play_type = dx.loc[dx[grouper] == p, 'OffPlayType'].iloc[0]
+            results.append({
+                grouper: p,
+                'OffPlayType': off_play_type,
+                'OffPersonnel': dx.loc[dx[grouper] == p, 'OffPersonnel'].iloc[0],
+                'ypp': round(yards_per_play[p], 2),
+                'cnt': c,
+                'any/a': round(any_a[p], 2),
+                'int_rate': round(interception_rate[p], 2),
+                'sack_rate': round(sack_rate[p], 2),
+                'td_rate': round(touchdown_rate[p], 2),
+                'ev_adj': round(g, 3),
+            })
+
     sort_map = {'asc': True, 'desc': False}
-    return pd.DataFrame(rows).sort_values('ypp', ascending=sort_map[sort]).reset_index(drop=True)
+    return pd.DataFrame(results).sort_values('ypp', ascending=sort_map[sort]).reset_index(drop=True)
 
 
 def format_df(dd):
@@ -308,7 +316,6 @@ gdl.download_season(path)
 
 SeasonCompiler.compile(league, int(year), override_path=path)
 
-
 ###########################################
 
 # EV - Best Overall Plays
@@ -318,37 +325,38 @@ off_play_adj_ev.to_csv(Config.root + '/off_play_adj_ev.csv', index=False)
 
 # Best Defensive Calls
 formations = {
-    '113': {
+    '1RB/1TE/3WR': {
         'pass': ['Shotgun Normal HB Flare', 'Shotgun Normal FL Slant', 'Singleback Slot Strong Skinny Posts'],
         'run': ['Singleback Slot Strong HB Strong Inside', 'Singleback Slot Strong HB Counter']
     },
-    '122': {
+    '1RB/2TE/2WR': {
         'pass': ['Singleback Big Ins and Outs'],
         'run': ['Singleback Big HB Inside Strong']
     },
-    '203': {
+    '2RB/3WR': {
         'pass': ['I Formation 3WR Slot Short WR Deep', 'I Formation 3WR WR Out', 'I Formation 3WR FL Post'],
         'run': ['I Formation 3WR HB Inside Weak']
     },
-    '212': {
+    '2RB/1TE/2WR': {
         'pass': ['Split Backs Normal Posts', 'I Formation Twin WR Quick Outs', 'I Formation Normal FL Hitch',
                  'Strong I Normal WR Post TE Out', 'Weak I Normal WR Corner TE Middle', 'Split Backs Normal WR Post'],
         'run': ['Weak I Normal HB Inside Weak', 'I Formation Normal HB Dive', 'I Formation Normal HB Blast']
     },
-    '221': {
+    '2RB/2TE/1WR': {
         'pass': ['Strong I Big TE Post', 'Strong I Big Backfield Drag'],
         'run': ['Strong I Big HB Dive Strong']
     },
-    '311': {
+    '3RB/1TE/1WR': {
         'pass': ['I Formation Power Play Action HB Downfield', 'I Formation Power PA Flats'],
         'run': ['I Formation Power HB Strong Outside']
     },
-    '104': {
+    '1RB/4WR': {
         'pass': ['Singleback 4 Wide Quick Outs'],
     },
 }
 
 # Calculate adjusted expected value for each formation and play type
+
 for formation in formations:
     form_pass = formations[formation]['pass']
     if 'run' in formations[formation]:
@@ -368,56 +376,79 @@ for formation in formations:
 def_formations = {
     '113': ['3-4 Normal Man Cover 1', 'Dime Normal Man Cover 1', '4-3 Normal Man Under 1'],
     '122': ['Dime Normal Man Cover 1', '4-3 Normal Man Under 1'],
-    '203': ['3-4 Normal Man Cover 1', 'Dime Normal Man Cover 1', '4-3 Normal Man Under 1', '4-3 Under Double LB Blitz'],
-    '212': ['4-3 Under Double LB Blitz', 'Dime Normal Man Cover 1', '3-4 Normal Man QB Spy', '3-4 Normal Man Cover 1',
-            '46 Normal Inside Blitz', '4-3 Normal OLB Blitz Inside', '4-3 Normal WLB MLB Blitz'],
+    '203': ['3-4 Normal Man Cover 1', 'Dime Normal Man Cover 1', '4-3 Normal Man Under 1'],
+    '212': ['4-3 Under Double LB Blitz', 'Dime Normal Man Cover 1', '3-4 Normal Man QB Spy'],
     '311': ['Dime Normal Double WR1 WR2', 'Dime Normal Man Cover 1'],
     '221': ['Dime Normal Man Cover 1', 'Dime Flat 2 Deep Man Under'],
-    '104': ['Dime Normal Man Cover 1']
+    '104': ['Dime Normal Man Cover 1'],
 }
 
+off_personnel_values = {
+    '113': '1RB/1TE/3WR',
+    '122': '1RB/2TE/2WR',
+    '203': '2RB/3WR',
+    '212': '2RB/1TE/2WR',
+    '311': '3RB/1TE/1WR',
+    '221': '2RB/2TE/1WR',
+    '104': '1RB/4WR',
+}
+
+off_plays_combined = pd.DataFrame()  # DataFrame to store the combined results
+
 for formation in def_formations:
-    globals()[f"off_plays_{formation}"] = adj_ev(df.loc[df.DefensivePlay.isin(def_formations[formation])],
-                                                 'OffensivePlay', all_plays, 'desc')
-    globals()[f"off_plays_{formation}"].to_csv(Config.root + f'/{formation}.csv', index=False)
+    off_personnel_value = off_personnel_values.get(formation)
+
+    if off_personnel_value is not None:
+        filtered_df = df.loc[df.DefensivePlay.isin(def_formations[formation])]
+        off_plays = adj_ev(filtered_df, 'OffensivePlay', all_plays, 'desc')
+        filtered_plays = off_plays.loc[off_plays.OffPersonnel == off_personnel_value]
+        off_plays_combined = pd.concat([off_plays_combined, filtered_plays])
+
+# Sort the DataFrame by 'ypp'
+off_plays_combined = off_plays_combined.sort_values(by='ypp', ascending=False)
+
+# Separate into pass and run DataFrames
+pass_plays = off_plays_combined[off_plays_combined['OffPlayType'].str.contains('pass', case=False)]\
+    .sort_values('any/a', ascending=False)
+run_plays = off_plays_combined[off_plays_combined['OffPlayType'].str.contains('run', case=False)]
 
 #######################################################
 
 # Standard Offense
 
 formations = {
-    '104': {
+    '1RB/4WR': {
         'pass': ['Singleback 4 Wide Quick Outs']
     },
-    '113': {
+    '1RB/1TE/3WR': {
         'pass': ['Shotgun Normal HB Flare', 'Singleback Normal TE Quick Out'],
         'run': ['Singleback Normal HB Inside Weak', 'Singleback Normal HB Dive Weak',
                 'Singleback Slot Strong HB Strong Inside', 'Singleback Slot Strong HB Counter',
                 'Singleback Normal HB Dive Strong']
     },
-    '122': {
+    '1RB/2TE/2WR': {
         'pass': ['Singleback Big Ins and Outs'],
         'run': ['Singleback Big HB Inside Strong']
     },
-    '203': {
+    '2RB/3WR': {
         'pass': ['I Formation 3WR Slot Short WR Deep', 'I Formation 3WR FL Post', 'I Formation 3WR WR Out'],
         'run': ['Split Backs 3 Wide Dive Left', 'I Formation 3WR HB Inside Weak', 'Shotgun 2 RB 3 WR Shotgun Sweep']
     },
-    '212': {
+    '2RB/1TE/2WR': {
         'pass': ['I Formation Twin WR Hard Slants', 'I Formation Twin WR Quick Outs', 'I Formation Normal FL Hitch',
                  'Weak I Normal WR Corner TE Middle'],
         'run': ['Weak I Normal HB Inside Weak', 'I Formation Normal HB Dive', 'I Formation Normal HB Blast',
                 'Weak I Normal FB Inside Weak']
     },
-    '221': {
+    '2RB/2TE/1WR': {
         'pass': ['Strong I Big TE Post', 'Strong I Big Backfield Drag'],
         'run': ['Strong I Big HB Dive Strong']
     },
-    '311': {
+    '3RB/1TE/1WR': {
         'pass': ['I Formation Power Play Action HB Downfield', 'I Formation Power PA Flats'],
         'run': ['I Formation Power HB Strong Outside']
     },
-    '023': {
+    '2RB/3TE': {
         'pass': [],
         'run': []
     },
@@ -439,7 +470,7 @@ def_formations = {
 # Scouting
 
 # Bring in the league to scout
-df = format_df(Config.load_feather('paydirt', 1999)).reset_index(drop=True)
+df = format_df(Config.load_feather('USFL', 2005)).reset_index(drop=True)
 
 
 def scouting(defense, league, season):
@@ -458,4 +489,9 @@ def scouting(defense, league, season):
         print('')
 
 
-scouting('MIA', 'paydirt', '1999')
+scouting('BLT', 'USFL', '2005')
+
+##################################################
+
+# Testing
+
