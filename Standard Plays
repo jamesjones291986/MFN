@@ -1,0 +1,52 @@
+# Standard Offense
+
+formations = {
+    '1RB/4WR': {
+        'pass': ['Singleback 4 Wide Quick Outs']
+    },
+    '1RB/1TE/3WR': {
+        'pass': ['Shotgun Normal HB Flare', 'Singleback Normal TE Quick Out'],
+        'run': ['Singleback Normal HB Inside Weak', 'Singleback Normal HB Dive Weak',
+                'Singleback Slot Strong HB Strong Inside', 'Singleback Slot Strong HB Counter',
+                'Singleback Normal HB Dive Strong']
+    },
+    '1RB/2TE/2WR': {
+        'pass': ['Singleback Big Ins and Outs'],
+        'run': ['Singleback Big HB Inside Strong']
+    },
+    '2RB/3WR': {
+        'pass': ['I Formation 3WR Slot Short WR Deep', 'I Formation 3WR FL Post', 'I Formation 3WR WR Out'],
+        'run': ['Split Backs 3 Wide Dive Left', 'I Formation 3WR HB Inside Weak', 'Shotgun 2 RB 3 WR Shotgun Sweep']
+    },
+    '2RB/1TE/2WR': {
+        'pass': ['I Formation Twin WR Hard Slants', 'I Formation Twin WR Quick Outs', 'I Formation Normal FL Hitch',
+                 'Weak I Normal WR Corner TE Middle'],
+        'run': ['Weak I Normal HB Inside Weak', 'I Formation Normal HB Dive', 'I Formation Normal HB Blast',
+                'Weak I Normal FB Inside Weak']
+    },
+    '2RB/2TE/1WR': {
+        'pass': ['Strong I Big TE Post', 'Strong I Big Backfield Drag'],
+        'run': ['Strong I Big HB Dive Strong']
+    },
+    '3RB/1TE/1WR': {
+        'pass': ['I Formation Power Play Action HB Downfield', 'I Formation Power PA Flats'],
+        'run': ['I Formation Power HB Strong Outside']
+    },
+    '2RB/3TE': {
+        'pass': [],
+        'run': []
+    },
+}
+
+# Standard Defense
+
+def_formations = {
+    '113': ['3-4 Normal Man Cover 1', 'Dime Normal Man Cover 1', '4-3 Normal Man Under 1'],
+    '122': ['Dime Normal Man Cover 1', '4-3 Normal Man Under 1'],
+    '203': ['3-4 Normal Man Cover 1', 'Dime Normal Man Cover 1', '4-3 Normal Man Under 1', '4-3 Under Double LB Blitz'],
+    '212': ['4-3 Under Double LB Blitz', 'Dime Normal Man Cover 1', '3-4 Normal Man QB Spy', '3-4 Normal Man Cover 1',
+            '46 Normal Inside Blitz', '4-3 Normal OLB Blitz Inside', '4-3 Normal WLB MLB Blitz'],
+    '311': ['Dime Normal Double WR1 WR2', 'Dime Normal Man Cover 1'],
+    '221': ['Dime Normal Man Cover 1', 'Dime Flat 2 Deep Man Under'],
+    '104': ['Dime Normal Man Cover 1']
+}
