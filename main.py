@@ -323,20 +323,24 @@ off_play_adj_ev.to_csv(Config.root + '/off_play_adj_ev.csv', index=False)
 # Best Defensive Calls
 formations = {
     '113': {
-        'pass': ['Shotgun Normal HB Flare'],
-        'run': ['Singleback Normal HB Counter Weak', 'Singleback Normal HB Dive Weak']
+        'pass': ['Singleback Normal HB Release Mid', 'Singleback Normal WR Quick In', 'Singleback Normal TE Quick Out',
+                 'Singleback Normal Quick Slant', 'Shotgun Normal HB Flare'],
+        'run': ['Singleback Normal HB Counter Weak', 'Singleback Slot Strong HB Counter',
+                'Singleback Normal HB Inside Weak']
     },
     '122': {
-        'pass': ['Singleback Big Ins and Outs', 'Singleback Big WR Deep'],
-        'run': ['Singleback Big HB Inside Strong']
+        'pass': ['Singleback Big WR Deep', 'Singleback Big Ins and Outs'],
+        'run': ['Singleback Big Off Tackle Strong']
     },
     '203': {
-        'pass': ['Split Backs 3 Wide WR Quick Out'],
-        'run': ['Split Backs 3 Wide Dive Left']
+        'pass': ['I Formation 3WR FL Post', 'I Formation 3WR WR Out', 'I Formation 3WR Slot Short WR Deep',
+                 'I Formation 3WR Backfield Flats', 'Split Backs 3 Wide WR WR Quick Out'],
+        'run': ['Split Backs 3 Wide Dive Left', 'I Formation 3WR HB Inside Weak']
     },
     '212': {
-        'pass': ['I Formation Twin WR Hard Slants', 'Weak I Normal WR Corner TE Middle'],
-        'run': ['I Formation Normal HB Dive', 'I Formation Normal HB Blast']
+        'pass': ['I Formation Twin WR Hard Slants', 'Weak I Normal WR Corner TE Middle', 'Weak I Normal Skinny Posts'
+                 'I Formation Twin WR Quick Outs', 'I Formation Normal Max Protect', 'I Formation Normal FL Hitch'],
+        'run': ['Strong I Normal HB Off Tackle', 'Weak I Normal Fullback Counter Weak', 'I Formation Normal HB Draw']
     },
     '221': {
         'pass': ['Strong I Big TE Post', 'Strong I Big Backfield Drag'],
@@ -344,7 +348,7 @@ formations = {
     },
     '311': {
         'pass': ['I Formation Power Play Action HB Downfield', 'I Formation Power PA Flats'],
-        'run': ['I Formation Power HB Strong Outside']
+        'run': ['I Formation Power HB Strong Outside', 'I Formation Power HB Sweep Weak']
     },
     '104': {
         'pass': ['Singleback 4 Wide Quick Outs'],
@@ -373,20 +377,31 @@ for formation in formations:
     globals()[f"def_plays_total_{formation}"] = adj_ev(df.loc[df.OffensivePlay.isin(form_plays)], 'DefensivePlay',
                                                        all_plays, 'asc').drop(exclude_columns_run, axis=1)
 
+# Existing code to calculate adjusted expected values for run and pass plays
+
+# New code to find matches between run and pass plays with 'ypp' < 6 for each formation
+for formation in formations:
+    if f"def_plays_pass_{formation}" in globals() and f"def_plays_run_{formation}" in globals():
+        pass_plays_df = globals()[f"def_plays_pass_{formation}"]
+        run_plays_df = globals()[f"def_plays_run_{formation}"]
+
+        matched_df = pass_plays_df[pass_plays_df['ypp'] < 6.5].merge(
+            run_plays_df[run_plays_df['ypp'] < 6],
+            on='DefensivePlay',
+            suffixes=('_pass', '_run')
+        )
+
+        globals()[f"combined_matched_result_{formation}"] = matched_df
+
 # Best Offensive Calls
 def_formations = {
-    '113': ['46 Heavy 2 Deep Man Under', 'Dime Normal Man Cover 1', '4-3 Normal Double WR3',
-            '4-3 Normal WLB Outside Blitz'],
-    '122': ['3-4 Normal Man Cover 1', 'Dime Normal Man Cover 1', '4-3 Normal Man Under 1',
-            '4-3 Normal OLB Blitz Inside'],
-    '203': ['3-4 Normal Man Cover 1', '4-3 Under Double LB Blitz', '3-4 Normal Man QB Spy', 'Dime Normal Man Cover 1',
-            '4-3 Normal Man Under 1'],
-    '212': ['3-4 Normal Man Cover 1', '3-4 Normal Man QB Spy', '4-3 Under Double LB Blitz', 'Dime Normal Man Cover 1',
-            '4-3 Normal Man Under 1', '4-3 Normal OLB Blitz Inside', '4-3 Normal WLB MLB Blitz'],
-    '311': ['3-4 Normal Man Cover 1', '3-4 Normal Man QB Spy', '4-3 Under Double LB Blitz',
-            'Dime Normal Double WR1 WR2', '4-3 Normal Man Under 1'],
-    '221': ['Dime Flat 2 Deep Man Under', 'Dime Normal Man Cover 1', '4-3 Normal Man Under 1'],
-    '104': ['Quarter Normal Man Short Zone']
+    '113': ['4-3 Normal Man Under 1', '3-4 Normal Man Cover 1', '4-3 Normal Double WR3'],
+    '122': ['Nickel Normal Double WR3', 'Nickel Normal CB3 LB Blitz'],
+    '203': ['3-4 Normal Man Cover 1', '4-3 Under Double LB Blitz', '4-3 Normal Double WR3', '4-3 Normal Man Under 1'],
+    '212': ['Goal Line Attack #3', '3-4 Normal Man Cover 1', 'Dime Normal Man Cover 1'],
+    '311': ['3-4 Normal Man Cover 1', 'Dime Normal Man Cover 1', '4-3 Normal Man Under 1'],
+    '221': ['Dime Normal Man Cover 1'],
+    '104': ['Dime Normal Man Cover 1']
 }
 
 off_personnel_values = {
