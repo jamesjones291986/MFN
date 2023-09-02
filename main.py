@@ -291,11 +291,6 @@ df = format_df(pd.concat((Config.load_feather(k, y) for k, v in Config.ls_dictio
 
 df = format_df(Config.load_feather('norig', 2031)).reset_index(drop=True)
 
-#####################################
-
-# Scouting
-scout('norig', 2030, 'KCC')
-
 
 ###########################################
 
