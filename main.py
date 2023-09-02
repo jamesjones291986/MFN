@@ -1,10 +1,7 @@
 import pandas as pd
 import numpy as np
 from util import Config
-from SheetsRef import SheetsRef
 from GameLogDownloader import GameLogDownloader
-from SeasonCompiler import SeasonCompiler
-from glob import iglob
 
 """
 Down 6 = kickoff
@@ -299,26 +296,13 @@ df = format_df(Config.load_feather('norig', 2031)).reset_index(drop=True)
 # Scouting
 scout('norig', 2030, 'KCC')
 
-# download_all_logs()
-
-league = 'pfl'
-year = '2029'
-path = f'/Users/jamesjones/game_logs/{league}/{year}/{league}_{year}.csv'
-
-gdl = GameLogDownloader()
-gdl.set_league_season(league, int(year))
-gdl.download_season(path)
-
-# Compile into a feather file
-
-SeasonCompiler.compile(league, int(year), override_path=path)
 
 ###########################################
 
 # EV - Best Overall Plays
-off_play_adj_ev = adj_ev(df, 'OffensivePlay', all_plays, 'desc')
+overall_off_play_adj_ev = adj_ev(df, 'OffensivePlay', all_plays, 'desc')
 
-off_play_adj_ev.to_csv(Config.root + '/off_play_adj_ev.csv', index=False)
+overall_off_play_adj_ev.to_csv(Config.root + '/off_play_adj_ev.csv', index=False)
 
 # Best Defensive Calls
 formations = {
@@ -353,6 +337,9 @@ formations = {
     '104': {
         'pass': ['Singleback 4 Wide Quick Outs'],
     },
+    '105': {
+        'pass': ['Shotgun 5 Wide Parallel Slants'],
+    },
 }
 
 # Calculate adjusted expected value for each formation and play type
@@ -385,8 +372,8 @@ for formation in formations:
         pass_plays_df = globals()[f"def_plays_pass_{formation}"]
         run_plays_df = globals()[f"def_plays_run_{formation}"]
 
-        matched_df = pass_plays_df[pass_plays_df['ypp'] < 6.5].merge(
-            run_plays_df[run_plays_df['ypp'] < 6],
+        matched_df = pass_plays_df[pass_plays_df['ypp'] < 6].merge(
+            run_plays_df[run_plays_df['ypp'] < 5],
             on='DefensivePlay',
             suffixes=('_pass', '_run')
         )
@@ -438,57 +425,3 @@ run_plays.to_csv(Config.root + '/run_plays.csv', index=False)
 
 #######################################################
 
-# Scouting
-
-# Bring in the league to scout
-df = format_df(Config.load_feather('xfl', 2045)).reset_index(drop=True)
-
-
-# Defensive Scouting
-def def_scouting(defense, league, season):
-    for p in df.OffPersonnel.unique():
-        filtered_df = df.loc[
-            df.DefTeam.eq(defense) &
-            df.League.eq(league) &
-            df.OffPersonnel.eq(p) &
-            df.Season.astype(str).eq(season)
-            ]
-        grouped_data = filtered_df.groupby('DefensivePlay').size().sort_values(ascending=False).head(30)
-        percentages = grouped_data / grouped_data.sum() * 100
-        top_30 = percentages.head(30)
-        print(p)
-        print(top_30.apply(lambda x: f'{x:.1f}%'))
-        print('')
-
-
-def_scouting('ARZ', 'xfl', '2045')
-
-
-##################################################
-
-# Testing
-
-# Offensive Scouting
-def off_scouting(offenses, league, season):
-    for offense in offenses:
-        filtered_df = df.loc[
-            df.DefTeam.eq(offense) &
-            df.League.eq(league) &
-            df.Season.astype(str).eq(season)
-            ]
-        grouped_data = filtered_df.groupby(['OffPersonnel', 'OffensivePlay']).size().reset_index(name='Count')
-        grouped_data['Percentage'] = grouped_data.groupby('OffPersonnel')['Count'].transform(
-            lambda x: x / x.sum() * 100)
-        top_30 = grouped_data.groupby('OffPersonnel').apply(lambda x: x.nlargest(30, 'Percentage')).reset_index(
-            drop=True)
-
-        print(f"Offense: {offense}")
-        for personnel in top_30['OffPersonnel'].unique():
-            personnel_data = top_30[top_30['OffPersonnel'] == personnel]
-            print(f"{personnel}:")
-            print(personnel_data[['OffensivePlay', 'Percentage']].apply(
-                lambda x: f"{x['OffensivePlay']:40s} {x['Percentage']:.1f}%", axis=1).to_string(index=False))
-            print('')
-
-
-off_scouting(['NYM', 'pfl', '2029')

@@ -4,7 +4,7 @@
 ####################################
 
 from GameLogDownloader import GameLogDownloader
-from SheetsRef import SheetsRef
+from other_scripts.SheetsRef import SheetsRef
 from util import Config
 import pandas as pd
 

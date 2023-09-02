@@ -6,7 +6,7 @@ Collection of various functions for GameLog objects
 
 import pandas as pd
 from util import Config
-from SheetsRef import SheetsRef
+from other_scripts.SheetsRef import SheetsRef
 
 
 class GameLogReader:
