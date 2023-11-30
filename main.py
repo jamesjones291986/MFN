@@ -70,7 +70,7 @@ def adj_ev(dd, grouper, plays=all_plays, sort='desc', col_to_sum='YardsGained', 
             c = ev_adj_count[p]
         except KeyError:
             c = np.nan
-        if c > 30:
+        if c > 20:
             off_play_type = dx.loc[dx[grouper] == p, 'OffPlayType'].iloc[0]
             off_personnel_type = dx.loc[dx[grouper] == p, 'OffPersonnel'].iloc[0]
             results.append({
@@ -289,7 +289,7 @@ def scout(league, season, team):
 df = format_df(pd.concat((Config.load_feather(k, y) for k, v in Config.ls_dictionary.items() for y in v))).reset_index(
     drop=True)
 
-df = format_df(Config.load_feather('norig', 2031)).reset_index(drop=True)
+df = format_df(Config.load_feather('xfl', 2047)).reset_index(drop=True)
 
 
 ###########################################
@@ -302,32 +302,30 @@ overall_off_play_adj_ev.to_csv(Config.root + '/off_play_adj_ev.csv', index=False
 # Best Defensive Calls
 formations = {
     '113': {
-        'pass': ['Singleback Normal HB Release Mid', 'Singleback Normal WR Quick In', 'Singleback Normal TE Quick Out',
-                 'Singleback Normal Quick Slant', 'Shotgun Normal HB Flare'],
-        'run': ['Singleback Normal HB Counter Weak', 'Singleback Slot Strong HB Counter',
-                'Singleback Normal HB Inside Weak']
+        'pass': ['Shotgun Normal HB Flare', 'Singleback Normal HB Release Mid', 'Singleback Normal FL Post',
+                 'Singleback Normal TE Quick Out'],
+        'run': ['Singleback Normal HB Inside Weak', 'Singleback Normal HB Counter Weak']
     },
     '122': {
         'pass': ['Singleback Big WR Deep', 'Singleback Big Ins and Outs'],
-        'run': ['Singleback Big Off Tackle Strong']
+        'run': ['Singleback Big HB Inside Strong']
     },
     '203': {
-        'pass': ['I Formation 3WR FL Post', 'I Formation 3WR WR Out', 'I Formation 3WR Slot Short WR Deep',
-                 'I Formation 3WR Backfield Flats', 'Split Backs 3 Wide WR WR Quick Out'],
-        'run': ['Split Backs 3 Wide Dive Left', 'I Formation 3WR HB Inside Weak']
+        'pass': ['I Formation 3WR FL Post', 'I Formation 3WR WR Out', 'I Formation 3WR Slot Short WR Deep'],
+        'run': ['I Formation 3WR HB Inside Weak', 'Shotgun 2RB 3WR Shotgun Sweep']
     },
     '212': {
-        'pass': ['I Formation Twin WR Hard Slants', 'Weak I Normal WR Corner TE Middle', 'Weak I Normal Skinny Posts'
-                 'I Formation Twin WR Quick Outs', 'I Formation Normal Max Protect', 'I Formation Normal FL Hitch'],
-        'run': ['Strong I Normal HB Off Tackle', 'Weak I Normal Fullback Counter Weak', 'I Formation Normal HB Draw']
+        'pass': ['I Formation Twin WR Quick Outs', 'I Formation Twin WR Hard Slants', 'I Formation Normal FL Hitch',
+                 'I Formation Normal Max Protect', 'Weak I Normal WR Corner TE Middle'],
+        'run': ['Weak I Normal HB Inside Weak', 'I Formation Normal HB Dive']
     },
     '221': {
-        'pass': ['Strong I Big TE Post', 'Strong I Big Backfield Drag'],
+        'pass': ['Strong I Big Backfield Drag', 'Strong I Big TE Post'],
         'run': ['Strong I Big HB Dive Strong']
     },
     '311': {
         'pass': ['I Formation Power Play Action HB Downfield', 'I Formation Power PA Flats'],
-        'run': ['I Formation Power HB Strong Outside', 'I Formation Power HB Sweep Weak']
+        'run': ['I Formation Power HB Strong Outside']
     },
     '104': {
         'pass': ['Singleback 4 Wide Quick Outs'],
@@ -367,8 +365,8 @@ for formation in formations:
         pass_plays_df = globals()[f"def_plays_pass_{formation}"]
         run_plays_df = globals()[f"def_plays_run_{formation}"]
 
-        matched_df = pass_plays_df[pass_plays_df['ypp'] < 6].merge(
-            run_plays_df[run_plays_df['ypp'] < 5],
+        matched_df = pass_plays_df[pass_plays_df['ypp'] < 7].merge(
+            run_plays_df[run_plays_df['ypp'] < 6],
             on='DefensivePlay',
             suffixes=('_pass', '_run')
         )
@@ -377,12 +375,12 @@ for formation in formations:
 
 # Best Offensive Calls
 def_formations = {
-    '113': ['4-3 Normal Man Under 1', '3-4 Normal Man Cover 1', '4-3 Normal Double WR3'],
-    '122': ['Nickel Normal Double WR3', 'Nickel Normal CB3 LB Blitz'],
-    '203': ['3-4 Normal Man Cover 1', '4-3 Under Double LB Blitz', '4-3 Normal Double WR3', '4-3 Normal Man Under 1'],
-    '212': ['Goal Line Attack #3', '3-4 Normal Man Cover 1', 'Dime Normal Man Cover 1'],
-    '311': ['3-4 Normal Man Cover 1', 'Dime Normal Man Cover 1', '4-3 Normal Man Under 1'],
-    '221': ['Dime Normal Man Cover 1'],
+    '113': ['3-4 Normal Man Cover 1', '3-4 Normal OLBs Blitz'],
+    '122': ['Dime Normal Man Cover 1'],
+    '203': ['4-3 Normal OLB Blitz Outside' '4-3 Normal OLB Blitz Inside', '4-3 Normal WLB MLB Blitz', '4-3 Normal Man Under 1'],
+    '212': ['Dime Normal Man Cover 1' '4-3 Under Double LB Blitz', '4-3 Normal Man Under 1', '4-3 Normal WLB MLB Blitz'],
+    '311': ['Dime Normal Double WR1 WR2'],
+    '221': ['4-3 Normal OLB Blitz Inside' '4-3 Normal Man Under 1', '4-3 Normal WLB MLB Blitz'],
     '104': ['Dime Normal Man Cover 1']
 }
 
@@ -415,8 +413,65 @@ pass_plays = off_plays_combined[off_plays_combined['OffPlayType'].str.contains('
     .sort_values('any/a', ascending=False)
 run_plays = off_plays_combined[off_plays_combined['OffPlayType'].str.contains('run', case=False)]
 
-pass_plays.to_csv(Config.root + '/pass_plays.csv', index=False)
-run_plays.to_csv(Config.root + '/run_plays.csv', index=False)
+pass_plays.to_csv(Config.root + '/plays/pass_plays.csv', index=False)
+run_plays.to_csv(Config.root + '/plays/run_plays.csv', index=False)
 
 #######################################################
+
+# Assuming you already have the 'adj_ev' function
+
+# Assuming you already have the 'adj_ev' function
+
+
+
+# Bring in the league to scout
+df = format_df(Config.load_feather(league, season)).reset_index(drop=True)
+
+# Define your league and team variables
+league = 'xfl'  # Replace with your actual league name
+teams = ['LAC', 'MEM', 'ATL', 'PRI', 'PHX']  # Replace with your actual team names
+seasons = [2047, 2046]
+
+# Filter based on league and teams in "DefTeam"
+def_filtered_df = df[(df['League'] == league) & (df['DefTeam'].isin(teams)) & (df['Season'].isin(seasons))]
+
+# Calculate adjusted expected values for offensive plays
+adj_ev_offense = adj_ev(def_filtered_df, 'OffensivePlay', all_plays, 'desc').sort_values(by='ypp', ascending=False)
+
+
+
+
+
+form_113 = "1RB/1TE/3WR"
+
+off_filtered_df = df[(df['League'] == league) & (df['HasBall'].isin(teams)) & (df['OffPersonnel'] == form_113)]
+
+# Calculate adjusted expected values for offensive plays
+adj_ev_Defense = adj_ev(off_filtered_df, 'DefensivePlay', all_plays, 'desc').sort_values(by='ypp', ascending=True)
+
+
+    # Dictionary mapping offensive formations to corresponding offensive personnel values
+    offensive_formations = {
+        '113': '1RB/1TE/3WR',
+        '122': '1RB/2TE/2WR',
+        '203': '2RB/3WR',
+        '212': '2RB/1TE/2WR',
+        '311': '3RB/1TE/1WR',
+        '221': '2RB/2TE/1WR',
+        '104': '1RB/4WR',
+    }
+
+    def_plays_combined = pd.DataFrame()  # DataFrame to store the combined results
+
+    for off_personnel_value in offensive_formations.values():
+        filtered_df = df[(df['OffPersonnel'] == off_personnel_value) & (df['HasBall'].isin(teams))]
+
+        def_plays_result = adj_ev(filtered_df, 'DefensivePlay', all_plays, 'asc')
+        result = def_plays_result.sort_values(by='ypp',
+                                              ascending=False)  # Replace with the actual metric column
+
+        def_plays_combined = pd.concat([def_plays_combined, result])
+
+    # Now, def_plays_combined contains the combined results for each offensive formation and corresponding defensive plays
+
 

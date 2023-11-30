@@ -27,10 +27,10 @@ df = format_df(pd.concat((Config.load_feather(k, y) for k, v in Config.ls_dictio
 # Best Defensive Calls
 formations = {
     '113': {
-        'pass': ['Singleback Normal HB Release Mid', 'Singleback Normal WR Quick In', 'Singleback Normal TE Quick Out',
-                 'Singleback Normal Quick Slant', 'Shotgun Normal HB Flare'],
-        'run': ['Singleback Normal HB Counter Weak', 'Singleback Slot Strong HB Counter',
-                'Singleback Normal HB Inside Weak']
+        'pass': ['Singleback Slot Strong HB Flat', 'Shotgun Normal Slot Drag', 'Singleback Slot Strong Skinny Posts',
+                 'Shotgun Normal TE Out', 'Shotgun Normal HB Flare'],
+        'run': ['Shotgun Normal HB Dive', 'Singleback Slot Strong HB Counter',
+                'Singleback Slot Strong Off Tackle Strong']
     },
     '122': {
         'pass': ['Singleback Big WR Deep', 'Singleback Big Ins and Outs'],
