@@ -1,8 +1,8 @@
 from GameLogDownloader import GameLogDownloader
 from SeasonCompiler import SeasonCompiler
 
-league = 'nba'
-year = '2001'
+league = 'qad'
+year = '2048'
 path = f'/Users/jamesjones/game_logs/{league}/{year}/{league}_{year}.csv'
 
 gdl = GameLogDownloader()

@@ -32,278 +32,278 @@ def retro_schedule(schedule, tabs=2):
     return new_schedule.strip()
 
 # Copy schedules from the league schedule page. Paste them below and run the parse_scores.
-s = """Week 1
-Clippers 3 @ Thunder 33   
-Trail Blazers 0 @ Kings 37   
-Timberwolves 12 @ Bulls 21   
-Nuggets 10 @ Hawks 13   
-Royals 30 @ Spurs 8   
-Bullets 0 @ Lakers 45   
-Suns 13 @ Jazz 3   
-Cavaliers 33 @ Grizzlies 6   
-Rockets 10 @ Raptors 23   
-Bucks 34 @ Pistons 37   
-Pelicans 10 @ Warriors 15   
-Heat 6 @ Wizards 31   
-Globetrotters 3 @ Mavericks 16   
-Celtics 3 @ Knicks 78   
-Nets 13 @ 76ers 17   
-Magic 23 @ Hornets 6   
+s = """ Week 1
+Rampage 10 @ Stars 21   
+Rattlesnakes 20 @ Treasure 6   
+Monarchs 27 @ Rancors 28   
+Hammers 33 @ Borealis 3   
+Virgins 10 @ Autobots 17   
+Blizzard 9 @ Corsairs 6   
+Heisenbergs 20 @ Storm 12   
+Leviathan 17 @ Ukraine United 20   
+Ravens 38 @ Muskies 9   
+Quicksilver 22 @ Regulators 9   
+Cut Throat’s 3 @ Mellotrons 38   
+Bakers 21 @ Airborne 15   
+Far East 27 @ Timbers 3   
+Black Sharks 7 @ Fighting DeLucias 22   
+Mallards 24 @ Chips 3   
+Foghorn Leghorns 9 @ Fightin' Amish 50   
 Week 2
-Bullets 13 @ Jazz 6   
-Kings 30 @ Suns 3   
-Spurs 0 @ Raptors 54   
-Warriors 0 @ Hornets 23   
-Hawks 3 @ Magic 35   
-Trail Blazers 12 @ Lakers 9 (OT)   
-Thunder 19 @ Pelicans 3   
-Cavaliers 29 @ Clippers 7   
-Bulls 7 @ Royals 9   
-Bucks 6 @ Grizzlies 13   
-Nuggets 3 @ Knicks 42   
-Mavericks 7 @ 76ers 17   
-Globetrotters 7 @ Nets 30   
-Wizards 6 @ Timberwolves 0   
-Pistons 31 @ Rockets 24   
-Heat 6 @ Celtics 9   
+Storm 3 @ Leviathan 29   
+Cut Throat’s 6 @ Ukraine United 15   
+Black Sharks 3 @ Foghorn Leghorns 40   
+Mallards 21 @ Regulators 29   
+Fightin' Amish 26 @ Muskies 6   
+Blizzard 17 @ Treasure 29   
+Ravens 21 @ Corsairs 10   
+Stars 0 @ Rattlesnakes 39   
+Borealis 17 @ Rancors 27   
+Far East 9 @ Virgins 7   
+Monarchs 17 @ Rampage 3   
+Airborne 15 @ Autobots 12 (OT)   
+Chips 27 @ Heisenbergs 20   
+Timbers 24 @ Bakers 37   
+Mellotrons 41 @ Fighting DeLucias 6   
+Hammers 14 @ Quicksilver 10   
 Week 3
-Spurs 7 @ Bullets 28   
-Knicks 53 @ Thunder 23   
-Nets 33 @ Heat 7   
-Jazz 0 @ Kings 64   
-76ers 28 @ Lakers 16   
-Mavericks 10 @ Globetrotters 5   
-Bulls 44 @ Grizzlies 13   
-Rockets 10 @ Royals 50   
-Timberwolves 3 @ Magic 26   
-Trail Blazers 10 @ Hornets 13   
-Wizards 0 @ Suns 33   
-Raptors 17 @ Cavaliers 16   
-Pistons 23 @ Bucks 20   
-Hawks 17 @ Pelicans 30   
-Nuggets 6 @ Clippers 0   
-Warriors 17 @ Celtics 17 (OT)   
+Stars 26 @ Corsairs 3   
+Fightin' Amish 17 @ Quicksilver 27   
+Timbers 20 @ Far East 11   
+Borealis 0 @ Airborne 23   
+Rancors 6 @ Monarchs 55   
+Hammers 59 @ Muskies 10   
+Ravens 13 @ Blizzard 16 (OT)   
+Black Sharks 26 @ Storm 12   
+Foghorn Leghorns 43 @ Regulators 66   
+Heisenbergs 12 @ Mallards 31   
+Leviathan 14 @ Chips 22   
+Autobots 13 @ Treasure 31   
+Rampage 30 @ Virgins 10   
+Rattlesnakes 27 @ Bakers 0   
+Mellotrons 17 @ Ukraine United 3   
+Fighting DeLucias 6 @ Cut Throat’s 31   
 Week 4
-Thunder 12 @ Nuggets 0   
-Cavaliers 29 @ Bullets 7   
-Raptors 6 @ Knicks 36   
-Globetrotters 13 @ Heat 9   
-Trail Blazers 7 @ 76ers 15   
-Mavericks 6 @ Wizards 7   
-Celtics 12 @ Nets 17   
-Clippers 28 @ Warriors 13   
-Pelicans 6 @ Magic 33   
-Lakers 27 @ Suns 0   
-Kings 31 @ Hawks 10   
-Bulls 16 @ Bucks 10   
-Royals 17 @ Pistons 40   
-Hornets 18 @ Timberwolves 13   
-Grizzlies 13 @ Spurs 7   
-Jazz 20 @ Rockets 7   
+Fightin' Amish 25 @ Corsairs 3   
+Fighting DeLucias 37 @ Foghorn Leghorns 31   
+Cut Throat’s 6 @ Regulators 48   
+Blizzard 6 @ Storm 15   
+Hammers 24 @ Stars 0   
+Ukraine United 44 @ Muskies 28   
+Mallards 10 @ Monarchs 36   
+Treasure 22 @ Borealis 3   
+Rattlesnakes 34 @ Virgins 0   
+Quicksilver 47 @ Autobots 6   
+Rancors 27 @ Ravens 0   
+Timbers 10 @ Rampage 26   
+Leviathan 0 @ Bakers 21   
+Heisenbergs 9 @ Airborne 25   
+Far East 13 @ Chips 32   
+Mellotrons 48 @ Black Sharks 3   
 Week 5
-Kings 70 @ Bullets 6   
-Celtics 8 @ Thunder 22   
-Suns 54 @ Spurs 0   
-Jazz 6 @ Cavaliers 27   
-Heat 3 @ 76ers 23   
-Nets 26 @ Wizards 3   
-Magic 20 @ Nuggets 13   
-Lakers 27 @ Globetrotters 9   
-Mavericks 27 @ Trail Blazers 17   
-Warriors 28 @ Knicks 39   
-Royals 7 @ Grizzlies 24   
-Pelicans 3 @ Bulls 23   
-Raptors 30 @ Rockets 7   
-Pistons 0 @ Timberwolves 7   
-Hornets 8 @ Clippers 6   
-Bucks 13 @ Hawks 26   
+Corsairs 17 @ Black Sharks 13   
+Rattlesnakes 33 @ Rampage 17   
+Borealis 3 @ Blizzard 24   
+Storm 3 @ Foghorn Leghorns 14   
+Airborne 9 @ Mallards 30   
+Leviathan 20 @ Treasure 16   
+Autobots 3 @ Monarchs 52   
+Virgins 13 @ Quicksilver 59   
+Fightin' Amish 52 @ Fighting DeLucias 7   
+Far East 10 @ Bakers 20   
+Cut Throat’s 17 @ Chips 34   
+Regulators 3 @ Hammers 29   
+Stars 16 @ Ukraine United 27   
+Muskies 12 @ Ravens 30   
+Rancors 12 @ Heisenbergs 20   
+Timbers 0 @ Mellotrons 35   
 Week 6
-Nuggets 7 @ Warriors 19   
-76ers 3 @ Pistons 62   
-Timberwolves 31 @ Pelicans 24   
-Bucks 19 @ Bulls 7   
-Clippers 20 @ Magic 74   
-Knicks 78 @ Heat 7   
-Celtics 26 @ Globetrotters 0   
-Kings 34 @ Wizards 10   
-Hornets 6 @ Hawks 16   
-Thunder 16 @ Nets 17   
-Grizzlies 14 @ Raptors 59   
-Royals 21 @ Jazz 3   
-Rockets 0 @ Bullets 9   
-Spurs 3 @ Cavaliers 43   
-Lakers 7 @ Trail Blazers 6   
-Suns 27 @ Mavericks 17   
+Corsairs 3 @ Fightin' Amish 56   
+Foghorn Leghorns 23 @ Cut Throat’s 6   
+Regulators 62 @ Storm 30   
+Hammers 31 @ Blizzard 0   
+Muskies 10 @ Stars 37   
+Mallards 40 @ Ukraine United 12   
+Monarchs 34 @ Treasure 7   
+Borealis 0 @ Rattlesnakes 41   
+Autobots 10 @ Virgins 0   
+Quicksilver 41 @ Ravens 10   
+Rampage 24 @ Rancors 27   
+Bakers 30 @ Timbers 16   
+Leviathan 0 @ Airborne 13   
+Heisenbergs 20 @ Far East 24   
+Chips 30 @ Black Sharks 6   
+Fighting DeLucias 0 @ Mellotrons 41   
 Week 7
-Hawks 3 @ Clippers 23   
-76ers 6 @ Celtics 17   
-Suns 27 @ Globetrotters 10   
-Trail Blazers 21 @ Cavaliers 30   
-Wizards 17 @ Knicks 76   
-Heat 0 @ Nets 52   
-Nuggets 10 @ Spurs 37   
-Magic 16 @ Pelicans 0   
-Bucks 17 @ Hornets 20   
-Timberwolves 3 @ Raptors 37   
-Grizzlies 18 @ Rockets 9   
-Bullets 0 @ Royals 46   
-Warriors 6 @ Thunder 31   
-Lakers 28 @ Jazz 13   
-Mavericks 0 @ Kings 45   
-Bulls 6 @ Pistons 24   
+Ukraine United 20 @ Airborne 35   
+Regulators 21 @ Heisenbergs 26   
+Treasure 35 @ Timbers 3   
+Rampage 34 @ Leviathan 16   
+Bakers 23 @ Black Sharks 6   
+Muskies 14 @ Cut Throat’s 20   
+Corsairs 10 @ Hammers 29   
+Autobots 7 @ Fightin' Amish 73   
+Rancors 32 @ Blizzard 13   
+Fighting DeLucias 32 @ Ravens 13   
+Foghorn Leghorns 23 @ Storm 0   
+Mellotrons 47 @ Quicksilver 17   
+Virgins 0 @ Stars 18   
+Rattlesnakes 9 @ Monarchs 18   
+Far East 10 @ Mallards 29   
+Chips 41 @ Borealis 7   
 Week 8
-Warriors 14 @ Clippers 19   
-Celtics 16 @ Bullets 7   
-Spurs 13 @ Jazz 20   
-Kings 31 @ 76ers 9   
-Wizards 10 @ Lakers 37   
-Trail Blazers 13 @ Suns 59   
-Knicks 44 @ Cavaliers 16   
-Thunder 29 @ Magic 26 (OT)   
-Pelicans 6 @ Hornets 27   
-Nets 23 @ Nuggets 3   
-Mavericks 13 @ Heat 3   
-Rockets 15 @ Bulls 9   
-Hawks 19 @ Timberwolves 7   
-Grizzlies 3 @ Pistons 41   
-Royals 26 @ Raptors 23   
-Bucks 10 @ Globetrotters 19   
+Black Sharks 10 @ Timbers 20   
+Storm 8 @ Ukraine United 29   
+Fightin' Amish 17 @ Hammers 33   
+Cut Throat’s 15 @ Bakers 31   
+Virgins 14 @ Rancors 27   
+Corsairs 21 @ Muskies 23   
+Borealis 0 @ Treasure 35   
+Rampage 7 @ Quicksilver 17   
+Chips 24 @ Fighting DeLucias 11   
+Ravens 0 @ Monarchs 32   
+Rattlesnakes 52 @ Autobots 0   
+Stars 16 @ Blizzard 14   
+Mellotrons 26 @ Regulators 54   
+Airborne 18 @ Far East 21   
+Heisenbergs 44 @ Leviathan 16   
+Foghorn Leghorns 7 @ Mallards 34   
 Week 9
-Celtics 9 @ Clippers 19   
-Globetrotters 12 @ 76ers 7   
-Cavaliers 10 @ Suns 40   
-Trail Blazers 9 @ Wizards 6   
-Knicks 6 @ Nets 15   
-Spurs 3 @ Heat 15   
-Pelicans 3 @ Nuggets 9   
-Hornets 0 @ Magic 53   
-Raptors 31 @ Bucks 9   
-Timberwolves 9 @ Rockets 7   
-Grizzlies 13 @ Royals 20   
-Bullets 3 @ Thunder 63   
-Warriors 10 @ Jazz 16 (OT)   
-Kings 16 @ Lakers 9   
-Bulls 7 @ Mavericks 9   
-Hawks 16 @ Pistons 38   
+Rattlesnakes 41 @ Corsairs 0   
+Rampage 41 @ Borealis 13   
+Airborne 29 @ Foghorn Leghorns 7   
+Leviathan 9 @ Mallards 28   
+Treasure 6 @ Monarchs 22   
+Fightin' Amish 56 @ Virgins 0   
+Fighting DeLucias 16 @ Far East 12   
+Bakers 13 @ Chips 33   
+Heisenbergs 17 @ Timbers 14   
+Storm 3 @ Mellotrons 59   
+Black Sharks 3 @ Cut Throat’s 16   
+Ukraine United 12 @ Regulators 27   
+Muskies 3 @ Hammers 74   
+Quicksilver 37 @ Stars 10   
+Rancors 20 @ Autobots 6   
+Blizzard 6 @ Ravens 20   
 Week 10
-Warriors 12 @ Nuggets 30   
-Pistons 35 @ Pelicans 6   
-Bucks 5 @ Timberwolves 0   
-Magic 35 @ Bulls 3   
-Knicks 64 @ Clippers 13   
-Celtics 16 @ Heat 0   
-Globetrotters 0 @ Kings 52   
-Hawks 17 @ Wizards 2   
-Hornets 10 @ Thunder 41   
-Nets 13 @ Grizzlies 6   
-Raptors 26 @ Royals 0   
-Jazz 27 @ Bullets 6   
-Rockets 6 @ Cavaliers 23   
-Spurs 7 @ Trail Blazers 34   
-Lakers 7 @ Mavericks 28   
-76ers 3 @ Suns 41   
+Stars 12 @ Fightin' Amish 14   
+Quicksilver 41 @ Corsairs 6   
+Rancors 24 @ Borealis 6   
+Monarchs 45 @ Muskies 3   
+Hammers 32 @ Ravens 21   
+Black Sharks 3 @ Blizzard 9   
+Storm 9 @ Regulators 84   
+Autobots 9 @ Chips 32   
+Treasure 10 @ Rampage 16 (OT)   
+Virgins 13 @ Rattlesnakes 52   
+Mellotrons 38 @ Bakers 27   
+Ukraine United 25 @ Fighting DeLucias 13   
+Timbers 6 @ Cut Throat’s 23   
+Mallards 36 @ Airborne 10   
+Far East 16 @ Leviathan 13   
+Heisenbergs 9 @ Foghorn Leghorns 6   
 Week 11
-Grizzlies 3 @ Jazz 34   
-Cavaliers 17 @ Royals 21   
-Clippers 10 @ Raptors 44   
-Bullets 11 @ Spurs 30   
-Thunder 41 @ Warriors 6   
-Bulls 21 @ Hornets 17   
-Magic 61 @ Bucks 10   
-Pelicans 0 @ Hawks 30   
-Lakers 16 @ Kings 23   
-Suns 29 @ Trail Blazers 27   
-Heat 13 @ Nuggets 10   
-76ers 7 @ Knicks 56   
-Mavericks 0 @ Nets 54   
-Globetrotters 9 @ Wizards 21   
-Timberwolves 10 @ Pistons 27   
-Rockets 13 @ Celtics 38   
+Autobots 12 @ Corsairs 13   
+Quicksilver 16 @ Rattlesnakes 36   
+Cut Throat’s 8 @ Fighting DeLucias 20   
+Foghorn Leghorns 28 @ Mellotrons 37   
+Airborne 27 @ Leviathan 20   
+Muskies 12 @ Rancors 24   
+Stars 17 @ Ravens 13   
+Treasure 6 @ Hammers 36   
+Monarchs 31 @ Borealis 2   
+Virgins 3 @ Rampage 17   
+Blizzard 3 @ Fightin' Amish 26   
+Bakers 27 @ Far East 19   
+Mallards 23 @ Heisenbergs 14   
+Ukraine United 12 @ Storm 24   
+Regulators 44 @ Black Sharks 6   
+Chips 14 @ Timbers 3   
 Week 12
-76ers 9 @ Mavericks 12 (OT)   
-Spurs 0 @ Kings 67   
-Wizards 7 @ Celtics 13   
-Suns 42 @ Bulls 28   
-Warriors 10 @ Hawks 13   
-Pistons 20 @ Magic 41   
-Nuggets 9 @ Hornets 13   
-Thunder 44 @ Rockets 0   
-Clippers 13 @ Nets 44   
-Pelicans 7 @ Lakers 43   
-Bullets 0 @ Cavaliers 49   
-Globetrotters 7 @ Trail Blazers 23   
-Heat 3 @ Knicks 98   
-Bucks 3 @ Royals 17   
-Grizzlies 20 @ Timberwolves 3   
-Jazz 0 @ Raptors 26   
+Ukraine United 6 @ Foghorn Leghorns 24   
+Chips 16 @ Far East 26   
+Mellotrons 40 @ Cut Throat’s 7   
+Fighting DeLucias 15 @ Black Sharks 3   
+Storm 10 @ Corsairs 13   
+Rampage 22 @ Autobots 7   
+Stars 10 @ Quicksilver 34   
+Blizzard 16 @ Muskies 3   
+Treasure 14 @ Virgins 3   
+Timbers 3 @ Mallards 25   
+Regulators 34 @ Airborne 31 (OT)   
+Leviathan 10 @ Heisenbergs 13 (OT)   
+Rattlesnakes 26 @ Fightin' Amish 21   
+Borealis 2 @ Ravens 20   
+Monarchs 21 @ Hammers 17   
+Bakers 3 @ Rancors 27   
 Week 13
-Heat 3 @ Warriors 17   
-Bulls 26 @ Timberwolves 17   
-Royals 10 @ Nuggets 10 (OT)   
-Magic 47 @ Hawks 3   
-Thunder 22 @ Clippers 12   
-Kings 27 @ Trail Blazers 2   
-Bullets 20 @ Suns 88   
-Pelicans 0 @ Bucks 16   
-Raptors 33 @ Grizzlies 0   
-Hornets 27 @ Pistons 13   
-76ers 7 @ Wizards 17   
-Knicks 40 @ Globetrotters 28   
-Celtics 17 @ Mavericks 3   
-Jazz 11 @ Nets 9 (OT)   
-Cavaliers 7 @ Lakers 24   
-Spurs 12 @ Rockets 7   
+Rancors 9 @ Treasure 31   
+Bakers 32 @ Heisenbergs 6   
+Far East 3 @ Mellotrons 38   
+Chips 11 @ Airborne 24   
+Fightin' Amish 20 @ Stars 9   
+Rampage 5 @ Rattlesnakes 33   
+Borealis 8 @ Autobots 7   
+Muskies 6 @ Quicksilver 58   
+Corsairs 12 @ Virgins 6   
+Blizzard 0 @ Monarchs 38   
+Ravens 3 @ Hammers 39   
+Fighting DeLucias 21 @ Timbers 15 (OT)   
+Cut Throat’s 19 @ Black Sharks 3   
+Regulators 46 @ Ukraine United 6   
+Foghorn Leghorns 33 @ Leviathan 14   
+Storm 9 @ Mallards 30   
 Week 14
-Nuggets 10 @ Thunder 38   
-Magic 19 @ Warriors 3   
-Suns 14 @ Kings 33   
-Bulls 15 @ Hawks 3   
-Clippers 23 @ Pelicans 29   
-Trail Blazers 23 @ Bullets 6   
-Heat 7 @ Royals 41   
-Timberwolves 3 @ Bucks 13   
-Rockets 14 @ Grizzlies 16   
-Pistons 10 @ Raptors 30   
-Hornets 3 @ 76ers 14   
-Wizards 3 @ Globetrotters 20   
-Knicks 62 @ Mavericks 20   
-Nets 22 @ Celtics 35   
-Cavaliers 31 @ Jazz 9   
-Lakers 24 @ Spurs 3   
+Timbers 3 @ Chips 30   
+Rancors 20 @ Rattlesnakes 34   
+Autobots 13 @ Rampage 28   
+Monarchs 22 @ Far East 3   
+Quicksilver 27 @ Fightin' Amish 41   
+Corsairs 10 @ Stars 17   
+Hammers 8 @ Mellotrons 13   
+Muskies 9 @ Blizzard 34   
+Bakers 10 @ Fighting DeLucias 17   
+Virgins 0 @ Borealis 6   
+Airborne 7 @ Heisenbergs 16   
+Ravens 12 @ Treasure 24   
+Ukraine United 24 @ Black Sharks 0   
+Regulators 62 @ Foghorn Leghorns 16   
+Mallards 31 @ Leviathan 17   
+Storm 3 @ Cut Throat’s 30   
 Week 15
-Lakers 19 @ Bucks 10   
-Hornets 7 @ Pelicans 3   
-Timberwolves 3 @ Kings 26   
-Jazz 21 @ Trail Blazers 17   
-Magic 23 @ Suns 26   
-Raptors 33 @ Bullets 0   
-Cavaliers 36 @ Spurs 0   
-Hawks 16 @ Thunder 41   
-Pistons 26 @ Bulls 42   
-Royals 23 @ Rockets 17   
-76ers 19 @ Globetrotters 23   
-Wizards 12 @ Mavericks 10   
-Clippers 17 @ Heat 7   
-Nuggets 3 @ Celtics 30   
-Grizzlies 3 @ Warriors 22   
-Nets 3 @ Knicks 28   
+Foghorn Leghorns 26 @ Ukraine United 21   
+Far East 16 @ Cut Throat’s 10   
+Black Sharks 0 @ Mellotrons 51   
+Fighting DeLucias 9 @ Storm 7   
+Corsairs 10 @ Rampage 13 (OT)   
+Stars 16 @ Autobots 9   
+Quicksilver 55 @ Blizzard 3   
+Treasure 45 @ Muskies 13   
+Virgins 0 @ Mallards 31   
+Airborne 16 @ Timbers 19 (OT)   
+Leviathan 13 @ Regulators 55   
+Heisenbergs 26 @ Rattlesnakes 45   
+Ravens 10 @ Fightin' Amish 39   
+Borealis 0 @ Monarchs 61   
+Hammers 6 @ Rancors 24   
+Chips 24 @ Bakers 6   
 Week 16
-Royals 7 @ Timberwolves 16   
-Globetrotters 11 @ Pelicans 17   
-Mavericks 14 @ Magic 55   
-Raptors 16 @ Bulls 10   
-Hawks 13 @ Hornets 34   
-Rockets 0 @ Bucks 20   
-Thunder 29 @ Heat 6   
-Kings 40 @ Cavaliers 6   
-Wizards 21 @ 76ers 3   
-Suns 25 @ Lakers 10   
-Pistons 20 @ Trail Blazers 25   
-Bullets 6 @ Grizzlies 20   
-Jazz 24 @ Spurs 13   
-Nets 3 @ Warriors 9   
-Clippers 9 @ Nuggets 2   
-Knicks 33 @ Celtics 6   
+Cut Throat’s 5 @ Stars 19   
+Corsairs 7 @ Quicksilver 38   
+Fightin' Amish 36 @ Rampage 17   
+Treasure 17 @ Rancors 21   
+Muskies 6 @ Borealis 24   
+Monarchs 23 @ Virgins 9   
+Autobots 0 @ Rattlesnakes 58   
+Mellotrons 34 @ Chips 3   
+Mallards 48 @ Bakers 13   
+Ravens 0 @ Foghorn Leghorns 25   
+Blizzard 3 @ Hammers 30   
+Black Sharks 0 @ Far East 22   
+Airborne 17 @ Storm 3   
+Regulators 44 @ Fighting DeLucias 17   
+Ukraine United 20 @ Heisenbergs 23   
+Timbers 3 @ Leviathan 25     
 """
 
 print(parse_scores(s))
