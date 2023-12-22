@@ -6,7 +6,7 @@ class Config:
     seasons = r'/Users/jamesjones/personal/MFN/feathers'
     global_file = r'/Users/jamesjones/personal/game_logs'
     ls_dictionary = {
-        'qad': [2043, 2044, 2045, 2046, 2047, 2048],
+        'qad': [2043, 2044, 2045, 2046, 2047, 2048, 2049],
         'xfl': [2043, 2044, 2045, 2046, 2047],
         'paydirt': [1996, 1997, 1998, 1999, 2000, 2001],
         'USFL': [2002, 2003, 2004, 2005, 2006, 2007],
@@ -42,6 +42,7 @@ class Config:
             2046: '0.4.6',
             2047: '0.4.6',
             2048: '0.4.6',
+            2049: '0.4.6',
         },
         'xfl': {
             2043: '0.4.6',

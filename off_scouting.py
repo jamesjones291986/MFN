@@ -6,9 +6,9 @@ from util import Config
 # Scouting
 
 # Set Variables
-league_mfn = 'xfl'
-season_year = '2047'
-offenses_to_scout = ['PRI']  # Example list of offenses
+league_mfn = 'qad'
+season_year = '2049'
+offenses_to_scout = ['SGR']  # Example list of offenses
 
 # Bring in the league to scout
 df = format_df(Config.load_feather(league_mfn, season_year)).reset_index(drop=True)
@@ -52,28 +52,32 @@ import pandas as pd
 # Assuming you have already obtained scouting_results as shown in your previous code
 
 # Create an empty DataFrame to store the combined results
-combined_results_df = pd.DataFrame(columns=['DefensiveTeam', 'OffensivePlay', 'Usage'])
+combined_results_df = pd.DataFrame(columns=['Personnel', 'OffensivePlay', 'Usage'])
 
-# Iterate through the scouting results for each offense and defensive team
-for offense, defensive_results in scouting_results.items():
-    for defensive_team, percentages in defensive_results.items():
+data_to_append = []
+
+# Iterate through the scouting results for each defense and personnel group
+for defense, personnel_results in scouting_results.items():
+    for personnel, percentages in personnel_results.items():
         for play, usage in percentages.items():
             # Extract the percentage value as a float
             usage_float = float(usage.strip('%'))
 
-            # Append the data to the combined_results_df DataFrame
-            combined_results_df = combined_results_df.append(
-                {'DefensiveTeam': defensive_team, 'OffensivePlay': play, 'Usage': usage_float}, ignore_index=True)
+            # Append the data to the list
+            data_to_append.append({'Personnel': personnel, 'OffensivePlay': play, 'Usage': usage_float})
+
+# Create a DataFrame from the list of data
+combined_results_df = pd.DataFrame(data_to_append)
 
 # Group the combined results by 'DefensiveTeam' and 'OffensivePlay' and sum the 'Usage'
-combined_results_grouped = combined_results_df.groupby(['DefensiveTeam', 'OffensivePlay'])['Usage'].sum().reset_index()
+combined_results_grouped = combined_results_df.groupby(['Personnel', 'OffensivePlay'])['Usage'].sum().reset_index()
 
 # Filter the combined results to include only plays with 20% or higher combined usage
 threshold_percentage = 10
 filtered_results = combined_results_grouped[combined_results_grouped['Usage'] >= threshold_percentage]
 
 # Sort the filtered results first by 'DefensiveTeam' and then by 'Usage' in descending order
-filtered_results_sorted = filtered_results.sort_values(by=['DefensiveTeam', 'Usage'], ascending=[True, False])
+filtered_results_sorted = filtered_results.sort_values(by=['Personnel', 'Usage'], ascending=[True, False])
 
 # Print the filtered results
 print(filtered_results_sorted)
