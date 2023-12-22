@@ -14,8 +14,8 @@ buckets = ['0-4', '5-9', '10-14', '15-19', '20-24', '25-29',
            '60-64', '65-69', '70-74', '75-79', '80-84', '85-89',
            '90-94', '95-99']
 
-global_off = '/Users/jamesjones/game_logs/MFN Global Reference - OffPlays.csv'
-global_def = '/Users/jamesjones/game_logs/MFN Global Reference - DefPlays.csv'
+global_off = '/Users/jamesjones/personal/game_logs/MFN Global Reference - OffPlays.csv'
+global_def = '/Users/jamesjones/personal/game_logs/MFN Global Reference - DefPlays.csv'
 global_off_ref = pd.read_csv(global_off)
 global_def_ref = pd.read_csv(global_def)
 
@@ -188,7 +188,7 @@ def format_df(dd):
                                    'End of OT 3.']),
                      0, inplace=True)
     dd.h_pts_lb.fillna(method='bfill', inplace=True)
-    dd.h_pts_lb = dd.h_pts_lb.astype('Int64')
+    dd.h_pts_lb = dd.h_pts_lb.astype(float).round(0)
 
     # Expected values
     dd.drop('ev', axis=1, inplace=True, errors='ignore')
@@ -202,14 +202,14 @@ def format_df(dd):
     temp = dd.loc[dd.Down.eq(7) & dd.OffensivePlay.ne('Field Goal')]
     twopt_value = 2 * temp.Text.str.contains('CONVERSION GOOD').sum() / temp.shape[0]
     m = (xp_value + twopt_value) / 2
-    dd.loc[:, 'ev'] = dd.ev.astype('float64')
+    dd.loc[:, 'ev'] = dd.ev.astype('float64').round(1)
     dd.ev.replace({6: 6 + m, -6: -6 - m}, inplace=True)
 
     # Yards to Goal Line
     dd.drop('YTGL', axis=1, inplace=True, errors='ignore')
-    dd.insert(6, 'YTGL', dd['Ball @'].str.partition(' ')[2].astype('Int64'))
+    dd.insert(6, 'YTGL', dd['Ball @'].str.partition(' ')[2].astype(float).round(0))
     dd.YTGL.mask(dd.HasBall.eq(dd['Ball @'].str.partition(' ')[0]),
-                 100 - dd['Ball @'].str.partition(' ')[2].astype('Int64'), inplace=True)
+                 100 - dd['Ball @'].str.partition(' ')[2].astype(float).round(0), inplace=True)
     dd.YTGL.mask(dd.Down.isin([6, 7]), pd.NA, inplace=True)
 
     # Bucket YTGL
@@ -229,7 +229,6 @@ def format_df(dd):
 
     no_0 = dd.loc[dd.ev.ne(0)]
     return no_0
-
 
 def scout_off_def(temp_df, team):
     d1 = temp_df.loc[temp_df.away_ac.eq(team) | temp_df.home_ac.eq(team)]

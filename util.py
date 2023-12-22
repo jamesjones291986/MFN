@@ -1,20 +1,20 @@
-"""
-utility functions and global configuration
-"""
-
+import os
 import pandas as pd
 
-
 class Config:
-    root = r'/Users/jamesjones/game_logs/'
-    seasons = r'/Users/jamesjones/game_logs/feathers'
-    global_file = r'/Users/jamesjones/game_logs/'
+    root = r'/Users/jamesjones/personal/game_logs'
+    seasons = r'/Users/jamesjones/personal/MFN/feathers'
+    global_file = r'/Users/jamesjones/personal/game_logs'
     ls_dictionary = {
         'qad': [2043, 2044, 2045, 2046, 2047, 2048],
         'xfl': [2043, 2044, 2045, 2046, 2047],
         'paydirt': [1996, 1997, 1998, 1999, 2000, 2001],
         'USFL': [2002, 2003, 2004, 2005, 2006, 2007],
         'moguls': [2042, 2043, 2044, 2045, 2046, 2047],
+        'norig': [2028, 2029, 2030, 2031, 2032],
+        'pfl': [2026, 2027, 2028, 2029],
+        'lol': [2117, 2118, 2119, 2120],
+        'nba': [2000, 2001],
     }
     sheet_lookup = {
         'qad': '1Nab-IckGA6tG19TOxEu_fYgbNl_7dCZ9hzrTtqcrOO8',
@@ -74,31 +74,47 @@ class Config:
             2046: '0.4.6',
             2047: '0.4.6',
         },
+        'norig': {
+            2028: '0.4.6',
+            2029: '0.4.6',
+            2030: '0.4.6',
+            2031: '0.4.6',
+            2032: '0.4.6',
+        },
+        'pfl': {
+            2026: '0.4.6',
+            2027: '0.4.6',
+            2028: '0.4.6',
+            2029: '0.4.6',
+        },
+        'lol': {
+            2117: '0.4.6',
+            2118: '0.4.6',
+            2119: '0.4.6',
+            2120: '0.4.6',
+        },
+        'nba': {
+            2000: '0.4.6',
+            2001: '0.4.6',
+        },
     }
 
     @classmethod
     def load_feather(cls, league, season):
         try:
-            return pd.read_feather(f'{cls.root}/{league}/{league}_{season}.feather').drop('index', axis=1)
-        except KeyError:
-            return pd.read_feather(f'{cls.root}/{league}/{league}_{season}.feather')
+            file_path = next(
+                file for file in os.listdir(cls.seasons) if f"{league}_{season}" in file and file.endswith(".feather"))
+            return pd.read_feather(os.path.join(cls.seasons, file_path)).drop('index', axis=1)
+        except (StopIteration, FileNotFoundError):
+            # Handle the case where the file is not found
+            pass
 
     @classmethod
     def load_feather_with_players(cls, league, season):
         try:
-            return pd.read_feather(f'{cls.root}/{league}/{league}_{season}_with_players.feather').drop('index', axis=1)
-        except KeyError:
-            return pd.read_feather(f'{cls.root}/{league}/{league}_{season}_with_players.feather')
-
-
-### Saved feather files info
-
-        # 'qad': [2043, 2044, 2045, 2046, 2047, 2048],
-        # 'xfl': [2043, 2044, 2045, 2046, 2047],
-        # 'norig': [2028, 2029, 2030, 2031, 2032],
-        # 'paydirt': [1996, 1997, 1998, 1999, 2000, 2001],
-        # 'USFL': [2002, 2003, 2004, 2005, 2006, 2007],
-        # 'pfl': [2026, 2027, 2028, 2029],
-        # 'lol': [2117, 2118, 2119, 2120],
-        # 'moguls': [2042, 2043, 2044, 2045, 2046, 2047],
-        # 'nba': [2000, 2001],
+            file_path = next(file for file in os.listdir(cls.seasons) if
+                             f"{league}_{season}_with_players" in file and file.endswith(".feather"))
+            return pd.read_feather(os.path.join(cls.seasons, file_path)).drop('index', axis=1)
+        except (StopIteration, FileNotFoundError):
+            # Handle the case where the file is not found
+            pass
