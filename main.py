@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 from util import Config
-from SheetsRef import SheetsRef
 from GameLogDownloader import GameLogDownloader
 from SeasonCompiler import SeasonCompiler
 from glob import iglob
@@ -17,8 +16,8 @@ buckets = ['0-4', '5-9', '10-14', '15-19', '20-24', '25-29',
            '60-64', '65-69', '70-74', '75-79', '80-84', '85-89',
            '90-94', '95-99']
 
-global_off = '/Users/jamesjones/game_logs/MFN Global Reference - OffPlays.csv'
-global_def = '/Users/jamesjones/game_logs/MFN Global Reference - DefPlays.csv'
+global_off = '/Users/jamesjones/personal/game_logs/MFN Global Reference - OffPlays.csv'
+global_def = '/Users/jamesjones/personal/game_logs/MFN Global Reference - DefPlays.csv'
 global_off_ref = pd.read_csv(global_off)
 global_def_ref = pd.read_csv(global_def)
 
@@ -182,8 +181,8 @@ def format_df(dd):
     # Roll values back
 
     dd.drop('h_pts_lb', axis=1, inplace=True, errors='ignore')
-    dd.insert(16, 'h_pts_lb', dd.h_pts)
-    dd.h_pts_lb.replace(0, np.nan, inplace=True)
+    dd.insert(16, 'h_pts_lb', dd.h_pts.astype('Int64'))
+    dd.h_pts_lb.replace(0, -999, inplace=True)
     dd.h_pts_lb.mask(dd.Text.isin(['End of half.',
                                    'End of fourth quarter.',
                                    'End of OT 1.',

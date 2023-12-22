@@ -3,7 +3,7 @@ import csv
 
 def get_totals(input_values):
     # Open the CSV file
-    with open('/Users/jamesjones/game_logs/MFN-Targets.csv', newline='') as csvfile:
+    with open('/Users/jamesjones/personal/MFN-Targets.csv', newline='') as csvfile:
         reader = csv.DictReader(csvfile)
 
         # Initialize a dictionary to store the total values for each column B value
@@ -29,16 +29,17 @@ def get_totals(input_values):
 
 
 play_dict_rf = {'Singeback 4 Wide': ['Singleback 4 Wide Quick Outs'],
-             'Singleback Normal': ['Singleback Normal TE Quick Out', 'Singleback Normal PA Rollout'],
-             'Singleback Slot Strong': ['Singleback Slot Strong HB Checkdown'],
+             'Singeback Empty 4': [],
+             'Singleback Normal': ['Singleback Normal TE Quick Out'],
+             'Singleback Slot Strong': [],
              'Singleback Big': [],
-             'I Formation 3 WR': ['I Formation 3WR WR Out', 'I Formation 3WR FL Post',
-                                  'I Formation 3WR PA Fullback Flat'],
-             'Split Backs 3 Wide': [],
+             'I Formation 3 WR': ['I Formation 3WR FL Post', 'I Formation 3WR WR Out', 'I Formation 3WR Backfield Flats',
+                                  'I Formation 3WR Slot Short WR Deep'],
+             'Split Backs 3 Wide': ['Split Backs 3 Wide WR Quick Out'],
              'Strong I Normal': [],
              'Weak I Normal': ['Weak I Normal WR Corner TE Middle'],
              'I Formation Twin WR': ['I Formation Twin WR Hard Slants', 'I Formation Twin WR Quick Outs'],
-             'I Formation Normal': ['I Formation Normal FL Hitch', 'I Formation Normal FL Hook'],
+             'I Formation Normal': ['I Formation Normal FL Hitch'],
              'Strong I Big': ['Strong I Big Backfield Drag'],
              'I Formation Power': ['I Formation Power Play Action HB Downfield', 'I Formation Power PA Flats'],
              }
@@ -49,14 +50,15 @@ for formation, plays in play_dict_rf.items():
     print('')
 
 
-play_dict_pf = {'Shotgun Normal': ['Shotgun Normal HB Flare'],
-             'Singleback Normal': ['Singleback Normal TE Quick Out', 'Singleback Normal WR Quick In'],
-             'Singleback Big': ['Singleback Big Ins and Outs'],
-             'Split Backs 3 Wide': [],
+play_dict_pf = {'Shotgun Normal': ['Shotgun Normal HB Flare', 'Shotgun Normal FL Slant'],
+             'Singleback Normal': ['Singleback Normal TE Quick Out', 'Singleback Normal WR Post',
+                                   'Singleback Normal HB Release Mid', 'Singleback Normal Quick Slant'],
+             'Singleback Big': [],
+             'Split Backs 3 Wide': ['Split Backs 3 Wide WR Quick Out'],
              'Strong I Normal': ['Strong I Normal Short Attack'],
-             'Weak I Normal': ['Weak I Normal WR Corner TE Middle', 'Weak I Normal Skinny Posts'],
+             'Weak I Normal': ['Weak I Normal WR Corner TE Middle'],
              'I Formation Twin WR': ['I Formation Twin WR Hard Slants', 'I Formation Twin WR Quick Outs'],
-             'I Formation Normal': ['I Formation Normal PA Fullback Flat', 'I Formation Normal FL Hitch'],
+             'I Formation Normal': ['I Formation Normal FL Hitch'],
              'Strong I Big': [],
              'I Formation Power': ['I Formation Power PA Flats', 'I Formation Power Play Action HB Downfield'],
              }
