@@ -6,9 +6,9 @@ from util import Config
 # Scouting
 
 # Set Variables
-league_mfn = 'xfl'
-season_year = '2047'
-defenses_to_scout = ['PRI']  # Example list of offenses
+league_mfn = 'qad'
+season_year = '2049'
+defenses_to_scout = ['SGR']  # Example list of offenses
 
 # Bring in the league to scout
 df = format_df(Config.load_feather(league_mfn, season_year)).reset_index(drop=True)
@@ -53,6 +53,8 @@ import pandas as pd
 # Create an empty DataFrame to store the combined results
 combined_results_df = pd.DataFrame(columns=['Personnel', 'DefensivePlay', 'Usage'])
 
+data_to_append = []
+
 # Iterate through the scouting results for each defense and personnel group
 for defense, personnel_results in scouting_results.items():
     for personnel, percentages in personnel_results.items():
@@ -60,9 +62,11 @@ for defense, personnel_results in scouting_results.items():
             # Extract the percentage value as a float
             usage_float = float(usage.strip('%'))
 
-            # Append the data to the combined_results_df DataFrame
-            combined_results_df = combined_results_df.append(
-                {'Personnel': personnel, 'DefensivePlay': play, 'Usage': usage_float}, ignore_index=True)
+            # Append the data to the list
+            data_to_append.append({'Personnel': personnel, 'DefensivePlay': play, 'Usage': usage_float})
+
+# Create a DataFrame from the list of data
+combined_results_df = pd.DataFrame(data_to_append)
 
 # Group the combined results by 'Personnel' and 'DefensivePlay' and sum the 'Usage'
 combined_results_grouped = combined_results_df.groupby(['Personnel', 'DefensivePlay'])['Usage'].sum().reset_index()
