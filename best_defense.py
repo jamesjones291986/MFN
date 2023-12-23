@@ -3,6 +3,9 @@ overall_off_play_adj_ev = adj_ev(df, 'OffensivePlay', all_plays, 'desc')
 
 overall_off_play_adj_ev.to_csv(Config.root + '/off_play_adj_ev.csv', index=False)
 
+pass_threshold = 5
+run_threshold = 4
+
 # Best Defensive Calls
 formations = {
     '113': {
@@ -68,8 +71,8 @@ for formation in formations:
         pass_plays_df = globals()[f"def_plays_pass_{formation}"]
         run_plays_df = globals()[f"def_plays_run_{formation}"]
 
-        matched_df = pass_plays_df[pass_plays_df['ypp'] < 6].merge(
-            run_plays_df[run_plays_df['ypp'] < 6],
+        matched_df = pass_plays_df[pass_plays_df['ypp'] < pass_threshold].merge(
+            run_plays_df[run_plays_df['ypp'] < run_threshold],
             on='DefensivePlay',
             suffixes=('_pass', '_run')
         )
