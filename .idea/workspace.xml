@@ -8,11 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4777260a-f2b1-454e-a13f-b18152e87c08" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/best_defense.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/best_offense.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/def_scouting.py" beforeDir="false" afterPath="$PROJECT_DIR$/def_scouting.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/off_scouting.py" beforeDir="false" afterPath="$PROJECT_DIR$/off_scouting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/util.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,11 +151,6 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>232</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>382</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
