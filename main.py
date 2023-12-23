@@ -288,6 +288,10 @@ def scout(league, season, team):
 df = format_df(pd.concat((Config.load_feather(k, y) for k, v in Config.ls_dictionary.items() for y in v))).reset_index(
     drop=True)
 
+# Load all seasons
+df = format_df(Config.load_all_seasons()).reset_index(drop=True)
+
+
 df = format_df(Config.load_feather('xfl', 2047)).reset_index(drop=True)
 
 

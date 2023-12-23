@@ -6,9 +6,9 @@ from util import Config
 # Scouting
 
 # Set Variables
-league_mfn = 'qad'
-season_year = '2049'
-offenses_to_scout = ['SGR']  # Example list of offenses
+league_mfn = 'xfl'
+season_year = '2048'
+offenses_to_scout = ['ATL']  # Example list of offenses
 
 # Bring in the league to scout
 df = format_df(Config.load_feather(league_mfn, season_year)).reset_index(drop=True)
