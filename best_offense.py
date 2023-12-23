@@ -38,5 +38,6 @@ pass_plays = off_plays_combined[off_plays_combined['OffPlayType'].str.contains('
     .sort_values('any/a', ascending=False)
 run_plays = off_plays_combined[off_plays_combined['OffPlayType'].str.contains('run', case=False)]
 
-pass_plays.to_csv(Config.root + '/plays/pass_plays.csv', index=False)
-run_plays.to_csv(Config.root + '/plays/run_plays.csv', index=False)
+# pass_plays.to_csv(Config.root + '/plays/pass_plays.csv', index=False)
+# run_plays.to_csv(Config.root + '/plays/run_plays.csv', index=False)
+

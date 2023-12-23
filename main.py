@@ -22,6 +22,7 @@ global_def_ref = pd.read_csv(global_def)
 run_plays = ('Inside Run', 'Outside Run')
 pass_plays = ('Short Pass', 'Medium Pass', 'Long Pass')
 all_plays = run_plays + pass_plays
+formations = ('5WR', '1RB/4WR', '1TE/4WR', '1RB/1TE/3WR', '1RB/2TE/2WR', '2RB/3WR', '2RB/1TE/2WR', '2RB/2TE/1WR', '3RB/1TE/1WR')
 def_excludes = (None, 'FG Block', 'Punt Return', 'Kick Return', 'Onsides Kick Return Onside Kick Return')
 off_excludes = (None, 'Field Goal', 'Punt', 'Victory', 'Kickoff', 'Onsides Kick Onside Kick')
 
