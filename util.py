@@ -7,7 +7,7 @@ class Config:
     global_file = r'/Users/jamesjones/personal/game_logs'
     ls_dictionary = {
         'qad': [2043, 2044, 2045, 2046, 2047, 2048, 2049],
-        'xfl': [2043, 2044, 2045, 2046, 2047],
+        'xfl': [2043, 2044, 2045, 2046, 2047, 2048],
         'paydirt': [1996, 1997, 1998, 1999, 2000, 2001],
         'USFL': [2002, 2003, 2004, 2005, 2006, 2007],
         'moguls': [2042, 2043, 2044, 2045, 2046, 2047],
@@ -50,6 +50,7 @@ class Config:
             2045: '0.4.6',
             2046: '0.4.6',
             2047: '0.4.6',
+            2048: '0.4.6',
         },
         'paydirt': {
             1996: '0.4.6',
@@ -119,3 +120,20 @@ class Config:
         except (StopIteration, FileNotFoundError):
             # Handle the case where the file is not found
             pass
+
+    @classmethod
+    def load_all_seasons(cls):
+        all_seasons_df = pd.concat(
+            (cls.load_feather(league, year) for league, years in cls.ls_dictionary.items() for year in years),
+            ignore_index=True)
+        return all_seasons_df
+
+    @classmethod
+    def load_specific_feather(cls, file_name):
+        try:
+            return pd.read_feather(os.path.join(cls.seasons, file_name)).reset_index(drop=True)
+        except (FileNotFoundError, pd.errors.EmptyDataError):
+            # Handle the case where the file is not found or is empty
+            pass
+
+
