@@ -54,8 +54,10 @@ def adj_ev(dd, grouper, plays=all_plays, sort='desc', col_to_sum='YardsGained', 
     yards_per_play = dx.groupby(grouper)[col_to_sum].sum() / dx.groupby(grouper).size()
     interception_rate = dx.loc[dx[column_to_check].str.contains('.*INTERCEPTED.*', regex=True)].groupby(
         grouper).size() / dx.groupby(grouper).size() * 100
+    interception_rate = interception_rate.fillna(0)
     sack_rate = dx.loc[dx[column_to_check].str.contains('.*sacked.*', regex=True)].groupby(grouper).size() / dx.groupby(
         grouper).size() * 100
+    sack_rate = sack_rate.fillna(0)
     touchdown_rate = dx.loc[dx[column_to_check].str.contains('.*TOUCHDOWN.*', regex=True)].groupby(
         grouper).size() / dx.groupby(grouper).size() * 100
     yards_per_play_100 = yards_per_play * 100

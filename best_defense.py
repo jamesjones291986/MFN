@@ -1,37 +1,36 @@
 # EV - Best Overall Plays
-overall_off_play_adj_ev = adj_ev(df, 'OffensivePlay', all_plays, 'desc')
+# overall_off_play_adj_ev = adj_ev(df, 'OffensivePlay', all_plays, 'desc')
+#
+# overall_off_play_adj_ev.to_csv(Config.root + '/off_play_adj_ev.csv', index=False)
 
-overall_off_play_adj_ev.to_csv(Config.root + '/off_play_adj_ev.csv', index=False)
-
-pass_threshold = 5
-run_threshold = 4
+pass_threshold = 7
+run_threshold = 6
 
 # Best Defensive Calls
 formations = {
     '113': {
-        'pass': ['Singleback Normal WR Quick In'],
-        'run': ['Singleback Normal HB Inside Weak', 'Singleback Normal HB Counter Weak',
-                'Singleback Slot Strong HB Counter']
+        'pass': ['Singleback Normal TE Quick Out'],
+        'run': ['Singleback Normal HB Dive Strong', 'Singleback Slot Strong HB Counter', 'Singleback Slot Strong HB Strong Inside']
     },
     '122': {
-        'pass': ['Singleback Big WR Deep'],
-        'run': ['Singleback Big Off Tackle Strong']
+        'pass': ['Singleback Big Ins and Outs'],
+        'run': ['Singleback Big Off Tackle Strong', 'Singleback Big HB Inside Strong']
     },
     '203': {
-        'pass': ['I Formation 3WR FL Post', 'I Formation 3WR WR Out', 'I Formation 3WR Slot Short WR Deep'],
-        'run': ['I Formation 3WR HB Inside Weak']
+        'pass': ['I Formation 3WR WR Out', 'I Formation 3WR FL Post', 'I Formation 3WR Slot Short WR Deep'],
+        'run': ['I Formation 3WR HB Inside Weak', 'I Formation 3WR HB Inside Strong', 'Split Backs 3 Wide Off Tackle Strong']
     },
     '212': {
-        'pass': ['I Formation Twin WR Hard Slants', 'I Formation Normal FL Hitch', 'I Formation Twin WR Quick Outs'],
-        'run': ['I Formation Normal HB Draw', 'Weak I Normal Fullback Counter Weak']
+        'pass': ['Weak I Normal WR Corner TE Middle', 'I Formation Twin WR Quick Outs', 'I Formation Normal Cross In'],
+        'run': ['Weak I Normal HB Inside Weak']
     },
     '221': {
-        'pass': ['Strong I Big TE Post'],
-        'run': ['Strong I Big HB Sweep Strong']
+        'pass': ['Strong I Big TE Post', 'Strong I Big HB Swing'],
+        'run': ['Strong I Big HB Toss Weak', 'Strong I Big HB Dive Strong']
     },
     '311': {
-        'pass': ['I Formation Power Play Action HB Downfield'],
-        'run': ['I Formation Power HB Sweep Weak']
+        'pass': ['I Formation Power Play Action HB Downfield', 'I Formation Power PA Flats'],
+        'run': ['I Formation Power HB Sweep Weak', 'I Formation Power HB Strong Outside', 'I Formation Power HB Dive Weak']
     },
     '104': {
         'pass': ['Singleback 4 Wide Quick Outs'],

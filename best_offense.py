@@ -1,12 +1,15 @@
+from main import adj_ev
+import pandas as pd
+
 # Best Offensive Calls
 def_formations = {
-    '113': ['Goal Line Attack #3'],
-    '122': ['Goal Line Attack #3'],
-    '203': ['Goal Line Attack #3'],
-    '212': ['Goal Line Attack #3'],
-    '311': ['Goal Line Attack #3'],
-    '221': ['Goal Line Attack #3'],
-    '104': ['Goal Line Attack #3']
+    '113': ['4-3 Normal Man QB Spy'],
+    '122': ['4-3 Normal Man QB Spy'],
+    '203': ['4-3 Normal Man QB Spy'],
+    '212': ['4-3 Normal Man QB Spy'],
+    '311': ['4-3 Normal Man QB Spy'],
+    '221': ['4-3 Normal Man QB Spy', '4-3 Normal OLB Blitz Inside'],
+    '104': ['Dime Normal Man Cover 1']
 }
 
 off_personnel_values = {
