@@ -6,9 +6,9 @@ from util import Config
 # Scouting
 
 # Set Variables
-league_mfn = 'xfl'
-season_year = '2048'
-offenses_to_scout = ['ATL']  # Example list of offenses
+league_mfn = 'USFL'
+season_year = '2008'
+offenses_to_scout = ['BIR']  # Example list of offenses
 
 file_name = f"{league_mfn}_{season_year}.feather"
 

@@ -8,8 +8,8 @@ class Config:
     ls_dictionary = {
         'qad': [2043, 2044, 2045, 2046, 2047, 2048, 2049],
         'xfl': [2043, 2044, 2045, 2046, 2047, 2048],
-        'paydirt': [1996, 1997, 1998, 1999, 2000, 2001],
-        'USFL': [2002, 2003, 2004, 2005, 2006, 2007],
+        'paydirt': [1996, 1997, 1998, 1999, 2000, 2001, 2002],
+        'USFL': [2002, 2003, 2004, 2005, 2006, 2007, 2008],
         'moguls': [2042, 2043, 2044, 2045, 2046, 2047],
         'norig': [2028, 2029, 2030, 2031, 2032],
         'pfl': [2026, 2027, 2028, 2029],
@@ -59,6 +59,7 @@ class Config:
             1999: '0.4.6',
             2000: '0.4.6',
             2001: '0.4.6',
+            2002: '0.4.6',
         },
         'USFL': {
             2002: '0.4.6',
@@ -67,6 +68,7 @@ class Config:
             2005: '0.4.6',
             2006: '0.4.6',
             2007: '0.4.6',
+            2008: '0.4.6',
         },
         'moguls': {
             2042: '0.4.6',
@@ -133,7 +135,8 @@ class Config:
         try:
             return pd.read_feather(os.path.join(cls.seasons, file_name)).reset_index(drop=True)
         except (FileNotFoundError, pd.errors.EmptyDataError):
-            # Handle the case where the file is not found or is empty
-            pass
+            # Handle the case where the file is not found or is empty by returning an empty DataFrame
+            return pd.DataFrame()
+
 
 

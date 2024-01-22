@@ -33,277 +33,277 @@ def retro_schedule(schedule, tabs=2):
 
 # Copy schedules from the league schedule page. Paste them below and run the parse_scores.
 s = """ Week 1
-Borealis 0 @ Quicksilver 28   
-Stars 19 @ Cut Throat’s 13   
-Fightin' Amish 34 @ Corsairs 0   
-Ukraine United 19 @ Storm 14   
-Ravens 31 @ Muskies 17   
-Treasure 16 @ Timbers 14   
-Chips 3 @ Hammers 43   
-Airborne 14 @ Virgins 0   
-Bakers 10 @ Rancors 31   
-Rampage 33 @ Heisenbergs 20   
-Foghorn Leghorns 24 @ Regulators 31   
-Rattlesnakes 63 @ Autobots 0   
-Fighting DeLucias 0 @ Mellotrons 18   
-Black Sharks 13 @ Blizzard 27   
-Far East 3 @ Monarchs 64   
-Leviathan 3 @ Mallards 38   
+Wheels 9 @ Wranglers 6   
+Force 0 @ Storm 32   
+Thunderbolts 20 @ Panthers 23 (OT)   
+Federals 30 @ Stallions 27 (OT)   
+Steamer 0 @ VooDoo 30   
+Generals 20 @ Bell 10   
+Renegades 23 @ Bandits 6   
+Maulers 51 @ Hornets 0   
+(NY) Stars 19 @ Breakers 3   
+Blitz 33 @ Invaders 12   
+Showboats 58 @ Gold 3   
+Hawaiians 7 @ Outlaws 44   
+Sun 10 @ SaberCats 42   
+Express 3 @ Gunslingers 17   
+Stars 3 @ Gamblers 26   
+Blazers 3 @ Bulls 44   
 Week 2
-Leviathan 6 @ Heisenbergs 10   
-Timbers 16 @ Virgins 13   
-Bakers 10 @ Far East 13   
-Fighting DeLucias 23 @ Muskies 19   
-Blizzard 12 @ Hammers 31   
-Ukraine United 7 @ Rampage 41   
-Rattlesnakes 34 @ Regulators 23   
-Foghorn Leghorns 31 @ Autobots 14   
-Airborne 13 @ Mallards 37   
-Mellotrons 17 @ Ravens 6   
-Chips 27 @ Treasure 13   
-Stars 3 @ Fightin' Amish 13   
-Quicksilver 0 @ Monarchs 40   
-Corsairs 15 @ Storm 27   
-Cut Throat’s 18 @ Black Sharks 12   
-Rancors 26 @ Borealis 9   
+Blazers 17 @ Force 34   
+Breakers 10 @ Generals 28   
+Stars 13 @ Bandits 30   
+Bell 35 @ Steamer 13   
+Blitz 28 @ Gold 6   
+Storm 0 @ Gunslingers 19   
+VooDoo 15 @ Maulers 10   
+Gamblers 0 @ Showboats 35   
+Wranglers 6 @ Stallions 35   
+Panthers 21 @ (NY) Stars 23   
+Invaders 17 @ Hawaiians 10   
+Bulls 24 @ Hornets 17   
+Federals 0 @ Renegades 26   
+SaberCats 29 @ Express 12   
+Sun 0 @ Outlaws 14   
+Thunderbolts 17 @ Wheels 17 (OT)   
 Week 3
-Mellotrons 48 @ Heisenbergs 5   
-Storm 29 @ Regulators 48   
-Ravens 27 @ Black Sharks 9   
-Leviathan 6 @ Rattlesnakes 21   
-Far East 12 @ Airborne 10   
-Quicksilver 20 @ Blizzard 14   
-Timbers 20 @ Muskies 7   
-Rancors 13 @ Chips 6   
-Rampage 10 @ Foghorn Leghorns 37   
-Virgins 9 @ Autobots 13   
-Fighting DeLucias 14 @ Mallards 32   
-Cut Throat’s 9 @ Hammers 27   
-Monarchs 48 @ Bakers 13   
-Stars 19 @ Borealis 13   
-Corsairs 6 @ Treasure 16   
-Fightin' Amish 24 @ Ukraine United 10   
+SaberCats 41 @ Bandits 32   
+Express 23 @ Sun 31   
+Wheels 13 @ Generals 23   
+Federals 20 @ Stars 14   
+Steamer 3 @ (NY) Stars 15   
+Invaders 10 @ Force 37   
+VooDoo 13 @ Wranglers 3   
+Panthers 38 @ Thunderbolts 35 (OT)   
+Storm 6 @ Gold 10   
+Stallions 31 @ Bulls 51   
+Hawaiians 0 @ Renegades 33   
+Gamblers 41 @ Outlaws 20   
+Hornets 13 @ Showboats 26   
+Blazers 0 @ Maulers 55   
+Bell 13 @ Breakers 25   
+Gunslingers 13 @ Blitz 13 (OT)   
 Week 4
-Storm 14 @ Foghorn Leghorns 27   
-Fightin' Amish 16 @ Quicksilver 13   
-Regulators 52 @ Corsairs 14   
-Hammers 55 @ Black Sharks 10   
-Monarchs 38 @ Timbers 3   
-Borealis 3 @ Treasure 20   
-Muskies 12 @ Far East 37   
-Mallards 3 @ Mellotrons 31   
-Heisenbergs 24 @ Bakers 20   
-Rampage 25 @ Rattlesnakes 27   
-Virgins 6 @ Leviathan 39   
-Autobots 9 @ Airborne 16   
-Cut Throat’s 13 @ Ukraine United 30   
-Fighting DeLucias 17 @ Blizzard 10   
-Chips 27 @ Ravens 3   
-Stars 6 @ Rancors 33   
+Panthers 27 @ Express 17   
+Blitz 12 @ SaberCats 8   
+Wranglers 19 @ Steamer 23   
+Storm 17 @ Invaders 15   
+Thunderbolts 20 @ Bell 40   
+(NY) Stars 20 @ Wheels 3   
+Stallions 24 @ Force 14   
+Renegades 7 @ VooDoo 26   
+Gold 3 @ Sun 25   
+Hawaiians 6 @ Showboats 33   
+Gamblers 26 @ Gunslingers 14   
+Hornets 7 @ Outlaws 62   
+Stars 3 @ Maulers 38   
+Bulls 17 @ Federals 13   
+Bandits 9 @ Breakers 10   
+Generals 27 @ Blazers 12   
 Week 5
-Borealis 3 @ Leviathan 13   
-Timbers 13 @ Bakers 13 (OT)   
-Chips 7 @ Far East 13   
-Monarchs 56 @ Rancors 13   
-Treasure 3 @ Stars 23   
-Regulators 17 @ Quicksilver 48   
-Corsairs 0 @ Fightin' Amish 29   
-Rattlesnakes 27 @ Ukraine United 6   
-Muskies 9 @ Storm 40   
-Ravens 0 @ Hammers 54   
-Blizzard 20 @ Mellotrons 49   
-Airborne 19 @ Cut Throat’s 6   
-Heisenbergs 9 @ Black Sharks 27   
-Foghorn Leghorns 39 @ Fighting DeLucias 16   
-Autobots 0 @ Virgins 10   
-Mallards 45 @ Rampage 24   
+(NY) Stars 3 @ VooDoo 26   
+Invaders 10 @ Wranglers 30   
+Force 3 @ Bell 25   
+Stallions 14 @ Breakers 24   
+Bulls 17 @ Sun 21   
+Express 23 @ Hawaiians 18   
+Renegades 38 @ SaberCats 26   
+Blazers 49 @ Bandits 7   
+Maulers 31 @ Federals 6   
+Hornets 10 @ Stars 22   
+Showboats 26 @ Gamblers 24   
+Outlaws 30 @ Gunslingers 27 (OT)   
+Storm 7 @ Blitz 20   
+Gold 3 @ Thunderbolts 50   
+Panthers 12 @ Wheels 22   
+Generals 6 @ Steamer 21   
 Week 6
-Timbers 17 @ Chips 19   
-Treasure 14 @ Monarchs 26   
-Bakers 10 @ Borealis 13   
-Rancors 28 @ Far East 6   
-Muskies 7 @ Hammers 73   
-Ravens 21 @ Blizzard 31   
-Ukraine United 9 @ Corsairs 15 (OT)   
-Stars 25 @ Regulators 31   
-Storm 0 @ Fightin' Amish 47   
-Rattlesnakes 16 @ Mallards 15   
-Cut Throat’s 14 @ Leviathan 13   
-Black Sharks 7 @ Airborne 9   
-Heisenbergs 20 @ Autobots 15   
-Rampage 27 @ Virgins 3   
-Quicksilver 19 @ Foghorn Leghorns 37   
-Mellotrons 45 @ Fighting DeLucias 24   
+Bell 23 @ Panthers 20   
+Gold 6 @ Wheels 24   
+Wranglers 14 @ Storm 38   
+Thunderbolts 12 @ Blitz 16   
+Generals 12 @ Stallions 23   
+Renegades 10 @ Maulers 13   
+Express 13 @ Gamblers 31   
+SaberCats 23 @ Bulls 29   
+Hawaiians 37 @ Blazers 14   
+Bandits 3 @ Sun 38   
+Gunslingers 16 @ Federals 3   
+Showboats 37 @ Stars 13   
+Outlaws 27 @ Invaders 15   
+VooDoo 30 @ Force 3   
+Breakers 6 @ (NY) Stars 23   
+Hornets 24 @ Steamer 17   
 Week 7
-Far East 17 @ Ravens 20   
-Timbers 33 @ Blizzard 45   
-Rancors 20 @ Quicksilver 21   
-Regulators 63 @ Storm 58   
-Rattlesnakes 28 @ Chips 6   
-Airborne 7 @ Mellotrons 38   
-Black Sharks 13 @ Muskies 19   
-Heisenbergs 19 @ Leviathan 26   
-Ukraine United 7 @ Foghorn Leghorns 44   
-Rampage 17 @ Autobots 0   
-Mallards 47 @ Virgins 10   
-Fighting DeLucias 21 @ Cut Throat’s 27   
-Hammers 33 @ Bakers 3   
-Borealis 7 @ Monarchs 46   
-Stars 13 @ Corsairs 16   
-Treasure 10 @ Fightin' Amish 19   
+Outlaws 16 @ SaberCats 20   
+Wranglers 15 @ Gold 7   
+Blazers 20 @ Express 17   
+Invaders 12 @ Storm 9 (OT)   
+Bandits 16 @ Federals 13   
+Gunslingers 26 @ Hawaiians 7   
+Showboats 6 @ Maulers 25   
+Force 16 @ Stars 25   
+VooDoo 31 @ Bell 12   
+Blitz 20 @ Wheels 16   
+Panthers 9 @ Breakers 13   
+Thunderbolts 22 @ Generals 23   
+Bulls 28 @ (NY) Stars 34 (OT)   
+Sun 3 @ Renegades 34   
+Gamblers 52 @ Hornets 16   
+Steamer 14 @ Stallions 26   
 Week 8
-Far East 28 @ Bakers 20   
-Chips 0 @ Mallards 44   
-Autobots 0 @ Rattlesnakes 34   
-Airborne 16 @ Heisenbergs 17   
-Leviathan 10 @ Black Sharks 12   
-Muskies 23 @ Cut Throat’s 20   
-Hammers 68 @ Fighting DeLucias 0   
-Fightin' Amish 3 @ Mellotrons 19   
-Storm 13 @ Ukraine United 17   
-Corsairs 0 @ Foghorn Leghorns 26   
-Quicksilver 20 @ Stars 9   
-Regulators 21 @ Rampage 20   
-Virgins 0 @ Borealis 20   
-Monarchs 23 @ Treasure 7   
-Timbers 3 @ Rancors 21   
-Blizzard 26 @ Ravens 38   
+Stars 3 @ Gunslingers 61   
+VooDoo 0 @ Stallions 20   
+Federals 10 @ Outlaws 30   
+Bandits 10 @ Hornets 29   
+Renegades 31 @ Blazers 10   
+Maulers 34 @ Bulls 0   
+Showboats 13 @ Express 3   
+SaberCats 6 @ Gamblers 34   
+Storm 16 @ Panthers 13   
+Wranglers 6 @ Blitz 37   
+Wheels 10 @ Bell 20   
+Generals 13 @ (NY) Stars 45   
+Breakers 14 @ Force 30   
+Steamer 9 @ Gold 17   
+Invaders 18 @ Thunderbolts 13   
+Hawaiians 23 @ Sun 16   
 Week 9
-Regulators 60 @ Virgins 26   
-Foghorn Leghorns 30 @ Rattlesnakes 24 (OT)   
-Quicksilver 51 @ Storm 10   
-Stars 19 @ Ukraine United 20   
-Monarchs 30 @ Fightin' Amish 22   
-Borealis 13 @ Chips 16 (OT)   
-Rampage 3 @ Rancors 38   
-Airborne 6 @ Treasure 10   
-Autobots 9 @ Far East 34   
-Leviathan 14 @ Timbers 9   
-Mellotrons 20 @ Cut Throat’s 3   
-Ravens 20 @ Fighting DeLucias 14 (OT)   
-Heisenbergs 13 @ Mallards 31   
-Black Sharks 25 @ Corsairs 3   
-Bakers 16 @ Muskies 27   
-Hammers 49 @ Blizzard 6   
+Stallions 36 @ Gold 6   
+Blitz 3 @ Thunderbolts 9   
+Wheels 6 @ Storm 13   
+Wranglers 23 @ Panthers 31   
+Bell 22 @ Generals 13   
+Maulers 5 @ Gamblers 6   
+Express 3 @ Bulls 42   
+SaberCats 17 @ Hawaiians 30   
+Bandits 10 @ Blazers 19   
+Gunslingers 43 @ Sun 7   
+Federals 23 @ Showboats 36   
+Outlaws 37 @ Stars 10   
+Invaders 6 @ VooDoo 58   
+(NY) Stars 26 @ Force 3   
+Steamer 6 @ Breakers 0   
+Hornets 3 @ Renegades 37   
 Week 10
-Timbers 17 @ Far East 24   
-Treasure 13 @ Rancors 45   
-Monarchs 55 @ Borealis 6   
-Chips 13 @ Bakers 16   
-Mellotrons 16 @ Hammers 24   
-Blizzard 41 @ Muskies 35 (OT)   
-Ukraine United 16 @ Ravens 6   
-Corsairs 3 @ Stars 17   
-Fightin' Amish 15 @ Regulators 17   
-Storm 9 @ Rattlesnakes 38   
-Mallards 55 @ Leviathan 3   
-Black Sharks 12 @ Cut Throat’s 6   
-Heisenbergs 24 @ Airborne 21   
-Autobots 13 @ Rampage 17   
-Virgins 7 @ Foghorn Leghorns 45   
-Fighting DeLucias 3 @ Quicksilver 59   
+Express 3 @ Bandits 22   
+Sun 5 @ Wheels 9   
+Stars 3 @ Generals 17   
+(NY) Stars 27 @ Federals 10   
+Steamer 8 @ Invaders 27   
+Force 10 @ VooDoo 37   
+Thunderbolts 33 @ Wranglers 3   
+Panthers 30 @ Gold 6   
+Storm 17 @ Stallions 45   
+Renegades 14 @ Bulls 23   
+Gamblers 31 @ Hawaiians 14   
+Outlaws 6 @ Showboats 21   
+Hornets 16 @ Blazers 15   
+Maulers 22 @ Bell 3   
+Blitz 17 @ Breakers 26   
+SaberCats 17 @ Gunslingers 50   
 Week 11
-Muskies 10 @ Chips 14   
-Virgins 6 @ Rampage 15   
-Rattlesnakes 27 @ Airborne 13   
-Cut Throat’s 12 @ Heisenbergs 17   
-Hammers 51 @ Ravens 9   
-Ukraine United 35 @ Regulators 36   
-Storm 32 @ Autobots 6   
-Fightin' Amish 20 @ Rancors 23   
-Bakers 22 @ Timbers 10   
-Treasure 3 @ Borealis 19   
-Quicksilver 16 @ Corsairs 13   
-Foghorn Leghorns 10 @ Stars 13   
-Leviathan 16 @ Fighting DeLucias 19   
-Mellotrons 20 @ Black Sharks 6   
-Blizzard 36 @ Far East 20   
-Mallards 0 @ Monarchs 12   
+Gunslingers 29 @ Hornets 13   
+Stallions 44 @ Invaders 17   
+Outlaws 17 @ Maulers 13   
+Bandits 3 @ Bulls 40   
+Showboats 40 @ SaberCats 36   
+Wheels 14 @ Thunderbolts 23   
+Blitz 6 @ Panthers 9   
+Gold 7 @ Wranglers 12   
+Hawaiians 23 @ Express 3   
+Sun 7 @ Blazers 22   
+Storm 19 @ Steamer 9   
+Gamblers 55 @ Federals 20   
+Renegades 41 @ Stars 7   
+(NY) Stars 30 @ Bell 3   
+Force 6 @ Generals 13   
+Breakers 10 @ VooDoo 17   
 Week 12
-Leviathan 16 @ Airborne 3   
-Hammers 0 @ Fightin' Amish 9   
-Rampage 10 @ Storm 9   
-Stars 9 @ Quicksilver 38   
-Foghorn Leghorns 37 @ Ukraine United 12   
-Mellotrons 29 @ Regulators 12   
-Rancors 31 @ Corsairs 9   
-Muskies 9 @ Ravens 28   
-Blizzard 6 @ Cut Throat’s 19   
-Treasure 14 @ Bakers 25   
-Autobots 0 @ Mallards 35   
-Fighting DeLucias 9 @ Black Sharks 20   
-Virgins 0 @ Heisenbergs 23   
-Monarchs 13 @ Rattlesnakes 10   
-Far East 0 @ Chips 21   
-Timbers 20 @ Borealis 13   
+Gold 9 @ Force 16   
+VooDoo 6 @ Storm 3   
+Steamer 31 @ Bandits 26   
+Maulers 17 @ Gunslingers 10   
+Breakers 3 @ Bell 47   
+Generals 13 @ Blitz 17   
+Blazers 7 @ Stars 9   
+Wheels 0 @ Showboats 34   
+Wranglers 6 @ Gamblers 23   
+Stallions 20 @ (NY) Stars 3   
+Panthers 10 @ Invaders 13   
+Bulls 40 @ Hawaiians 21   
+Federals 33 @ Hornets 31   
+Renegades 17 @ Express 6   
+SaberCats 8 @ Sun 12   
+Thunderbolts 9 @ Outlaws 40   
 Week 13
-Fighting DeLucias 16 @ Airborne 9   
-Foghorn Leghorns 10 @ Fightin' Amish 36   
-Mallards 31 @ Cut Throat’s 3   
-Rancors 30 @ Heisenbergs 16   
-Regulators 32 @ Ukraine United 23   
-Quicksilver 17 @ Treasure 29   
-Leviathan 12 @ Autobots 13   
-Hammers 30 @ Timbers 3   
-Borealis 20 @ Far East 17 (OT)   
-Corsairs 6 @ Monarchs 30   
-Ravens 9 @ Stars 51   
-Bakers 10 @ Rampage 19   
-Rattlesnakes 23 @ Virgins 3   
-Storm 27 @ Black Sharks 13   
-Muskies 12 @ Mellotrons 35   
-Blizzard 19 @ Chips 24   
+Stars 29 @ Hornets 24   
+Force 5 @ Steamer 10   
+Stallions 12 @ VooDoo 24   
+Bell 16 @ (NY) Stars 13   
+Generals 10 @ Breakers 6   
+Hawaiians 23 @ Thunderbolts 27   
+Bulls 60 @ Blazers 16   
+Express 18 @ SaberCats 20   
+Gamblers 37 @ Panthers 17   
+Wheels 7 @ Blitz 13   
+Storm 29 @ Wranglers 3   
+Invaders 24 @ Gold 6   
+Gunslingers 6 @ Outlaws 23   
+Federals 7 @ Maulers 57   
+Bandits 7 @ Renegades 47   
+Sun 14 @ Showboats 29   
 Week 14
-Quicksilver 0 @ Fightin' Amish 43   
-Regulators 36 @ Foghorn Leghorns 31   
-Rancors 24 @ Treasure 10   
-Mallards 15 @ Heisenbergs 13   
-Airborne 6 @ Leviathan 10   
-Autobots 0 @ Ukraine United 23   
-Cut Throat’s 13 @ Fighting DeLucias 14   
-Chips 17 @ Timbers 3   
-Far East 6 @ Hammers 69   
-Borealis 17 @ Corsairs 0   
-Monarchs 21 @ Stars 0   
-Ravens 3 @ Bakers 23   
-Rattlesnakes 20 @ Rampage 3   
-Virgins 20 @ Storm 25   
-Black Sharks 0 @ Mellotrons 30   
-Muskies 6 @ Blizzard 34   
+Outlaws 37 @ Express 16   
+Blazers 6 @ SaberCats 28   
+Wranglers 10 @ Invaders 33   
+Gold 0 @ Storm 24   
+Hornets 23 @ Federals 30   
+Bandits 3 @ Hawaiians 9   
+Gunslingers 40 @ Showboats 11   
+Maulers 34 @ Stars 7   
+Force 17 @ Stallions 31   
+VooDoo 30 @ Steamer 7   
+Bell 13 @ Blitz 20   
+Breakers 12 @ Wheels 6   
+Generals 17 @ Panthers 13   
+(NY) Stars 38 @ Thunderbolts 35   
+Bulls 25 @ Renegades 22   
+Gamblers 39 @ Sun 3   
 Week 15
-Mallards 40 @ Airborne 10   
-Cut Throat’s 13 @ Mellotrons 26   
-Black Sharks 10 @ Fighting DeLucias 13   
-Hammers 54 @ Muskies 3   
-Ukraine United 14 @ Virgins 16   
-Autobots 6 @ Regulators 70   
-Storm 14 @ Stars 35   
-Corsairs 9 @ Quicksilver 21   
-Far East 10 @ Treasure 13   
-Ravens 10 @ Timbers 16   
-Blizzard 35 @ Foghorn Leghorns 28   
-Rampage 33 @ Leviathan 3   
-Heisenbergs 6 @ Rattlesnakes 47   
-Bakers 20 @ Chips 41   
-Rancors 9 @ Monarchs 37   
-Fightin' Amish 43 @ Borealis 9   
+Thunderbolts 0 @ Storm 37   
+Force 13 @ Wranglers 16 (OT)   
+Wheels 13 @ Panthers 23   
+Stallions 36 @ Steamer 0   
+VooDoo 33 @ Generals 27   
+Bell 29 @ Renegades 27   
+Maulers 37 @ Bandits 9   
+Breakers 10 @ Hornets 15   
+Blitz 6 @ (NY) Stars 29   
+Gold 6 @ Invaders 20   
+Showboats 35 @ Outlaws 12   
+Hawaiians 3 @ SaberCats 28   
+Sun 10 @ Express 15   
+Gunslingers 17 @ Gamblers 10   
+Stars 26 @ Bulls 51   
+Federals 22 @ Blazers 16 (OT)   
 Week 16
-Virgins 0 @ Rattlesnakes 60   
-Foghorn Leghorns 36 @ Storm 25   
-Ukraine United 9 @ Quicksilver 10   
-Fightin' Amish 29 @ Stars 10   
-Chips 3 @ Monarchs 27   
-Borealis 0 @ Rancors 44   
-Airborne 3 @ Rampage 14   
-Treasure 30 @ Autobots 7   
-Far East 13 @ Timbers 17   
-Mellotrons 52 @ Leviathan 6   
-Cut Throat’s 7 @ Ravens 28   
-Heisenbergs 12 @ Fighting DeLucias 6   
-Black Sharks 10 @ Mallards 29   
-Corsairs 27 @ Muskies 12   
-Bakers 29 @ Blizzard 45   
-Regulators 3 @ Hammers 55        
+Invaders 29 @ Wheels 12   
+(NY) Stars 20 @ Generals 24   
+Bell 21 @ Stallions 58   
+Breakers 0 @ Thunderbolts 6   
+Bulls 57 @ Bandits 0   
+Panthers 31 @ Blitz 30   
+Express 7 @ Wranglers 17   
+Sun 6 @ Hawaiians 37   
+Blazers 3 @ Renegades 42   
+Stars 3 @ Federals 34   
+Outlaws 10 @ Gamblers 38   
+Hornets 0 @ Maulers 37   
+Showboats 13 @ Gunslingers 16 (OT)   
+SaberCats 31 @ Storm 13   
+Steamer 10 @ Force 6   
+Gold 0 @ VooDoo 36          
 """
 
 print(parse_scores(s))
