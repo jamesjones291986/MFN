@@ -9,28 +9,28 @@ run_threshold = 6
 # Best Defensive Calls
 formations = {
     '113': {
-        'pass': ['Singleback Normal TE Quick Out'],
-        'run': ['Singleback Normal HB Dive Strong', 'Singleback Slot Strong HB Counter', 'Singleback Slot Strong HB Strong Inside']
+        'pass': ['Shotgun Normal HB Flare', 'Shotgun Normal TE Out', 'Singleback Normal TE Quick Out', 'Singleback Normal HB Release Mid'],
+        'run': ['Singleback Normal HB Inside Weak']
     },
     '122': {
-        'pass': ['Singleback Big Ins and Outs'],
+        'pass': ['Singleback Big Ins and Outs', 'Singleback Big WR Deep'],
         'run': ['Singleback Big Off Tackle Strong', 'Singleback Big HB Inside Strong']
     },
     '203': {
-        'pass': ['I Formation 3WR WR Out', 'I Formation 3WR FL Post', 'I Formation 3WR Slot Short WR Deep'],
-        'run': ['I Formation 3WR HB Inside Weak', 'I Formation 3WR HB Inside Strong', 'Split Backs 3 Wide Off Tackle Strong']
+        'pass': ['I Formation 3WR WR Out', 'I Formation 3WR FL Post', 'I Formation 3WR Backfield Flats', 'I Formation 3WR Slot Short WR Deep'],
+        'run': ['I Formation 3WR HB Inside Weak', 'I Formation 3WR HB Inside Strong']
     },
     '212': {
-        'pass': ['Weak I Normal WR Corner TE Middle', 'I Formation Twin WR Quick Outs', 'I Formation Normal Cross In'],
-        'run': ['Weak I Normal HB Inside Weak']
+        'pass': ['Split Backs Normal Posts', 'Weak I Normal WR Corner TE Middle', 'I Formation Normal FL Hitch'],
+        'run': ['I Formation Normal HB Dive', 'Weak I Normal HB Inside Strong', 'I Formation Normal HB Blast']
     },
     '221': {
-        'pass': ['Strong I Big TE Post', 'Strong I Big HB Swing'],
-        'run': ['Strong I Big HB Toss Weak', 'Strong I Big HB Dive Strong']
+        'pass': ['Weak I Big WR Post TE Out'],
+        'run': ['Weak I Big HB Lead Toss Weak']
     },
     '311': {
         'pass': ['I Formation Power Play Action HB Downfield', 'I Formation Power PA Flats'],
-        'run': ['I Formation Power HB Sweep Weak', 'I Formation Power HB Strong Outside', 'I Formation Power HB Dive Weak']
+        'run': ['I Formation Power HB Strong Outside']
     },
     '104': {
         'pass': ['Singleback 4 Wide Quick Outs'],

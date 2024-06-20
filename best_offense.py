@@ -3,12 +3,12 @@ import pandas as pd
 
 # Best Offensive Calls
 def_formations = {
-    '113': ['4-3 Normal Man QB Spy'],
-    '122': ['4-3 Normal Man QB Spy'],
-    '203': ['4-3 Normal Man QB Spy'],
-    '212': ['4-3 Normal Man QB Spy'],
-    '311': ['4-3 Normal Man QB Spy'],
-    '221': ['4-3 Normal Man QB Spy', '4-3 Normal OLB Blitz Inside'],
+    '113': ['4-3 Normal Double WR3', '4-3 Normal Double WR1', '4-3 Normal WLB Outside Blitz'],
+    '122': ['4-3 Normal OLB Blitz Outside', 'Dime Flat Man Cover 1'],
+    '203': ['Dime Flat Man Cover 1', '4-3 Normal WLB MLB Blitz', '4-3 Normal OLB Blitz Inside', '4-3 Under Double LB Blitz'],
+    '212': ['Dime Flat Man Cover 1', '4-3 Normal OLB Blitz Outside', '4-3 Normal OLB Blitz Outside', '4-3 Under Double LB Blitz'],
+    '311': ['Dime Flat Man Cover 1', '4-3 Normal OLB Blitz Outside'],
+    '221': ['Dime Flat Man Cover 1', '4-3 Normal OLB Blitz Inside', '4-3 Normal OLB Blitz Outside'],
     '104': ['Dime Normal Man Cover 1']
 }
 
