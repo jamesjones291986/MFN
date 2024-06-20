@@ -32,334 +32,278 @@ def retro_schedule(schedule, tabs=2):
     return new_schedule.strip()
 
 # Copy schedules from the league schedule page. Paste them below and run the parse_scores.
-s = """ Week 1
-Wheels 9 @ Wranglers 6   
-Force 0 @ Storm 32   
-Thunderbolts 20 @ Panthers 23 (OT)   
-Federals 30 @ Stallions 27 (OT)   
-Steamer 0 @ VooDoo 30   
-Generals 20 @ Bell 10   
-Renegades 23 @ Bandits 6   
-Maulers 51 @ Hornets 0   
-(NY) Stars 19 @ Breakers 3   
-Blitz 33 @ Invaders 12   
-Showboats 58 @ Gold 3   
-Hawaiians 7 @ Outlaws 44   
-Sun 10 @ SaberCats 42   
-Express 3 @ Gunslingers 17   
-Stars 3 @ Gamblers 26   
-Blazers 3 @ Bulls 44   
+s = """Week 1
+Wheels 3 @ Steamer 23   
+Panthers 20 @ Thunderbolts 6   
+SaberCats 46 @ Storm 33   
+Express 27 @ Sun 30 (OT)   
+Maulers 24 @ Hawaiians 3   
+Bell 13 @ Invaders 10   
+Gunslingers 27 @ Showboats 9   
+Bandits 7 @ Force 9   
+VooDoo 9 @ Stallions 3   
+Blazers 27 @ Bulls 13   
+Renegades 0 @ Generals 3   
+Wranglers 9 @ Gamblers 14   
+Outlaws 16 @ Blitz 18   
+Breakers 23 @ Gold 10   
+Hornets 0 @ (NY) Stars 52   
+Federals 36 @ Stars 10   
 Week 2
-Blazers 17 @ Force 34   
-Breakers 10 @ Generals 28   
-Stars 13 @ Bandits 30   
-Bell 35 @ Steamer 13   
-Blitz 28 @ Gold 6   
-Storm 0 @ Gunslingers 19   
-VooDoo 15 @ Maulers 10   
-Gamblers 0 @ Showboats 35   
-Wranglers 6 @ Stallions 35   
-Panthers 21 @ (NY) Stars 23   
-Invaders 17 @ Hawaiians 10   
-Bulls 24 @ Hornets 17   
-Federals 0 @ Renegades 26   
-SaberCats 29 @ Express 12   
-Sun 0 @ Outlaws 14   
-Thunderbolts 17 @ Wheels 17 (OT)   
+Thunderbolts 13 @ Wheels 6   
+Steamer 0 @ Panthers 21   
+Storm 19 @ Sun 13   
+Express 6 @ Hawaiians 10   
+Maulers 24 @ Bell 53   
+Invaders 6 @ Gunslingers 40   
+Showboats 27 @ Bandits 10   
+Force 10 @ VooDoo 16   
+Stallions 13 @ Bulls 16   
+Renegades 45 @ Blazers 19   
+Wranglers 3 @ Generals 20   
+Gamblers 35 @ Outlaws 21   
+Gold 22 @ Blitz 6   
+(NY) Stars 30 @ Breakers 3   
+Federals 45 @ Hornets 9   
+Stars 0 @ SaberCats 50   
 Week 3
-SaberCats 41 @ Bandits 32   
-Express 23 @ Sun 31   
-Wheels 13 @ Generals 23   
-Federals 20 @ Stars 14   
-Steamer 3 @ (NY) Stars 15   
-Invaders 10 @ Force 37   
-VooDoo 13 @ Wranglers 3   
-Panthers 38 @ Thunderbolts 35 (OT)   
-Storm 6 @ Gold 10   
-Stallions 31 @ Bulls 51   
-Hawaiians 0 @ Renegades 33   
-Gamblers 41 @ Outlaws 20   
-Hornets 13 @ Showboats 26   
-Blazers 0 @ Maulers 55   
-Bell 13 @ Breakers 25   
-Gunslingers 13 @ Blitz 13 (OT)   
+Federals 24 @ Maulers 25   
+Express 7 @ Gold 10   
+Invaders 10 @ Storm 5   
+(NY) Stars 13 @ Generals 19   
+Wheels 3 @ Panthers 7   
+Thunderbolts 19 @ Showboats 32   
+Breakers 14 @ Bell 41   
+Sun 10 @ Wranglers 16   
+SaberCats 38 @ Hornets 17   
+Renegades 10 @ Outlaws 31   
+Hawaiians 24 @ Stars 6   
+Gamblers 19 @ Blazers 20   
+Bulls 9 @ Bandits 13   
+Force 10 @ Stallions 17   
+Steamer 0 @ VooDoo 39   
+Blitz 13 @ Gunslingers 34   
 Week 4
-Panthers 27 @ Express 17   
-Blitz 12 @ SaberCats 8   
-Wranglers 19 @ Steamer 23   
-Storm 17 @ Invaders 15   
-Thunderbolts 20 @ Bell 40   
-(NY) Stars 20 @ Wheels 3   
-Stallions 24 @ Force 14   
-Renegades 7 @ VooDoo 26   
-Gold 3 @ Sun 25   
-Hawaiians 6 @ Showboats 33   
-Gamblers 26 @ Gunslingers 14   
-Hornets 7 @ Outlaws 62   
-Stars 3 @ Maulers 38   
-Bulls 17 @ Federals 13   
-Bandits 9 @ Breakers 10   
-Generals 27 @ Blazers 12   
+Panthers 12 @ Gamblers 17   
+Blitz 20 @ Thunderbolts 17   
+Outlaws 28 @ Showboats 16   
+Gunslingers 29 @ Wheels 6   
+Blazers 12 @ Renegades 18 (OT)   
+Bell 10 @ (NY) Stars 34   
+Bandits 3 @ Hornets 24   
+Bulls 24 @ VooDoo 31   
+Force 9 @ Steamer 4   
+Stallions 23 @ Stars 7   
+Generals 21 @ Breakers 6   
+Sun 9 @ Federals 37   
+Storm 24 @ Gold 7   
+Invaders 20 @ Wranglers 6   
+Hawaiians 26 @ Express 0   
+SaberCats 31 @ Maulers 22   
 Week 5
-(NY) Stars 3 @ VooDoo 26   
-Invaders 10 @ Wranglers 30   
-Force 3 @ Bell 25   
-Stallions 14 @ Breakers 24   
-Bulls 17 @ Sun 21   
-Express 23 @ Hawaiians 18   
-Renegades 38 @ SaberCats 26   
-Blazers 49 @ Bandits 7   
-Maulers 31 @ Federals 6   
-Hornets 10 @ Stars 22   
-Showboats 26 @ Gamblers 24   
-Outlaws 30 @ Gunslingers 27 (OT)   
-Storm 7 @ Blitz 20   
-Gold 3 @ Thunderbolts 50   
-Panthers 12 @ Wheels 22   
-Generals 6 @ Steamer 21   
+Blazers 3 @ Outlaws 9   
+Force 22 @ Renegades 14   
+Bandits 9 @ VooDoo 35   
+Gamblers 6 @ Gunslingers 25   
+Breakers 7 @ Maulers 23   
+Express 16 @ SaberCats 30   
+Blitz 6 @ Wheels 23   
+Hornets 0 @ Hawaiians 36   
+Stallions 13 @ Panthers 17   
+Showboats 31 @ Bulls 35   
+Thunderbolts 0 @ Steamer 10   
+Sun 16 @ Stars 13 (OT)   
+(NY) Stars 7 @ Invaders 24   
+Bell 6 @ Federals 16   
+Wranglers 3 @ Gold 17   
+Generals 14 @ Storm 24   
 Week 6
-Bell 23 @ Panthers 20   
-Gold 6 @ Wheels 24   
-Wranglers 14 @ Storm 38   
-Thunderbolts 12 @ Blitz 16   
-Generals 12 @ Stallions 23   
-Renegades 10 @ Maulers 13   
-Express 13 @ Gamblers 31   
-SaberCats 23 @ Bulls 29   
-Hawaiians 37 @ Blazers 14   
-Bandits 3 @ Sun 38   
-Gunslingers 16 @ Federals 3   
-Showboats 37 @ Stars 13   
-Outlaws 27 @ Invaders 15   
-VooDoo 30 @ Force 3   
-Breakers 6 @ (NY) Stars 23   
-Hornets 24 @ Steamer 17   
+(NY) Stars 3 @ Bell 9   
+Generals 9 @ Maulers 26   
+Stars 3 @ Breakers 13   
+Federals 17 @ Express 16   
+Sun 10 @ Invaders 12   
+SaberCats 12 @ Gold 19   
+Hawaiians 7 @ Wranglers 7 (OT)   
+Outlaws 34 @ Storm 17   
+Showboats 0 @ Gunslingers 44   
+Wheels 3 @ Stallions 38   
+Hornets 0 @ Force 18   
+Bulls 17 @ Renegades 22   
+Blazers 3 @ Steamer 17   
+VooDoo 31 @ Thunderbolts 9   
+Panthers 28 @ Blitz 21   
+Bandits 13 @ Gamblers 16   
 Week 7
-Outlaws 16 @ SaberCats 20   
-Wranglers 15 @ Gold 7   
-Blazers 20 @ Express 17   
-Invaders 12 @ Storm 9 (OT)   
-Bandits 16 @ Federals 13   
-Gunslingers 26 @ Hawaiians 7   
-Showboats 6 @ Maulers 25   
-Force 16 @ Stars 25   
-VooDoo 31 @ Bell 12   
-Blitz 20 @ Wheels 16   
-Panthers 9 @ Breakers 13   
-Thunderbolts 22 @ Generals 23   
-Bulls 28 @ (NY) Stars 34 (OT)   
-Sun 3 @ Renegades 34   
-Gamblers 52 @ Hornets 16   
-Steamer 14 @ Stallions 26   
+Force 10 @ Wheels 12   
+Hawaiians 20 @ Sun 13   
+Bandits 7 @ Renegades 36   
+Panthers 0 @ VooDoo 31   
+Maulers 10 @ Federals 24   
+Hornets 6 @ Stars 17   
+Bell 34 @ Generals 13   
+Gold 14 @ (NY) Stars 28   
+Wranglers 3 @ Invaders 28   
+SaberCats 38 @ Express 24   
+Breakers 3 @ Storm 26   
+Steamer 6 @ Blitz 21   
+Gamblers 17 @ Showboats 10   
+Gunslingers 16 @ Outlaws 17   
+Thunderbolts 10 @ Stallions 35   
+Bulls 45 @ Blazers 7   
 Week 8
-Stars 3 @ Gunslingers 61   
-VooDoo 0 @ Stallions 20   
-Federals 10 @ Outlaws 30   
-Bandits 10 @ Hornets 29   
-Renegades 31 @ Blazers 10   
-Maulers 34 @ Bulls 0   
-Showboats 13 @ Express 3   
-SaberCats 6 @ Gamblers 34   
-Storm 16 @ Panthers 13   
-Wranglers 6 @ Blitz 37   
-Wheels 10 @ Bell 20   
-Generals 13 @ (NY) Stars 45   
-Breakers 14 @ Force 30   
-Steamer 9 @ Gold 17   
-Invaders 18 @ Thunderbolts 13   
-Hawaiians 23 @ Sun 16   
+Breakers 17 @ Hornets 33   
+Maulers 26 @ Stars 0   
+Sun 17 @ Express 10   
+Hawaiians 44 @ SaberCats 21   
+Storm 20 @ Invaders 23   
+(NY) Stars 23 @ Federals 26 (OT)   
+Bell 27 @ Wranglers 22   
+Generals 21 @ Gold 6   
+Wheels 7 @ Outlaws 37   
+Bulls 28 @ Force 9   
+Steamer 8 @ Stallions 17   
+Renegades 34 @ Showboats 30   
+Thunderbolts 3 @ Panthers 27   
+Blitz 3 @ VooDoo 27   
+Blazers 6 @ Bandits 20   
+Gunslingers 20 @ Gamblers 30   
 Week 9
-Stallions 36 @ Gold 6   
-Blitz 3 @ Thunderbolts 9   
-Wheels 6 @ Storm 13   
-Wranglers 23 @ Panthers 31   
-Bell 22 @ Generals 13   
-Maulers 5 @ Gamblers 6   
-Express 3 @ Bulls 42   
-SaberCats 17 @ Hawaiians 30   
-Bandits 10 @ Blazers 19   
-Gunslingers 43 @ Sun 7   
-Federals 23 @ Showboats 36   
-Outlaws 37 @ Stars 10   
-Invaders 6 @ VooDoo 58   
-(NY) Stars 26 @ Force 3   
-Steamer 6 @ Breakers 0   
-Hornets 3 @ Renegades 37   
+Sun 16 @ SaberCats 29   
+Panthers 20 @ Wheels 9   
+Wranglers 3 @ Express 12   
+Hornets 6 @ Maulers 38   
+Bell 58 @ Stars 3   
+Gold 0 @ Storm 15   
+Hawaiians 38 @ Thunderbolts 6   
+Showboats 22 @ Gamblers 43   
+Federals 27 @ Blazers 23   
+Invaders 16 @ Generals 28   
+Breakers 6 @ (NY) Stars 16   
+Outlaws 24 @ Bandits 7   
+Gunslingers 34 @ Renegades 29   
+Steamer 17 @ Bulls 27   
+VooDoo 21 @ Force 0   
+Stallions 21 @ Blitz 16   
 Week 10
-Express 3 @ Bandits 22   
-Sun 5 @ Wheels 9   
-Stars 3 @ Generals 17   
-(NY) Stars 27 @ Federals 10   
-Steamer 8 @ Invaders 27   
-Force 10 @ VooDoo 37   
-Thunderbolts 33 @ Wranglers 3   
-Panthers 30 @ Gold 6   
-Storm 17 @ Stallions 45   
-Renegades 14 @ Bulls 23   
-Gamblers 31 @ Hawaiians 14   
-Outlaws 6 @ Showboats 21   
-Hornets 16 @ Blazers 15   
-Maulers 22 @ Bell 3   
-Blitz 17 @ Breakers 26   
-SaberCats 17 @ Gunslingers 50   
+Stars 2 @ Federals 48   
+Generals 5 @ Hornets 3   
+Gold 7 @ Bell 20   
+(NY) Stars 10 @ Wranglers 16   
+Breakers 6 @ Steamer 31   
+Sun 13 @ Wheels 6   
+Maulers 13 @ VooDoo 16 (OT)   
+Bandits 13 @ Bulls 44   
+Renegades 30 @ Stallions 35   
+Gunslingers 35 @ Blazers 10   
+Thunderbolts 10 @ Invaders 15   
+Panthers 26 @ SaberCats 29   
+Blitz 10 @ Force 16   
+Outlaws 3 @ Gamblers 24   
+Express 6 @ Showboats 23   
+Storm 19 @ Hawaiians 24   
 Week 11
-Gunslingers 29 @ Hornets 13   
-Stallions 44 @ Invaders 17   
-Outlaws 17 @ Maulers 13   
-Bandits 3 @ Bulls 40   
-Showboats 40 @ SaberCats 36   
-Wheels 14 @ Thunderbolts 23   
-Blitz 6 @ Panthers 9   
-Gold 7 @ Wranglers 12   
-Hawaiians 23 @ Express 3   
-Sun 7 @ Blazers 22   
-Storm 19 @ Steamer 9   
-Gamblers 55 @ Federals 20   
-Renegades 41 @ Stars 7   
-(NY) Stars 30 @ Bell 3   
-Force 6 @ Generals 13   
-Breakers 10 @ VooDoo 17   
+Bulls 10 @ Gunslingers 30   
+Wheels 9 @ Blitz 23   
+Blazers 32 @ Breakers 3   
+Showboats 0 @ Gold 23   
+Thunderbolts 10 @ Outlaws 27   
+Gamblers 40 @ Renegades 0   
+Generals 13 @ Bell 35   
+Hawaiians 16 @ Invaders 13   
+Maulers 10 @ Sun 24   
+Stars 9 @ Express 9 (OT)   
+Hornets 0 @ Federals 30   
+Force 8 @ (NY) Stars 18   
+Stallions 21 @ Bandits 16   
+VooDoo 21 @ Steamer 0   
+Storm 26 @ Panthers 40   
+Wranglers 15 @ SaberCats 28   
 Week 12
-Gold 9 @ Force 16   
-VooDoo 6 @ Storm 3   
-Steamer 31 @ Bandits 26   
-Maulers 17 @ Gunslingers 10   
-Breakers 3 @ Bell 47   
-Generals 13 @ Blitz 17   
-Blazers 7 @ Stars 9   
-Wheels 0 @ Showboats 34   
-Wranglers 6 @ Gamblers 23   
-Stallions 20 @ (NY) Stars 3   
-Panthers 10 @ Invaders 13   
-Bulls 40 @ Hawaiians 21   
-Federals 33 @ Hornets 31   
-Renegades 17 @ Express 6   
-SaberCats 8 @ Sun 12   
-Thunderbolts 9 @ Outlaws 40   
+Express 6 @ Maulers 37   
+Gold 16 @ Invaders 31   
+Storm 3 @ (NY) Stars 20   
+Generals 15 @ Stallions 31   
+Steamer 3 @ Bandits 20   
+Force 13 @ Blazers 10 (OT)   
+Bulls 17 @ Gamblers 16   
+Panthers 17 @ Gunslingers 35   
+Wheels 6 @ Thunderbolts 17   
+Showboats 23 @ Blitz 14   
+VooDoo 3 @ Bell 39   
+Wranglers 34 @ Breakers 15   
+Hornets 9 @ Sun 20   
+SaberCats 25 @ Outlaws 23   
+Stars 16 @ Renegades 23   
+Hawaiians 22 @ Federals 17   
 Week 13
-Stars 29 @ Hornets 24   
-Force 5 @ Steamer 10   
-Stallions 12 @ VooDoo 24   
-Bell 16 @ (NY) Stars 13   
-Generals 10 @ Breakers 6   
-Hawaiians 23 @ Thunderbolts 27   
-Bulls 60 @ Blazers 16   
-Express 18 @ SaberCats 20   
-Gamblers 37 @ Panthers 17   
-Wheels 7 @ Blitz 13   
-Storm 29 @ Wranglers 3   
-Invaders 24 @ Gold 6   
-Gunslingers 6 @ Outlaws 23   
-Federals 7 @ Maulers 57   
-Bandits 7 @ Renegades 47   
-Sun 14 @ Showboats 29   
+SaberCats 46 @ Sun 13   
+Wheels 10 @ Wranglers 16   
+Express 13 @ Hornets 17   
+Stars 7 @ Maulers 33   
+Storm 16 @ Bell 22 (OT)   
+Gold 13 @ Hawaiians 26   
+Gamblers 50 @ Thunderbolts 10   
+Blazers 7 @ Showboats 27   
+Federals 19 @ Generals 13   
+Invaders 12 @ Breakers 17   
+(NY) Stars 9 @ Bandits 10   
+Outlaws 12 @ Gunslingers 3   
+Renegades 22 @ Bulls 31   
+Steamer 9 @ Force 0   
+Stallions 20 @ VooDoo 24   
+Blitz 0 @ Panthers 32   
 Week 14
-Outlaws 37 @ Express 16   
-Blazers 6 @ SaberCats 28   
-Wranglers 10 @ Invaders 33   
-Gold 0 @ Storm 24   
-Hornets 23 @ Federals 30   
-Bandits 3 @ Hawaiians 9   
-Gunslingers 40 @ Showboats 11   
-Maulers 34 @ Stars 7   
-Force 17 @ Stallions 31   
-VooDoo 30 @ Steamer 7   
-Bell 13 @ Blitz 20   
-Breakers 12 @ Wheels 6   
-Generals 17 @ Panthers 13   
-(NY) Stars 38 @ Thunderbolts 35   
-Bulls 25 @ Renegades 22   
-Gamblers 39 @ Sun 3   
+Gamblers 44 @ Sun 22   
+Gunslingers 20 @ Hawaiians 10   
+Force 13 @ Thunderbolts 12   
+Wheels 0 @ Showboats 27   
+Outlaws 7 @ Panthers 15   
+VooDoo 21 @ Renegades 9   
+Bandits 17 @ Blazers 9   
+Stallions 26 @ Steamer 14   
+Breakers 10 @ Generals 17   
+Maulers 35 @ Hornets 6   
+Bell 9 @ Bulls 36   
+Invaders 10 @ Gold 17   
+Federals 33 @ SaberCats 75   
+(NY) Stars 17 @ Stars 12   
+Wranglers 20 @ Storm 23   
+Blitz 17 @ Express 9   
 Week 15
-Thunderbolts 0 @ Storm 37   
-Force 13 @ Wranglers 16 (OT)   
-Wheels 13 @ Panthers 23   
-Stallions 36 @ Steamer 0   
-VooDoo 33 @ Generals 27   
-Bell 29 @ Renegades 27   
-Maulers 37 @ Bandits 9   
-Breakers 10 @ Hornets 15   
-Blitz 6 @ (NY) Stars 29   
-Gold 6 @ Invaders 20   
-Showboats 35 @ Outlaws 12   
-Hawaiians 3 @ SaberCats 28   
-Sun 10 @ Express 15   
-Gunslingers 17 @ Gamblers 10   
-Stars 26 @ Bulls 51   
-Federals 22 @ Blazers 16 (OT)   
+Gold 9 @ Wranglers 31   
+Stars 0 @ Hornets 9   
+Bell 26 @ Breakers 3   
+Steamer 12 @ Federals 23   
+Generals 37 @ (NY) Stars 17   
+VooDoo 37 @ Wheels 0   
+Bulls 16 @ Maulers 10   
+Renegades 14 @ Bandits 7   
+Blazers 20 @ Stallions 27   
+Gunslingers 47 @ Thunderbolts 3   
+Invaders 58 @ SaberCats 74   
+Panthers 27 @ Force 18   
+Blitz 6 @ Gamblers 23   
+Showboats 10 @ Outlaws 28   
+Express 3 @ Storm 22   
+Sun 3 @ Hawaiians 18   
 Week 16
-Invaders 29 @ Wheels 12   
-(NY) Stars 20 @ Generals 24   
-Bell 21 @ Stallions 58   
-Breakers 0 @ Thunderbolts 6   
-Bulls 57 @ Bandits 0   
-Panthers 31 @ Blitz 30   
-Express 7 @ Wranglers 17   
-Sun 6 @ Hawaiians 37   
-Blazers 3 @ Renegades 42   
-Stars 3 @ Federals 34   
-Outlaws 10 @ Gamblers 38   
-Hornets 0 @ Maulers 37   
-Showboats 13 @ Gunslingers 16 (OT)   
-SaberCats 31 @ Storm 13   
-Steamer 10 @ Force 6   
-Gold 0 @ VooDoo 36          
+Hornets 0 @ Bell 24   
+Federals 43 @ Breakers 3   
+Gold 18 @ Sun 10   
+Invaders 20 @ Express 9   
+Storm 0 @ Wranglers 16   
+Stars 16 @ Generals 13 (OT)   
+SaberCats 12 @ Hawaiians 3   
+Maulers 34 @ (NY) Stars 16   
+Outlaws 23 @ Bulls 34   
+Stallions 3 @ Force 23   
+Renegades 16 @ Steamer 2   
+Showboats 22 @ Panthers 33   
+Thunderbolts 0 @ Blitz 20   
+VooDoo 22 @ Blazers 0   
+Bandits 9 @ Gunslingers 26   
+Gamblers 23 @ Wheels 10   
 """
 
 print(parse_scores(s))
-
-print(parse_schedule(s))
-
-s = """Preseason Week 1
-Cheesesteaks 13 @ Titans 3   
-Eggball Team 26 @ Texans 18   
-49ers 13 @ Chargers 6   
-Lions 19 @ Jaguars 3   
-Aliens 17 @ Broncos 7   
-Lillys 6 @ Dinos 0   
-Panthers 27 @ Chiefs 23   
-Nonsayins 6 @ Stillers 28   
-Bears 0 @ Jets 17   
-Buccaneers 13 @ Ravens 10 (OT)   
-Giants 3 @ Buffalo 19   
-Superhawks 30 @ Browns 12   
-Dryer Vlads 24 @ Raiders 9   
-Packers 12 @ Colts 14   
-Vikings 7 @ Patriots 15   
-Saints 0 @ Dolphins 27   
-Preseason Week 2
-Texans 6 @ Cheesesteaks 10   
-Chargers 25 @ Eggball Team 13   
-Jaguars 6 @ 49ers 3 (OT)   
-Broncos 3 @ Lions 30   
-Dinos 9 @ Aliens 6   
-Chiefs 13 @ Lillys 16   
-Stillers 19 @ Panthers 24   
-Jets 20 @ Nonsayins 15   
-Ravens 12 @ Bears 9   
-Buffalo 9 @ Buccaneers 14   
-Browns 30 @ Giants 13   
-Raiders 15 @ Superhawks 12   
-Colts 22 @ Dryer Vlads 37   
-Patriots 6 @ Packers 3   
-Dolphins 16 @ Vikings 3   
-Titans 23 @ Saints 7   
-Preseason Week 3
-Cheesesteaks 17 @ Chargers 27   
-Eggball Team 3 @ Jaguars 27   
-49ers 16 @ Broncos 9   
-Lions 31 @ Dinos 0   
-Aliens 29 @ Chiefs 12   
-Lillys 23 @ Stillers 16   
-Panthers 3 @ Jets 37   
-Nonsayins 6 @ Ravens 17   
-Bears 13 @ Buffalo 20   
-Buccaneers 24 @ Browns 19   
-Giants 42 @ Raiders 26   
-Superhawks 45 @ Colts 13   
-Dryer Vlads 49 @ Patriots 25   
-Packers 3 @ Dolphins 25   
-Vikings 0 @ Titans 29   
-Saints 6 @ Texans 5   """
-
-print(retro_schedule(s))
