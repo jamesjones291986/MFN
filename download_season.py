@@ -2,7 +2,7 @@ from GameLogDownloader import GameLogDownloader
 from SeasonCompiler import SeasonCompiler
 
 league = 'USFL'
-year = '2010'
+year = '2011'
 path = f'/Users/jamesjones/personal/game_logs/{league}/{year}/{league}_{year}.csv'
 
 gdl = GameLogDownloader()

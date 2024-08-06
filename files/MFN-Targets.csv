@@ -1,676 +1,676 @@
-OffensivePlay,OffPlayType,target,tgt,tgt %,,,,,
-Empty 4 Wide Spread Corner Post,Medium Pass,WR4,1324,84.9%,,,FB1,23313,7.08%
-Empty 4 Wide Spread Corner Post,Medium Pass,WR3,153,9.8%,,,WR4,3778,1.15%
-Empty 4 Wide Spread Corner Post,Medium Pass,WR2,48,3.1%,,,WR3,42749,12.98%
-Empty 4 Wide Spread Corner Post,Medium Pass,WR1,33,2.1%,,,WR2,44743,13.59%
-Empty 4 Wide Spread Corner Post,Medium Pass,TE1,2,0.1%,,,WR1,62544,19.00%
-Empty 4 Wide Spread Deep Corner Post,Long Pass,WR3,77,49.4%,,,TE1,69317,21.05%
-Empty 4 Wide Spread Deep Corner Post,Long Pass,WR4,63,40.4%,,,TE2,5177,1.57%
-Empty 4 Wide Spread Deep Corner Post,Long Pass,WR2,11,7.1%,,,RB1,74658,22.68%
-Empty 4 Wide Spread Deep Corner Post,Long Pass,WR1,5,3.2%,,,FB2,1119,0.34%
-Empty 4 Wide Spread Flats,Short Pass,WR3,485,50.5%,,,,,
-Empty 4 Wide Spread Flats,Short Pass,WR1,414,43.1%,,,WR5,1835,0.56%
-Empty 4 Wide Spread Flats,Short Pass,WR4,42,4.4%,,,,,
-Empty 4 Wide Spread Flats,Short Pass,WR2,19,2.0%,,,,,
-Empty 4 Wide Spread Flats,Short Pass,TE1,1,0.1%,,,RB2,3379,1.03%
-Goal Line Normal PA TE Drag,Short Pass,TE1,4128,61.7%,,,,,
-Goal Line Normal PA TE Drag,Short Pass,FB1,1457,21.8%,,,,,
-Goal Line Normal PA TE Drag,Short Pass,RB1,658,9.8%,,,,,
-Goal Line Normal PA TE Drag,Short Pass,TE2,409,6.1%,,,,,
-Goal Line Normal PA TE Drag,Short Pass,FB2,37,0.6%,,,,,
-I Formation 3WR Backfield Flats,Medium Pass,FB1,1351,60.4%,,,,,
-I Formation 3WR Backfield Flats,Medium Pass,RB1,692,30.9%,,,,,
-I Formation 3WR Backfield Flats,Medium Pass,WR3,139,6.2%,,,,,
-I Formation 3WR Backfield Flats,Medium Pass,WR2,29,1.3%,,,,,
-I Formation 3WR Backfield Flats,Medium Pass,WR1,26,1.2%,,,,,
-I Formation 3WR Deep Corner/Post,Long Pass,FB1,161,62.9%,,,,,
-I Formation 3WR Deep Corner/Post,Long Pass,WR3,48,18.8%,,,,,
-I Formation 3WR Deep Corner/Post,Long Pass,WR2,31,12.1%,,,,,
-I Formation 3WR Deep Corner/Post,Long Pass,WR1,16,6.3%,,,,,
-I Formation 3WR FL Post,Medium Pass,RB1,4349,72.7%,,,,,
-I Formation 3WR FL Post,Medium Pass,WR3,1064,17.8%,,,,,
-I Formation 3WR FL Post,Medium Pass,WR2,463,7.7%,,,,,
-I Formation 3WR FL Post,Medium Pass,WR1,105,1.8%,,,,,
-I Formation 3WR FL Post,Medium Pass,FB1,3,0.1%,,,,,
-I Formation 3WR Outside Curls,Medium Pass,WR1,422,73.6%,,,,,
-I Formation 3WR Outside Curls,Medium Pass,FB1,84,14.7%,,,,,
-I Formation 3WR Outside Curls,Medium Pass,WR2,44,7.7%,,,,,
-I Formation 3WR Outside Curls,Medium Pass,WR3,23,4.0%,,,,,
-I Formation 3WR PA Fullback Flat,Short Pass,FB1,1621,42.1%,,,,,
-I Formation 3WR PA Fullback Flat,Short Pass,WR3,1391,36.1%,,,,,
-I Formation 3WR PA Fullback Flat,Short Pass,WR2,806,20.9%,,,,,
-I Formation 3WR PA Fullback Flat,Short Pass,WR1,18,0.5%,,,,,
-I Formation 3WR PA Fullback Flat,Short Pass,RB1,14,0.4%,,,,,
-I Formation 3WR SE Post,Medium Pass,WR1,2763,46.0%,,,,,
-I Formation 3WR SE Post,Medium Pass,RB1,1756,29.2%,,,,,
-I Formation 3WR SE Post,Medium Pass,WR3,929,15.5%,,,,,
-I Formation 3WR SE Post,Medium Pass,WR2,550,9.2%,,,,,
-I Formation 3WR SE Post,Medium Pass,FB1,7,0.1%,,,,,
-I Formation 3WR Slot Corner Long,Medium Pass,WR1,3109,70.9%,,,,,
-I Formation 3WR Slot Corner Long,Medium Pass,RB1,1152,26.3%,,,,,
-I Formation 3WR Slot Corner Long,Medium Pass,WR3,98,2.2%,,,,,
-I Formation 3WR Slot Corner Long,Medium Pass,WR2,25,0.6%,,,,,
-I Formation 3WR Slot Corner Long,Medium Pass,FB1,4,0.1%,,,,,
-I Formation 3WR Slot Corner Short,Short Pass,RB1,1398,51.4%,,,,,
-I Formation 3WR Slot Corner Short,Short Pass,WR1,1140,41.9%,,,,,
-I Formation 3WR Slot Corner Short,Short Pass,WR3,146,5.4%,,,,,
-I Formation 3WR Slot Corner Short,Short Pass,WR2,36,1.3%,,,,,
-I Formation 3WR Slot Short WR Deep,Medium Pass,WR3,7645,64.5%,,,,,
-I Formation 3WR Slot Short WR Deep,Medium Pass,RB1,2303,19.4%,,,,,
-I Formation 3WR Slot Short WR Deep,Medium Pass,WR1,1733,14.6%,,,,,
-I Formation 3WR Slot Short WR Deep,Medium Pass,WR2,154,1.3%,,,,,
-I Formation 3WR Slot Short WR Deep,Medium Pass,FB1,15,0.1%,,,,,
-I Formation 3WR Weak Flood,Short Pass,FB1,683,68.9%,,,,,
-I Formation 3WR Weak Flood,Short Pass,WR1,159,16.0%,,,,,
-I Formation 3WR Weak Flood,Short Pass,WR3,148,14.9%,,,,,
-I Formation 3WR Weak Flood,Short Pass,RB1,1,0.1%,,,,,
-I Formation 3WR Weak Flood,Short Pass,WR2,1,0.1%,,,,,
-I Formation 3WR WR Out,Short Pass,WR2,3654,43.9%,,,,,
-I Formation 3WR WR Out,Short Pass,WR3,2495,30.0%,,,,,
-I Formation 3WR WR Out,Short Pass,WR1,2167,26.0%,,,,,
-I Formation 3WR WR Out,Short Pass,FB1,3,0.0%,,,,,
-I Formation 3WR WR Post,Long Pass,WR3,728,85.4%,,,,,
-I Formation 3WR WR Post,Long Pass,WR2,94,11.0%,,,,,
-I Formation 3WR WR Post,Long Pass,RB1,29,3.4%,,,,,
-I Formation 3WR WR Post,Long Pass,WR1,1,0.1%,,,,,
-I Formation Big Streak Heavy,Long Pass,TE1,37,38.9%,,,,,
-I Formation Big Streak Heavy,Long Pass,RB1,25,26.3%,,,,,
-I Formation Big Streak Heavy,Long Pass,FB1,20,21.1%,,,,,
-I Formation Big Streak Heavy,Long Pass,TE2,11,11.6%,,,,,
-I Formation Big Streak Heavy,Long Pass,WR1,2,2.1%,,,,,
-I Formation Big TE Curl,Medium Pass,RB1,46,51.7%,,,,,
-I Formation Big TE Curl,Medium Pass,TE1,30,33.7%,,,,,
-I Formation Big TE Curl,Medium Pass,FB1,11,12.4%,,,,,
-I Formation Big TE Curl,Medium Pass,TE2,2,2.2%,,,,,
-I Formation Big TE Sneak Out,Short Pass,WR1,366,39.4%,,,,,
-I Formation Big TE Sneak Out,Short Pass,TE2,324,34.9%,,,,,
-I Formation Big TE Sneak Out,Short Pass,RB1,105,11.3%,,,,,
-I Formation Big TE Sneak Out,Short Pass,FB1,69,7.4%,,,,,
-I Formation Big TE Sneak Out,Short Pass,TE1,64,6.9%,,,,,
-I Formation Normal Cross In,Short Pass,TE1,743,54.7%,,,,,
-I Formation Normal Cross In,Short Pass,RB1,467,34.4%,,,,,
-I Formation Normal Cross In,Short Pass,WR2,132,9.7%,,,,,
-I Formation Normal Cross In,Short Pass,WR1,13,1.0%,,,,,
-I Formation Normal Cross In,Short Pass,FB1,3,0.2%,,,,,
-I Formation Normal Curl & Post,Medium Pass,TE1,1880,84.2%,,,,,
-I Formation Normal Curl & Post,Medium Pass,RB1,245,11.0%,,,,,
-I Formation Normal Curl & Post,Medium Pass,WR1,85,3.8%,,,,,
-I Formation Normal Curl & Post,Medium Pass,WR2,19,0.9%,,,,,
-I Formation Normal Curl & Post,Medium Pass,FB1,5,0.2%,,,,,
-I Formation Normal FB Middle,Short Pass,WR1,970,55.4%,,,,,
-I Formation Normal FB Middle,Short Pass,WR2,602,34.4%,,,,,
-I Formation Normal FB Middle,Short Pass,FB1,153,8.7%,,,,,
-I Formation Normal FB Middle,Short Pass,TE1,26,1.5%,,,,,
-I Formation Normal FL Hitch,Short Pass,WR1,7540,41.7%,,,,,
-I Formation Normal FL Hitch,Short Pass,WR2,5610,31.0%,,,,,
-I Formation Normal FL Hitch,Short Pass,TE1,4895,27.1%,,,,,
-I Formation Normal FL Hitch,Short Pass,FB1,28,0.2%,,,,,
-I Formation Normal FL Hook,Medium Pass,FB1,2177,31.0%,,,,,
-I Formation Normal FL Hook,Medium Pass,RB1,1726,24.6%,,,,,
-I Formation Normal FL Hook,Medium Pass,WR2,1543,22.0%,,,,,
-I Formation Normal FL Hook,Medium Pass,WR1,1439,20.5%,,,,,
-I Formation Normal FL Hook,Medium Pass,TE1,144,2.0%,,,,,
-I Formation Normal Max Protect,Medium Pass,RB1,3718,66.9%,,,,,
-I Formation Normal Max Protect,Medium Pass,WR2,1640,29.5%,,,,,
-I Formation Normal Max Protect,Medium Pass,WR1,203,3.7%,,,,,
-I Formation Normal PA Fullback Flat,Short Pass,FB1,7667,55.6%,,,,,
-I Formation Normal PA Fullback Flat,Short Pass,TE1,3675,26.6%,,,,,
-I Formation Normal PA Fullback Flat,Short Pass,WR2,1922,13.9%,,,,,
-I Formation Normal PA Fullback Flat,Short Pass,WR1,496,3.6%,,,,,
-I Formation Normal PA Fullback Flat,Short Pass,RB1,34,0.2%,,,,,
-I Formation Normal PA Outside Curls,Short Pass,WR1,4704,68.7%,,,,,
-I Formation Normal PA Outside Curls,Short Pass,RB1,1405,20.5%,,,,,
-I Formation Normal PA Outside Curls,Short Pass,WR2,736,10.8%,,,,,
-I Formation Normal PA Outside Curls,Short Pass,FB1,1,0.0%,,,,,
-I Formation Normal PA Streaks,Long Pass,FB1,1105,60.2%,,,,,
-I Formation Normal PA Streaks,Long Pass,TE1,646,35.2%,,,,,
-I Formation Normal PA Streaks,Long Pass,WR2,44,2.4%,,,,,
-I Formation Normal PA Streaks,Long Pass,WR1,41,2.2%,,,,,
-I Formation Normal PA Streaks,Long Pass,RB1,1,0.1%,,,,,
-I Formation Normal SE Post,Long Pass,FB1,2220,67.0%,,,,,
-I Formation Normal SE Post,Long Pass,TE1,906,27.3%,,,,,
-I Formation Normal SE Post,Long Pass,WR1,106,3.2%,,,,,
-I Formation Normal SE Post,Long Pass,WR2,81,2.4%,,,,,
-I Formation Normal Strong Flood,Short Pass,RB1,250,33.9%,,,,,
-I Formation Normal Strong Flood,Short Pass,WR2,245,33.2%,,,,,
-I Formation Normal Strong Flood,Short Pass,TE1,238,32.3%,,,,,
-I Formation Normal Strong Flood,Short Pass,WR1,3,0.4%,,,,,
-I Formation Normal Strong Flood,Short Pass,FB1,1,0.1%,,,,,
-I Formation Normal TE Flag,Medium Pass,WR2,663,46.2%,,,,,
-I Formation Normal TE Flag,Medium Pass,RB1,497,34.7%,,,,,
-I Formation Normal TE Flag,Medium Pass,TE1,180,12.6%,,,,,
-I Formation Normal TE Flag,Medium Pass,WR1,90,6.3%,,,,,
-I Formation Normal TE Flag,Medium Pass,FB1,4,0.3%,,,,,
-I Formation Normal TE Out,Long Pass,TE1,93,63.7%,,,,,
-I Formation Normal TE Out,Long Pass,RB1,36,24.7%,,,,,
-I Formation Normal TE Out,Long Pass,WR2,10,6.8%,,,,,
-I Formation Normal TE Out,Long Pass,WR1,6,4.1%,,,,,
-I Formation Normal TE Out,Long Pass,FB1,1,0.7%,,,,,
-I Formation Power PA Flats,Short Pass,TE1,5843,68.2%,,,,,
-I Formation Power PA Flats,Short Pass,WR1,1488,17.4%,,,,,
-I Formation Power PA Flats,Short Pass,FB2,1080,12.6%,,,,,
-I Formation Power PA Flats,Short Pass,RB1,157,1.8%,,,,,
-I Formation Power Play Action Bomb,Long Pass,RB1,753,96.4%,,,,,
-I Formation Power Play Action Bomb,Long Pass,WR1,28,3.6%,,,,,
-I Formation Power Play Action HB Downfield,Medium Pass,TE1,7517,81.3%,,,,,
-I Formation Power Play Action HB Downfield,Medium Pass,WR1,1370,14.8%,,,,,
-I Formation Power Play Action HB Downfield,Medium Pass,RB1,362,3.9%,,,,,
-I Formation Power Play Action HB Downfield,Medium Pass,FB2,2,0.0%,,,,,
-I Formation Twin WR Hard Slants,Short Pass,TE1,3056,48.8%,,,,,
-I Formation Twin WR Hard Slants,Short Pass,WR1,1716,27.4%,,,,,
-I Formation Twin WR Hard Slants,Short Pass,WR2,1484,23.7%,,,,,
-I Formation Twin WR Hard Slants,Short Pass,FB1,9,0.1%,,,,,
-I Formation Twin WR Hook Ins,Medium Pass,WR2,468,60.7%,,,,,
-I Formation Twin WR Hook Ins,Medium Pass,FB1,207,26.8%,,,,,
-I Formation Twin WR Hook Ins,Medium Pass,TE1,84,10.9%,,,,,
-I Formation Twin WR Hook Ins,Medium Pass,WR1,12,1.6%,,,,,
-I Formation Twin WR Quick Outs,Short Pass,TE1,1242,48.1%,,,,,
-I Formation Twin WR Quick Outs,Short Pass,WR1,1040,40.3%,,,,,
-I Formation Twin WR Quick Outs,Short Pass,WR2,298,11.5%,,,,,
-I Formation Twin WR Quick Outs,Short Pass,FB1,1,0.0%,,,,,
-I Formation Twin WR Slot Hitch,Medium Pass,WR1,672,59.0%,,,,,
-I Formation Twin WR Slot Hitch,Medium Pass,TE1,447,39.2%,,,,,
-I Formation Twin WR Slot Hitch,Medium Pass,WR2,19,1.7%,,,,,
-I Formation Twin WR Slot Hitch,Medium Pass,FB1,1,0.1%,,,,,
-I Formation Twin WR Slot Out,Long Pass,WR1,155,46.4%,,,,,
-I Formation Twin WR Slot Out,Long Pass,FB1,134,40.1%,,,,,
-I Formation Twin WR Slot Out,Long Pass,TE1,28,8.4%,,,,,
-I Formation Twin WR Slot Out,Long Pass,WR2,17,5.1%,,,,,
-I Formation Twin WR Strong Flood,Short Pass,WR1,138,45.1%,,,,,
-I Formation Twin WR Strong Flood,Short Pass,RB1,114,37.3%,,,,,
-I Formation Twin WR Strong Flood,Short Pass,WR2,32,10.5%,,,,,
-I Formation Twin WR Strong Flood,Short Pass,TE1,22,7.2%,,,,,
-Shotgun 2 RB 3 WR FB In,Medium Pass,WR1,2350,52.9%,,,,,
-Shotgun 2 RB 3 WR FB In,Medium Pass,RB2,1380,31.1%,,,,,
-Shotgun 2 RB 3 WR FB In,Medium Pass,RB1,505,11.4%,,,,,
-Shotgun 2 RB 3 WR FB In,Medium Pass,WR2,154,3.5%,,,,,
-Shotgun 2 RB 3 WR FB In,Medium Pass,WR3,52,1.2%,,,,,
-Shotgun 2 RB 3 WR FL Drag,Short Pass,RB1,2922,62.6%,,,,,
-Shotgun 2 RB 3 WR FL Drag,Short Pass,WR1,944,20.2%,,,,,
-Shotgun 2 RB 3 WR FL Drag,Short Pass,WR2,451,9.7%,,,,,
-Shotgun 2 RB 3 WR FL Drag,Short Pass,WR3,351,7.5%,,,,,
-Shotgun 2 RB 3 WR FL Drag,Short Pass,RB2,1,0.0%,,,,,
-Shotgun 2 RB 3 WR RB Curls,Short Pass,RB1,1864,35.2%,,,,,
-Shotgun 2 RB 3 WR RB Curls,Short Pass,RB2,1512,28.6%,,,,,
-Shotgun 2 RB 3 WR RB Curls,Short Pass,WR2,876,16.6%,,,,,
-Shotgun 2 RB 3 WR RB Curls,Short Pass,WR3,565,10.7%,,,,,
-Shotgun 2 RB 3 WR RB Curls,Short Pass,WR1,473,8.9%,,,,,
-Shotgun 2 RB 3 WR Strong Deep,Long Pass,WR1,702,55.7%,,,,,
-Shotgun 2 RB 3 WR Strong Deep,Long Pass,WR2,431,34.2%,,,,,
-Shotgun 2 RB 3 WR Strong Deep,Long Pass,RB2,90,7.1%,,,,,
-Shotgun 2 RB 3 WR Strong Deep,Long Pass,RB1,28,2.2%,,,,,
-Shotgun 2 RB 3 WR Strong Deep,Long Pass,WR3,9,0.7%,,,,,
-Shotgun 2 RB 3 WR WR Curl,Medium Pass,WR2,2821,51.5%,,,,,
-Shotgun 2 RB 3 WR WR Curl,Medium Pass,RB1,2430,44.4%,,,,,
-Shotgun 2 RB 3 WR WR Curl,Medium Pass,WR3,140,2.6%,,,,,
-Shotgun 2 RB 3 WR WR Curl,Medium Pass,WR1,83,1.5%,,,,,
-Shotgun 2 RB 3 WR WR Hooks,Medium Pass,WR1,1710,43.6%,,,,,
-Shotgun 2 RB 3 WR WR Hooks,Medium Pass,WR2,1403,35.7%,,,,,
-Shotgun 2 RB 3 WR WR Hooks,Medium Pass,WR3,417,10.6%,,,,,
-Shotgun 2 RB 3 WR WR Hooks,Medium Pass,RB2,396,10.1%,,,,,
-Shotgun 4 Wide All Curls,Short Pass,WR4,33,57.9%,,,,,
-Shotgun 4 Wide All Curls,Short Pass,WR1,15,26.3%,,,,,
-Shotgun 4 Wide All Curls,Short Pass,WR3,6,10.5%,,,,,
-Shotgun 4 Wide All Curls,Short Pass,WR2,3,5.3%,,,,,
-Shotgun 4 Wide All Go,Long Pass,WR4,9,64.3%,,,,,
-Shotgun 4 Wide All Go,Long Pass,WR1,3,21.4%,,,,,
-Shotgun 4 Wide All Go,Long Pass,WR2,1,7.1%,,,,,
-Shotgun 4 Wide All Go,Long Pass,WR3,1,7.1%,,,,,
-Shotgun 4 Wide In and Out,Medium Pass,WR2,145,55.3%,,,,,
-Shotgun 4 Wide In and Out,Medium Pass,WR3,83,31.7%,,,,,
-Shotgun 4 Wide In and Out,Medium Pass,WR4,32,12.2%,,,,,
-Shotgun 4 Wide In and Out,Medium Pass,WR1,2,0.8%,,,,,
-Shotgun 4 Wide Slot Curl,Medium Pass,RB1,225,50.6%,,,,,
-Shotgun 4 Wide Slot Curl,Medium Pass,WR4,206,46.3%,,,,,
-Shotgun 4 Wide Slot Curl,Medium Pass,WR1,6,1.3%,,,,,
-Shotgun 4 Wide Slot Curl,Medium Pass,WR2,4,0.9%,,,,,
-Shotgun 4 Wide Slot Curl,Medium Pass,WR3,4,0.9%,,,,,
-Shotgun 4 Wide Slot Drag,Short Pass,WR3,230,89.8%,,,,,
-Shotgun 4 Wide Slot Drag,Short Pass,WR1,12,4.7%,,,,,
-Shotgun 4 Wide Slot Drag,Short Pass,RB1,6,2.3%,,,,,
-Shotgun 4 Wide Slot Drag,Short Pass,WR2,4,1.6%,,,,,
-Shotgun 4 Wide Slot Drag,Short Pass,WR4,4,1.6%,,,,,
-Shotgun 4 Wide WR Corner,Long Pass,WR4,52,66.7%,,,,,
-Shotgun 4 Wide WR Corner,Long Pass,WR3,21,26.9%,,,,,
-Shotgun 4 Wide WR Corner,Long Pass,RB1,2,2.6%,,,,,
-Shotgun 4 Wide WR Corner,Long Pass,WR2,2,2.6%,,,,,
-Shotgun 4 Wide WR Corner,Long Pass,WR1,1,1.3%,,,,,
-Shotgun 5 Wide 5 WR All Go,Long Pass,WR1,4,33.3%,,,,,
-Shotgun 5 Wide 5 WR All Go,Long Pass,WR4,4,33.3%,,,,,
-Shotgun 5 Wide 5 WR All Go,Long Pass,WR3,3,25.0%,,,,,
-Shotgun 5 Wide 5 WR All Go,Long Pass,WR2,1,8.3%,,,,,
-Shotgun 5 Wide 5 WR Corner Post,Long Pass,WR4,67,45.9%,,,,,
-Shotgun 5 Wide 5 WR Corner Post,Long Pass,WR5,41,28.1%,,,,,
-Shotgun 5 Wide 5 WR Corner Post,Long Pass,WR3,21,14.4%,,,,,
-Shotgun 5 Wide 5 WR Corner Post,Long Pass,WR2,13,8.9%,,,,,
-Shotgun 5 Wide 5 WR Corner Post,Long Pass,WR1,4,2.7%,,,,,
-Shotgun 5 Wide 5 WR Deep Ins,Long Pass,WR5,98,57.0%,,,,,
-Shotgun 5 Wide 5 WR Deep Ins,Long Pass,WR4,33,19.2%,,,,,
-Shotgun 5 Wide 5 WR Deep Ins,Long Pass,WR3,22,12.8%,,,,,
-Shotgun 5 Wide 5 WR Deep Ins,Long Pass,WR2,14,8.1%,,,,,
-Shotgun 5 Wide 5 WR Deep Ins,Long Pass,WR1,5,2.9%,,,,,
-Shotgun 5 Wide FL Hook,Medium Pass,WR3,96,33.9%,,,,,
-Shotgun 5 Wide FL Hook,Medium Pass,WR1,94,33.2%,,,,,
-Shotgun 5 Wide FL Hook,Medium Pass,WR5,86,30.4%,,,,,
-Shotgun 5 Wide FL Hook,Medium Pass,WR4,4,1.4%,,,,,
-Shotgun 5 Wide FL Hook,Medium Pass,WR2,3,1.1%,,,,,
-Shotgun 5 Wide Middle Curls,Short Pass,WR1,157,80.9%,,,,,
-Shotgun 5 Wide Middle Curls,Short Pass,WR4,21,10.8%,,,,,
-Shotgun 5 Wide Middle Curls,Short Pass,WR5,8,4.1%,,,,,
-Shotgun 5 Wide Middle Curls,Short Pass,WR3,7,3.6%,,,,,
-Shotgun 5 Wide Middle Curls,Short Pass,WR2,1,0.5%,,,,,
-Shotgun 5 Wide Parallel Slants,Short Pass,WR5,1414,60.0%,,,,,
-Shotgun 5 Wide Parallel Slants,Short Pass,WR4,340,14.4%,,,,,
-Shotgun 5 Wide Parallel Slants,Short Pass,WR2,316,13.4%,,,,,
-Shotgun 5 Wide Parallel Slants,Short Pass,WR3,277,11.8%,,,,,
-Shotgun 5 Wide Parallel Slants,Short Pass,WR1,10,0.4%,,,,,
-Shotgun 5 Wide Slot Cross,Medium Pass,WR2,524,66.5%,,,,,
-Shotgun 5 Wide Slot Cross,Medium Pass,WR1,106,13.5%,,,,,
-Shotgun 5 Wide Slot Cross,Medium Pass,WR5,87,11.0%,,,,,
-Shotgun 5 Wide Slot Cross,Medium Pass,WR4,60,7.6%,,,,,
-Shotgun 5 Wide Slot Cross,Medium Pass,WR3,11,1.4%,,,,,
-Shotgun 5 Wide Slot Drag,Short Pass,WR3,345,63.0%,,,,,
-Shotgun 5 Wide Slot Drag,Short Pass,WR4,101,18.4%,,,,,
-Shotgun 5 Wide Slot Drag,Short Pass,WR5,52,9.5%,,,,,
-Shotgun 5 Wide Slot Drag,Short Pass,WR1,42,7.7%,,,,,
-Shotgun 5 Wide Slot Drag,Short Pass,WR2,8,1.5%,,,,,
-Shotgun 5 Wide WR Curls,Medium Pass,WR5,49,40.5%,,,,,
-Shotgun 5 Wide WR Curls,Medium Pass,WR2,29,24.0%,,,,,
-Shotgun 5 Wide WR Curls,Medium Pass,WR1,27,22.3%,,,,,
-Shotgun 5 Wide WR Curls,Medium Pass,WR3,14,11.6%,,,,,
-Shotgun 5 Wide WR Curls,Medium Pass,WR4,2,1.7%,,,,,
-Shotgun Normal Deep Weak In and Out,Long Pass,TE1,1227,59.9%,,,,,
-Shotgun Normal Deep Weak In and Out,Long Pass,WR3,678,33.1%,,,,,
-Shotgun Normal Deep Weak In and Out,Long Pass,WR1,89,4.3%,,,,,
-Shotgun Normal Deep Weak In and Out,Long Pass,RB1,30,1.5%,,,,,
-Shotgun Normal Deep Weak In and Out,Long Pass,WR2,24,1.2%,,,,,
-Shotgun Normal Double Outs,Short Pass,WR3,2313,43.3%,,,,,
-Shotgun Normal Double Outs,Short Pass,WR1,2113,39.6%,,,,,
-Shotgun Normal Double Outs,Short Pass,RB1,638,12.0%,,,,,
-Shotgun Normal Double Outs,Short Pass,WR2,143,2.7%,,,,,
-Shotgun Normal Double Outs,Short Pass,TE1,130,2.4%,,,,,
-Shotgun Normal FL Slant,Short Pass,RB1,1131,41.5%,,,,,
-Shotgun Normal FL Slant,Short Pass,WR3,567,20.8%,,,,,
-Shotgun Normal FL Slant,Short Pass,WR2,528,19.4%,,,,,
-Shotgun Normal FL Slant,Short Pass,WR1,498,18.3%,,,,,
-Shotgun Normal Hail Mary,Long Pass,RB1,14,35.0%,,,,,
-Shotgun Normal Hail Mary,Long Pass,WR1,9,22.5%,,,,,
-Shotgun Normal Hail Mary,Long Pass,TE1,8,20.0%,,,,,
-Shotgun Normal Hail Mary,Long Pass,WR3,7,17.5%,,,,,
-Shotgun Normal Hail Mary,Long Pass,WR2,2,5.0%,,,,,
-Shotgun Normal HB Flare,Medium Pass,RB1,11152,48.0%,,,,,
-Shotgun Normal HB Flare,Medium Pass,WR3,5823,25.1%,,,,,
-Shotgun Normal HB Flare,Medium Pass,TE1,3478,15.0%,,,,,
-Shotgun Normal HB Flare,Medium Pass,WR2,1872,8.1%,,,,,
-Shotgun Normal HB Flare,Medium Pass,WR1,902,3.9%,,,,,
-Shotgun Normal Post Flags,Medium Pass,TE1,736,84.2%,,,,,
-Shotgun Normal Post Flags,Medium Pass,WR3,78,8.9%,,,,,
-Shotgun Normal Post Flags,Medium Pass,WR1,34,3.9%,,,,,
-Shotgun Normal Post Flags,Medium Pass,RB1,13,1.5%,,,,,
-Shotgun Normal Post Flags,Medium Pass,WR2,13,1.5%,,,,,
-Shotgun Normal Short Attack,Medium Pass,WR2,750,62.4%,,,,,
-Shotgun Normal Short Attack,Medium Pass,WR1,370,30.8%,,,,,
-Shotgun Normal Short Attack,Medium Pass,WR3,35,2.9%,,,,,
-Shotgun Normal Short Attack,Medium Pass,TE1,34,2.8%,,,,,
-Shotgun Normal Short Attack,Medium Pass,RB1,12,1.0%,,,,,
-Shotgun Normal Slot Drag,Short Pass,WR3,729,56.9%,,,,,
-Shotgun Normal Slot Drag,Short Pass,WR1,420,32.8%,,,,,
-Shotgun Normal Slot Drag,Short Pass,TE1,105,8.2%,,,,,
-Shotgun Normal Slot Drag,Short Pass,WR2,21,1.6%,,,,,
-Shotgun Normal Slot Drag,Short Pass,RB1,7,0.5%,,,,,
-Shotgun Normal TE Out,Short Pass,TE1,2706,64.5%,,,,,
-Shotgun Normal TE Out,Short Pass,WR3,1124,26.8%,,,,,
-Shotgun Normal TE Out,Short Pass,WR1,249,5.9%,,,,,
-Shotgun Normal TE Out,Short Pass,WR2,60,1.4%,,,,,
-Shotgun Normal TE Out,Short Pass,RB1,54,1.3%,,,,,
-Singleback 4 Wide Clear Center,Medium Pass,RB1,148,37.9%,,,,,
-Singleback 4 Wide Clear Center,Medium Pass,WR4,132,33.8%,,,,,
-Singleback 4 Wide Clear Center,Medium Pass,WR3,57,14.6%,,,,,
-Singleback 4 Wide Clear Center,Medium Pass,WR1,50,12.8%,,,,,
-Singleback 4 Wide Clear Center,Medium Pass,WR2,4,1.0%,,,,,
-Singleback 4 Wide Deep Middle,Long Pass,WR3,51,63.0%,,,,,
-Singleback 4 Wide Deep Middle,Long Pass,RB1,16,19.8%,,,,,
-Singleback 4 Wide Deep Middle,Long Pass,WR4,11,13.6%,,,,,
-Singleback 4 Wide Deep Middle,Long Pass,WR1,3,3.7%,,,,,
-Singleback 4 Wide Post and Curls,Medium Pass,WR2,313,53.1%,,,,,
-Singleback 4 Wide Post and Curls,Medium Pass,WR4,248,42.1%,,,,,
-Singleback 4 Wide Post and Curls,Medium Pass,WR3,17,2.9%,,,,,
-Singleback 4 Wide Post and Curls,Medium Pass,WR1,10,1.7%,,,,,
-Singleback 4 Wide Post and Curls,Medium Pass,RB1,1,0.2%,,,,,
-Singleback 4 Wide Post and Drag,Medium Pass,WR1,250,45.8%,,,,,
-Singleback 4 Wide Post and Drag,Medium Pass,WR3,185,33.9%,,,,,
-Singleback 4 Wide Post and Drag,Medium Pass,WR2,89,16.3%,,,,,
-Singleback 4 Wide Post and Drag,Medium Pass,WR4,22,4.0%,,,,,
-Singleback 4 Wide Quick Outs,Short Pass,WR3,746,59.8%,,,,,
-Singleback 4 Wide Quick Outs,Short Pass,WR4,253,20.3%,,,,,
-Singleback 4 Wide Quick Outs,Short Pass,WR2,197,15.8%,,,,,
-Singleback 4 Wide Quick Outs,Short Pass,WR1,50,4.0%,,,,,
-Singleback 4 Wide Quick Outs,Short Pass,RB1,1,0.1%,,,,,
-Singleback 4 Wide WR Crosses,Short Pass,WR1,294,56.8%,,,,,
-Singleback 4 Wide WR Crosses,Short Pass,WR3,172,33.2%,,,,,
-Singleback 4 Wide WR Crosses,Short Pass,WR2,39,7.5%,,,,,
-Singleback 4 Wide WR Crosses,Short Pass,WR4,13,2.5%,,,,,
-Singleback Big Corner Ins,Medium Pass,TE2,462,28.3%,,,,,
-Singleback Big Corner Ins,Medium Pass,WR1,440,26.9%,,,,,
-Singleback Big Corner Ins,Medium Pass,WR2,433,26.5%,,,,,
-Singleback Big Corner Ins,Medium Pass,TE1,281,17.2%,,,,,
-Singleback Big Corner Ins,Medium Pass,RB1,19,1.2%,,,,,
-Singleback Big HB Curls TE Deep,Medium Pass,WR1,355,38.2%,,,,,
-Singleback Big HB Curls TE Deep,Medium Pass,RB1,315,33.9%,,,,,
-Singleback Big HB Curls TE Deep,Medium Pass,WR2,248,26.7%,,,,,
-Singleback Big HB Curls TE Deep,Medium Pass,TE1,12,1.3%,,,,,
-Singleback Big Ins and Outs,Short Pass,TE2,781,29.8%,,,,,
-Singleback Big Ins and Outs,Short Pass,WR1,733,27.9%,,,,,
-Singleback Big Ins and Outs,Short Pass,WR2,662,25.2%,,,,,
-Singleback Big Ins and Outs,Short Pass,TE1,425,16.2%,,,,,
-Singleback Big Ins and Outs,Short Pass,RB1,24,0.9%,,,,,
-Singleback Big PA Curls,Short Pass,WR1,905,68.4%,,,,,
-Singleback Big PA Curls,Short Pass,RB1,278,21.0%,,,,,
-Singleback Big PA Curls,Short Pass,WR2,103,7.8%,,,,,
-Singleback Big PA Curls,Short Pass,TE2,37,2.8%,,,,,
-Singleback Big TE Flat Curl,Short Pass,TE1,892,68.7%,,,,,
-Singleback Big TE Flat Curl,Short Pass,TE2,357,27.5%,,,,,
-Singleback Big TE Flat Curl,Short Pass,WR1,19,1.5%,,,,,
-Singleback Big TE Flat Curl,Short Pass,RB1,17,1.3%,,,,,
-Singleback Big TE Flat Curl,Short Pass,WR2,14,1.1%,,,,,
-Singleback Big Waggle Post,Long Pass,RB1,347,59.3%,,,,,
-Singleback Big Waggle Post,Long Pass,TE2,200,34.2%,,,,,
-Singleback Big Waggle Post,Long Pass,WR2,23,3.9%,,,,,
-Singleback Big Waggle Post,Long Pass,WR1,15,2.6%,,,,,
-Singleback Big WR Deep,Medium Pass,TE1,3122,84.7%,,,,,
-Singleback Big WR Deep,Medium Pass,TE2,294,8.0%,,,,,
-Singleback Big WR Deep,Medium Pass,WR1,180,4.9%,,,,,
-Singleback Big WR Deep,Medium Pass,WR2,46,1.2%,,,,,
-Singleback Big WR Deep,Medium Pass,RB1,44,1.2%,,,,,
-Singleback Big WR Streaks,Long Pass,TE1,264,66.7%,,,,,
-Singleback Big WR Streaks,Long Pass,TE2,120,30.3%,,,,,
-Singleback Big WR Streaks,Long Pass,WR1,6,1.5%,,,,,
-Singleback Big WR Streaks,Long Pass,RB1,4,1.0%,,,,,
-Singleback Big WR Streaks,Long Pass,WR2,2,0.5%,,,,,
-Singleback Empty 4 Curl Flats,Short Pass,TE1,218,52.2%,,,,,
-Singleback Empty 4 Curl Flats,Short Pass,WR1,127,30.4%,,,,,
-Singleback Empty 4 Curl Flats,Short Pass,WR2,36,8.6%,,,,,
-Singleback Empty 4 Curl Flats,Short Pass,WR4,22,5.3%,,,,,
-Singleback Empty 4 Curl Flats,Short Pass,WR3,15,3.6%,,,,,
-Singleback Empty 4 Short Posts,Short Pass,TE1,525,65.5%,,,,,
-Singleback Empty 4 Short Posts,Short Pass,WR1,149,18.6%,,,,,
-Singleback Empty 4 Short Posts,Short Pass,WR4,67,8.4%,,,,,
-Singleback Empty 4 Short Posts,Short Pass,WR3,39,4.9%,,,,,
-Singleback Empty 4 Short Posts,Short Pass,WR2,22,2.7%,,,,,
-Singleback Empty 4 Slot Crosses,Medium Pass,WR3,245,48.3%,,,,,
-Singleback Empty 4 Slot Crosses,Medium Pass,WR4,220,43.4%,,,,,
-Singleback Empty 4 Slot Crosses,Medium Pass,WR2,24,4.7%,,,,,
-Singleback Empty 4 Slot Crosses,Medium Pass,WR1,18,3.6%,,,,,
-Singleback Empty 4 TE Corner,Medium Pass,WR4,353,36.9%,,,,,
-Singleback Empty 4 TE Corner,Medium Pass,WR3,320,33.4%,,,,,
-Singleback Empty 4 TE Corner,Medium Pass,TE1,178,18.6%,,,,,
-Singleback Empty 4 TE Corner,Medium Pass,WR2,61,6.4%,,,,,
-Singleback Empty 4 TE Corner,Medium Pass,WR1,45,4.7%,,,,,
-Singleback Empty 4 TE Deep Out,Long Pass,WR2,164,71.0%,,,,,
-Singleback Empty 4 TE Deep Out,Long Pass,WR1,35,15.2%,,,,,
-Singleback Empty 4 TE Deep Out,Long Pass,WR4,12,5.2%,,,,,
-Singleback Empty 4 TE Deep Out,Long Pass,TE1,11,4.8%,,,,,
-Singleback Empty 4 TE Deep Out,Long Pass,WR3,9,3.9%,,,,,
-Singleback Empty 4 TE Drag WR Mix,Medium Pass,TE1,148,45.3%,,,,,
-Singleback Empty 4 TE Drag WR Mix,Medium Pass,WR1,140,42.8%,,,,,
-Singleback Empty 4 TE Drag WR Mix,Medium Pass,WR2,24,7.3%,,,,,
-Singleback Empty 4 TE Drag WR Mix,Medium Pass,WR3,15,4.6%,,,,,
-Singleback Empty 4 WR Post Corner,Long Pass,WR2,139,72.4%,,,,,
-Singleback Empty 4 WR Post Corner,Long Pass,WR4,28,14.6%,,,,,
-Singleback Empty 4 WR Post Corner,Long Pass,TE1,24,12.5%,,,,,
-Singleback Empty 4 WR Post Corner,Long Pass,WR3,1,0.5%,,,,,
-Singleback Normal All Go,Long Pass,RB1,145,52.2%,,,,,
-Singleback Normal All Go,Long Pass,TE1,72,25.9%,,,,,
-Singleback Normal All Go,Long Pass,WR3,26,9.4%,,,,,
-Singleback Normal All Go,Long Pass,WR2,19,6.8%,,,,,
-Singleback Normal All Go,Long Pass,WR1,16,5.8%,,,,,
-Singleback Normal Deep Corners,Long Pass,WR1,167,72.9%,,,,,
-Singleback Normal Deep Corners,Long Pass,WR2,46,20.1%,,,,,
-Singleback Normal Deep Corners,Long Pass,RB1,11,4.8%,,,,,
-Singleback Normal Deep Corners,Long Pass,TE1,5,2.2%,,,,,
-Singleback Normal FL Drag,Long Pass,WR1,208,83.5%,,,,,
-Singleback Normal FL Drag,Long Pass,TE1,18,7.2%,,,,,
-Singleback Normal FL Drag,Long Pass,RB1,10,4.0%,,,,,
-Singleback Normal FL Drag,Long Pass,WR3,10,4.0%,,,,,
-Singleback Normal FL Drag,Long Pass,WR2,3,1.2%,,,,,
-Singleback Normal FL Go,Long Pass,WR3,84,51.9%,,,,,
-Singleback Normal FL Go,Long Pass,TE1,59,36.4%,,,,,
-Singleback Normal FL Go,Long Pass,WR2,10,6.2%,,,,,
-Singleback Normal FL Go,Long Pass,WR1,5,3.1%,,,,,
-Singleback Normal FL Go,Long Pass,RB1,4,2.5%,,,,,
-Singleback Normal FL Post,Medium Pass,WR3,1473,63.7%,,,,,
-Singleback Normal FL Post,Medium Pass,RB1,661,28.6%,,,,,
-Singleback Normal FL Post,Medium Pass,WR1,156,6.7%,,,,,
-Singleback Normal FL Post,Medium Pass,WR2,23,1.0%,,,,,
-Singleback Normal FL Post,Medium Pass,TE1,1,0.0%,,,,,
-Singleback Normal HB Release Mid,Medium Pass,WR3,1922,41.8%,,,,,
-Singleback Normal HB Release Mid,Medium Pass,RB1,1696,36.9%,,,,,
-Singleback Normal HB Release Mid,Medium Pass,WR2,519,11.3%,,,,,
-Singleback Normal HB Release Mid,Medium Pass,WR1,456,9.9%,,,,,
-Singleback Normal HB Release Mid,Medium Pass,TE1,1,0.0%,,,,,
-Singleback Normal Hitch Corner,Short Pass,WR2,216,56.7%,,,,,
-Singleback Normal Hitch Corner,Short Pass,RB1,125,32.8%,,,,,
-Singleback Normal Hitch Corner,Short Pass,WR1,27,7.1%,,,,,
-Singleback Normal Hitch Corner,Short Pass,WR3,13,3.4%,,,,,
-Singleback Normal PA Rollout,Medium Pass,TE1,1757,86.1%,,,,,
-Singleback Normal PA Rollout,Medium Pass,WR3,137,6.7%,,,,,
-Singleback Normal PA Rollout,Medium Pass,WR2,96,4.7%,,,,,
-Singleback Normal PA Rollout,Medium Pass,WR1,33,1.6%,,,,,
-Singleback Normal PA Rollout,Medium Pass,RB1,17,0.8%,,,,,
-Singleback Normal Post Corner,Medium Pass,TE1,744,48.3%,,,,,
-Singleback Normal Post Corner,Medium Pass,WR2,364,23.6%,,,,,
-Singleback Normal Post Corner,Medium Pass,WR3,331,21.5%,,,,,
-Singleback Normal Post Corner,Medium Pass,WR1,64,4.2%,,,,,
-Singleback Normal Post Corner,Medium Pass,RB1,38,2.5%,,,,,
-Singleback Normal Quick Looks,Short Pass,WR1,227,44.9%,,,,,
-Singleback Normal Quick Looks,Short Pass,WR3,163,32.2%,,,,,
-Singleback Normal Quick Looks,Short Pass,WR2,87,17.2%,,,,,
-Singleback Normal Quick Looks,Short Pass,TE1,23,4.5%,,,,,
-Singleback Normal Quick Looks,Short Pass,RB1,6,1.2%,,,,,
-Singleback Normal Quick Slant,Short Pass,RB1,1806,71.4%,,,,,
-Singleback Normal Quick Slant,Short Pass,WR2,324,12.8%,,,,,
-Singleback Normal Quick Slant,Short Pass,WR3,236,9.3%,,,,,
-Singleback Normal Quick Slant,Short Pass,WR1,163,6.4%,,,,,
-Singleback Normal SE Quick Hit,Short Pass,RB1,523,41.7%,,,,,
-Singleback Normal SE Quick Hit,Short Pass,WR2,399,31.8%,,,,,
-Singleback Normal SE Quick Hit,Short Pass,WR3,208,16.6%,,,,,
-Singleback Normal SE Quick Hit,Short Pass,TE1,78,6.2%,,,,,
-Singleback Normal SE Quick Hit,Short Pass,WR1,46,3.7%,,,,,
-Singleback Normal Slot WR Cross,Medium Pass,RB1,713,52.5%,,,,,
-Singleback Normal Slot WR Cross,Medium Pass,WR2,265,19.5%,,,,,
-Singleback Normal Slot WR Cross,Medium Pass,WR3,211,15.5%,,,,,
-Singleback Normal Slot WR Cross,Medium Pass,WR1,169,12.4%,,,,,
-Singleback Normal TE Quick Out,Short Pass,TE1,3247,59.0%,,,,,
-Singleback Normal TE Quick Out,Short Pass,WR3,1175,21.4%,,,,,
-Singleback Normal TE Quick Out,Short Pass,WR2,820,14.9%,,,,,
-Singleback Normal TE Quick Out,Short Pass,WR1,192,3.5%,,,,,
-Singleback Normal TE Quick Out,Short Pass,RB1,68,1.2%,,,,,
-Singleback Normal WR Post,Medium Pass,WR3,737,59.3%,,,,,
-Singleback Normal WR Post,Medium Pass,RB1,338,27.2%,,,,,
-Singleback Normal WR Post,Medium Pass,WR1,83,6.7%,,,,,
-Singleback Normal WR Post,Medium Pass,TE1,58,4.7%,,,,,
-Singleback Normal WR Post,Medium Pass,WR2,26,2.1%,,,,,
-Singleback Normal WR Quick In,Short Pass,WR2,1748,62.6%,,,,,
-Singleback Normal WR Quick In,Short Pass,RB1,604,21.6%,,,,,
-Singleback Normal WR Quick In,Short Pass,WR1,365,13.1%,,,,,
-Singleback Normal WR Quick In,Short Pass,WR3,76,2.7%,,,,,
-Singleback Slot Strong All Go,Long Pass,WR1,12,34.3%,,,,,
-Singleback Slot Strong All Go,Long Pass,TE1,10,28.6%,,,,,
-Singleback Slot Strong All Go,Long Pass,WR3,7,20.0%,,,,,
-Singleback Slot Strong All Go,Long Pass,WR2,5,14.3%,,,,,
-Singleback Slot Strong All Go,Long Pass,RB1,1,2.9%,,,,,
-Singleback Slot Strong HB Checkdown,Medium Pass,RB1,1631,77.7%,,,,,
-Singleback Slot Strong HB Checkdown,Medium Pass,WR2,236,11.2%,,,,,
-Singleback Slot Strong HB Checkdown,Medium Pass,WR1,151,7.2%,,,,,
-Singleback Slot Strong HB Checkdown,Medium Pass,WR3,80,3.8%,,,,,
-Singleback Slot Strong HB Flat,Short Pass,RB1,725,85.4%,,,,,
-Singleback Slot Strong HB Flat,Short Pass,WR3,93,11.0%,,,,,
-Singleback Slot Strong HB Flat,Short Pass,WR1,27,3.2%,,,,,
-Singleback Slot Strong HB Flat,Short Pass,WR2,4,0.5%,,,,,
-Singleback Slot Strong Overload Strong,Medium Pass,WR1,608,42.0%,,,,,
-Singleback Slot Strong Overload Strong,Medium Pass,RB1,493,34.0%,,,,,
-Singleback Slot Strong Overload Strong,Medium Pass,TE1,159,11.0%,,,,,
-Singleback Slot Strong Overload Strong,Medium Pass,WR2,147,10.1%,,,,,
-Singleback Slot Strong Overload Strong,Medium Pass,WR3,42,2.9%,,,,,
-Singleback Slot Strong Post Curls,Short Pass,WR3,1408,93.4%,,,,,
-Singleback Slot Strong Post Curls,Short Pass,WR1,54,3.6%,,,,,
-Singleback Slot Strong Post Curls,Short Pass,RB1,28,1.9%,,,,,
-Singleback Slot Strong Post Curls,Short Pass,WR2,9,0.6%,,,,,
-Singleback Slot Strong Post Curls,Short Pass,TE1,8,0.5%,,,,,
-Singleback Slot Strong Skinny Posts,Short Pass,TE1,1460,67.0%,,,,,
-Singleback Slot Strong Skinny Posts,Short Pass,RB1,539,24.7%,,,,,
-Singleback Slot Strong Skinny Posts,Short Pass,WR2,86,3.9%,,,,,
-Singleback Slot Strong Skinny Posts,Short Pass,WR3,56,2.6%,,,,,
-Singleback Slot Strong Skinny Posts,Short Pass,WR1,38,1.7%,,,,,
-Singleback Slot Strong Slot Curl,Short Pass,WR1,288,54.9%,,,,,
-Singleback Slot Strong Slot Curl,Short Pass,RB1,168,32.0%,,,,,
-Singleback Slot Strong Slot Curl,Short Pass,WR3,67,12.8%,,,,,
-Singleback Slot Strong Slot Curl,Short Pass,TE1,2,0.4%,,,,,
-Singleback Slot Strong TE Corner,Medium Pass,WR1,575,57.7%,,,,,
-Singleback Slot Strong TE Corner,Medium Pass,WR2,351,35.2%,,,,,
-Singleback Slot Strong TE Corner,Medium Pass,TE1,36,3.6%,,,,,
-Singleback Slot Strong TE Corner,Medium Pass,WR3,31,3.1%,,,,,
-Singleback Slot Strong TE Corner,Medium Pass,RB1,4,0.4%,,,,,
-Singleback Slot Strong TE Slot Curls,Short Pass,WR3,482,52.7%,,,,,
-Singleback Slot Strong TE Slot Curls,Short Pass,WR2,242,26.4%,,,,,
-Singleback Slot Strong TE Slot Curls,Short Pass,TE1,168,18.4%,,,,,
-Singleback Slot Strong TE Slot Curls,Short Pass,WR1,18,2.0%,,,,,
-Singleback Slot Strong TE Slot Curls,Short Pass,RB1,5,0.5%,,,,,
-Split Backs 3 Wide Drag In,Medium Pass,RB1,1810,50.7%,,,,,
-Split Backs 3 Wide Drag In,Medium Pass,WR1,1676,46.9%,,,,,
-Split Backs 3 Wide Drag In,Medium Pass,WR3,44,1.2%,,,,,
-Split Backs 3 Wide Drag In,Medium Pass,WR2,42,1.2%,,,,,
-Split Backs 3 Wide Drag In,Medium Pass,FB1,1,0.0%,,,,,
-Split Backs 3 Wide RB Curls,Short Pass,WR1,238,45.2%,,,,,
-Split Backs 3 Wide RB Curls,Short Pass,RB1,142,27.0%,,,,,
-Split Backs 3 Wide RB Curls,Short Pass,FB1,110,20.9%,,,,,
-Split Backs 3 Wide RB Curls,Short Pass,WR2,27,5.1%,,,,,
-Split Backs 3 Wide RB Curls,Short Pass,WR3,9,1.7%,,,,,
-Split Backs 3 Wide Slot Drag,Short Pass,RB1,608,68.2%,,,,,
-Split Backs 3 Wide Slot Drag,Short Pass,WR3,157,17.6%,,,,,
-Split Backs 3 Wide Slot Drag,Short Pass,WR1,126,14.1%,,,,,
-Split Backs 3 Wide Slot Drag,Short Pass,WR2,1,0.1%,,,,,
-Split Backs 3 Wide Slot Post,Medium Pass,RB1,922,40.1%,,,,,
-Split Backs 3 Wide Slot Post,Medium Pass,WR1,824,35.9%,,,,,
-Split Backs 3 Wide Slot Post,Medium Pass,WR3,504,21.9%,,,,,
-Split Backs 3 Wide Slot Post,Medium Pass,WR2,48,2.1%,,,,,
-Split Backs 3 Wide WR Post,Medium Pass,FB1,1034,61.6%,,,,,
-Split Backs 3 Wide WR Post,Medium Pass,WR3,418,24.9%,,,,,
-Split Backs 3 Wide WR Post,Medium Pass,WR2,174,10.4%,,,,,
-Split Backs 3 Wide WR Post,Medium Pass,WR1,52,3.1%,,,,,
-Split Backs 3 Wide WR Quick Out,Short Pass,RB1,1693,42.5%,,,,,
-Split Backs 3 Wide WR Quick Out,Short Pass,FB1,1587,39.8%,,,,,
-Split Backs 3 Wide WR Quick Out,Short Pass,WR1,327,8.2%,,,,,
-Split Backs 3 Wide WR Quick Out,Short Pass,WR3,311,7.8%,,,,,
-Split Backs 3 Wide WR Quick Out,Short Pass,WR2,69,1.7%,,,,,
-Split Backs 3 Wide WR2 Deep Post,Long Pass,WR3,768,82.8%,,,,,
-Split Backs 3 Wide WR2 Deep Post,Long Pass,RB1,110,11.9%,,,,,
-Split Backs 3 Wide WR2 Deep Post,Long Pass,FB1,34,3.7%,,,,,
-Split Backs 3 Wide WR2 Deep Post,Long Pass,WR2,9,1.0%,,,,,
-Split Backs 3 Wide WR2 Deep Post,Long Pass,WR1,6,0.6%,,,,,
-Split Backs Normal Curls,Short Pass,TE1,168,44.4%,,,,,
-Split Backs Normal Curls,Short Pass,WR1,166,43.9%,,,,,
-Split Backs Normal Curls,Short Pass,WR2,28,7.4%,,,,,
-Split Backs Normal Curls,Short Pass,RB1,16,4.2%,,,,,
-Split Backs Normal Overload Strong,Medium Pass,WR1,170,84.6%,,,,,
-Split Backs Normal Overload Strong,Medium Pass,FB1,22,10.9%,,,,,
-Split Backs Normal Overload Strong,Medium Pass,TE1,9,4.5%,,,,,
-Split Backs Normal Posts,Medium Pass,TE1,578,62.8%,,,,,
-Split Backs Normal Posts,Medium Pass,RB1,315,34.2%,,,,,
-Split Backs Normal Posts,Medium Pass,WR1,17,1.8%,,,,,
-Split Backs Normal Posts,Medium Pass,WR2,11,1.2%,,,,,
-Split Backs Normal Skinny Post Corner,Short Pass,FB1,398,40.2%,,,,,
-Split Backs Normal Skinny Post Corner,Short Pass,TE1,392,39.6%,,,,,
-Split Backs Normal Skinny Post Corner,Short Pass,RB1,155,15.6%,,,,,
-Split Backs Normal Skinny Post Corner,Short Pass,WR2,37,3.7%,,,,,
-Split Backs Normal Skinny Post Corner,Short Pass,WR1,9,0.9%,,,,,
-Split Backs Normal TE Curl,Short Pass,FB1,143,34.2%,,,,,
-Split Backs Normal TE Curl,Short Pass,RB1,116,27.8%,,,,,
-Split Backs Normal TE Curl,Short Pass,TE1,100,23.9%,,,,,
-Split Backs Normal TE Curl,Short Pass,WR2,55,13.2%,,,,,
-Split Backs Normal TE Curl,Short Pass,WR1,4,1.0%,,,,,
-Split Backs Normal WR Deep Corner,Long Pass,TE1,326,76.3%,,,,,
-Split Backs Normal WR Deep Corner,Long Pass,RB1,51,11.9%,,,,,
-Split Backs Normal WR Deep Corner,Long Pass,FB1,24,5.6%,,,,,
-Split Backs Normal WR Deep Corner,Long Pass,WR2,23,5.4%,,,,,
-Split Backs Normal WR Deep Corner,Long Pass,WR1,3,0.7%,,,,,
-Split Backs Normal WR Post,Medium Pass,WR1,292,39.2%,,,,,
-Split Backs Normal WR Post,Medium Pass,TE1,214,28.7%,,,,,
-Split Backs Normal WR Post,Medium Pass,RB1,193,25.9%,,,,,
-Split Backs Normal WR Post,Medium Pass,WR2,46,6.2%,,,,,
-Strong I Big Backfield Drag,Short Pass,FB1,572,49.9%,,,,,
-Strong I Big Backfield Drag,Short Pass,TE2,268,23.4%,,,,,
-Strong I Big Backfield Drag,Short Pass,WR1,203,17.7%,,,,,
-Strong I Big Backfield Drag,Short Pass,RB1,103,9.0%,,,,,
-Strong I Big HB Swing,Short Pass,TE1,621,88.6%,,,,,
-Strong I Big HB Swing,Short Pass,RB1,28,4.0%,,,,,
-Strong I Big HB Swing,Short Pass,WR1,26,3.7%,,,,,
-Strong I Big HB Swing,Short Pass,TE2,24,3.4%,,,,,
-Strong I Big HB Swing,Short Pass,FB1,2,0.3%,,,,,
-Strong I Big TE Deep Corner,Long Pass,WR1,203,56.9%,,,,,
-Strong I Big TE Deep Corner,Long Pass,RB1,93,26.1%,,,,,
-Strong I Big TE Deep Corner,Long Pass,TE2,36,10.1%,,,,,
-Strong I Big TE Deep Corner,Long Pass,TE1,21,5.9%,,,,,
-Strong I Big TE Deep Corner,Long Pass,FB1,4,1.1%,,,,,
-Strong I Big TE Drag,Short Pass,RB1,119,46.5%,,,,,
-Strong I Big TE Drag,Short Pass,TE2,113,44.1%,,,,,
-Strong I Big TE Drag,Short Pass,TE1,17,6.6%,,,,,
-Strong I Big TE Drag,Short Pass,WR1,5,2.0%,,,,,
-Strong I Big TE Drag,Short Pass,FB1,2,0.8%,,,,,
-Strong I Big TE Post,Medium Pass,TE2,1318,56.0%,,,,,
-Strong I Big TE Post,Medium Pass,RB1,445,18.9%,,,,,
-Strong I Big TE Post,Medium Pass,TE1,408,17.3%,,,,,
-Strong I Big TE Post,Medium Pass,WR1,163,6.9%,,,,,
-Strong I Big TE Post,Medium Pass,FB1,21,0.9%,,,,,
-Strong I Big WR Quick In,Short Pass,TE1,324,72.5%,,,,,
-Strong I Big WR Quick In,Short Pass,WR1,92,20.6%,,,,,
-Strong I Big WR Quick In,Short Pass,RB1,18,4.0%,,,,,
-Strong I Big WR Quick In,Short Pass,TE2,12,2.7%,,,,,
-Strong I Big WR Quick In,Short Pass,FB1,1,0.2%,,,,,
-Strong I Normal PA All Go,Long Pass,FB1,124,57.9%,,,,,
-Strong I Normal PA All Go,Long Pass,TE1,40,18.7%,,,,,
-Strong I Normal PA All Go,Long Pass,WR1,28,13.1%,,,,,
-Strong I Normal PA All Go,Long Pass,WR2,20,9.3%,,,,,
-Strong I Normal PA All Go,Long Pass,RB1,2,0.9%,,,,,
-Strong I Normal Quick Hooks,Short Pass,WR1,728,61.0%,,,,,
-Strong I Normal Quick Hooks,Short Pass,WR2,348,29.1%,,,,,
-Strong I Normal Quick Hooks,Short Pass,TE1,60,5.0%,,,,,
-Strong I Normal Quick Hooks,Short Pass,RB1,58,4.9%,,,,,
-Strong I Normal Short Attack,Short Pass,WR2,1076,53.2%,,,,,
-Strong I Normal Short Attack,Short Pass,RB1,635,31.4%,,,,,
-Strong I Normal Short Attack,Short Pass,TE1,276,13.7%,,,,,
-Strong I Normal Short Attack,Short Pass,WR1,34,1.7%,,,,,
-Strong I Normal WR Post TE Out,Medium Pass,WR1,2175,54.6%,,,,,
-Strong I Normal WR Post TE Out,Medium Pass,RB1,1520,38.2%,,,,,
-Strong I Normal WR Post TE Out,Medium Pass,TE1,248,6.2%,,,,,
-Strong I Normal WR Post TE Out,Medium Pass,WR2,36,0.9%,,,,,
-Strong I Normal WR Post TE Out,Medium Pass,FB1,2,0.1%,,,,,
-Weak I Big TE Deep Post,Long Pass,WR1,58,52.7%,,,,,
-Weak I Big TE Deep Post,Long Pass,RB1,37,33.6%,,,,,
-Weak I Big TE Deep Post,Long Pass,TE2,10,9.1%,,,,,
-Weak I Big TE Deep Post,Long Pass,TE1,3,2.7%,,,,,
-Weak I Big TE Deep Post,Long Pass,FB1,2,1.8%,,,,,
-Weak I Big TE Drag,Short Pass,TE1,163,58.4%,,,,,
-Weak I Big TE Drag,Short Pass,RB1,91,32.6%,,,,,
-Weak I Big TE Drag,Short Pass,TE2,10,3.6%,,,,,
-Weak I Big TE Drag,Short Pass,WR1,10,3.6%,,,,,
-Weak I Big TE Drag,Short Pass,FB1,5,1.8%,,,,,
-Weak I Big WR Post TE Out,Medium Pass,RB1,493,38.0%,,,,,
-Weak I Big WR Post TE Out,Medium Pass,TE2,389,29.9%,,,,,
-Weak I Big WR Post TE Out,Medium Pass,TE1,329,25.3%,,,,,
-Weak I Big WR Post TE Out,Medium Pass,WR1,75,5.8%,,,,,
-Weak I Big WR Post TE Out,Medium Pass,FB1,13,1.0%,,,,,
-Weak I Normal All Go,Long Pass,RB1,64,51.2%,,,,,
-Weak I Normal All Go,Long Pass,TE1,22,17.6%,,,,,
-Weak I Normal All Go,Long Pass,WR1,20,16.0%,,,,,
-Weak I Normal All Go,Long Pass,WR2,19,15.2%,,,,,
-Weak I Normal Skinny Posts,Short Pass,RB1,3905,42.4%,,,,,
-Weak I Normal Skinny Posts,Short Pass,TE1,3858,41.9%,,,,,
-Weak I Normal Skinny Posts,Short Pass,WR2,1058,11.5%,,,,,
-Weak I Normal Skinny Posts,Short Pass,WR1,382,4.1%,,,,,
-Weak I Normal Skinny Posts,Short Pass,FB1,2,0.0%,,,,,
-Weak I Normal WR Corner TE Middle,Medium Pass,RB1,6017,61.3%,,,,,
-Weak I Normal WR Corner TE Middle,Medium Pass,TE1,2783,28.3%,,,,,
-Weak I Normal WR Corner TE Middle,Medium Pass,WR2,781,8.0%,,,,,
-Weak I Normal WR Corner TE Middle,Medium Pass,WR1,232,2.4%,,,,,
-Weak I Normal WR Corner TE Middle,Medium Pass,FB1,4,0.0%,,,,,
+OffensivePlay,OffPlayType,target,tgt,tgt %
+Empty 4 Wide Spread Corner Post,Medium Pass,WR4,"1,324",84.9%
+Empty 4 Wide Spread Corner Post,Medium Pass,WR3,153,9.8%
+Empty 4 Wide Spread Corner Post,Medium Pass,WR2,48,3.1%
+Empty 4 Wide Spread Corner Post,Medium Pass,WR1,33,2.1%
+Empty 4 Wide Spread Corner Post,Medium Pass,TE1,2,0.1%
+Empty 4 Wide Spread Deep Corner Post,Long Pass,WR3,77,49.4%
+Empty 4 Wide Spread Deep Corner Post,Long Pass,WR4,63,40.4%
+Empty 4 Wide Spread Deep Corner Post,Long Pass,WR2,11,7.1%
+Empty 4 Wide Spread Deep Corner Post,Long Pass,WR1,5,3.2%
+Empty 4 Wide Spread Flats,Short Pass,WR3,485,50.5%
+Empty 4 Wide Spread Flats,Short Pass,WR1,414,43.1%
+Empty 4 Wide Spread Flats,Short Pass,WR4,42,4.4%
+Empty 4 Wide Spread Flats,Short Pass,WR2,19,2.0%
+Empty 4 Wide Spread Flats,Short Pass,TE1,1,0.1%
+Goal Line Normal PA TE Drag,Short Pass,TE1,"4,128",61.7%
+Goal Line Normal PA TE Drag,Short Pass,FB1,"1,457",21.8%
+Goal Line Normal PA TE Drag,Short Pass,RB1,658,9.8%
+Goal Line Normal PA TE Drag,Short Pass,TE2,409,6.1%
+Goal Line Normal PA TE Drag,Short Pass,FB2,37,0.6%
+I Formation 3WR Backfield Flats,Medium Pass,FB1,"1,351",60.4%
+I Formation 3WR Backfield Flats,Medium Pass,RB1,692,30.9%
+I Formation 3WR Backfield Flats,Medium Pass,WR3,139,6.2%
+I Formation 3WR Backfield Flats,Medium Pass,WR2,29,1.3%
+I Formation 3WR Backfield Flats,Medium Pass,WR1,26,1.2%
+I Formation 3WR Deep Corner/Post,Long Pass,FB1,161,62.9%
+I Formation 3WR Deep Corner/Post,Long Pass,WR3,48,18.8%
+I Formation 3WR Deep Corner/Post,Long Pass,WR2,31,12.1%
+I Formation 3WR Deep Corner/Post,Long Pass,WR1,16,6.3%
+I Formation 3WR FL Post,Medium Pass,RB1,"4,349",72.7%
+I Formation 3WR FL Post,Medium Pass,WR3,"1,064",17.8%
+I Formation 3WR FL Post,Medium Pass,WR2,463,7.7%
+I Formation 3WR FL Post,Medium Pass,WR1,105,1.8%
+I Formation 3WR FL Post,Medium Pass,FB1,3,0.1%
+I Formation 3WR Outside Curls,Medium Pass,WR1,422,73.6%
+I Formation 3WR Outside Curls,Medium Pass,FB1,84,14.7%
+I Formation 3WR Outside Curls,Medium Pass,WR2,44,7.7%
+I Formation 3WR Outside Curls,Medium Pass,WR3,23,4.0%
+I Formation 3WR PA Fullback Flat,Short Pass,FB1,"1,621",42.1%
+I Formation 3WR PA Fullback Flat,Short Pass,WR3,"1,391",36.1%
+I Formation 3WR PA Fullback Flat,Short Pass,WR2,806,20.9%
+I Formation 3WR PA Fullback Flat,Short Pass,WR1,18,0.5%
+I Formation 3WR PA Fullback Flat,Short Pass,RB1,14,0.4%
+I Formation 3WR SE Post,Medium Pass,WR1,"2,763",46.0%
+I Formation 3WR SE Post,Medium Pass,RB1,"1,756",29.2%
+I Formation 3WR SE Post,Medium Pass,WR3,929,15.5%
+I Formation 3WR SE Post,Medium Pass,WR2,550,9.2%
+I Formation 3WR SE Post,Medium Pass,FB1,7,0.1%
+I Formation 3WR Slot Corner Long,Medium Pass,WR1,"3,109",70.9%
+I Formation 3WR Slot Corner Long,Medium Pass,RB1,"1,152",26.3%
+I Formation 3WR Slot Corner Long,Medium Pass,WR3,98,2.2%
+I Formation 3WR Slot Corner Long,Medium Pass,WR2,25,0.6%
+I Formation 3WR Slot Corner Long,Medium Pass,FB1,4,0.1%
+I Formation 3WR Slot Corner Short,Short Pass,RB1,"1,398",51.4%
+I Formation 3WR Slot Corner Short,Short Pass,WR1,"1,140",41.9%
+I Formation 3WR Slot Corner Short,Short Pass,WR3,146,5.4%
+I Formation 3WR Slot Corner Short,Short Pass,WR2,36,1.3%
+I Formation 3WR Slot Short WR Deep,Medium Pass,WR3,"7,645",64.5%
+I Formation 3WR Slot Short WR Deep,Medium Pass,RB1,"2,303",19.4%
+I Formation 3WR Slot Short WR Deep,Medium Pass,WR1,"1,733",14.6%
+I Formation 3WR Slot Short WR Deep,Medium Pass,WR2,154,1.3%
+I Formation 3WR Slot Short WR Deep,Medium Pass,FB1,15,0.1%
+I Formation 3WR Weak Flood,Short Pass,FB1,683,68.9%
+I Formation 3WR Weak Flood,Short Pass,WR1,159,16.0%
+I Formation 3WR Weak Flood,Short Pass,WR3,148,14.9%
+I Formation 3WR Weak Flood,Short Pass,RB1,1,0.1%
+I Formation 3WR Weak Flood,Short Pass,WR2,1,0.1%
+I Formation 3WR WR Out,Short Pass,WR2,"3,654",43.9%
+I Formation 3WR WR Out,Short Pass,WR3,"2,495",30.0%
+I Formation 3WR WR Out,Short Pass,WR1,"2,167",26.0%
+I Formation 3WR WR Out,Short Pass,FB1,3,0.0%
+I Formation 3WR WR Post,Long Pass,WR3,728,85.4%
+I Formation 3WR WR Post,Long Pass,WR2,94,11.0%
+I Formation 3WR WR Post,Long Pass,RB1,29,3.4%
+I Formation 3WR WR Post,Long Pass,WR1,1,0.1%
+I Formation Big Streak Heavy,Long Pass,TE1,37,38.9%
+I Formation Big Streak Heavy,Long Pass,RB1,25,26.3%
+I Formation Big Streak Heavy,Long Pass,FB1,20,21.1%
+I Formation Big Streak Heavy,Long Pass,TE2,11,11.6%
+I Formation Big Streak Heavy,Long Pass,WR1,2,2.1%
+I Formation Big TE Curl,Medium Pass,RB1,46,51.7%
+I Formation Big TE Curl,Medium Pass,TE1,30,33.7%
+I Formation Big TE Curl,Medium Pass,FB1,11,12.4%
+I Formation Big TE Curl,Medium Pass,TE2,2,2.2%
+I Formation Big TE Sneak Out,Short Pass,WR1,366,39.4%
+I Formation Big TE Sneak Out,Short Pass,TE2,324,34.9%
+I Formation Big TE Sneak Out,Short Pass,RB1,105,11.3%
+I Formation Big TE Sneak Out,Short Pass,FB1,69,7.4%
+I Formation Big TE Sneak Out,Short Pass,TE1,64,6.9%
+I Formation Normal Cross In,Short Pass,TE1,743,54.7%
+I Formation Normal Cross In,Short Pass,RB1,467,34.4%
+I Formation Normal Cross In,Short Pass,WR2,132,9.7%
+I Formation Normal Cross In,Short Pass,WR1,13,1.0%
+I Formation Normal Cross In,Short Pass,FB1,3,0.2%
+I Formation Normal Curl & Post,Medium Pass,TE1,"1,880",84.2%
+I Formation Normal Curl & Post,Medium Pass,RB1,245,11.0%
+I Formation Normal Curl & Post,Medium Pass,WR1,85,3.8%
+I Formation Normal Curl & Post,Medium Pass,WR2,19,0.9%
+I Formation Normal Curl & Post,Medium Pass,FB1,5,0.2%
+I Formation Normal FB Middle,Short Pass,WR1,970,55.4%
+I Formation Normal FB Middle,Short Pass,WR2,602,34.4%
+I Formation Normal FB Middle,Short Pass,FB1,153,8.7%
+I Formation Normal FB Middle,Short Pass,TE1,26,1.5%
+I Formation Normal FL Hitch,Short Pass,WR1,"7,540",41.7%
+I Formation Normal FL Hitch,Short Pass,WR2,"5,610",31.0%
+I Formation Normal FL Hitch,Short Pass,TE1,"4,895",27.1%
+I Formation Normal FL Hitch,Short Pass,FB1,28,0.2%
+I Formation Normal FL Hook,Medium Pass,FB1,"2,177",31.0%
+I Formation Normal FL Hook,Medium Pass,RB1,"1,726",24.6%
+I Formation Normal FL Hook,Medium Pass,WR2,"1,543",22.0%
+I Formation Normal FL Hook,Medium Pass,WR1,"1,439",20.5%
+I Formation Normal FL Hook,Medium Pass,TE1,144,2.0%
+I Formation Normal Max Protect,Medium Pass,RB1,"3,718",66.9%
+I Formation Normal Max Protect,Medium Pass,WR2,"1,640",29.5%
+I Formation Normal Max Protect,Medium Pass,WR1,203,3.7%
+I Formation Normal PA Fullback Flat,Short Pass,FB1,"7,667",55.6%
+I Formation Normal PA Fullback Flat,Short Pass,TE1,"3,675",26.6%
+I Formation Normal PA Fullback Flat,Short Pass,WR2,"1,922",13.9%
+I Formation Normal PA Fullback Flat,Short Pass,WR1,496,3.6%
+I Formation Normal PA Fullback Flat,Short Pass,RB1,34,0.2%
+I Formation Normal PA Outside Curls,Short Pass,WR1,"4,704",68.7%
+I Formation Normal PA Outside Curls,Short Pass,RB1,"1,405",20.5%
+I Formation Normal PA Outside Curls,Short Pass,WR2,736,10.8%
+I Formation Normal PA Outside Curls,Short Pass,FB1,1,0.0%
+I Formation Normal PA Streaks,Long Pass,FB1,"1,105",60.2%
+I Formation Normal PA Streaks,Long Pass,TE1,646,35.2%
+I Formation Normal PA Streaks,Long Pass,WR2,44,2.4%
+I Formation Normal PA Streaks,Long Pass,WR1,41,2.2%
+I Formation Normal PA Streaks,Long Pass,RB1,1,0.1%
+I Formation Normal SE Post,Long Pass,FB1,"2,220",67.0%
+I Formation Normal SE Post,Long Pass,TE1,906,27.3%
+I Formation Normal SE Post,Long Pass,WR1,106,3.2%
+I Formation Normal SE Post,Long Pass,WR2,81,2.4%
+I Formation Normal Strong Flood,Short Pass,RB1,250,33.9%
+I Formation Normal Strong Flood,Short Pass,WR2,245,33.2%
+I Formation Normal Strong Flood,Short Pass,TE1,238,32.3%
+I Formation Normal Strong Flood,Short Pass,WR1,3,0.4%
+I Formation Normal Strong Flood,Short Pass,FB1,1,0.1%
+I Formation Normal TE Flag,Medium Pass,WR2,663,46.2%
+I Formation Normal TE Flag,Medium Pass,RB1,497,34.7%
+I Formation Normal TE Flag,Medium Pass,TE1,180,12.6%
+I Formation Normal TE Flag,Medium Pass,WR1,90,6.3%
+I Formation Normal TE Flag,Medium Pass,FB1,4,0.3%
+I Formation Normal TE Out,Long Pass,TE1,93,63.7%
+I Formation Normal TE Out,Long Pass,RB1,36,24.7%
+I Formation Normal TE Out,Long Pass,WR2,10,6.8%
+I Formation Normal TE Out,Long Pass,WR1,6,4.1%
+I Formation Normal TE Out,Long Pass,FB1,1,0.7%
+I Formation Power PA Flats,Short Pass,TE1,"5,843",68.2%
+I Formation Power PA Flats,Short Pass,WR1,"1,488",17.4%
+I Formation Power PA Flats,Short Pass,FB2,"1,080",12.6%
+I Formation Power PA Flats,Short Pass,RB1,157,1.8%
+I Formation Power Play Action Bomb,Long Pass,RB1,753,96.4%
+I Formation Power Play Action Bomb,Long Pass,WR1,28,3.6%
+I Formation Power Play Action HB Downfield,Medium Pass,TE1,"7,517",81.3%
+I Formation Power Play Action HB Downfield,Medium Pass,WR1,"1,370",14.8%
+I Formation Power Play Action HB Downfield,Medium Pass,RB1,362,3.9%
+I Formation Power Play Action HB Downfield,Medium Pass,FB2,2,0.0%
+I Formation Twin WR Hard Slants,Short Pass,TE1,"3,056",48.8%
+I Formation Twin WR Hard Slants,Short Pass,WR1,"1,716",27.4%
+I Formation Twin WR Hard Slants,Short Pass,WR2,"1,484",23.7%
+I Formation Twin WR Hard Slants,Short Pass,FB1,9,0.1%
+I Formation Twin WR Hook Ins,Medium Pass,WR2,468,60.7%
+I Formation Twin WR Hook Ins,Medium Pass,FB1,207,26.8%
+I Formation Twin WR Hook Ins,Medium Pass,TE1,84,10.9%
+I Formation Twin WR Hook Ins,Medium Pass,WR1,12,1.6%
+I Formation Twin WR Quick Outs,Short Pass,TE1,"1,242",48.1%
+I Formation Twin WR Quick Outs,Short Pass,WR1,"1,040",40.3%
+I Formation Twin WR Quick Outs,Short Pass,WR2,298,11.5%
+I Formation Twin WR Quick Outs,Short Pass,FB1,1,0.0%
+I Formation Twin WR Slot Hitch,Medium Pass,WR1,672,59.0%
+I Formation Twin WR Slot Hitch,Medium Pass,TE1,447,39.2%
+I Formation Twin WR Slot Hitch,Medium Pass,WR2,19,1.7%
+I Formation Twin WR Slot Hitch,Medium Pass,FB1,1,0.1%
+I Formation Twin WR Slot Out,Long Pass,WR1,155,46.4%
+I Formation Twin WR Slot Out,Long Pass,FB1,134,40.1%
+I Formation Twin WR Slot Out,Long Pass,TE1,28,8.4%
+I Formation Twin WR Slot Out,Long Pass,WR2,17,5.1%
+I Formation Twin WR Strong Flood,Short Pass,WR1,138,45.1%
+I Formation Twin WR Strong Flood,Short Pass,RB1,114,37.3%
+I Formation Twin WR Strong Flood,Short Pass,WR2,32,10.5%
+I Formation Twin WR Strong Flood,Short Pass,TE1,22,7.2%
+Shotgun 2 RB 3 WR FB In,Medium Pass,WR1,"2,350",52.9%
+Shotgun 2 RB 3 WR FB In,Medium Pass,RB2,"1,380",31.1%
+Shotgun 2 RB 3 WR FB In,Medium Pass,RB1,505,11.4%
+Shotgun 2 RB 3 WR FB In,Medium Pass,WR2,154,3.5%
+Shotgun 2 RB 3 WR FB In,Medium Pass,WR3,52,1.2%
+Shotgun 2 RB 3 WR FL Drag,Short Pass,RB1,"2,922",62.6%
+Shotgun 2 RB 3 WR FL Drag,Short Pass,WR1,944,20.2%
+Shotgun 2 RB 3 WR FL Drag,Short Pass,WR2,451,9.7%
+Shotgun 2 RB 3 WR FL Drag,Short Pass,WR3,351,7.5%
+Shotgun 2 RB 3 WR FL Drag,Short Pass,RB2,1,0.0%
+Shotgun 2 RB 3 WR RB Curls,Short Pass,RB1,"1,864",35.2%
+Shotgun 2 RB 3 WR RB Curls,Short Pass,RB2,"1,512",28.6%
+Shotgun 2 RB 3 WR RB Curls,Short Pass,WR2,876,16.6%
+Shotgun 2 RB 3 WR RB Curls,Short Pass,WR3,565,10.7%
+Shotgun 2 RB 3 WR RB Curls,Short Pass,WR1,473,8.9%
+Shotgun 2 RB 3 WR Strong Deep,Long Pass,WR1,702,55.7%
+Shotgun 2 RB 3 WR Strong Deep,Long Pass,WR2,431,34.2%
+Shotgun 2 RB 3 WR Strong Deep,Long Pass,RB2,90,7.1%
+Shotgun 2 RB 3 WR Strong Deep,Long Pass,RB1,28,2.2%
+Shotgun 2 RB 3 WR Strong Deep,Long Pass,WR3,9,0.7%
+Shotgun 2 RB 3 WR WR Curl,Medium Pass,WR2,"2,821",51.5%
+Shotgun 2 RB 3 WR WR Curl,Medium Pass,RB1,"2,430",44.4%
+Shotgun 2 RB 3 WR WR Curl,Medium Pass,WR3,140,2.6%
+Shotgun 2 RB 3 WR WR Curl,Medium Pass,WR1,83,1.5%
+Shotgun 2 RB 3 WR WR Hooks,Medium Pass,WR1,"1,710",43.6%
+Shotgun 2 RB 3 WR WR Hooks,Medium Pass,WR2,"1,403",35.7%
+Shotgun 2 RB 3 WR WR Hooks,Medium Pass,WR3,417,10.6%
+Shotgun 2 RB 3 WR WR Hooks,Medium Pass,RB2,396,10.1%
+Shotgun 4 Wide All Curls,Short Pass,WR4,33,57.9%
+Shotgun 4 Wide All Curls,Short Pass,WR1,15,26.3%
+Shotgun 4 Wide All Curls,Short Pass,WR3,6,10.5%
+Shotgun 4 Wide All Curls,Short Pass,WR2,3,5.3%
+Shotgun 4 Wide All Go,Long Pass,WR4,9,64.3%
+Shotgun 4 Wide All Go,Long Pass,WR1,3,21.4%
+Shotgun 4 Wide All Go,Long Pass,WR2,1,7.1%
+Shotgun 4 Wide All Go,Long Pass,WR3,1,7.1%
+Shotgun 4 Wide In and Out,Medium Pass,WR2,145,55.3%
+Shotgun 4 Wide In and Out,Medium Pass,WR3,83,31.7%
+Shotgun 4 Wide In and Out,Medium Pass,WR4,32,12.2%
+Shotgun 4 Wide In and Out,Medium Pass,WR1,2,0.8%
+Shotgun 4 Wide Slot Curl,Medium Pass,RB1,225,50.6%
+Shotgun 4 Wide Slot Curl,Medium Pass,WR4,206,46.3%
+Shotgun 4 Wide Slot Curl,Medium Pass,WR1,6,1.3%
+Shotgun 4 Wide Slot Curl,Medium Pass,WR2,4,0.9%
+Shotgun 4 Wide Slot Curl,Medium Pass,WR3,4,0.9%
+Shotgun 4 Wide Slot Drag,Short Pass,WR3,230,89.8%
+Shotgun 4 Wide Slot Drag,Short Pass,WR1,12,4.7%
+Shotgun 4 Wide Slot Drag,Short Pass,RB1,6,2.3%
+Shotgun 4 Wide Slot Drag,Short Pass,WR2,4,1.6%
+Shotgun 4 Wide Slot Drag,Short Pass,WR4,4,1.6%
+Shotgun 4 Wide WR Corner,Long Pass,WR4,52,66.7%
+Shotgun 4 Wide WR Corner,Long Pass,WR3,21,26.9%
+Shotgun 4 Wide WR Corner,Long Pass,RB1,2,2.6%
+Shotgun 4 Wide WR Corner,Long Pass,WR2,2,2.6%
+Shotgun 4 Wide WR Corner,Long Pass,WR1,1,1.3%
+Shotgun 5 Wide 5 WR All Go,Long Pass,WR1,4,33.3%
+Shotgun 5 Wide 5 WR All Go,Long Pass,WR4,4,33.3%
+Shotgun 5 Wide 5 WR All Go,Long Pass,WR3,3,25.0%
+Shotgun 5 Wide 5 WR All Go,Long Pass,WR2,1,8.3%
+Shotgun 5 Wide 5 WR Corner Post,Long Pass,WR4,67,45.9%
+Shotgun 5 Wide 5 WR Corner Post,Long Pass,WR5,41,28.1%
+Shotgun 5 Wide 5 WR Corner Post,Long Pass,WR3,21,14.4%
+Shotgun 5 Wide 5 WR Corner Post,Long Pass,WR2,13,8.9%
+Shotgun 5 Wide 5 WR Corner Post,Long Pass,WR1,4,2.7%
+Shotgun 5 Wide 5 WR Deep Ins,Long Pass,WR5,98,57.0%
+Shotgun 5 Wide 5 WR Deep Ins,Long Pass,WR4,33,19.2%
+Shotgun 5 Wide 5 WR Deep Ins,Long Pass,WR3,22,12.8%
+Shotgun 5 Wide 5 WR Deep Ins,Long Pass,WR2,14,8.1%
+Shotgun 5 Wide 5 WR Deep Ins,Long Pass,WR1,5,2.9%
+Shotgun 5 Wide FL Hook,Medium Pass,WR3,96,33.9%
+Shotgun 5 Wide FL Hook,Medium Pass,WR1,94,33.2%
+Shotgun 5 Wide FL Hook,Medium Pass,WR5,86,30.4%
+Shotgun 5 Wide FL Hook,Medium Pass,WR4,4,1.4%
+Shotgun 5 Wide FL Hook,Medium Pass,WR2,3,1.1%
+Shotgun 5 Wide Middle Curls,Short Pass,WR1,157,80.9%
+Shotgun 5 Wide Middle Curls,Short Pass,WR4,21,10.8%
+Shotgun 5 Wide Middle Curls,Short Pass,WR5,8,4.1%
+Shotgun 5 Wide Middle Curls,Short Pass,WR3,7,3.6%
+Shotgun 5 Wide Middle Curls,Short Pass,WR2,1,0.5%
+Shotgun 5 Wide Parallel Slants,Short Pass,WR5,"1,414",60.0%
+Shotgun 5 Wide Parallel Slants,Short Pass,WR4,340,14.4%
+Shotgun 5 Wide Parallel Slants,Short Pass,WR2,316,13.4%
+Shotgun 5 Wide Parallel Slants,Short Pass,WR3,277,11.8%
+Shotgun 5 Wide Parallel Slants,Short Pass,WR1,10,0.4%
+Shotgun 5 Wide Slot Cross,Medium Pass,WR2,524,66.5%
+Shotgun 5 Wide Slot Cross,Medium Pass,WR1,106,13.5%
+Shotgun 5 Wide Slot Cross,Medium Pass,WR5,87,11.0%
+Shotgun 5 Wide Slot Cross,Medium Pass,WR4,60,7.6%
+Shotgun 5 Wide Slot Cross,Medium Pass,WR3,11,1.4%
+Shotgun 5 Wide Slot Drag,Short Pass,WR3,345,63.0%
+Shotgun 5 Wide Slot Drag,Short Pass,WR4,101,18.4%
+Shotgun 5 Wide Slot Drag,Short Pass,WR5,52,9.5%
+Shotgun 5 Wide Slot Drag,Short Pass,WR1,42,7.7%
+Shotgun 5 Wide Slot Drag,Short Pass,WR2,8,1.5%
+Shotgun 5 Wide WR Curls,Medium Pass,WR5,49,40.5%
+Shotgun 5 Wide WR Curls,Medium Pass,WR2,29,24.0%
+Shotgun 5 Wide WR Curls,Medium Pass,WR1,27,22.3%
+Shotgun 5 Wide WR Curls,Medium Pass,WR3,14,11.6%
+Shotgun 5 Wide WR Curls,Medium Pass,WR4,2,1.7%
+Shotgun Normal Deep Weak In and Out,Long Pass,TE1,"1,227",59.9%
+Shotgun Normal Deep Weak In and Out,Long Pass,WR3,678,33.1%
+Shotgun Normal Deep Weak In and Out,Long Pass,WR1,89,4.3%
+Shotgun Normal Deep Weak In and Out,Long Pass,RB1,30,1.5%
+Shotgun Normal Deep Weak In and Out,Long Pass,WR2,24,1.2%
+Shotgun Normal Double Outs,Short Pass,WR3,"2,313",43.3%
+Shotgun Normal Double Outs,Short Pass,WR1,"2,113",39.6%
+Shotgun Normal Double Outs,Short Pass,RB1,638,12.0%
+Shotgun Normal Double Outs,Short Pass,WR2,143,2.7%
+Shotgun Normal Double Outs,Short Pass,TE1,130,2.4%
+Shotgun Normal FL Slant,Short Pass,RB1,"1,131",41.5%
+Shotgun Normal FL Slant,Short Pass,WR3,567,20.8%
+Shotgun Normal FL Slant,Short Pass,WR2,528,19.4%
+Shotgun Normal FL Slant,Short Pass,WR1,498,18.3%
+Shotgun Normal Hail Mary,Long Pass,RB1,14,35.0%
+Shotgun Normal Hail Mary,Long Pass,WR1,9,22.5%
+Shotgun Normal Hail Mary,Long Pass,TE1,8,20.0%
+Shotgun Normal Hail Mary,Long Pass,WR3,7,17.5%
+Shotgun Normal Hail Mary,Long Pass,WR2,2,5.0%
+Shotgun Normal HB Flare,Medium Pass,RB1,"11,152",48.0%
+Shotgun Normal HB Flare,Medium Pass,WR3,"5,823",25.1%
+Shotgun Normal HB Flare,Medium Pass,TE1,"3,478",15.0%
+Shotgun Normal HB Flare,Medium Pass,WR2,"1,872",8.1%
+Shotgun Normal HB Flare,Medium Pass,WR1,902,3.9%
+Shotgun Normal Post Flags,Medium Pass,TE1,736,84.2%
+Shotgun Normal Post Flags,Medium Pass,WR3,78,8.9%
+Shotgun Normal Post Flags,Medium Pass,WR1,34,3.9%
+Shotgun Normal Post Flags,Medium Pass,RB1,13,1.5%
+Shotgun Normal Post Flags,Medium Pass,WR2,13,1.5%
+Shotgun Normal Short Attack,Medium Pass,WR2,750,62.4%
+Shotgun Normal Short Attack,Medium Pass,WR1,370,30.8%
+Shotgun Normal Short Attack,Medium Pass,WR3,35,2.9%
+Shotgun Normal Short Attack,Medium Pass,TE1,34,2.8%
+Shotgun Normal Short Attack,Medium Pass,RB1,12,1.0%
+Shotgun Normal Slot Drag,Short Pass,WR3,729,56.9%
+Shotgun Normal Slot Drag,Short Pass,WR1,420,32.8%
+Shotgun Normal Slot Drag,Short Pass,TE1,105,8.2%
+Shotgun Normal Slot Drag,Short Pass,WR2,21,1.6%
+Shotgun Normal Slot Drag,Short Pass,RB1,7,0.5%
+Shotgun Normal TE Out,Short Pass,TE1,"2,706",64.5%
+Shotgun Normal TE Out,Short Pass,WR3,"1,124",26.8%
+Shotgun Normal TE Out,Short Pass,WR1,249,5.9%
+Shotgun Normal TE Out,Short Pass,WR2,60,1.4%
+Shotgun Normal TE Out,Short Pass,RB1,54,1.3%
+Singleback 4 Wide Clear Center,Medium Pass,RB1,148,37.9%
+Singleback 4 Wide Clear Center,Medium Pass,WR4,132,33.8%
+Singleback 4 Wide Clear Center,Medium Pass,WR3,57,14.6%
+Singleback 4 Wide Clear Center,Medium Pass,WR1,50,12.8%
+Singleback 4 Wide Clear Center,Medium Pass,WR2,4,1.0%
+Singleback 4 Wide Deep Middle,Long Pass,WR3,51,63.0%
+Singleback 4 Wide Deep Middle,Long Pass,RB1,16,19.8%
+Singleback 4 Wide Deep Middle,Long Pass,WR4,11,13.6%
+Singleback 4 Wide Deep Middle,Long Pass,WR1,3,3.7%
+Singleback 4 Wide Post and Curls,Medium Pass,WR2,313,53.1%
+Singleback 4 Wide Post and Curls,Medium Pass,WR4,248,42.1%
+Singleback 4 Wide Post and Curls,Medium Pass,WR3,17,2.9%
+Singleback 4 Wide Post and Curls,Medium Pass,WR1,10,1.7%
+Singleback 4 Wide Post and Curls,Medium Pass,RB1,1,0.2%
+Singleback 4 Wide Post and Drag,Medium Pass,WR1,250,45.8%
+Singleback 4 Wide Post and Drag,Medium Pass,WR3,185,33.9%
+Singleback 4 Wide Post and Drag,Medium Pass,WR2,89,16.3%
+Singleback 4 Wide Post and Drag,Medium Pass,WR4,22,4.0%
+Singleback 4 Wide Quick Outs,Short Pass,WR3,746,59.8%
+Singleback 4 Wide Quick Outs,Short Pass,WR4,253,20.3%
+Singleback 4 Wide Quick Outs,Short Pass,WR2,197,15.8%
+Singleback 4 Wide Quick Outs,Short Pass,WR1,50,4.0%
+Singleback 4 Wide Quick Outs,Short Pass,RB1,1,0.1%
+Singleback 4 Wide WR Crosses,Short Pass,WR1,294,56.8%
+Singleback 4 Wide WR Crosses,Short Pass,WR3,172,33.2%
+Singleback 4 Wide WR Crosses,Short Pass,WR2,39,7.5%
+Singleback 4 Wide WR Crosses,Short Pass,WR4,13,2.5%
+Singleback Big Corner Ins,Medium Pass,TE2,462,28.3%
+Singleback Big Corner Ins,Medium Pass,WR1,440,26.9%
+Singleback Big Corner Ins,Medium Pass,WR2,433,26.5%
+Singleback Big Corner Ins,Medium Pass,TE1,281,17.2%
+Singleback Big Corner Ins,Medium Pass,RB1,19,1.2%
+Singleback Big HB Curls TE Deep,Medium Pass,WR1,355,38.2%
+Singleback Big HB Curls TE Deep,Medium Pass,RB1,315,33.9%
+Singleback Big HB Curls TE Deep,Medium Pass,WR2,248,26.7%
+Singleback Big HB Curls TE Deep,Medium Pass,TE1,12,1.3%
+Singleback Big Ins and Outs,Short Pass,TE2,781,29.8%
+Singleback Big Ins and Outs,Short Pass,WR1,733,27.9%
+Singleback Big Ins and Outs,Short Pass,WR2,662,25.2%
+Singleback Big Ins and Outs,Short Pass,TE1,425,16.2%
+Singleback Big Ins and Outs,Short Pass,RB1,24,0.9%
+Singleback Big PA Curls,Short Pass,WR1,905,68.4%
+Singleback Big PA Curls,Short Pass,RB1,278,21.0%
+Singleback Big PA Curls,Short Pass,WR2,103,7.8%
+Singleback Big PA Curls,Short Pass,TE2,37,2.8%
+Singleback Big TE Flat Curl,Short Pass,TE1,892,68.7%
+Singleback Big TE Flat Curl,Short Pass,TE2,357,27.5%
+Singleback Big TE Flat Curl,Short Pass,WR1,19,1.5%
+Singleback Big TE Flat Curl,Short Pass,RB1,17,1.3%
+Singleback Big TE Flat Curl,Short Pass,WR2,14,1.1%
+Singleback Big Waggle Post,Long Pass,RB1,347,59.3%
+Singleback Big Waggle Post,Long Pass,TE2,200,34.2%
+Singleback Big Waggle Post,Long Pass,WR2,23,3.9%
+Singleback Big Waggle Post,Long Pass,WR1,15,2.6%
+Singleback Big WR Deep,Medium Pass,TE1,"3,122",84.7%
+Singleback Big WR Deep,Medium Pass,TE2,294,8.0%
+Singleback Big WR Deep,Medium Pass,WR1,180,4.9%
+Singleback Big WR Deep,Medium Pass,WR2,46,1.2%
+Singleback Big WR Deep,Medium Pass,RB1,44,1.2%
+Singleback Big WR Streaks,Long Pass,TE1,264,66.7%
+Singleback Big WR Streaks,Long Pass,TE2,120,30.3%
+Singleback Big WR Streaks,Long Pass,WR1,6,1.5%
+Singleback Big WR Streaks,Long Pass,RB1,4,1.0%
+Singleback Big WR Streaks,Long Pass,WR2,2,0.5%
+Singleback Empty 4 Curl Flats,Short Pass,TE1,218,52.2%
+Singleback Empty 4 Curl Flats,Short Pass,WR1,127,30.4%
+Singleback Empty 4 Curl Flats,Short Pass,WR2,36,8.6%
+Singleback Empty 4 Curl Flats,Short Pass,WR4,22,5.3%
+Singleback Empty 4 Curl Flats,Short Pass,WR3,15,3.6%
+Singleback Empty 4 Short Posts,Short Pass,TE1,525,65.5%
+Singleback Empty 4 Short Posts,Short Pass,WR1,149,18.6%
+Singleback Empty 4 Short Posts,Short Pass,WR4,67,8.4%
+Singleback Empty 4 Short Posts,Short Pass,WR3,39,4.9%
+Singleback Empty 4 Short Posts,Short Pass,WR2,22,2.7%
+Singleback Empty 4 Slot Crosses,Medium Pass,WR3,245,48.3%
+Singleback Empty 4 Slot Crosses,Medium Pass,WR4,220,43.4%
+Singleback Empty 4 Slot Crosses,Medium Pass,WR2,24,4.7%
+Singleback Empty 4 Slot Crosses,Medium Pass,WR1,18,3.6%
+Singleback Empty 4 TE Corner,Medium Pass,WR4,353,36.9%
+Singleback Empty 4 TE Corner,Medium Pass,WR3,320,33.4%
+Singleback Empty 4 TE Corner,Medium Pass,TE1,178,18.6%
+Singleback Empty 4 TE Corner,Medium Pass,WR2,61,6.4%
+Singleback Empty 4 TE Corner,Medium Pass,WR1,45,4.7%
+Singleback Empty 4 TE Deep Out,Long Pass,WR2,164,71.0%
+Singleback Empty 4 TE Deep Out,Long Pass,WR1,35,15.2%
+Singleback Empty 4 TE Deep Out,Long Pass,WR4,12,5.2%
+Singleback Empty 4 TE Deep Out,Long Pass,TE1,11,4.8%
+Singleback Empty 4 TE Deep Out,Long Pass,WR3,9,3.9%
+Singleback Empty 4 TE Drag WR Mix,Medium Pass,TE1,148,45.3%
+Singleback Empty 4 TE Drag WR Mix,Medium Pass,WR1,140,42.8%
+Singleback Empty 4 TE Drag WR Mix,Medium Pass,WR2,24,7.3%
+Singleback Empty 4 TE Drag WR Mix,Medium Pass,WR3,15,4.6%
+Singleback Empty 4 WR Post Corner,Long Pass,WR2,139,72.4%
+Singleback Empty 4 WR Post Corner,Long Pass,WR4,28,14.6%
+Singleback Empty 4 WR Post Corner,Long Pass,TE1,24,12.5%
+Singleback Empty 4 WR Post Corner,Long Pass,WR3,1,0.5%
+Singleback Normal All Go,Long Pass,RB1,145,52.2%
+Singleback Normal All Go,Long Pass,TE1,72,25.9%
+Singleback Normal All Go,Long Pass,WR3,26,9.4%
+Singleback Normal All Go,Long Pass,WR2,19,6.8%
+Singleback Normal All Go,Long Pass,WR1,16,5.8%
+Singleback Normal Deep Corners,Long Pass,WR1,167,72.9%
+Singleback Normal Deep Corners,Long Pass,WR2,46,20.1%
+Singleback Normal Deep Corners,Long Pass,RB1,11,4.8%
+Singleback Normal Deep Corners,Long Pass,TE1,5,2.2%
+Singleback Normal FL Drag,Long Pass,WR1,208,83.5%
+Singleback Normal FL Drag,Long Pass,TE1,18,7.2%
+Singleback Normal FL Drag,Long Pass,RB1,10,4.0%
+Singleback Normal FL Drag,Long Pass,WR3,10,4.0%
+Singleback Normal FL Drag,Long Pass,WR2,3,1.2%
+Singleback Normal FL Go,Long Pass,WR3,84,51.9%
+Singleback Normal FL Go,Long Pass,TE1,59,36.4%
+Singleback Normal FL Go,Long Pass,WR2,10,6.2%
+Singleback Normal FL Go,Long Pass,WR1,5,3.1%
+Singleback Normal FL Go,Long Pass,RB1,4,2.5%
+Singleback Normal FL Post,Medium Pass,WR3,"1,473",63.7%
+Singleback Normal FL Post,Medium Pass,RB1,661,28.6%
+Singleback Normal FL Post,Medium Pass,WR1,156,6.7%
+Singleback Normal FL Post,Medium Pass,WR2,23,1.0%
+Singleback Normal FL Post,Medium Pass,TE1,1,0.0%
+Singleback Normal HB Release Mid,Medium Pass,WR3,"1,922",41.8%
+Singleback Normal HB Release Mid,Medium Pass,RB1,"1,696",36.9%
+Singleback Normal HB Release Mid,Medium Pass,WR2,519,11.3%
+Singleback Normal HB Release Mid,Medium Pass,WR1,456,9.9%
+Singleback Normal HB Release Mid,Medium Pass,TE1,1,0.0%
+Singleback Normal Hitch Corner,Short Pass,WR2,216,56.7%
+Singleback Normal Hitch Corner,Short Pass,RB1,125,32.8%
+Singleback Normal Hitch Corner,Short Pass,WR1,27,7.1%
+Singleback Normal Hitch Corner,Short Pass,WR3,13,3.4%
+Singleback Normal PA Rollout,Medium Pass,TE1,"1,757",86.1%
+Singleback Normal PA Rollout,Medium Pass,WR3,137,6.7%
+Singleback Normal PA Rollout,Medium Pass,WR2,96,4.7%
+Singleback Normal PA Rollout,Medium Pass,WR1,33,1.6%
+Singleback Normal PA Rollout,Medium Pass,RB1,17,0.8%
+Singleback Normal Post Corner,Medium Pass,TE1,744,48.3%
+Singleback Normal Post Corner,Medium Pass,WR2,364,23.6%
+Singleback Normal Post Corner,Medium Pass,WR3,331,21.5%
+Singleback Normal Post Corner,Medium Pass,WR1,64,4.2%
+Singleback Normal Post Corner,Medium Pass,RB1,38,2.5%
+Singleback Normal Quick Looks,Short Pass,WR1,227,44.9%
+Singleback Normal Quick Looks,Short Pass,WR3,163,32.2%
+Singleback Normal Quick Looks,Short Pass,WR2,87,17.2%
+Singleback Normal Quick Looks,Short Pass,TE1,23,4.5%
+Singleback Normal Quick Looks,Short Pass,RB1,6,1.2%
+Singleback Normal Quick Slant,Short Pass,RB1,"1,806",71.4%
+Singleback Normal Quick Slant,Short Pass,WR2,324,12.8%
+Singleback Normal Quick Slant,Short Pass,WR3,236,9.3%
+Singleback Normal Quick Slant,Short Pass,WR1,163,6.4%
+Singleback Normal SE Quick Hit,Short Pass,RB1,523,41.7%
+Singleback Normal SE Quick Hit,Short Pass,WR2,399,31.8%
+Singleback Normal SE Quick Hit,Short Pass,WR3,208,16.6%
+Singleback Normal SE Quick Hit,Short Pass,TE1,78,6.2%
+Singleback Normal SE Quick Hit,Short Pass,WR1,46,3.7%
+Singleback Normal Slot WR Cross,Medium Pass,RB1,713,52.5%
+Singleback Normal Slot WR Cross,Medium Pass,WR2,265,19.5%
+Singleback Normal Slot WR Cross,Medium Pass,WR3,211,15.5%
+Singleback Normal Slot WR Cross,Medium Pass,WR1,169,12.4%
+Singleback Normal TE Quick Out,Short Pass,TE1,"3,247",59.0%
+Singleback Normal TE Quick Out,Short Pass,WR3,"1,175",21.4%
+Singleback Normal TE Quick Out,Short Pass,WR2,820,14.9%
+Singleback Normal TE Quick Out,Short Pass,WR1,192,3.5%
+Singleback Normal TE Quick Out,Short Pass,RB1,68,1.2%
+Singleback Normal WR Post,Medium Pass,WR3,737,59.3%
+Singleback Normal WR Post,Medium Pass,RB1,338,27.2%
+Singleback Normal WR Post,Medium Pass,WR1,83,6.7%
+Singleback Normal WR Post,Medium Pass,TE1,58,4.7%
+Singleback Normal WR Post,Medium Pass,WR2,26,2.1%
+Singleback Normal WR Quick In,Short Pass,WR2,"1,748",62.6%
+Singleback Normal WR Quick In,Short Pass,RB1,604,21.6%
+Singleback Normal WR Quick In,Short Pass,WR1,365,13.1%
+Singleback Normal WR Quick In,Short Pass,WR3,76,2.7%
+Singleback Slot Strong All Go,Long Pass,WR1,12,34.3%
+Singleback Slot Strong All Go,Long Pass,TE1,10,28.6%
+Singleback Slot Strong All Go,Long Pass,WR3,7,20.0%
+Singleback Slot Strong All Go,Long Pass,WR2,5,14.3%
+Singleback Slot Strong All Go,Long Pass,RB1,1,2.9%
+Singleback Slot Strong HB Checkdown,Medium Pass,RB1,"1,631",77.7%
+Singleback Slot Strong HB Checkdown,Medium Pass,WR2,236,11.2%
+Singleback Slot Strong HB Checkdown,Medium Pass,WR1,151,7.2%
+Singleback Slot Strong HB Checkdown,Medium Pass,WR3,80,3.8%
+Singleback Slot Strong HB Flat,Short Pass,RB1,725,85.4%
+Singleback Slot Strong HB Flat,Short Pass,WR3,93,11.0%
+Singleback Slot Strong HB Flat,Short Pass,WR1,27,3.2%
+Singleback Slot Strong HB Flat,Short Pass,WR2,4,0.5%
+Singleback Slot Strong Overload Strong,Medium Pass,WR1,608,42.0%
+Singleback Slot Strong Overload Strong,Medium Pass,RB1,493,34.0%
+Singleback Slot Strong Overload Strong,Medium Pass,TE1,159,11.0%
+Singleback Slot Strong Overload Strong,Medium Pass,WR2,147,10.1%
+Singleback Slot Strong Overload Strong,Medium Pass,WR3,42,2.9%
+Singleback Slot Strong Post Curls,Short Pass,WR3,"1,408",93.4%
+Singleback Slot Strong Post Curls,Short Pass,WR1,54,3.6%
+Singleback Slot Strong Post Curls,Short Pass,RB1,28,1.9%
+Singleback Slot Strong Post Curls,Short Pass,WR2,9,0.6%
+Singleback Slot Strong Post Curls,Short Pass,TE1,8,0.5%
+Singleback Slot Strong Skinny Posts,Short Pass,TE1,"1,460",67.0%
+Singleback Slot Strong Skinny Posts,Short Pass,RB1,539,24.7%
+Singleback Slot Strong Skinny Posts,Short Pass,WR2,86,3.9%
+Singleback Slot Strong Skinny Posts,Short Pass,WR3,56,2.6%
+Singleback Slot Strong Skinny Posts,Short Pass,WR1,38,1.7%
+Singleback Slot Strong Slot Curl,Short Pass,WR1,288,54.9%
+Singleback Slot Strong Slot Curl,Short Pass,RB1,168,32.0%
+Singleback Slot Strong Slot Curl,Short Pass,WR3,67,12.8%
+Singleback Slot Strong Slot Curl,Short Pass,TE1,2,0.4%
+Singleback Slot Strong TE Corner,Medium Pass,WR1,575,57.7%
+Singleback Slot Strong TE Corner,Medium Pass,WR2,351,35.2%
+Singleback Slot Strong TE Corner,Medium Pass,TE1,36,3.6%
+Singleback Slot Strong TE Corner,Medium Pass,WR3,31,3.1%
+Singleback Slot Strong TE Corner,Medium Pass,RB1,4,0.4%
+Singleback Slot Strong TE Slot Curls,Short Pass,WR3,482,52.7%
+Singleback Slot Strong TE Slot Curls,Short Pass,WR2,242,26.4%
+Singleback Slot Strong TE Slot Curls,Short Pass,TE1,168,18.4%
+Singleback Slot Strong TE Slot Curls,Short Pass,WR1,18,2.0%
+Singleback Slot Strong TE Slot Curls,Short Pass,RB1,5,0.5%
+Split Backs 3 Wide Drag In,Medium Pass,RB1,"1,810",50.7%
+Split Backs 3 Wide Drag In,Medium Pass,WR1,"1,676",46.9%
+Split Backs 3 Wide Drag In,Medium Pass,WR3,44,1.2%
+Split Backs 3 Wide Drag In,Medium Pass,WR2,42,1.2%
+Split Backs 3 Wide Drag In,Medium Pass,FB1,1,0.0%
+Split Backs 3 Wide RB Curls,Short Pass,WR1,238,45.2%
+Split Backs 3 Wide RB Curls,Short Pass,RB1,142,27.0%
+Split Backs 3 Wide RB Curls,Short Pass,FB1,110,20.9%
+Split Backs 3 Wide RB Curls,Short Pass,WR2,27,5.1%
+Split Backs 3 Wide RB Curls,Short Pass,WR3,9,1.7%
+Split Backs 3 Wide Slot Drag,Short Pass,RB1,608,68.2%
+Split Backs 3 Wide Slot Drag,Short Pass,WR3,157,17.6%
+Split Backs 3 Wide Slot Drag,Short Pass,WR1,126,14.1%
+Split Backs 3 Wide Slot Drag,Short Pass,WR2,1,0.1%
+Split Backs 3 Wide Slot Post,Medium Pass,RB1,922,40.1%
+Split Backs 3 Wide Slot Post,Medium Pass,WR1,824,35.9%
+Split Backs 3 Wide Slot Post,Medium Pass,WR3,504,21.9%
+Split Backs 3 Wide Slot Post,Medium Pass,WR2,48,2.1%
+Split Backs 3 Wide WR Post,Medium Pass,FB1,"1,034",61.6%
+Split Backs 3 Wide WR Post,Medium Pass,WR3,418,24.9%
+Split Backs 3 Wide WR Post,Medium Pass,WR2,174,10.4%
+Split Backs 3 Wide WR Post,Medium Pass,WR1,52,3.1%
+Split Backs 3 Wide WR Quick Out,Short Pass,RB1,"1,693",42.5%
+Split Backs 3 Wide WR Quick Out,Short Pass,FB1,"1,587",39.8%
+Split Backs 3 Wide WR Quick Out,Short Pass,WR1,327,8.2%
+Split Backs 3 Wide WR Quick Out,Short Pass,WR3,311,7.8%
+Split Backs 3 Wide WR Quick Out,Short Pass,WR2,69,1.7%
+Split Backs 3 Wide WR2 Deep Post,Long Pass,WR3,768,82.8%
+Split Backs 3 Wide WR2 Deep Post,Long Pass,RB1,110,11.9%
+Split Backs 3 Wide WR2 Deep Post,Long Pass,FB1,34,3.7%
+Split Backs 3 Wide WR2 Deep Post,Long Pass,WR2,9,1.0%
+Split Backs 3 Wide WR2 Deep Post,Long Pass,WR1,6,0.6%
+Split Backs Normal Curls,Short Pass,TE1,168,44.4%
+Split Backs Normal Curls,Short Pass,WR1,166,43.9%
+Split Backs Normal Curls,Short Pass,WR2,28,7.4%
+Split Backs Normal Curls,Short Pass,RB1,16,4.2%
+Split Backs Normal Overload Strong,Medium Pass,WR1,170,84.6%
+Split Backs Normal Overload Strong,Medium Pass,FB1,22,10.9%
+Split Backs Normal Overload Strong,Medium Pass,TE1,9,4.5%
+Split Backs Normal Posts,Medium Pass,TE1,578,62.8%
+Split Backs Normal Posts,Medium Pass,RB1,315,34.2%
+Split Backs Normal Posts,Medium Pass,WR1,17,1.8%
+Split Backs Normal Posts,Medium Pass,WR2,11,1.2%
+Split Backs Normal Skinny Post Corner,Short Pass,FB1,398,40.2%
+Split Backs Normal Skinny Post Corner,Short Pass,TE1,392,39.6%
+Split Backs Normal Skinny Post Corner,Short Pass,RB1,155,15.6%
+Split Backs Normal Skinny Post Corner,Short Pass,WR2,37,3.7%
+Split Backs Normal Skinny Post Corner,Short Pass,WR1,9,0.9%
+Split Backs Normal TE Curl,Short Pass,FB1,143,34.2%
+Split Backs Normal TE Curl,Short Pass,RB1,116,27.8%
+Split Backs Normal TE Curl,Short Pass,TE1,100,23.9%
+Split Backs Normal TE Curl,Short Pass,WR2,55,13.2%
+Split Backs Normal TE Curl,Short Pass,WR1,4,1.0%
+Split Backs Normal WR Deep Corner,Long Pass,TE1,326,76.3%
+Split Backs Normal WR Deep Corner,Long Pass,RB1,51,11.9%
+Split Backs Normal WR Deep Corner,Long Pass,FB1,24,5.6%
+Split Backs Normal WR Deep Corner,Long Pass,WR2,23,5.4%
+Split Backs Normal WR Deep Corner,Long Pass,WR1,3,0.7%
+Split Backs Normal WR Post,Medium Pass,WR1,292,39.2%
+Split Backs Normal WR Post,Medium Pass,TE1,214,28.7%
+Split Backs Normal WR Post,Medium Pass,RB1,193,25.9%
+Split Backs Normal WR Post,Medium Pass,WR2,46,6.2%
+Strong I Big Backfield Drag,Short Pass,FB1,572,49.9%
+Strong I Big Backfield Drag,Short Pass,TE2,268,23.4%
+Strong I Big Backfield Drag,Short Pass,WR1,203,17.7%
+Strong I Big Backfield Drag,Short Pass,RB1,103,9.0%
+Strong I Big HB Swing,Short Pass,TE1,621,88.6%
+Strong I Big HB Swing,Short Pass,RB1,28,4.0%
+Strong I Big HB Swing,Short Pass,WR1,26,3.7%
+Strong I Big HB Swing,Short Pass,TE2,24,3.4%
+Strong I Big HB Swing,Short Pass,FB1,2,0.3%
+Strong I Big TE Deep Corner,Long Pass,WR1,203,56.9%
+Strong I Big TE Deep Corner,Long Pass,RB1,93,26.1%
+Strong I Big TE Deep Corner,Long Pass,TE2,36,10.1%
+Strong I Big TE Deep Corner,Long Pass,TE1,21,5.9%
+Strong I Big TE Deep Corner,Long Pass,FB1,4,1.1%
+Strong I Big TE Drag,Short Pass,RB1,119,46.5%
+Strong I Big TE Drag,Short Pass,TE2,113,44.1%
+Strong I Big TE Drag,Short Pass,TE1,17,6.6%
+Strong I Big TE Drag,Short Pass,WR1,5,2.0%
+Strong I Big TE Drag,Short Pass,FB1,2,0.8%
+Strong I Big TE Post,Medium Pass,TE2,"1,318",56.0%
+Strong I Big TE Post,Medium Pass,RB1,445,18.9%
+Strong I Big TE Post,Medium Pass,TE1,408,17.3%
+Strong I Big TE Post,Medium Pass,WR1,163,6.9%
+Strong I Big TE Post,Medium Pass,FB1,21,0.9%
+Strong I Big WR Quick In,Short Pass,TE1,324,72.5%
+Strong I Big WR Quick In,Short Pass,WR1,92,20.6%
+Strong I Big WR Quick In,Short Pass,RB1,18,4.0%
+Strong I Big WR Quick In,Short Pass,TE2,12,2.7%
+Strong I Big WR Quick In,Short Pass,FB1,1,0.2%
+Strong I Normal PA All Go,Long Pass,FB1,124,57.9%
+Strong I Normal PA All Go,Long Pass,TE1,40,18.7%
+Strong I Normal PA All Go,Long Pass,WR1,28,13.1%
+Strong I Normal PA All Go,Long Pass,WR2,20,9.3%
+Strong I Normal PA All Go,Long Pass,RB1,2,0.9%
+Strong I Normal Quick Hooks,Short Pass,WR1,728,61.0%
+Strong I Normal Quick Hooks,Short Pass,WR2,348,29.1%
+Strong I Normal Quick Hooks,Short Pass,TE1,60,5.0%
+Strong I Normal Quick Hooks,Short Pass,RB1,58,4.9%
+Strong I Normal Short Attack,Short Pass,WR2,"1,076",53.2%
+Strong I Normal Short Attack,Short Pass,RB1,635,31.4%
+Strong I Normal Short Attack,Short Pass,TE1,276,13.7%
+Strong I Normal Short Attack,Short Pass,WR1,34,1.7%
+Strong I Normal WR Post TE Out,Medium Pass,WR1,"2,175",54.6%
+Strong I Normal WR Post TE Out,Medium Pass,RB1,"1,520",38.2%
+Strong I Normal WR Post TE Out,Medium Pass,TE1,248,6.2%
+Strong I Normal WR Post TE Out,Medium Pass,WR2,36,0.9%
+Strong I Normal WR Post TE Out,Medium Pass,FB1,2,0.1%
+Weak I Big TE Deep Post,Long Pass,WR1,58,52.7%
+Weak I Big TE Deep Post,Long Pass,RB1,37,33.6%
+Weak I Big TE Deep Post,Long Pass,TE2,10,9.1%
+Weak I Big TE Deep Post,Long Pass,TE1,3,2.7%
+Weak I Big TE Deep Post,Long Pass,FB1,2,1.8%
+Weak I Big TE Drag,Short Pass,TE1,163,58.4%
+Weak I Big TE Drag,Short Pass,RB1,91,32.6%
+Weak I Big TE Drag,Short Pass,TE2,10,3.6%
+Weak I Big TE Drag,Short Pass,WR1,10,3.6%
+Weak I Big TE Drag,Short Pass,FB1,5,1.8%
+Weak I Big WR Post TE Out,Medium Pass,RB1,493,38.0%
+Weak I Big WR Post TE Out,Medium Pass,TE2,389,29.9%
+Weak I Big WR Post TE Out,Medium Pass,TE1,329,25.3%
+Weak I Big WR Post TE Out,Medium Pass,WR1,75,5.8%
+Weak I Big WR Post TE Out,Medium Pass,FB1,13,1.0%
+Weak I Normal All Go,Long Pass,RB1,64,51.2%
+Weak I Normal All Go,Long Pass,TE1,22,17.6%
+Weak I Normal All Go,Long Pass,WR1,20,16.0%
+Weak I Normal All Go,Long Pass,WR2,19,15.2%
+Weak I Normal Skinny Posts,Short Pass,RB1,"3,905",42.4%
+Weak I Normal Skinny Posts,Short Pass,TE1,"3,858",41.9%
+Weak I Normal Skinny Posts,Short Pass,WR2,"1,058",11.5%
+Weak I Normal Skinny Posts,Short Pass,WR1,382,4.1%
+Weak I Normal Skinny Posts,Short Pass,FB1,2,0.0%
+Weak I Normal WR Corner TE Middle,Medium Pass,RB1,"6,017",61.3%
+Weak I Normal WR Corner TE Middle,Medium Pass,TE1,"2,783",28.3%
+Weak I Normal WR Corner TE Middle,Medium Pass,WR2,781,8.0%
+Weak I Normal WR Corner TE Middle,Medium Pass,WR1,232,2.4%
+Weak I Normal WR Corner TE Middle,Medium Pass,FB1,4,0.0%

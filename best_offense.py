@@ -3,13 +3,13 @@ import pandas as pd
 
 # Best Offensive Calls
 def_formations = {
-    '113': ['4-3 Normal Double WR3', '4-3 Normal Double WR1', '4-3 Normal WLB Outside Blitz'],
-    '122': ['4-3 Normal OLB Blitz Outside', 'Dime Flat Man Cover 1'],
-    '203': ['Dime Flat Man Cover 1', '4-3 Normal WLB MLB Blitz', '4-3 Normal OLB Blitz Inside', '4-3 Under Double LB Blitz'],
-    '212': ['Dime Flat Man Cover 1', '4-3 Normal OLB Blitz Outside', '4-3 Normal OLB Blitz Outside', '4-3 Under Double LB Blitz'],
-    '311': ['Dime Flat Man Cover 1', '4-3 Normal OLB Blitz Outside'],
-    '221': ['Dime Flat Man Cover 1', '4-3 Normal OLB Blitz Inside', '4-3 Normal OLB Blitz Outside'],
-    '104': ['Dime Normal Man Cover 1']
+    '113': ['Nickel 3-3-5 Cover 2 Man Under', 'Dime Normal Double WR1 WR2', 'Dime Flat 2 Deep Man Under', 'Dime Flat MLB SS Blitz', 'Dime Normal Man Cover 1'],
+    '122': ['3-4 Normal 2 Deep Man', '4-3 Normal Man QB Spy', '4-3 Normal Man Under 1', '4-3 Normal WLB Outside Blitz'],
+    '203': ['Dime Flat 2 Deep Man Under', 'Dime Normal Man Cover 1', 'Nickel Normal SS Blitz', 'Dime Flat MLB SS Blitz'],
+    '212': ['4-3 Normal WLB Outside Blitz', '4-3 Normal Man Under 1', '4-3 Under Crash Right', '4-3 Normal Man QB Spy'],
+    '311': ['4-3 Normal Man Under 1', '4-3 Under Crash Right', '3-4 Normal Man Cover 1', '4-3 Normal Man QB Spy'],
+    '221': ['3-4 Normal 2 Deep Man', '3-4 Normal Man Cover 1', '4-3 Normal Man QB Spy', '4-3 Normal WLB Outside Blitz'],
+    '104': ['Dime Normal Man Cover 1', 'Quarter Normal Man Short Zone']
 }
 
 off_personnel_values = {
