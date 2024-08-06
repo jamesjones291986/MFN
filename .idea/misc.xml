@@ -5,8 +5,12 @@
     <option name="pathToExecutable" value="/usr/local/bin/black" />
     <option name="sdkUUID" value="e85acb0a-d524-4b45-b521-d8f7ae92c96c" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (MFN)" project-jdk-type="Python SDK" />
   <component name="PyPackaging">
     <option name="earlyReleasesAsUpgrades" value="true" />
   </component>
+=======
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11" project-jdk-type="Python SDK" />
+>>>>>>> origin/main
 </project>

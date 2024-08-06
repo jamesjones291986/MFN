@@ -9,6 +9,86 @@ run_threshold = 6
 # Best Defensive Calls
 formations = {
     '113': {
+        'pass': ['Shotgun Normal HB Flare', 'Shotgun Normal TE Out', 'Singleback Normal TE Quick Out', 'Singleback Normal HB Release Mid'],
+        'run': ['Singleback Normal HB Inside Weak']
+    },
+    '122': {
+        'pass': ['Singleback Big Ins and Outs', 'Singleback Big WR Deep'],
+        'run': ['Singleback Big Off Tackle Strong', 'Singleback Big HB Inside Strong']
+    },
+    '203': {
+        'pass': ['I Formation 3WR WR Out', 'I Formation 3WR FL Post', 'I Formation 3WR Backfield Flats', 'I Formation 3WR Slot Short WR Deep'],
+        'run': ['I Formation 3WR HB Inside Weak', 'I Formation 3WR HB Inside Strong']
+    },
+    '212': {
+        'pass': ['Split Backs Normal Posts', 'Weak I Normal WR Corner TE Middle', 'I Formation Normal FL Hitch'],
+        'run': ['I Formation Normal HB Dive', 'Weak I Normal HB Inside Strong', 'I Formation Normal HB Blast']
+    },
+    '221': {
+        'pass': ['Weak I Big WR Post TE Out'],
+        'run': ['Weak I Big HB Lead Toss Weak']
+    },
+    '311': {
+        'pass': ['I Formation Power Play Action HB Downfield', 'I Formation Power PA Flats'],
+        'run': ['I Formation Power HB Strong Outside']
+    },
+    '104': {
+        'pass': ['Singleback 4 Wide Quick Outs'],
+    },
+    '105': {
+        'pass': ['Shotgun 5 Wide Parallel Slants'],
+    },
+}
+
+# Calculate adjusted expected value for each formation and play type
+
+exclude_columns = ['OffPlayType', 'OffPersonnel']
+exclude_columns_run = ['OffPlayType', 'OffPersonnel', 'any/a', 'int_rate',
+                       'sack_rate']  # Specify the columns to exclude
+
+for formation in formations:
+    form_pass = formations[formation]['pass']
+    if 'run' in formations[formation]:
+        form_run = formations[formation]['run']
+    else:
+        []
+    form_plays = form_pass + form_run
+
+    globals()[f"def_plays_pass_{formation}"] = adj_ev(df.loc[df.OffensivePlay.isin(form_pass)], 'DefensivePlay',
+                                                      all_plays, 'asc').sort_values(by='any/a').drop(exclude_columns,
+                                                                                                     axis=1)
+    globals()[f"def_plays_run_{formation}"] = adj_ev(df.loc[df.OffensivePlay.isin(form_run)], 'DefensivePlay',
+                                                     all_plays, 'asc').drop(exclude_columns_run, axis=1)
+    globals()[f"def_plays_total_{formation}"] = adj_ev(df.loc[df.OffensivePlay.isin(form_plays)], 'DefensivePlay',
+                                                       all_plays, 'asc').drop(exclude_columns_run, axis=1)
+
+# Existing code to calculate adjusted expected values for run and pass plays
+
+# New code to find matches between run and pass plays with 'ypp' < 6 for each formation
+for formation in formations:
+    if f"def_plays_pass_{formation}" in globals() and f"def_plays_run_{formation}" in globals():
+        pass_plays_df = globals()[f"def_plays_pass_{formation}"]
+        run_plays_df = globals()[f"def_plays_run_{formation}"]
+
+        matched_df = pass_plays_df[pass_plays_df['ypp'] < pass_threshold].merge(
+            run_plays_df[run_plays_df['ypp'] < run_threshold],
+            on='DefensivePlay',
+            suffixes=('_pass', '_run')
+        )
+
+        globals()[f"combined_matched_result_{formation}"] = matched_df
+
+# EV - Best Overall Plays
+# overall_off_play_adj_ev = adj_ev(df, 'OffensivePlay', all_plays, 'desc')
+#
+# overall_off_play_adj_ev.to_csv(Config.root + '/off_play_adj_ev.csv', index=False)
+
+pass_threshold = 7
+run_threshold = 6
+
+# Best Defensive Calls
+formations = {
+    '113': {
         'pass': ['Singleback Normal TE Quick Out'],
         'run': ['Singleback Slot Strong HB Counter', 'Singleback Normal HB Counter Weak', 'Singleback Normal HB Inside Weak']
     },
