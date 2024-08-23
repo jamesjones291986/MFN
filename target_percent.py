@@ -30,17 +30,17 @@ def get_totals(input_values):
 
 play_dict_rf = {'Singeback 4 Wide': ['Singleback 4 Wide Quick Outs'],
              'Singleback Empty 4': [],
-             'Singleback Normal': ['Singleback Normal TE Quick Out'],
+             'Singleback Normal': ['Singleback Normal TE Quick Out', 'Singelback Normal HB Release Mid'],
              'Singleback Slot Strong': [],
              'Singleback Big': [],
-             'I Formation 3 WR': ['I Formation 3WR WR Out', 'I Formation 3WR Slot Short WR Deep'],
-             'Split Backs 3 Wide': [],
+             'I Formation 3 WR': ['I Formation 3WR WR Out', 'I Formation 3WR Slot Short WR Deep', 'I Formation 3WR Backfield Flats', 'I Formation 3WR FL Post'],
+             'Split Backs 3 Wide': ['Split Backs 3 Wide WR Quick Out'],
              'Strong I Normal': [],
              'Weak I Normal': ['Weak I Normal WR Corner TE Middle'],
              'I Formation Twin WR': ['I Formation Twin WR Hard Slants', 'I Formation Twin WR Quick Outs'],
-             'I Formation Normal': ['I Formation Normal FL Hitch', 'I Formation Normal Max Protect'],
-             'Strong I Big': [],
-             'I Formation Power': ['I Formation Power Play Action HB Downfield'],
+             'I Formation Normal': ['I Formation Normal FL Hitch'],
+             'Strong I Big': ['Strong I Big TE Post', 'Strong I Big Backfield Drag'],
+             'I Formation Power': ['I Formation Power Play Action HB Downfield', 'I Formation Power PA Flats'],
              }
 for formation, plays in play_dict_rf.items():
     print(f'{formation}:')

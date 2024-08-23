@@ -8,7 +8,7 @@ from util import Config
 # Set Variables
 league_mfn = 'USFL'
 season_year = "2011"
-defenses_to_scout = ['PIT']  # Example list of offenses
+defenses_to_scout = ['SJS']  # Example list of offenses
 
 file_name = f"{league_mfn}_{season_year}.feather"
 

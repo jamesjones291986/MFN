@@ -1,5 +1,8 @@
 import pandas as pd
 import numpy as np
+import sys
+
+sys.path.append('/Users/jamesjones/personal/MFN')
 from util import Config
 from GameLogDownloader import GameLogDownloader
 
@@ -22,7 +25,8 @@ global_def_ref = pd.read_csv(global_def)
 run_plays = ('Inside Run', 'Outside Run')
 pass_plays = ('Short Pass', 'Medium Pass', 'Long Pass')
 all_plays = run_plays + pass_plays
-formations = ('5WR', '1RB/4WR', '1TE/4WR', '1RB/1TE/3WR', '1RB/2TE/2WR', '2RB/3WR', '2RB/1TE/2WR', '2RB/2TE/1WR', '3RB/1TE/1WR')
+formations = (
+    '5WR', '1RB/4WR', '1TE/4WR', '1RB/1TE/3WR', '1RB/2TE/2WR', '2RB/3WR', '2RB/1TE/2WR', '2RB/2TE/1WR', '3RB/1TE/1WR')
 def_excludes = (None, 'FG Block', 'Punt Return', 'Kick Return', 'Onsides Kick Return Onside Kick Return')
 off_excludes = (None, 'Field Goal', 'Punt', 'Victory', 'Kickoff', 'Onsides Kick Onside Kick')
 
@@ -233,6 +237,7 @@ def format_df(dd):
     no_0 = dd.loc[dd.ev.ne(0)]
     return no_0
 
+
 def scout_off_def(temp_df, team):
     d1 = temp_df.loc[temp_df.away_ac.eq(team) | temp_df.home_ac.eq(team)]
     do = d1.loc[d1.HasBall.eq(team)]
@@ -286,16 +291,14 @@ def scout(league, season, team):
     scout_off_def(tdf, team)
     # scout_run_vs_pass_downs(tdf, team)
 
+
 # Load all seasons
 df = format_df(Config.load_all_seasons()).reset_index(drop=True)
 
-
 # Load all seasons
-#df = format_df(pd.concat((Config.load_feather(k, y) for k, v in Config.ls_dictionary.items() for y in v))).reset_index(drop=True)
+# df = format_df(pd.concat((Config.load_feather(k, y) for k, v in Config.ls_dictionary.items() for y in v))).reset_index(drop=True)
 
 
 ###########################################
 
-
-
-
+off_play_adj_ev = adj_ev(df, 'OffensivePlay', all_plays, 'desc')
