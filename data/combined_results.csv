@@ -1,0 +1,985 @@
+OffensivePlay,ypp,cnt,any/a,int_rate,sack_rate,td_rate,ev_adj
+I Formation Twin WR Hard Slants,8.33,1429,7.27,3.04,4.56,4.77,0.729
+Shotgun Normal HB Flare,8.33,6050,7.11,2.63,6.5,4.35,0.427
+Strong I Big TE Post,8.1,814,6.01,2.3,11.61,4.11,0.982
+Strong I Big Backfield Drag,7.98,701,6.73,2.09,7.96,5.87,0.975
+I Formation Power Play Action HB Downfield,7.89,2761,6.68,3.04,4.8,3.08,0.39
+Split Backs Normal Posts,7.47,462,7.17,1.92,3.21,2.14,1.109
+I Formation Twin WR Quick Outs,6.98,952,6.78,2.49,0.52,2.7,1.158
+I Formation Normal FL Hitch,6.97,3519,6.46,2.72,1.35,3.0,0.265
+Singleback Normal TE Quick Out,6.76,1861,5.76,3.25,2.02,2.66,0.661
+I Formation 3WR Slot Short WR Deep,6.67,2133,4.57,3.35,7.12,2.56,0.196
+Singleback Normal HB Release Mid,6.63,1351,3.72,5.46,4.79,2.51,0.643
+I Formation Power PA Flats,6.61,2268,5.53,2.23,5.33,2.14,0.183
+Weak I Normal WR Corner TE Middle,6.61,2591,5.16,2.48,6.42,1.8,0.25
+Singleback 4 Wide Quick Outs,6.57,412,5.0,3.84,2.88,2.64,0.902
+Weak I Big WR Post TE Out,6.4,591,3.48,3.87,9.41,1.85,0.551
+I Formation 3WR HB Inside Weak,6.29,2417,,,,0.69,0.353
+I Formation 3WR FL Post,6.28,1353,4.7,2.49,6.73,1.46,0.269
+Singleback Slot Strong HB Checkdown,6.23,342,4.68,2.62,6.1,4.07,0.622
+I Formation 3WR WR Out,6.01,1792,5.52,2.49,1.0,1.27,0.514
+Singleback Big WR Deep,5.96,1078,3.1,2.94,11.48,2.2,0.516
+Split Backs 3 Wide Slot Post,5.87,567,4.12,3.13,5.22,1.57,0.421
+Singleback Normal HB Inside Weak,5.66,1845,,,,0.64,0.966
+I Formation Normal Max Protect,5.66,1625,4.0,2.44,6.65,1.59,0.271
+I Formation 3WR PA Fullback Flat,5.64,735,5.26,2.02,1.48,2.43,0.012
+Singleback Normal HB Dive Weak,5.55,1871,,,,0.74,0.65
+Split Backs Normal WR Post,5.54,176,3.06,2.25,11.24,2.25,0.576
+Shotgun 4 Wide Slot Drag,5.53,63,,1.56,,,-0.805
+Singleback Slot Strong HB Counter,5.45,1738,,,,0.79,0.205
+I Formation 3WR Backfield Flats,5.42,520,3.9,1.92,7.28,2.3,0.689
+Split Backs 3 Wide WR Quick Out,5.42,1018,4.65,2.44,1.95,1.66,0.194
+Empty 4 Wide Spread Corner Post,5.33,267,1.98,5.24,6.37,0.75,0.001
+Singleback Normal PA Rollout,5.28,387,1.91,3.35,12.11,1.55,0.008
+Shotgun 5 Wide Slot Drag,5.25,145,3.29,4.11,2.74,2.05,-0.318
+Singleback Normal Slot WR Cross,5.24,200,3.98,1.5,7.0,1.5,-0.445
+Singleback Normal Quick Slant,5.19,453,4.74,1.1,4.17,1.97,0.226
+Singleback Normal HB Dive Strong,5.17,1314,,,,0.23,0.725
+Weak I Big Off Tackle Weak,5.16,148,,,,3.97,-0.211
+Singleback Slot Strong HB Strong Inside,5.14,1035,,,,0.66,0.318
+Singleback Empty 4 TE Corner,5.1,138,3.04,2.1,9.09,0.7,0.049
+I Formation Normal PA Fullback Flat,5.08,1875,4.38,2.46,1.2,2.2,-0.652
+Singleback Normal FL Post,5.07,664,2.78,2.53,8.94,1.34,0.72
+Split Backs 3 Wide Dive Left,5.07,873,,,,,0.422
+I Formation Normal HB Dive,5.0,2441,,,,1.13,0.311
+I Formation Big TE Sneak Out,4.99,187,2.61,5.29,1.06,1.59,0.113
+Singleback Big Ins and Outs,4.99,703,3.68,3.51,0.98,0.98,0.216
+Weak I Normal HB Inside Weak,4.95,2282,,,,0.82,0.315
+I Formation Big HB Counter Weak,4.92,107,,,,0.88,-0.002
+Shotgun Normal FL Slant,4.91,526,4.06,1.69,4.12,1.69,-0.077
+Shotgun 5 Wide Parallel Slants,4.84,453,3.5,3.48,1.09,0.87,0.256
+Singleback Normal WR Quick In,4.82,685,4.01,2.15,2.44,1.0,0.334
+Weak I Big HB Lead Toss Weak,4.8,275,,,,1.08,0.498
+Strong I Big HB Dive Strong,4.74,231,,,,1.28,0.779
+Strong I Big HB Off Tackle,4.72,137,,,,1.45,-0.238
+Shotgun 2 RB 3 WR Shotgun Sweep,4.7,1713,,,,0.46,0.36
+I Formation Normal HB Blast,4.7,2631,,,,0.52,0.188
+Singleback Big Corner Ins,4.67,302,1.02,3.93,11.15,1.31,-0.049
+I Formation 3WR HB Inside Strong,4.65,1890,,,,0.05,0.3
+Weak I Big HB Off Tackle Strong,4.64,128,,,,1.54,0.658
+I Formation Big HB Strong,4.62,69,,,,2.74,-0.186
+Singleback Normal HB Counter Weak,4.6,2136,,,,0.69,0.545
+Weak I Normal Skinny Posts,4.56,1525,3.99,2.01,1.36,1.36,-0.349
+Shotgun Normal TE Out,4.55,971,3.42,2.84,1.72,1.52,0.011
+Split Backs 3 Wide Drag In,4.48,275,2.64,2.52,6.12,0.72,-1.329
+I Formation Power HB Strong Outside,4.45,1665,,,,0.95,0.116
+Strong I Normal Short Attack,4.43,300,3.67,2.3,1.32,0.99,-0.321
+Shotgun 5 Wide Slot Cross,4.39,141,2.1,3.45,5.52,0.69,-0.964
+Singleback Normal SE Quick Hit,4.37,506,3.96,1.95,0.58,1.56,0.139
+Shotgun 2 RB 3 WR Shotgun Dive,4.36,900,,,,,0.618
+Shotgun 2 RB 3 WR WR Curl,4.35,695,2.75,3.73,1.15,0.72,-0.719
+Shotgun Normal Slot Drag,4.35,169,,3.51,,,-0.272
+Split Backs Normal Skinny Post Corner,4.27,258,4.06,1.52,0.76,1.14,0.385
+Singleback Empty 4 Curl Flats,4.24,88,3.27,2.27,2.27,1.14,0.015
+Strong I Normal HB Dive Strong,4.15,817,,,,0.83,0.154
+Split Backs Normal TE Curl,4.12,66,,6.06,,1.52,-0.96
+Strong I Normal WR Post TE Out,4.09,972,2.97,1.53,5.11,0.51,0.15
+Shotgun 4 Wide In and Out,4.09,67,-1.66,5.97,14.93,,-1.986
+I Formation Normal HB Draw,4.07,1012,,,,,-0.057
+Singleback Big HB Inside Strong,4.06,855,,,,,0.352
+Split Backs Normal Weak Pitch Sweep,4.01,198,,,,0.5,0.257
+Goal Line Normal HB Toss Strong,4.0,1173,,,,0.58,-0.36
+I Formation 3WR Slot Corner Short,3.99,484,1.92,4.29,1.43,0.61,-0.296
+Singleback Big Waggle Post,3.95,77,-2.54,1.3,32.47,1.3,-0.049
+Shotgun 2 RB 3 WR RB Curls,3.93,747,1.87,3.59,3.46,0.27,-0.824
+I Formation Twin WR Slot Hitch,3.92,129,,,3.08,,0.577
+Singleback Slot Strong TE Slot Curls,3.91,52,2.1,3.7,1.85,1.85,-1.656
+Singleback Slot Strong Skinny Posts,3.87,262,2.21,3.42,1.9,1.14,-0.333
+Shotgun 5 Wide Middle Curls,3.85,81,,4.88,,2.44,-0.305
+I Formation Normal Strong Flood,3.84,80,,,,,-0.468
+Singleback Slot Strong Post Curls,3.83,148,,0.68,,0.68,-0.673
+Goal Line Normal FB Dive,3.81,65,,,,,0.458
+Strong I Big HB Toss Weak,3.81,68,,,,1.43,0.053
+Strong I Big WR Quick In,3.81,153,3.66,1.3,0.65,1.3,0.209
+Goal Line Normal HB Outside Strong,3.79,1227,,,,0.48,-0.654
+Split Backs Normal Strong Pitch Sweep,3.79,87,,,,,0.217
+Goal Line Normal HB Off Tackle,3.79,1099,,,,0.8,-1.004
+Split Backs 3 Wide Dive Right,3.77,463,,,,,0.236
+Singleback Normal WR Post,3.76,268,2.36,2.22,4.07,0.74,-0.446
+Strong I Big HB Swing,3.74,91,,,1.09,,0.086
+I Formation Power HB Dive Weak,3.7,340,,,,1.16,-0.884
+Singleback Empty 4 Short Posts,3.66,195,0.21,5.61,4.08,3.06,-1.094
+Singleback Slot Strong TE Corner,3.65,198,-0.26,5.05,8.08,0.51,-1.282
+Split Backs 3 Wide Off Tackle Strong,3.64,612,,,,,-0.177
+Singleback Big Off Tackle Strong,3.59,737,,,,0.13,0.084
+Strong I Normal HB Off Tackle Strong,3.58,1792,,,,0.11,-0.314
+Shotgun 2 RB 3 WR FB In,3.56,640,-0.24,4.04,10.42,0.62,-0.942
+Weak I Normal FB Inside Weak,3.53,303,,,,,-0.22
+I Formation Normal PA Outside Curls,3.49,839,0.71,3.74,6.19,0.82,-1.251
+Shotgun Normal Short Attack,3.44,349,-0.77,5.98,6.55,0.28,-0.327
+I Formation Normal FL Hook,3.43,926,2.24,2.15,2.9,0.65,-1.145
+Shotgun Normal HB Sweep,3.42,561,,,,0.18,-0.057
+I Formation Normal TE Flag,3.39,177,-2.56,3.37,23.03,3.37,-1.343
+Singleback 4 Wide WR Crosses,3.35,40,,,2.5,,-1.922
+Singleback Slot Strong Slot Curl,3.34,37,,,,,-0.622
+Weak I Big HB Dive Strong,3.29,159,,,,,0.135
+I Formation Power HB Sweep Weak,3.28,624,,,,0.95,-0.503
+Strong I Big TE Drag,3.26,34,0.98,2.94,5.88,2.94,-0.556
+I Formation Normal HB Counter,3.24,545,,,,,-0.47
+Shotgun Normal HB Dive,3.22,741,,,,,0.133
+Strong I Normal Counter Strong,3.21,448,,,,,-0.778
+I Formation 3WR Weak Flood,3.2,151,,0.65,,,-1.123
+Shotgun 5 Wide WR Curls,3.19,37,0.04,5.41,2.7,,0.209
+Empty 4 Wide Spread Flats,3.19,183,1.68,3.23,1.08,1.08,-1.026
+Weak I Normal HB Inside Strong,3.19,706,,,,0.28,-0.43
+I Formation 3WR SE Post,3.18,731,0.71,3.95,3.67,0.82,-1.137
+Weak I Big HB Counter Weak,3.18,100,,,,,0.007
+Singleback Normal Post Corner,3.16,235,-1.86,4.22,15.61,0.84,-1.092
+I Formation Big HB Outside Weak,3.15,99,,,,,-0.346
+Goal Line Normal PA TE Drag,3.13,968,2.03,2.65,0.71,0.82,-1.113
+Singleback Normal Hitch Corner,3.12,76,,2.63,,,0.518
+I Formation Normal Curl & Post,3.11,353,0.03,3.64,7.56,1.12,-0.241
+Goal Line Normal HB Pitch Weak,3.11,1295,,,,0.08,-0.827
+Shotgun Normal Double Outs,3.1,789,1.94,2.89,0.25,0.38,-0.952
+I Formation Twin WR HB Toss Weak,3.04,112,,,,,0.054
+Goal Line Normal HB Dive,3.03,1025,,,,0.66,-0.46
+Shotgun Normal Post Flags,3.03,156,2.75,1.27,0.63,0.63,-0.389
+Split Backs Normal HB Off Tackle,3.02,90,,,,1.09,0.539
+Singleback Slot Strong HB Flat,3.02,106,2.3,1.89,0.94,0.94,-0.817
+I Formation Normal Cross In,3.0,204,2.84,0.95,0.95,,-0.251
+Split Backs Normal Curls,2.98,40,1.67,2.38,2.38,,0.054
+Singleback Normal Quick Looks,2.97,37,,2.7,,,-1.877
+I Formation Power HB Draw,2.96,266,,,,0.74,-1.04
+Shotgun 4 Wide All Curls,2.94,47,,,,,0.526
+Strong I Normal Quick Hooks,2.94,217,1.52,3.21,0.46,0.46,-0.973
+Weak I Normal Fullback Counter Weak,2.93,560,,,,0.17,-0.206
+Singleback Big PA Curls,2.87,168,-0.58,2.96,11.24,,-0.362
+Split Backs 3 Wide RB Curls,2.87,61,-1.8,1.64,21.31,,-0.262
+Goal Line Normal HB Weak,2.86,981,,,,0.59,-1.113
+Shotgun 2 RB 3 WR FL Drag,2.85,466,2.05,2.14,0.43,0.43,-1.315
+Singleback Slot Strong Overload Strong,2.84,208,-0.8,3.83,9.57,,-0.524
+Singleback Empty 4 Slot Crosses,2.81,116,-5.42,3.45,33.62,3.45,-0.828
+Split Backs 3 Wide WR2 Deep Post,2.77,69,-1.74,4.23,12.68,1.41,-0.615
+Singleback Big HB Curls TE Deep,2.74,204,0.86,1.94,6.31,0.97,-0.043
+Split Backs 3 Wide WR Post,2.7,142,-1.34,2.78,14.58,0.69,-0.901
+I Formation Twin WR HB Counter Middle,2.67,38,,,,,1.413
+Shotgun 5 Wide FL Hook,2.62,64,-1.23,6.25,3.12,,-1.579
+I Formation Normal HB Toss Weak,2.61,140,,,,,-0.903
+I Formation Normal SE Post,2.61,681,-4.31,2.93,28.4,0.88,-1.045
+I Formation Normal FB Middle,2.59,167,0.61,1.19,8.93,,-0.551
+I Formation Twin WR HB Toss Strong,2.58,72,,,,,-1.973
+I Formation Normal HB Toss Strong,2.53,181,,,,,-0.645
+Split Backs 3 Wide Slot Drag,2.49,106,1.69,1.85,0.93,,-0.07
+I Formation 3WR Outside Curls,2.45,58,-0.17,3.45,5.17,,-0.449
+Strong I Normal HB Sweep Strong,2.43,95,,,,,-0.587
+Shotgun 2 RB 3 WR WR Hooks,2.42,488,-0.56,4.69,3.27,0.61,-1.239
+Split Backs Normal Overload Strong,2.24,71,-0.69,2.82,8.45,,-0.801
+I Formation Twin WR Hook Ins,2.2,99,-0.16,3.0,5.0,1.0,-0.3
+Singleback Big TE Flat Curl,2.14,168,-2.25,2.94,15.29,,-1.543
+Strong I Big HB Toss Strong,2.09,52,,,,,0.03
+I Formation Twin WR Slot Out,2.05,56,,,25.0,1.79,-1.594
+Split Backs 3 Wide Off Tackle Weak,2.02,144,,,,,-0.836
+I Formation Power Play Action Bomb,2.0,242,-7.11,2.07,41.32,3.31,-1.906
+Shotgun 4 Wide Slot Curl,1.94,34,-4.73,8.82,8.82,2.94,-1.301
+Singleback Big HB Pitch Weak,1.92,190,,,,0.52,-1.341
+Singleback 4 Wide Post and Drag,1.81,107,-3.75,2.78,21.3,0.93,-0.109
+Weak I Big TE Drag,1.76,90,0.55,1.11,4.44,,-0.368
+Shotgun Normal HB Delay,1.74,425,,,,,-1.298
+I Formation 3WR Slot Corner Long,1.7,736,-4.42,3.37,22.24,0.4,-1.21
+Strong I Normal HB Power Strong,1.55,113,,,,,-0.025
+Strong I Normal FB Trap Weak,1.52,59,,,,,-1.989
+Singleback Slot Strong Off Tackle Strong,1.48,178,,,,,-0.739
+Weak I Big TE Deep Post,1.47,37,-7.71,2.63,39.47,5.26,-0.876
+I Formation Normal PA Streaks,1.38,491,-8.0,2.23,41.58,0.81,-1.482
+Singleback Empty 4 TE Drag WR Mix,1.13,44,,,19.57,2.17,-2.338
+Singleback 4 Wide Clear Center,0.98,44,-5.19,6.82,11.36,,-2.087
+Singleback Normal Deep Corners,0.79,38,-4.84,2.63,21.05,,-3.035
+Empty 4 Wide Spread Deep Corner Post,0.5,44,-8.04,6.82,22.73,,-2.143
+I Formation 3WR WR Post,0.05,85,-5.12,3.53,15.29,,-2.022
+Shotgun Normal Deep Weak In and Out,-0.03,329,-8.28,3.33,31.21,1.52,-1.471
+Singleback Normal FL Drag,-0.55,38,-13.29,5.26,47.37,,-1.57
+Strong I Normal PA All Go,-0.81,35,-13.41,2.7,54.05,,-3.229
+I Formation 3WR HB Toss Strong,-1.12,523,,,,0.19,-1.795
+Singleback Normal FL Go,-1.51,35,-14.39,5.71,45.71,,-1.666
+Shotgun 2 RB 3 WR Strong Deep,-1.65,228,-13.29,5.65,39.57,,-1.422
+Singleback Big WR Streaks,-1.79,105,-11.77,0.94,45.28,,-2.588
+I Formation Normal TE Out,-2.15,61,,,55.74,,-2.629
+Weak I Normal All Go,-4.04,47,-19.85,2.08,68.75,,-2.244
+Shotgun 5 Wide 5 WR All Go,-6.26,46,-26.21,2.17,86.96,2.17,-3.337
+Singleback 4 Wide Quick Outs,9.47,32,,,6.25,3.12,1.637
+I Formation Power Play Action HB Downfield,9.13,238,8.31,3.31,3.31,5.79,1.198
+I Formation Twin WR Hard Slants,8.35,114,7.14,3.39,4.24,4.24,0.599
+Singleback Big Ins and Outs,8.25,120,6.73,5.0,0.83,5.0,0.858
+I Formation Normal FL Hitch,8.21,333,8.43,2.07,0.89,3.85,0.009
+Shotgun Normal HB Flare,8.13,479,7.52,1.66,6.22,3.94,0.222
+I Formation 3WR Slot Short WR Deep,7.74,188,6.87,3.16,2.63,4.21,0.183
+Strong I Big TE Post,7.41,78,3.76,3.85,14.1,1.28,0.44
+I Formation Normal Max Protect,7.04,134,6.12,2.19,5.11,3.65,0.312
+Strong I Big Backfield Drag,7.03,58,,,6.9,5.17,1.066
+I Formation Twin WR Quick Outs,6.81,79,,,3.8,5.06,1.07
+Weak I Normal WR Corner TE Middle,6.69,241,5.38,2.07,7.02,1.65,0.256
+I Formation Power PA Flats,6.49,216,5.06,2.27,6.82,2.73,0.311
+I Formation 3WR PA Fullback Flat,6.33,66,,1.49,,2.99,0.137
+Weak I Big WR Post TE Out,6.29,58,2.38,5.17,10.34,,-0.0
+Split Backs 3 Wide WR Quick Out,6.28,97,,4.08,,4.08,0.171
+Singleback Normal TE Quick Out,6.25,139,5.79,2.14,2.14,1.43,0.795
+Singleback Normal HB Release Mid,6.09,118,1.43,8.4,4.2,3.36,0.473
+I Formation Normal SE Post,6.02,61,0.34,4.69,20.31,3.12,-0.449
+I Formation 3WR FL Post,5.96,117,5.45,0.85,5.93,1.69,-0.518
+I Formation 3WR HB Inside Weak,5.92,230,,,,0.43,0.317
+Singleback Normal WR Quick In,5.65,48,,6.12,,,0.296
+I Formation 3WR Backfield Flats,5.6,57,,,5.26,1.75,0.065
+Shotgun 2 RB 3 WR RB Curls,5.51,73,2.5,5.48,4.11,2.74,-0.461
+Singleback Normal HB Dive Weak,5.47,123,,,,,1.018
+Split Backs 3 Wide Dive Left,5.44,79,,,,,1.06
+Singleback Slot Strong HB Strong Inside,5.4,94,,,,1.98,0.167
+I Formation 3WR WR Out,5.34,166,3.5,4.65,0.58,1.16,0.419
+Singleback Normal HB Dive Strong,5.23,94,,,,,1.086
+I Formation Normal PA Fullback Flat,5.22,145,4.5,2.04,2.72,2.04,-0.949
+Singleback Normal HB Inside Weak,5.13,120,,,,,1.196
+Singleback Normal HB Counter Weak,5.11,138,,,,0.71,0.52
+Singleback Big Corner Ins,5.09,68,2.87,1.47,11.76,1.47,1.023
+Singleback Big WR Deep,5.01,184,2.43,1.09,14.67,1.63,0.65
+Singleback Slot Strong HB Counter,4.92,115,,,,1.69,-0.531
+Shotgun 5 Wide Parallel Slants,4.91,46,,,,,-0.142
+Shotgun Normal TE Out,4.91,67,3.0,4.35,1.45,1.45,-0.597
+Weak I Normal HB Inside Weak,4.85,184,,,,1.06,-0.052
+I Formation Normal HB Blast,4.83,241,,,,0.4,0.135
+Shotgun 2 RB 3 WR Shotgun Sweep,4.8,127,,,,,-0.188
+I Formation Normal PA Outside Curls,4.74,66,,,3.03,,-0.536
+Singleback Normal SE Quick Hit,4.58,52,,,,,0.799
+I Formation 3WR HB Inside Strong,4.51,156,,,,,0.007
+Shotgun 2 RB 3 WR Shotgun Dive,4.46,69,,,,,0.387
+Shotgun 2 RB 3 WR FB In,4.22,51,2.31,1.96,7.84,1.96,-0.401
+Goal Line Normal HB Toss Strong,4.18,101,,,,1.94,-0.583
+Weak I Normal HB Inside Strong,4.08,51,,,,1.92,0.523
+I Formation Normal HB Draw,4.07,101,,,,,0.049
+Singleback Big Off Tackle Strong,4.04,205,,,,,0.414
+I Formation Normal HB Counter,4.03,38,,,,,0.83
+Shotgun 2 RB 3 WR WR Curl,3.97,61,,,1.64,,-0.19
+Strong I Normal HB Dive Strong,3.94,66,,,,1.49,-0.442
+Singleback Normal FL Post,3.93,65,1.13,2.99,8.96,,-0.213
+Strong I Normal HB Off Tackle Strong,3.89,150,,,,,-0.32
+Singleback Big HB Inside Strong,3.86,172,,,,,0.426
+Goal Line Normal HB Outside Strong,3.82,102,,,,,-0.565
+Goal Line Normal PA TE Drag,3.82,90,,3.26,,1.09,-1.124
+Shotgun Normal FL Slant,3.72,35,,,2.78,,-0.709
+Split Backs 3 Wide Slot Post,3.64,47,0.11,2.13,14.89,4.26,0.377
+Shotgun Normal HB Dive,3.63,51,,,,,0.218
+I Formation Normal HB Dive,3.62,203,,,,,0.231
+Goal Line Normal HB Pitch Weak,3.46,124,,,,,-0.696
+Strong I Normal WR Post TE Out,3.43,80,0.91,2.47,8.64,1.23,-0.36
+Split Backs 3 Wide Off Tackle Strong,3.35,55,,,,,-0.557
+I Formation Power HB Strong Outside,3.23,135,,,,,0.162
+Goal Line Normal HB Dive,3.11,117,,,,0.83,-0.43
+Singleback Big HB Curls TE Deep,3.09,34,-1.59,5.88,8.82,,-0.897
+I Formation Normal FL Hook,3.08,74,1.1,2.6,5.19,1.3,-0.152
+I Formation Power HB Dive Weak,3.05,38,,,,,-0.367
+I Formation 3WR SE Post,3.02,56,0.76,3.57,3.57,,-0.799
+Weak I Normal Skinny Posts,3.01,117,2.43,1.68,0.84,0.84,-0.819
+I Formation Power HB Sweep Weak,2.91,51,,,,1.89,-1.15
+Split Backs 3 Wide Dive Right,2.91,43,,,,,1.599
+Singleback Big PA Curls,2.9,39,-2.52,7.5,7.5,,-1.524
+I Formation 3WR Slot Corner Short,2.86,42,1.52,2.38,2.38,,0.082
+Weak I Normal Fullback Counter Weak,2.84,56,,,,,0.571
+Strong I Normal Counter Strong,2.83,52,,,,,0.909
+Goal Line Normal HB Weak,2.49,85,,,,,-1.159
+Shotgun Normal HB Delay,2.47,31,,,,,0.433
+Goal Line Normal HB Off Tackle,2.34,94,,,,,-1.936
+Shotgun Normal HB Sweep,2.18,44,,,,,-0.846
+Singleback Big TE Flat Curl,1.93,45,,,11.11,,-0.115
+Shotgun Normal Double Outs,1.85,62,0.94,1.61,1.61,,-0.394
+Shotgun 2 RB 3 WR WR Hooks,1.74,42,,,2.38,,-0.187
+I Formation 3WR Slot Corner Long,1.59,68,-4.56,1.47,27.94,,-1.802
+I Formation Normal PA Streaks,1.43,46,,,39.13,,-0.905
+Shotgun 2 RB 3 WR FL Drag,0.76,58,,,1.72,,-1.219
+I Formation 3WR HB Toss Strong,-2.24,40,,,,,-1.681
+Strong I Big TE Post,9.12,711,6.9,3.6,9.41,5.12,1.123
+I Formation Big HB Counter Weak,8.72,76,,,,5.26,0.694
+I Formation Power Play Action HB Downfield,8.03,2207,7.06,2.65,4.94,4.35,0.599
+Shotgun Normal HB Flare,7.9,4251,6.48,2.81,6.6,3.51,0.346
+I Formation Twin WR Hard Slants,7.8,1236,6.66,3.11,4.15,3.35,0.463
+Strong I Big Backfield Drag,7.79,538,7.15,1.46,6.58,3.84,1.237
+Weak I Big WR Post TE Out,7.76,444,6.36,2.68,6.7,2.23,0.786
+I Formation Normal FL Hitch,7.02,2744,6.85,2.05,1.76,3.56,0.303
+Singleback Normal HB Release Mid,6.93,922,3.89,5.91,4.41,2.37,0.639
+I Formation Power PA Flats,6.84,1884,6.28,1.43,5.39,2.96,0.436
+I Formation 3WR Slot Short WR Deep,6.74,2060,4.96,3.13,6.26,1.97,0.26
+Split Backs Normal Posts,6.73,372,6.16,2.39,2.39,1.33,0.412
+I Formation Twin WR Quick Outs,6.7,743,5.9,3.31,0.79,2.52,0.702
+Singleback Normal TE Quick Out,6.47,1155,5.77,2.48,2.57,2.65,0.881
+Split Backs Normal WR Post,6.45,136,1.6,6.57,10.95,6.57,0.47
+I Formation 3WR HB Inside Weak,6.36,2460,,,,1.0,0.326
+Weak I Normal WR Corner TE Middle,6.34,2044,4.91,2.19,6.9,1.8,0.258
+I Formation 3WR FL Post,6.12,1292,5.17,1.84,5.37,1.53,0.664
+I Formation 3WR WR Out,6.03,1763,5.51,2.64,0.67,1.46,0.523
+Singleback Empty 4 Short Posts,6.01,166,5.9,1.79,1.19,2.38,-0.509
+I Formation 3WR Backfield Flats,5.92,422,4.58,2.81,4.22,2.81,0.554
+Singleback Normal PA Rollout,5.86,206,3.16,2.42,12.08,0.48,0.468
+I Formation Normal Max Protect,5.79,1306,4.12,2.58,6.44,1.59,0.322
+Singleback Slot Strong HB Checkdown,5.72,231,2.69,3.83,9.36,2.98,0.481
+Singleback Big Ins and Outs,5.63,624,4.46,3.63,0.63,1.58,0.076
+I Formation Big TE Sneak Out,5.62,155,4.69,3.21,0.64,1.28,0.123
+Singleback Empty 4 TE Corner,5.55,114,1.61,4.35,12.17,2.61,-0.463
+Shotgun 5 Wide Slot Drag,5.53,112,4.34,3.54,0.88,1.77,-0.071
+I Formation 3WR PA Fullback Flat,5.46,713,4.96,2.51,0.42,2.37,-0.175
+Singleback Normal HB Inside Weak,5.46,1204,,,,0.49,0.686
+Singleback 4 Wide Quick Outs,5.33,329,4.05,2.71,3.61,1.51,0.458
+Singleback Slot Strong HB Counter,5.33,1246,,,,0.63,0.157
+Shotgun Normal TE Out,5.3,606,4.69,2.3,1.48,1.64,0.375
+Split Backs 3 Wide WR Quick Out,5.25,1003,4.73,1.97,1.97,1.57,0.264
+Weak I Big HB Lead Toss Weak,5.25,216,,,,0.91,1.224
+Strong I Normal Short Attack,5.21,258,,,0.38,1.15,-0.34
+Singleback Slot Strong HB Strong Inside,5.18,780,,,,0.75,0.468
+Weak I Normal HB Inside Weak,5.18,1830,,,,1.08,0.366
+Singleback Big Corner Ins,5.15,246,2.81,2.01,10.84,1.2,0.454
+I Formation Normal PA Fullback Flat,5.15,1461,4.36,2.5,1.62,2.36,-0.494
+Singleback Normal HB Dive Weak,5.09,1168,,,,0.5,0.864
+Shotgun Normal FL Slant,5.07,319,4.1,1.86,4.33,1.55,0.664
+Shotgun 5 Wide Parallel Slants,5.07,390,4.62,2.26,0.5,1.51,0.07
+Split Backs 3 Wide Dive Left,5.03,906,,,,,0.219
+Singleback Big WR Deep,5.01,849,1.11,3.62,13.65,2.92,0.104
+I Formation Twin WR Hook Ins,4.97,78,4.7,1.27,2.53,,-0.029
+Split Backs 3 Wide Slot Post,4.9,628,2.39,2.52,9.92,1.42,-0.162
+Weak I Normal Skinny Posts,4.87,1189,4.35,2.07,1.24,1.49,-0.156
+Strong I Big TE Drag,4.84,37,,,5.41,2.7,1.128
+Singleback Empty 4 Curl Flats,4.84,55,3.99,1.82,3.64,,-0.652
+Singleback Normal HB Counter Weak,4.83,1388,,,,0.57,0.626
+Singleback Normal FL Post,4.83,463,3.17,2.12,6.78,1.69,0.611
+I Formation Normal HB Dive,4.79,1862,,,,0.89,0.167
+I Formation 3WR HB Inside Strong,4.74,1655,,,,,0.226
+Split Backs Normal Skinny Post Corner,4.72,210,4.74,1.39,0.46,1.39,0.82
+Singleback Normal HB Dive Strong,4.71,791,,,,0.12,0.748
+I Formation Normal HB Blast,4.64,2206,,,,0.89,-0.034
+Split Backs 3 Wide Drag In,4.63,253,3.12,1.57,7.45,0.78,-0.967
+Shotgun 4 Wide In and Out,4.58,65,1.19,4.62,7.69,,0.833
+Singleback Normal SE Quick Hit,4.5,375,3.45,2.89,1.05,1.58,0.11
+I Formation Normal HB Draw,4.48,777,,,,0.12,0.244
+Singleback Normal WR Quick In,4.48,479,3.95,2.05,1.02,0.82,0.345
+Empty 4 Wide Spread Corner Post,4.45,164,1.8,3.66,6.71,0.61,-0.418
+Singleback Normal Quick Slant,4.43,306,4.35,0.64,2.89,2.57,0.179
+Strong I Big HB Toss Weak,4.38,46,,,,,0.149
+Shotgun 2 RB 3 WR RB Curls,4.35,681,1.96,4.22,3.63,0.87,-1.142
+Shotgun 2 RB 3 WR Shotgun Sweep,4.35,1679,,,,0.12,0.25
+Singleback Slot Strong TE Slot Curls,4.3,45,2.12,4.35,2.17,,0.129
+Split Backs Normal TE Curl,4.3,56,,1.79,,,-0.212
+Weak I Big HB Dive Strong,4.29,134,,,,2.21,1.071
+Strong I Normal WR Post TE Out,4.28,740,3.39,1.2,5.09,0.54,-0.066
+Singleback Slot Strong Post Curls,4.26,106,2.68,3.74,0.93,,0.034
+Split Backs 3 Wide RB Curls,4.24,62,0.64,1.59,17.46,1.59,0.757
+Strong I Normal HB Dive Strong,4.24,631,,,,0.62,0.209
+Shotgun 2 RB 3 WR Shotgun Dive,4.24,915,,,,,0.396
+I Formation Power HB Strong Outside,4.22,1308,,,,0.9,0.227
+Singleback Slot Strong TE Corner,4.19,127,1.12,3.91,7.81,1.56,0.046
+Strong I Big HB Dive Strong,4.13,190,,,,0.52,0.743
+I Formation Twin WR HB Toss Weak,4.11,90,,,,,-1.229
+Strong I Big HB Off Tackle,4.1,118,,,,1.68,0.136
+Singleback Big HB Inside Strong,4.09,707,,,,0.28,0.201
+I Formation 3WR Slot Corner Short,4.08,493,3.17,2.41,1.41,1.01,-0.136
+Strong I Big HB Swing,4.02,59,3.46,1.69,1.69,,0.658
+Singleback Normal Slot WR Cross,3.94,148,-1.54,7.33,9.33,0.67,0.403
+Shotgun 5 Wide Slot Cross,3.93,142,0.52,4.9,6.29,1.4,-0.927
+Shotgun Normal HB Sweep,3.92,365,,,,,0.076
+Goal Line Normal HB Outside Strong,3.91,842,,,,0.58,-0.928
+Shotgun 2 RB 3 WR WR Curl,3.9,713,2.46,3.08,1.82,0.7,-0.778
+Split Backs 3 Wide Dive Right,3.89,417,,,,0.24,0.279
+Singleback 4 Wide WR Crosses,3.88,32,,,6.25,3.12,-0.691
+I Formation Normal Curl & Post,3.86,289,1.87,2.76,5.52,0.69,0.145
+I Formation Power HB Dive Weak,3.83,286,,,,0.7,-0.169
+Shotgun Normal Short Attack,3.76,239,2.3,2.05,4.92,0.41,0.296
+Shotgun 5 Wide Middle Curls,3.72,59,,5.0,,1.67,-0.7
+I Formation Normal FL Hook,3.71,747,3.26,1.33,1.99,0.53,-0.849
+Singleback 4 Wide Post and Drag,3.66,91,0.87,2.2,10.99,1.1,-0.647
+Goal Line Normal HB Toss Strong,3.64,937,,,,0.42,-0.545
+Split Backs 3 Wide WR Post,3.62,124,1.15,4.0,4.0,0.8,-0.033
+Singleback Normal WR Post,3.62,182,1.84,2.72,4.35,,-0.252
+Goal Line Normal HB Off Tackle,3.62,905,,,,1.4,-0.867
+Singleback Big Off Tackle Strong,3.61,604,,,,,-0.298
+Strong I Normal HB Off Tackle Strong,3.59,1384,,,,,-0.019
+Shotgun Normal Post Flags,3.55,100,0.26,6.0,2.0,1.0,0.127
+I Formation Twin WR Slot Hitch,3.54,104,2.35,2.86,0.95,,0.392
+Split Backs Normal Weak Pitch Sweep,3.49,167,,,,,-0.631
+I Formation Normal Cross In,3.48,173,3.03,1.72,0.57,,-0.543
+Shotgun Normal HB Dive,3.43,518,,,,,0.029
+I Formation Big HB Strong,3.43,56,,,,,-0.463
+Split Backs 3 Wide Off Tackle Strong,3.42,653,,,,0.3,-0.366
+Singleback Slot Strong Overload Strong,3.42,140,-0.44,4.26,9.93,0.71,-0.607
+I Formation Normal TE Flag,3.38,146,-0.37,0.67,20.13,,-0.483
+I Formation Power HB Sweep Weak,3.35,512,,,,1.35,-0.201
+Weak I Normal HB Inside Strong,3.35,548,,,,0.54,-0.547
+I Formation Normal PA Outside Curls,3.35,670,0.42,4.13,5.6,0.29,-1.07
+Shotgun 2 RB 3 WR FL Drag,3.35,417,1.83,3.57,0.24,0.95,-1.504
+Weak I Normal FB Inside Weak,3.34,221,,,,0.45,0.224
+I Formation 3WR Outside Curls,3.33,35,-0.44,5.56,5.56,2.78,-0.996
+Goal Line Normal HB Pitch Weak,3.33,956,,,,0.61,-0.756
+Goal Line Normal PA TE Drag,3.31,770,2.39,2.56,0.26,0.13,-1.143
+Shotgun Normal Double Outs,3.27,537,2.01,2.96,0.74,0.92,-0.694
+I Formation Normal HB Counter,3.25,429,,,,,-0.141
+Goal Line Normal HB Weak,3.25,734,,,,0.81,-1.02
+Strong I Normal Counter Strong,3.24,366,,,,,-0.772
+Weak I Big Off Tackle Weak,3.23,115,,,,,-0.212
+I Formation 3WR Weak Flood,3.22,199,3.47,0.5,0.5,,-0.284
+Singleback Normal Hitch Corner,3.12,48,,,2.08,,0.237
+Split Backs Normal Strong Pitch Sweep,3.12,67,,,,,0.027
+Strong I Big WR Quick In,3.12,118,2.57,1.67,0.83,,0.395
+I Formation Twin WR Slot Out,3.12,48,-4.26,6.0,22.0,2.0,0.363
+Strong I Normal Quick Hooks,3.07,191,1.94,2.56,1.03,,-0.869
+I Formation Normal SE Post,3.04,520,-4.0,3.44,27.92,0.96,-1.031
+Singleback Normal Post Corner,3.04,150,-0.49,2.0,14.67,,-0.712
+Weak I Normal Fullback Counter Weak,3.03,455,,,,,-0.407
+Singleback Big PA Curls,2.99,147,0.88,2.03,7.43,,-1.168
+Shotgun 2 RB 3 WR FB In,2.99,601,-0.16,2.66,10.8,0.66,-1.119
+I Formation Normal FB Middle,2.98,129,0.66,1.54,10.0,,-0.34
+Shotgun Normal Slot Drag,2.98,127,1.39,3.12,1.56,,-0.807
+I Formation 3WR SE Post,2.97,662,1.32,3.15,1.8,0.75,-0.883
+Shotgun 2 RB 3 WR WR Hooks,2.92,482,1.4,3.1,1.24,0.21,-1.271
+Goal Line Normal FB Dive,2.92,59,,,,,0.445
+Split Backs Normal Overload Strong,2.88,67,1.67,1.49,4.48,1.49,-1.033
+I Formation Power HB Draw,2.81,189,,,,,-1.01
+I Formation Normal Strong Flood,2.77,60,0.7,3.28,3.28,,0.345
+Singleback Big TE Flat Curl,2.76,138,0.33,1.42,10.64,0.71,-1.747
+Shotgun 4 Wide Slot Drag,2.73,61,-0.6,4.84,4.84,,-1.477
+Weak I Big HB Off Tackle Strong,2.71,105,,,,,-0.39
+Empty 4 Wide Spread Flats,2.62,145,-1.29,6.04,4.03,0.67,-0.737
+Goal Line Normal HB Dive,2.56,888,,,,0.44,-0.654
+Singleback Slot Strong Skinny Posts,2.52,184,0.43,3.78,1.62,0.54,-0.879
+Strong I Normal HB Sweep Strong,2.49,83,,,,,-0.289
+I Formation Big HB Outside Weak,2.49,95,,,,,-1.105
+Weak I Big HB Counter Weak,2.48,62,,,,,-0.152
+Split Backs Normal HB Off Tackle,2.47,64,,,,,0.382
+Singleback Slot Strong HB Flat,2.47,89,1.39,2.25,1.12,,0.503
+Split Backs 3 Wide Slot Drag,2.38,110,1.59,1.8,0.9,,-0.488
+Split Backs 3 Wide Off Tackle Weak,2.36,183,,,,,-0.301
+I Formation Twin WR HB Counter Middle,2.33,48,,,,,-0.395
+I Formation Normal HB Toss Strong,2.28,145,,,,,-1.412
+Singleback Big HB Curls TE Deep,2.23,152,-1.9,4.58,9.15,,-0.842
+Shotgun 5 Wide FL Hook,2.14,56,-1.0,5.36,1.79,,-0.838
+Weak I Big TE Drag,2.0,78,,2.5,,,-0.131
+Strong I Normal HB Power Strong,1.94,113,,,,,-0.636
+I Formation 3WR Deep Corner/Post,1.82,39,-6.81,2.5,37.5,,-2.649
+I Formation Twin WR HB Toss Strong,1.8,45,,,,,-1.219
+I Formation Power Play Action Bomb,1.7,197,-8.76,4.0,42.0,1.0,-1.351
+Singleback Big HB Pitch Weak,1.68,159,,,,,-0.642
+Strong I Big HB Toss Strong,1.65,39,,,,,-1.059
+I Formation 3WR Slot Corner Long,1.61,685,-5.63,4.51,24.27,0.29,-1.621
+I Formation Normal PA Streaks,1.56,402,-8.62,3.98,40.55,1.0,-1.934
+Shotgun Normal HB Delay,1.54,294,,,,,-1.064
+I Formation Normal HB Toss Weak,1.52,128,,,,,-0.339
+Singleback Empty 4 TE Drag WR Mix,1.47,47,-1.64,2.13,10.64,,-1.728
+Strong I Normal FB Trap Weak,1.38,39,,,,,-1.332
+Empty 4 Wide Spread Deep Corner Post,1.36,44,-7.0,4.55,29.55,4.55,-0.314
+Singleback Slot Strong Off Tackle Strong,1.34,88,,,,,-0.247
+Singleback 4 Wide Clear Center,0.89,35,,,14.29,,-1.981
+Split Backs 3 Wide WR2 Deep Post,0.88,71,-7.01,6.94,19.44,,-1.298
+Singleback Big Waggle Post,0.83,71,-10.94,4.17,47.22,2.78,-0.337
+Singleback Empty 4 Slot Crosses,0.55,85,-9.69,4.71,37.65,1.18,-0.985
+Singleback Big WR Streaks,0.01,106,-7.95,2.78,31.48,,-1.605
+I Formation 3WR WR Post,-0.5,110,-8.42,5.45,22.73,1.82,-2.134
+Shotgun Normal Deep Weak In and Out,-1.09,202,-12.01,5.94,35.64,,-1.845
+I Formation 3WR HB Toss Strong,-1.17,475,,,,,-1.608
+Strong I Big TE Deep Corner,-1.36,33,-13.15,6.06,39.39,,-0.675
+Shotgun 2 RB 3 WR Strong Deep,-1.74,211,-12.61,3.79,41.23,,-1.974
+Weak I Normal All Go,-3.02,52,-16.59,1.85,59.26,,-2.087
+Strong I Normal PA All Go,-3.48,42,-17.98,4.76,54.76,,-2.38
+Shotgun 5 Wide 5 WR All Go,-4.64,39,,,82.05,5.13,-3.018
+I Formation Twin WR Hard Slants,8.71,2193,7.79,3.16,3.84,4.61,0.86
+Strong I Big TE Post,8.59,1126,6.97,2.99,7.73,4.83,1.219
+Strong I Big Backfield Drag,8.38,899,7.93,1.65,5.72,5.39,0.751
+I Formation Power Play Action HB Downfield,8.07,3442,6.93,2.97,4.84,3.8,0.403
+Shotgun Normal HB Flare,7.96,6668,6.61,2.84,6.2,3.79,0.462
+Singleback Normal HB Release Mid,7.81,1428,5.95,4.45,3.76,3.69,0.671
+I Formation Normal FL Hitch,7.22,5244,6.92,2.36,1.66,3.41,0.25
+I Formation Twin WR Quick Outs,7.13,1378,6.93,2.51,0.57,2.79,0.921
+Split Backs Normal Posts,6.95,729,5.98,2.44,4.47,2.57,0.493
+Singleback Normal TE Quick Out,6.92,1951,6.21,2.65,2.55,3.46,0.978
+I Formation 3WR Slot Short WR Deep,6.81,2662,4.99,3.21,6.34,2.54,0.27
+I Formation Power PA Flats,6.42,3030,5.36,2.05,5.54,2.87,0.336
+Singleback 4 Wide Quick Outs,6.37,525,5.28,3.18,2.25,2.81,0.706
+I Formation 3WR HB Inside Weak,6.32,3088,,,,0.8,0.429
+Weak I Normal WR Corner TE Middle,6.31,3715,4.75,2.51,6.61,1.79,0.148
+I Formation 3WR WR Out,6.28,2273,5.77,2.53,1.26,1.57,0.567
+I Formation 3WR FL Post,6.11,1647,4.42,2.6,6.76,1.27,0.529
+Weak I Big WR Post TE Out,6.1,706,3.97,3.1,7.46,2.11,0.628
+I Formation Big HB Counter Weak,6.09,111,,,,0.88,1.21
+Shotgun 5 Wide Parallel Slants,5.71,588,4.67,3.53,0.34,1.68,0.465
+Singleback Normal HB Inside Weak,5.66,2043,,,,0.43,0.862
+I Formation 3WR Backfield Flats,5.59,616,4.94,1.29,5.0,1.94,0.219
+Singleback Normal PA Rollout,5.53,327,2.38,3.04,12.16,1.52,-0.189
+Singleback Big WR Deep,5.49,1316,1.55,4.27,12.43,2.32,0.266
+I Formation Normal Max Protect,5.48,2499,3.73,3.05,5.03,1.51,0.144
+Singleback Slot Strong HB Checkdown,5.45,324,2.56,3.92,8.13,4.22,0.156
+Split Backs 3 Wide WR Quick Out,5.44,1405,4.6,2.61,1.84,1.69,0.395
+I Formation 3WR PA Fullback Flat,5.36,874,5.6,1.13,0.79,2.38,-0.183
+Singleback Normal HB Dive Weak,5.24,1789,,,,0.44,0.842
+Singleback Slot Strong HB Strong Inside,5.2,1165,,,,0.17,0.555
+Singleback Slot Strong HB Counter,5.16,1832,,,,0.86,0.156
+Singleback Normal HB Dive Strong,5.14,1305,,,,0.3,0.869
+Singleback Normal Quick Slant,5.14,414,3.94,1.66,6.16,2.13,0.422
+Singleback Normal HB Counter Weak,5.1,2183,,,,0.59,0.83
+Split Backs 3 Wide Slot Post,5.09,707,3.15,2.37,7.68,1.54,0.418
+Split Backs 3 Wide Drag In,5.08,331,4.29,1.51,4.53,0.6,-0.249
+Singleback Normal WR Quick In,5.07,793,4.24,2.61,1.37,1.49,0.473
+Weak I Normal HB Inside Weak,5.01,3323,,,,1.32,0.217
+Singleback Big Ins and Outs,5.0,945,4.35,2.4,1.04,1.25,0.216
+Weak I Normal Skinny Posts,5.0,2041,4.22,2.67,0.87,2.14,-0.615
+I Formation Normal HB Blast,4.93,4030,,,,0.92,0.188
+I Formation Normal HB Dive,4.84,3507,,,,0.87,0.259
+Shotgun 2 RB 3 WR RB Curls,4.84,932,2.73,4.43,2.11,1.16,-0.955
+Split Backs 3 Wide Dive Left,4.77,1145,,,,0.09,0.527
+I Formation Normal PA Fullback Flat,4.74,2692,4.37,1.83,1.1,1.72,-0.413
+I Formation Big TE Sneak Out,4.69,192,,1.55,,1.04,0.067
+Shotgun Normal TE Out,4.66,1010,3.22,3.43,1.57,0.39,-0.045
+Empty 4 Wide Spread Corner Post,4.6,270,0.08,6.99,6.25,1.47,-0.377
+Singleback Normal FL Post,4.6,792,1.99,2.88,9.01,1.13,0.5
+Strong I Big HB Dive Strong,4.55,288,,,,0.68,1.105
+Shotgun Normal FL Slant,4.54,518,3.11,2.3,4.79,2.49,0.084
+Singleback Normal Slot WR Cross,4.54,253,1.78,2.73,10.16,0.78,-0.171
+Weak I Big Off Tackle Weak,4.54,187,,,,2.62,0.2
+Split Backs Normal WR Post,4.53,282,1.8,3.15,8.74,1.75,-0.426
+Shotgun 5 Wide Slot Drag,4.51,193,3.26,3.08,1.54,1.54,-0.526
+I Formation 3WR HB Inside Strong,4.5,2376,,,,0.04,0.241
+Singleback Empty 4 Short Posts,4.5,284,2.52,4.21,1.75,2.11,-0.811
+Weak I Big HB Lead Toss Weak,4.5,334,,,,0.29,0.372
+Shotgun 2 RB 3 WR Shotgun Sweep,4.49,2253,,,,0.18,0.4
+Singleback Big Corner Ins,4.46,338,1.61,3.22,9.06,0.88,0.162
+Weak I Big HB Off Tackle Strong,4.45,148,,,,1.34,-0.182
+Singleback Normal Post Corner,4.34,237,0.59,2.52,15.55,2.52,-0.511
+Singleback Empty 4 TE Corner,4.34,208,0.92,1.9,15.71,0.95,0.028
+I Formation Power HB Strong Outside,4.33,2099,,,,0.7,0.135
+Strong I Normal WR Post TE Out,4.31,1296,3.37,1.68,3.98,0.61,-0.131
+Strong I Normal HB Dive Strong,4.3,1191,,,,0.82,-0.141
+Split Backs Normal Overload Strong,4.25,103,2.58,2.91,3.88,0.97,-0.541
+Split Backs Normal Skinny Post Corner,4.25,345,3.55,2.01,1.72,1.72,0.527
+Singleback Normal SE Quick Hit,4.11,562,4.05,1.23,0.71,1.06,0.54
+Shotgun 2 RB 3 WR Shotgun Dive,4.08,1183,,,,,0.452
+Singleback 4 Wide Clear Center,4.08,58,-0.18,3.39,15.25,,-0.767
+Split Backs Normal Weak Pitch Sweep,4.05,322,,,,0.91,0.323
+Singleback Slot Strong Post Curls,4.05,183,3.99,1.09,1.09,0.54,-0.965
+Shotgun 2 RB 3 WR WR Curl,4.04,856,3.27,1.98,1.98,1.4,-0.87
+Shotgun 5 Wide Middle Curls,4.01,96,,2.08,,2.08,-0.529
+I Formation Normal HB Draw,4.0,1517,,,,,-0.063
+Strong I Normal Short Attack,4.0,415,3.33,1.9,1.66,0.71,-0.457
+Strong I Big HB Off Tackle,3.94,177,,,,1.1,0.09
+Singleback Big HB Inside Strong,3.88,1161,,,,0.25,0.445
+I Formation 3WR Slot Corner Short,3.84,628,2.46,3.16,1.26,0.63,-0.512
+Singleback Normal WR Post,3.82,289,1.84,3.08,4.45,0.34,0.374
+I Formation Twin WR Slot Hitch,3.75,185,1.38,4.84,1.08,0.54,0.623
+Goal Line Normal HB Off Tackle,3.72,1375,,,,0.7,-0.761
+Weak I Normal HB Inside Strong,3.68,979,,,,0.4,-0.179
+Strong I Normal HB Off Tackle Strong,3.64,2610,,,,,-0.195
+I Formation Twin WR HB Toss Weak,3.63,174,,,,,-0.323
+I Formation Big HB Strong,3.63,83,,,,,-0.303
+Strong I Big WR Quick In,3.62,191,3.94,0.52,0.52,1.03,0.99
+I Formation Normal Curl & Post,3.62,621,1.18,3.52,5.28,0.96,-0.021
+Split Backs 3 Wide Dive Right,3.61,646,,,,,0.19
+I Formation Twin WR HB Toss Strong,3.6,84,,,,,-1.248
+Split Backs Normal TE Curl,3.59,118,3.63,0.84,0.84,,-0.034
+Goal Line Normal HB Toss Strong,3.59,1491,,,,0.79,-0.646
+Singleback Big Off Tackle Strong,3.58,894,,,,,0.118
+Strong I Big HB Toss Strong,3.57,73,,,,1.35,-0.584
+Goal Line Normal HB Outside Strong,3.55,1407,,,,0.84,-1.049
+Strong I Big HB Swing,3.54,100,2.67,1.98,1.98,0.99,0.478
+Shotgun 2 RB 3 WR FL Drag,3.53,646,3.28,1.53,0.15,1.38,-1.482
+Split Backs 3 Wide Off Tackle Strong,3.53,730,,,,0.14,-0.022
+I Formation Twin WR Hook Ins,3.53,162,2.81,1.18,3.55,,-0.341
+I Formation Normal Cross In,3.52,289,3.01,1.35,2.02,0.67,0.184
+Shotgun Normal Short Attack,3.52,398,1.98,2.25,4.5,0.75,0.187
+Strong I Big TE Drag,3.51,49,,,4.08,,0.007
+Goal Line Normal HB Pitch Weak,3.49,1663,,,,0.41,-0.542
+Split Backs 3 Wide Slot Drag,3.44,142,,1.41,,0.7,-0.529
+Singleback Slot Strong TE Corner,3.41,206,-0.19,3.81,10.0,,-0.262
+Split Backs 3 Wide WR Post,3.41,218,0.45,3.64,7.27,,-0.534
+Weak I Big HB Dive Strong,3.4,180,,,,,0.37
+I Formation Normal Strong Flood,3.4,111,,2.68,,,-0.653
+Weak I Normal Fullback Counter Weak,3.39,830,,,,0.23,0.006
+Singleback Slot Strong Skinny Posts,3.35,298,1.9,3.31,0.66,0.99,-0.446
+Shotgun Normal Double Outs,3.33,920,2.62,2.26,0.11,1.18,-0.72
+Shotgun 5 Wide WR Curls,3.32,56,0.77,3.57,5.36,1.79,-1.024
+Singleback Slot Strong TE Slot Curls,3.32,50,,4.0,,,-1.472
+Shotgun Normal HB Sweep,3.31,595,,,,,-0.143
+Weak I Normal FB Inside Weak,3.31,427,,,,0.23,-0.666
+Goal Line Normal FB Dive,3.3,96,,,,,0.855
+I Formation Normal PA Outside Curls,3.28,1148,0.92,2.6,7.27,0.61,-1.58
+Strong I Big HB Toss Weak,3.27,92,,,,1.09,0.065
+Split Backs Normal Curls,3.24,66,0.56,4.55,3.03,1.52,-0.28
+I Formation Power HB Sweep Weak,3.24,734,,,,1.21,-0.497
+Strong I Normal Quick Hooks,3.23,310,2.43,1.89,1.58,0.63,-1.006
+Split Backs Normal HB Off Tackle,3.21,86,,,,,1.053
+Shotgun 2 RB 3 WR FB In,3.21,833,-0.64,3.82,10.99,1.19,-0.975
+I Formation 3WR SE Post,3.2,939,0.97,3.91,2.64,1.27,-0.95
+I Formation Normal HB Counter,3.18,817,,,,,-0.611
+Goal Line Normal PA TE Drag,3.18,1258,2.12,2.66,0.47,0.63,-0.815
+Shotgun 4 Wide Slot Curl,3.18,49,-4.34,12.24,4.08,,-1.467
+I Formation Normal SE Post,3.14,951,-3.5,3.25,26.62,1.26,-1.19
+Shotgun Normal Post Flags,3.12,176,1.07,3.91,1.68,1.12,-0.015
+Shotgun 4 Wide Slot Drag,3.09,77,1.37,1.3,7.79,,-0.703
+I Formation Normal FB Middle,3.08,233,1.22,1.71,7.26,0.85,-0.231
+I Formation Normal FL Hook,3.07,1319,2.12,1.73,2.64,0.23,-1.168
+Shotgun 5 Wide Slot Cross,3.04,219,0.92,1.82,8.18,0.91,-0.831
+Strong I Normal Counter Strong,3.04,761,,,,,-0.376
+Singleback Normal Hitch Corner,3.04,105,,,,0.95,-0.508
+Singleback Slot Strong Overload Strong,3.04,261,-1.22,4.18,11.79,,-0.473
+I Formation Power HB Draw,3.02,329,,,,0.59,-1.541
+I Formation Power HB Dive Weak,3.01,459,,,,0.85,-0.958
+I Formation Big HB Outside Weak,3.0,152,,,,,-0.269
+Shotgun Normal HB Dive,2.97,751,,,,,-0.099
+Empty 4 Wide Spread Flats,2.96,213,0.69,4.15,1.84,,-0.145
+I Formation 3WR Weak Flood,2.92,216,2.57,1.39,0.46,0.46,-0.999
+Split Backs Normal Strong Pitch Sweep,2.9,146,,,,0.68,-0.223
+Goal Line Normal HB Dive,2.9,1378,,,,0.84,-0.672
+Shotgun Normal Slot Drag,2.89,203,,3.92,,1.47,-1.072
+Singleback 4 Wide WR Crosses,2.89,54,,,5.36,,-0.168
+Singleback Big HB Curls TE Deep,2.82,250,0.52,2.38,7.14,0.4,-0.09
+Goal Line Normal HB Weak,2.81,1154,,,,0.51,-1.243
+Shotgun 2 RB 3 WR WR Hooks,2.76,670,0.6,3.87,1.93,0.89,-1.157
+I Formation Twin WR Slot Out,2.71,65,-4.02,1.52,31.82,,-1.712
+Shotgun 5 Wide FL Hook,2.7,83,1.07,2.41,3.61,,-0.672
+Singleback Slot Strong HB Flat,2.66,109,1.38,2.73,0.91,0.91,-1.016
+Strong I Big TE Deep Corner,2.62,32,-3.72,3.12,25.0,,-1.552
+Weak I Big HB Counter Weak,2.58,115,,,,0.86,0.008
+Singleback Big PA Curls,2.57,166,-2.15,4.17,13.69,1.19,-1.1
+Singleback Big TE Flat Curl,2.56,217,-1.13,2.74,12.79,0.46,-0.963
+Shotgun 4 Wide In and Out,2.53,90,-0.7,3.3,8.79,,-0.786
+Weak I Big TE Drag,2.47,159,-0.99,5.56,3.09,0.62,-0.208
+Singleback 4 Wide Post and Drag,2.43,149,-0.95,2.0,13.33,0.67,-0.904
+I Formation Big TE Curl,2.42,43,-1.75,4.65,9.3,,-1.511
+I Formation Twin WR HB Counter Middle,2.41,67,,,,,-1.161
+I Formation Normal TE Flag,2.4,247,-2.74,2.41,20.88,1.2,-0.843
+Split Backs 3 Wide WR2 Deep Post,2.39,107,-3.86,1.87,28.04,2.8,-0.938
+Strong I Normal HB Sweep Strong,2.38,167,,,,,-0.72
+Singleback Normal Quick Looks,2.26,42,,,2.38,,-3.562
+Split Backs 3 Wide Off Tackle Weak,2.25,174,,,,,-0.414
+Singleback Big Waggle Post,2.01,105,-7.49,2.86,40.95,3.81,-0.769
+Shotgun 4 Wide All Curls,1.95,40,-2.66,7.5,2.5,,-0.891
+Singleback Empty 4 Curl Flats,1.94,93,-1.55,4.3,6.45,1.08,-1.161
+I Formation Normal PA Streaks,1.94,658,-6.9,2.42,38.88,1.06,-1.481
+Singleback Empty 4 Slot Crosses,1.91,148,-5.98,4.67,27.33,1.33,-1.173
+I Formation Normal HB Toss Strong,1.9,234,,,,,-0.983
+Singleback 4 Wide Post and Curls,1.81,32,-0.95,3.12,6.25,,0.084
+I Formation 3WR Slot Corner Long,1.74,975,-4.73,4.39,20.92,0.61,-1.371
+Singleback Empty 4 TE Drag WR Mix,1.68,79,-3.3,5.06,11.39,,-1.27
+I Formation Power Play Action Bomb,1.63,342,-7.31,2.9,37.68,0.58,-1.921
+I Formation Normal HB Toss Weak,1.62,210,,,,,-1.068
+Singleback Slot Strong Slot Curl,1.54,49,-0.95,4.0,2.0,,-1.351
+Singleback Slot Strong Off Tackle Strong,1.53,148,,,,,-0.336
+Split Backs 3 Wide RB Curls,1.36,77,-4.52,2.56,23.08,,-0.411
+Strong I Normal HB Power Strong,1.34,195,,,,,-0.675
+Singleback Big HB Pitch Weak,1.25,211,,,,,-1.172
+Strong I Normal FB Trap Weak,1.24,86,,,,,-1.469
+Shotgun Normal HB Delay,1.23,468,,,,,-1.173
+Weak I Big TE Deep Post,1.18,49,-9.38,6.0,36.0,,-0.356
+I Formation 3WR Outside Curls,0.85,73,-3.84,1.35,20.27,,-1.318
+Singleback Normal FL Drag,0.81,31,,,37.5,,-1.64
+Singleback Normal Deep Corners,0.61,41,-6.1,7.32,12.2,,-2.429
+Strong I Normal PA All Go,0.3,104,-11.82,1.9,55.24,,-2.665
+I Formation 3WR WR Post,-0.23,110,-5.87,2.7,19.82,,-2.058
+Shotgun Normal Deep Weak In and Out,-0.34,342,-7.76,2.33,29.74,0.87,-1.686
+Shotgun 2 RB 3 WR Strong Deep,-1.21,316,-10.25,3.16,34.49,0.32,-1.605
+Singleback Big WR Streaks,-1.24,146,-12.04,5.48,36.3,,-1.483
+I Formation 3WR HB Toss Strong,-1.28,659,,,,,-1.54
+Empty 4 Wide Spread Deep Corner Post,-2.65,49,-12.16,2.04,38.78,,-0.532
+Weak I Normal All Go,-4.18,71,,,61.11,,-3.046
+I Formation Normal TE Out,-5.45,52,-24.28,3.77,77.36,,-2.693
+Shotgun Normal Hail Mary,-6.22,55,-24.55,1.82,80.0,,-2.05
+I Formation Power Play Action HB Downfield,8.77,1188,7.73,3.26,4.18,4.94,0.58
+Split Backs Normal WR Post,8.61,54,8.48,1.85,3.7,3.7,0.021
+I Formation Twin WR Hard Slants,8.52,461,7.03,4.26,3.19,4.26,0.748
+Strong I Big TE Post,8.34,260,5.48,3.4,12.45,5.28,0.991
+Weak I Big HB Lead Toss Weak,7.72,66,,,,1.49,0.806
+Shotgun Normal HB Flare,7.52,1580,5.81,3.22,6.43,3.03,0.294
+Singleback Normal HB Release Mid,7.39,313,5.45,4.43,3.8,3.8,0.916
+I Formation Normal FL Hitch,7.33,1104,7.18,2.31,1.16,2.84,0.282
+I Formation Twin WR Quick Outs,7.23,294,,2.01,,2.34,1.061
+Weak I Normal WR Corner TE Middle,7.08,729,6.21,1.91,5.72,2.59,0.493
+I Formation 3WR Slot Short WR Deep,7.05,650,5.5,2.44,7.48,2.9,0.309
+Split Backs Normal Posts,6.93,109,6.35,1.79,4.46,4.46,1.071
+I Formation 3WR FL Post,6.72,435,5.78,2.29,4.58,1.6,0.57
+I Formation Normal Strong Flood,6.7,33,,3.03,,3.03,-1.59
+I Formation 3WR WR Out,6.55,548,6.89,1.26,1.08,2.15,0.653
+Strong I Big Backfield Drag,6.51,212,5.76,0.93,7.48,2.34,1.066
+I Formation 3WR HB Inside Weak,6.24,705,,,,0.84,0.385
+Singleback Big Ins and Outs,6.16,225,4.18,4.78,1.74,2.17,0.197
+Weak I Big WR Post TE Out,6.02,178,4.89,1.67,6.67,0.56,0.352
+Split Backs 3 Wide Drag In,5.93,76,6.07,1.32,1.32,,0.227
+Singleback Normal TE Quick Out,5.87,402,4.5,3.19,3.19,1.72,1.162
+Singleback Normal Slot WR Cross,5.86,64,2.97,3.12,10.94,3.12,-0.736
+I Formation Power PA Flats,5.83,1100,4.25,2.24,7.0,2.69,0.419
+Singleback 4 Wide Quick Outs,5.82,109,5.35,0.91,5.45,1.82,1.258
+Singleback Normal HB Dive Weak,5.76,417,,,,0.47,0.49
+Shotgun 2 RB 3 WR RB Curls,5.72,225,5.38,1.32,3.51,2.19,-0.527
+Singleback Normal HB Inside Weak,5.72,447,,,,0.22,0.644
+Singleback Normal WR Quick In,5.62,165,5.56,1.78,0.59,1.18,0.815
+Singleback Normal WR Post,5.6,67,3.49,4.41,2.94,2.94,0.295
+Strong I Normal Short Attack,5.49,88,5.68,1.14,1.14,2.27,0.095
+Singleback Normal HB Dive Strong,5.49,335,,,,0.89,0.578
+Empty 4 Wide Spread Corner Post,5.42,67,4.41,1.49,5.97,,0.248
+I Formation Normal Max Protect,5.42,516,3.73,2.5,6.36,1.16,-0.113
+Singleback Slot Strong HB Strong Inside,5.34,285,,,,1.03,-0.006
+Singleback Empty 4 Short Posts,5.32,53,4.88,1.89,1.89,,-0.612
+Singleback Normal FL Post,5.31,175,2.28,2.84,11.93,0.57,0.785
+I Formation 3WR Backfield Flats,5.31,155,3.53,2.58,6.45,1.94,0.313
+Strong I Big HB Dive Strong,5.28,68,,,,1.45,0.456
+Split Backs 3 Wide WR Quick Out,5.25,326,4.69,2.1,1.8,0.9,0.056
+Weak I Normal Skinny Posts,5.2,440,5.35,1.12,1.12,2.68,-0.152
+Strong I Normal WR Post TE Out,5.15,260,4.36,1.52,4.56,1.14,0.214
+Singleback Normal HB Counter Weak,5.11,489,,,,0.6,0.429
+Singleback Big WR Deep,5.06,304,1.23,3.27,14.38,2.29,-0.136
+Singleback Normal PA Rollout,5.02,87,,,13.79,1.15,0.851
+Singleback Slot Strong HB Counter,4.96,466,,,,0.84,0.514
+Shotgun Normal TE Out,4.95,236,3.43,3.77,1.26,1.26,0.368
+Singleback Slot Strong HB Flat,4.89,36,,,,5.56,0.681
+I Formation Twin WR Slot Hitch,4.83,50,,1.92,,1.92,1.429
+I Formation Normal HB Blast,4.8,783,,,,0.75,0.174
+Singleback Normal Quick Slant,4.78,95,3.42,2.11,5.26,3.16,-0.078
+Singleback 4 Wide Post and Drag,4.76,38,-2.18,7.89,15.79,,-0.994
+Split Backs 3 Wide Slot Post,4.76,149,1.85,2.67,11.33,1.33,0.503
+I Formation 3WR Slot Corner Short,4.75,130,4.62,1.54,0.77,0.77,-0.06
+Shotgun 2 RB 3 WR Shotgun Sweep,4.75,563,,,,0.7,0.225
+I Formation Normal HB Dive,4.71,766,,,,1.15,0.113
+I Formation 3WR HB Inside Strong,4.71,544,,,,,-0.225
+I Formation Normal PA Fullback Flat,4.71,561,4.5,1.57,1.05,1.05,-0.243
+Weak I Big Off Tackle Weak,4.68,46,,,,,0.231
+Weak I Normal HB Inside Weak,4.66,684,,,,0.72,0.502
+Singleback Big TE Flat Curl,4.62,52,3.62,1.92,3.85,,-1.453
+I Formation 3WR PA Fullback Flat,4.62,218,4.64,1.36,0.45,2.26,0.364
+Shotgun 5 Wide Parallel Slants,4.61,116,4.67,0.85,1.71,2.56,-0.523
+Singleback Normal SE Quick Hit,4.53,113,,0.88,,1.77,0.717
+Goal Line Normal HB Toss Strong,4.45,345,,,,1.97,-0.569
+Singleback Big Corner Ins,4.44,87,2.34,1.15,11.49,,0.545
+Singleback Big Off Tackle Strong,4.4,216,,,,,-0.138
+Singleback Big HB Inside Strong,4.35,262,,,,0.38,0.407
+I Formation Power HB Strong Outside,4.34,803,,,,0.61,0.381
+Shotgun 5 Wide Slot Drag,4.33,46,3.45,2.17,2.17,2.17,-0.886
+I Formation Normal HB Draw,4.29,314,,,,,0.166
+Split Backs 3 Wide Off Tackle Strong,4.26,165,,,,0.6,-0.61
+Shotgun Normal Short Attack,4.24,85,3.71,1.15,3.45,,-0.365
+Weak I Big HB Off Tackle Strong,4.15,39,,,,,0.289
+Split Backs 3 Wide WR Post,4.1,48,1.32,2.0,12.0,,-1.459
+Split Backs Normal Weak Pitch Sweep,4.08,53,,,,,-0.06
+I Formation Big TE Sneak Out,4.08,51,,,,1.96,0.358
+Singleback Slot Strong Overload Strong,4.08,61,-2.31,6.56,16.39,3.28,0.257
+Split Backs 3 Wide Dive Left,4.04,246,,,,,0.234
+Shotgun Normal FL Slant,4.01,125,1.0,3.97,7.14,1.59,0.12
+Shotgun 2 RB 3 WR WR Curl,3.96,226,2.55,2.19,4.39,0.44,-0.832
+Strong I Normal HB Dive Strong,3.92,240,,,,0.41,0.191
+Shotgun 2 RB 3 WR Shotgun Dive,3.91,260,,,,,0.449
+I Formation Normal SE Post,3.85,215,-1.99,3.26,23.26,0.47,-0.923
+Shotgun 5 Wide Slot Cross,3.8,47,2.96,2.0,2.0,,-1.187
+Singleback Slot Strong Post Curls,3.79,53,,,,,-0.817
+I Formation Power HB Sweep Weak,3.75,305,,,,1.6,-0.191
+Goal Line Normal HB Outside Strong,3.62,349,,,,0.84,-1.334
+Weak I Normal FB Inside Weak,3.57,80,,,,1.23,0.454
+Strong I Normal Counter Strong,3.53,123,,,,,-0.344
+Singleback Slot Strong HB Checkdown,3.52,88,1.27,1.14,11.36,1.14,-0.04
+I Formation Normal FB Middle,3.49,36,-1.22,5.41,10.81,,-1.846
+Shotgun Normal HB Sweep,3.45,145,,,,,-0.275
+Weak I Normal HB Inside Strong,3.44,210,,,,0.47,0.049
+Split Backs Normal Skinny Post Corner,3.41,82,2.21,2.35,2.35,2.35,0.227
+Goal Line Normal HB Pitch Weak,3.4,383,,,,,-0.702
+Goal Line Normal HB Off Tackle,3.39,308,,,,0.32,-1.165
+Strong I Normal HB Off Tackle Strong,3.39,509,,,,,-0.068
+Split Backs 3 Wide Dive Right,3.35,163,,,,,-0.463
+I Formation 3WR SE Post,3.33,226,2.85,1.33,1.77,0.44,-1.238
+I Formation Normal HB Counter,3.32,151,,,,,-0.484
+Shotgun Normal HB Dive,3.3,185,,,,,-0.042
+Empty 4 Wide Spread Flats,3.27,52,,5.77,,,-0.534
+I Formation Normal FL Hook,3.22,277,2.43,1.43,2.86,0.36,-1.048
+Strong I Normal Quick Hooks,3.18,71,,,1.39,,-0.24
+Singleback Slot Strong Skinny Posts,3.13,61,,,,,-0.653
+Shotgun Normal Slot Drag,3.11,45,,2.13,,,0.068
+I Formation Normal Cross In,3.08,75,1.88,2.6,1.3,,-0.916
+Weak I Normal Fullback Counter Weak,3.07,172,,,,,-0.713
+Shotgun Normal Double Outs,3.07,210,,,,0.48,-0.825
+Strong I Big WR Quick In,3.04,53,2.16,1.85,1.85,1.85,-0.129
+Goal Line Normal HB Weak,3.01,264,,,,0.37,-1.033
+Shotgun 2 RB 3 WR FB In,3.01,194,1.04,1.55,8.25,1.03,-1.102
+Singleback Normal Post Corner,3.0,50,-5.2,8.0,20.0,2.0,-0.7
+I Formation Normal PA Outside Curls,2.98,256,0.67,1.92,8.81,0.38,-1.069
+Singleback Big Waggle Post,2.97,37,,,32.43,,1.314
+I Formation 3WR Weak Flood,2.96,50,,,,,1.357
+I Formation Twin WR HB Toss Weak,2.92,39,,,,,-0.885
+Weak I Big HB Dive Strong,2.89,46,,,,,1.479
+I Formation Normal Curl & Post,2.86,85,-0.93,4.6,8.05,,-0.271
+Goal Line Normal HB Dive,2.82,333,,,,,-0.441
+Goal Line Normal PA TE Drag,2.81,320,-0.04,5.57,0.31,0.31,-1.335
+I Formation Power HB Draw,2.81,111,,,,0.87,-0.605
+Shotgun 2 RB 3 WR WR Hooks,2.78,157,-1.0,6.37,2.55,0.64,-1.372
+Singleback Big PA Curls,2.75,55,,,8.77,,-0.219
+Singleback Empty 4 Slot Crosses,2.73,36,-6.45,2.7,40.54,2.7,0.006
+Split Backs 3 Wide Off Tackle Weak,2.66,47,,,,,-0.692
+I Formation 3WR Slot Corner Long,2.62,189,-3.07,4.21,18.42,0.53,-1.29
+I Formation Power HB Dive Weak,2.59,175,,,,,-0.818
+Singleback Big HB Pitch Weak,2.51,47,,,,,-0.789
+Strong I Normal HB Sweep Strong,2.45,32,,,,,-1.887
+Singleback Slot Strong TE Corner,2.43,47,-6.88,12.77,10.64,2.13,-1.502
+Shotgun 2 RB 3 WR FL Drag,2.33,140,1.39,2.11,0.7,0.7,-1.334
+Strong I Big HB Off Tackle,2.22,35,,,,,1.208
+I Formation Normal PA Streaks,2.09,162,-6.89,3.66,35.98,0.61,-1.607
+Singleback Big HB Curls TE Deep,2.07,67,-0.75,2.94,7.35,,-0.54
+I Formation Normal TE Flag,1.75,59,-3.9,3.33,20.0,1.67,-1.788
+I Formation Normal HB Toss Weak,1.69,53,,,,,-1.208
+Strong I Normal HB Power Strong,1.54,48,,,,,-1.763
+Singleback Slot Strong Off Tackle Strong,1.46,34,,,,,-1.168
+I Formation Normal HB Toss Strong,1.46,55,,,,,-2.324
+Singleback Big WR Streaks,1.32,34,-6.06,5.88,20.59,,-1.594
+Shotgun Normal HB Delay,1.27,121,,,,,-0.894
+Shotgun Normal Post Flags,1.18,39,,5.13,,,-1.515
+Shotgun Normal Deep Weak In and Out,0.59,88,-6.79,4.55,23.86,,-1.386
+I Formation 3WR HB Toss Strong,-1.37,167,,,,,-1.278
+I Formation Power Play Action Bomb,-1.51,181,-14.22,2.2,55.49,0.55,-2.459
+Shotgun 2 RB 3 WR Strong Deep,-2.0,83,-13.48,4.82,40.96,,-1.658
+I Formation Power Play Action HB Downfield,9.12,284,7.72,3.5,5.59,5.59,0.102
+Strong I Big Backfield Drag,8.66,208,8.69,0.95,5.69,6.16,1.202
+Shotgun Normal HB Flare,8.57,564,7.3,2.99,5.98,3.16,0.205
+I Formation 3WR Slot Short WR Deep,8.3,239,6.79,3.75,4.58,2.92,-0.044
+I Formation Power PA Flats,8.27,263,7.57,2.27,4.92,2.65,0.422
+Singleback Normal HB Release Mid,8.11,129,5.62,5.34,4.58,2.29,0.97
+Weak I Big WR Post TE Out,7.99,144,6.94,2.08,6.94,1.39,0.305
+Strong I Big TE Post,7.93,219,3.95,5.94,10.05,5.02,1.099
+I Formation Normal FL Hitch,7.68,327,7.04,2.72,2.72,3.32,0.618
+I Formation Twin WR Quick Outs,7.53,92,,2.15,,3.23,1.079
+I Formation 3WR FL Post,7.48,124,5.94,3.2,5.6,3.2,0.245
+I Formation Twin WR Hard Slants,7.22,142,5.49,2.76,7.59,3.45,0.267
+Split Backs 3 Wide WR Quick Out,7.01,111,7.18,1.75,0.88,4.39,-0.234
+Split Backs 3 Wide Slot Post,6.96,50,6.39,1.96,3.92,1.96,0.245
+I Formation 3WR Backfield Flats,6.52,69,,,4.35,4.35,1.233
+Singleback Normal WR Quick In,6.48,63,,1.56,,,0.58
+Singleback Normal TE Quick Out,6.48,154,5.48,2.55,3.82,5.73,1.059
+Shotgun 2 RB 3 WR WR Hooks,6.32,53,,1.89,,3.77,-1.69
+I Formation 3WR WR Out,6.27,219,4.79,4.09,1.36,0.91,0.908
+Weak I Big HB Off Tackle Strong,6.24,33,,,,2.94,1.874
+Singleback Normal FL Post,6.2,70,2.65,5.63,7.04,2.82,1.09
+Singleback Big Ins and Outs,6.1,77,,,,1.27,0.696
+Singleback Normal Quick Slant,6.03,38,1.44,7.89,5.26,2.63,-0.031
+Singleback Big Corner Ins,5.87,39,1.41,5.13,12.82,2.56,-0.199
+Shotgun Normal FL Slant,5.84,55,5.19,1.82,3.64,5.45,-0.795
+Strong I Normal Short Attack,5.81,34,,,2.78,2.78,0.468
+I Formation 3WR PA Fullback Flat,5.74,76,,2.6,,3.9,-0.698
+I Formation 3WR HB Inside Weak,5.71,275,,,,0.35,0.909
+Weak I Big Off Tackle Weak,5.69,37,,,,5.13,-1.214
+I Formation Normal Max Protect,5.44,163,4.0,2.41,5.42,1.81,0.02
+Split Backs Normal Posts,5.43,45,3.48,4.35,2.17,,0.78
+Weak I Normal WR Corner TE Middle,5.42,268,3.05,3.31,7.35,0.74,0.067
+Weak I Normal HB Inside Weak,5.25,215,,,,1.39,0.153
+I Formation Normal SE Post,5.16,82,-1.04,3.61,25.3,2.41,-1.567
+I Formation 3WR Slot Corner Short,5.08,51,,3.92,,1.96,0.172
+Singleback Big WR Deep,5.05,102,-0.61,6.86,12.75,2.94,0.11
+Singleback 4 Wide Quick Outs,4.95,40,,2.44,,2.44,0.039
+I Formation Normal HB Draw,4.94,114,,,,1.71,-0.348
+I Formation Normal PA Outside Curls,4.87,94,3.72,2.13,4.26,1.06,-1.391
+Singleback Normal HB Inside Weak,4.87,146,,,,,0.95
+Singleback Normal SE Quick Hit,4.85,47,,,2.13,,0.899
+Singleback Normal HB Dive Weak,4.8,148,,,,,0.691
+Shotgun Normal TE Out,4.77,73,2.21,5.41,1.35,1.35,0.554
+I Formation Normal HB Blast,4.74,288,,,,0.69,0.122
+Singleback Normal HB Counter Weak,4.72,178,,,,0.55,0.458
+Shotgun 2 RB 3 WR Shotgun Sweep,4.72,200,,,,,0.006
+Shotgun 2 RB 3 WR WR Curl,4.64,75,2.68,3.95,2.63,,-1.812
+I Formation Normal Curl & Post,4.63,38,1.35,5.26,5.26,,0.185
+Shotgun 5 Wide Parallel Slants,4.63,35,,,,,0.363
+Strong I Normal WR Post TE Out,4.61,100,3.73,1.0,6.0,1.0,0.03
+Split Backs 3 Wide Dive Left,4.56,92,,,,,0.898
+Singleback Normal HB Dive Strong,4.54,105,,,,,0.7
+Singleback Slot Strong HB Counter,4.47,169,,,,0.58,-0.048
+Split Backs 3 Wide Dive Right,4.41,47,,,,,1.089
+I Formation 3WR HB Inside Strong,4.39,190,,,,,-0.022
+Goal Line Normal HB Toss Strong,4.37,113,,,,1.74,0.559
+Singleback Big HB Inside Strong,4.32,69,,,,,-0.582
+Shotgun 2 RB 3 WR FB In,4.25,71,-0.53,5.63,11.27,1.41,-1.254
+Strong I Normal HB Dive Strong,4.24,90,,,,1.1,-0.361
+Weak I Normal Skinny Posts,4.22,148,3.72,2.03,0.68,2.03,-0.462
+Singleback Slot Strong HB Strong Inside,4.17,119,,,,,0.601
+Shotgun 2 RB 3 WR Shotgun Dive,4.16,113,,,,,0.967
+Split Backs 3 Wide Off Tackle Strong,4.1,72,,,,,-0.033
+Weak I Big HB Lead Toss Weak,4.03,85,,,,,0.961
+Strong I Big HB Off Tackle,3.98,41,,,,,-0.135
+I Formation Normal PA Fullback Flat,3.94,191,3.42,2.02,0.51,1.01,-0.759
+I Formation Power HB Sweep Weak,3.93,55,,,,,0.558
+I Formation Normal HB Dive,3.9,268,,,,,-0.085
+Strong I Normal HB Off Tackle Strong,3.76,184,,,,,-0.245
+Goal Line Normal HB Off Tackle,3.75,118,,,,,-0.861
+Weak I Normal HB Inside Strong,3.74,87,,,,,0.586
+I Formation Power HB Strong Outside,3.68,184,,,,,0.351
+Goal Line Normal HB Outside Strong,3.67,119,,,,0.81,0.031
+Goal Line Normal HB Pitch Weak,3.57,149,,,,,-0.785
+I Formation Normal HB Counter,3.44,63,,,,,-0.415
+Goal Line Normal HB Dive,3.42,92,,,,2.11,-0.228
+I Formation Normal FL Hook,3.29,116,2.23,2.59,0.86,,-1.287
+Shotgun 2 RB 3 WR RB Curls,3.24,84,0.79,4.76,1.19,1.19,-1.698
+Split Backs 3 Wide Drag In,3.16,31,0.04,3.12,9.38,3.12,-0.002
+Strong I Big HB Toss Weak,3.15,53,,,,,-1.917
+Split Backs Normal Skinny Post Corner,3.14,35,1.6,2.7,2.7,,-0.28
+Singleback Big Off Tackle Strong,3.13,79,,,,,-0.44
+Shotgun Normal HB Sweep,3.13,54,,,,,0.253
+Goal Line Normal PA TE Drag,2.99,90,,1.1,,,-1.326
+Weak I Normal FB Inside Weak,2.98,44,,,,,0.181
+Shotgun 2 RB 3 WR FL Drag,2.83,64,,3.12,,1.56,-2.221
+Shotgun Normal HB Dive,2.79,52,,,,,-0.045
+I Formation Power HB Dive Weak,2.7,35,,,,,-1.864
+Weak I Normal Fullback Counter Weak,2.67,62,,,,,-0.735
+I Formation 3WR SE Post,2.56,73,-0.76,5.48,2.74,,-0.915
+Shotgun Normal Double Outs,2.51,57,,3.51,,,-0.168
+Strong I Normal Counter Strong,2.48,51,,,,,-0.882
+Goal Line Normal HB Weak,1.97,91,,,,,-1.4
+I Formation Normal PA Streaks,1.77,48,,,35.42,,-0.937
+I Formation 3WR Slot Corner Long,1.73,70,-3.93,4.29,17.14,,-1.525
+Shotgun Normal HB Delay,1.42,40,,,,,-1.917
+I Formation 3WR HB Toss Strong,-1.82,56,,,,,-0.672
+I Formation Twin WR Hard Slants,9.55,70,6.39,7.04,4.23,8.45,0.511
+Singleback Normal FL Post,8.46,35,6.72,2.86,8.57,5.71,1.414
+I Formation Twin WR Quick Outs,7.98,56,,1.79,,3.57,1.217
+Shotgun Normal HB Flare,7.22,286,6.87,1.72,3.79,4.14,0.266
+I Formation Normal PA Fullback Flat,7.1,117,,4.17,,4.17,0.34
+Split Backs 3 Wide Slot Post,7.06,31,0.98,9.38,9.38,6.25,-0.231
+I Formation Power PA Flats,6.93,122,5.4,3.25,4.88,4.07,0.809
+I Formation 3WR HB Inside Weak,6.92,128,,,,0.76,1.174
+I Formation Normal FL Hitch,6.83,194,6.26,2.54,2.03,2.54,0.8
+Singleback Big Ins and Outs,6.75,54,4.46,5.45,1.82,3.64,0.066
+Strong I Big TE Post,6.7,52,2.75,1.89,20.75,5.66,2.341
+Weak I Normal Skinny Posts,6.67,93,,,1.06,3.19,-0.765
+Singleback Normal HB Inside Weak,6.65,81,,,,,1.912
+Split Backs 3 Wide Dive Left,6.45,47,,,,,1.122
+I Formation 3WR FL Post,6.33,75,4.67,2.67,6.67,2.67,0.972
+Shotgun Normal TE Out,6.33,33,,,,3.03,0.681
+Singleback Normal HB Dive Weak,6.1,84,,,,,1.163
+Weak I Normal WR Corner TE Middle,6.02,141,4.67,2.13,6.38,2.13,0.603
+Singleback Normal HB Counter Weak,5.88,101,,,,1.98,0.652
+Shotgun 2 RB 3 WR WR Curl,5.86,36,,,2.78,,0.161
+Singleback 4 Wide Quick Outs,5.85,122,5.07,2.44,2.44,2.44,-1.267
+I Formation Power Play Action HB Downfield,5.82,131,4.85,2.29,3.82,0.76,0.007
+I Formation Normal Max Protect,5.74,76,,,6.49,3.9,0.218
+Singleback Normal TE Quick Out,5.51,94,,,4.26,1.06,0.734
+I Formation 3WR Slot Short WR Deep,5.51,113,2.55,3.54,9.73,,0.296
+I Formation 3WR PA Fullback Flat,5.38,34,,2.94,,2.94,-0.696
+Split Backs 3 Wide WR Quick Out,5.26,61,,,1.64,3.28,-0.158
+Singleback Big WR Deep,5.25,56,2.01,1.79,16.07,1.79,0.37
+I Formation 3WR WR Out,5.24,110,,1.8,,,0.01
+Singleback Slot Strong HB Strong Inside,5.21,58,,,,,1.082
+Goal Line Normal HB Toss Strong,5.13,61,,,,1.61,-0.95
+I Formation 3WR HB Inside Strong,5.11,93,,,,,-0.324
+Shotgun 2 RB 3 WR Shotgun Sweep,4.99,88,,,,2.25,0.636
+Weak I Normal HB Inside Weak,4.96,137,,,,0.72,0.155
+Shotgun 2 RB 3 WR RB Curls,4.87,47,,2.13,,,-1.403
+I Formation Normal HB Dive,4.67,128,,,,,-0.145
+I Formation Normal HB Blast,4.6,137,,,,0.71,-0.766
+Singleback Big HB Inside Strong,4.59,54,,,,,-0.095
+I Formation Normal HB Draw,4.54,55,,,,,0.6
+I Formation 3WR SE Post,4.34,38,-2.16,10.53,5.26,,-1.353
+I Formation Normal FL Hook,4.33,47,3.53,2.08,2.08,2.08,-0.231
+Singleback Normal HB Release Mid,4.32,66,0.33,6.06,6.06,1.52,0.18
+I Formation Power HB Strong Outside,4.31,92,,,,,1.026
+Strong I Normal WR Post TE Out,4.2,55,,,1.82,,-0.101
+Singleback Big Off Tackle Strong,4.18,40,,,,,0.819
+Singleback Normal WR Quick In,4.0,36,,,,,-0.386
+Singleback Slot Strong HB Counter,3.99,71,,,,1.32,0.122
+Singleback Normal HB Dive Strong,3.83,47,,,,,-0.167
+Strong I Normal HB Off Tackle Strong,3.81,89,,,,,0.198
+Split Backs 3 Wide Dive Right,3.72,39,,,,,1.636
+I Formation Normal PA Outside Curls,3.7,46,,2.13,,,-0.177
+Goal Line Normal HB Outside Strong,3.52,61,,,,,-1.39
+Strong I Normal HB Dive Strong,3.45,47,,,,,-0.265
+Shotgun 2 RB 3 WR Shotgun Dive,3.38,42,,,,,-0.512
+Strong I Big Backfield Drag,3.33,38,0.41,2.56,10.26,,0.606
+Weak I Normal HB Inside Strong,3.09,33,,,,,0.984
+Goal Line Normal HB Off Tackle,2.91,55,,,,,-0.184
+I Formation Power HB Sweep Weak,2.85,33,,,,,-1.555
+Goal Line Normal PA TE Drag,2.83,34,,2.86,,,-1.262
+Goal Line Normal HB Dive,2.82,54,,,,,-0.105
+I Formation Normal HB Counter,2.65,36,,,,,-0.967
+Goal Line Normal HB Weak,2.48,49,,,,,-1.144
+Shotgun 2 RB 3 WR WR Hooks,2.35,34,,2.94,,,-0.648
+Goal Line Normal HB Pitch Weak,2.31,78,,,,,-0.482
+Singleback 4 Wide Clear Center,2.21,68,,,25.0,2.94,-2.527
+Shotgun Normal Double Outs,2.0,36,0.24,2.7,2.7,,-0.511
+Weak I Normal Fullback Counter Weak,1.75,39,,,,,0.958
+I Formation 3WR Slot Corner Long,1.35,37,-5.41,5.41,18.92,,-1.047

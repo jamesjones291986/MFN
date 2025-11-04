@@ -1,0 +1,21 @@
+OffensivePlay,OffPlayType,OffPersonnel,ypp,cnt,any/a,int_rate,sack_rate,td_rate,ev_adj,vs_defense,def_frequency
+Strong I Big HB Toss Weak,Outside Run,2RB/2TE/1WR,8.64,48,10.37,0.0,0.0,2.0,1.693,Dime Normal Man Cover 1,29.84
+Singleback Slot Strong HB Counter,Outside Run,1RB/1TE/3WR,8.17,182,9.8,0.0,0.0,0.54,1.354,Dime Normal Man Cover 1,29.84
+Split Backs Normal Weak Pitch Sweep,Outside Run,2RB/1TE/2WR,8.02,40,9.63,0.0,0.0,,1.027,Dime Normal Man Cover 1,29.84
+Goal Line Normal HB Pitch Weak,Outside Run,2RB/3TE,7.49,53,8.99,0.0,0.0,,1.519,Dime Normal Man Cover 1,29.84
+Weak I Big HB Lead Toss Weak,Outside Run,2RB/2TE/1WR,7.46,36,8.95,0.0,0.0,,0.852,Dime Normal Man Cover 1,29.84
+Singleback Slot Strong HB Counter,Outside Run,1RB/1TE/3WR,8.32,92,9.98,0.0,0.0,2.11,1.3,Dime Flat 2 Deep Man Under,29.41
+Goal Line Normal HB Pitch Weak,Outside Run,2RB/3TE,8.18,34,9.81,0.0,0.0,,-0.007,Dime Flat 2 Deep Man Under,29.41
+Split Backs 3 Wide Dive Left,Inside Run,2RB/3WR,8.05,74,9.66,0.0,0.0,,0.295,Dime Flat 2 Deep Man Under,29.41
+I Formation Normal HB Blast,Inside Run,2RB/1TE/2WR,6.99,185,8.39,0.0,0.0,,0.829,Dime Flat 2 Deep Man Under,29.41
+Weak I Normal HB Inside Weak,Inside Run,2RB/1TE/2WR,6.98,142,8.37,0.0,0.0,0.7,0.777,Dime Flat 2 Deep Man Under,29.41
+Singleback Big HB Inside Strong,Inside Run,1RB/2TE/2WR,8.85,39,10.62,0.0,0.0,,0.685,Dime Normal 2 Deep Man Under,28.54
+Weak I Normal HB Inside Weak,Inside Run,2RB/1TE/2WR,8.69,71,10.43,0.0,0.0,,0.312,Dime Normal 2 Deep Man Under,28.54
+I Formation Normal HB Blast,Inside Run,2RB/1TE/2WR,8.49,93,10.19,0.0,0.0,,0.698,Dime Normal 2 Deep Man Under,28.54
+I Formation Power HB Strong Outside,Outside Run,3RB/1TE/1WR,8.42,55,10.1,0.0,0.0,,0.415,Dime Normal 2 Deep Man Under,28.54
+Singleback Slot Strong HB Counter,Outside Run,1RB/1TE/3WR,8.29,61,9.95,0.0,0.0,,-0.243,Dime Normal 2 Deep Man Under,28.54
+I Formation 3WR Slot Short WR Deep,Medium Pass,2RB/3WR,10.06,33,11.47,0.0,3.03,9.09,0.546,Dime Normal LB Blitz,2.16
+Singleback Normal HB Release Mid,Medium Pass,1RB/1TE/3WR,9.29,21,10.19,0.0,4.76,,0.433,Dime Normal LB Blitz,2.16
+Singleback Normal HB Counter Weak,Outside Run,1RB/1TE/3WR,8.89,27,10.67,0.0,0.0,3.57,1.547,Dime Normal LB Blitz,2.16
+Singleback Normal HB Dive Weak,Inside Run,1RB/1TE/3WR,7.68,24,9.22,0.0,0.0,,0.916,Dime Normal LB Blitz,2.16
+I Formation 3WR WR Out,Short Pass,2RB/3WR,7.33,43,8.79,0.0,0.0,2.33,0.958,Dime Normal LB Blitz,2.16

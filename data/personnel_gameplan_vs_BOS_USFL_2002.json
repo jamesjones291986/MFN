@@ -1,0 +1,81 @@
+{
+  "opponent": "BOS",
+  "league": "USFL",
+  "season": 2002,
+  "personnel_defense": {
+    "1RB/1TE/3WR": {
+      "total_plays": 202,
+      "defenses": {
+        "Dime Normal 2 Deep Man Under": 34.2,
+        "Dime Flat 2 Deep Man Under": 29.2,
+        "Dime Normal Man Cover 1": 25.2
+      }
+    },
+    "1RB/2TE/2WR": {
+      "total_plays": 72,
+      "defenses": {
+        "Dime Normal Man Cover 1": 41.7,
+        "Dime Flat 2 Deep Man Under": 30.6,
+        "Dime Normal 2 Deep Man Under": 20.8
+      }
+    },
+    "2RB/1TE/2WR": {
+      "total_plays": 270,
+      "defenses": {
+        "Dime Flat 2 Deep Man Under": 32.6,
+        "Dime Normal 2 Deep Man Under": 27.0,
+        "Dime Normal Man Cover 1": 26.3
+      }
+    },
+    "2RB/2TE/1WR": {
+      "total_plays": 16,
+      "defenses": {
+        "Dime Normal 2 Deep Man Under": 50.0,
+        "Dime Normal Man Cover 1": 31.2,
+        "Dime Flat 2 Deep Man Under": 18.8
+      }
+    },
+    "1RB/4WR": {
+      "total_plays": 28,
+      "defenses": {
+        "Dime Flat 2 Deep Man Under": 32.1,
+        "Dime Normal 2 Deep Man Under": 21.4,
+        "Dime Normal LB Blitz": 21.4,
+        "Dime Normal Man Cover 1": 21.4
+      }
+    },
+    "5WR": {
+      "total_plays": 23,
+      "defenses": {
+        "Dime Normal Man Cover 1": 52.2,
+        "Dime Normal 2 Deep Man Under": 39.1
+      }
+    },
+    "2RB/3TE": {
+      "total_plays": 75,
+      "defenses": {
+        "Dime Normal 2 Deep Man Under": 32.0,
+        "Dime Normal Man Cover 1": 29.3,
+        "Dime Flat 2 Deep Man Under": 22.7,
+        "4-3 Normal LB Blitz Under Zone": 5.3
+      }
+    },
+    "3RB/1TE/1WR": {
+      "total_plays": 48,
+      "defenses": {
+        "Dime Flat 2 Deep Man Under": 35.4,
+        "Dime Normal 2 Deep Man Under": 33.3,
+        "Dime Normal Man Cover 1": 22.9
+      }
+    },
+    "2RB/3WR": {
+      "total_plays": 178,
+      "defenses": {
+        "Dime Normal Man Cover 1": 34.8,
+        "Dime Flat 2 Deep Man Under": 29.8,
+        "Dime Normal 2 Deep Man Under": 23.6
+      }
+    }
+  },
+  "recommendations": {}
+}

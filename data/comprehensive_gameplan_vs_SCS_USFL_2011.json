@@ -1,0 +1,166 @@
+{
+  "opponent": "SCS",
+  "league": "USFL",
+  "season": 2011,
+  "opponent_defense_by_personnel": {
+    "1RB/1TE/3WR": {
+      "total_plays": 169,
+      "top_defense": "Nickel Normal Man Cover 2",
+      "top_defense_pct": 18.3,
+      "all_defenses": {
+        "Nickel Normal Man Cover 2": 18.3,
+        "Nickel 3-3-5 Cover 2 Man Under": 17.2
+      }
+    },
+    "1RB/2TE/2WR": {
+      "total_plays": 35,
+      "top_defense": "4-3 Under Crowd Middle",
+      "top_defense_pct": 25.7,
+      "all_defenses": {
+        "4-3 Under Crowd Middle": 25.7,
+        "4-3 Normal Double WR2": 22.9,
+        "4-3 Normal Man Under 1": 14.3,
+        "4-3 Under 2 Deep Flat Outside": 11.4
+      }
+    },
+    "2RB/1TE/2WR": {
+      "total_plays": 330,
+      "top_defense": "4-3 Normal Man Under 1",
+      "top_defense_pct": 27.0,
+      "all_defenses": {
+        "4-3 Normal Man Under 1": 27.0,
+        "4-3 Normal Double WR2": 21.2,
+        "4-3 Under Crowd Middle": 17.6
+      }
+    },
+    "2RB/2TE/1WR": {
+      "total_plays": 57,
+      "top_defense": "Goal Line 3 Deep Man",
+      "top_defense_pct": 56.1,
+      "all_defenses": {
+        "Goal Line 3 Deep Man": 56.1,
+        "Goal Line Attack #1": 28.1,
+        "Goal Line Attack #3": 10.5
+      }
+    },
+    "1RB/4WR": {
+      "total_plays": 7,
+      "top_defense": "Dime Normal Double WR3",
+      "top_defense_pct": 57.1,
+      "all_defenses": {
+        "Dime Normal Double WR3": 57.1,
+        "Dime Normal Double WR1 WR2": 42.9
+      }
+    },
+    "5WR": {
+      "total_plays": 12,
+      "top_defense": "Quarter Normal Man Short Zone",
+      "top_defense_pct": 16.7,
+      "all_defenses": {
+        "Quarter Normal Man Short Zone": 16.7
+      }
+    },
+    "2RB/3TE": {
+      "total_plays": 71,
+      "top_defense": "Goal Line 3 Deep Man",
+      "top_defense_pct": 57.7,
+      "all_defenses": {
+        "Goal Line 3 Deep Man": 57.7,
+        "Goal Line Attack #1": 31.0
+      }
+    },
+    "3RB/1TE/1WR": {
+      "total_plays": 112,
+      "top_defense": "Goal Line 3 Deep Man",
+      "top_defense_pct": 62.5,
+      "all_defenses": {
+        "Goal Line 3 Deep Man": 62.5,
+        "Goal Line Attack #1": 23.2,
+        "Goal Line Attack #3": 11.6
+      }
+    },
+    "2RB/3WR": {
+      "total_plays": 188,
+      "top_defense": "Nickel 3-3-5 Cover 2 Man Under",
+      "top_defense_pct": 21.3,
+      "all_defenses": {
+        "Nickel 3-3-5 Cover 2 Man Under": 21.3,
+        "Nickel Normal Man Cover 2": 13.8,
+        "Nickel Normal SS Blitz": 10.6
+      }
+    }
+  },
+  "opponent_offense_by_personnel": {
+    "1RB/1TE/3WR": {
+      "total_plays": 223,
+      "top_play": "Singleback Normal Post Corner",
+      "top_play_pct": 22.9,
+      "all_plays": {
+        "Singleback Normal Post Corner": 22.9,
+        "Singleback Normal TE Quick Out": 15.2,
+        "Singleback Normal HB Counter Weak": 14.8
+      }
+    },
+    "1RB/2TE/2WR": {
+      "total_plays": 57,
+      "top_play": "Singleback Big WR Deep",
+      "top_play_pct": 40.4,
+      "all_plays": {
+        "Singleback Big WR Deep": 40.4,
+        "Singleback Big Ins and Outs": 24.6,
+        "Singleback Big TE Flat Curl": 22.8,
+        "Singleback Big HB Inside Strong": 12.3
+      }
+    },
+    "2RB/1TE/2WR": {
+      "total_plays": 256,
+      "top_play": "I Formation Twin WR Slot Hitch",
+      "top_play_pct": 12.1,
+      "all_plays": {
+        "I Formation Twin WR Slot Hitch": 12.1,
+        "I Formation Normal Curl & Post": 10.9
+      }
+    },
+    "1RB/4WR": {
+      "total_plays": 18,
+      "top_play": "Shotgun 4 Wide WR Corner",
+      "top_play_pct": 100.0,
+      "all_plays": {
+        "Shotgun 4 Wide WR Corner": 100.0
+      }
+    },
+    "2RB/3TE": {
+      "total_plays": 85,
+      "top_play": "Goal Line Normal HB Outside Strong",
+      "top_play_pct": 30.6,
+      "all_plays": {
+        "Goal Line Normal HB Outside Strong": 30.6,
+        "Goal Line Normal HB Pitch Weak": 23.5,
+        "Goal Line Normal HB Toss Strong": 22.4,
+        "Goal Line Normal HB Weak": 14.1
+      }
+    },
+    "3RB/1TE/1WR": {
+      "total_plays": 26,
+      "top_play": "I Formation Power Play Action HB Downfield",
+      "top_play_pct": 100.0,
+      "all_plays": {
+        "I Formation Power Play Action HB Downfield": 100.0
+      }
+    },
+    "2RB/3WR": {
+      "total_plays": 48,
+      "top_play": "Split Backs 3 Wide Slot Post",
+      "top_play_pct": 47.9,
+      "all_plays": {
+        "Split Backs 3 Wide Slot Post": 47.9,
+        "Split Backs 3 Wide WR2 Deep Post": 29.2,
+        "Shotgun 2 RB 3 WR Shotgun Dive": 16.7
+      }
+    }
+  },
+  "offensive_gameplan": [],
+  "defensive_gameplan": [],
+  "total_offensive_plays": 0,
+  "total_defensive_schemes": 0
+}

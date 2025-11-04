@@ -1,0 +1,4420 @@
+{
+  "opponent": "BOS",
+  "league": "USFL",
+  "season": 2011,
+  "generated_at": "2025-11-04T15:51:33.352266",
+  "opponent_scouting": {
+    "offense": {
+      "1RB/1TE/3WR": {
+        "total_plays": 89,
+        "plays": {
+          "Shotgun Normal HB Flare": {
+            "count": 31,
+            "frequency": 34.8,
+            "total_plays": 89
+          },
+          "Shotgun Normal HB Delay": {
+            "count": 24,
+            "frequency": 27.0,
+            "total_plays": 89
+          },
+          "Singleback Normal HB Counter Weak": {
+            "count": 24,
+            "frequency": 27.0,
+            "total_plays": 89
+          },
+          "Shotgun Normal Double Outs": {
+            "count": 8,
+            "frequency": 9.0,
+            "total_plays": 89
+          },
+          "Shotgun Normal Deep Weak In and Out": {
+            "count": 2,
+            "frequency": 2.2,
+            "total_plays": 89
+          }
+        }
+      },
+      "2RB/1TE/2WR": {
+        "total_plays": 300,
+        "plays": {
+          "I Formation Normal HB Dive": {
+            "count": 68,
+            "frequency": 22.7,
+            "total_plays": 300
+          },
+          "I Formation Normal HB Blast": {
+            "count": 59,
+            "frequency": 19.7,
+            "total_plays": 300
+          },
+          "Strong I Normal HB Off Tackle Strong": {
+            "count": 45,
+            "frequency": 15.0,
+            "total_plays": 300
+          },
+          "I Formation Normal FL Hook": {
+            "count": 25,
+            "frequency": 8.3,
+            "total_plays": 300
+          },
+          "Weak I Normal WR Corner TE Middle": {
+            "count": 24,
+            "frequency": 8.0,
+            "total_plays": 300
+          },
+          "I Formation Normal PA Outside Curls": {
+            "count": 22,
+            "frequency": 7.3,
+            "total_plays": 300
+          },
+          "I Formation Normal FL Hitch": {
+            "count": 19,
+            "frequency": 6.3,
+            "total_plays": 300
+          },
+          "Weak I Normal Skinny Posts": {
+            "count": 19,
+            "frequency": 6.3,
+            "total_plays": 300
+          },
+          "I Formation Normal PA Fullback Flat": {
+            "count": 12,
+            "frequency": 4.0,
+            "total_plays": 300
+          },
+          "I Formation Normal PA Streaks": {
+            "count": 5,
+            "frequency": 1.7,
+            "total_plays": 300
+          },
+          "I Formation Normal SE Post": {
+            "count": 2,
+            "frequency": 0.7,
+            "total_plays": 300
+          }
+        }
+      },
+      "2RB/3TE": {
+        "total_plays": 185,
+        "plays": {
+          "Goal Line Normal HB Dive": {
+            "count": 61,
+            "frequency": 33.0,
+            "total_plays": 185
+          },
+          "Goal Line Normal HB Outside Strong": {
+            "count": 37,
+            "frequency": 20.0,
+            "total_plays": 185
+          },
+          "Goal Line Normal HB Pitch Weak": {
+            "count": 24,
+            "frequency": 13.0,
+            "total_plays": 185
+          },
+          "Goal Line Normal PA TE Drag": {
+            "count": 17,
+            "frequency": 9.2,
+            "total_plays": 185
+          },
+          "Goal Line Normal HB Off Tackle": {
+            "count": 16,
+            "frequency": 8.6,
+            "total_plays": 185
+          },
+          "Goal Line Normal HB Weak": {
+            "count": 16,
+            "frequency": 8.6,
+            "total_plays": 185
+          },
+          "Goal Line Normal HB Toss Strong": {
+            "count": 14,
+            "frequency": 7.6,
+            "total_plays": 185
+          }
+        }
+      },
+      "2RB/3WR": {
+        "total_plays": 102,
+        "plays": {
+          "Shotgun 2 RB 3 WR WR Curl": {
+            "count": 29,
+            "frequency": 28.4,
+            "total_plays": 102
+          },
+          "Shotgun 2 RB 3 WR FL Drag": {
+            "count": 20,
+            "frequency": 19.6,
+            "total_plays": 102
+          },
+          "Shotgun 2 RB 3 WR FB In": {
+            "count": 20,
+            "frequency": 19.6,
+            "total_plays": 102
+          },
+          "Shotgun 2 RB 3 WR WR Hooks": {
+            "count": 20,
+            "frequency": 19.6,
+            "total_plays": 102
+          },
+          "Shotgun 2 RB 3 WR RB Curls": {
+            "count": 10,
+            "frequency": 9.8,
+            "total_plays": 102
+          },
+          "Shotgun 2 RB 3 WR Strong Deep": {
+            "count": 3,
+            "frequency": 2.9,
+            "total_plays": 102
+          }
+        }
+      },
+      "3RB/1TE/1WR": {
+        "total_plays": 17,
+        "plays": {
+          "I Formation Power Play Action HB Downfield": {
+            "count": 17,
+            "frequency": 100.0,
+            "total_plays": 17
+          }
+        }
+      },
+      "Special Teams": {
+        "total_plays": 181,
+        "plays": {
+          "Punt": {
+            "count": 116,
+            "frequency": 64.1,
+            "total_plays": 181
+          },
+          "Kickoff": {
+            "count": 39,
+            "frequency": 21.5,
+            "total_plays": 181
+          },
+          "Field Goal": {
+            "count": 26,
+            "frequency": 14.4,
+            "total_plays": 181
+          }
+        }
+      }
+    },
+    "defense": {
+      "1RB/1TE/3WR": {
+        "total_plays": 173,
+        "plays": {
+          "Dime Flat Man Cover 1": {
+            "count": 33,
+            "frequency": 19.1,
+            "total_plays": 173
+          },
+          "Dime Flat 2 Deep Man Under": {
+            "count": 31,
+            "frequency": 17.9,
+            "total_plays": 173
+          },
+          "Dime Normal Double WR1 WR2": {
+            "count": 30,
+            "frequency": 17.3,
+            "total_plays": 173
+          },
+          "Dime Normal 2 Deep Man Under": {
+            "count": 24,
+            "frequency": 13.9,
+            "total_plays": 173
+          },
+          "Dime Normal Man Cover 1": {
+            "count": 21,
+            "frequency": 12.1,
+            "total_plays": 173
+          },
+          "Dime Normal Double WR3": {
+            "count": 10,
+            "frequency": 5.8,
+            "total_plays": 173
+          },
+          "Quarter Normal CB3 CB4 Blitz": {
+            "count": 5,
+            "frequency": 2.9,
+            "total_plays": 173
+          },
+          "4-3 Under Crowd Middle Deep Man": {
+            "count": 4,
+            "frequency": 2.3,
+            "total_plays": 173
+          },
+          "4-3 Under Zone Blitz": {
+            "count": 3,
+            "frequency": 1.7,
+            "total_plays": 173
+          },
+          "Nickel Normal SS Blitz": {
+            "count": 2,
+            "frequency": 1.2,
+            "total_plays": 173
+          },
+          "Dime Normal FS Blitz": {
+            "count": 2,
+            "frequency": 1.2,
+            "total_plays": 173
+          },
+          "Nickel Normal Double LB Blitz": {
+            "count": 2,
+            "frequency": 1.2,
+            "total_plays": 173
+          }
+        }
+      },
+      "1RB/2TE/2WR": {
+        "total_plays": 47,
+        "plays": {
+          "Dime Normal Man Cover 1": {
+            "count": 10,
+            "frequency": 21.3,
+            "total_plays": 47
+          },
+          "Dime Normal Double WR1 WR2": {
+            "count": 9,
+            "frequency": 19.1,
+            "total_plays": 47
+          },
+          "Dime Normal 2 Deep Man Under": {
+            "count": 8,
+            "frequency": 17.0,
+            "total_plays": 47
+          },
+          "Dime Flat Man Cover 1": {
+            "count": 6,
+            "frequency": 12.8,
+            "total_plays": 47
+          },
+          "Dime Flat 2 Deep Man Under": {
+            "count": 6,
+            "frequency": 12.8,
+            "total_plays": 47
+          },
+          "Dime Normal Double WR3": {
+            "count": 2,
+            "frequency": 4.3,
+            "total_plays": 47
+          },
+          "4-3 Under Zone Blitz": {
+            "count": 2,
+            "frequency": 4.3,
+            "total_plays": 47
+          }
+        }
+      },
+      "1RB/4WR": {
+        "total_plays": 15,
+        "plays": {
+          "Dime Flat Man Cover 1": {
+            "count": 5,
+            "frequency": 33.3,
+            "total_plays": 15
+          },
+          "Dime Flat 2 Deep Man Under": {
+            "count": 4,
+            "frequency": 26.7,
+            "total_plays": 15
+          },
+          "Dime Normal Double WR1 WR2": {
+            "count": 2,
+            "frequency": 13.3,
+            "total_plays": 15
+          }
+        }
+      },
+      "2RB/1TE/2WR": {
+        "total_plays": 329,
+        "plays": {
+          "Dime Normal 2 Deep Man Under": {
+            "count": 61,
+            "frequency": 18.5,
+            "total_plays": 329
+          },
+          "Dime Normal Man Cover 1": {
+            "count": 55,
+            "frequency": 16.7,
+            "total_plays": 329
+          },
+          "Dime Flat Man Cover 1": {
+            "count": 53,
+            "frequency": 16.1,
+            "total_plays": 329
+          },
+          "Dime Flat 2 Deep Man Under": {
+            "count": 51,
+            "frequency": 15.5,
+            "total_plays": 329
+          },
+          "Dime Normal Double WR1 WR2": {
+            "count": 49,
+            "frequency": 14.9,
+            "total_plays": 329
+          },
+          "Dime Normal Double WR3": {
+            "count": 12,
+            "frequency": 3.6,
+            "total_plays": 329
+          },
+          "Dime Normal FS Blitz": {
+            "count": 8,
+            "frequency": 2.4,
+            "total_plays": 329
+          },
+          "Quarter Normal CB3 CB4 Blitz": {
+            "count": 7,
+            "frequency": 2.1,
+            "total_plays": 329
+          },
+          "3-4 Normal Man Cover 1": {
+            "count": 7,
+            "frequency": 2.1,
+            "total_plays": 329
+          },
+          "4-3 Under Crowd Middle Deep Man": {
+            "count": 6,
+            "frequency": 1.8,
+            "total_plays": 329
+          },
+          "4-3 Under Double LB Blitz": {
+            "count": 5,
+            "frequency": 1.5,
+            "total_plays": 329
+          },
+          "3-4 Normal Man QB Spy": {
+            "count": 4,
+            "frequency": 1.2,
+            "total_plays": 329
+          },
+          "4-3 Under Zone Blitz": {
+            "count": 2,
+            "frequency": 0.6,
+            "total_plays": 329
+          },
+          "4-3 Under Crash Right": {
+            "count": 2,
+            "frequency": 0.6,
+            "total_plays": 329
+          },
+          "Quarter Normal CB5 MLB Blitz": {
+            "count": 2,
+            "frequency": 0.6,
+            "total_plays": 329
+          }
+        }
+      },
+      "2RB/2TE/1WR": {
+        "total_plays": 52,
+        "plays": {
+          "Dime Normal Man Cover 1": {
+            "count": 12,
+            "frequency": 23.1,
+            "total_plays": 52
+          },
+          "Dime Flat 2 Deep Man Under": {
+            "count": 12,
+            "frequency": 23.1,
+            "total_plays": 52
+          },
+          "Dime Normal 2 Deep Man Under": {
+            "count": 8,
+            "frequency": 15.4,
+            "total_plays": 52
+          },
+          "Dime Normal Double WR1 WR2": {
+            "count": 7,
+            "frequency": 13.5,
+            "total_plays": 52
+          },
+          "Dime Flat Man Cover 1": {
+            "count": 7,
+            "frequency": 13.5,
+            "total_plays": 52
+          },
+          "4-3 Under Crash Right": {
+            "count": 2,
+            "frequency": 3.8,
+            "total_plays": 52
+          }
+        }
+      },
+      "2RB/3TE": {
+        "total_plays": 44,
+        "plays": {
+          "Dime Normal Double WR1 WR2": {
+            "count": 10,
+            "frequency": 22.7,
+            "total_plays": 44
+          },
+          "Quarter Normal CB5 MLB Blitz": {
+            "count": 10,
+            "frequency": 22.7,
+            "total_plays": 44
+          },
+          "Dime Flat 2 Deep Man Under": {
+            "count": 8,
+            "frequency": 18.2,
+            "total_plays": 44
+          },
+          "Dime Flat Man Cover 1": {
+            "count": 8,
+            "frequency": 18.2,
+            "total_plays": 44
+          },
+          "Dime Normal Man Cover 1": {
+            "count": 4,
+            "frequency": 9.1,
+            "total_plays": 44
+          },
+          "Dime Normal 2 Deep Man Under": {
+            "count": 3,
+            "frequency": 6.8,
+            "total_plays": 44
+          }
+        }
+      },
+      "2RB/3WR": {
+        "total_plays": 137,
+        "plays": {
+          "Dime Normal 2 Deep Man Under": {
+            "count": 26,
+            "frequency": 19.0,
+            "total_plays": 137
+          },
+          "Dime Normal Double WR1 WR2": {
+            "count": 26,
+            "frequency": 19.0,
+            "total_plays": 137
+          },
+          "Dime Flat 2 Deep Man Under": {
+            "count": 24,
+            "frequency": 17.5,
+            "total_plays": 137
+          },
+          "Dime Flat Man Cover 1": {
+            "count": 18,
+            "frequency": 13.1,
+            "total_plays": 137
+          },
+          "Dime Normal Man Cover 1": {
+            "count": 18,
+            "frequency": 13.1,
+            "total_plays": 137
+          },
+          "Dime Flat CB3 CB4 Blitz": {
+            "count": 6,
+            "frequency": 4.4,
+            "total_plays": 137
+          },
+          "Dime Normal Double WR3": {
+            "count": 5,
+            "frequency": 3.6,
+            "total_plays": 137
+          },
+          "4-3 Under Crash Right": {
+            "count": 3,
+            "frequency": 2.2,
+            "total_plays": 137
+          },
+          "Dime Normal FS Blitz": {
+            "count": 3,
+            "frequency": 2.2,
+            "total_plays": 137
+          },
+          "4-3 Under Zone Blitz": {
+            "count": 2,
+            "frequency": 1.5,
+            "total_plays": 137
+          },
+          "Nickel Normal Man Zone": {
+            "count": 2,
+            "frequency": 1.5,
+            "total_plays": 137
+          }
+        }
+      },
+      "3RB/1TE/1WR": {
+        "total_plays": 117,
+        "plays": {
+          "Dime Flat 2 Deep Man Under": {
+            "count": 24,
+            "frequency": 20.5,
+            "total_plays": 117
+          },
+          "Dime Normal 2 Deep Man Under": {
+            "count": 22,
+            "frequency": 18.8,
+            "total_plays": 117
+          },
+          "Dime Normal Double WR1 WR2": {
+            "count": 20,
+            "frequency": 17.1,
+            "total_plays": 117
+          },
+          "Dime Flat Man Cover 1": {
+            "count": 20,
+            "frequency": 17.1,
+            "total_plays": 117
+          },
+          "Dime Normal Man Cover 1": {
+            "count": 16,
+            "frequency": 13.7,
+            "total_plays": 117
+          },
+          "Dime Normal Double WR3": {
+            "count": 4,
+            "frequency": 3.4,
+            "total_plays": 117
+          },
+          "4-3 Under Double LB Blitz": {
+            "count": 2,
+            "frequency": 1.7,
+            "total_plays": 117
+          },
+          "4-3 Under Zone Blitz": {
+            "count": 2,
+            "frequency": 1.7,
+            "total_plays": 117
+          },
+          "Goal Line Attack #1": {
+            "count": 2,
+            "frequency": 1.7,
+            "total_plays": 117
+          }
+        }
+      },
+      "Special Teams": {
+        "total_plays": 195,
+        "plays": {
+          "Kick Return": {
+            "count": 71,
+            "frequency": 36.4,
+            "total_plays": 195
+          },
+          "FG Block": {
+            "count": 70,
+            "frequency": 35.9,
+            "total_plays": 195
+          },
+          "Punt Return": {
+            "count": 54,
+            "frequency": 27.7,
+            "total_plays": 195
+          }
+        }
+      }
+    }
+  },
+  "recommended_counters": {
+    "vs_offense": {
+      "1RB/1TE/3WR": {
+        "Shotgun Normal HB Flare": {
+          "opponent_frequency": 34.8,
+          "sample_size": 5254,
+          "best_counters": [
+            {
+              "defensive_play": "Dime Normal Double WR3",
+              "avg_yards_allowed": 2.45,
+              "sample_size": 11,
+              "expected_value": 1.15
+            },
+            {
+              "defensive_play": "Nickel Strong FS CB3 Blitz",
+              "avg_yards_allowed": 2.6,
+              "sample_size": 5,
+              "expected_value": 1.62
+            },
+            {
+              "defensive_play": "Nickel Strong Cover 2",
+              "avg_yards_allowed": 3.2,
+              "sample_size": 10,
+              "expected_value": 1.18
+            },
+            {
+              "defensive_play": "Dime Flat CB4 Blitz",
+              "avg_yards_allowed": 4.25,
+              "sample_size": 4,
+              "expected_value": -2.21
+            },
+            {
+              "defensive_play": "Dime Normal Man Cover 1",
+              "avg_yards_allowed": 5.46,
+              "sample_size": 54,
+              "expected_value": 0.1
+            }
+          ]
+        },
+        "Shotgun Normal HB Delay": {
+          "opponent_frequency": 27.0,
+          "sample_size": 408,
+          "best_counters": [
+            {
+              "defensive_play": "Goal Line Attack #3",
+              "avg_yards_allowed": -3.2,
+              "sample_size": 5,
+              "expected_value": -6.99
+            },
+            {
+              "defensive_play": "Nickel 3-3-5 Weak Side Blitz",
+              "avg_yards_allowed": -2.0,
+              "sample_size": 3,
+              "expected_value": -3.59
+            },
+            {
+              "defensive_play": "4-3 Normal WLB Outside Blitz",
+              "avg_yards_allowed": -1.86,
+              "sample_size": 14,
+              "expected_value": -1.14
+            },
+            {
+              "defensive_play": "4-3 Under Crash Right",
+              "avg_yards_allowed": -1.56,
+              "sample_size": 9,
+              "expected_value": -1.82
+            },
+            {
+              "defensive_play": "4-3 Under Double LB Blitz",
+              "avg_yards_allowed": -1.5,
+              "sample_size": 6,
+              "expected_value": -2.82
+            }
+          ]
+        },
+        "Singleback Normal HB Counter Weak": {
+          "opponent_frequency": 27.0,
+          "sample_size": 1274,
+          "best_counters": [
+            {
+              "defensive_play": "3-4 Normal OLBs Blitz",
+              "avg_yards_allowed": -3.11,
+              "sample_size": 9,
+              "expected_value": -0.78
+            },
+            {
+              "defensive_play": "Goal Line Attack #3",
+              "avg_yards_allowed": -3.0,
+              "sample_size": 13,
+              "expected_value": -0.47
+            },
+            {
+              "defensive_play": "Goal Line Attack #1",
+              "avg_yards_allowed": -3.0,
+              "sample_size": 7,
+              "expected_value": -0.7
+            },
+            {
+              "defensive_play": "3-4 Normal Man Cover 1",
+              "avg_yards_allowed": -2.75,
+              "sample_size": 52,
+              "expected_value": -1.38
+            },
+            {
+              "defensive_play": "Nickel Strong Double LB plus CB3 Blitz",
+              "avg_yards_allowed": -2.71,
+              "sample_size": 7,
+              "expected_value": 0.71
+            }
+          ]
+        },
+        "Shotgun Normal Double Outs": {
+          "opponent_frequency": 9.0,
+          "sample_size": 602,
+          "best_counters": [
+            {
+              "defensive_play": "Nickel Normal SS Blitz",
+              "avg_yards_allowed": 0.8,
+              "sample_size": 5,
+              "expected_value": -0.65
+            },
+            {
+              "defensive_play": "Nickel Strong 2 Deep Man Under",
+              "avg_yards_allowed": 2.0,
+              "sample_size": 7,
+              "expected_value": -1.9
+            },
+            {
+              "defensive_play": "4-3 Normal Man QB Spy",
+              "avg_yards_allowed": 2.6,
+              "sample_size": 5,
+              "expected_value": 1.79
+            },
+            {
+              "defensive_play": "Dime Flat 2 Deep Man Under",
+              "avg_yards_allowed": 2.67,
+              "sample_size": 3,
+              "expected_value": -0.6
+            },
+            {
+              "defensive_play": "Nickel Normal Shallow Zone Deep",
+              "avg_yards_allowed": 2.82,
+              "sample_size": 11,
+              "expected_value": 1.23
+            }
+          ]
+        },
+        "Shotgun Normal Deep Weak In and Out": {
+          "opponent_frequency": 2.2,
+          "sample_size": 186,
+          "best_counters": [
+            {
+              "defensive_play": "Nickel Normal Double WR2",
+              "avg_yards_allowed": -6.5,
+              "sample_size": 4,
+              "expected_value": -0.99
+            },
+            {
+              "defensive_play": "3-4 Normal Man Cover 1",
+              "avg_yards_allowed": -5.45,
+              "sample_size": 11,
+              "expected_value": -4.63
+            },
+            {
+              "defensive_play": "4-3 Normal WLB Outside Blitz",
+              "avg_yards_allowed": -5.0,
+              "sample_size": 3,
+              "expected_value": -0.12
+            },
+            {
+              "defensive_play": "4-3 Normal Man QB Spy",
+              "avg_yards_allowed": -4.67,
+              "sample_size": 3,
+              "expected_value": 0.32
+            },
+            {
+              "defensive_play": "Dime Normal Man Cover 1",
+              "avg_yards_allowed": -4.6,
+              "sample_size": 5,
+              "expected_value": -0.87
+            }
+          ]
+        }
+      },
+      "2RB/1TE/2WR": {
+        "I Formation Normal HB Dive": {
+          "opponent_frequency": 22.7,
+          "sample_size": 2382,
+          "best_counters": [
+            {
+              "defensive_play": "4-3 Under Double LB Blitz",
+              "avg_yards_allowed": 0.62,
+              "sample_size": 79,
+              "expected_value": 0.99
+            },
+            {
+              "defensive_play": "Goal Line Attack #1",
+              "avg_yards_allowed": 1.0,
+              "sample_size": 7,
+              "expected_value": -2.77
+            },
+            {
+              "defensive_play": "Goal Line Attack #3",
+              "avg_yards_allowed": 1.21,
+              "sample_size": 33,
+              "expected_value": -2.08
+            },
+            {
+              "defensive_play": "46 Normal Inside Blitz",
+              "avg_yards_allowed": 1.46,
+              "sample_size": 28,
+              "expected_value": 0.53
+            },
+            {
+              "defensive_play": "4-3 Under Double Safety Blitz",
+              "avg_yards_allowed": 1.7,
+              "sample_size": 110,
+              "expected_value": 0.85
+            }
+          ]
+        },
+        "I Formation Normal HB Blast": {
+          "opponent_frequency": 19.7,
+          "sample_size": 2542,
+          "best_counters": [
+            {
+              "defensive_play": "46 Normal Weak Blitz",
+              "avg_yards_allowed": -0.94,
+              "sample_size": 16,
+              "expected_value": 1.06
+            },
+            {
+              "defensive_play": "4-3 Under Double LB Blitz",
+              "avg_yards_allowed": -0.05,
+              "sample_size": 102,
+              "expected_value": 0.14
+            },
+            {
+              "defensive_play": "4-3 Normal WLB MLB Blitz",
+              "avg_yards_allowed": 0.45,
+              "sample_size": 76,
+              "expected_value": 1.58
+            },
+            {
+              "defensive_play": "4-3 Under Double Safety Blitz",
+              "avg_yards_allowed": 0.76,
+              "sample_size": 82,
+              "expected_value": 1.21
+            },
+            {
+              "defensive_play": "Goal Line Attack #1",
+              "avg_yards_allowed": 1.47,
+              "sample_size": 17,
+              "expected_value": -2.17
+            }
+          ]
+        },
+        "Strong I Normal HB Off Tackle Strong": {
+          "opponent_frequency": 15.0,
+          "sample_size": 1615,
+          "best_counters": [
+            {
+              "defensive_play": "46 Normal Strong Blitz",
+              "avg_yards_allowed": -0.6,
+              "sample_size": 5,
+              "expected_value": 1.38
+            },
+            {
+              "defensive_play": "46 Normal Outside Blitz",
+              "avg_yards_allowed": -0.58,
+              "sample_size": 12,
+              "expected_value": -0.2
+            },
+            {
+              "defensive_play": "Goal Line Attack #3",
+              "avg_yards_allowed": 0.0,
+              "sample_size": 30,
+              "expected_value": -1.85
+            },
+            {
+              "defensive_play": "Goal Line Attack #2",
+              "avg_yards_allowed": 0.25,
+              "sample_size": 12,
+              "expected_value": 0.78
+            },
+            {
+              "defensive_play": "Goal Line Attack #1",
+              "avg_yards_allowed": 0.64,
+              "sample_size": 11,
+              "expected_value": 1.52
+            }
+          ]
+        },
+        "I Formation Normal FL Hook": {
+          "opponent_frequency": 8.3,
+          "sample_size": 962,
+          "best_counters": [
+            {
+              "defensive_play": "3-4 Normal Double Blitz",
+              "avg_yards_allowed": -0.67,
+              "sample_size": 3,
+              "expected_value": 1.5
+            },
+            {
+              "defensive_play": "3-4 Normal Man Cover 1",
+              "avg_yards_allowed": 1.6,
+              "sample_size": 35,
+              "expected_value": 0.48
+            },
+            {
+              "defensive_play": "4-3 Normal Double WR1",
+              "avg_yards_allowed": 1.73,
+              "sample_size": 26,
+              "expected_value": 0.27
+            },
+            {
+              "defensive_play": "Dime Flat 2 Deep Man Under",
+              "avg_yards_allowed": 2.0,
+              "sample_size": 7,
+              "expected_value": -3.33
+            },
+            {
+              "defensive_play": "4-3 Normal WLB Outside Blitz",
+              "avg_yards_allowed": 2.05,
+              "sample_size": 21,
+              "expected_value": 0.11
+            }
+          ]
+        },
+        "Weak I Normal WR Corner TE Middle": {
+          "opponent_frequency": 8.0,
+          "sample_size": 3487,
+          "best_counters": [
+            {
+              "defensive_play": "Nickel Normal Man Cover 2",
+              "avg_yards_allowed": 1.25,
+              "sample_size": 4,
+              "expected_value": -0.0
+            },
+            {
+              "defensive_play": "Dime Normal Double WR3",
+              "avg_yards_allowed": 3.4,
+              "sample_size": 5,
+              "expected_value": 1.01
+            },
+            {
+              "defensive_play": "Dime Normal FS Blitz",
+              "avg_yards_allowed": 4.0,
+              "sample_size": 10,
+              "expected_value": 0.54
+            },
+            {
+              "defensive_play": "3-4 Normal 2 Deep Zone",
+              "avg_yards_allowed": 4.14,
+              "sample_size": 7,
+              "expected_value": 3.33
+            },
+            {
+              "defensive_play": "4-3 Normal SLB Middle Blitz",
+              "avg_yards_allowed": 4.89,
+              "sample_size": 9,
+              "expected_value": 3.56
+            }
+          ]
+        },
+        "I Formation Normal PA Outside Curls": {
+          "opponent_frequency": 7.3,
+          "sample_size": 997,
+          "best_counters": [
+            {
+              "defensive_play": "3-4 Normal 2 Deep Man",
+              "avg_yards_allowed": -1.25,
+              "sample_size": 4,
+              "expected_value": -0.32
+            },
+            {
+              "defensive_play": "46 Normal Weak Blitz",
+              "avg_yards_allowed": 1.33,
+              "sample_size": 3,
+              "expected_value": -1.0
+            },
+            {
+              "defensive_play": "Nickel Strong Cover 2",
+              "avg_yards_allowed": 1.8,
+              "sample_size": 5,
+              "expected_value": 0.6
+            },
+            {
+              "defensive_play": "4-3 Normal SLB Outside Blitz",
+              "avg_yards_allowed": 2.29,
+              "sample_size": 7,
+              "expected_value": 1.66
+            },
+            {
+              "defensive_play": "Dime Normal Man Cover 1",
+              "avg_yards_allowed": 2.4,
+              "sample_size": 10,
+              "expected_value": -2.4
+            }
+          ]
+        },
+        "I Formation Normal FL Hitch": {
+          "opponent_frequency": 6.3,
+          "sample_size": 3575,
+          "best_counters": [
+            {
+              "defensive_play": "Goal Line Attack #3",
+              "avg_yards_allowed": -1.01,
+              "sample_size": 73,
+              "expected_value": -0.63
+            },
+            {
+              "defensive_play": "Nickel Normal Man Cover 2",
+              "avg_yards_allowed": 0.67,
+              "sample_size": 3,
+              "expected_value": 4.19
+            },
+            {
+              "defensive_play": "4-3 Under Zone Blitz",
+              "avg_yards_allowed": 2.0,
+              "sample_size": 3,
+              "expected_value": 1.5
+            },
+            {
+              "defensive_play": "4-3 Normal 3 Deep LB Blitz",
+              "avg_yards_allowed": 2.2,
+              "sample_size": 5,
+              "expected_value": 1.8
+            },
+            {
+              "defensive_play": "3-4 Normal 4 Deep Zone",
+              "avg_yards_allowed": 4.33,
+              "sample_size": 3,
+              "expected_value": 3.24
+            }
+          ]
+        },
+        "Weak I Normal Skinny Posts": {
+          "opponent_frequency": 6.3,
+          "sample_size": 1419,
+          "best_counters": [
+            {
+              "defensive_play": "Dime Normal FS Blitz",
+              "avg_yards_allowed": -0.33,
+              "sample_size": 3,
+              "expected_value": -2.98
+            },
+            {
+              "defensive_play": "Nickel Normal Double WR3",
+              "avg_yards_allowed": 0.5,
+              "sample_size": 4,
+              "expected_value": 0.63
+            },
+            {
+              "defensive_play": "3-4 Normal 2 Deep Man",
+              "avg_yards_allowed": 1.89,
+              "sample_size": 9,
+              "expected_value": 0.01
+            },
+            {
+              "defensive_play": "46 Heavy 2 Deep Man Under",
+              "avg_yards_allowed": 2.29,
+              "sample_size": 7,
+              "expected_value": 3.59
+            },
+            {
+              "defensive_play": "Nickel Normal Double WR1",
+              "avg_yards_allowed": 2.5,
+              "sample_size": 8,
+              "expected_value": -0.98
+            }
+          ]
+        },
+        "I Formation Normal PA Fullback Flat": {
+          "opponent_frequency": 4.0,
+          "sample_size": 2049,
+          "best_counters": [
+            {
+              "defensive_play": "Nickel Normal Double WR3",
+              "avg_yards_allowed": 1.0,
+              "sample_size": 4,
+              "expected_value": 0.49
+            },
+            {
+              "defensive_play": "Nickel Normal Double WR2",
+              "avg_yards_allowed": 1.73,
+              "sample_size": 11,
+              "expected_value": 2.85
+            },
+            {
+              "defensive_play": "3-4 Normal 2 Deep Man",
+              "avg_yards_allowed": 2.0,
+              "sample_size": 9,
+              "expected_value": 3.0
+            },
+            {
+              "defensive_play": "Dime Normal Double WR3",
+              "avg_yards_allowed": 2.0,
+              "sample_size": 3,
+              "expected_value": -1.0
+            },
+            {
+              "defensive_play": "Nickel Normal Double WR1",
+              "avg_yards_allowed": 2.3,
+              "sample_size": 10,
+              "expected_value": 2.83
+            }
+          ]
+        },
+        "I Formation Normal PA Streaks": {
+          "opponent_frequency": 1.7,
+          "sample_size": 454,
+          "best_counters": [
+            {
+              "defensive_play": "Dime Flat Man Cover 1",
+              "avg_yards_allowed": -8.0,
+              "sample_size": 3,
+              "expected_value": -2.43
+            },
+            {
+              "defensive_play": "4-3 Normal SLB Outside Blitz",
+              "avg_yards_allowed": -6.33,
+              "sample_size": 3,
+              "expected_value": 1.4
+            },
+            {
+              "defensive_play": "4-3 Normal Double WR1",
+              "avg_yards_allowed": -5.83,
+              "sample_size": 6,
+              "expected_value": -3.99
+            },
+            {
+              "defensive_play": "Goal Line Attack #3",
+              "avg_yards_allowed": -4.67,
+              "sample_size": 12,
+              "expected_value": -3.47
+            },
+            {
+              "defensive_play": "Dime Normal Man Cover 1",
+              "avg_yards_allowed": -3.8,
+              "sample_size": 10,
+              "expected_value": -3.26
+            }
+          ]
+        },
+        "I Formation Normal SE Post": {
+          "opponent_frequency": 0.7,
+          "sample_size": 537,
+          "best_counters": [
+            {
+              "defensive_play": "Dime Normal Man Cover 1",
+              "avg_yards_allowed": -6.86,
+              "sample_size": 14,
+              "expected_value": -3.53
+            },
+            {
+              "defensive_play": "Dime Flat Man Cover 1",
+              "avg_yards_allowed": -3.0,
+              "sample_size": 3,
+              "expected_value": -3.99
+            },
+            {
+              "defensive_play": "Goal Line Attack #3",
+              "avg_yards_allowed": -2.4,
+              "sample_size": 10,
+              "expected_value": -1.71
+            },
+            {
+              "defensive_play": "Goal Line Attack #1",
+              "avg_yards_allowed": -0.67,
+              "sample_size": 3,
+              "expected_value": -2.97
+            },
+            {
+              "defensive_play": "Dime Flat 2 Deep Man Under",
+              "avg_yards_allowed": -0.4,
+              "sample_size": 5,
+              "expected_value": -0.62
+            }
+          ]
+        }
+      },
+      "2RB/3TE": {
+        "Goal Line Normal HB Dive": {
+          "opponent_frequency": 33.0,
+          "sample_size": 948,
+          "best_counters": [
+            {
+              "defensive_play": "Dime Flat MLB SS Blitz",
+              "avg_yards_allowed": 1.0,
+              "sample_size": 3,
+              "expected_value": -6.98
+            },
+            {
+              "defensive_play": "Goal Line Attack #3",
+              "avg_yards_allowed": 1.38,
+              "sample_size": 77,
+              "expected_value": 0.07
+            },
+            {
+              "defensive_play": "Dime Normal Double WR1",
+              "avg_yards_allowed": 1.4,
+              "sample_size": 5,
+              "expected_value": -3.39
+            },
+            {
+              "defensive_play": "46 Normal Inside Blitz",
+              "avg_yards_allowed": 1.54,
+              "sample_size": 13,
+              "expected_value": 1.7
+            },
+            {
+              "defensive_play": "Nickel Normal Shallow Zone Deep",
+              "avg_yards_allowed": 1.67,
+              "sample_size": 3,
+              "expected_value": 2.33
+            }
+          ]
+        },
+        "Goal Line Normal HB Outside Strong": {
+          "opponent_frequency": 20.0,
+          "sample_size": 1175,
+          "best_counters": [
+            {
+              "defensive_play": "Goal Line Attack #3",
+              "avg_yards_allowed": -0.08,
+              "sample_size": 106,
+              "expected_value": 0.37
+            },
+            {
+              "defensive_play": "46 Normal Inside Blitz",
+              "avg_yards_allowed": 0.82,
+              "sample_size": 11,
+              "expected_value": -2.54
+            },
+            {
+              "defensive_play": "Goal Line Attack #2",
+              "avg_yards_allowed": 1.12,
+              "sample_size": 147,
+              "expected_value": 0.42
+            },
+            {
+              "defensive_play": "4-3 Normal OLB Blitz Inside",
+              "avg_yards_allowed": 1.27,
+              "sample_size": 11,
+              "expected_value": -1.07
+            },
+            {
+              "defensive_play": "4-3 Normal OLB Blitz Outside",
+              "avg_yards_allowed": 1.3,
+              "sample_size": 10,
+              "expected_value": -0.33
+            }
+          ]
+        },
+        "Goal Line Normal HB Pitch Weak": {
+          "opponent_frequency": 13.0,
+          "sample_size": 1404,
+          "best_counters": [
+            {
+              "defensive_play": "Nickel Normal CB3 LB Blitz",
+              "avg_yards_allowed": -3.75,
+              "sample_size": 4,
+              "expected_value": 1.8
+            },
+            {
+              "defensive_play": "Nickel Blitz Stunt Blitz",
+              "avg_yards_allowed": -3.67,
+              "sample_size": 3,
+              "expected_value": 2.33
+            },
+            {
+              "defensive_play": "4-3 Normal OLB Blitz Inside",
+              "avg_yards_allowed": -1.78,
+              "sample_size": 9,
+              "expected_value": -2.66
+            },
+            {
+              "defensive_play": "Nickel 3-3-5 Weak Side Blitz",
+              "avg_yards_allowed": -1.67,
+              "sample_size": 3,
+              "expected_value": 4.33
+            },
+            {
+              "defensive_play": "4-3 Under Double Safety Blitz",
+              "avg_yards_allowed": -1.51,
+              "sample_size": 116,
+              "expected_value": -1.91
+            }
+          ]
+        },
+        "Goal Line Normal PA TE Drag": {
+          "opponent_frequency": 9.2,
+          "sample_size": 866,
+          "best_counters": [
+            {
+              "defensive_play": "4-3 Under Crash Left",
+              "avg_yards_allowed": 2.33,
+              "sample_size": 3,
+              "expected_value": 2.6
+            },
+            {
+              "defensive_play": "3-4 Normal Man Cover 1",
+              "avg_yards_allowed": 3.0,
+              "sample_size": 5,
+              "expected_value": 1.27
+            },
+            {
+              "defensive_play": "Dime Flat MLB SS Blitz",
+              "avg_yards_allowed": 3.2,
+              "sample_size": 5,
+              "expected_value": 3.99
+            },
+            {
+              "defensive_play": "4-3 Normal OLB Blitz Inside",
+              "avg_yards_allowed": 3.2,
+              "sample_size": 5,
+              "expected_value": -2.25
+            },
+            {
+              "defensive_play": "Dime Normal Double WR1 WR2",
+              "avg_yards_allowed": 3.33,
+              "sample_size": 3,
+              "expected_value": 4.96
+            }
+          ]
+        },
+        "Goal Line Normal HB Off Tackle": {
+          "opponent_frequency": 8.6,
+          "sample_size": 1110,
+          "best_counters": [
+            {
+              "defensive_play": "4-3 Normal Cover 2 MLB Blitz",
+              "avg_yards_allowed": 0.67,
+              "sample_size": 3,
+              "expected_value": 4.33
+            },
+            {
+              "defensive_play": "Goal Line 3 Deep Blitz",
+              "avg_yards_allowed": 0.77,
+              "sample_size": 13,
+              "expected_value": 1.81
+            },
+            {
+              "defensive_play": "4-3 Normal Double Safety Blitz",
+              "avg_yards_allowed": 1.19,
+              "sample_size": 21,
+              "expected_value": -0.57
+            },
+            {
+              "defensive_play": "Goal Line Attack #2",
+              "avg_yards_allowed": 1.41,
+              "sample_size": 124,
+              "expected_value": 1.6
+            },
+            {
+              "defensive_play": "4-3 Under Double Safety Blitz",
+              "avg_yards_allowed": 1.46,
+              "sample_size": 70,
+              "expected_value": -0.9
+            }
+          ]
+        },
+        "Goal Line Normal HB Weak": {
+          "opponent_frequency": 8.6,
+          "sample_size": 1140,
+          "best_counters": [
+            {
+              "defensive_play": "4-3 Under Double LB Blitz",
+              "avg_yards_allowed": 0.19,
+              "sample_size": 16,
+              "expected_value": 1.39
+            },
+            {
+              "defensive_play": "4-3 Under Double Safety Blitz",
+              "avg_yards_allowed": 0.32,
+              "sample_size": 78,
+              "expected_value": -2.38
+            },
+            {
+              "defensive_play": "4-3 Normal WLB MLB Blitz",
+              "avg_yards_allowed": 1.0,
+              "sample_size": 12,
+              "expected_value": -1.08
+            },
+            {
+              "defensive_play": "Goal Line Attack #3",
+              "avg_yards_allowed": 1.27,
+              "sample_size": 114,
+              "expected_value": -0.08
+            },
+            {
+              "defensive_play": "3-4 Normal Double WR2",
+              "avg_yards_allowed": 1.5,
+              "sample_size": 4,
+              "expected_value": -1.99
+            }
+          ]
+        },
+        "Goal Line Normal HB Toss Strong": {
+          "opponent_frequency": 7.6,
+          "sample_size": 1123,
+          "best_counters": [
+            {
+              "defensive_play": "46 Heavy SS MLB Blitz",
+              "avg_yards_allowed": -1.0,
+              "sample_size": 3,
+              "expected_value": 2.3
+            },
+            {
+              "defensive_play": "4-3 Normal Cover 2 MLB Blitz",
+              "avg_yards_allowed": -1.0,
+              "sample_size": 3,
+              "expected_value": -6.98
+            },
+            {
+              "defensive_play": "4-3 Normal Double Safety Blitz",
+              "avg_yards_allowed": -0.54,
+              "sample_size": 13,
+              "expected_value": 1.76
+            },
+            {
+              "defensive_play": "46 Normal Inside Blitz",
+              "avg_yards_allowed": -0.45,
+              "sample_size": 11,
+              "expected_value": -1.62
+            },
+            {
+              "defensive_play": "4-3 Normal WLB MLB Blitz",
+              "avg_yards_allowed": 0.11,
+              "sample_size": 9,
+              "expected_value": -3.44
+            }
+          ]
+        }
+      },
+      "2RB/3WR": {
+        "Shotgun 2 RB 3 WR WR Curl": {
+          "opponent_frequency": 28.4,
+          "sample_size": 730,
+          "best_counters": [
+            {
+              "defensive_play": "Dime Normal Double WR3",
+              "avg_yards_allowed": 1.0,
+              "sample_size": 3,
+              "expected_value": 0.0
+            },
+            {
+              "defensive_play": "3-4 Normal Man QB Spy",
+              "avg_yards_allowed": 2.5,
+              "sample_size": 6,
+              "expected_value": -3.16
+            },
+            {
+              "defensive_play": "4-3 Under Double Safety Blitz",
+              "avg_yards_allowed": 2.83,
+              "sample_size": 6,
+              "expected_value": 3.12
+            },
+            {
+              "defensive_play": "4-3 Normal WLB Outside Blitz",
+              "avg_yards_allowed": 3.43,
+              "sample_size": 7,
+              "expected_value": -0.71
+            },
+            {
+              "defensive_play": "Nickel Normal Man Cover 2",
+              "avg_yards_allowed": 3.72,
+              "sample_size": 18,
+              "expected_value": -1.25
+            }
+          ]
+        },
+        "Shotgun 2 RB 3 WR FL Drag": {
+          "opponent_frequency": 19.6,
+          "sample_size": 503,
+          "best_counters": [
+            {
+              "defensive_play": "Nickel Normal Double WR1",
+              "avg_yards_allowed": 0.18,
+              "sample_size": 11,
+              "expected_value": -0.14
+            },
+            {
+              "defensive_play": "Nickel Strong 2 Deep Man Under",
+              "avg_yards_allowed": 0.33,
+              "sample_size": 6,
+              "expected_value": -0.32
+            },
+            {
+              "defensive_play": "Quarter Normal CB3 CB5 Blitz",
+              "avg_yards_allowed": 0.33,
+              "sample_size": 3,
+              "expected_value": -4.44
+            },
+            {
+              "defensive_play": "4-3 Under Crash Right",
+              "avg_yards_allowed": 0.33,
+              "sample_size": 3,
+              "expected_value": 3.49
+            },
+            {
+              "defensive_play": "4-3 Normal WLB MLB Blitz",
+              "avg_yards_allowed": 0.88,
+              "sample_size": 8,
+              "expected_value": -2.69
+            }
+          ]
+        },
+        "Shotgun 2 RB 3 WR FB In": {
+          "opponent_frequency": 19.6,
+          "sample_size": 546,
+          "best_counters": [
+            {
+              "defensive_play": "4-3 Normal Double WR1",
+              "avg_yards_allowed": 0.38,
+              "sample_size": 13,
+              "expected_value": -1.21
+            },
+            {
+              "defensive_play": "4-3 Normal Man QB Spy",
+              "avg_yards_allowed": 0.88,
+              "sample_size": 8,
+              "expected_value": -1.66
+            },
+            {
+              "defensive_play": "3-4 Normal Man QB Spy",
+              "avg_yards_allowed": 1.0,
+              "sample_size": 3,
+              "expected_value": -2.49
+            },
+            {
+              "defensive_play": "Nickel Normal Shallow Zone Deep",
+              "avg_yards_allowed": 1.18,
+              "sample_size": 17,
+              "expected_value": 1.85
+            },
+            {
+              "defensive_play": "Dime Normal Double WR1 WR2",
+              "avg_yards_allowed": 1.25,
+              "sample_size": 4,
+              "expected_value": -1.57
+            }
+          ]
+        },
+        "Shotgun 2 RB 3 WR WR Hooks": {
+          "opponent_frequency": 19.6,
+          "sample_size": 678,
+          "best_counters": [
+            {
+              "defensive_play": "Nickel Normal 2 Deep",
+              "avg_yards_allowed": 1.4,
+              "sample_size": 10,
+              "expected_value": 3.14
+            },
+            {
+              "defensive_play": "3-4 Normal Man Cover 1",
+              "avg_yards_allowed": 1.92,
+              "sample_size": 13,
+              "expected_value": -1.99
+            },
+            {
+              "defensive_play": "Dime Flat 2 Deep Man Under",
+              "avg_yards_allowed": 2.53,
+              "sample_size": 15,
+              "expected_value": -1.26
+            },
+            {
+              "defensive_play": "Dime Normal 2 Deep Man Under",
+              "avg_yards_allowed": 2.71,
+              "sample_size": 7,
+              "expected_value": 2.27
+            },
+            {
+              "defensive_play": "4-3 Normal Double WR2",
+              "avg_yards_allowed": 3.0,
+              "sample_size": 6,
+              "expected_value": -0.11
+            }
+          ]
+        },
+        "Shotgun 2 RB 3 WR RB Curls": {
+          "opponent_frequency": 9.8,
+          "sample_size": 502,
+          "best_counters": [
+            {
+              "defensive_play": "4-3 Normal Man Under 1",
+              "avg_yards_allowed": 0.6,
+              "sample_size": 5,
+              "expected_value": -2.81
+            },
+            {
+              "defensive_play": "Dime Normal Man Cover 1",
+              "avg_yards_allowed": 3.47,
+              "sample_size": 15,
+              "expected_value": -1.39
+            },
+            {
+              "defensive_play": "Nickel Normal Shallow Zone Deep",
+              "avg_yards_allowed": 4.0,
+              "sample_size": 11,
+              "expected_value": 2.65
+            },
+            {
+              "defensive_play": "Nickel Normal Double WR1",
+              "avg_yards_allowed": 6.0,
+              "sample_size": 7,
+              "expected_value": 2.0
+            },
+            {
+              "defensive_play": "Nickel Normal 2 Deep",
+              "avg_yards_allowed": 6.12,
+              "sample_size": 8,
+              "expected_value": 2.98
+            }
+          ]
+        },
+        "Shotgun 2 RB 3 WR Strong Deep": {
+          "opponent_frequency": 2.9,
+          "sample_size": 213,
+          "best_counters": [
+            {
+              "defensive_play": "Dime Normal Man Cover 1",
+              "avg_yards_allowed": -8.25,
+              "sample_size": 12,
+              "expected_value": -4.09
+            },
+            {
+              "defensive_play": "4-3 Normal Double WR3",
+              "avg_yards_allowed": -8.17,
+              "sample_size": 6,
+              "expected_value": -2.87
+            },
+            {
+              "defensive_play": "Nickel Normal Man Cover 2",
+              "avg_yards_allowed": -7.43,
+              "sample_size": 7,
+              "expected_value": -1.92
+            },
+            {
+              "defensive_play": "Nickel Normal Double WR3",
+              "avg_yards_allowed": -6.71,
+              "sample_size": 7,
+              "expected_value": -3.11
+            },
+            {
+              "defensive_play": "4-3 Normal Man QB Spy",
+              "avg_yards_allowed": -5.25,
+              "sample_size": 4,
+              "expected_value": -2.48
+            }
+          ]
+        }
+      },
+      "3RB/1TE/1WR": {
+        "I Formation Power Play Action HB Downfield": {
+          "opponent_frequency": 100.0,
+          "sample_size": 3315,
+          "best_counters": [
+            {
+              "defensive_play": "46 Normal Strong Blitz",
+              "avg_yards_allowed": -3.25,
+              "sample_size": 4,
+              "expected_value": 1.8
+            },
+            {
+              "defensive_play": "Dime Normal Double WR2",
+              "avg_yards_allowed": 4.2,
+              "sample_size": 5,
+              "expected_value": 0.28
+            },
+            {
+              "defensive_play": "Dime Normal Double WR1 WR2",
+              "avg_yards_allowed": 4.61,
+              "sample_size": 71,
+              "expected_value": -0.19
+            },
+            {
+              "defensive_play": "4-3 Under 2 Deep Flat Outside",
+              "avg_yards_allowed": 5.33,
+              "sample_size": 3,
+              "expected_value": 1.82
+            },
+            {
+              "defensive_play": "Dime Flat 2 Deep Man Under",
+              "avg_yards_allowed": 5.38,
+              "sample_size": 8,
+              "expected_value": 1.71
+            }
+          ]
+        }
+      },
+      "Special Teams": {
+        "Punt": {
+          "opponent_frequency": 64.1,
+          "sample_size": 10993,
+          "best_counters": [
+            {
+              "defensive_play": "Punt Return",
+              "avg_yards_allowed": 46.86,
+              "sample_size": 3229,
+              "expected_value": -0.96
+            }
+          ]
+        },
+        "Kickoff": {
+          "opponent_frequency": 21.5,
+          "sample_size": 7518,
+          "best_counters": [
+            {
+              "defensive_play": "Kick Return",
+              "avg_yards_allowed": 73.68,
+              "sample_size": 372,
+              "expected_value": 0.04
+            }
+          ]
+        },
+        "Field Goal": {
+          "opponent_frequency": 14.4,
+          "sample_size": 6488,
+          "best_counters": [
+            {
+              "defensive_play": "FG Block",
+              "avg_yards_allowed": 29.61,
+              "sample_size": 6432,
+              "expected_value": 1.79
+            }
+          ]
+        }
+      }
+    },
+    "vs_defense": {
+      "1RB/1TE/3WR": {
+        "Dime Flat Man Cover 1": {
+          "opponent_frequency": 19.1,
+          "sample_size": 221,
+          "best_counters": [
+            {
+              "offensive_play": "Shotgun Normal TE Out",
+              "avg_yards_gained": 11.5,
+              "sample_size": 4,
+              "expected_value": -2.6
+            },
+            {
+              "offensive_play": "Singleback Slot Strong HB Counter",
+              "avg_yards_gained": 10.75,
+              "sample_size": 4,
+              "expected_value": 4.99
+            },
+            {
+              "offensive_play": "Singleback Normal HB Release Mid",
+              "avg_yards_gained": 9.75,
+              "sample_size": 4,
+              "expected_value": 1.99
+            },
+            {
+              "offensive_play": "Shotgun Normal HB Flare",
+              "avg_yards_gained": 8.12,
+              "sample_size": 40,
+              "expected_value": 0.53
+            },
+            {
+              "offensive_play": "Singleback Normal HB Inside Weak",
+              "avg_yards_gained": 6.71,
+              "sample_size": 7,
+              "expected_value": -0.51
+            }
+          ]
+        },
+        "Dime Flat 2 Deep Man Under": {
+          "opponent_frequency": 17.9,
+          "sample_size": 303,
+          "best_counters": [
+            {
+              "offensive_play": "Singleback Normal TE Quick Out",
+              "avg_yards_gained": 16.2,
+              "sample_size": 15,
+              "expected_value": 1.54
+            },
+            {
+              "offensive_play": "Singleback Normal All Go",
+              "avg_yards_gained": 16.0,
+              "sample_size": 3,
+              "expected_value": -4.33
+            },
+            {
+              "offensive_play": "Singleback Normal HB Release Mid",
+              "avg_yards_gained": 12.33,
+              "sample_size": 3,
+              "expected_value": 0.22
+            },
+            {
+              "offensive_play": "Singleback Normal WR Quick In",
+              "avg_yards_gained": 9.77,
+              "sample_size": 13,
+              "expected_value": 0.99
+            },
+            {
+              "offensive_play": "Singleback Normal FL Post",
+              "avg_yards_gained": 9.0,
+              "sample_size": 3,
+              "expected_value": 0.6
+            }
+          ]
+        },
+        "Dime Normal Double WR1 WR2": {
+          "opponent_frequency": 17.3,
+          "sample_size": 153,
+          "best_counters": [
+            {
+              "offensive_play": "Singleback Normal HB Dive Weak",
+              "avg_yards_gained": 24.0,
+              "sample_size": 3,
+              "expected_value": 2.35
+            },
+            {
+              "offensive_play": "Singleback Normal HB Dive Strong",
+              "avg_yards_gained": 17.67,
+              "sample_size": 6,
+              "expected_value": 3.0
+            },
+            {
+              "offensive_play": "Singleback Normal HB Release Mid",
+              "avg_yards_gained": 15.6,
+              "sample_size": 5,
+              "expected_value": 4.08
+            },
+            {
+              "offensive_play": "Singleback Normal HB Inside Weak",
+              "avg_yards_gained": 15.33,
+              "sample_size": 6,
+              "expected_value": 1.0
+            },
+            {
+              "offensive_play": "Singleback Normal WR Quick In",
+              "avg_yards_gained": 10.5,
+              "sample_size": 6,
+              "expected_value": 3.59
+            }
+          ]
+        },
+        "Dime Normal 2 Deep Man Under": {
+          "opponent_frequency": 13.9,
+          "sample_size": 153,
+          "best_counters": [
+            {
+              "offensive_play": "Singleback Normal TE Quick Out",
+              "avg_yards_gained": 10.6,
+              "sample_size": 5,
+              "expected_value": 1.42
+            },
+            {
+              "offensive_play": "Shotgun Normal TE Out",
+              "avg_yards_gained": 9.0,
+              "sample_size": 6,
+              "expected_value": 0.27
+            },
+            {
+              "offensive_play": "Singleback Slot Strong HB Counter",
+              "avg_yards_gained": 9.0,
+              "sample_size": 3,
+              "expected_value": -0.33
+            },
+            {
+              "offensive_play": "Singleback Normal HB Dive Strong",
+              "avg_yards_gained": 8.71,
+              "sample_size": 7,
+              "expected_value": 4.39
+            },
+            {
+              "offensive_play": "Singleback Normal HB Inside Weak",
+              "avg_yards_gained": 7.8,
+              "sample_size": 5,
+              "expected_value": 2.34
+            }
+          ]
+        },
+        "Dime Normal Man Cover 1": {
+          "opponent_frequency": 12.1,
+          "sample_size": 307,
+          "best_counters": [
+            {
+              "offensive_play": "Singleback Normal HB Dive Weak",
+              "avg_yards_gained": 8.29,
+              "sample_size": 14,
+              "expected_value": 1.11
+            },
+            {
+              "offensive_play": "Singleback Slot Strong HB Counter",
+              "avg_yards_gained": 7.0,
+              "sample_size": 7,
+              "expected_value": -1.57
+            },
+            {
+              "offensive_play": "Singleback Normal HB Counter Weak",
+              "avg_yards_gained": 6.4,
+              "sample_size": 15,
+              "expected_value": 1.99
+            },
+            {
+              "offensive_play": "Singleback Normal WR Quick In",
+              "avg_yards_gained": 6.12,
+              "sample_size": 8,
+              "expected_value": -0.71
+            },
+            {
+              "offensive_play": "Singleback Normal TE Quick Out",
+              "avg_yards_gained": 5.83,
+              "sample_size": 6,
+              "expected_value": -0.41
+            }
+          ]
+        },
+        "Dime Normal Double WR3": {
+          "opponent_frequency": 5.8,
+          "sample_size": 87,
+          "best_counters": [
+            {
+              "offensive_play": "Singleback Normal HB Dive Weak",
+              "avg_yards_gained": 8.86,
+              "sample_size": 7,
+              "expected_value": 0.44
+            },
+            {
+              "offensive_play": "Singleback Normal TE Quick Out",
+              "avg_yards_gained": 6.0,
+              "sample_size": 4,
+              "expected_value": -2.17
+            },
+            {
+              "offensive_play": "Singleback Normal HB Dive Strong",
+              "avg_yards_gained": 5.0,
+              "sample_size": 5,
+              "expected_value": 0.6
+            },
+            {
+              "offensive_play": "Shotgun Normal TE Out",
+              "avg_yards_gained": 3.67,
+              "sample_size": 3,
+              "expected_value": -0.14
+            },
+            {
+              "offensive_play": "Singleback Normal SE Quick Hit",
+              "avg_yards_gained": 3.67,
+              "sample_size": 3,
+              "expected_value": 0.0
+            }
+          ]
+        },
+        "Nickel Normal SS Blitz": {
+          "opponent_frequency": 1.2,
+          "sample_size": 374,
+          "best_counters": [
+            {
+              "offensive_play": "Shotgun Normal TE Out",
+              "avg_yards_gained": 12.75,
+              "sample_size": 4,
+              "expected_value": 4.19
+            },
+            {
+              "offensive_play": "Shotgun Normal HB Flare",
+              "avg_yards_gained": 11.54,
+              "sample_size": 57,
+              "expected_value": 3.42
+            },
+            {
+              "offensive_play": "Singleback Normal TE Quick Out",
+              "avg_yards_gained": 10.45,
+              "sample_size": 20,
+              "expected_value": 3.44
+            },
+            {
+              "offensive_play": "Singleback Normal HB Release Mid",
+              "avg_yards_gained": 10.44,
+              "sample_size": 9,
+              "expected_value": 3.43
+            },
+            {
+              "offensive_play": "Singleback Normal Post Corner",
+              "avg_yards_gained": 10.0,
+              "sample_size": 4,
+              "expected_value": 0.43
+            }
+          ]
+        },
+        "Nickel Normal Double LB Blitz": {
+          "opponent_frequency": 1.2,
+          "sample_size": 245,
+          "best_counters": [
+            {
+              "offensive_play": "Shotgun Normal FL Slant",
+              "avg_yards_gained": 32.0,
+              "sample_size": 3,
+              "expected_value": 4.3
+            },
+            {
+              "offensive_play": "Singleback Normal HB Release Mid",
+              "avg_yards_gained": 25.88,
+              "sample_size": 8,
+              "expected_value": 4.96
+            },
+            {
+              "offensive_play": "Shotgun Normal TE Out",
+              "avg_yards_gained": 20.75,
+              "sample_size": 4,
+              "expected_value": 5.35
+            },
+            {
+              "offensive_play": "Shotgun Normal HB Flare",
+              "avg_yards_gained": 14.49,
+              "sample_size": 37,
+              "expected_value": 3.72
+            },
+            {
+              "offensive_play": "Singleback Normal TE Quick Out",
+              "avg_yards_gained": 11.09,
+              "sample_size": 11,
+              "expected_value": 3.5
+            }
+          ]
+        }
+      },
+      "1RB/2TE/2WR": {
+        "Dime Normal Man Cover 1": {
+          "opponent_frequency": 21.3,
+          "sample_size": 160,
+          "best_counters": [
+            {
+              "offensive_play": "Singleback Big HB Pitch Weak",
+              "avg_yards_gained": 7.67,
+              "sample_size": 3,
+              "expected_value": -5.62
+            },
+            {
+              "offensive_play": "Singleback Big Ins and Outs",
+              "avg_yards_gained": 7.05,
+              "sample_size": 22,
+              "expected_value": 0.17
+            },
+            {
+              "offensive_play": "Singleback Big Off Tackle Strong",
+              "avg_yards_gained": 4.38,
+              "sample_size": 13,
+              "expected_value": -0.72
+            },
+            {
+              "offensive_play": "Singleback Big Corner Ins",
+              "avg_yards_gained": 4.14,
+              "sample_size": 7,
+              "expected_value": 1.91
+            },
+            {
+              "offensive_play": "Singleback Big HB Inside Strong",
+              "avg_yards_gained": 3.59,
+              "sample_size": 27,
+              "expected_value": -1.14
+            }
+          ]
+        },
+        "Dime Normal Double WR1 WR2": {
+          "opponent_frequency": 19.1,
+          "sample_size": 30,
+          "best_counters": [
+            {
+              "offensive_play": "Singleback Big HB Inside Strong",
+              "avg_yards_gained": 19.38,
+              "sample_size": 8,
+              "expected_value": 4.72
+            }
+          ]
+        },
+        "Dime Normal 2 Deep Man Under": {
+          "opponent_frequency": 17.0,
+          "sample_size": 33,
+          "best_counters": [
+            {
+              "offensive_play": "Singleback Big Off Tackle Strong",
+              "avg_yards_gained": 12.5,
+              "sample_size": 4,
+              "expected_value": 1.5
+            },
+            {
+              "offensive_play": "Singleback Big Ins and Outs",
+              "avg_yards_gained": 8.33,
+              "sample_size": 6,
+              "expected_value": 2.76
+            },
+            {
+              "offensive_play": "Singleback Big HB Inside Strong",
+              "avg_yards_gained": 8.17,
+              "sample_size": 6,
+              "expected_value": 2.65
+            },
+            {
+              "offensive_play": "Singleback Big WR Deep",
+              "avg_yards_gained": -1.0,
+              "sample_size": 6,
+              "expected_value": 1.65
+            }
+          ]
+        },
+        "Dime Flat Man Cover 1": {
+          "opponent_frequency": 12.8,
+          "sample_size": 34,
+          "best_counters": [
+            {
+              "offensive_play": "Singleback Big Ins and Outs",
+              "avg_yards_gained": 7.33,
+              "sample_size": 6,
+              "expected_value": 1.49
+            },
+            {
+              "offensive_play": "Singleback Big HB Inside Strong",
+              "avg_yards_gained": 4.3,
+              "sample_size": 10,
+              "expected_value": 2.77
+            },
+            {
+              "offensive_play": "Singleback Big WR Deep",
+              "avg_yards_gained": 3.0,
+              "sample_size": 3,
+              "expected_value": 2.17
+            }
+          ]
+        },
+        "Dime Flat 2 Deep Man Under": {
+          "opponent_frequency": 12.8,
+          "sample_size": 66,
+          "best_counters": [
+            {
+              "offensive_play": "Singleback Big HB Inside Strong",
+              "avg_yards_gained": 9.18,
+              "sample_size": 11,
+              "expected_value": 2.06
+            },
+            {
+              "offensive_play": "Singleback Big WR Deep",
+              "avg_yards_gained": 6.89,
+              "sample_size": 9,
+              "expected_value": 1.14
+            },
+            {
+              "offensive_play": "Singleback Big Off Tackle Strong",
+              "avg_yards_gained": 5.86,
+              "sample_size": 7,
+              "expected_value": -0.23
+            },
+            {
+              "offensive_play": "Singleback Big Ins and Outs",
+              "avg_yards_gained": 3.83,
+              "sample_size": 6,
+              "expected_value": 0.85
+            }
+          ]
+        },
+        "Dime Normal Double WR3": {
+          "opponent_frequency": 4.3,
+          "sample_size": 15,
+          "best_counters": [
+            {
+              "offensive_play": "Singleback Big HB Inside Strong",
+              "avg_yards_gained": 8.0,
+              "sample_size": 3,
+              "expected_value": 2.35
+            }
+          ]
+        }
+      },
+      "1RB/4WR": {
+        "Dime Flat Man Cover 1": {
+          "opponent_frequency": 33.3,
+          "sample_size": 189,
+          "best_counters": [
+            {
+              "offensive_play": "Singleback 4 Wide Quick Outs",
+              "avg_yards_gained": 12.44,
+              "sample_size": 71,
+              "expected_value": 3.35
+            },
+            {
+              "offensive_play": "Singleback 4 Wide Clear Center",
+              "avg_yards_gained": 6.17,
+              "sample_size": 6,
+              "expected_value": 1.97
+            },
+            {
+              "offensive_play": "Shotgun 4 Wide Slot Drag",
+              "avg_yards_gained": 5.25,
+              "sample_size": 4,
+              "expected_value": -3.49
+            },
+            {
+              "offensive_play": "Singleback 4 Wide Post and Curls",
+              "avg_yards_gained": 4.75,
+              "sample_size": 8,
+              "expected_value": 1.92
+            },
+            {
+              "offensive_play": "Singleback 4 Wide WR Crosses",
+              "avg_yards_gained": 0.75,
+              "sample_size": 8,
+              "expected_value": 2.39
+            }
+          ]
+        },
+        "Dime Flat 2 Deep Man Under": {
+          "opponent_frequency": 26.7,
+          "sample_size": 165,
+          "best_counters": [
+            {
+              "offensive_play": "Singleback 4 Wide Quick Outs",
+              "avg_yards_gained": 10.43,
+              "sample_size": 53,
+              "expected_value": 1.71
+            },
+            {
+              "offensive_play": "Singleback 4 Wide Post and Drag",
+              "avg_yards_gained": 10.2,
+              "sample_size": 5,
+              "expected_value": 2.33
+            },
+            {
+              "offensive_play": "Shotgun 4 Wide In and Out",
+              "avg_yards_gained": 10.0,
+              "sample_size": 5,
+              "expected_value": 2.99
+            },
+            {
+              "offensive_play": "Shotgun 4 Wide All Curls",
+              "avg_yards_gained": 6.6,
+              "sample_size": 5,
+              "expected_value": 3.28
+            },
+            {
+              "offensive_play": "Singleback 4 Wide WR Crosses",
+              "avg_yards_gained": 3.75,
+              "sample_size": 8,
+              "expected_value": 0.4
+            }
+          ]
+        },
+        "Dime Normal Double WR1 WR2": {
+          "opponent_frequency": 13.3,
+          "sample_size": 149,
+          "best_counters": [
+            {
+              "offensive_play": "Singleback 4 Wide Quick Outs",
+              "avg_yards_gained": 15.54,
+              "sample_size": 59,
+              "expected_value": 3.29
+            },
+            {
+              "offensive_play": "Singleback 4 Wide WR Crosses",
+              "avg_yards_gained": 8.33,
+              "sample_size": 3,
+              "expected_value": 3.0
+            },
+            {
+              "offensive_play": "Shotgun 4 Wide Slot Curl",
+              "avg_yards_gained": 8.25,
+              "sample_size": 4,
+              "expected_value": -0.14
+            },
+            {
+              "offensive_play": "Singleback 4 Wide Clear Center",
+              "avg_yards_gained": 0.67,
+              "sample_size": 3,
+              "expected_value": 2.75
+            },
+            {
+              "offensive_play": "Singleback 4 Wide Post and Drag",
+              "avg_yards_gained": 0.0,
+              "sample_size": 3,
+              "expected_value": 1.4
+            }
+          ]
+        }
+      },
+      "2RB/1TE/2WR": {
+        "Dime Normal 2 Deep Man Under": {
+          "opponent_frequency": 18.5,
+          "sample_size": 239,
+          "best_counters": [
+            {
+              "offensive_play": "Weak I Normal HB Inside Strong",
+              "avg_yards_gained": 11.75,
+              "sample_size": 4,
+              "expected_value": 3.0
+            },
+            {
+              "offensive_play": "I Formation Twin WR HB Toss Strong",
+              "avg_yards_gained": 10.89,
+              "sample_size": 9,
+              "expected_value": 3.86
+            },
+            {
+              "offensive_play": "I Formation Twin WR Hard Slants",
+              "avg_yards_gained": 10.55,
+              "sample_size": 11,
+              "expected_value": 0.64
+            },
+            {
+              "offensive_play": "Weak I Normal HB Inside Weak",
+              "avg_yards_gained": 9.7,
+              "sample_size": 10,
+              "expected_value": 2.58
+            },
+            {
+              "offensive_play": "Strong I Normal HB Off Tackle Strong",
+              "avg_yards_gained": 9.7,
+              "sample_size": 10,
+              "expected_value": 1.97
+            }
+          ]
+        },
+        "Dime Normal Man Cover 1": {
+          "opponent_frequency": 16.7,
+          "sample_size": 1018,
+          "best_counters": [
+            {
+              "offensive_play": "I Formation Twin WR Hard Slants",
+              "avg_yards_gained": 10.66,
+              "sample_size": 29,
+              "expected_value": -1.88
+            },
+            {
+              "offensive_play": "I Formation Twin WR Quick Outs",
+              "avg_yards_gained": 9.95,
+              "sample_size": 20,
+              "expected_value": 1.31
+            },
+            {
+              "offensive_play": "Weak I Normal WR Corner TE Middle",
+              "avg_yards_gained": 8.96,
+              "sample_size": 55,
+              "expected_value": -0.3
+            },
+            {
+              "offensive_play": "Split Backs Normal WR Post",
+              "avg_yards_gained": 8.33,
+              "sample_size": 6,
+              "expected_value": 1.08
+            },
+            {
+              "offensive_play": "I Formation Normal HB Dive",
+              "avg_yards_gained": 7.86,
+              "sample_size": 50,
+              "expected_value": 1.14
+            }
+          ]
+        },
+        "Dime Flat Man Cover 1": {
+          "opponent_frequency": 16.1,
+          "sample_size": 524,
+          "best_counters": [
+            {
+              "offensive_play": "I Formation Twin WR Quick Outs",
+              "avg_yards_gained": 11.71,
+              "sample_size": 17,
+              "expected_value": 2.12
+            },
+            {
+              "offensive_play": "I Formation Twin WR Hard Slants",
+              "avg_yards_gained": 10.56,
+              "sample_size": 16,
+              "expected_value": 0.56
+            },
+            {
+              "offensive_play": "I Formation Normal HB Dive",
+              "avg_yards_gained": 9.41,
+              "sample_size": 29,
+              "expected_value": 1.33
+            },
+            {
+              "offensive_play": "Weak I Normal WR Corner TE Middle",
+              "avg_yards_gained": 8.48,
+              "sample_size": 23,
+              "expected_value": 0.73
+            },
+            {
+              "offensive_play": "I Formation Twin WR HB Toss Strong",
+              "avg_yards_gained": 8.33,
+              "sample_size": 6,
+              "expected_value": 2.13
+            }
+          ]
+        },
+        "Dime Flat 2 Deep Man Under": {
+          "opponent_frequency": 15.5,
+          "sample_size": 460,
+          "best_counters": [
+            {
+              "offensive_play": "Weak I Normal WR Corner TE Middle",
+              "avg_yards_gained": 9.03,
+              "sample_size": 35,
+              "expected_value": -1.26
+            },
+            {
+              "offensive_play": "I Formation Twin WR Quick Outs",
+              "avg_yards_gained": 8.77,
+              "sample_size": 13,
+              "expected_value": 1.8
+            },
+            {
+              "offensive_play": "Weak I Normal Skinny Posts",
+              "avg_yards_gained": 8.67,
+              "sample_size": 12,
+              "expected_value": 0.99
+            },
+            {
+              "offensive_play": "I Formation Normal FL Hitch",
+              "avg_yards_gained": 8.52,
+              "sample_size": 27,
+              "expected_value": 0.04
+            },
+            {
+              "offensive_play": "Weak I Normal HB Inside Weak",
+              "avg_yards_gained": 8.37,
+              "sample_size": 19,
+              "expected_value": 0.54
+            }
+          ]
+        },
+        "Dime Normal Double WR1 WR2": {
+          "opponent_frequency": 14.9,
+          "sample_size": 381,
+          "best_counters": [
+            {
+              "offensive_play": "I Formation Normal HB Dive",
+              "avg_yards_gained": 19.24,
+              "sample_size": 25,
+              "expected_value": 3.51
+            },
+            {
+              "offensive_play": "Strong I Normal HB Dive Strong",
+              "avg_yards_gained": 19.09,
+              "sample_size": 11,
+              "expected_value": 2.72
+            },
+            {
+              "offensive_play": "I Formation Twin WR HB Toss Strong",
+              "avg_yards_gained": 17.71,
+              "sample_size": 7,
+              "expected_value": 2.71
+            },
+            {
+              "offensive_play": "Weak I Normal HB Inside Strong",
+              "avg_yards_gained": 12.62,
+              "sample_size": 8,
+              "expected_value": 2.99
+            },
+            {
+              "offensive_play": "I Formation Twin WR Hard Slants",
+              "avg_yards_gained": 12.14,
+              "sample_size": 7,
+              "expected_value": 2.72
+            }
+          ]
+        },
+        "Dime Normal Double WR3": {
+          "opponent_frequency": 3.6,
+          "sample_size": 114,
+          "best_counters": [
+            {
+              "offensive_play": "Weak I Normal Fullback Counter Weak",
+              "avg_yards_gained": 15.67,
+              "sample_size": 3,
+              "expected_value": 4.32
+            },
+            {
+              "offensive_play": "Weak I Normal HB Inside Weak",
+              "avg_yards_gained": 12.71,
+              "sample_size": 14,
+              "expected_value": 3.54
+            },
+            {
+              "offensive_play": "I Formation Normal HB Dive",
+              "avg_yards_gained": 11.67,
+              "sample_size": 12,
+              "expected_value": 3.82
+            },
+            {
+              "offensive_play": "I Formation Normal FL Hitch",
+              "avg_yards_gained": 10.5,
+              "sample_size": 6,
+              "expected_value": 3.27
+            },
+            {
+              "offensive_play": "Strong I Normal HB Off Tackle Strong",
+              "avg_yards_gained": 7.67,
+              "sample_size": 3,
+              "expected_value": -0.97
+            }
+          ]
+        },
+        "Dime Normal FS Blitz": {
+          "opponent_frequency": 2.4,
+          "sample_size": 81,
+          "best_counters": [
+            {
+              "offensive_play": "I Formation Normal FL Hook",
+              "avg_yards_gained": 8.67,
+              "sample_size": 3,
+              "expected_value": -1.0
+            },
+            {
+              "offensive_play": "I Formation Normal FL Hitch",
+              "avg_yards_gained": 7.4,
+              "sample_size": 5,
+              "expected_value": -2.49
+            },
+            {
+              "offensive_play": "I Formation Normal HB Dive",
+              "avg_yards_gained": 5.67,
+              "sample_size": 3,
+              "expected_value": 1.0
+            },
+            {
+              "offensive_play": "I Formation Normal Max Protect",
+              "avg_yards_gained": 5.43,
+              "sample_size": 7,
+              "expected_value": 2.99
+            },
+            {
+              "offensive_play": "I Formation Normal PA Fullback Flat",
+              "avg_yards_gained": 5.17,
+              "sample_size": 6,
+              "expected_value": 1.0
+            }
+          ]
+        },
+        "3-4 Normal Man Cover 1": {
+          "opponent_frequency": 2.1,
+          "sample_size": 2206,
+          "best_counters": [
+            {
+              "offensive_play": "I Formation Twin WR Hard Slants",
+              "avg_yards_gained": 14.33,
+              "sample_size": 57,
+              "expected_value": 2.55
+            },
+            {
+              "offensive_play": "I Formation Normal FL Hitch",
+              "avg_yards_gained": 12.6,
+              "sample_size": 106,
+              "expected_value": 2.74
+            },
+            {
+              "offensive_play": "Split Backs Normal Posts",
+              "avg_yards_gained": 11.5,
+              "sample_size": 6,
+              "expected_value": 3.72
+            },
+            {
+              "offensive_play": "Weak I Normal HB Inside Weak",
+              "avg_yards_gained": 11.16,
+              "sample_size": 123,
+              "expected_value": 2.82
+            },
+            {
+              "offensive_play": "I Formation Normal SE Post",
+              "avg_yards_gained": 10.5,
+              "sample_size": 14,
+              "expected_value": 0.74
+            }
+          ]
+        },
+        "4-3 Under Crowd Middle Deep Man": {
+          "opponent_frequency": 1.8,
+          "sample_size": 265,
+          "best_counters": [
+            {
+              "offensive_play": "I Formation Twin WR Hard Slants",
+              "avg_yards_gained": 19.8,
+              "sample_size": 15,
+              "expected_value": 3.5
+            },
+            {
+              "offensive_play": "Weak I Normal WR Corner TE Middle",
+              "avg_yards_gained": 11.41,
+              "sample_size": 22,
+              "expected_value": 4.44
+            },
+            {
+              "offensive_play": "Weak I Normal Skinny Posts",
+              "avg_yards_gained": 10.6,
+              "sample_size": 10,
+              "expected_value": 4.45
+            },
+            {
+              "offensive_play": "Strong I Normal WR Post TE Out",
+              "avg_yards_gained": 8.75,
+              "sample_size": 4,
+              "expected_value": 3.47
+            },
+            {
+              "offensive_play": "Strong I Normal Short Attack",
+              "avg_yards_gained": 8.6,
+              "sample_size": 5,
+              "expected_value": 4.17
+            }
+          ]
+        },
+        "4-3 Under Double LB Blitz": {
+          "opponent_frequency": 1.5,
+          "sample_size": 1685,
+          "best_counters": [
+            {
+              "offensive_play": "I Formation Twin WR Hook Ins",
+              "avg_yards_gained": 29.0,
+              "sample_size": 3,
+              "expected_value": 1.5
+            },
+            {
+              "offensive_play": "Split Backs Normal Skinny Post Corner",
+              "avg_yards_gained": 16.33,
+              "sample_size": 3,
+              "expected_value": 1.75
+            },
+            {
+              "offensive_play": "I Formation Twin WR Hard Slants",
+              "avg_yards_gained": 15.85,
+              "sample_size": 84,
+              "expected_value": 2.38
+            },
+            {
+              "offensive_play": "Strong I Normal PA All Go",
+              "avg_yards_gained": 14.75,
+              "sample_size": 4,
+              "expected_value": -0.96
+            },
+            {
+              "offensive_play": "I Formation Normal PA Streaks",
+              "avg_yards_gained": 11.46,
+              "sample_size": 13,
+              "expected_value": -0.89
+            }
+          ]
+        },
+        "3-4 Normal Man QB Spy": {
+          "opponent_frequency": 1.2,
+          "sample_size": 254,
+          "best_counters": [
+            {
+              "offensive_play": "I Formation Twin WR Hard Slants",
+              "avg_yards_gained": 14.0,
+              "sample_size": 10,
+              "expected_value": 0.79
+            },
+            {
+              "offensive_play": "I Formation Twin WR Quick Outs",
+              "avg_yards_gained": 12.75,
+              "sample_size": 12,
+              "expected_value": 4.55
+            },
+            {
+              "offensive_play": "Weak I Normal WR Corner TE Middle",
+              "avg_yards_gained": 10.64,
+              "sample_size": 25,
+              "expected_value": 0.86
+            },
+            {
+              "offensive_play": "I Formation Normal FL Hitch",
+              "avg_yards_gained": 9.36,
+              "sample_size": 11,
+              "expected_value": -0.42
+            },
+            {
+              "offensive_play": "I Formation Normal Max Protect",
+              "avg_yards_gained": 8.75,
+              "sample_size": 4,
+              "expected_value": 1.86
+            }
+          ]
+        },
+        "4-3 Under Zone Blitz": {
+          "opponent_frequency": 0.6,
+          "sample_size": 62,
+          "best_counters": [
+            {
+              "offensive_play": "I Formation Normal Max Protect",
+              "avg_yards_gained": 15.86,
+              "sample_size": 7,
+              "expected_value": 4.56
+            },
+            {
+              "offensive_play": "I Formation Normal SE Post",
+              "avg_yards_gained": 15.67,
+              "sample_size": 3,
+              "expected_value": 4.99
+            },
+            {
+              "offensive_play": "Weak I Normal WR Corner TE Middle",
+              "avg_yards_gained": 15.6,
+              "sample_size": 5,
+              "expected_value": 3.31
+            },
+            {
+              "offensive_play": "Weak I Normal HB Inside Weak",
+              "avg_yards_gained": 10.33,
+              "sample_size": 3,
+              "expected_value": -0.33
+            },
+            {
+              "offensive_play": "I Formation Normal HB Blast",
+              "avg_yards_gained": 10.0,
+              "sample_size": 3,
+              "expected_value": 4.33
+            }
+          ]
+        },
+        "4-3 Under Crash Right": {
+          "opponent_frequency": 0.6,
+          "sample_size": 1545,
+          "best_counters": [
+            {
+              "offensive_play": "Strong I Normal HB Sweep Strong",
+              "avg_yards_gained": 20.0,
+              "sample_size": 5,
+              "expected_value": 0.99
+            },
+            {
+              "offensive_play": "Split Backs Normal Skinny Post Corner",
+              "avg_yards_gained": 14.6,
+              "sample_size": 10,
+              "expected_value": 4.2
+            },
+            {
+              "offensive_play": "I Formation Twin WR Hard Slants",
+              "avg_yards_gained": 13.39,
+              "sample_size": 64,
+              "expected_value": 3.83
+            },
+            {
+              "offensive_play": "Split Backs Normal Posts",
+              "avg_yards_gained": 10.6,
+              "sample_size": 5,
+              "expected_value": 1.34
+            },
+            {
+              "offensive_play": "I Formation Normal FL Hitch",
+              "avg_yards_gained": 9.78,
+              "sample_size": 108,
+              "expected_value": 2.65
+            }
+          ]
+        },
+        "Quarter Normal CB5 MLB Blitz": {
+          "opponent_frequency": 0.6,
+          "sample_size": 10,
+          "best_counters": []
+        }
+      },
+      "2RB/2TE/1WR": {
+        "Dime Normal Man Cover 1": {
+          "opponent_frequency": 23.1,
+          "sample_size": 289,
+          "best_counters": [
+            {
+              "offensive_play": "Weak I Big WR Post TE Out",
+              "avg_yards_gained": 9.3,
+              "sample_size": 30,
+              "expected_value": 0.95
+            },
+            {
+              "offensive_play": "Strong I Big TE Post",
+              "avg_yards_gained": 8.18,
+              "sample_size": 28,
+              "expected_value": -0.92
+            },
+            {
+              "offensive_play": "Weak I Big HB Lead Toss Weak",
+              "avg_yards_gained": 8.0,
+              "sample_size": 4,
+              "expected_value": 1.4
+            },
+            {
+              "offensive_play": "Strong I Big HB Toss Weak",
+              "avg_yards_gained": 7.7,
+              "sample_size": 10,
+              "expected_value": 1.78
+            },
+            {
+              "offensive_play": "Strong I Big Backfield Drag",
+              "avg_yards_gained": 5.59,
+              "sample_size": 39,
+              "expected_value": -0.03
+            }
+          ]
+        },
+        "Dime Flat 2 Deep Man Under": {
+          "opponent_frequency": 23.1,
+          "sample_size": 63,
+          "best_counters": [
+            {
+              "offensive_play": "Strong I Big WR Quick In",
+              "avg_yards_gained": 14.75,
+              "sample_size": 4,
+              "expected_value": 6.97
+            },
+            {
+              "offensive_play": "Strong I Big HB Toss Weak",
+              "avg_yards_gained": 13.0,
+              "sample_size": 7,
+              "expected_value": 1.14
+            },
+            {
+              "offensive_play": "Strong I Big Backfield Drag",
+              "avg_yards_gained": 6.33,
+              "sample_size": 6,
+              "expected_value": 1.42
+            },
+            {
+              "offensive_play": "I Formation Big TE Sneak Out",
+              "avg_yards_gained": 5.67,
+              "sample_size": 3,
+              "expected_value": 3.32
+            },
+            {
+              "offensive_play": "Strong I Big HB Dive Strong",
+              "avg_yards_gained": 4.33,
+              "sample_size": 6,
+              "expected_value": -0.66
+            }
+          ]
+        },
+        "Dime Normal 2 Deep Man Under": {
+          "opponent_frequency": 15.4,
+          "sample_size": 27,
+          "best_counters": [
+            {
+              "offensive_play": "Strong I Big HB Dive Strong",
+              "avg_yards_gained": 6.67,
+              "sample_size": 3,
+              "expected_value": 0.3
+            }
+          ]
+        },
+        "Dime Normal Double WR1 WR2": {
+          "opponent_frequency": 13.5,
+          "sample_size": 33,
+          "best_counters": [
+            {
+              "offensive_play": "I Formation Big HB Outside Weak",
+              "avg_yards_gained": 42.33,
+              "sample_size": 3,
+              "expected_value": 6.89
+            },
+            {
+              "offensive_play": "Strong I Big HB Dive Strong",
+              "avg_yards_gained": 11.5,
+              "sample_size": 4,
+              "expected_value": 5.94
+            },
+            {
+              "offensive_play": "Weak I Big HB Dive Strong",
+              "avg_yards_gained": 2.67,
+              "sample_size": 6,
+              "expected_value": 3.66
+            }
+          ]
+        },
+        "Dime Flat Man Cover 1": {
+          "opponent_frequency": 13.5,
+          "sample_size": 108,
+          "best_counters": [
+            {
+              "offensive_play": "Weak I Big WR Post TE Out",
+              "avg_yards_gained": 11.42,
+              "sample_size": 12,
+              "expected_value": 1.94
+            },
+            {
+              "offensive_play": "I Formation Big TE Sneak Out",
+              "avg_yards_gained": 9.8,
+              "sample_size": 5,
+              "expected_value": 2.25
+            },
+            {
+              "offensive_play": "Strong I Big HB Dive Strong",
+              "avg_yards_gained": 6.6,
+              "sample_size": 5,
+              "expected_value": -2.4
+            },
+            {
+              "offensive_play": "Strong I Big HB Toss Strong",
+              "avg_yards_gained": 6.25,
+              "sample_size": 4,
+              "expected_value": 1.47
+            },
+            {
+              "offensive_play": "Strong I Big Backfield Drag",
+              "avg_yards_gained": 5.0,
+              "sample_size": 13,
+              "expected_value": 1.71
+            }
+          ]
+        },
+        "4-3 Under Crash Right": {
+          "opponent_frequency": 3.8,
+          "sample_size": 42,
+          "best_counters": [
+            {
+              "offensive_play": "Strong I Big TE Post",
+              "avg_yards_gained": 10.73,
+              "sample_size": 11,
+              "expected_value": 4.73
+            },
+            {
+              "offensive_play": "Strong I Big Backfield Drag",
+              "avg_yards_gained": 10.33,
+              "sample_size": 3,
+              "expected_value": 4.19
+            },
+            {
+              "offensive_play": "Weak I Big WR Post TE Out",
+              "avg_yards_gained": 5.5,
+              "sample_size": 4,
+              "expected_value": 4.91
+            },
+            {
+              "offensive_play": "Strong I Big HB Dive Strong",
+              "avg_yards_gained": 1.33,
+              "sample_size": 3,
+              "expected_value": 1.0
+            },
+            {
+              "offensive_play": "Strong I Big HB Toss Weak",
+              "avg_yards_gained": -1.33,
+              "sample_size": 3,
+              "expected_value": -3.65
+            }
+          ]
+        }
+      },
+      "2RB/3TE": {
+        "Dime Normal Double WR1 WR2": {
+          "opponent_frequency": 22.7,
+          "sample_size": 36,
+          "best_counters": [
+            {
+              "offensive_play": "Goal Line Normal HB Weak",
+              "avg_yards_gained": 7.0,
+              "sample_size": 3,
+              "expected_value": 3.0
+            },
+            {
+              "offensive_play": "Goal Line Normal HB Toss Strong",
+              "avg_yards_gained": 4.86,
+              "sample_size": 7,
+              "expected_value": 1.29
+            },
+            {
+              "offensive_play": "Goal Line Normal HB Off Tackle",
+              "avg_yards_gained": 4.8,
+              "sample_size": 5,
+              "expected_value": 2.95
+            },
+            {
+              "offensive_play": "Goal Line Normal HB Outside Strong",
+              "avg_yards_gained": 4.57,
+              "sample_size": 7,
+              "expected_value": 1.29
+            },
+            {
+              "offensive_play": "Goal Line Normal HB Dive",
+              "avg_yards_gained": 4.0,
+              "sample_size": 6,
+              "expected_value": 3.29
+            }
+          ]
+        },
+        "Dime Flat 2 Deep Man Under": {
+          "opponent_frequency": 18.2,
+          "sample_size": 49,
+          "best_counters": [
+            {
+              "offensive_play": "Goal Line Normal HB Off Tackle",
+              "avg_yards_gained": 12.0,
+              "sample_size": 6,
+              "expected_value": 2.3
+            },
+            {
+              "offensive_play": "Goal Line Normal HB Pitch Weak",
+              "avg_yards_gained": 9.0,
+              "sample_size": 6,
+              "expected_value": -2.96
+            },
+            {
+              "offensive_play": "Goal Line Normal HB Toss Strong",
+              "avg_yards_gained": 7.45,
+              "sample_size": 11,
+              "expected_value": -0.08
+            },
+            {
+              "offensive_play": "Goal Line Normal HB Outside Strong",
+              "avg_yards_gained": 6.86,
+              "sample_size": 7,
+              "expected_value": 2.71
+            },
+            {
+              "offensive_play": "Goal Line Normal PA TE Drag",
+              "avg_yards_gained": 6.4,
+              "sample_size": 5,
+              "expected_value": -3.49
+            }
+          ]
+        },
+        "Dime Flat Man Cover 1": {
+          "opponent_frequency": 18.2,
+          "sample_size": 23,
+          "best_counters": [
+            {
+              "offensive_play": "Goal Line Normal HB Toss Strong",
+              "avg_yards_gained": 12.0,
+              "sample_size": 4,
+              "expected_value": 0.0
+            },
+            {
+              "offensive_play": "Goal Line Normal HB Outside Strong",
+              "avg_yards_gained": 6.0,
+              "sample_size": 3,
+              "expected_value": 2.45
+            },
+            {
+              "offensive_play": "Goal Line Normal HB Dive",
+              "avg_yards_gained": 3.67,
+              "sample_size": 3,
+              "expected_value": 2.33
+            },
+            {
+              "offensive_play": "Goal Line Normal HB Off Tackle",
+              "avg_yards_gained": 3.33,
+              "sample_size": 6,
+              "expected_value": 4.3
+            }
+          ]
+        },
+        "Dime Normal Man Cover 1": {
+          "opponent_frequency": 9.1,
+          "sample_size": 47,
+          "best_counters": [
+            {
+              "offensive_play": "Goal Line Normal HB Pitch Weak",
+              "avg_yards_gained": 7.0,
+              "sample_size": 10,
+              "expected_value": -2.8
+            },
+            {
+              "offensive_play": "Goal Line Normal HB Outside Strong",
+              "avg_yards_gained": 6.45,
+              "sample_size": 11,
+              "expected_value": 0.25
+            },
+            {
+              "offensive_play": "Goal Line Normal HB Weak",
+              "avg_yards_gained": 5.62,
+              "sample_size": 8,
+              "expected_value": -4.59
+            },
+            {
+              "offensive_play": "Goal Line Normal PA TE Drag",
+              "avg_yards_gained": 5.6,
+              "sample_size": 5,
+              "expected_value": -6.32
+            },
+            {
+              "offensive_play": "Goal Line Normal HB Toss Strong",
+              "avg_yards_gained": 4.88,
+              "sample_size": 8,
+              "expected_value": -1.0
+            }
+          ]
+        },
+        "Dime Normal 2 Deep Man Under": {
+          "opponent_frequency": 6.8,
+          "sample_size": 23,
+          "best_counters": [
+            {
+              "offensive_play": "Goal Line Normal PA TE Drag",
+              "avg_yards_gained": 9.0,
+              "sample_size": 3,
+              "expected_value": 0.99
+            },
+            {
+              "offensive_play": "Goal Line Normal HB Off Tackle",
+              "avg_yards_gained": 6.6,
+              "sample_size": 5,
+              "expected_value": 2.58
+            },
+            {
+              "offensive_play": "Goal Line Normal HB Dive",
+              "avg_yards_gained": 5.5,
+              "sample_size": 4,
+              "expected_value": 5.98
+            },
+            {
+              "offensive_play": "Goal Line Normal HB Toss Strong",
+              "avg_yards_gained": 5.33,
+              "sample_size": 6,
+              "expected_value": 4.31
+            }
+          ]
+        }
+      },
+      "2RB/3WR": {
+        "Dime Normal 2 Deep Man Under": {
+          "opponent_frequency": 19.0,
+          "sample_size": 129,
+          "best_counters": [
+            {
+              "offensive_play": "Split Backs 3 Wide Dive Left",
+              "avg_yards_gained": 11.17,
+              "sample_size": 6,
+              "expected_value": 4.75
+            },
+            {
+              "offensive_play": "Shotgun 2 RB 3 WR Shotgun Sweep",
+              "avg_yards_gained": 8.83,
+              "sample_size": 6,
+              "expected_value": 1.0
+            },
+            {
+              "offensive_play": "I Formation 3WR Slot Short WR Deep",
+              "avg_yards_gained": 7.8,
+              "sample_size": 5,
+              "expected_value": 1.49
+            },
+            {
+              "offensive_play": "I Formation 3WR FL Post",
+              "avg_yards_gained": 7.6,
+              "sample_size": 5,
+              "expected_value": 4.64
+            },
+            {
+              "offensive_play": "I Formation 3WR WR Out",
+              "avg_yards_gained": 7.6,
+              "sample_size": 5,
+              "expected_value": 3.85
+            }
+          ]
+        },
+        "Dime Normal Double WR1 WR2": {
+          "opponent_frequency": 19.0,
+          "sample_size": 159,
+          "best_counters": [
+            {
+              "offensive_play": "I Formation 3WR HB Inside Weak",
+              "avg_yards_gained": 13.56,
+              "sample_size": 18,
+              "expected_value": 3.88
+            },
+            {
+              "offensive_play": "Shotgun 2 RB 3 WR Shotgun Sweep",
+              "avg_yards_gained": 10.71,
+              "sample_size": 7,
+              "expected_value": 4.13
+            },
+            {
+              "offensive_play": "Shotgun 2 RB 3 WR Shotgun Dive",
+              "avg_yards_gained": 10.6,
+              "sample_size": 5,
+              "expected_value": 4.58
+            },
+            {
+              "offensive_play": "I Formation 3WR Slot Short WR Deep",
+              "avg_yards_gained": 10.17,
+              "sample_size": 6,
+              "expected_value": 1.59
+            },
+            {
+              "offensive_play": "Split Backs 3 Wide Dive Left",
+              "avg_yards_gained": 9.75,
+              "sample_size": 4,
+              "expected_value": 5.97
+            }
+          ]
+        },
+        "Dime Flat 2 Deep Man Under": {
+          "opponent_frequency": 17.5,
+          "sample_size": 615,
+          "best_counters": [
+            {
+              "offensive_play": "I Formation 3WR Slot Short WR Deep",
+              "avg_yards_gained": 12.07,
+              "sample_size": 44,
+              "expected_value": 0.42
+            },
+            {
+              "offensive_play": "I Formation 3WR WR Out",
+              "avg_yards_gained": 9.07,
+              "sample_size": 30,
+              "expected_value": 1.22
+            },
+            {
+              "offensive_play": "Split Backs 3 Wide Dive Left",
+              "avg_yards_gained": 8.4,
+              "sample_size": 10,
+              "expected_value": 3.72
+            },
+            {
+              "offensive_play": "Shotgun 2 RB 3 WR RB Curls",
+              "avg_yards_gained": 7.75,
+              "sample_size": 8,
+              "expected_value": -1.47
+            },
+            {
+              "offensive_play": "Shotgun 2 RB 3 WR Shotgun Sweep",
+              "avg_yards_gained": 7.67,
+              "sample_size": 15,
+              "expected_value": 1.12
+            }
+          ]
+        },
+        "Dime Flat Man Cover 1": {
+          "opponent_frequency": 13.1,
+          "sample_size": 289,
+          "best_counters": [
+            {
+              "offensive_play": "I Formation 3WR Slot Short WR Deep",
+              "avg_yards_gained": 10.27,
+              "sample_size": 11,
+              "expected_value": 0.5
+            },
+            {
+              "offensive_play": "I Formation 3WR FL Post",
+              "avg_yards_gained": 9.67,
+              "sample_size": 9,
+              "expected_value": 0.95
+            },
+            {
+              "offensive_play": "I Formation 3WR WR Out",
+              "avg_yards_gained": 8.0,
+              "sample_size": 11,
+              "expected_value": -0.68
+            },
+            {
+              "offensive_play": "I Formation 3WR HB Inside Weak",
+              "avg_yards_gained": 5.93,
+              "sample_size": 29,
+              "expected_value": -0.11
+            },
+            {
+              "offensive_play": "Shotgun 2 RB 3 WR WR Curl",
+              "avg_yards_gained": 5.86,
+              "sample_size": 7,
+              "expected_value": -0.94
+            }
+          ]
+        },
+        "Dime Normal Man Cover 1": {
+          "opponent_frequency": 13.1,
+          "sample_size": 1038,
+          "best_counters": [
+            {
+              "offensive_play": "Split Backs 3 Wide Drag In",
+              "avg_yards_gained": 8.57,
+              "sample_size": 7,
+              "expected_value": 0.53
+            },
+            {
+              "offensive_play": "I Formation 3WR WR Post",
+              "avg_yards_gained": 8.0,
+              "sample_size": 3,
+              "expected_value": -1.49
+            },
+            {
+              "offensive_play": "I Formation 3WR WR Out",
+              "avg_yards_gained": 7.14,
+              "sample_size": 35,
+              "expected_value": -1.3
+            },
+            {
+              "offensive_play": "I Formation 3WR Slot Short WR Deep",
+              "avg_yards_gained": 6.95,
+              "sample_size": 58,
+              "expected_value": -2.01
+            },
+            {
+              "offensive_play": "Shotgun 2 RB 3 WR WR Curl",
+              "avg_yards_gained": 6.76,
+              "sample_size": 17,
+              "expected_value": -1.74
+            }
+          ]
+        },
+        "Dime Normal Double WR3": {
+          "opponent_frequency": 3.6,
+          "sample_size": 59,
+          "best_counters": [
+            {
+              "offensive_play": "Shotgun 2 RB 3 WR Shotgun Dive",
+              "avg_yards_gained": 8.0,
+              "sample_size": 3,
+              "expected_value": 3.0
+            },
+            {
+              "offensive_play": "Shotgun 2 RB 3 WR FB In",
+              "avg_yards_gained": 7.0,
+              "sample_size": 3,
+              "expected_value": 4.97
+            },
+            {
+              "offensive_play": "Split Backs 3 Wide WR Quick Out",
+              "avg_yards_gained": 5.67,
+              "sample_size": 3,
+              "expected_value": 2.32
+            },
+            {
+              "offensive_play": "Shotgun 2 RB 3 WR WR Curl",
+              "avg_yards_gained": 1.0,
+              "sample_size": 3,
+              "expected_value": 0.0
+            }
+          ]
+        },
+        "4-3 Under Crash Right": {
+          "opponent_frequency": 2.2,
+          "sample_size": 472,
+          "best_counters": [
+            {
+              "offensive_play": "I Formation 3WR Slot Short WR Deep",
+              "avg_yards_gained": 16.21,
+              "sample_size": 34,
+              "expected_value": -0.18
+            },
+            {
+              "offensive_play": "I Formation 3WR Backfield Flats",
+              "avg_yards_gained": 12.83,
+              "sample_size": 6,
+              "expected_value": 2.41
+            },
+            {
+              "offensive_play": "Shotgun 2 RB 3 WR RB Curls",
+              "avg_yards_gained": 12.11,
+              "sample_size": 9,
+              "expected_value": -1.31
+            },
+            {
+              "offensive_play": "I Formation 3WR FL Post",
+              "avg_yards_gained": 11.5,
+              "sample_size": 16,
+              "expected_value": 2.45
+            },
+            {
+              "offensive_play": "Split Backs 3 Wide Slot Post",
+              "avg_yards_gained": 10.14,
+              "sample_size": 7,
+              "expected_value": 2.42
+            }
+          ]
+        },
+        "Dime Normal FS Blitz": {
+          "opponent_frequency": 2.2,
+          "sample_size": 13,
+          "best_counters": []
+        },
+        "Nickel Normal Man Zone": {
+          "opponent_frequency": 1.5,
+          "sample_size": 285,
+          "best_counters": [
+            {
+              "offensive_play": "Split Backs 3 Wide Slot Post",
+              "avg_yards_gained": 19.0,
+              "sample_size": 5,
+              "expected_value": 3.48
+            },
+            {
+              "offensive_play": "I Formation 3WR WR Out",
+              "avg_yards_gained": 17.67,
+              "sample_size": 9,
+              "expected_value": 2.76
+            },
+            {
+              "offensive_play": "Split Backs 3 Wide WR Quick Out",
+              "avg_yards_gained": 17.24,
+              "sample_size": 17,
+              "expected_value": 3.16
+            },
+            {
+              "offensive_play": "I Formation 3WR HB Inside Weak",
+              "avg_yards_gained": 15.74,
+              "sample_size": 23,
+              "expected_value": 4.13
+            },
+            {
+              "offensive_play": "I Formation 3WR Slot Short WR Deep",
+              "avg_yards_gained": 14.33,
+              "sample_size": 9,
+              "expected_value": 1.0
+            }
+          ]
+        }
+      },
+      "3RB/1TE/1WR": {
+        "Dime Flat 2 Deep Man Under": {
+          "opponent_frequency": 20.5,
+          "sample_size": 44,
+          "best_counters": [
+            {
+              "offensive_play": "I Formation Power HB Sweep Weak",
+              "avg_yards_gained": 9.33,
+              "sample_size": 3,
+              "expected_value": -0.32
+            },
+            {
+              "offensive_play": "I Formation Power PA Flats",
+              "avg_yards_gained": 8.17,
+              "sample_size": 6,
+              "expected_value": 3.09
+            },
+            {
+              "offensive_play": "I Formation Power HB Strong Outside",
+              "avg_yards_gained": 7.08,
+              "sample_size": 13,
+              "expected_value": 3.87
+            },
+            {
+              "offensive_play": "I Formation Power HB Draw",
+              "avg_yards_gained": 7.0,
+              "sample_size": 4,
+              "expected_value": 5.94
+            },
+            {
+              "offensive_play": "I Formation Power Play Action HB Downfield",
+              "avg_yards_gained": 5.38,
+              "sample_size": 8,
+              "expected_value": 1.71
+            }
+          ]
+        },
+        "Dime Normal 2 Deep Man Under": {
+          "opponent_frequency": 18.8,
+          "sample_size": 66,
+          "best_counters": [
+            {
+              "offensive_play": "I Formation Power HB Draw",
+              "avg_yards_gained": 10.67,
+              "sample_size": 3,
+              "expected_value": 5.59
+            },
+            {
+              "offensive_play": "I Formation Power HB Strong Outside",
+              "avg_yards_gained": 8.46,
+              "sample_size": 13,
+              "expected_value": 4.21
+            },
+            {
+              "offensive_play": "I Formation Power HB Sweep Weak",
+              "avg_yards_gained": 6.43,
+              "sample_size": 7,
+              "expected_value": 2.71
+            },
+            {
+              "offensive_play": "I Formation Power Play Action HB Downfield",
+              "avg_yards_gained": 6.15,
+              "sample_size": 13,
+              "expected_value": 1.41
+            },
+            {
+              "offensive_play": "I Formation Power PA Flats",
+              "avg_yards_gained": 5.25,
+              "sample_size": 12,
+              "expected_value": 1.69
+            }
+          ]
+        },
+        "Dime Normal Double WR1 WR2": {
+          "opponent_frequency": 17.1,
+          "sample_size": 715,
+          "best_counters": [
+            {
+              "offensive_play": "I Formation Power HB Strong Outside",
+              "avg_yards_gained": 8.48,
+              "sample_size": 157,
+              "expected_value": 0.14
+            },
+            {
+              "offensive_play": "I Formation Power HB Sweep Weak",
+              "avg_yards_gained": 7.12,
+              "sample_size": 42,
+              "expected_value": -0.18
+            },
+            {
+              "offensive_play": "I Formation Power PA Flats",
+              "avg_yards_gained": 6.59,
+              "sample_size": 102,
+              "expected_value": -0.26
+            },
+            {
+              "offensive_play": "I Formation Power HB Draw",
+              "avg_yards_gained": 5.19,
+              "sample_size": 27,
+              "expected_value": -2.55
+            },
+            {
+              "offensive_play": "I Formation Power HB Dive Weak",
+              "avg_yards_gained": 4.74,
+              "sample_size": 23,
+              "expected_value": 1.83
+            }
+          ]
+        },
+        "Dime Flat Man Cover 1": {
+          "opponent_frequency": 17.1,
+          "sample_size": 111,
+          "best_counters": [
+            {
+              "offensive_play": "I Formation Power Play Action HB Downfield",
+              "avg_yards_gained": 13.42,
+              "sample_size": 26,
+              "expected_value": 0.31
+            },
+            {
+              "offensive_play": "I Formation Power HB Sweep Weak",
+              "avg_yards_gained": 8.11,
+              "sample_size": 9,
+              "expected_value": 1.7
+            },
+            {
+              "offensive_play": "I Formation Power HB Strong Outside",
+              "avg_yards_gained": 6.54,
+              "sample_size": 28,
+              "expected_value": 2.66
+            },
+            {
+              "offensive_play": "I Formation Power HB Draw",
+              "avg_yards_gained": 5.75,
+              "sample_size": 4,
+              "expected_value": 1.5
+            },
+            {
+              "offensive_play": "I Formation Power PA Flats",
+              "avg_yards_gained": 3.4,
+              "sample_size": 10,
+              "expected_value": 0.11
+            }
+          ]
+        },
+        "Dime Normal Man Cover 1": {
+          "opponent_frequency": 13.7,
+          "sample_size": 157,
+          "best_counters": [
+            {
+              "offensive_play": "I Formation Power Play Action HB Downfield",
+              "avg_yards_gained": 8.5,
+              "sample_size": 14,
+              "expected_value": -2.22
+            },
+            {
+              "offensive_play": "I Formation Power HB Strong Outside",
+              "avg_yards_gained": 6.32,
+              "sample_size": 41,
+              "expected_value": -0.26
+            },
+            {
+              "offensive_play": "I Formation Power HB Dive Weak",
+              "avg_yards_gained": 4.29,
+              "sample_size": 7,
+              "expected_value": -2.71
+            },
+            {
+              "offensive_play": "I Formation Power PA Flats",
+              "avg_yards_gained": 4.17,
+              "sample_size": 23,
+              "expected_value": -1.76
+            },
+            {
+              "offensive_play": "I Formation Power HB Sweep Weak",
+              "avg_yards_gained": 2.87,
+              "sample_size": 15,
+              "expected_value": -2.72
+            }
+          ]
+        },
+        "Dime Normal Double WR3": {
+          "opponent_frequency": 3.4,
+          "sample_size": 39,
+          "best_counters": [
+            {
+              "offensive_play": "I Formation Power Play Action HB Downfield",
+              "avg_yards_gained": 7.15,
+              "sample_size": 13,
+              "expected_value": 1.89
+            },
+            {
+              "offensive_play": "I Formation Power HB Strong Outside",
+              "avg_yards_gained": 5.14,
+              "sample_size": 7,
+              "expected_value": 4.69
+            },
+            {
+              "offensive_play": "I Formation Power PA Flats",
+              "avg_yards_gained": 0.4,
+              "sample_size": 5,
+              "expected_value": 0.89
+            }
+          ]
+        },
+        "4-3 Under Double LB Blitz": {
+          "opponent_frequency": 1.7,
+          "sample_size": 273,
+          "best_counters": [
+            {
+              "offensive_play": "I Formation Power Play Action HB Downfield",
+              "avg_yards_gained": 11.2,
+              "sample_size": 70,
+              "expected_value": 1.43
+            },
+            {
+              "offensive_play": "I Formation Power PA Flats",
+              "avg_yards_gained": 2.7,
+              "sample_size": 46,
+              "expected_value": 1.52
+            },
+            {
+              "offensive_play": "I Formation Power HB Sweep Weak",
+              "avg_yards_gained": 2.55,
+              "sample_size": 29,
+              "expected_value": 1.4
+            },
+            {
+              "offensive_play": "I Formation Power HB Dive Weak",
+              "avg_yards_gained": 2.43,
+              "sample_size": 7,
+              "expected_value": 2.7
+            },
+            {
+              "offensive_play": "I Formation Power HB Draw",
+              "avg_yards_gained": 2.0,
+              "sample_size": 6,
+              "expected_value": -0.01
+            }
+          ]
+        },
+        "Goal Line Attack #1": {
+          "opponent_frequency": 1.7,
+          "sample_size": 540,
+          "best_counters": [
+            {
+              "offensive_play": "I Formation Power PA Flats",
+              "avg_yards_gained": 13.98,
+              "sample_size": 88,
+              "expected_value": 2.62
+            },
+            {
+              "offensive_play": "I Formation Power Play Action HB Downfield",
+              "avg_yards_gained": 12.45,
+              "sample_size": 126,
+              "expected_value": 3.65
+            },
+            {
+              "offensive_play": "I Formation Power Play Action Bomb",
+              "avg_yards_gained": 4.0,
+              "sample_size": 6,
+              "expected_value": -1.0
+            },
+            {
+              "offensive_play": "I Formation Power HB Dive Weak",
+              "avg_yards_gained": 1.42,
+              "sample_size": 19,
+              "expected_value": 0.59
+            },
+            {
+              "offensive_play": "I Formation Power HB Draw",
+              "avg_yards_gained": 0.56,
+              "sample_size": 16,
+              "expected_value": -1.49
+            }
+          ]
+        }
+      },
+      "Special Teams": {
+        "Kick Return": {
+          "opponent_frequency": 36.4,
+          "sample_size": 7518,
+          "best_counters": [
+            {
+              "offensive_play": "Kickoff",
+              "avg_yards_gained": 73.68,
+              "sample_size": 372,
+              "expected_value": 0.04
+            }
+          ]
+        },
+        "FG Block": {
+          "opponent_frequency": 35.9,
+          "sample_size": 6488,
+          "best_counters": [
+            {
+              "offensive_play": "Field Goal",
+              "avg_yards_gained": 29.61,
+              "sample_size": 6432,
+              "expected_value": 1.79
+            }
+          ]
+        },
+        "Punt Return": {
+          "opponent_frequency": 27.7,
+          "sample_size": 10993,
+          "best_counters": [
+            {
+              "offensive_play": "Punt",
+              "avg_yards_gained": 46.86,
+              "sample_size": 3229,
+              "expected_value": -0.96
+            }
+          ]
+        }
+      }
+    }
+  },
+  "targeting_analysis": {
+    "recommended_plays": [
+      "I Formation Twin WR Hard Slants",
+      "I Formation Power PA Flats",
+      "I Formation 3WR Slot Short WR Deep",
+      "I Formation Power Play Action HB Downfield",
+      "Weak I Normal WR Corner TE Middle",
+      "I Formation Power HB Sweep Weak",
+      "Singleback Big HB Inside Strong",
+      "I Formation Normal FL Hitch",
+      "I Formation Power HB Draw",
+      "I Formation Power HB Strong Outside",
+      "Singleback Normal TE Quick Out",
+      "Shotgun Normal TE Out",
+      "Singleback Normal HB Release Mid",
+      "Weak I Normal HB Inside Weak",
+      "Goal Line Normal HB Toss Strong",
+      "I Formation Normal HB Dive",
+      "Strong I Big HB Dive Strong",
+      "I Formation 3WR WR Out"
+    ],
+    "targeting_by_personnel": {
+      "1RB/1TE/3WR": {
+        "pass_targets": {
+          "total_passes": 3194,
+          "avg_yards_per_attempt": 12.198879551820728,
+          "completion_rate": 51.65936130244207
+        }
+      },
+      "1RB/2TE/2WR": {
+        "rush_attempts": {
+          "total_rushes": 1230,
+          "avg_yards_per_carry": 4.657093124456049
+        }
+      }
+    }
+  },
+  "summary": {
+    "key_defensive_recommendations": [
+      {
+        "vs_personnel": "1RB/1TE/3WR",
+        "vs_play": "Shotgun Normal HB Flare",
+        "opponent_frequency": 34.8,
+        "recommended_defense": "Dime Normal Double WR3",
+        "expected_yards_allowed": 2.45
+      },
+      {
+        "vs_personnel": "1RB/1TE/3WR",
+        "vs_play": "Shotgun Normal HB Delay",
+        "opponent_frequency": 27.0,
+        "recommended_defense": "Goal Line Attack #3",
+        "expected_yards_allowed": -3.2
+      },
+      {
+        "vs_personnel": "1RB/1TE/3WR",
+        "vs_play": "Singleback Normal HB Counter Weak",
+        "opponent_frequency": 27.0,
+        "recommended_defense": "3-4 Normal OLBs Blitz",
+        "expected_yards_allowed": -3.11
+      },
+      {
+        "vs_personnel": "1RB/1TE/3WR",
+        "vs_play": "Shotgun Normal Double Outs",
+        "opponent_frequency": 9.0,
+        "recommended_defense": "Nickel Normal SS Blitz",
+        "expected_yards_allowed": 0.8
+      },
+      {
+        "vs_personnel": "1RB/1TE/3WR",
+        "vs_play": "Shotgun Normal Deep Weak In and Out",
+        "opponent_frequency": 2.2,
+        "recommended_defense": "Nickel Normal Double WR2",
+        "expected_yards_allowed": -6.5
+      },
+      {
+        "vs_personnel": "2RB/1TE/2WR",
+        "vs_play": "I Formation Normal HB Dive",
+        "opponent_frequency": 22.7,
+        "recommended_defense": "4-3 Under Double LB Blitz",
+        "expected_yards_allowed": 0.62
+      },
+      {
+        "vs_personnel": "2RB/1TE/2WR",
+        "vs_play": "I Formation Normal HB Blast",
+        "opponent_frequency": 19.7,
+        "recommended_defense": "46 Normal Weak Blitz",
+        "expected_yards_allowed": -0.94
+      },
+      {
+        "vs_personnel": "2RB/1TE/2WR",
+        "vs_play": "Strong I Normal HB Off Tackle Strong",
+        "opponent_frequency": 15.0,
+        "recommended_defense": "46 Normal Strong Blitz",
+        "expected_yards_allowed": -0.6
+      },
+      {
+        "vs_personnel": "2RB/1TE/2WR",
+        "vs_play": "I Formation Normal FL Hook",
+        "opponent_frequency": 8.3,
+        "recommended_defense": "3-4 Normal Double Blitz",
+        "expected_yards_allowed": -0.67
+      },
+      {
+        "vs_personnel": "2RB/1TE/2WR",
+        "vs_play": "Weak I Normal WR Corner TE Middle",
+        "opponent_frequency": 8.0,
+        "recommended_defense": "Nickel Normal Man Cover 2",
+        "expected_yards_allowed": 1.25
+      },
+      {
+        "vs_personnel": "2RB/1TE/2WR",
+        "vs_play": "I Formation Normal PA Outside Curls",
+        "opponent_frequency": 7.3,
+        "recommended_defense": "3-4 Normal 2 Deep Man",
+        "expected_yards_allowed": -1.25
+      },
+      {
+        "vs_personnel": "2RB/1TE/2WR",
+        "vs_play": "I Formation Normal FL Hitch",
+        "opponent_frequency": 6.3,
+        "recommended_defense": "Goal Line Attack #3",
+        "expected_yards_allowed": -1.01
+      },
+      {
+        "vs_personnel": "2RB/1TE/2WR",
+        "vs_play": "Weak I Normal Skinny Posts",
+        "opponent_frequency": 6.3,
+        "recommended_defense": "Dime Normal FS Blitz",
+        "expected_yards_allowed": -0.33
+      },
+      {
+        "vs_personnel": "2RB/1TE/2WR",
+        "vs_play": "I Formation Normal PA Fullback Flat",
+        "opponent_frequency": 4.0,
+        "recommended_defense": "Nickel Normal Double WR3",
+        "expected_yards_allowed": 1.0
+      },
+      {
+        "vs_personnel": "2RB/1TE/2WR",
+        "vs_play": "I Formation Normal PA Streaks",
+        "opponent_frequency": 1.7,
+        "recommended_defense": "Dime Flat Man Cover 1",
+        "expected_yards_allowed": -8.0
+      },
+      {
+        "vs_personnel": "2RB/1TE/2WR",
+        "vs_play": "I Formation Normal SE Post",
+        "opponent_frequency": 0.7,
+        "recommended_defense": "Dime Normal Man Cover 1",
+        "expected_yards_allowed": -6.86
+      },
+      {
+        "vs_personnel": "2RB/3TE",
+        "vs_play": "Goal Line Normal HB Dive",
+        "opponent_frequency": 33.0,
+        "recommended_defense": "Dime Flat MLB SS Blitz",
+        "expected_yards_allowed": 1.0
+      },
+      {
+        "vs_personnel": "2RB/3TE",
+        "vs_play": "Goal Line Normal HB Outside Strong",
+        "opponent_frequency": 20.0,
+        "recommended_defense": "Goal Line Attack #3",
+        "expected_yards_allowed": -0.08
+      },
+      {
+        "vs_personnel": "2RB/3TE",
+        "vs_play": "Goal Line Normal HB Pitch Weak",
+        "opponent_frequency": 13.0,
+        "recommended_defense": "Nickel Normal CB3 LB Blitz",
+        "expected_yards_allowed": -3.75
+      },
+      {
+        "vs_personnel": "2RB/3TE",
+        "vs_play": "Goal Line Normal PA TE Drag",
+        "opponent_frequency": 9.2,
+        "recommended_defense": "4-3 Under Crash Left",
+        "expected_yards_allowed": 2.33
+      },
+      {
+        "vs_personnel": "2RB/3TE",
+        "vs_play": "Goal Line Normal HB Off Tackle",
+        "opponent_frequency": 8.6,
+        "recommended_defense": "4-3 Normal Cover 2 MLB Blitz",
+        "expected_yards_allowed": 0.67
+      },
+      {
+        "vs_personnel": "2RB/3TE",
+        "vs_play": "Goal Line Normal HB Weak",
+        "opponent_frequency": 8.6,
+        "recommended_defense": "4-3 Under Double LB Blitz",
+        "expected_yards_allowed": 0.19
+      },
+      {
+        "vs_personnel": "2RB/3TE",
+        "vs_play": "Goal Line Normal HB Toss Strong",
+        "opponent_frequency": 7.6,
+        "recommended_defense": "46 Heavy SS MLB Blitz",
+        "expected_yards_allowed": -1.0
+      },
+      {
+        "vs_personnel": "2RB/3WR",
+        "vs_play": "Shotgun 2 RB 3 WR WR Curl",
+        "opponent_frequency": 28.4,
+        "recommended_defense": "Dime Normal Double WR3",
+        "expected_yards_allowed": 1.0
+      },
+      {
+        "vs_personnel": "2RB/3WR",
+        "vs_play": "Shotgun 2 RB 3 WR FL Drag",
+        "opponent_frequency": 19.6,
+        "recommended_defense": "Nickel Normal Double WR1",
+        "expected_yards_allowed": 0.18
+      },
+      {
+        "vs_personnel": "2RB/3WR",
+        "vs_play": "Shotgun 2 RB 3 WR FB In",
+        "opponent_frequency": 19.6,
+        "recommended_defense": "4-3 Normal Double WR1",
+        "expected_yards_allowed": 0.38
+      },
+      {
+        "vs_personnel": "2RB/3WR",
+        "vs_play": "Shotgun 2 RB 3 WR WR Hooks",
+        "opponent_frequency": 19.6,
+        "recommended_defense": "Nickel Normal 2 Deep",
+        "expected_yards_allowed": 1.4
+      },
+      {
+        "vs_personnel": "2RB/3WR",
+        "vs_play": "Shotgun 2 RB 3 WR RB Curls",
+        "opponent_frequency": 9.8,
+        "recommended_defense": "4-3 Normal Man Under 1",
+        "expected_yards_allowed": 0.6
+      },
+      {
+        "vs_personnel": "2RB/3WR",
+        "vs_play": "Shotgun 2 RB 3 WR Strong Deep",
+        "opponent_frequency": 2.9,
+        "recommended_defense": "Dime Normal Man Cover 1",
+        "expected_yards_allowed": -8.25
+      },
+      {
+        "vs_personnel": "3RB/1TE/1WR",
+        "vs_play": "I Formation Power Play Action HB Downfield",
+        "opponent_frequency": 100.0,
+        "recommended_defense": "46 Normal Strong Blitz",
+        "expected_yards_allowed": -3.25
+      },
+      {
+        "vs_personnel": "Special Teams",
+        "vs_play": "Punt",
+        "opponent_frequency": 64.1,
+        "recommended_defense": "Punt Return",
+        "expected_yards_allowed": 46.86
+      },
+      {
+        "vs_personnel": "Special Teams",
+        "vs_play": "Kickoff",
+        "opponent_frequency": 21.5,
+        "recommended_defense": "Kick Return",
+        "expected_yards_allowed": 73.68
+      },
+      {
+        "vs_personnel": "Special Teams",
+        "vs_play": "Field Goal",
+        "opponent_frequency": 14.4,
+        "recommended_defense": "FG Block",
+        "expected_yards_allowed": 29.61
+      }
+    ],
+    "key_offensive_recommendations": [
+      {
+        "vs_personnel": "1RB/1TE/3WR",
+        "vs_play": "Dime Flat Man Cover 1",
+        "opponent_frequency": 19.1,
+        "recommended_offense": "Shotgun Normal TE Out",
+        "expected_yards_gained": 11.5
+      },
+      {
+        "vs_personnel": "1RB/1TE/3WR",
+        "vs_play": "Dime Flat 2 Deep Man Under",
+        "opponent_frequency": 17.9,
+        "recommended_offense": "Singleback Normal TE Quick Out",
+        "expected_yards_gained": 16.2
+      },
+      {
+        "vs_personnel": "1RB/1TE/3WR",
+        "vs_play": "Dime Normal Double WR1 WR2",
+        "opponent_frequency": 17.3,
+        "recommended_offense": "Singleback Normal HB Dive Weak",
+        "expected_yards_gained": 24.0
+      },
+      {
+        "vs_personnel": "1RB/1TE/3WR",
+        "vs_play": "Dime Normal 2 Deep Man Under",
+        "opponent_frequency": 13.9,
+        "recommended_offense": "Singleback Normal TE Quick Out",
+        "expected_yards_gained": 10.6
+      },
+      {
+        "vs_personnel": "1RB/1TE/3WR",
+        "vs_play": "Dime Normal Man Cover 1",
+        "opponent_frequency": 12.1,
+        "recommended_offense": "Singleback Normal HB Dive Weak",
+        "expected_yards_gained": 8.29
+      },
+      {
+        "vs_personnel": "1RB/1TE/3WR",
+        "vs_play": "Dime Normal Double WR3",
+        "opponent_frequency": 5.8,
+        "recommended_offense": "Singleback Normal HB Dive Weak",
+        "expected_yards_gained": 8.86
+      },
+      {
+        "vs_personnel": "1RB/1TE/3WR",
+        "vs_play": "Nickel Normal SS Blitz",
+        "opponent_frequency": 1.2,
+        "recommended_offense": "Shotgun Normal TE Out",
+        "expected_yards_gained": 12.75
+      },
+      {
+        "vs_personnel": "1RB/1TE/3WR",
+        "vs_play": "Nickel Normal Double LB Blitz",
+        "opponent_frequency": 1.2,
+        "recommended_offense": "Shotgun Normal FL Slant",
+        "expected_yards_gained": 32.0
+      },
+      {
+        "vs_personnel": "1RB/2TE/2WR",
+        "vs_play": "Dime Normal Man Cover 1",
+        "opponent_frequency": 21.3,
+        "recommended_offense": "Singleback Big HB Pitch Weak",
+        "expected_yards_gained": 7.67
+      },
+      {
+        "vs_personnel": "1RB/2TE/2WR",
+        "vs_play": "Dime Normal Double WR1 WR2",
+        "opponent_frequency": 19.1,
+        "recommended_offense": "Singleback Big HB Inside Strong",
+        "expected_yards_gained": 19.38
+      },
+      {
+        "vs_personnel": "1RB/2TE/2WR",
+        "vs_play": "Dime Normal 2 Deep Man Under",
+        "opponent_frequency": 17.0,
+        "recommended_offense": "Singleback Big Off Tackle Strong",
+        "expected_yards_gained": 12.5
+      },
+      {
+        "vs_personnel": "1RB/2TE/2WR",
+        "vs_play": "Dime Flat Man Cover 1",
+        "opponent_frequency": 12.8,
+        "recommended_offense": "Singleback Big Ins and Outs",
+        "expected_yards_gained": 7.33
+      },
+      {
+        "vs_personnel": "1RB/2TE/2WR",
+        "vs_play": "Dime Flat 2 Deep Man Under",
+        "opponent_frequency": 12.8,
+        "recommended_offense": "Singleback Big HB Inside Strong",
+        "expected_yards_gained": 9.18
+      },
+      {
+        "vs_personnel": "1RB/2TE/2WR",
+        "vs_play": "Dime Normal Double WR3",
+        "opponent_frequency": 4.3,
+        "recommended_offense": "Singleback Big HB Inside Strong",
+        "expected_yards_gained": 8.0
+      },
+      {
+        "vs_personnel": "1RB/4WR",
+        "vs_play": "Dime Flat Man Cover 1",
+        "opponent_frequency": 33.3,
+        "recommended_offense": "Singleback 4 Wide Quick Outs",
+        "expected_yards_gained": 12.44
+      },
+      {
+        "vs_personnel": "1RB/4WR",
+        "vs_play": "Dime Flat 2 Deep Man Under",
+        "opponent_frequency": 26.7,
+        "recommended_offense": "Singleback 4 Wide Quick Outs",
+        "expected_yards_gained": 10.43
+      },
+      {
+        "vs_personnel": "1RB/4WR",
+        "vs_play": "Dime Normal Double WR1 WR2",
+        "opponent_frequency": 13.3,
+        "recommended_offense": "Singleback 4 Wide Quick Outs",
+        "expected_yards_gained": 15.54
+      },
+      {
+        "vs_personnel": "2RB/1TE/2WR",
+        "vs_play": "Dime Normal 2 Deep Man Under",
+        "opponent_frequency": 18.5,
+        "recommended_offense": "Weak I Normal HB Inside Strong",
+        "expected_yards_gained": 11.75
+      },
+      {
+        "vs_personnel": "2RB/1TE/2WR",
+        "vs_play": "Dime Normal Man Cover 1",
+        "opponent_frequency": 16.7,
+        "recommended_offense": "I Formation Twin WR Hard Slants",
+        "expected_yards_gained": 10.66
+      },
+      {
+        "vs_personnel": "2RB/1TE/2WR",
+        "vs_play": "Dime Flat Man Cover 1",
+        "opponent_frequency": 16.1,
+        "recommended_offense": "I Formation Twin WR Quick Outs",
+        "expected_yards_gained": 11.71
+      },
+      {
+        "vs_personnel": "2RB/1TE/2WR",
+        "vs_play": "Dime Flat 2 Deep Man Under",
+        "opponent_frequency": 15.5,
+        "recommended_offense": "Weak I Normal WR Corner TE Middle",
+        "expected_yards_gained": 9.03
+      },
+      {
+        "vs_personnel": "2RB/1TE/2WR",
+        "vs_play": "Dime Normal Double WR1 WR2",
+        "opponent_frequency": 14.9,
+        "recommended_offense": "I Formation Normal HB Dive",
+        "expected_yards_gained": 19.24
+      },
+      {
+        "vs_personnel": "2RB/1TE/2WR",
+        "vs_play": "Dime Normal Double WR3",
+        "opponent_frequency": 3.6,
+        "recommended_offense": "Weak I Normal Fullback Counter Weak",
+        "expected_yards_gained": 15.67
+      },
+      {
+        "vs_personnel": "2RB/1TE/2WR",
+        "vs_play": "Dime Normal FS Blitz",
+        "opponent_frequency": 2.4,
+        "recommended_offense": "I Formation Normal FL Hook",
+        "expected_yards_gained": 8.67
+      },
+      {
+        "vs_personnel": "2RB/1TE/2WR",
+        "vs_play": "3-4 Normal Man Cover 1",
+        "opponent_frequency": 2.1,
+        "recommended_offense": "I Formation Twin WR Hard Slants",
+        "expected_yards_gained": 14.33
+      },
+      {
+        "vs_personnel": "2RB/1TE/2WR",
+        "vs_play": "4-3 Under Crowd Middle Deep Man",
+        "opponent_frequency": 1.8,
+        "recommended_offense": "I Formation Twin WR Hard Slants",
+        "expected_yards_gained": 19.8
+      },
+      {
+        "vs_personnel": "2RB/1TE/2WR",
+        "vs_play": "4-3 Under Double LB Blitz",
+        "opponent_frequency": 1.5,
+        "recommended_offense": "I Formation Twin WR Hook Ins",
+        "expected_yards_gained": 29.0
+      },
+      {
+        "vs_personnel": "2RB/1TE/2WR",
+        "vs_play": "3-4 Normal Man QB Spy",
+        "opponent_frequency": 1.2,
+        "recommended_offense": "I Formation Twin WR Hard Slants",
+        "expected_yards_gained": 14.0
+      },
+      {
+        "vs_personnel": "2RB/1TE/2WR",
+        "vs_play": "4-3 Under Zone Blitz",
+        "opponent_frequency": 0.6,
+        "recommended_offense": "I Formation Normal Max Protect",
+        "expected_yards_gained": 15.86
+      },
+      {
+        "vs_personnel": "2RB/1TE/2WR",
+        "vs_play": "4-3 Under Crash Right",
+        "opponent_frequency": 0.6,
+        "recommended_offense": "Strong I Normal HB Sweep Strong",
+        "expected_yards_gained": 20.0
+      },
+      {
+        "vs_personnel": "2RB/2TE/1WR",
+        "vs_play": "Dime Normal Man Cover 1",
+        "opponent_frequency": 23.1,
+        "recommended_offense": "Weak I Big WR Post TE Out",
+        "expected_yards_gained": 9.3
+      },
+      {
+        "vs_personnel": "2RB/2TE/1WR",
+        "vs_play": "Dime Flat 2 Deep Man Under",
+        "opponent_frequency": 23.1,
+        "recommended_offense": "Strong I Big WR Quick In",
+        "expected_yards_gained": 14.75
+      },
+      {
+        "vs_personnel": "2RB/2TE/1WR",
+        "vs_play": "Dime Normal 2 Deep Man Under",
+        "opponent_frequency": 15.4,
+        "recommended_offense": "Strong I Big HB Dive Strong",
+        "expected_yards_gained": 6.67
+      },
+      {
+        "vs_personnel": "2RB/2TE/1WR",
+        "vs_play": "Dime Normal Double WR1 WR2",
+        "opponent_frequency": 13.5,
+        "recommended_offense": "I Formation Big HB Outside Weak",
+        "expected_yards_gained": 42.33
+      },
+      {
+        "vs_personnel": "2RB/2TE/1WR",
+        "vs_play": "Dime Flat Man Cover 1",
+        "opponent_frequency": 13.5,
+        "recommended_offense": "Weak I Big WR Post TE Out",
+        "expected_yards_gained": 11.42
+      },
+      {
+        "vs_personnel": "2RB/2TE/1WR",
+        "vs_play": "4-3 Under Crash Right",
+        "opponent_frequency": 3.8,
+        "recommended_offense": "Strong I Big TE Post",
+        "expected_yards_gained": 10.73
+      },
+      {
+        "vs_personnel": "2RB/3TE",
+        "vs_play": "Dime Normal Double WR1 WR2",
+        "opponent_frequency": 22.7,
+        "recommended_offense": "Goal Line Normal HB Weak",
+        "expected_yards_gained": 7.0
+      },
+      {
+        "vs_personnel": "2RB/3TE",
+        "vs_play": "Dime Flat 2 Deep Man Under",
+        "opponent_frequency": 18.2,
+        "recommended_offense": "Goal Line Normal HB Off Tackle",
+        "expected_yards_gained": 12.0
+      },
+      {
+        "vs_personnel": "2RB/3TE",
+        "vs_play": "Dime Flat Man Cover 1",
+        "opponent_frequency": 18.2,
+        "recommended_offense": "Goal Line Normal HB Toss Strong",
+        "expected_yards_gained": 12.0
+      },
+      {
+        "vs_personnel": "2RB/3TE",
+        "vs_play": "Dime Normal Man Cover 1",
+        "opponent_frequency": 9.1,
+        "recommended_offense": "Goal Line Normal HB Pitch Weak",
+        "expected_yards_gained": 7.0
+      },
+      {
+        "vs_personnel": "2RB/3TE",
+        "vs_play": "Dime Normal 2 Deep Man Under",
+        "opponent_frequency": 6.8,
+        "recommended_offense": "Goal Line Normal PA TE Drag",
+        "expected_yards_gained": 9.0
+      },
+      {
+        "vs_personnel": "2RB/3WR",
+        "vs_play": "Dime Normal 2 Deep Man Under",
+        "opponent_frequency": 19.0,
+        "recommended_offense": "Split Backs 3 Wide Dive Left",
+        "expected_yards_gained": 11.17
+      },
+      {
+        "vs_personnel": "2RB/3WR",
+        "vs_play": "Dime Normal Double WR1 WR2",
+        "opponent_frequency": 19.0,
+        "recommended_offense": "I Formation 3WR HB Inside Weak",
+        "expected_yards_gained": 13.56
+      },
+      {
+        "vs_personnel": "2RB/3WR",
+        "vs_play": "Dime Flat 2 Deep Man Under",
+        "opponent_frequency": 17.5,
+        "recommended_offense": "I Formation 3WR Slot Short WR Deep",
+        "expected_yards_gained": 12.07
+      },
+      {
+        "vs_personnel": "2RB/3WR",
+        "vs_play": "Dime Flat Man Cover 1",
+        "opponent_frequency": 13.1,
+        "recommended_offense": "I Formation 3WR Slot Short WR Deep",
+        "expected_yards_gained": 10.27
+      },
+      {
+        "vs_personnel": "2RB/3WR",
+        "vs_play": "Dime Normal Man Cover 1",
+        "opponent_frequency": 13.1,
+        "recommended_offense": "Split Backs 3 Wide Drag In",
+        "expected_yards_gained": 8.57
+      },
+      {
+        "vs_personnel": "2RB/3WR",
+        "vs_play": "Dime Normal Double WR3",
+        "opponent_frequency": 3.6,
+        "recommended_offense": "Shotgun 2 RB 3 WR Shotgun Dive",
+        "expected_yards_gained": 8.0
+      },
+      {
+        "vs_personnel": "2RB/3WR",
+        "vs_play": "4-3 Under Crash Right",
+        "opponent_frequency": 2.2,
+        "recommended_offense": "I Formation 3WR Slot Short WR Deep",
+        "expected_yards_gained": 16.21
+      },
+      {
+        "vs_personnel": "2RB/3WR",
+        "vs_play": "Nickel Normal Man Zone",
+        "opponent_frequency": 1.5,
+        "recommended_offense": "Split Backs 3 Wide Slot Post",
+        "expected_yards_gained": 19.0
+      },
+      {
+        "vs_personnel": "3RB/1TE/1WR",
+        "vs_play": "Dime Flat 2 Deep Man Under",
+        "opponent_frequency": 20.5,
+        "recommended_offense": "I Formation Power HB Sweep Weak",
+        "expected_yards_gained": 9.33
+      },
+      {
+        "vs_personnel": "3RB/1TE/1WR",
+        "vs_play": "Dime Normal 2 Deep Man Under",
+        "opponent_frequency": 18.8,
+        "recommended_offense": "I Formation Power HB Draw",
+        "expected_yards_gained": 10.67
+      },
+      {
+        "vs_personnel": "3RB/1TE/1WR",
+        "vs_play": "Dime Normal Double WR1 WR2",
+        "opponent_frequency": 17.1,
+        "recommended_offense": "I Formation Power HB Strong Outside",
+        "expected_yards_gained": 8.48
+      },
+      {
+        "vs_personnel": "3RB/1TE/1WR",
+        "vs_play": "Dime Flat Man Cover 1",
+        "opponent_frequency": 17.1,
+        "recommended_offense": "I Formation Power Play Action HB Downfield",
+        "expected_yards_gained": 13.42
+      },
+      {
+        "vs_personnel": "3RB/1TE/1WR",
+        "vs_play": "Dime Normal Man Cover 1",
+        "opponent_frequency": 13.7,
+        "recommended_offense": "I Formation Power Play Action HB Downfield",
+        "expected_yards_gained": 8.5
+      },
+      {
+        "vs_personnel": "3RB/1TE/1WR",
+        "vs_play": "Dime Normal Double WR3",
+        "opponent_frequency": 3.4,
+        "recommended_offense": "I Formation Power Play Action HB Downfield",
+        "expected_yards_gained": 7.15
+      },
+      {
+        "vs_personnel": "3RB/1TE/1WR",
+        "vs_play": "4-3 Under Double LB Blitz",
+        "opponent_frequency": 1.7,
+        "recommended_offense": "I Formation Power Play Action HB Downfield",
+        "expected_yards_gained": 11.2
+      },
+      {
+        "vs_personnel": "3RB/1TE/1WR",
+        "vs_play": "Goal Line Attack #1",
+        "opponent_frequency": 1.7,
+        "recommended_offense": "I Formation Power PA Flats",
+        "expected_yards_gained": 13.98
+      },
+      {
+        "vs_personnel": "Special Teams",
+        "vs_play": "Kick Return",
+        "opponent_frequency": 36.4,
+        "recommended_offense": "Kickoff",
+        "expected_yards_gained": 73.68
+      },
+      {
+        "vs_personnel": "Special Teams",
+        "vs_play": "FG Block",
+        "opponent_frequency": 35.9,
+        "recommended_offense": "Field Goal",
+        "expected_yards_gained": 29.61
+      },
+      {
+        "vs_personnel": "Special Teams",
+        "vs_play": "Punt Return",
+        "opponent_frequency": 27.7,
+        "recommended_offense": "Punt",
+        "expected_yards_gained": 46.86
+      }
+    ],
+    "top_personnel_matchups": [],
+    "targeting_priorities": []
+  }
+}

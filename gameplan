@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# MFN Automated Game Planner
+# Uses parent directory execution to avoid numpy conflicts
+
+cd /Users/jamesjones/projects
+exec python3 mfn/automated_gameplan_fixed.py "$@"

@@ -1,0 +1,86 @@
+# MFN Data Analysis Configuration
+# Copy this to config.local.yaml and modify paths for your setup
+
+# Data paths
+data:
+  root_dir: ./data
+  feathers_dir: ./data
+  global_files_dir: ./data
+
+# Reference files
+reference_files:
+  global_off: MFN Global Reference - OffPlays.csv
+  global_def: MFN Global Reference - DefPlays.csv
+
+# Google Sheets integration
+google_sheets:
+  credentials_file: credentials.json
+  
+# League configurations
+leagues:
+  qad:
+    seasons: [2043, 2044, 2045, 2046, 2047, 2048, 2049]
+    domain: fantasy-league
+    sheet_id: 1Nab-IckGA6tG19TOxEu_fYgbNl_7dCZ9hzrTtqcrOO8
+  xfl:
+    seasons: [2043, 2044, 2045, 2046, 2047, 2048]
+    domain: xfl
+    sheet_id: 141ZIAR5ubelkZ4tO7C2QTVFHodlSXNPZQ6i6toVlIRQ
+  paydirt:
+    seasons: [1996, 1997, 1998, 1999, 2000, 2001, 2002]
+    domain: paydirt
+    sheet_id: 1lRu3yMe7D1j0oJxqVlpPFzh6Dv9JGi2xS6sXzIS-FlY
+  USFL:
+    seasons: [2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018]
+    domain: usflwfl
+    sheet_id: 1uhpNHxeXe5xeXR93bAGU6_-vXaTvWvgmRLEd_3Z984s
+  moguls:
+    seasons: [2042, 2043, 2044, 2045, 2046, 2047]
+    domain: moguls
+  norig:
+    seasons: [2028, 2029, 2030, 2031, 2032]
+    domain: norig
+    sheet_id: 1jeVorER82DR-xB81wez2t4tuN1HpJvhmMaihh-8gpnI
+  pfl:
+    seasons: [2026, 2027, 2028, 2029]
+    domain: pfl
+  lol:
+    seasons: [2117, 2118, 2119, 2120]
+    domain: lol
+  nba:
+    seasons: [2000, 2001]
+    domain: nba-league
+
+# Analysis settings
+analysis:
+  # Game version to focus on (filters data to this version only)
+  target_version: "0.4.6"
+  
+  # Yards-to-goal-line bucket size for analysis
+  ytgl_bucket_size: 5
+  
+  # Minimum play count for statistical significance
+  min_play_count: 20
+  
+  # Thresholds for defensive analysis
+  pass_threshold: 7
+  run_threshold: 6
+  
+  # Play type definitions
+  run_plays: ["Inside Run", "Outside Run"]
+  pass_plays: ["Short Pass", "Medium Pass", "Long Pass"]
+  
+  # Excluded play types
+  def_excludes: [null, "FG Block", "Punt Return", "Kick Return", "Onsides Kick Return Onside Kick Return"]
+  off_excludes: [null, "Field Goal", "Punt", "Victory", "Kickoff", "Onsides Kick Onside Kick"]
+
+# Output settings
+output:
+  # Whether to automatically save analysis results
+  auto_save: true
+  
+  # Default output format for data exports
+  default_format: csv
+  
+  # Include debug information in outputs
+  debug_mode: false

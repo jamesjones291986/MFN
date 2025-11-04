@@ -19,8 +19,19 @@ buckets = ['0-4', '5-9', '10-14', '15-19', '20-24', '25-29',
 
 global_off = '/Users/jamesjones/personal/game_logs/MFN Global Reference - OffPlays.csv'
 global_def = '/Users/jamesjones/personal/game_logs/MFN Global Reference - DefPlays.csv'
-global_off_ref = pd.read_csv(global_off)
-global_def_ref = pd.read_csv(global_def)
+
+# Load reference files with error handling
+try:
+    global_off_ref = pd.read_csv(global_off)
+except FileNotFoundError:
+    print(f"Warning: {global_off} not found. Creating empty DataFrame.")
+    global_off_ref = pd.DataFrame(columns=['OffPlay', 'OffPlayType', 'OffPersonnel'])
+
+try:
+    global_def_ref = pd.read_csv(global_def)
+except FileNotFoundError:
+    print(f"Warning: {global_def} not found. Creating empty DataFrame.")
+    global_def_ref = pd.DataFrame(columns=['DefPlay', 'DefPlayType'])
 
 run_plays = ('Inside Run', 'Outside Run')
 pass_plays = ('Short Pass', 'Medium Pass', 'Long Pass')
@@ -286,19 +297,35 @@ def def_against_personnel():
 
 
 def scout(league, season, team):
+    from targeting_analysis import add_targeting_to_scouting
+    
     tdf = format_df(Config.load_feather(league, season))
     print(f'Scouting Report for {team} in {league} {season}')
     scout_off_def(tdf, team)
+    
+    # Add targeting analysis to show where to put your best defenders
+    try:
+        add_targeting_to_scouting(league, season, team)
+    except Exception as e:
+        print(f"\n⚠️  Targeting analysis unavailable: {e}")
+        print("   Run 'python targets.py' first to generate targeting data")
+    
     # scout_run_vs_pass_downs(tdf, team)
 
 
-# Load all seasons
-df = format_df(Config.load_all_seasons()).reset_index(drop=True)
+# Load all seasons - moved to function to avoid loading on import
+def load_and_format_all_seasons():
+    """Load and format all seasons data"""
+    return format_df(Config.load_all_seasons()).reset_index(drop=True)
 
-# Load all seasons
-# df = format_df(pd.concat((Config.load_feather(k, y) for k, v in Config.ls_dictionary.items() for y in v))).reset_index(drop=True)
-
+# Alternative loader
+# def load_and_format_all_seasons_alt():
+#     return format_df(pd.concat((Config.load_feather(k, y) for k, v in Config.ls_dictionary.items() for y in v))).reset_index(drop=True)
 
 ###########################################
 
-off_play_adj_ev = adj_ev(df, 'OffensivePlay', all_plays, 'desc')
+# Moved analysis to function to avoid running on import
+def run_best_plays_analysis():
+    """Run best plays analysis on all data"""
+    df = load_and_format_all_seasons()
+    return adj_ev(df, 'OffensivePlay', all_plays, 'desc')

@@ -1,0 +1,81 @@
+OffensivePlay,OffPlayType,OffPersonnel,ypp,cnt,any/a,int_rate,sack_rate,td_rate,ev_adj,vs_defense,def_frequency
+I Formation Big HB Counter Weak,Outside Run,2RB/2TE/1WR,9.2,130,11.03,0.0,0.0,3.76,0.862,Goal Line 3 Deep Man,14.57
+Strong I Big TE Deep Corner,Long Pass,2RB/2TE/1WR,8.93,28,7.86,3.57,3.57,,-0.605,Goal Line 3 Deep Man,14.57
+Strong I Big TE Post,Medium Pass,2RB/2TE/1WR,8.62,1069,7.48,3.48,3.85,3.39,1.038,Goal Line 3 Deep Man,14.57
+Weak I Big WR Post TE Out,Medium Pass,2RB/2TE/1WR,7.98,656,7.25,2.87,3.03,2.27,0.962,Goal Line 3 Deep Man,14.57
+Weak I Big HB Lead Toss Weak,Outside Run,2RB/2TE/1WR,7.78,319,9.34,0.0,0.0,0.3,0.846,Goal Line 3 Deep Man,14.57
+Weak I Normal Fullback Counter Weak,Outside Run,2RB/1TE/2WR,8.41,346,10.1,0.0,0.0,1.43,0.567,4-3 Normal Man Under 1,9.51
+Weak I Normal HB Inside Weak,Inside Run,2RB/1TE/2WR,8.22,1469,9.86,0.0,0.0,3.29,0.55,4-3 Normal Man Under 1,9.51
+Weak I Normal FB Inside Weak,Inside Run,2RB/1TE/2WR,8.05,170,9.66,0.0,0.0,1.74,-0.477,4-3 Normal Man Under 1,9.51
+I Formation Normal FL Hitch,Short Pass,2RB/1TE/2WR,7.74,2512,6.97,3.47,1.18,4.22,0.779,4-3 Normal Man Under 1,9.51
+Singleback Slot Strong HB Counter,Outside Run,1RB/1TE/3WR,7.72,200,9.27,0.0,0.0,1.49,0.314,4-3 Normal Man Under 1,9.51
+Shotgun Normal HB Flare,Medium Pass,1RB/1TE/3WR,15.68,659,15.72,2.56,7.83,14.31,1.134,4-3 Normal Double WR2,8.0
+I Formation 3WR Slot Short WR Deep,Medium Pass,2RB/3WR,14.82,95,15.32,2.06,6.19,14.43,0.851,4-3 Normal Double WR2,8.0
+I Formation 3WR Backfield Flats,Medium Pass,2RB/3WR,11.39,31,6.57,9.68,6.45,12.9,0.281,4-3 Normal Double WR2,8.0
+Singleback Normal HB Release Mid,Medium Pass,1RB/1TE/3WR,9.99,135,9.03,2.96,5.93,5.93,1.041,4-3 Normal Double WR2,8.0
+Singleback Normal FL Post,Medium Pass,1RB/1TE/3WR,9.61,79,7.98,2.53,10.13,7.59,0.323,4-3 Normal Double WR2,8.0
+Singleback 4 Wide Quick Outs,Short Pass,1RB/4WR,8.36,45,8.25,2.22,2.22,2.22,0.765,Nickel 3-3-5 Cover 2 Man Under,7.09
+Shotgun Normal HB Sweep,Outside Run,1RB/1TE/3WR,7.39,599,8.87,0.0,0.0,,0.22,Nickel 3-3-5 Cover 2 Man Under,7.09
+I Formation 3WR FL Post,Medium Pass,2RB/3WR,7.38,1529,7.58,1.81,0.97,0.06,0.473,Nickel 3-3-5 Cover 2 Man Under,7.09
+I Formation 3WR Slot Short WR Deep,Medium Pass,2RB/3WR,7.2,2195,6.58,2.85,1.72,0.68,0.267,Nickel 3-3-5 Cover 2 Man Under,7.09
+Strong I Normal WR Post TE Out,Medium Pass,2RB/1TE/2WR,7.0,27,8.4,0.0,0.0,,-0.864,Nickel 3-3-5 Cover 2 Man Under,7.09
+Singleback Big WR Deep,Medium Pass,1RB/2TE/2WR,12.92,113,13.93,2.63,0.0,5.26,1.041,4-3 Under Crowd Middle,6.88
+Shotgun Normal HB Flare,Medium Pass,1RB/1TE/3WR,12.59,29,15.1,0.0,0.0,6.9,0.408,4-3 Under Crowd Middle,6.88
+I Formation Power Play Action HB Downfield,Medium Pass,3RB/1TE/1WR,12.2,68,13.77,1.45,0.0,5.8,-0.196,4-3 Under Crowd Middle,6.88
+Split Backs Normal Posts,Medium Pass,2RB/1TE/2WR,9.57,43,10.12,2.27,0.0,,0.894,4-3 Under Crowd Middle,6.88
+I Formation Twin WR Hard Slants,Short Pass,2RB/1TE/2WR,9.54,168,6.44,5.95,7.14,5.36,0.927,4-3 Under Crowd Middle,6.88
+Singleback Normal HB Release Mid,Medium Pass,1RB/1TE/3WR,13.49,43,14.79,0.0,6.98,9.3,0.509,Goal Line Attack #1,6.48
+I Formation Normal Max Protect,Medium Pass,2RB/1TE/2WR,12.78,86,12.58,1.15,10.34,11.49,0.16,Goal Line Attack #1,6.48
+Strong I Big Backfield Drag,Short Pass,2RB/2TE/1WR,12.65,508,11.14,1.95,14.4,13.42,2.027,Goal Line Attack #1,6.48
+I Formation Twin WR Hard Slants,Short Pass,2RB/1TE/2WR,11.64,79,12.74,1.23,2.47,7.41,-0.128,Goal Line Attack #1,6.48
+Shotgun Normal HB Flare,Medium Pass,1RB/1TE/3WR,10.57,191,7.07,1.02,25.0,10.2,-0.168,Goal Line Attack #1,6.48
+I Formation Power HB Sweep Weak,Outside Run,3RB/1TE/1WR,8.38,32,10.05,0.0,0.0,,-0.446,Nickel Normal Man Cover 2,5.77
+Singleback Slot Strong HB Counter,Outside Run,1RB/1TE/3WR,8.23,882,9.87,0.0,0.0,0.45,0.681,Nickel Normal Man Cover 2,5.77
+Singleback Normal HB Inside Weak,Inside Run,1RB/1TE/3WR,8.18,991,9.82,0.0,0.0,0.1,1.082,Nickel Normal Man Cover 2,5.77
+Weak I Normal HB Inside Weak,Inside Run,2RB/1TE/2WR,7.86,57,9.43,0.0,0.0,,0.445,Nickel Normal Man Cover 2,5.77
+Singleback Normal HB Counter Weak,Outside Run,1RB/1TE/3WR,7.69,1194,9.22,0.0,0.0,0.17,0.868,Nickel Normal Man Cover 2,5.77
+Shotgun Normal HB Flare,Medium Pass,1RB/1TE/3WR,9.17,848,6.64,3.62,10.98,4.67,0.466,Nickel Normal SS Blitz,3.64
+I Formation Twin WR Hard Slants,Short Pass,2RB/1TE/2WR,9.0,28,8.04,3.45,3.45,3.45,-0.349,Nickel Normal SS Blitz,3.64
+Singleback Normal HB Release Mid,Medium Pass,1RB/1TE/3WR,8.97,193,8.29,3.61,1.55,3.61,0.55,Nickel Normal SS Blitz,3.64
+Singleback Normal Slot WR Cross,Medium Pass,1RB/1TE/3WR,8.81,26,9.8,0.0,3.85,,1.018,Nickel Normal SS Blitz,3.64
+I Formation 3WR Slot Short WR Deep,Medium Pass,2RB/3WR,8.77,339,7.24,2.63,8.48,3.22,0.17,Nickel Normal SS Blitz,3.64
+Split Backs Normal Posts,Medium Pass,2RB/1TE/2WR,10.3,113,10.62,2.61,0.87,0.87,0.374,4-3 Under 2 Deep Flat Outside,3.24
+I Formation Twin WR HB Toss Weak,Outside Run,2RB/1TE/2WR,9.79,28,11.75,0.0,0.0,,1.04,4-3 Under 2 Deep Flat Outside,3.24
+I Formation Power Play Action HB Downfield,Medium Pass,3RB/1TE/1WR,9.26,38,8.03,5.13,0.0,,0.691,4-3 Under 2 Deep Flat Outside,3.24
+Singleback Big Ins and Outs,Short Pass,1RB/2TE/2WR,9.24,180,10.76,0.56,0.0,1.67,0.562,4-3 Under 2 Deep Flat Outside,3.24
+I Formation Power PA Flats,Short Pass,3RB/1TE/1WR,9.23,30,11.08,0.0,0.0,3.33,0.444,4-3 Under 2 Deep Flat Outside,3.24
+I Formation Normal HB Blast,Inside Run,2RB/1TE/2WR,10.54,127,12.65,0.0,0.0,,0.811,Nickel Normal Double WR1,3.24
+Singleback Normal HB Inside Weak,Inside Run,1RB/1TE/3WR,10.38,569,12.46,0.0,0.0,,0.901,Nickel Normal Double WR1,3.24
+Singleback Slot Strong HB Counter,Outside Run,1RB/1TE/3WR,10.24,459,12.29,0.0,0.0,4.94,0.572,Nickel Normal Double WR1,3.24
+I Formation 3WR HB Inside Weak,Inside Run,2RB/3WR,10.16,842,12.2,0.0,0.0,0.35,0.665,Nickel Normal Double WR1,3.24
+Singleback 4 Wide Quick Outs,Short Pass,1RB/4WR,9.82,22,9.05,4.55,0.0,,2.158,Nickel Normal Double WR1,3.24
+Singleback Slot Strong HB Counter,Outside Run,1RB/1TE/3WR,8.86,683,10.63,0.0,0.0,1.0,0.415,Nickel Normal Shallow Zone Deep,2.83
+Goal Line Normal HB Pitch Weak,Outside Run,2RB/3TE,8.68,22,10.42,0.0,0.0,,-0.002,Nickel Normal Shallow Zone Deep,2.83
+Singleback Normal HB Counter Weak,Outside Run,1RB/1TE/3WR,8.26,810,9.92,0.0,0.0,0.96,1.046,Nickel Normal Shallow Zone Deep,2.83
+Strong I Big TE Post,Medium Pass,2RB/2TE/1WR,7.63,30,0.49,10.0,13.33,,0.716,Nickel Normal Shallow Zone Deep,2.83
+I Formation Twin WR Quick Outs,Short Pass,2RB/1TE/2WR,7.46,54,7.84,1.85,0.0,,0.655,Nickel Normal Shallow Zone Deep,2.83
+Singleback Normal HB Inside Weak,Inside Run,1RB/1TE/3WR,13.16,170,15.79,0.0,0.0,0.58,1.076,Nickel Normal 3 Deep Man Under,2.73
+I Formation 3WR HB Inside Weak,Inside Run,2RB/3WR,11.96,272,14.35,0.0,0.0,2.51,0.347,Nickel Normal 3 Deep Man Under,2.73
+Singleback Normal HB Dive Strong,Inside Run,1RB/1TE/3WR,11.93,111,14.31,0.0,0.0,1.79,0.741,Nickel Normal 3 Deep Man Under,2.73
+Singleback Normal HB Dive Weak,Inside Run,1RB/1TE/3WR,11.47,163,13.77,0.0,0.0,0.59,0.585,Nickel Normal 3 Deep Man Under,2.73
+Singleback Slot Strong HB Counter,Outside Run,1RB/1TE/3WR,10.57,195,12.68,0.0,0.0,0.5,0.918,Nickel Normal 3 Deep Man Under,2.73
+Singleback Big WR Deep,Medium Pass,1RB/2TE/2WR,15.05,37,15.36,2.7,5.41,16.22,0.709,46 Heavy SS MLB Blitz,2.63
+I Formation Twin WR Hard Slants,Short Pass,2RB/1TE/2WR,13.76,45,13.4,4.44,2.22,8.89,1.222,46 Heavy SS MLB Blitz,2.63
+Shotgun Normal HB Flare,Medium Pass,1RB/1TE/3WR,11.95,21,7.98,4.55,18.18,18.18,-0.162,46 Heavy SS MLB Blitz,2.63
+I Formation Normal Max Protect,Medium Pass,2RB/1TE/2WR,11.67,43,12.22,0.0,8.89,8.89,1.395,46 Heavy SS MLB Blitz,2.63
+I Formation Twin WR Quick Outs,Short Pass,2RB/1TE/2WR,11.33,52,13.21,0.0,1.92,5.77,1.859,46 Heavy SS MLB Blitz,2.63
+Singleback Normal TE Quick Out,Short Pass,1RB/1TE/3WR,31.2,55,37.08,0.0,1.82,29.09,2.006,Goal Line Attack #3,2.63
+Shotgun Normal TE Out,Short Pass,1RB/1TE/3WR,19.07,27,20.74,3.57,0.0,17.86,-0.237,Goal Line Attack #3,2.63
+Singleback Normal HB Release Mid,Medium Pass,1RB/1TE/3WR,14.86,59,14.45,1.69,11.86,8.47,1.988,Goal Line Attack #3,2.63
+Shotgun Normal HB Flare,Medium Pass,1RB/1TE/3WR,13.65,178,13.36,3.91,3.35,16.76,1.433,Goal Line Attack #3,2.63
+Split Backs Normal WR Post,Medium Pass,2RB/1TE/2WR,13.3,36,15.42,0.0,2.7,5.41,-0.923,Goal Line Attack #3,2.63
+Singleback Slot Strong HB Strong Inside,Inside Run,1RB/1TE/3WR,17.03,36,20.43,0.0,0.0,,0.723,Nickel Normal Prevent,2.53
+Singleback Normal TE Quick Out,Short Pass,1RB/1TE/3WR,13.13,46,15.33,0.0,2.13,6.38,0.841,Nickel Normal Prevent,2.53
+I Formation 3WR FL Post,Medium Pass,2RB/3WR,11.15,26,13.38,0.0,0.0,,0.365,Nickel Normal Prevent,2.53
+Shotgun Normal HB Flare,Medium Pass,1RB/1TE/3WR,10.71,126,11.1,2.38,1.59,,0.427,Nickel Normal Prevent,2.53
+Shotgun 2 RB 3 WR Shotgun Sweep,Outside Run,2RB/3WR,10.49,46,12.59,0.0,0.0,,-0.221,Nickel Normal Prevent,2.53
+I Formation Power HB Strong Outside,Outside Run,3RB/1TE/1WR,11.61,51,13.93,0.0,0.0,1.96,0.412,Nickel Normal Double WR2,2.23
+I Formation Normal HB Dive,Inside Run,2RB/1TE/2WR,9.8,92,11.76,0.0,0.0,2.13,-0.41,Nickel Normal Double WR2,2.23
+I Formation Power HB Sweep Weak,Outside Run,3RB/1TE/1WR,9.73,21,11.67,0.0,0.0,9.09,0.273,Nickel Normal Double WR2,2.23
+Singleback Slot Strong HB Counter,Outside Run,1RB/1TE/3WR,9.4,422,11.28,0.0,0.0,0.93,0.607,Nickel Normal Double WR2,2.23
+Weak I Normal HB Inside Weak,Inside Run,2RB/1TE/2WR,9.2,80,11.04,0.0,0.0,1.23,1.095,Nickel Normal Double WR2,2.23
