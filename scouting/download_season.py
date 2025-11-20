@@ -2,8 +2,8 @@ from GameLogDownloader import GameLogDownloader
 from SeasonCompiler import SeasonCompiler
 
 league = 'USFL'
-year = '2017'
-path = f'/Users/jamesjones/personal/game_logs/{league}/{year}/{league}_{year}.csv'
+year = '2018'
+path = '/Users/jamesjones/projects/mfn/USFL_2018_schedule.csv'
 
 gdl = GameLogDownloader()
 gdl.set_league_season(league, int(year))
@@ -11,4 +11,4 @@ gdl.download_season(path)
 
 # Compile into a feather file
 
-SeasonCompiler.compile(league, int(year), override_path=path)
+SeasonCompiler.compile(league, int(year), override_path = '/Users/jamesjones/projects/mfn/USFL_2018_schedule.csv'
