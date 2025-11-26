@@ -71,6 +71,8 @@ class LineupAnalyzer:
             'FS': ['RDE', 'LDE', 'DT'],     # These positions cannot move to FS  
             'SS': ['RDE', 'LDE', 'DT'],     # These positions cannot move to SS
             'WR': ['TE'],                   # TE cannot move to WR
+            'FB': ['LT', 'RT', 'LG', 'RG', 'C'],  # OL positions cannot move to FB
+            'TE': ['LT', 'RT', 'LG', 'RG', 'C'],  # OL positions cannot move to TE
             # OL positions can only move within OL
             'LT': ['non-OL'], 'RT': ['non-OL'], 'LG': ['non-OL'], 'RG': ['non-OL'], 'C': ['non-OL']
         }
@@ -155,7 +157,7 @@ class LineupAnalyzer:
         if self.verbose:
             print(f"📊 Prepared data for {len(self.available_players)} unique players")
             
-    def _can_player_move_to_position(self, original_pos: str, target_pos: str) -> bool:
+    def _can_player_move_to_position(self, original_pos: str, target_pos: str, player_id: str = None) -> bool:
         """Check if a player can move from original position to target position."""
         # Handle OL restrictions - OL can only move within OL
         if target_pos in self.ol_positions:
@@ -169,6 +171,57 @@ class LineupAnalyzer:
             restricted_from = self.position_restrictions[target_pos]
             if original_pos in restricted_from:
                 return False
+        
+        # Check experience-based restrictions for DE/DT moving to LB positions
+        if player_id and original_pos in ['DE', 'DT', 'RDE', 'LDE'] and target_pos in ['MLB', 'WLB', 'SLB']:
+            # Look up player's experience in the Player Import data
+            if self.players_data is not None:
+                player_row = self.players_data[self.players_data['PlayerID'] == player_id]
+                if not player_row.empty and 'Exp' in player_row.columns:
+                    experience = player_row.iloc[0]['Exp']
+                    # Convert to numeric if it's not already
+                    try:
+                        exp_value = float(experience) if pd.notna(experience) else 0
+                        if exp_value >= 7:
+                            return False  # Experienced DE/DT cannot move to LB
+                    except (ValueError, TypeError):
+                        # If we can't parse experience, allow the move
+                        pass
+        
+        # Check speed restrictions for positions that require speed
+        if player_id and target_pos in self.position_key_skills:
+            key_skill = self.position_key_skills[target_pos]
+            if key_skill == 'MaxSpeedMax':  # Position requires speed
+                if self.players_data is not None:
+                    player_row = self.players_data[self.players_data['PlayerID'] == player_id]
+                    if not player_row.empty and 'MaxSpeedMax' in player_row.columns:
+                        speed = player_row.iloc[0]['MaxSpeedMax']
+                        try:
+                            speed_value = float(speed) if pd.notna(speed) else 0
+                            # Premium speed positions need 80+, others need 75+
+                            if target_pos in ['RB', 'WR', 'CB', 'FS', 'SS']:
+                                if speed_value < 80:
+                                    return False
+                            else:
+                                if speed_value < 75:
+                                    return False
+                        except (ValueError, TypeError):
+                            # If we can't parse speed, allow the move
+                            pass
+        
+        # Check height restrictions for WR, CB, FS, and SS positions
+        if player_id and target_pos in ['WR', 'CB', 'FS', 'SS']:
+            if self.players_data is not None:
+                player_row = self.players_data[self.players_data['PlayerID'] == player_id]
+                if not player_row.empty and 'Height' in player_row.columns:
+                    height = player_row.iloc[0]['Height']
+                    try:
+                        height_value = float(height) if pd.notna(height) else 0
+                        if height_value >= 75:
+                            return False  # Too tall for WR/CB/FS/SS positions
+                    except (ValueError, TypeError):
+                        # If we can't parse height, allow the move
+                        pass
                 
         return True
         
@@ -192,17 +245,25 @@ class LineupAnalyzer:
         if available_data.empty:
             return None
             
+        # Speed-based positions that need restrictions checked
+        speed_positions = [pos for pos, skill in self.position_key_skills.items() if skill == 'MaxSpeedMax']
+        
         # Apply position movement restrictions
-        if position in self.position_restrictions or position in self.ol_positions:
+        if (position in self.position_restrictions or position in self.ol_positions or 
+            position in ['MLB', 'WLB', 'SLB'] or position in speed_positions):
             eligible_players = []
             for _, player in available_data.iterrows():
-                if self._can_player_move_to_position(player['Pos'], position):
+                if self._can_player_move_to_position(player['Pos'], position, player['PlayerID']):
                     eligible_players.append(player.name)
             
             if not eligible_players:
                 return None
                 
             available_data = available_data.loc[eligible_players]
+            
+        # Check if we have any data left after applying restrictions
+        if available_data.empty or available_data[rating_column].isna().all():
+            return None
             
         # Find player with highest rating at this position
         best_idx = available_data[rating_column].idxmax()

@@ -98,9 +98,18 @@ def adj_ev(dd, grouper, plays=all_plays, sort='desc', col_to_sum='YardsGained', 
 
 
 def format_df(dd):
-    # Set versions
-    dd['version'] = pd.concat([dd.League, dd.Season.astype(str)], axis=1).apply(
-        lambda x: Config.version_map[x['League']][int(x['Season'])], axis=1)
+    # Set versions - handle NaN values
+    def get_version(row):
+        try:
+            league = row['League']
+            season = row['Season']
+            if pd.isna(season) or pd.isna(league):
+                return '0.4.6'  # Default version
+            return Config.version_map.get(league, {}).get(int(float(season)), '0.4.6')
+        except (ValueError, TypeError, KeyError):
+            return '0.4.6'  # Default version
+    
+    dd['version'] = pd.concat([dd.League, dd.Season.astype(str)], axis=1).apply(get_version, axis=1)
 
     # Offensive Play Type and personnel
     dd[['OffPlayType', 'OffPersonnel']] = dd.merge(
@@ -292,13 +301,13 @@ def scout(league, season, team):
     # scout_run_vs_pass_downs(tdf, team)
 
 
-# Load all seasons
-df = format_df(Config.load_all_seasons()).reset_index(drop=True)
+if __name__ == "__main__":
+    # Load all seasons - only when script is run directly
+    df = format_df(Config.load_all_seasons()).reset_index(drop=True)
 
-# Load all seasons
-# df = format_df(pd.concat((Config.load_feather(k, y) for k, v in Config.ls_dictionary.items() for y in v))).reset_index(drop=True)
+    # Load all seasons (alternative)
+    # df = format_df(pd.concat((Config.load_feather(k, y) for k, v in Config.ls_dictionary.items() for y in v))).reset_index(drop=True)
 
+    ###########################################
 
-###########################################
-
-off_play_adj_ev = adj_ev(df, 'OffensivePlay', all_plays, 'desc')
+    off_play_adj_ev = adj_ev(df, 'OffensivePlay', all_plays, 'desc')
