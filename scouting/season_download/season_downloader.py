@@ -43,9 +43,10 @@ class SeasonDownloader:
         self.authenticated = False
         self.temp_dir = None
         
-        # Feather output paths
-        self.script_dir = Path(__file__).parent
-        self.feathers_dir = self.script_dir.parent / "feathers"
+        # Feather output paths - use Config to find Google Drive location
+        sys.path.append(str(Path(__file__).parent.parent))
+        from util import Config
+        self.feathers_dir = Config.seasons
         
     def create_game_id_list(self, starting_game_id: int, num_games: int = 256) -> pd.DataFrame:
         """

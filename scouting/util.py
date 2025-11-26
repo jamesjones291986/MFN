@@ -7,10 +7,38 @@ class Config:
     # util.py lives in mfn/scouting/
     SCOUTING_DIR = Path(__file__).resolve().parent
 
-    # feathers lives inside scouting/
-    seasons = SCOUTING_DIR / "feathers"
+    # Function to find Google Drive MFN directory across different computers
+    @staticmethod
+    def _find_gdrive_mfn_path():
+        """Find Google Drive MFN directory, works across different computers."""
+        possible_paths = [
+            # Current user's standard Google Drive path
+            Path.home() / "Google Drive" / "My Drive" / "James Docs" / "MFN",
+            # Alternative Google Drive paths
+            Path.home() / "GoogleDrive" / "James Docs" / "MFN", 
+            Path.home() / "Google Drive" / "James Docs" / "MFN",
+            # Fallback to local directory if Google Drive not found
+            Path(__file__).resolve().parent / "data"
+        ]
+        
+        for path in possible_paths:
+            if path.exists():
+                return path
+        
+        # If none found, create local data directory
+        fallback_path = Path(__file__).resolve().parent / "data"
+        fallback_path.mkdir(exist_ok=True)
+        print(f"Warning: Google Drive not found, using local data directory: {fallback_path}")
+        return fallback_path
 
-    # game_logs also lives inside scouting/ (if you use it)
+    # Set paths using the flexible Google Drive finder
+    _gdrive_mfn = _find_gdrive_mfn_path()
+    seasons = _gdrive_mfn / "Feathers"
+    
+    # Ensure feathers directory exists
+    seasons.mkdir(exist_ok=True)
+
+    # game_logs can still be local since they're smaller
     game_logs = SCOUTING_DIR / "game_logs"
 
     ls_dictionary = {

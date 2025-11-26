@@ -1,13 +1,46 @@
-# DF STore
+# DS Store
 .DS_Store
 .idea
-__pycache__
 
-# Google API credentials
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Google API credentials (all instances)
 credentials.json
+**/credentials.json
 
 # Virtual environments
 venv/
 env/
 .venv/
 .env/
+
+# Data files (large binary files)
+*.feather
+scouting/feathers/*.feather
+
+# Output and temporary directories
+**/outputs/
+**/output/
+**/temp/
+**/tmp/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+Thumbs.db
+*.DS_Store
+
+# Log files
+*.log
+
+# Environment variables
+.env
