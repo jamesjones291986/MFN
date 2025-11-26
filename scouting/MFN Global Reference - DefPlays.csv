@@ -1,0 +1,147 @@
+DefPlay,DefSecondary,DefLinebackers,DefFormation,DefPersonnel,PassFoc34,PassFoc43,BalDef34,BalDef43,RunFoc34,RunFoc43,HeavyZone34,HeavyZone43,HeavyM2M34,HeavyM2M43,HeavyBlitz43
+3-4 Normal 2 Deep Man,2-Deep Man,Man,3-4 Normal,Normal Defensive Backfield,1,0,1,0,1,0,1,0,1,0,0
+3-4 Normal 2 Deep Zone,2-Deep Zone,Zone,3-4 Normal,Normal Defensive Backfield,1,0,1,0,1,0,1,0,1,0,0
+3-4 Normal 3 Deep Man Under,3-Deep Man,Zone,3-4 Normal,Normal Defensive Backfield,1,0,1,0,1,0,1,0,1,0,0
+3-4 Normal 3 Deep Zone Under,3-Deep Zone,Zone In,3-4 Normal,Normal Defensive Backfield,1,0,1,0,1,0,1,0,1,0,0
+3-4 Normal 4 Deep QB Spy,4-Deep Zone,Zone,3-4 Normal,Normal Defensive Backfield,1,0,1,0,1,0,1,0,1,0,0
+3-4 Normal 4 Deep Zone,4-Deep Zone,Zone,3-4 Normal,Normal Defensive Backfield,1,0,1,0,1,0,1,0,1,0,0
+3-4 Normal Cover 4,4-Deep Zone,Zone,3-4 Normal,Normal Defensive Backfield,1,0,1,0,1,0,1,0,1,0,0
+3-4 Normal Double Blitz,1-Deep Man,Blitz 2,3-4 Normal,Normal Defensive Backfield,1,0,1,0,1,0,1,0,1,0,0
+3-4 Normal Double WR2,1-Deep Man,Blitz 1,3-4 Normal,Normal Defensive Backfield,1,0,1,0,1,0,1,0,1,0,0
+3-4 Normal Man Cover 1,1-Deep Man,Zone In,3-4 Normal,Normal Defensive Backfield,1,0,1,0,1,0,1,0,1,0,0
+3-4 Normal Man QB Spy,Man,Blitz 2,3-4 Normal,Normal Defensive Backfield,1,0,1,0,1,0,1,0,1,0,0
+3-4 Normal OLBs Blitz,1-Deep Man,Blitz 2,3-4 Normal,Normal Defensive Backfield,1,0,1,0,1,0,1,0,1,0,0
+3-4 Normal Zone Blitz,2-Deep Man,Blitz 2,3-4 Normal,Normal Defensive Backfield,1,0,1,0,1,0,1,0,1,0,0
+4-3 Normal 3 Deep LB Blitz,3-Deep Man,Blitz 1,4-3 Normal,Normal Defensive Backfield,1,1,0,1,0,1,0,1,0,1,1
+4-3 Normal 3 Deep Zone Flat Left,3-Deep Zone,Zone,4-3 Normal,Normal Defensive Backfield,1,1,0,1,0,1,0,1,0,1,1
+4-3 Normal 3 Deep Zone Flat Right,3-Deep Zone,Zone,4-3 Normal,Normal Defensive Backfield,1,1,0,1,0,1,0,1,0,1,1
+4-3 Normal 3 Deep Zone Under,3-Deep Zone,Zone,4-3 Normal,Normal Defensive Backfield,1,1,0,1,0,1,0,1,0,1,1
+4-3 Normal 4 Deep Zone,4-Deep Zone,Zone,4-3 Normal,Normal Defensive Backfield,1,1,0,1,0,1,0,1,0,1,1
+4-3 Normal 4 Deep Zone Under,4-Deep Zone,Zone,4-3 Normal,Normal Defensive Backfield,1,1,0,1,0,1,0,1,0,1,1
+4-3 Normal CB2 Blitz,Corner Blitz,Zone,4-3 Normal,Normal Defensive Backfield,1,1,0,1,0,1,0,1,0,1,1
+4-3 Normal Cover 2,2-Deep Zone,Zone,4-3 Normal,Normal Defensive Backfield,1,1,0,1,0,1,0,1,0,1,1
+4-3 Normal Cover 2 MLB Blitz,2-Deep Zone,Blitz 1,4-3 Normal,Normal Defensive Backfield,1,1,0,1,0,1,0,1,0,1,1
+4-3 Normal Cover 3 Zone Under,3-Deep Zone,Zone,4-3 Normal,Normal Defensive Backfield,1,1,0,1,0,1,0,1,0,1,1
+4-3 Normal Double Safety Blitz,Safety Blitz,Zone In,4-3 Normal,Normal Defensive Backfield,1,1,0,1,0,1,0,1,0,1,1
+4-3 Normal Double WR1,Man,Blitz 1,4-3 Normal,Normal Defensive Backfield,1,1,0,1,0,1,0,0,0,1,1
+4-3 Normal Double WR2,Man,Blitz 1,4-3 Normal,Normal Defensive Backfield,1,1,0,1,0,1,0,0,0,1,1
+4-3 Normal Double WR3,Man,Blitz 1,4-3 Normal,Normal Defensive Backfield,1,1,0,1,0,1,0,0,0,1,1
+4-3 Normal LB Blitz Under Zone,3-Deep Man,Blitz 2,4-3 Normal,Normal Defensive Backfield,1,1,0,1,0,1,0,1,0,1,1
+4-3 Normal Man OLB Flat Zone,Man,Zone,4-3 Normal,Normal Defensive Backfield,1,1,0,1,0,1,0,1,0,1,1
+4-3 Normal Man QB Spy,1-Deep Man,Zone In,4-3 Normal,Normal Defensive Backfield,1,1,0,1,0,1,0,1,0,1,1
+4-3 Normal Man Under 1,1-Deep Man,Zone In,4-3 Normal,Normal Defensive Backfield,1,1,0,1,0,1,0,1,0,1,1
+4-3 Normal OLB Blitz Inside,Man,Blitz 2,4-3 Normal,Normal Defensive Backfield,1,1,0,1,0,1,0,0,0,1,1
+4-3 Normal OLB Blitz Outside,Man,Blitz 2,4-3 Normal,Normal Defensive Backfield,1,1,0,1,0,1,0,0,0,1,1
+4-3 Normal SLB Middle Blitz,1-Deep Man,Blitz 1,4-3 Normal,Normal Defensive Backfield,1,1,0,1,0,1,0,0,0,1,1
+4-3 Normal SLB Outside Blitz,1-Deep Man,Blitz 1,4-3 Normal,Normal Defensive Backfield,1,1,0,1,0,1,0,0,0,1,1
+4-3 Normal SS Blitz,Safety Blitz,Zone,4-3 Normal,Normal Defensive Backfield,1,1,0,1,0,1,0,1,0,1,1
+4-3 Normal WLB MLB Blitz,Man,Blitz 2,4-3 Normal,Normal Defensive Backfield,1,1,0,1,0,1,0,0,0,1,1
+4-3 Normal WLB Outside Blitz,Man,Blitz 1,4-3 Normal,Normal Defensive Backfield,1,1,0,1,0,1,0,0,0,1,1
+4-3 Normal Zone Blitz,3-Deep Zone,Blitz 2,4-3 Normal,Normal Defensive Backfield,1,1,0,1,0,1,0,0,0,1,1
+4-3 Under 2 Deep Flat Outside,2-Deep Zone,Zone,4-3 Under,Normal Defensive Backfield,1,1,1,1,1,1,1,1,1,1,1
+4-3 Under Crash Left,1-Deep Man,Blitz 1,4-3 Under,Normal Defensive Backfield,1,1,1,1,1,1,1,1,1,1,1
+4-3 Under Crash Right,1-Deep Man,Blitz 1,4-3 Under,Normal Defensive Backfield,1,1,1,1,1,1,1,1,1,1,1
+4-3 Under Crowd Middle,3-Deep Zone,Zone,4-3 Under,Normal Defensive Backfield,1,1,1,1,1,1,1,1,1,1,1
+4-3 Under Crowd Middle Deep Man,3-Deep Man,Blitz 1,4-3 Under,Normal Defensive Backfield,1,1,1,1,1,1,1,1,1,1,1
+4-3 Under Double LB Blitz,Man,Blitz 2,4-3 Under,Normal Defensive Backfield,1,1,1,1,1,1,1,1,1,1,1
+4-3 Under Double Safety Blitz,Safety Blitz,Man,4-3 Under,Normal Defensive Backfield,1,1,1,1,1,1,1,1,1,1,1
+4-3 Under Inside LB Blitz,3-Deep Man,Blitz 2,4-3 Under,Normal Defensive Backfield,1,1,1,1,1,1,1,1,1,1,1
+4-3 Under Shallow Right Zone,2-Deep Zone,Zone,4-3 Under,Normal Defensive Backfield,1,1,1,1,1,1,1,1,1,1,1
+4-3 Under Strong Blitz Outside,3-Deep Zone,Blitz 2,4-3 Under,Normal Defensive Backfield,1,1,1,1,1,1,1,1,1,1,1
+4-3 Under Wide Line,3-Deep Zone,Blitz 1,4-3 Under,Normal Defensive Backfield,1,1,1,1,1,1,1,1,1,1,1
+4-3 Under Zone Blitz,3-Deep Zone,Blitz 2,4-3 Under,Normal Defensive Backfield,1,1,1,1,1,1,1,1,1,1,1
+46 Heavy 1 Deep SS MLB Blitz,Safety Blitz,Blitz 1,46 Heavy,Normal Defensive Backfield,0,0,0,0,1,1,0,0,0,0,1
+46 Heavy 2 Deep Man Under,2-Deep Man,Man,46 Heavy,Normal Defensive Backfield,0,0,0,0,1,1,0,0,0,0,1
+46 Heavy 3 Deep LB Blitz,3-Deep Man,Blitz 2,46 Heavy,Normal Defensive Backfield,0,0,0,0,1,1,0,0,0,0,1
+46 Heavy 4 Deep Zone,4-Deep Man,Zone,46 Heavy,Normal Defensive Backfield,0,0,0,0,1,1,0,0,0,0,1
+46 Heavy LB Weak Blitz,1-Deep Man,Blitz 2+,46 Heavy,Normal Defensive Backfield,0,0,0,0,1,1,0,0,0,0,1
+46 Heavy SS MLB Blitz,Safety Blitz,Blitz 1,46 Heavy,Normal Defensive Backfield,0,0,0,0,1,1,0,0,0,0,1
+46 Heavy WLB Blitz,2-Deep Man,Blitz 1,46 Heavy,Normal Defensive Backfield,0,0,0,0,1,1,0,0,0,0,1
+46 Normal 3 Deep LB Blitz,3-Deep Zone,Blitz 2+,46 Normal,Normal Defensive Backfield,1,1,1,1,0,0,1,1,1,1,0
+46 Normal 3 Deep Zone,3-Deep Zone,Zone,46 Normal,Normal Defensive Backfield,1,1,1,1,0,0,1,1,1,1,0
+46 Normal Inside Blitz,Man,Blitz 2,46 Normal,Normal Defensive Backfield,1,1,1,1,0,0,1,1,1,1,0
+46 Normal Outside Blitz,Safety Blitz,Blitz 1,46 Normal,Normal Defensive Backfield,1,1,1,1,0,0,1,1,1,1,0
+46 Normal Strong Blitz,Safety Blitz,Blitz 1,46 Normal,Normal Defensive Backfield,1,1,1,1,0,0,1,1,1,1,0
+46 Normal Weak Blitz,1-Deep Man,Blitz 2,46 Normal,Normal Defensive Backfield,1,1,1,1,0,0,1,1,1,1,0
+Dime Flat 2 Deep Man Under,2-Deep Man,Man,Dime Flat,Dime,1,1,1,1,1,1,1,1,1,1,1
+Dime Flat CB3 CB4 Blitz,Corner Blitz,Man,Dime Flat,Dime,1,1,1,1,1,1,1,1,1,1,1
+Dime Flat CB4 Blitz,Corner Blitz,Zone,Dime Flat,Dime,1,1,1,1,1,1,1,1,1,1,1
+Dime Flat Cover 2,2-Deep Zone,Zone,Dime Flat,Dime,1,1,1,1,1,1,1,1,1,1,1
+Dime Flat Man Cover 1,1-Deep Man,Zone,Dime Flat,Dime,1,1,1,1,1,1,1,1,1,1,1
+Dime Flat MLB SS Blitz,Safety Blitz,Blitz 1,Dime Flat,Dime,1,1,1,1,1,1,1,1,1,1,1
+Dime Flat Overload Blitz,Corner Blitz,Blitz 1,Dime Flat,Dime,1,1,1,1,1,1,1,1,1,1,1
+Dime Flat Prevent,4-Deep Zone,Zone,Dime Flat,Dime,1,1,1,1,1,1,1,1,1,1,1
+Dime Flat Zone Blitz,Corner Blitz,Zone,Dime Flat,Dime,1,1,1,1,1,1,1,1,1,1,1
+Dime Normal 2 Deep Man Under,2-Deep Man,Man,Dime Normal,Dime,1,1,1,1,1,1,1,1,1,1,1
+Dime Normal 4 Deep Man Under,4-Deep Man,Zone,Dime Normal,Dime,1,1,1,1,1,1,1,1,1,1,1
+Dime Normal 4 Deep Zone under,4-Deep Zone,Zone,Dime Normal,Dime,1,1,1,1,1,1,1,1,1,1,1
+Dime Normal Cover 2,2-Deep Zone,Zone,Dime Normal,Dime,1,1,1,1,1,1,1,1,1,1,1
+Dime Normal Double WR1,1-Deep Man,Man,Dime Normal,Dime,1,1,1,1,1,1,1,1,1,1,1
+Dime Normal Double WR1 WR2,Man,Man,Dime Normal,Dime,1,1,1,1,1,1,1,1,1,1,1
+Dime Normal Double WR2,1-Deep Man,Man,Dime Normal,Dime,1,1,1,1,1,1,1,1,1,1,1
+Dime Normal Double WR3,Man,Man,Dime Normal,Dime,1,1,1,1,1,1,1,1,1,1,1
+Dime Normal FS Blitz,Safety Blitz,Man,Dime Normal,Dime,1,1,1,1,1,1,1,1,1,1,1
+Dime Normal LB Blitz,1-Deep Man,Blitz 2,Dime Normal,Dime,1,1,1,1,1,1,1,1,1,1,1
+Dime Normal Man Cover 1,1-Deep Man,Zone,Dime Normal,Dime,1,1,1,1,1,1,1,1,1,1,1
+Dime Normal Prevent,4-Deep Zone,Zone,Dime Normal,Dime,1,1,1,1,1,1,1,1,1,1,1
+FG Block,Special Teams,Special Teams,Special Teams,Special Teams,1,1,1,1,1,1,1,1,1,1,1
+Goal Line 3 Deep Blitz,3-Deep Man,Blitz 2,Goal Line,Goal Line,1,1,1,1,1,1,1,1,1,1,1
+Goal Line 3 Deep Man,1-Deep Man,Zone,Goal Line,Goal Line,1,1,1,1,1,1,1,1,1,1,1
+Goal Line 3 Deep Zone Under,3-Deep Zone,Zone,Goal Line,Goal Line,1,1,1,1,1,1,1,1,1,1,1
+Goal Line Attack #1,Man,Blitz 2,Goal Line,Goal Line,1,1,1,1,1,1,1,1,1,1,1
+Goal Line Attack #2,Man,Blitz 2,Goal Line,Goal Line,1,1,1,1,1,1,1,1,1,1,1
+Goal Line Attack #3,Man,Blitz 2+,Goal Line,Goal Line,1,1,1,1,1,1,1,1,1,1,1
+Kick Return,Special Teams,Special Teams,Special Teams,Special Teams,1,1,1,1,1,1,1,1,1,1,1
+Nickel 3-3-5 3 Deep MLB Blitz,3-Deep Zone,Blitz 1,Nickel 3-3-5,Nickel,1,1,1,1,1,1,1,1,1,1,1
+Nickel 3-3-5 3 Deep Zone Under,3-Deep Zone,Zone,Nickel 3-3-5,Nickel,1,1,1,1,1,1,1,1,1,1,1
+Nickel 3-3-5 CB1 CB2 Blitz,Corner Blitz,Zone,Nickel 3-3-5,Nickel,1,1,1,1,1,1,1,1,1,1,1
+Nickel 3-3-5 CB1 CB3 Blitz,3-Deep Zone,Zone,Nickel 3-3-5,Nickel,1,1,1,1,1,1,1,1,1,1,1
+Nickel 3-3-5 Cover 2 Man Under,2-Deep Man,Zone In,Nickel 3-3-5,Nickel,1,1,1,1,1,1,1,1,1,1,1
+Nickel 3-3-5 Weak Side Blitz,Corner Blitz,Blitz 1,Nickel 3-3-5,Nickel,1,1,1,1,1,1,1,1,1,1,1
+Nickel Blitz CB SS LB Blitz,Corner Blitz,Blitz 2,Nickel Blitz,Nickel,1,1,0,0,1,1,0,0,0,0,1
+Nickel Blitz Prevent,4-Deep Zone,Blitz 2+,Nickel Blitz,Nickel,1,1,0,0,1,1,0,0,0,0,1
+Nickel Blitz Stunt Blitz,Corner Blitz,Blitz 1,Nickel Blitz,Nickel,1,1,0,0,1,1,0,0,0,0,1
+Nickel Blitz Triple CB Blitz,Corner Blitz,Zone,Nickel Blitz,Nickel,1,1,0,0,1,1,0,0,0,0,1
+Nickel Blitz Weak Blitz,Corner Blitz,Blitz 2+,Nickel Blitz,Nickel,1,1,0,0,1,1,0,0,0,0,1
+Nickel Blitz Zone Blitz,Corner Blitz,Blitz 1,Nickel Blitz,Nickel,1,1,0,0,1,1,0,0,0,0,1
+Nickel Normal 2 Deep,2-Deep Zone,Man,Nickel Normal,Nickel,1,1,1,1,1,1,1,1,1,1,1
+Nickel Normal 2 Deep Zone Under,3-Deep Zone,Zone,Nickel Normal,Nickel,1,1,1,1,1,1,1,1,1,1,1
+Nickel Normal 3 Deep Man Under,3-Deep Man,Man,Nickel Normal,Nickel,1,1,1,1,1,1,1,1,1,1,1
+Nickel Normal 3 Deep Zone Under,3-Deep Zone,Zone,Nickel Normal,Nickel,1,1,1,1,1,1,1,1,1,1,1
+Nickel Normal 4 Deep Zone Under,3-Deep Zone,Zone,Nickel Normal,Nickel,1,1,1,1,1,1,1,1,1,1,1
+Nickel Normal CB3 LB Blitz,Corner Blitz,Blitz 2,Nickel Normal,Nickel,1,1,1,1,1,1,1,1,1,1,1
+Nickel Normal CB3 MLB Blitz,Corner Blitz,Blitz 1,Nickel Normal,Nickel,1,1,1,1,1,1,1,1,1,1,1
+Nickel Normal Cover 2,2-Deep Zone,Zone,Nickel Normal,Nickel,1,1,1,1,1,1,1,1,1,1,1
+Nickel Normal Double LB Blitz,Man,Blitz 2,Nickel Normal,Nickel,1,1,1,1,1,1,1,1,1,1,1
+Nickel Normal Double WR1,1-Deep Man,Man,Nickel Normal,Nickel,1,1,1,1,1,1,1,1,1,1,1
+Nickel Normal Double WR2,1-Deep Man,Man,Nickel Normal,Nickel,1,1,1,1,1,1,1,1,1,1,1
+Nickel Normal Double WR3,1-Deep Man,Man,Nickel Normal,Nickel,1,1,1,1,1,1,1,1,1,1,1
+Nickel Normal Man Cover 2,2-Deep Man,Man,Nickel Normal,Nickel,1,1,1,1,1,1,1,1,1,1,1
+Nickel Normal Man Zone,3-Deep Man,Zone In,Nickel Normal,Nickel,1,1,1,1,1,1,1,1,1,1,1
+Nickel Normal Prevent,4-Deep Zone,Zone,Nickel Normal,Nickel,1,1,1,1,1,1,1,1,1,1,1
+Nickel Normal Shallow Zone Deep,1-Deep Man,Man,Nickel Normal,Nickel,1,1,1,1,1,1,1,1,1,1,1
+Nickel Normal SS Blitz,Safety Blitz,Man,Nickel Normal,Nickel,1,1,1,1,1,1,1,1,1,1,1
+Nickel Normal Zone Rotate Strong,3-Deep Zone,Zone,Nickel Normal,Nickel,1,1,1,1,1,1,1,1,1,1,1
+Nickel Normal Zone Rotate Weak,3-Deep Zone,Zone,Nickel Normal,Nickel,1,1,1,1,1,1,1,1,1,1,1
+Nickel Strong 1 Deep Man Under,Corner Blitz,Man,Nickel Strong,Nickel,0,0,1,1,0,0,1,1,1,1,0
+Nickel Strong 2 Deep Man Under,2-Deep Man,Man,Nickel Strong,Nickel,0,0,1,1,0,0,1,1,1,1,0
+Nickel Strong 3 Deep Zone Under,3-Deep Zone,Zone,Nickel Strong,Nickel,0,0,1,1,0,0,1,1,1,1,0
+Nickel Strong CB3 Blitz Man,Corner Blitz,Blitz 1,Nickel Strong,Nickel,0,0,1,1,0,0,1,1,1,1,0
+Nickel Strong CB3 Blitz Zone,Corner Blitz,Zone,Nickel Strong,Nickel,0,0,1,1,0,0,1,1,1,1,0
+Nickel Strong Cover 2,2-Deep Zone,Zone,Nickel Strong,Nickel,0,0,1,1,0,0,1,1,1,1,0
+Nickel Strong Double LB plus CB3 Blitz,Corner Blitz,Blitz 2,Nickel Strong,Nickel,0,0,1,1,0,0,1,1,1,1,0
+Nickel Strong FS CB3 Blitz,Corner Blitz,Zone,Nickel Strong,Nickel,0,0,1,1,0,0,1,1,1,1,0
+Nickel Strong FS WLB Blitz,Safety Blitz,Blitz 1,Nickel Strong,Nickel,0,0,1,1,0,0,1,1,1,1,0
+Nickel Strong Man Strong Zone Weak,2-Deep Zone,Man,Nickel Strong,Nickel,0,0,1,1,0,0,1,1,1,1,0
+Onsides Kick Return Onside Kick Return,Special Teams,Special Teams,Special Teams,Special Teams,1,1,1,1,1,1,1,1,1,1,1
+Punt Return,Special Teams,Special Teams,Special Teams,Special Teams,1,1,1,1,1,1,1,1,1,1,1
+Quarter Normal 3 Deep Zone Under,3-Deep Zone,Zone,Quarter Normal,Quarter,1,1,1,1,1,1,1,1,1,1,1
+Quarter Normal CB3 CB4 Blitz,Corner Blitz,Man,Quarter Normal,Quarter,1,1,1,1,1,1,1,1,1,1,1
+Quarter Normal CB3 CB5 Blitz,Corner Blitz,Man,Quarter Normal,Quarter,1,1,1,1,1,1,1,1,1,1,1
+Quarter Normal CB5 Blitz,Corner Blitz,Man,Quarter Normal,Quarter,1,1,1,1,1,1,1,1,1,1,1
+Quarter Normal CB5 MLB Blitz,Corner Blitz,Blitz 1,Quarter Normal,Quarter,1,1,1,1,1,1,1,1,1,1,1
+Quarter Normal Cover 2,2-Deep Zone,Zone,Quarter Normal,Quarter,1,1,1,1,1,1,1,1,1,1,1
+Quarter Normal Cover 4,4-Deep Man,Zone,Quarter Normal,Quarter,1,1,1,1,1,1,1,1,1,1,1
+Quarter Normal Man Cover 2,2-Deep Man,Zone,Quarter Normal,Quarter,1,1,1,1,1,1,1,1,1,1,1
+Quarter Normal Man Short Zone,2-Deep Man,Zone,Quarter Normal,Quarter,1,1,1,1,1,1,1,1,1,1,1
+Quarter Normal Prevent,4-Deep Zone,Zone,Quarter Normal,Quarter,1,1,1,1,1,1,1,1,1,1,1

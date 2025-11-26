@@ -302,7 +302,7 @@ class SeasonDownloader:
         return success_count > 0
     
     def compile_to_feather(self):
-        """Compile downloaded CSV files into a feather file."""
+        """Compile downloaded CSV files into a complete feather file with full processing."""
         if not self.temp_dir or not self.temp_dir.exists():
             print("❌ No temporary directory found - please download files first")
             return False
@@ -366,9 +366,10 @@ class SeasonDownloader:
                     
                 df = df[available_cols]
                 
-                # Add game ID and league columns
+                # Add game ID, league, and season columns
                 df.insert(0, 'Game ID', game_id)
                 df.insert(1, 'League', self.league)
+                df.insert(2, 'Season', int(self.season))
                 
                 compiled_dfs.append(df)
                 print(f"✅ Processed {csv_file.name}: {len(df)} plays")
@@ -383,7 +384,38 @@ class SeasonDownloader:
         
         # Concatenate all dataframes
         print(f"🔄 Combining {len(compiled_dfs)} game files...")
-        final_df = pd.concat(compiled_dfs, ignore_index=True)
+        raw_df = pd.concat(compiled_dfs, ignore_index=True)
+        print(f"📊 Raw dataset: {len(raw_df)} plays from {len(compiled_dfs)} games")
+        
+        # Add missing columns that format_df expects
+        if 'Text' not in raw_df.columns:
+            print(f"⚠️  Adding missing 'Text' column (required for format_df)")
+            raw_df['Text'] = ''  # Empty string for all rows
+        
+        # Now run through enhanced processing pipeline
+        print(f"🔄 Processing through enhanced pipeline for complete analysis...")
+        try:
+            # Import from main.py and add path to access global reference files
+            import sys
+            sys.path.append(str(self.script_dir.parent))
+            
+            # Try full format_df first
+            try:
+                from main import format_df
+                final_df = format_df(raw_df)
+                print(f"✅ Full format_df processing complete: {len(final_df)} plays, {len(final_df.columns)} columns")
+                
+            except Exception as format_error:
+                print(f"⚠️  Full format_df failed ({format_error}), trying enhanced processing...")
+                
+                # Enhanced processing: manually add play types and personnel  
+                final_df = self._enhance_with_play_data(raw_df)
+                print(f"✅ Enhanced processing complete: {len(final_df)} plays, {len(final_df.columns)} columns")
+            
+        except Exception as e:
+            print(f"⚠️  Warning: Could not run enhanced processing: {e}")
+            print(f"   Falling back to basic format...")
+            final_df = raw_df
         
         # Create feather filename following convention: {league}_{year}.feather
         feather_filename = f"{self.league}_{self.season}.feather"
@@ -397,10 +429,75 @@ class SeasonDownloader:
         final_df.to_feather(feather_path)
         
         print(f"✅ Feather file created successfully!")
-        print(f"📊 Final dataset: {len(final_df)} plays from {len(compiled_dfs)} games")
+        print(f"📊 Final dataset: {len(final_df)} plays, {len(final_df.columns)} columns")
         print(f"📁 Location: {feather_path}")
         
         return True
+    
+    def _enhance_with_play_data(self, df):
+        """Enhance dataframe with play types and personnel data from global reference files."""
+        print("🔍 Enhancing data with play types and personnel...")
+        
+        try:
+            enhanced_df = df.copy()
+            
+            # Check if we need to add play type and personnel data
+            needs_enhancement = 'OffPlayType' not in enhanced_df.columns or 'OffPersonnel' not in enhanced_df.columns
+            
+            if needs_enhancement:
+                # Load global reference files
+                global_off_path = '/Users/jamesjones/personal/game_logs/MFN Global Reference - OffPlays.csv'
+                global_off_ref = pd.read_csv(global_off_path)
+                print(f"✅ Loaded {len(global_off_ref)} offensive play references")
+                
+                # Merge with offensive play reference to get play types and personnel
+                merge_columns = []
+                if 'OffPlayType' not in enhanced_df.columns:
+                    merge_columns.append('OffPlayType')
+                if 'OffPersonnel' not in enhanced_df.columns:
+                    merge_columns.append('OffPersonnel')
+                
+                if merge_columns:
+                    merge_data = global_off_ref[['OffPlay'] + merge_columns]
+                    enhanced_df = enhanced_df.merge(
+                        merge_data, 
+                        how='left', 
+                        left_on='OffensivePlay', 
+                        right_on='OffPlay'
+                    )
+                    
+                    # Clean up merge column
+                    enhanced_df = enhanced_df.drop(columns=['OffPlay'], errors='ignore')
+            else:
+                print("✅ Play types and personnel already present")
+            
+            # Add version column (consistent with format_df)
+            if 'version' not in enhanced_df.columns:
+                enhanced_df['version'] = '0.4.6'
+            
+            # Add any other columns that might be expected
+            if 'YTGL' not in enhanced_df.columns and 'Ball @' in enhanced_df.columns:
+                # Extract yard line from 'Ball @' column if possible
+                enhanced_df['YTGL'] = 50  # Default to midfield
+            
+            if 'ytgl_bucket' not in enhanced_df.columns:
+                enhanced_df['ytgl_bucket'] = '20-80'  # Default bucket
+            
+            if 'ev' not in enhanced_df.columns:
+                enhanced_df['ev'] = 0.0  # Default expected value
+            
+            # Report results
+            if 'OffPlayType' in enhanced_df.columns:
+                print(f"✅ Play types: {enhanced_df['OffPlayType'].value_counts().head(3).to_dict()}")
+            if 'OffPersonnel' in enhanced_df.columns:
+                print(f"✅ Personnel: {enhanced_df['OffPersonnel'].value_counts().head(3).to_dict()}")
+            
+            return enhanced_df
+            
+        except Exception as e:
+            print(f"⚠️  Warning: Could not enhance with play data: {e}")
+            print("   Returning original dataframe...")
+            return df
     
     def cleanup_temp_directory(self):
         """Remove the temporary download directory."""

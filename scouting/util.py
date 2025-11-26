@@ -1,10 +1,18 @@
 import os
 import pandas as pd
+from pathlib import Path
+
 
 class Config:
-    root = r'/Users/jamesjones/personal/game_logs'
-    seasons = r'/Users/jamesjones/personal/MFN/feathers'
-    global_file = r'/Users/jamesjones/personal/game_logs'
+    # util.py lives in mfn/scouting/
+    SCOUTING_DIR = Path(__file__).resolve().parent
+
+    # feathers lives inside scouting/
+    seasons = SCOUTING_DIR / "feathers"
+
+    # game_logs also lives inside scouting/ (if you use it)
+    game_logs = SCOUTING_DIR / "game_logs"
+
     ls_dictionary = {
         'qad': [2043, 2044, 2045, 2046, 2047, 2048, 2049],
         'xfl': [2043, 2044, 2045, 2046, 2047, 2048],
@@ -16,6 +24,7 @@ class Config:
         'lol': [2117, 2118, 2119, 2120],
         'nba': [2000, 2001],
     }
+
     sheet_lookup = {
         'qad': '1Nab-IckGA6tG19TOxEu_fYgbNl_7dCZ9hzrTtqcrOO8',
         'xfl': '141ZIAR5ubelkZ4tO7C2QTVFHodlSXNPZQ6i6toVlIRQ',
@@ -23,6 +32,11 @@ class Config:
         'paydirt': '1lRu3yMe7D1j0oJxqVlpPFzh6Dv9JGi2xS6sXzIS-FlY',
         'USFL': '1uhpNHxeXe5xeXR93bAGU6_-vXaTvWvgmRLEd_3Z984s',
     }
+
+    # Google Sheets ID for gameplan exports
+    # Change this to use a different spreadsheet for scouting reports
+    GAMEPLAN_SHEET_ID = '1TFi38D3BaNgPvdPnQLNsVpkLxonq_QFBVPju_w6QOVc'
+
     domain_map = {
         'qad': 'fantasy-league',
         'xfl': 'xfl',
@@ -34,6 +48,8 @@ class Config:
         'moguls': 'moguls',
         'nba': 'nba-league',
     }
+
+    # RESTORED FULL VERSION MAP (correct dict syntax)
     version_map = {
         'qad': {
             2043: '0.4.6',
@@ -108,40 +124,55 @@ class Config:
         },
     }
 
+    # ---------- INTERNAL HELPER ----------
+    @staticmethod
+    def _read_feather_safe(path):
+        """Reads a feather file and drops 'index' if present."""
+        df = pd.read_feather(path)
+        if 'index' in df.columns:
+            df = df.drop(columns=['index'])
+        return df
+
+    # ---------- LOADERS ----------
     @classmethod
     def load_feather(cls, league, season):
         try:
             file_path = next(
-                file for file in os.listdir(cls.seasons) if f"{league}_{season}" in file and file.endswith(".feather"))
-            return pd.read_feather(os.path.join(cls.seasons, file_path)).drop('index', axis=1)
-        except (StopIteration, FileNotFoundError):
-            # Handle the case where the file is not found
-            pass
+                file for file in os.listdir(cls.seasons)
+                if f"{league}_{season}" in file and file.endswith(".feather")
+            )
+            return cls._read_feather_safe(cls.seasons / file_path)
+        except StopIteration:
+            return None
 
     @classmethod
     def load_feather_with_players(cls, league, season):
         try:
-            file_path = next(file for file in os.listdir(cls.seasons) if
-                             f"{league}_{season}_with_players" in file and file.endswith(".feather"))
-            return pd.read_feather(os.path.join(cls.seasons, file_path)).drop('index', axis=1)
-        except (StopIteration, FileNotFoundError):
-            # Handle the case where the file is not found
-            pass
+            file_path = next(
+                file for file in os.listdir(cls.seasons)
+                if f"{league}_{season}_with_players" in file and file.endswith(".feather")
+            )
+            return cls._read_feather_safe(cls.seasons / file_path)
+        except StopIteration:
+            return None
 
     @classmethod
     def load_all_seasons(cls):
-        all_seasons_df = pd.concat(
-            (cls.load_feather(league, year) for league, years in cls.ls_dictionary.items() for year in years),
-            ignore_index=True)
-        return all_seasons_df
+        dfs = []
+        for league, years in cls.ls_dictionary.items():
+            for year in years:
+                df = cls.load_feather(league, year)
+                if df is not None:
+                    dfs.append(df)
+
+        if not dfs:
+            return pd.DataFrame()
+
+        return pd.concat(dfs, ignore_index=True)
 
     @classmethod
     def load_specific_feather(cls, file_name):
         try:
-            return pd.read_feather(os.path.join(cls.seasons, file_name)).reset_index(drop=True)
+            return pd.read_feather(cls.seasons / file_name).reset_index(drop=True)
         except (FileNotFoundError, pd.errors.EmptyDataError):
-            # Handle the case where the file is not found or is empty by returning an empty DataFrame
             return pd.DataFrame()
-
-
-
