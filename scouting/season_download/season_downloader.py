@@ -31,6 +31,36 @@ from glob import glob
 from config import Config
 
 
+def check_dependencies():
+    """Check if all required packages are installed before starting."""
+    required_packages = {
+        'openpyxl': 'openpyxl',
+        'requests': 'requests', 
+        'pandas': 'pandas',
+        'pyarrow': 'pyarrow',
+        'numpy': 'numpy'
+    }
+    
+    missing_packages = []
+    
+    for package_name, import_name in required_packages.items():
+        try:
+            __import__(import_name)
+            print(f"✅ {package_name} is installed")
+        except ImportError:
+            missing_packages.append(package_name)
+            print(f"❌ {package_name} is missing")
+    
+    if missing_packages:
+        print(f"\n⚠️  Missing required packages: {', '.join(missing_packages)}")
+        print(f"📦 Install them with: pip install {' '.join(missing_packages)}")
+        print(f"❌ Cannot proceed without required packages. Exiting...")
+        return False
+    
+    print("✅ All required packages are installed")
+    return True
+
+
 class SeasonDownloader:
     """Main class for downloading MFN seasons."""
     
@@ -42,6 +72,7 @@ class SeasonDownloader:
         self.session = requests.Session()
         self.authenticated = False
         self.temp_dir = None
+        self.script_dir = Path(__file__).parent
         
         # Feather output paths - use Config to find Google Drive location
         sys.path.append(str(Path(__file__).parent.parent))
@@ -629,6 +660,12 @@ class SeasonDownloader:
 
 
 def main():
+    # Check dependencies first
+    print("🔍 Checking required packages...")
+    if not check_dependencies():
+        return 1
+    print()
+    
     parser = argparse.ArgumentParser(description='MFN Season Downloader')
     parser.add_argument('--league', '-l', required=True, help='League name (e.g., USFL)')
     parser.add_argument('--year', '-y', type=int, required=True, help='Season year (e.g., 2018)')

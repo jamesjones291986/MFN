@@ -37,6 +37,9 @@ except ImportError:
     SHEETS_AVAILABLE = False
     print("Warning: Google Sheets connector not available. Install requirements to enable sheets export.")
 
+# Import for Excel export
+import openpyxl  # Required for Excel export
+
 
 class GameplanGenerator:
     """Automated gameplan generator for MFN teams."""
@@ -48,7 +51,7 @@ class GameplanGenerator:
         Args:
             min_play_threshold: Minimum percentage for a play to be considered significant
             top_plays_limit: Number of top defensive plays to recommend per category
-            sheets_id: Google Sheets ID for export (optional, defaults to Config.GAMEPLAN_SHEET_ID)
+            sheets_id: Legacy parameter (no longer used - exports to Excel instead)
         """
         self.min_play_threshold = min_play_threshold
         self.top_plays_limit = top_plays_limit
@@ -87,11 +90,9 @@ class GameplanGenerator:
             '5WR': '105'
         }
         
-        # Load only historical data that has required columns for proper analysis
-        print("Loading historical data with proper format for analysis...")
+        # Load ALL historical data for comprehensive counter analysis
+        print("Loading ALL historical data for comprehensive counter analysis...")
         try:
-            # Load only seasons that have the required columns for meaningful analysis
-            required_columns = ['OffPersonnel', 'OffPlayType']
             historical_dfs = []
             loaded_combinations = []
             
@@ -99,10 +100,90 @@ class GameplanGenerator:
                 for year in years:
                     try:
                         df = Config.load_feather(league, year)
-                        if df is not None and all(col in df.columns for col in required_columns):
+                        if df is not None and len(df) > 0:
+                            # Debug column availability
+                            has_ball_at = 'Ball @' in df.columns
+                            has_ytgl = 'YTGL' in df.columns
+                            has_ev = 'ev' in df.columns
+                            has_personnel = 'OffPersonnel' in df.columns
+                            has_playtype = 'OffPlayType' in df.columns
+                            print(f"  📋 {league} {year}: {len(df):,} plays, Ball@: {has_ball_at}, YTGL: {has_ytgl}, EV: {has_ev}, Personnel: {has_personnel}, PlayType: {has_playtype}")
+                            
+                            # Show ALL columns for files without personnel data to see what they do have
+                            if not has_personnel:
+                                print(f"    🔍 Available columns: {list(df.columns)}")
+                            
+                            # Process each file individually to parse Ball @ to YTGL
+                            if not has_ytgl and has_ball_at:
+                                print(f"    🔍 Parsing Ball @ column for {league} {year}...")
+                                # Parse Ball @ to YTGL for this specific file
+                                ball_at_parts = df['Ball @'].astype(str).str.split(' ', n=1, expand=True)
+                                if len(ball_at_parts.columns) >= 2:
+                                    yard_lines = pd.to_numeric(ball_at_parts[1], errors='coerce').fillna(50)
+                                    
+                                    # Count successful parses
+                                    valid_positions = (~yard_lines.isin([50])).sum()
+                                    print(f"    🔍 Successfully parsed {valid_positions} field positions from {len(df)} plays")
+                                    
+                                    # Calculate YTGL based on possession
+                                    df['YTGL'] = yard_lines.copy()
+                                    if 'HasBall' in df.columns:
+                                        # If team with ball matches the team in Ball @, they're on their own side
+                                        same_team_mask = df['HasBall'] == ball_at_parts[0]
+                                        df.loc[same_team_mask, 'YTGL'] = 100 - df.loc[same_team_mask, 'YTGL']
+                                    
+                                    # Show YTGL range for this file
+                                    ytgl_range = f"{df['YTGL'].min()}-{df['YTGL'].max()}"
+                                    print(f"    🔍 YTGL range for {league} {year}: {ytgl_range}")
+                                else:
+                                    print(f"    ⚠️ Could not parse Ball @ format for {league} {year}")
+                                    df['YTGL'] = 50
+                            
+                            # Add personnel and play type data if missing
+                            if not has_personnel and 'OffensivePlay' in df.columns:
+                                print(f"    🔄 Adding personnel data from global reference for {league} {year}...")
+                                try:
+                                    # Import the global reference data
+                                    import sys
+                                    sys.path.append('/Users/jamesjones/projects/mfn/scouting')
+                                    from main import global_off_ref
+                                    
+                                    # Merge with offensive play reference to get personnel and play types
+                                    merge_data = global_off_ref[['OffPlay', 'OffPlayType', 'OffPersonnel']].copy()
+                                    
+                                    # Merge personnel data
+                                    original_len = len(df)
+                                    df = df.merge(merge_data, how='left', left_on='OffensivePlay', right_on='OffPlay')
+                                    df = df.drop(columns=['OffPlay'], errors='ignore')
+                                    
+                                    # Fill missing values
+                                    df['OffPersonnel'] = df['OffPersonnel'].fillna('Unknown')
+                                    df['OffPlayType'] = df['OffPlayType'].fillna('Unknown')
+                                    
+                                    # Count successful mappings
+                                    mapped_personnel = (df['OffPersonnel'] != 'Unknown').sum()
+                                    print(f"    ✅ Mapped {mapped_personnel}/{original_len} plays to personnel groups")
+                                    
+                                except Exception as e:
+                                    print(f"    ⚠️ Could not add personnel data: {e}")
+                                    # Add default columns
+                                    df['OffPersonnel'] = 'Unknown'
+                                    df['OffPlayType'] = 'Unknown'
+                            
+                            # Add other essential columns if missing
+                            if 'ytgl_bucket' not in df.columns and 'YTGL' in df.columns:
+                                bucket_size = 10
+                                df['ytgl_bucket'] = (df['YTGL'].floordiv(bucket_size) * bucket_size).astype(str)
+                                
+                            if 'ev' not in df.columns and 'YTGL' in df.columns:
+                                # Calculate expected value
+                                ytgl_safe = df['YTGL'].replace(0, 1)
+                                df['ev'] = (df['YardsGained'] * (ytgl_safe / 50.0)).fillna(0)
+                            
                             historical_dfs.append(df)
                             loaded_combinations.append((league, year, len(df)))
                     except Exception as e:
+                        print(f"    ❌ Failed to load {league} {year}: {e}")
                         continue
             
             if historical_dfs:
@@ -115,12 +196,17 @@ class GameplanGenerator:
                 if len(loaded_combinations) > 5:
                     print(f"  ... and {len(loaded_combinations) - 5} more combinations")
                 
-                # Process through format_df to get all required columns
-                try:
-                    print(f"🔄 Processing through format_df...")
-                    formatted_historical = format_df(all_historical)
-                    print(f"✅ Successfully processed {len(formatted_historical):,} plays")
-                except Exception as format_error:
+                # Skip format_df since we've already processed each file individually
+                print(f"✅ Skipping format_df - data already processed per file")
+                formatted_historical = all_historical.copy()
+                
+                # Show final data quality
+                has_proper_ytgl = (formatted_historical['YTGL'] != 50).sum()
+                total_plays = len(formatted_historical)
+                print(f"📊 Final data quality: {has_proper_ytgl:,} plays ({has_proper_ytgl/total_plays*100:.1f}%) have proper field positions")
+                
+                # Dummy exception handler (no longer used):
+                if False:
                     print(f"⚠️  format_df failed ({format_error}), creating essential columns manually...")
                     formatted_historical = all_historical.copy()
                     
@@ -128,10 +214,15 @@ class GameplanGenerator:
                     if 'YTGL' not in formatted_historical.columns:
                         # Calculate YTGL from Ball @ if available
                         if 'Ball @' in formatted_historical.columns:
+                            print(f"🔍 DEBUG: Processing Ball @ column for historical data ({len(formatted_historical)} plays)")
                             # Calculate YTGL correctly based on format_df logic
                             # Ball @ format is "TEAM YardLine", extract yard line
                             ball_at_parts = formatted_historical['Ball @'].str.partition(' ')
                             yard_lines = pd.to_numeric(ball_at_parts[2], errors='coerce').fillna(50)
+                            
+                            # Count successful parses
+                            valid_positions = (~yard_lines.isin([50])).sum()
+                            print(f"🔍 DEBUG: Successfully parsed {valid_positions} field positions, {len(formatted_historical) - valid_positions} defaulted to midfield")
                             
                             # If HasBall team equals the team in Ball @, it's their side so use 100 - yard_line
                             # Otherwise use yard_line as-is (they're going toward the other team's goal)
@@ -139,7 +230,12 @@ class GameplanGenerator:
                             if 'HasBall' in formatted_historical.columns:
                                 same_team_mask = formatted_historical['HasBall'] == ball_at_parts[0]
                                 formatted_historical.loc[same_team_mask, 'YTGL'] = 100 - formatted_historical.loc[same_team_mask, 'YTGL']
+                            
+                            # Show final YTGL distribution
+                            ytgl_range = f"{formatted_historical['YTGL'].min()}-{formatted_historical['YTGL'].max()}"
+                            print(f"🔍 DEBUG: Final YTGL range: {ytgl_range}")
                         else:
+                            print(f"⚠️ DEBUG: No Ball @ column found - setting all {len(formatted_historical)} plays to YTGL=50")
                             formatted_historical['YTGL'] = 50
                     
                     # Add ytgl_bucket for expected value calculations (matches format_df logic)
@@ -604,6 +700,48 @@ class GameplanGenerator:
         
         return team_tendencies
     
+    def get_plays_to_counter(self, tendency_plays, threshold=0.75):
+        """
+        Smart play selection based on distribution.
+        
+        Rules:
+        - If dominant play ≥60% and next play <20%: only analyze the dominant play
+        - Otherwise: use threshold approach (75% cumulative)
+        
+        Args:
+            tendency_plays: List of play dictionaries with 'play' and 'percentage'
+            threshold: Cumulative percentage threshold for fallback method
+        
+        Returns:
+            List of play names to analyze for counters
+        """
+        if not tendency_plays:
+            return []
+        
+        # Sort by percentage (highest first)
+        sorted_plays = sorted(tendency_plays, key=lambda x: x['percentage'], reverse=True)
+        
+        if len(sorted_plays) >= 2:
+            dominant_pct = sorted_plays[0]['percentage'] 
+            second_pct = sorted_plays[1]['percentage']
+            
+            # Dominant play rule: 60%+ and next <20%
+            if dominant_pct >= 60 and second_pct < 20:
+                print(f"🎯 Using dominant play rule: {sorted_plays[0]['play']} ({dominant_pct:.1f}%) vs {sorted_plays[1]['play']} ({second_pct:.1f}%)")
+                return [sorted_plays[0]['play']]
+        
+        # Default threshold approach
+        cumulative = 0
+        selected_plays = []
+        for play in sorted_plays:
+            cumulative += play['percentage']
+            selected_plays.append(play['play'])
+            if cumulative >= threshold:
+                break
+        
+        print(f"🎯 Using threshold approach: {len(selected_plays)} plays covering {cumulative:.1f}%")
+        return selected_plays
+    
     def find_offensive_counter_plays(self, defensive_plays: List[str], personnel_group: str) -> Dict:
         """
         Find the best offensive plays to counter specific defensive plays.
@@ -616,11 +754,25 @@ class GameplanGenerator:
             Dictionary with recommended offensive plays
         """
         # Filter historical data for these specific defensive plays
-        counter_data = self.historical_data.loc[
+        # Use personnel filtering only if the column exists in historical data
+        base_filter = (
             (self.historical_data.DefensivePlay.isin(defensive_plays)) &
-            (~self.historical_data.OffensivePlay.isin(off_excludes)) &
-            (self.historical_data.OffPersonnel == personnel_group)
-        ].copy()
+            (~self.historical_data.OffensivePlay.isin(off_excludes))
+        )
+        
+        # Add personnel filter only if the column exists and has data
+        if 'OffPersonnel' in self.historical_data.columns:
+            personnel_data = self.historical_data[base_filter & (self.historical_data.OffPersonnel == personnel_group)]
+            # If personnel filtering gives us data, use it; otherwise use all data
+            if len(personnel_data) > 0:
+                counter_data = personnel_data.copy()
+                print(f"🎯 Using personnel-specific data: {len(counter_data)} plays vs {defensive_plays} in {personnel_group}")
+            else:
+                counter_data = self.historical_data[base_filter].copy()
+                print(f"🎯 Using all personnel data: {len(counter_data)} plays vs {defensive_plays} (no {personnel_group} specific data)")
+        else:
+            counter_data = self.historical_data[base_filter].copy()
+            print(f"🎯 Using all historical data: {len(counter_data)} plays vs {defensive_plays} (no personnel columns)")
         
         if len(counter_data) == 0:
             return {'error': f'No historical data found for {personnel_group} vs defenses: {defensive_plays}'}
@@ -630,8 +782,14 @@ class GameplanGenerator:
         results = {}
         
         # Separate pass and run plays for different analysis
-        pass_data = counter_data[counter_data.OffPlayType.isin(pass_plays)]
-        run_data = counter_data[counter_data.OffPlayType.isin(run_plays)]
+        # Only use OffPlayType if the column exists, otherwise analyze all plays together
+        if 'OffPlayType' in counter_data.columns:
+            pass_data = counter_data[counter_data.OffPlayType.isin(pass_plays)]
+            run_data = counter_data[counter_data.OffPlayType.isin(run_plays)]
+        else:
+            # If no play type data, we'll analyze all plays but skip pass/run specific analysis
+            pass_data = pd.DataFrame()  # Empty
+            run_data = pd.DataFrame()   # Empty
         
         # Analyze best passing offense
         if len(pass_data) > 0:
@@ -679,24 +837,59 @@ class GameplanGenerator:
             Dictionary with recommended defensive plays
         """
         # Filter historical data for these specific offensive plays
-        counter_data = self.historical_data.loc[
+        # Use personnel filtering only if the column exists in historical data
+        base_filter = (
             (self.historical_data.OffensivePlay.isin(offensive_plays)) &
-            (~self.historical_data.DefensivePlay.isin(def_excludes)) &
-            (self.historical_data.OffPersonnel == personnel_group)
-        ].copy()
+            (~self.historical_data.DefensivePlay.isin(def_excludes))
+        )
+        
+        # Add personnel filter only if the column exists and has data
+        if 'OffPersonnel' in self.historical_data.columns:
+            personnel_data = self.historical_data[base_filter & (self.historical_data.OffPersonnel == personnel_group)]
+            # If personnel filtering gives us data, use it; otherwise use all data
+            if len(personnel_data) > 0:
+                counter_data = personnel_data.copy()
+                print(f"🎯 Using personnel-specific data: {len(counter_data)} plays for {offensive_plays} in {personnel_group}")
+                
+                # Debug which leagues/seasons are contributing
+                if 'League' in counter_data.columns and 'Season' in counter_data.columns:
+                    sources = counter_data.groupby(['League', 'Season']).size().sort_values(ascending=False)
+                    print(f"🔍 DEBUG: Data sources for {personnel_group}:")
+                    for (league, season), count in sources.head(10).items():
+                        print(f"   {league} {season}: {count} plays")
+                    if len(sources) > 10:
+                        print(f"   ... and {len(sources) - 10} more sources")
+                        
+            else:
+                counter_data = self.historical_data[base_filter].copy()
+                print(f"🎯 Using all personnel data: {len(counter_data)} plays for {offensive_plays} (no {personnel_group} specific data)")
+        else:
+            counter_data = self.historical_data[base_filter].copy()
+            print(f"🎯 Using all historical data: {len(counter_data)} plays for {offensive_plays} (no personnel columns)")
         
         if len(counter_data) == 0:
             return {'error': f'No historical data found for {personnel_group} plays: {offensive_plays}'}
         
         # Separate pass and run plays for different analysis
-        pass_data = counter_data[counter_data.OffPlayType.isin(pass_plays)]
-        run_data = counter_data[counter_data.OffPlayType.isin(run_plays)]
+        # Only use OffPlayType if the column exists, otherwise analyze all plays together
+        if 'OffPlayType' in counter_data.columns:
+            pass_data = counter_data[counter_data.OffPlayType.isin(pass_plays)]
+            run_data = counter_data[counter_data.OffPlayType.isin(run_plays)]
+        else:
+            # If no play type data, we'll analyze all plays but skip pass/run specific analysis
+            pass_data = pd.DataFrame()  # Empty
+            run_data = pd.DataFrame()   # Empty
         
         results = {}
         
         # Analyze pass defense
         if len(pass_data) > 0:
+            print(f"🔍 DEBUG: Calling adj_ev for pass defense with {len(pass_data)} plays")
+            print(f"🔍 DEBUG: Pass data columns: {list(pass_data.columns)}")
+            print(f"🔍 DEBUG: Pass data YTGL range: {pass_data.get('YTGL', pd.Series()).min()}-{pass_data.get('YTGL', pd.Series()).max()}")
+            print(f"🔍 DEBUG: Pass data Down values: {pass_data.get('Down', pd.Series()).unique()}")
             pass_defense = adj_ev(pass_data, 'DefensivePlay', pass_plays, 'asc')
+            print(f"🔍 DEBUG: adj_ev returned {len(pass_defense) if not pass_defense.empty else 0} pass defense results")
             if not pass_defense.empty:
                 # Filter to only effective defensive plays (YPP < 6)
                 effective_pass_defense = pass_defense[pass_defense['ypp'] < 6.0]
@@ -707,7 +900,12 @@ class GameplanGenerator:
         
         # Analyze run defense  
         if len(run_data) > 0:
+            print(f"🔍 DEBUG: Calling adj_ev for run defense with {len(run_data)} plays")
+            print(f"🔍 DEBUG: Run data columns: {list(run_data.columns)}")
+            print(f"🔍 DEBUG: Run data YTGL range: {run_data.get('YTGL', pd.Series()).min()}-{run_data.get('YTGL', pd.Series()).max()}")
+            print(f"🔍 DEBUG: Run data Down values: {run_data.get('Down', pd.Series()).unique()}")
             run_defense = adj_ev(run_data, 'DefensivePlay', run_plays, 'asc')
+            print(f"🔍 DEBUG: adj_ev returned {len(run_defense) if not run_defense.empty else 0} run defense results")
             if not run_defense.empty:
                 # Filter to only effective defensive plays (YPP < 6)
                 effective_run_defense = run_defense[run_defense['ypp'] < 6.0]
@@ -718,7 +916,13 @@ class GameplanGenerator:
         
         # Overall defense against all plays
         if len(counter_data) > 0:
+            print(f"🔍 DEBUG: Calling adj_ev for overall defense with {len(counter_data)} plays")
+            print(f"🔍 DEBUG: Overall data columns: {list(counter_data.columns)}")
+            print(f"🔍 DEBUG: Overall data YTGL range: {counter_data.get('YTGL', pd.Series()).min()}-{counter_data.get('YTGL', pd.Series()).max()}")
+            print(f"🔍 DEBUG: Overall data Down values: {counter_data.get('Down', pd.Series()).unique()}")
+            print(f"🔍 DEBUG: Required columns for adj_ev: YTGL, Down, OffPlayType, DefensivePlay, OffensivePlay")
             overall_defense = adj_ev(counter_data, 'DefensivePlay', all_plays, 'asc')
+            print(f"🔍 DEBUG: adj_ev returned {len(overall_defense) if not overall_defense.empty else 0} overall defense results")
             if not overall_defense.empty:
                 # Filter to only effective defensive plays (YPP < 6)
                 effective_overall_defense = overall_defense[overall_defense['ypp'] < 6.0]
@@ -762,13 +966,13 @@ class GameplanGenerator:
         for personnel_group, tendency_data in tendencies.items():
             print(f"Analyzing {personnel_group}...")
             
-            # Get list of plays this team runs from this formation
-            offensive_plays = [play['play'] for play in tendency_data.get('offensive_plays', [])]
-            defensive_plays = [play['play'] for play in tendency_data.get('defensive_plays', [])]
+            # Use smart play selection to determine which plays to counter
+            offensive_plays_to_counter = self.get_plays_to_counter(tendency_data.get('offensive_plays', []))
+            defensive_plays_to_counter = self.get_plays_to_counter(tendency_data.get('defensive_plays', []))
             
             # Find defensive counter plays (what defense to call vs their offense)
             try:
-                defensive_counters = self.find_counter_plays(offensive_plays, personnel_group)
+                defensive_counters = self.find_counter_plays(offensive_plays_to_counter, personnel_group)
                 # Filter by available plays
                 defensive_counters = self.filter_recommendations_by_available_plays(defensive_counters)
             except Exception as e:
@@ -777,9 +981,9 @@ class GameplanGenerator:
             
             # Find offensive counter plays (what offense to call vs their defense)
             offensive_counters = {}
-            if defensive_plays:
+            if defensive_plays_to_counter:
                 try:
-                    offensive_counters = self.find_offensive_counter_plays(defensive_plays, personnel_group)
+                    offensive_counters = self.find_offensive_counter_plays(defensive_plays_to_counter, personnel_group)
                     # Filter by available plays
                     offensive_counters = self.filter_recommendations_by_available_plays(offensive_counters)
                 except Exception as e:
@@ -812,11 +1016,18 @@ class GameplanGenerator:
         print(f"\nGenerating gameplans for all teams in {league} {season}")
         
         # Load season data to find all teams
-        file_name = f"{league}_{season}.feather"
         try:
-            season_data = format_df(Config.load_specific_feather(file_name)).reset_index(drop=True)
-        except:
-            raise ValueError(f"Could not load data for {league} {season}")
+            season_data = Config.load_feather(league, season)
+            if season_data is None:
+                raise ValueError(f"Could not find data for {league} {season}")
+            
+            # Use basic formatting instead of the complex format_df
+            season_data = self._basic_format_df(season_data)
+            if season_data.empty:
+                raise ValueError(f"No valid data for {league} {season}")
+                
+        except Exception as e:
+            raise ValueError(f"Could not load data for {league} {season}: {e}")
         
         # Find all teams
         all_teams = season_data['HasBall'].dropna().unique()
@@ -962,7 +1173,7 @@ class GameplanGenerator:
                 f.write(result)
             print(f"\nGameplan saved to: {output_file}")
         
-        # Export to Google Sheets if configured
+        # Export to Google Sheets if configured (for single team)
         if self.sheets_connector and self.sheets_id:
             self.export_to_google_sheets(gameplan)
     
@@ -1015,11 +1226,19 @@ class GameplanGenerator:
             with open(output_file, 'w') as f:
                 f.write(result)
             print(f"\nAll gameplans saved to: {output_file}")
+        
+        # Export all teams to single Excel file with tabs
+        if Config._gdrive_mfn:
+            self.export_all_teams_to_excel_with_tabs(all_gameplans)
     
     def export_to_google_sheets(self, gameplan: Dict):
         """
-        Export gameplan data to Google Sheets in structured format.
+        Export gameplan data to Google Sheets (for single team).
         """
+        if not self.sheets_connector or not self.sheets_id:
+            print("⚠️  Google Sheets not configured - cannot export")
+            return
+            
         try:
             team = gameplan['team']
             league = gameplan['league'] 
@@ -1027,29 +1246,42 @@ class GameplanGenerator:
             
             print(f"\n📊 Exporting {team} gameplan to Google Sheets...")
             
-            # Get the spreadsheet
-            spreadsheet = self.sheets_connector.get_sheet(self.sheets_id)
+            # Open the spreadsheet
+            spreadsheet = self.sheets_connector.client.open_by_key(self.sheets_id)
             
-            # Create or clear the team's worksheet
+            # Create or recreate worksheet for this team (delete/recreate to avoid formatting issues)
             tab_name = f"{team}_{league}_{season}"
             try:
+                # Try to delete existing tab first
                 existing_worksheet = spreadsheet.worksheet(tab_name)
                 spreadsheet.del_worksheet(existing_worksheet)
-                print(f"🗑️ Deleted existing '{tab_name}' tab")
+                print(f"📄 Deleted existing tab: '{tab_name}'...")
             except:
-                pass  # Worksheet doesn't exist
+                # Tab doesn't exist, which is fine
+                pass
             
-            # Create new worksheet with sufficient size
-            worksheet = spreadsheet.add_worksheet(title=tab_name, rows=1000, cols=20)
+            # Create new tab
+            print(f"📄 Creating fresh tab: '{tab_name}'...")
+            worksheet = spreadsheet.add_worksheet(title=tab_name, rows=1000, cols=9)
             
-            # Prepare data for export
+            # Prepare export data (same structure as Excel export)
             export_data = []
-            
-            # Header
             export_data.append([f"COMPLETE GAMEPLAN: {team} ({league} {season})", "", "", "", "", "", "", "", ""])
             export_data.append(["", "", "", "", "", "", "", "", ""])
             
-            # Process each formation
+            # Helper function to safely handle floats
+            def safe_float(val, default=0):
+                try:
+                    if val is None or val == '' or str(val).lower() in ['nan', 'inf', '-inf']:
+                        return default
+                    val = float(val)
+                    if val != val or val == float('inf') or val == float('-inf'):  # Check for NaN or inf
+                        return default
+                    return round(val, 3)
+                except:
+                    return default
+            
+            # Process each formation (same logic as Excel export)
             for formation_code, formation_data in gameplan['formations'].items():
                 personnel = formation_data['personnel_group']
                 tendencies = formation_data['team_tendencies']
@@ -1074,7 +1306,7 @@ class GameplanGenerator:
                         ])
                     export_data.append(["", "", "", "", "", "", "", "", ""])
                 
-                # Team defensive tendencies
+                # Team defensive tendencies  
                 if 'defensive_plays' in tendencies and tendencies['defensive_plays']:
                     export_data.append([f"{team}'s Defensive Tendencies vs {personnel}:", "", "", "", "", "", "", "", ""])
                     export_data.append(["Play", "Percentage", "Count", "", "", "", "", "", ""])
@@ -1092,21 +1324,6 @@ class GameplanGenerator:
                     export_data.append(["Best Defense vs Their Offense:", "", "", "", "", "", "", "", ""])
                     export_data.append(["Rank", "Defensive Play", "YPP", "EV_Adj", "Count", "ANY/A", "INT Rate", "Sack Rate", "TD Rate"])
                     for i, play in enumerate(defensive_counters['overall_defense'][:self.top_plays_limit], 1):
-                        # Debug: print what columns we have
-                        if i == 1:
-                            print(f"Debug: Defensive play columns: {play.keys()}")
-                        # Handle potential inf/NaN values
-                        def safe_float(val, default=0):
-                            try:
-                                if val is None or val == '' or str(val).lower() in ['nan', 'inf', '-inf']:
-                                    return default
-                                val = float(val)
-                                if val != val or val == float('inf') or val == float('-inf'):  # Check for NaN or inf
-                                    return default
-                                return round(val, 3)
-                            except:
-                                return default
-                        
                         export_data.append([
                             int(i),
                             str(play['DefensivePlay']),
@@ -1125,18 +1342,6 @@ class GameplanGenerator:
                     export_data.append(["Best Offense vs Their Defense:", "", "", "", "", "", "", "", ""])
                     export_data.append(["Rank", "Offensive Play", "YPP", "EV_Adj", "Count", "ANY/A", "INT Rate", "Sack Rate", "TD Rate"])
                     for i, play in enumerate(offensive_counters['overall_offense'][:self.top_plays_limit], 1):
-                        # Handle potential inf/NaN values
-                        def safe_float(val, default=0):
-                            try:
-                                if val is None or val == '' or str(val).lower() in ['nan', 'inf', '-inf']:
-                                    return default
-                                val = float(val)
-                                if val != val or val == float('inf') or val == float('-inf'):  # Check for NaN or inf
-                                    return default
-                                return round(val, 3)
-                            except:
-                                return default
-                        
                         export_data.append([
                             int(i),
                             str(play['OffensivePlay']),
@@ -1173,17 +1378,6 @@ class GameplanGenerator:
                 export_data.append(["Rank", "Offensive Play", "Personnel", "YPP", "ANY/A", "EV_Adj", "Count", "INT Rate", "Sack Rate"])
                 
                 for i, play in enumerate(all_offensive_plays_sorted[:30], 1):  # Top 30
-                    def safe_float(val, default=0):
-                        try:
-                            if val is None or val == '' or str(val).lower() in ['nan', 'inf', '-inf']:
-                                return default
-                            val = float(val)
-                            if val != val or val == float('inf') or val == float('-inf'):
-                                return default
-                            return round(val, 3)
-                        except:
-                            return default
-                    
                     export_data.append([
                         int(i),
                         str(play['OffensivePlay']),
@@ -1254,6 +1448,275 @@ class GameplanGenerator:
             import traceback
             print("Full error details:")
             traceback.print_exc()
+    
+    def export_all_teams_to_excel_with_tabs(self, all_gameplans: Dict):
+        """
+        Export all teams' gameplans to a single Excel file with tabs.
+        """
+        try:
+            print(f"\n📊 Exporting {len(all_gameplans)} team gameplans to single Excel file with tabs...")
+            
+            # Get league and season from first team
+            first_team = next(iter(all_gameplans.values()))
+            league = first_team['league']
+            season = first_team['season']
+            
+            # Create Excel file path in Google Drive Scouting folder
+            excel_path = Config._gdrive_mfn / "Scouting" / f"{league}_{season}_All_Teams_Gameplan.xlsx"
+            excel_path.parent.mkdir(exist_ok=True)  # Ensure Scouting directory exists
+            
+            # Create Excel writer object
+            with pd.ExcelWriter(excel_path, engine='openpyxl') as writer:
+                
+                for team_name, gameplan in all_gameplans.items():
+                    print(f"  📄 Creating tab for {team_name}...")
+                    
+                    # Create export data for this team (same logic as single team)
+                    export_data = []
+                    export_data.append([f"GAMEPLAN: {team_name} ({league} {season})", "", "", "", "", "", "", "", ""])
+                    export_data.append(["", "", "", "", "", "", "", "", ""])
+                    
+                    # Helper function to safely handle floats
+                    def safe_float(val, default=0):
+                        try:
+                            if val is None or val == '' or str(val).lower() in ['nan', 'inf', '-inf']:
+                                return default
+                            val = float(val)
+                            if val != val or val == float('inf') or val == float('-inf'):
+                                return default
+                            return round(val, 3)
+                        except:
+                            return default
+                    
+                    # Process each formation for this team
+                    for formation_code, formation_data in gameplan['formations'].items():
+                        personnel = formation_data['personnel_group']
+                        tendencies = formation_data['team_tendencies']
+                        defensive_counters = formation_data['defensive_counters']
+                        offensive_counters = formation_data['offensive_counters']
+                        
+                        # Formation header
+                        export_data.append([f"{formation_code} ({personnel})", "", "", "", "", "", "", "", ""])
+                        export_data.append(["", "", "", "", "", "", "", "", ""])
+                        
+                        # Team offensive tendencies
+                        if 'offensive_plays' in tendencies and tendencies['offensive_plays']:
+                            export_data.append([f"Offensive Tendencies:", "", "", "", "", "", "", "", ""])
+                            export_data.append(["Play", "Percentage", "Count", "", "", "", "", "", ""])
+                            for play_info in tendencies['offensive_plays'][:10]:  # Top 10 for tabs
+                                export_data.append([
+                                    play_info['play'],
+                                    f"{play_info['percentage']:.1f}%",
+                                    int(play_info['count']),
+                                    "", "", "", "", "", ""
+                                ])
+                            export_data.append(["", "", "", "", "", "", "", "", ""])
+                        
+                        # Best defensive recommendations (top 5 for tabs)
+                        if 'overall_defense' in defensive_counters:
+                            export_data.append(["Best Defense:", "", "", "", "", "", "", "", ""])
+                            export_data.append(["Rank", "Defensive Play", "YPP", "EV", "Count", "", "", "", ""])
+                            for i, play in enumerate(defensive_counters['overall_defense'][:5], 1):
+                                export_data.append([
+                                    int(i),
+                                    str(play['DefensivePlay']),
+                                    safe_float(play.get('ypp', 0)),
+                                    safe_float(play.get('ev_adj', 0)),
+                                    int(play.get('cnt', 0)),
+                                    "", "", "", ""
+                                ])
+                            export_data.append(["", "", "", "", "", "", "", "", ""])
+                        
+                        # Best offensive recommendations (top 5 for tabs)
+                        if offensive_counters and 'overall_offense' in offensive_counters:
+                            export_data.append(["Best Offense:", "", "", "", "", "", "", "", ""])
+                            export_data.append(["Rank", "Offensive Play", "YPP", "EV", "Count", "", "", "", ""])
+                            for i, play in enumerate(offensive_counters['overall_offense'][:5], 1):
+                                export_data.append([
+                                    int(i),
+                                    str(play['OffensivePlay']),
+                                    safe_float(play.get('ypp', 0)),
+                                    safe_float(play.get('ev_adj', 0)),
+                                    int(play.get('cnt', 0)),
+                                    "", "", "", ""
+                                ])
+                            export_data.append(["", "", "", "", "", "", "", "", ""])
+                    
+                    # Write this team's data to their tab
+                    if export_data:
+                        df = pd.DataFrame(export_data)
+                        df.to_excel(writer, sheet_name=team_name, index=False, header=False)
+                
+                print(f"✅ Successfully exported all teams to Excel file: {excel_path}")
+                print("📤 TODO: Implement Google Drive API upload & convert to Google Sheets")
+                # TODO: Add Google Drive API upload and convert functionality here
+                
+        except Exception as e:
+            print(f"❌ Failed to export all teams to Excel: {e}")
+            import traceback
+            print("Full error details:")
+            traceback.print_exc()
+
+    def export_to_excel(self, gameplan: Dict):
+        """
+        Export gameplan data to local Excel file in Google Drive.
+        """
+        try:
+            team = gameplan['team']
+            league = gameplan['league'] 
+            season = gameplan['season']
+            
+            print(f"\n📊 Exporting {team} gameplan to Excel file...")
+            
+            # Create Excel file path in Google Drive Scouting folder
+            excel_path = Config._gdrive_mfn / "Scouting" / f"{team}_{league}_{season}_Gameplan.xlsx"
+            excel_path.parent.mkdir(exist_ok=True)  # Ensure Scouting directory exists
+            
+            # Create Excel writer object
+            with pd.ExcelWriter(excel_path, engine='openpyxl') as writer:
+                
+                # Create main gameplan data
+                export_data = []
+                export_data.append([f"COMPLETE GAMEPLAN: {team} ({league} {season})", "", "", "", "", "", "", "", ""])
+                export_data.append(["", "", "", "", "", "", "", "", ""])
+                
+                # Helper function to safely handle floats
+                def safe_float(val, default=0):
+                    try:
+                        if val is None or val == '' or str(val).lower() in ['nan', 'inf', '-inf']:
+                            return default
+                        val = float(val)
+                        if val != val or val == float('inf') or val == float('-inf'):  # Check for NaN or inf
+                            return default
+                        return round(val, 3)
+                    except:
+                        return default
+                
+                # Process each formation
+                for formation_code, formation_data in gameplan['formations'].items():
+                    personnel = formation_data['personnel_group']
+                    tendencies = formation_data['team_tendencies']
+                    defensive_counters = formation_data['defensive_counters']
+                    offensive_counters = formation_data['offensive_counters']
+                    
+                    # Formation header
+                    export_data.append([f"{formation_code} FORMATION ({personnel})", "", "", "", "", "", "", "", ""])
+                    export_data.append(["", "", "", "", "", "", "", "", ""])
+                    
+                    # Team offensive tendencies
+                    if 'offensive_plays' in tendencies and tendencies['offensive_plays']:
+                        export_data.append([f"{team}'s Offensive Tendencies:", "", "", "", "", "", "", "", ""])
+                        export_data.append(["Play", "Percentage", "Count", "Play Type", "", "", "", "", ""])
+                        for play_info in tendencies['offensive_plays'][:15]:
+                            export_data.append([
+                                play_info['play'],
+                                f"{play_info['percentage']:.1f}%",
+                                int(play_info['count']),
+                                play_info.get('play_type', ''),
+                                "", "", "", "", ""
+                            ])
+                        export_data.append(["", "", "", "", "", "", "", "", ""])
+                    
+                    # Team defensive tendencies
+                    if 'defensive_plays' in tendencies and tendencies['defensive_plays']:
+                        export_data.append([f"{team}'s Defensive Tendencies vs {personnel}:", "", "", "", "", "", "", "", ""])
+                        export_data.append(["Play", "Percentage", "Count", "", "", "", "", "", ""])
+                        for play_info in tendencies['defensive_plays'][:15]:
+                            export_data.append([
+                                play_info['play'],
+                                f"{play_info['percentage']:.1f}%",
+                                int(play_info['count']),
+                                "", "", "", "", "", ""
+                            ])
+                        export_data.append(["", "", "", "", "", "", "", "", ""])
+                    
+                    # Defensive recommendations
+                    if 'overall_defense' in defensive_counters:
+                        export_data.append(["Best Defense vs Their Offense:", "", "", "", "", "", "", "", ""])
+                        export_data.append(["Rank", "Defensive Play", "YPP", "EV_Adj", "Count", "ANY/A", "INT Rate", "Sack Rate", "TD Rate"])
+                        for i, play in enumerate(defensive_counters['overall_defense'][:self.top_plays_limit], 1):
+                            export_data.append([
+                                int(i),
+                                str(play['DefensivePlay']),
+                                safe_float(play.get('ypp', 0)),
+                                safe_float(play.get('ev_adj', 0)),
+                                int(play.get('cnt', 0)),
+                                safe_float(play.get('any/a', 0)),
+                                safe_float(play.get('int_rate', 0)),
+                                safe_float(play.get('sack_rate', 0)),
+                                safe_float(play.get('td_rate', 0))
+                            ])
+                        export_data.append(["", "", "", "", "", "", "", "", ""])
+                    
+                    # Offensive recommendations
+                    if offensive_counters and 'overall_offense' in offensive_counters:
+                        export_data.append(["Best Offense vs Their Defense:", "", "", "", "", "", "", "", ""])
+                        export_data.append(["Rank", "Offensive Play", "YPP", "EV_Adj", "Count", "ANY/A", "INT Rate", "Sack Rate", "TD Rate"])
+                        for i, play in enumerate(offensive_counters['overall_offense'][:self.top_plays_limit], 1):
+                            export_data.append([
+                                int(i),
+                                str(play['OffensivePlay']),
+                                safe_float(play.get('ypp', 0)),
+                                safe_float(play.get('ev_adj', 0)),
+                                int(play.get('cnt', 0)),
+                                safe_float(play.get('any/a', 0)),
+                                safe_float(play.get('int_rate', 0)),
+                                safe_float(play.get('sack_rate', 0)),
+                                safe_float(play.get('td_rate', 0))
+                            ])
+                        export_data.append(["", "", "", "", "", "", "", "", ""])
+                    
+                    export_data.append(["", "", "", "", "", "", "", "", ""])
+                
+                # Add summary section with all offensive plays sorted by YPP
+                all_offensive_plays = []
+                for formation_code, formation_data in gameplan['formations'].items():
+                    offensive_counters = formation_data.get('offensive_counters', {})
+                    if 'overall_offense' in offensive_counters:
+                        for play in offensive_counters['overall_offense']:
+                            play_with_personnel = play.copy()
+                            play_with_personnel['Personnel'] = formation_data.get('personnel_group', formation_code)
+                            all_offensive_plays.append(play_with_personnel)
+                
+                if all_offensive_plays:
+                    # Sort all plays by YPP (descending)
+                    all_offensive_plays_sorted = sorted(all_offensive_plays, 
+                                                      key=lambda x: x.get('ypp', 0), 
+                                                      reverse=True)
+                    
+                    export_data.append(["ALL OFFENSIVE PLAYS SUMMARY (Sorted by YPP)", "", "", "", "", "", "", "", ""])
+                    export_data.append(["", "", "", "", "", "", "", "", ""])
+                    export_data.append(["Rank", "Offensive Play", "Personnel", "YPP", "ANY/A", "EV_Adj", "Count", "INT Rate", "Sack Rate"])
+                    
+                    for i, play in enumerate(all_offensive_plays_sorted[:30], 1):  # Top 30
+                        export_data.append([
+                            int(i),
+                            str(play['OffensivePlay']),
+                            str(play.get('Personnel', 'N/A')),
+                            safe_float(play.get('ypp', 0)),
+                            safe_float(play.get('any/a', 0)),
+                            safe_float(play.get('ev_adj', 0)),
+                            int(play.get('cnt', 0)),
+                            safe_float(play.get('int_rate', 0)),
+                            safe_float(play.get('sack_rate', 0))
+                        ])
+                    export_data.append(["", "", "", "", "", "", "", "", ""])
+                
+                # Write data to Excel file
+                if export_data:
+                    print(f"📝 Writing {len(export_data)} rows to Excel file...")
+                    
+                    # Convert to DataFrame and write to Excel
+                    df = pd.DataFrame(export_data)
+                    df.to_excel(writer, sheet_name='Gameplan', index=False, header=False)
+                    
+                    print(f"✅ Successfully exported {team} gameplan to Excel file: {excel_path}")
+                
+        except Exception as e:
+            print(f"❌ Failed to export to Excel: {e}")
+            import traceback
+            print("Full error details:")
+            traceback.print_exc()
 
 
 def main():
@@ -1267,7 +1730,7 @@ def main():
     parser.add_argument('--output', help='Custom output file path (only used with --save-txt)')
     parser.add_argument('--threshold', type=float, default=2.0, help='Minimum play percentage threshold')
     parser.add_argument('--top-plays', type=int, default=30, help='Number of top plays to recommend')
-    parser.add_argument('--sheets-id', help='Google Sheets ID for export (optional, defaults to Config.GAMEPLAN_SHEET_ID)')
+    parser.add_argument('--sheets-id', help='Legacy parameter (no longer used - exports to Excel instead)')
     
     args = parser.parse_args()
     
@@ -1301,7 +1764,7 @@ def main():
                 
                 generator.export_gameplan(gameplans, output_file)
             else:
-                # Just export to Google Sheets without creating txt file
+                # Just export to Excel without creating txt file
                 generator.export_gameplan(gameplans, None)
         else:
             # Generate for specific team
@@ -1321,7 +1784,7 @@ def main():
                 
                 generator.export_gameplan(gameplan, output_file)
             else:
-                # Just export to Google Sheets without creating txt file
+                # Just export to Excel without creating txt file
                 generator.export_gameplan(gameplan, None)
     
     except Exception as e:
