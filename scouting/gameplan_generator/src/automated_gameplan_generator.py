@@ -23,19 +23,58 @@ import os
 from pathlib import Path
 from typing import Dict, List, Tuple, Optional
 
-# Import existing utilities
+# Add paths for importing utilities and sheets connector
 sys.path.append('/Users/jamesjones/projects/mfn/scouting')
 sys.path.append('/Users/jamesjones/projects/mfn/lineup_analyzer')
+
+# Import existing utilities
 from main import format_df, adj_ev, all_plays, run_plays, pass_plays, def_excludes, off_excludes
 from util import Config
+
+def install_sheets_requirements():
+    """Install required packages for Google Sheets integration."""
+    import subprocess
+    import sys
+    
+    required_packages = [
+        'gspread>=5.0.0',
+        'google-auth>=2.0.0', 
+        'google-auth-oauthlib>=0.5.0',
+        'google-auth-httplib2>=0.1.0'
+    ]
+    
+    print("🔄 Installing Google Sheets requirements...")
+    try:
+        for package in required_packages:
+            print(f"📦 Installing {package}...")
+            subprocess.check_call([sys.executable, '-m', 'pip', 'install', package])
+        
+        print("✅ Successfully installed all requirements!")
+        print("🔄 Please restart the script to use Google Sheets integration.")
+        return True
+    except subprocess.CalledProcessError as e:
+        print(f"❌ Failed to install packages: {e}")
+        print("💡 You may need to install manually with:")
+        print("   pip install gspread google-auth google-auth-oauthlib google-auth-httplib2")
+        return False
 
 # Import Google Sheets connector
 try:
     from sheets_connector import LineupSheetsConnector
     SHEETS_AVAILABLE = True
-except ImportError:
+except ImportError as e:
     SHEETS_AVAILABLE = False
-    print("Warning: Google Sheets connector not available. Install requirements to enable sheets export.")
+    print("⚠️  Google Sheets connector not available.")
+    print("📦 Missing packages: gspread, google-auth, google-auth-oauthlib, google-auth-httplib2")
+    print("💡 Install with: pip install gspread google-auth google-auth-oauthlib google-auth-httplib2")
+    
+    # Check if auto-installation was requested via command line
+    import sys
+    if '--install-sheets' in sys.argv:
+        if install_sheets_requirements():
+            sys.exit(0)  # Exit to allow restart
+    
+    print("🔄 Falling back to Excel-only export mode.")
 
 # Import for Excel export
 import openpyxl  # Required for Excel export
@@ -44,7 +83,7 @@ import openpyxl  # Required for Excel export
 class GameplanGenerator:
     """Automated gameplan generator for MFN teams."""
     
-    def __init__(self, min_play_threshold: float = 2.0, top_plays_limit: int = 30, sheets_id: str = None):
+    def __init__(self, min_play_threshold: float = 2.0, top_plays_limit: int = 30, sheets_id: str = None, skip_data_loading: bool = False, quiet: bool = False):
         """
         Initialize the gameplan generator.
         
@@ -52,9 +91,13 @@ class GameplanGenerator:
             min_play_threshold: Minimum percentage for a play to be considered significant
             top_plays_limit: Number of top defensive plays to recommend per category
             sheets_id: Legacy parameter (no longer used - exports to Excel instead)
+            skip_data_loading: Skip loading historical data (for standard playbook mode)
+            quiet: Reduce terminal output to essential messages only
         """
         self.min_play_threshold = min_play_threshold
         self.top_plays_limit = top_plays_limit
+        self.skip_data_loading = skip_data_loading
+        self.quiet = quiet
         
         # Store available plays for filtering recommendations
         self.available_defensive_plays = None
@@ -91,7 +134,16 @@ class GameplanGenerator:
         }
         
         # Load ALL historical data for comprehensive counter analysis
-        print("Loading ALL historical data for comprehensive counter analysis...")
+        if not self.skip_data_loading:
+            if self.quiet:
+                print("⏳ Loading historical data...")
+            else:
+                print("Loading ALL historical data for comprehensive counter analysis...")
+        else:
+            print("📊 Skipping historical data loading (standard playbook mode)")
+            self.historical_data = pd.DataFrame()  # Empty dataframe
+            return
+            
         try:
             historical_dfs = []
             loaded_combinations = []
@@ -107,15 +159,19 @@ class GameplanGenerator:
                             has_ev = 'ev' in df.columns
                             has_personnel = 'OffPersonnel' in df.columns
                             has_playtype = 'OffPlayType' in df.columns
-                            print(f"  📋 {league} {year}: {len(df):,} plays, Ball@: {has_ball_at}, YTGL: {has_ytgl}, EV: {has_ev}, Personnel: {has_personnel}, PlayType: {has_playtype}")
                             
-                            # Show ALL columns for files without personnel data to see what they do have
-                            if not has_personnel:
-                                print(f"    🔍 Available columns: {list(df.columns)}")
+                            # Only show detailed info in verbose mode
+                            if not self.quiet:
+                                print(f"  📋 {league} {year}: {len(df):,} plays, Ball@: {has_ball_at}, YTGL: {has_ytgl}, EV: {has_ev}, Personnel: {has_personnel}, PlayType: {has_playtype}")
+                                
+                                # Show ALL columns for files without personnel data to see what they do have
+                                if not has_personnel:
+                                    print(f"    🔍 Available columns: {list(df.columns)}")
                             
                             # Process each file individually to parse Ball @ to YTGL
                             if not has_ytgl and has_ball_at:
-                                print(f"    🔍 Parsing Ball @ column for {league} {year}...")
+                                if not self.quiet:
+                                    print(f"    🔍 Parsing Ball @ column for {league} {year}...")
                                 # Parse Ball @ to YTGL for this specific file
                                 ball_at_parts = df['Ball @'].astype(str).str.split(' ', n=1, expand=True)
                                 if len(ball_at_parts.columns) >= 2:
@@ -123,7 +179,8 @@ class GameplanGenerator:
                                     
                                     # Count successful parses
                                     valid_positions = (~yard_lines.isin([50])).sum()
-                                    print(f"    🔍 Successfully parsed {valid_positions} field positions from {len(df)} plays")
+                                    if not self.quiet:
+                                        print(f"    🔍 Successfully parsed {valid_positions} field positions from {len(df)} plays")
                                     
                                     # Calculate YTGL based on possession
                                     df['YTGL'] = yard_lines.copy()
@@ -134,14 +191,17 @@ class GameplanGenerator:
                                     
                                     # Show YTGL range for this file
                                     ytgl_range = f"{df['YTGL'].min()}-{df['YTGL'].max()}"
-                                    print(f"    🔍 YTGL range for {league} {year}: {ytgl_range}")
+                                    if not self.quiet:
+                                        print(f"    🔍 YTGL range for {league} {year}: {ytgl_range}")
                                 else:
-                                    print(f"    ⚠️ Could not parse Ball @ format for {league} {year}")
+                                    if not self.quiet:
+                                        print(f"    ⚠️ Could not parse Ball @ format for {league} {year}")
                                     df['YTGL'] = 50
                             
                             # Add personnel and play type data if missing
                             if not has_personnel and 'OffensivePlay' in df.columns:
-                                print(f"    🔄 Adding personnel data from global reference for {league} {year}...")
+                                if not self.quiet:
+                                    print(f"    🔄 Adding personnel data from global reference for {league} {year}...")
                                 try:
                                     # Import the global reference data
                                     import sys
@@ -162,10 +222,12 @@ class GameplanGenerator:
                                     
                                     # Count successful mappings
                                     mapped_personnel = (df['OffPersonnel'] != 'Unknown').sum()
-                                    print(f"    ✅ Mapped {mapped_personnel}/{original_len} plays to personnel groups")
+                                    if not self.quiet:
+                                        print(f"    ✅ Mapped {mapped_personnel}/{original_len} plays to personnel groups")
                                     
                                 except Exception as e:
-                                    print(f"    ⚠️ Could not add personnel data: {e}")
+                                    if not self.quiet:
+                                        print(f"    ⚠️ Could not add personnel data: {e}")
                                     # Add default columns
                                     df['OffPersonnel'] = 'Unknown'
                                     df['OffPlayType'] = 'Unknown'
@@ -188,13 +250,16 @@ class GameplanGenerator:
             
             if historical_dfs:
                 all_historical = pd.concat(historical_dfs, ignore_index=True)
-                print(f"📊 Loaded {len(all_historical):,} raw plays from {len(loaded_combinations)} league/season combinations")
-                
-                # Show which combinations we loaded
-                for league, year, count in loaded_combinations[:5]:
-                    print(f"  - {league} {year}: {count:,} plays")
-                if len(loaded_combinations) > 5:
-                    print(f"  ... and {len(loaded_combinations) - 5} more combinations")
+                if self.quiet:
+                    print(f"✅ Loaded {len(all_historical):,} plays from {len(loaded_combinations)} datasets")
+                else:
+                    print(f"📊 Loaded {len(all_historical):,} raw plays from {len(loaded_combinations)} league/season combinations")
+                    
+                    # Show which combinations we loaded
+                    for league, year, count in loaded_combinations[:5]:
+                        print(f"  - {league} {year}: {count:,} plays")
+                    if len(loaded_combinations) > 5:
+                        print(f"  ... and {len(loaded_combinations) - 5} more combinations")
                 
                 # Skip format_df since we've already processed each file individually
                 print(f"✅ Skipping format_df - data already processed per file")
@@ -570,7 +635,8 @@ class GameplanGenerator:
         team_offense = season_data.loc[
             (season_data.HasBall == team) & 
             (season_data.League == league) &
-            (~season_data.OffensivePlay.isin(off_excludes))
+            (~season_data.OffensivePlay.isin(off_excludes)) &
+            (~season_data.OffPersonnel.isin(['Victory']))  # Exclude Victory personnel
         ].copy()
         
         # For defensive plays, we need to identify games where this team was actually playing
@@ -583,7 +649,8 @@ class GameplanGenerator:
             (season_data.HasBall != team) &              # When they don't have the ball
             (season_data.HasBall.notna()) & 
             (season_data.League == league) &
-            (~season_data.DefensivePlay.isin(def_excludes))
+            (~season_data.DefensivePlay.isin(def_excludes)) &
+            (~season_data.OffPersonnel.isin(['Victory']))  # Exclude Victory personnel
         ].copy()
         
         if len(team_offense) == 0:
@@ -852,7 +919,7 @@ class GameplanGenerator:
                 print(f"🎯 Using personnel-specific data: {len(counter_data)} plays for {offensive_plays} in {personnel_group}")
                 
                 # Debug which leagues/seasons are contributing
-                if 'League' in counter_data.columns and 'Season' in counter_data.columns:
+                if not self.quiet and 'League' in counter_data.columns and 'Season' in counter_data.columns:
                     sources = counter_data.groupby(['League', 'Season']).size().sort_values(ascending=False)
                     print(f"🔍 DEBUG: Data sources for {personnel_group}:")
                     for (league, season), count in sources.head(10).items():
@@ -884,12 +951,14 @@ class GameplanGenerator:
         
         # Analyze pass defense
         if len(pass_data) > 0:
-            print(f"🔍 DEBUG: Calling adj_ev for pass defense with {len(pass_data)} plays")
-            print(f"🔍 DEBUG: Pass data columns: {list(pass_data.columns)}")
-            print(f"🔍 DEBUG: Pass data YTGL range: {pass_data.get('YTGL', pd.Series()).min()}-{pass_data.get('YTGL', pd.Series()).max()}")
-            print(f"🔍 DEBUG: Pass data Down values: {pass_data.get('Down', pd.Series()).unique()}")
+            if not self.quiet:
+                print(f"🔍 DEBUG: Calling adj_ev for pass defense with {len(pass_data)} plays")
+                print(f"🔍 DEBUG: Pass data columns: {list(pass_data.columns)}")
+                print(f"🔍 DEBUG: Pass data YTGL range: {pass_data.get('YTGL', pd.Series()).min()}-{pass_data.get('YTGL', pd.Series()).max()}")
+                print(f"🔍 DEBUG: Pass data Down values: {pass_data.get('Down', pd.Series()).unique()}")
             pass_defense = adj_ev(pass_data, 'DefensivePlay', pass_plays, 'asc')
-            print(f"🔍 DEBUG: adj_ev returned {len(pass_defense) if not pass_defense.empty else 0} pass defense results")
+            if not self.quiet:
+                print(f"🔍 DEBUG: adj_ev returned {len(pass_defense) if not pass_defense.empty else 0} pass defense results")
             if not pass_defense.empty:
                 # Filter to only effective defensive plays (YPP < 6)
                 effective_pass_defense = pass_defense[pass_defense['ypp'] < 6.0]
@@ -900,12 +969,14 @@ class GameplanGenerator:
         
         # Analyze run defense  
         if len(run_data) > 0:
-            print(f"🔍 DEBUG: Calling adj_ev for run defense with {len(run_data)} plays")
-            print(f"🔍 DEBUG: Run data columns: {list(run_data.columns)}")
-            print(f"🔍 DEBUG: Run data YTGL range: {run_data.get('YTGL', pd.Series()).min()}-{run_data.get('YTGL', pd.Series()).max()}")
-            print(f"🔍 DEBUG: Run data Down values: {run_data.get('Down', pd.Series()).unique()}")
+            if not self.quiet:
+                print(f"🔍 DEBUG: Calling adj_ev for run defense with {len(run_data)} plays")
+                print(f"🔍 DEBUG: Run data columns: {list(run_data.columns)}")
+                print(f"🔍 DEBUG: Run data YTGL range: {run_data.get('YTGL', pd.Series()).min()}-{run_data.get('YTGL', pd.Series()).max()}")
+                print(f"🔍 DEBUG: Run data Down values: {run_data.get('Down', pd.Series()).unique()}")
             run_defense = adj_ev(run_data, 'DefensivePlay', run_plays, 'asc')
-            print(f"🔍 DEBUG: adj_ev returned {len(run_defense) if not run_defense.empty else 0} run defense results")
+            if not self.quiet:
+                print(f"🔍 DEBUG: adj_ev returned {len(run_defense) if not run_defense.empty else 0} run defense results")
             if not run_defense.empty:
                 # Filter to only effective defensive plays (YPP < 6)
                 effective_run_defense = run_defense[run_defense['ypp'] < 6.0]
@@ -916,13 +987,15 @@ class GameplanGenerator:
         
         # Overall defense against all plays
         if len(counter_data) > 0:
-            print(f"🔍 DEBUG: Calling adj_ev for overall defense with {len(counter_data)} plays")
-            print(f"🔍 DEBUG: Overall data columns: {list(counter_data.columns)}")
-            print(f"🔍 DEBUG: Overall data YTGL range: {counter_data.get('YTGL', pd.Series()).min()}-{counter_data.get('YTGL', pd.Series()).max()}")
-            print(f"🔍 DEBUG: Overall data Down values: {counter_data.get('Down', pd.Series()).unique()}")
-            print(f"🔍 DEBUG: Required columns for adj_ev: YTGL, Down, OffPlayType, DefensivePlay, OffensivePlay")
+            if not self.quiet:
+                print(f"🔍 DEBUG: Calling adj_ev for overall defense with {len(counter_data)} plays")
+                print(f"🔍 DEBUG: Overall data columns: {list(counter_data.columns)}")
+                print(f"🔍 DEBUG: Overall data YTGL range: {counter_data.get('YTGL', pd.Series()).min()}-{counter_data.get('YTGL', pd.Series()).max()}")
+                print(f"🔍 DEBUG: Overall data Down values: {counter_data.get('Down', pd.Series()).unique()}")
+                print(f"🔍 DEBUG: Required columns for adj_ev: YTGL, Down, OffPlayType, DefensivePlay, OffensivePlay")
             overall_defense = adj_ev(counter_data, 'DefensivePlay', all_plays, 'asc')
-            print(f"🔍 DEBUG: adj_ev returned {len(overall_defense) if not overall_defense.empty else 0} overall defense results")
+            if not self.quiet:
+                print(f"🔍 DEBUG: adj_ev returned {len(overall_defense) if not overall_defense.empty else 0} overall defense results")
             if not overall_defense.empty:
                 # Filter to only effective defensive plays (YPP < 6)
                 effective_overall_defense = overall_defense[overall_defense['ypp'] < 6.0]
@@ -1442,6 +1515,9 @@ class GameplanGenerator:
                     print(f"   You can manually resize columns in Google Sheets by selecting all and double-clicking column borders")
                 
                 print(f"✅ Successfully exported {team} gameplan to Google Sheets tab: '{tab_name}'")
+                
+                # Now create the summary tab with clean data
+                self._create_summary_tab(gameplan, spreadsheet)
             
         except Exception as e:
             print(f"❌ Failed to export to Google Sheets: {e}")
@@ -1449,6 +1525,323 @@ class GameplanGenerator:
             print("Full error details:")
             traceback.print_exc()
     
+    def _create_summary_tab(self, gameplan: Dict, spreadsheet):
+        """Create a clean summary tab with just the offensive plays data."""
+        try:
+            team = gameplan['team']
+            league = gameplan['league'] 
+            season = gameplan['season']
+            
+            # Create summary tab name
+            summary_tab_name = f"{team}_{league}_{season}_Summary"
+            
+            print(f"📄 Creating summary tab: '{summary_tab_name}'...")
+            
+            # Delete existing summary tab if it exists
+            try:
+                existing_summary = spreadsheet.worksheet(summary_tab_name)
+                spreadsheet.del_worksheet(existing_summary)
+                print(f"📄 Deleted existing summary tab: '{summary_tab_name}'...")
+            except:
+                pass
+            
+            # Create new summary tab
+            summary_worksheet = spreadsheet.add_worksheet(title=summary_tab_name, rows=100, cols=9)
+            
+            # Helper function to safely handle floats
+            def safe_float(val, default=0):
+                try:
+                    if val is None or val == '' or str(val).lower() in ['nan', 'inf', '-inf']:
+                        return default
+                    val = float(val)
+                    if val != val or val == float('inf') or val == float('-inf'):
+                        return default
+                    return round(val, 3)
+                except:
+                    return default
+            
+            # Collect all offensive plays from the gameplan
+            all_offensive_plays = []
+            
+            for formation_code, formation_data in gameplan['formations'].items():
+                offensive_counters = formation_data.get('offensive_counters', {})
+                if 'overall_offense' in offensive_counters:
+                    for play in offensive_counters['overall_offense']:
+                        play_data = {
+                            'OffensivePlay': play['OffensivePlay'],
+                            'Personnel': formation_data.get('personnel_group', formation_code),
+                            'ypp': play.get('ypp', 0),
+                            'any/a': play.get('any/a', 0),
+                            'ev_adj': play.get('ev_adj', 0),
+                            'cnt': play.get('cnt', 0),
+                            'int_rate': play.get('int_rate', 0),
+                            'sack_rate': play.get('sack_rate', 0)
+                        }
+                        all_offensive_plays.append(play_data)
+            
+            # Sort plays by YPP (descending)
+            all_offensive_plays_sorted = sorted(all_offensive_plays, 
+                                              key=lambda x: x.get('ypp', 0), 
+                                              reverse=True)
+            
+            # Prepare summary data - simple table format
+            summary_data = []
+            
+            # Header row
+            summary_data.append([
+                "Rank", 
+                "Offensive Play", 
+                "Personnel", 
+                "YPP", 
+                "ANY/A", 
+                "EV_Adj", 
+                "Count", 
+                "INT Rate", 
+                "Sack Rate"
+            ])
+            
+            # Data rows (top 30 plays)
+            for i, play in enumerate(all_offensive_plays_sorted[:30], 1):
+                summary_data.append([
+                    int(i),
+                    str(play['OffensivePlay']),
+                    str(play.get('Personnel', 'N/A')),
+                    safe_float(play.get('ypp', 0)),
+                    safe_float(play.get('any/a', 0)),
+                    safe_float(play.get('ev_adj', 0)),
+                    int(play.get('cnt', 0)),
+                    safe_float(play.get('int_rate', 0)),
+                    safe_float(play.get('sack_rate', 0))
+                ])
+            
+            # Write data to summary tab
+            if summary_data:
+                print(f"📝 Writing {len(summary_data)} rows to summary tab...")
+                summary_worksheet.update('A1', summary_data)
+                print(f"✅ Successfully created summary tab: '{summary_tab_name}'")
+            else:
+                print("⚠️  No offensive plays data found for summary tab")
+                
+        except Exception as e:
+            print(f"❌ Error creating summary tab: {e}")
+            import traceback
+            traceback.print_exc()
+    
+    def generate_standard_playbook_from_existing_tabs(self):
+        """
+        Analyze all existing team tabs in Google Sheets and create a standard playbook
+        based on the most frequently recommended and best performing plays.
+        """
+        print("📊 Generating standard playbook from existing team tabs...")
+        
+        try:
+            # Use the existing sheets connector if available, otherwise create one
+            if hasattr(self, 'sheets_connector') and self.sheets_connector:
+                gc = self.sheets_connector.client
+                print("✅ Using existing Google Sheets connection")
+            else:
+                # Set up Google Sheets connection using LineupSheetsConnector
+                try:
+                    from lineup_analyzer.sheets_connector import LineupSheetsConnector
+                    import sys
+                    sys.path.append('/Users/jamesjones/projects/mfn/lineup_analyzer')
+                    
+                    connector = LineupSheetsConnector(verbose=False)
+                    gc = connector.client
+                    print("✅ Google Sheets connection established")
+                except Exception as e:
+                    print(f"❌ Failed to connect to Google Sheets: {e}")
+                    return
+                    
+            # Get all worksheets from the Google Sheet
+            spreadsheet = gc.open_by_key(Config.GAMEPLAN_SHEET_ID)
+            worksheets = spreadsheet.worksheets()
+            
+            all_offensive_plays = []
+            team_tabs_analyzed = 0
+            
+            for worksheet in worksheets:
+                tab_name = worksheet.title
+                # Look only for summary tabs
+                if not tab_name.endswith('_Summary'):
+                    continue
+                    
+                # Skip non-team summary tabs
+                if tab_name in ['standard_playbook', 'Sheet1'] or 'template' in tab_name.lower():
+                    continue
+                    
+                print(f"🔍 Analyzing summary tab: {tab_name}")
+                
+                try:
+                    # Get all data from the summary worksheet
+                    all_values = worksheet.get_all_values()
+                    print(f"    📋 {tab_name} has {len(all_values) if all_values else 0} rows")
+                    if all_values and len(all_values) > 0:
+                        print(f"    📋 First row: {all_values[0]}")
+                        if len(all_values) > 1:
+                            print(f"    📋 Second row: {all_values[1]}")
+                    if not all_values or len(all_values) < 2:
+                        print(f"    ⚠️ No data in {tab_name}")
+                        continue
+                    
+                    # Parse the clean summary data
+                    headers = all_values[0]  # Should be: Rank, Offensive Play, Personnel, YPP, ANY/A, EV_Adj, Count, INT Rate, Sack Rate
+                    
+                    # Verify this is the correct format
+                    if len(headers) < 7 or 'Offensive Play' not in headers:
+                        print(f"    ⚠️ {tab_name} doesn't have expected summary format")
+                        continue
+                    
+                    # Find column indices
+                    try:
+                        rank_idx = headers.index('Rank')
+                        play_idx = headers.index('Offensive Play')
+                        personnel_idx = headers.index('Personnel')
+                        ypp_idx = headers.index('YPP')
+                        ev_idx = headers.index('EV_Adj')
+                        count_idx = headers.index('Count')
+                    except ValueError as e:
+                        print(f"    ⚠️ {tab_name} missing required columns: {e}")
+                        continue
+                    
+                    # Parse data rows
+                    plays_found = 0
+                    for row_values in all_values[1:]:  # Skip header
+                        if len(row_values) > max(play_idx, personnel_idx, ypp_idx, ev_idx, count_idx):
+                            try:
+                                rank = row_values[rank_idx].strip()
+                                if not rank or not rank.isdigit():
+                                    continue
+                                    
+                                play_name = row_values[play_idx].strip()
+                                personnel = row_values[personnel_idx].strip()
+                                ypp = float(row_values[ypp_idx]) if row_values[ypp_idx] else 0.0
+                                ev_adj = float(row_values[ev_idx]) if row_values[ev_idx] else 0.0
+                                count = int(row_values[count_idx]) if row_values[count_idx] else 1
+                                
+                                if play_name:
+                                    all_offensive_plays.append({
+                                        'play_name': play_name,
+                                        'formation': personnel,
+                                        'ypp': ypp,
+                                        'ev': ev_adj,
+                                        'count': count,
+                                        'source_tab': tab_name
+                                    })
+                                    plays_found += 1
+                                    
+                            except (ValueError, IndexError) as e:
+                                continue  # Skip problematic rows
+                    
+                    print(f"    ✅ Found {plays_found} plays in {tab_name}")
+                    team_tabs_analyzed += 1
+                    
+                except Exception as tab_error:
+                    print(f"  ⚠️ Error analyzing tab {tab_name}: {tab_error}")
+                    continue
+            
+            print(f"📊 Analyzed {team_tabs_analyzed} team tabs, found {len(all_offensive_plays)} offensive plays")
+            
+            if not all_offensive_plays:
+                print("❌ No offensive plays found in existing tabs")
+                return
+                
+            # Aggregate plays by name
+            play_aggregation = {}
+            for play in all_offensive_plays:
+                key = (play['play_name'], play['formation'])
+                
+                if key not in play_aggregation:
+                    play_aggregation[key] = {
+                        'play_name': play['play_name'],
+                        'formation': play['formation'],
+                        'total_ypp': 0,
+                        'total_ev': 0,
+                        'total_count': 0,
+                        'appearances': 0,
+                        'source_tabs': []
+                    }
+                
+                play_aggregation[key]['total_ypp'] += play['ypp'] * play['count']  # Weight by count
+                play_aggregation[key]['total_ev'] += play['ev'] * play['count']    # Weight by count  
+                play_aggregation[key]['total_count'] += play['count']
+                play_aggregation[key]['appearances'] += 1
+                play_aggregation[key]['source_tabs'].append(play['source_tab'])
+            
+            # Calculate final metrics
+            standard_plays = []
+            for key, agg in play_aggregation.items():
+                if agg['total_count'] > 0:
+                    avg_ypp = agg['total_ypp'] / agg['total_count']
+                    avg_ev = agg['total_ev'] / agg['total_count'] 
+                    effectiveness_score = avg_ypp * agg['appearances']  # YPP weighted by frequency
+                    
+                    standard_plays.append({
+                        'play_name': agg['play_name'],
+                        'formation': agg['formation'],
+                        'avg_ypp': round(avg_ypp, 2),
+                        'avg_ev': round(avg_ev, 3),
+                        'times_recommended': agg['appearances'],
+                        'total_count': agg['total_count'],
+                        'effectiveness_score': round(effectiveness_score, 2),
+                        'source_tabs': ', '.join(set(agg['source_tabs']))
+                    })
+            
+            # Sort by effectiveness score (descending)
+            standard_plays.sort(key=lambda x: x['effectiveness_score'], reverse=True)
+            
+            # Create the standard playbook worksheet
+            try:
+                # Delete existing standard_playbook tab if it exists
+                try:
+                    existing_tab = spreadsheet.worksheet('standard_playbook')
+                    spreadsheet.del_worksheet(existing_tab)
+                    print("📄 Deleted existing standard_playbook tab...")
+                except:
+                    pass
+                
+                # Create new tab
+                print("📄 Creating standard_playbook tab...")
+                worksheet = spreadsheet.add_worksheet(title='standard_playbook', rows=1000, cols=10)
+                
+                # Prepare data for export
+                export_data = []
+                export_data.append(['STANDARD OFFENSIVE PLAYBOOK'])
+                export_data.append(['Generated from analysis of all team-specific gameplans'])
+                export_data.append([''])
+                export_data.append(['Play Name', 'Formation', 'Avg YPP', 'Avg EV', 'Times Recommended', 'Total Count', 'Effectiveness Score', 'Source Tabs'])
+                
+                for i, play in enumerate(standard_plays, 1):
+                    export_data.append([
+                        f"{i}. {play['play_name']}",
+                        play['formation'],
+                        play['avg_ypp'],
+                        play['avg_ev'], 
+                        play['times_recommended'],
+                        play['total_count'],
+                        play['effectiveness_score'],
+                        play['source_tabs']
+                    ])
+                
+                # Write data to sheet
+                print(f"📝 Writing {len(export_data)} rows to standard_playbook...")
+                worksheet.update('A1', export_data)
+                
+                # Auto-resize columns
+                worksheet.format('A1:H1', {'textFormat': {'bold': True}})
+                worksheet.format('A4:H4', {'textFormat': {'bold': True}})
+                
+                print(f"✅ Created standard playbook with {len(standard_plays)} offensive plays")
+                print(f"📊 Top 5 plays by effectiveness score:")
+                for i, play in enumerate(standard_plays[:5], 1):
+                    print(f"   {i}. {play['play_name']} [{play['formation']}] - Score: {play['effectiveness_score']} (YPP: {play['avg_ypp']}, Recommended: {play['times_recommended']}x)")
+                
+            except Exception as sheet_error:
+                print(f"❌ Error creating standard_playbook tab: {sheet_error}")
+                
+        except Exception as e:
+            print(f"❌ Error generating standard playbook: {e}")
+
     def export_all_teams_to_excel_with_tabs(self, all_gameplans: Dict):
         """
         Export all teams' gameplans to a single Excel file with tabs.
@@ -1726,23 +2119,40 @@ def main():
     parser.add_argument('--season', required=True, type=int, help='Season year')
     parser.add_argument('--team', help='Specific team to scout (e.g., SJS)')
     parser.add_argument('--all-teams', action='store_true', help='Generate gameplans for all teams')
+    parser.add_argument('--standard-playbook', action='store_true', help='Generate standard playbook from existing team tabs in Google Sheets')
     parser.add_argument('--save-txt', action='store_true', help='Save gameplan as txt file in gameplans/ directory')
     parser.add_argument('--output', help='Custom output file path (only used with --save-txt)')
     parser.add_argument('--threshold', type=float, default=2.0, help='Minimum play percentage threshold')
     parser.add_argument('--top-plays', type=int, default=30, help='Number of top plays to recommend')
     parser.add_argument('--sheets-id', help='Legacy parameter (no longer used - exports to Excel instead)')
+    parser.add_argument('--verbose', action='store_true', help='Show detailed output during data loading')
+    parser.add_argument('--install-sheets', action='store_true', help='Install missing Google Sheets packages automatically')
     
     args = parser.parse_args()
     
-    if not args.team and not args.all_teams:
-        print("Error: Must specify either --team or --all-teams")
+    if not args.team and not args.all_teams and not args.standard_playbook:
+        print("Error: Must specify either --team, --all-teams, or --standard-playbook")
         return
     
-    # Initialize generator
+    # Handle standard playbook generation first (skip historical data loading)
+    if args.standard_playbook:
+        print("🚀 Standard Playbook Mode - Direct Google Sheets analysis...")
+        # Create minimal generator with data loading skipped
+        minimal_generator = GameplanGenerator(
+            min_play_threshold=args.threshold,
+            top_plays_limit=args.top_plays,
+            sheets_id=args.sheets_id,
+            skip_data_loading=True
+        )
+        minimal_generator.generate_standard_playbook_from_existing_tabs()
+        return
+    
+    # Initialize generator for normal gameplan generation
     generator = GameplanGenerator(
         min_play_threshold=args.threshold,
         top_plays_limit=args.top_plays,
-        sheets_id=args.sheets_id
+        sheets_id=args.sheets_id,
+        quiet=not args.verbose  # Quiet by default unless --verbose is specified
     )
     
     try:
