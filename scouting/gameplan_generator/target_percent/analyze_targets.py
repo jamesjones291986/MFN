@@ -11,7 +11,6 @@ Usage:
 """
 
 import sys
-import os
 from pathlib import Path
 
 # Add the target_percent directory to the path

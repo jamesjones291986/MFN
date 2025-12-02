@@ -8,6 +8,7 @@ This tool analyzes the target percentages for offensive plays from either team s
 - **Standard Playbook Analysis**: Analyzes plays from the standard playbook tab  
 - **Terminal Output**: Shows results in the terminal (no Google Sheets export)
 - **Target Breakdown**: Shows which positions (WR1, WR2, TE1, etc.) get targeted and at what percentages
+- **Formation Grouping**: Groups results by formation like the original target_percent.py script
 
 ## Usage
 
@@ -29,17 +30,23 @@ python target_percent/analyze_targets.py --standard-playbook
 🎯 TARGET ANALYSIS: SJS (USFL 2018)
 ============================================================
 
-📋 Reading plays from summary tab: SJS_USFL_2018_Summary
-✅ Found 28 offensive plays in SJS_USFL_2018_Summary
+📊 TARGET BREAKDOWN BY FORMATION:
+Based on 30 offensive plays from SJS
+============================================================
 
-📊 TARGET BREAKDOWN:
-Based on 28 offensive plays from SJS
-----------------------------------------
-   WR1:  45%
-   TE1:  32%
-   WR2:  18%
-   RB1:   4%
-   WR3:   1%
+2RB/1TE/2WR:
+  Total for TE1 is 149
+  Total for WR1 is 114
+  Total for WR2 is 107
+  Total for RB1 is 66
+  Total for FB1 is 55
+
+1RB/1TE/3WR:
+  Total for RB1 is 135
+  Total for WR2 is 98
+  Total for WR3 is 67
+  Total for TE1 is 59
+  Total for WR1 is 32
 ```
 
 ## Requirements

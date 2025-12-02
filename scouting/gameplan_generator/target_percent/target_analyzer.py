@@ -16,6 +16,7 @@ Features:
 - Reads plays from Google Sheets (team summary tabs or standard playbook)
 - Applies target percentage analysis using MFN-Targets.csv
 - Outputs results to terminal only (no Google Sheets export)
+- Groups results by formation like the original target_percent.py script
 """
 
 import argparse
@@ -156,12 +157,9 @@ class TargetAnalyzer:
                 if len(row) > play_col_index and row[play_col_index].strip():
                     play_name = row[play_col_index].strip()
                     
-                    # Get formation/personnel info
-                    if personnel_col_index and len(row) > personnel_col_index and row[personnel_col_index].strip():
-                        formation = row[personnel_col_index].strip()
-                    else:
-                        # If no personnel column, try to infer from play name
-                        formation = self._infer_formation_from_play_name(play_name)
+                    # Always infer formation from play name to match original target_percent.py format
+                    # (The Personnel column contains personnel like "2RB/1TE/2WR", not formation names)
+                    formation = self._infer_formation_from_play_name(play_name)
                     
                     if formation not in formation_plays:
                         formation_plays[formation] = []
@@ -175,42 +173,46 @@ class TargetAnalyzer:
             raise ValueError(f"Error reading team summary tab: {e}")
     
     def _infer_formation_from_play_name(self, play_name: str) -> str:
-        """Infer formation type from play name."""
+        """Infer formation type from play name to match original target_percent.py formations."""
         play_lower = play_name.lower()
         
-        if 'shotgun' in play_lower:
+        # Match the exact formation names from the original target_percent.py script
+        if 'shotgun normal' in play_lower:
+            return 'Shotgun Normal'
+        elif 'shotgun' in play_lower:
             if '5 wide' in play_lower:
                 return 'Shotgun 5 Wide'
             elif '4 wide' in play_lower:
                 return 'Shotgun 4 Wide' 
-            elif '3 wide' in play_lower or '2 rb 3 wr' in play_lower:
+            elif '2 rb 3 wr' in play_lower:
                 return 'Shotgun 2RB 3WR'
             else:
                 return 'Shotgun Normal'
+        elif 'singleback empty 4' in play_lower or 'empty 4' in play_lower:
+            return 'Singleback Empty 4'
+        elif 'singleback 4 wide' in play_lower:
+            return 'Singleback 4 Wide'
+        elif 'singleback slot strong' in play_lower:
+            return 'Singleback Slot Strong'
+        elif 'singleback big' in play_lower:
+            return 'Singleback Big'
         elif 'singleback' in play_lower:
-            if 'big' in play_lower:
-                return 'Singleback Big'
-            elif '4 wide' in play_lower:
-                return 'Singleback 4 Wide'
-            else:
-                return 'Singleback Normal'
-        elif 'i formation' in play_lower:
-            if '3wr' in play_lower or '3 wr' in play_lower:
-                return 'I Formation 3WR'
-            elif 'twin wr' in play_lower:
-                return 'I Formation Twin WR'
-            elif 'power' in play_lower:
-                return 'I Formation Power'
-            else:
-                return 'I Formation Normal'
-        elif 'strong i' in play_lower:
-            if 'big' in play_lower:
-                return 'Strong I Big'
-            else:
-                return 'Strong I Normal'
-        elif 'weak i' in play_lower:
+            return 'Singleback Normal'
+        elif 'i formation 3wr' in play_lower or 'i formation 3 wr' in play_lower:
+            return 'I Formation 3 WR'
+        elif 'i formation twin wr' in play_lower:
+            return 'I Formation Twin WR'
+        elif 'i formation power' in play_lower:
+            return 'I Formation Power'
+        elif 'i formation normal' in play_lower or 'i formation' in play_lower:
+            return 'I Formation Normal'
+        elif 'strong i big' in play_lower:
+            return 'Strong I Big'
+        elif 'strong i normal' in play_lower or 'strong i' in play_lower:
+            return 'Strong I Normal'
+        elif 'weak i normal' in play_lower or 'weak i' in play_lower:
             return 'Weak I Normal'
-        elif 'split backs' in play_lower:
+        elif 'split backs 3 wide' in play_lower:
             return 'Split Backs 3 Wide'
         elif 'empty' in play_lower:
             return 'Empty 4 Wide'
@@ -275,12 +277,9 @@ class TargetAnalyzer:
                         if '. ' in play_name:
                             play_name = play_name.split('. ', 1)[1]
                         
-                        # Get formation info
-                        if formation_col_index and len(row) > formation_col_index and row[formation_col_index].strip():
-                            formation = row[formation_col_index].strip()
-                        else:
-                            # Infer formation from play name
-                            formation = self._infer_formation_from_play_name(play_name)
+                        # Always infer formation from play name to match original target_percent.py format
+                        # (The Formation column contains personnel like "2RB/1TE/2WR", not formation names)
+                        formation = self._infer_formation_from_play_name(play_name)
                         
                         if formation not in formation_plays:
                             formation_plays[formation] = []
@@ -309,7 +308,7 @@ class TargetAnalyzer:
                     plays.append(row[play_col_index].strip())
             
             print(f"✅ Found {len(plays)} offensive plays in standard_playbook")
-            return plays
+            return {"All Plays": plays}
             
         except Exception as e:
             raise ValueError(f"Error reading standard playbook: {e}")
