@@ -17,7 +17,7 @@ from pathlib import Path
 
 # Check for required packages
 def check_dependencies():
-    """Check if required packages are installed."""
+    """Check if required packages are installed and auto-install if missing."""
     missing_packages = []
     
     try:
@@ -34,11 +34,44 @@ def check_dependencies():
         print("❌ Missing required packages:")
         for pkg in missing_packages:
             print(f"   • {pkg}")
-        print("\n💡 Install with:")
-        print("   pip install -r requirements.txt")
-        print("   or")
-        print(f"   pip install {' '.join(missing_packages)}")
-        return False
+        
+        # Auto-install missing packages
+        import subprocess
+        requirements_file = Path(__file__).parent.parent / "requirements.txt"
+        
+        if requirements_file.exists():
+            print(f"\n🔧 Auto-installing dependencies from requirements.txt...")
+            try:
+                result = subprocess.run([
+                    sys.executable, "-m", "pip", "install", "-r", str(requirements_file)
+                ], check=True, capture_output=True, text=True)
+                print("✅ Dependencies installed successfully!")
+                
+                # Verify installation worked
+                try:
+                    import pandas as pd
+                    import numpy as np
+                    print("✅ Packages verified - ready to run!")
+                    return True
+                except ImportError as e:
+                    print(f"❌ Installation verification failed: {e}")
+                    if "numpy source directory" in str(e):
+                        print("💡 This is likely a path conflict issue.")
+                        print("   Try running the script from a different directory:")
+                        print("   cd /Users/jamesjones/projects/mfn/scouting")
+                        print("   python3 team_specific_analysis/team_specific_success_analyzer.py --opponent CHI --league USFL --season 2018")
+                    return False
+                    
+            except subprocess.CalledProcessError as e:
+                print(f"❌ Failed to auto-install dependencies: {e}")
+                print(f"📝 Manual installation required:")
+                print(f"   pip3 install -r {requirements_file}")
+                return False
+        else:
+            print(f"\n💡 Manual installation required:")
+            print(f"   pip3 install {' '.join(missing_packages)}")
+            return False
+    
     return True
 
 # Add paths for imports
