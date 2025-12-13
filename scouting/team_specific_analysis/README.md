@@ -16,7 +16,7 @@ Main analysis tool that provides direct success rates and recommendations.
 **Usage:**
 ```bash
 # Analyze what works against MIC
-python team_specific_success_analyzer.py --opponent MIC --league USFL --season 2018
+python3 team_specific_success_analyzer.py --league USFL --season 2018 --opponent MIC
 
 # Require more attempts for statistical significance
 python team_specific_success_analyzer.py --opponent MIC --league USFL --season 2018 --min-attempts 5
