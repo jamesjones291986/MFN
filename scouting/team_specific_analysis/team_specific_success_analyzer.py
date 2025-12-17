@@ -47,20 +47,10 @@ def check_dependencies():
                 ], check=True, capture_output=True, text=True)
                 print("✅ Dependencies installed successfully!")
                 
-                # Verify installation worked
-                try:
-                    import pandas as pd
-                    import numpy as np
-                    print("✅ Packages verified - ready to run!")
-                    return True
-                except ImportError as e:
-                    print(f"❌ Installation verification failed: {e}")
-                    if "numpy source directory" in str(e):
-                        print("💡 This is likely a path conflict issue.")
-                        print("   Try running the script from a different directory:")
-                        print("   cd /Users/jamesjones/projects/mfn/scouting")
-                        print("   python3 team_specific_analysis/team_specific_success_analyzer.py --opponent CHI --league USFL --season 2018")
-                    return False
+                # Skip verification step and proceed - dependencies are installed
+                print("⚠️  Skipping verification due to potential path conflicts.")
+                print("🚀 Proceeding with script execution...")
+                return True  # Proceed anyway, packages are installed via pip
                     
             except subprocess.CalledProcessError as e:
                 print(f"❌ Failed to auto-install dependencies: {e}")
@@ -81,9 +71,46 @@ sys.path.append('/Users/jamesjones/projects/mfn/lineup_analyzer')
 if not check_dependencies():
     sys.exit(1)
 
-import pandas as pd
-import numpy as np
-from util import Config
+# Import packages after dependency check and path setup
+try:
+    import pandas as pd
+    import numpy as np
+    from util import Config
+except ImportError as e:
+    if "numpy source directory" in str(e):
+        print("🔧 Numpy path conflict detected. Using workaround...")
+        
+        # Clear any numpy-related paths from sys.modules and sys.path
+        import sys
+        modules_to_remove = [mod for mod in sys.modules if mod.startswith('numpy')]
+        for mod in modules_to_remove:
+            sys.modules.pop(mod, None)
+        
+        # Remove conflicting paths
+        paths_to_remove = [p for p in sys.path if 'numpy' in p.lower()]
+        for p in paths_to_remove:
+            sys.path.remove(p)
+        
+        # Try importing again
+        try:
+            import pandas as pd
+            print("✅ Pandas imported successfully")
+            
+            # For numpy, try a more direct approach
+            import numpy as np
+            print("✅ Numpy imported successfully") 
+            
+            from util import Config
+            print("✅ All imports successful")
+            
+        except ImportError as e2:
+            print(f"❌ Still unable to import after workaround: {e2}")
+            print("💡 Please use the wrapper script instead:")
+            print("   python3 run_analysis.py --league USFL --season 2018 --opponent JAX")
+            sys.exit(1)
+    else:
+        print(f"❌ Import error: {e}")
+        sys.exit(1)
 
 # Try to import Google Sheets connector
 try:
